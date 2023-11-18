@@ -5,6 +5,15 @@ set -ev
 
 DIR=$RAW_DIR/$VERSION
 
-node ./src/split-atlas-data.js $MINIMUM_DIAMONDS $DIR/full-dataset-graph.csv $DIR/cell-summaries.jsonld $DIR/atlas-dataset-graph.csv $DIR/non-atlas-dataset-graph.csv
+node ./src/split-atlas-data.js \
+  $MINIMUM_DIAMONDS \
+  $DIR/full-dataset-graph.csv \
+  $DIR/cell-summaries.jsonld \
+  $DIR/atlas-dataset-graph.csv \
+  $DIR/atlas-lq-dataset-graph.csv \
+  $DIR/test-dataset-graph.csv \
+  $DIR/non-atlas-dataset-graph.csv
 
 node ./src/unflatten-dataset-graph.js $DIR/atlas-dataset-graph.csv $DIR/atlas-dataset-graph.jsonld
+node ./src/unflatten-dataset-graph.js $DIR/atlas-lq-dataset-graph.csv $DIR/atlas-lq-dataset-graph.jsonld
+node ./src/unflatten-dataset-graph.js $DIR/test-dataset-graph.csv $DIR/test-dataset-graph.jsonld

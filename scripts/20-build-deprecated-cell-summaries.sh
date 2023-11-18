@@ -9,4 +9,5 @@ fi
 
 if [ "${DEPRECATED_BULK_CELL_SUMMARIES}" != "" ]; then
   node ./src/gen-deprecated-cell-summaries-bulk.js $DEPRECATED_BULK_CELL_SUMMARIES
+  echo "[]" > $RAW_DIR/$VERSION/cell-summary-dataset-graph.jsonld
 fi

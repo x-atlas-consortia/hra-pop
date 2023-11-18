@@ -1,0 +1,187 @@
+Run started on Fri Nov 17 11:10:30 PM EST 2023...
+
+>> Running scripts/10-build-deprecated-registrations.sh...
+
+if [ "${DEPRECATED_REGISTRATIONS}" ]; then
+  node ./src/gen-deprecated-registrations.js $DEPRECATED_REGISTRATIONS
+fi
+Saved 403 datasets
+
+real	0m3.392s
+user	0m0.649s
+sys	0m0.099s
+
+>> Running scripts/10-process-registrations.sh...
+
+MERGED=$RAW_DIR/$VERSION/registrations-dataset-graph.jsonld
+COLLISIONS=$RAW_DIR/$VERSION/collisions.jsonld
+DISTANCES=$RAW_DIR/$VERSION/euclidean-distances.jsonld
+
+node ./src/concatenate-jsonld.js $REGISTRATIONS $MERGED
+node ./src/get-collisions.js $MERGED $COLLISIONS
+329 RUI locations had more than one collision
+473 RUI locations had one collision
+WARNING 114 RUI locations had zero collisions
+node ./src/compute-extraction-site-distances.js $MERGED $DISTANCES
+
+real	2m59.540s
+user	0m15.358s
+sys	0m1.122s
+
+>> Running scripts/11-build-deprecated-corridors.sh...
+
+if [ "${DEPRECATED_CORRIDORS}" ]; then
+  node ./src/gen-deprecated-corridors.js $DEPRECATED_CORRIDORS
+fi
+
+real	0m0.109s
+user	0m0.070s
+sys	0m0.014s
+
+>> Running scripts/20-build-deprecated-cell-summaries.sh...
+
+if [ "${DEPRECATED_SPATIAL_CELL_SUMMARIES}" != "" ]; then
+  node ./src/gen-deprecated-cell-summaries-spatial.js $DEPRECATED_SPATIAL_CELL_SUMMARIES
+fi
+
+if [ "${DEPRECATED_BULK_CELL_SUMMARIES}" != "" ]; then
+  node ./src/gen-deprecated-cell-summaries-bulk.js $DEPRECATED_BULK_CELL_SUMMARIES
+  echo "[]" > $RAW_DIR/$VERSION/cell-summary-dataset-graph.jsonld
+fi
+HBM975.FVCG.922 has a duplicate cell summary.
+HBM875.SBHJ.939 has a duplicate cell summary.
+HBM747.SPWK.779 has a duplicate cell summary.
+HBM746.VTDZ.959 has a duplicate cell summary.
+HBM732.FZVZ.656 has a duplicate cell summary.
+HBM666.JCGS.862 has a duplicate cell summary.
+HBM592.JGSQ.253 has a duplicate cell summary.
+HBM494.XDQW.356 has a duplicate cell summary.
+HBM398.NCVN.256 has a duplicate cell summary.
+HBM238.ZKPC.934 has a duplicate cell summary.
+KPMP CellxGene has a duplicate cell summary.
+HBM992.XNZH.647 has a duplicate cell summary.
+HBM982.TPNQ.737 has a duplicate cell summary.
+HBM892.MXFF.848 has a duplicate cell summary.
+HBM839.TQNM.958 has a duplicate cell summary.
+HBM797.PDPS.368 has a duplicate cell summary.
+HBM773.WCXC.264 has a duplicate cell summary.
+HBM764.ZCQR.585 has a duplicate cell summary.
+HBM665.PTMR.889 has a duplicate cell summary.
+HBM578.SRZG.769 has a duplicate cell summary.
+HBM574.NFCS.842 has a duplicate cell summary.
+HBM537.LTFK.379 has a duplicate cell summary.
+HBM432.BPZM.698 has a duplicate cell summary.
+HBM399.TFTQ.282 has a duplicate cell summary.
+HBM382.HNKL.447 has a duplicate cell summary.
+HBM375.ZKZZ.765 has a duplicate cell summary.
+HBM358.KDDT.729 has a duplicate cell summary.
+HBM264.RWRW.668 has a duplicate cell summary.
+HBM224.GLDC.549 has a duplicate cell summary.
+Azimuth (L3) has a duplicate cell summary.
+ASCT+B has a duplicate cell summary.
+18-312 has a duplicate cell summary.
+18-162 has a duplicate cell summary.
+18-142 has a duplicate cell summary.
+
+real	0m4.713s
+user	0m1.560s
+sys	0m0.217s
+
+>> Running scripts/20-process-cell-summaries.sh...
+
+MERGED=$RAW_DIR/$VERSION/cell-summaries.jsonld
+node ./src/concatenate-jsonld.js $CELL_SUMMARIES $MERGED
+
+real	0m0.439s
+user	0m0.380s
+sys	0m0.060s
+
+>> Running scripts/30-process-publications.sh...
+
+PUBS_GRAPH=$RAW_DIR/$VERSION/publications-dataset-graph.jsonld
+node ./src/unflatten-dataset-graph.js $PUBLICATIONS $PUBS_GRAPH
+
+real	0m1.196s
+user	0m0.186s
+sys	0m0.024s
+
+>> Running scripts/40-normalize-dataset-graph.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+node ./src/flatten-dataset-graph.js \
+  $DIR/registrations-dataset-graph.jsonld \
+  $DIR/publications-dataset-graph.jsonld \
+  $DIR/cell-summary-dataset-graph.jsonld \
+  $DIR/full-dataset-graph.csv
+
+node ./src/unflatten-dataset-graph.js $DIR/full-dataset-graph.csv $DIR/full-dataset-graph.jsonld
+node ./src/flatten-dataset-graph.js $DIR/full-dataset-graph.jsonld $DIR/full-dataset-graph.csv
+
+real	0m0.847s
+user	0m0.762s
+sys	0m0.240s
+
+>> Running scripts/45-split-dataset-graph.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+node ./src/split-atlas-data.js \
+  $MINIMUM_DIAMONDS \
+  $DIR/full-dataset-graph.csv \
+  $DIR/cell-summaries.jsonld \
+  $DIR/atlas-dataset-graph.csv \
+  $DIR/atlas-lq-dataset-graph.csv \
+  $DIR/test-dataset-graph.csv \
+  $DIR/non-atlas-dataset-graph.csv
+
+node ./src/unflatten-dataset-graph.js $DIR/atlas-dataset-graph.csv $DIR/atlas-dataset-graph.jsonld
+node ./src/unflatten-dataset-graph.js $DIR/atlas-lq-dataset-graph.csv $DIR/atlas-lq-dataset-graph.jsonld
+node ./src/unflatten-dataset-graph.js $DIR/test-dataset-graph.csv $DIR/test-dataset-graph.jsonld
+
+real	0m1.096s
+user	0m1.187s
+sys	0m0.201s
+
+>> Running scripts/50-generate-as-cell-summaries.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+COLLISIONS=$DIR/collisions.jsonld
+SUMMARIES=$DIR/cell-summaries.jsonld
+
+node ./src/compute-as-cell-summaries.js $DIR/atlas-dataset-graph.csv $COLLISIONS $SUMMARIES $DIR/atlas-as-cell-summaries.jsonld
+node ./src/compute-as-cell-summaries.js $DIR/atlas-lq-dataset-graph.csv $COLLISIONS $SUMMARIES $DIR/atlas-lq-as-cell-summaries.jsonld
+
+real	0m0.521s
+user	0m0.423s
+sys	0m0.102s
+
+>> Running scripts/55-generate-extraction-site-cell-summaries.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+COLLISIONS=$DIR/collisions.jsonld
+SUMMARIES=$DIR/cell-summaries.jsonld
+
+node ./src/compute-extraction-site-cell-summaries.js $DIR/atlas-dataset-graph.csv \
+  $SUMMARIES $DIR/atlas-extraction-site-cell-summaries.jsonld
+node ./src/compute-extraction-site-cell-summaries.js $DIR/atlas-lq-dataset-graph.csv \
+  $SUMMARIES $DIR/atlas-lq-extraction-site-cell-summaries.jsonld
+
+node ./src/compute-extraction-site-as-cell-summaries.js $DIR/atlas-dataset-graph.csv \
+  $COLLISIONS $DIR/atlas-as-cell-summaries.jsonld $DIR/atlas-extraction-site-as-cell-summaries.jsonld
+node ./src/compute-extraction-site-as-cell-summaries.js $DIR/atlas-lq-dataset-graph.csv \
+  $COLLISIONS $DIR/atlas-lq-as-cell-summaries.jsonld $DIR/atlas-lq-extraction-site-as-cell-summaries.jsonld
+
+real	0m0.671s
+user	0m0.637s
+sys	0m0.088s
+
+>> Running scripts/58-compute-cell-summary-similarities.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+node ./src/compute-cell-summary-similarities.js $DIR/atlas-as-cell-summaries.jsonld \
+  $DIR/cell-summaries.jsonld $DIR/atlas-extraction-site-as-cell-summaries.jsonld \
+  $DIR/atlas-cell-summary-similarities.jsonl

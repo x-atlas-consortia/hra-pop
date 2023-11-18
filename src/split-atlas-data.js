@@ -5,13 +5,17 @@ const MINIMUM_DIAMONDS = parseInt(process.argv[2]);
 const FLAT_DATASET_GRAPH = process.argv[3];
 const CELL_SUMMARIES = process.argv[4];
 const ATLAS_DATA = process.argv[5];
-const NON_ATLAS_DATA = process.argv[6];
+const ATLAS_LQ_DATA = process.argv[6];
+const TEST_DATA = process.argv[7];
+const NON_ATLAS_DATA = process.argv[8];
 
 const summaries = JSON.parse(readFileSync(CELL_SUMMARIES).toString());
 const summaryLookup = new Set(summaries['@graph'].map((s) => s.cell_source));
 const { data } = Papa.parse(readFileSync(FLAT_DATASET_GRAPH).toString(), { header: true, skipEmptyLines: true });
 
 const atlasData = [];
+const atlasLqData = [];
+const testData = [];
 const nonAtlasData = [];
 
 for (const row of data) {
@@ -24,6 +28,12 @@ for (const row of data) {
   if (hasExtractionSite && hasCellSummary && (MINIMUM_DIAMONDS < maxDiamonds || hasPublication)) {
     atlasData.push(row);
   }
+  if (hasExtractionSite && hasCellSummary) {
+    atlasLqData.push(row);
+  }
+  if (hasExtractionSite || hasCellSummary) {
+    testData.push(row);
+  }
   if (diamonds < maxDiamonds) {
     nonAtlasData.push({
       diamonds,
@@ -34,4 +44,6 @@ for (const row of data) {
 nonAtlasData.sort((a, b) => b.diamonds - a.diamonds);
 
 writeFileSync(ATLAS_DATA, Papa.unparse(atlasData, { header: true }));
+writeFileSync(ATLAS_LQ_DATA, Papa.unparse(atlasLqData, { header: true }));
+writeFileSync(TEST_DATA, Papa.unparse(testData, { header: true }));
 writeFileSync(NON_ATLAS_DATA, Papa.unparse(nonAtlasData, { header: true }));

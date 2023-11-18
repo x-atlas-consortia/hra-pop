@@ -13,7 +13,7 @@ CCF=https://purl.humanatlas.io/graph/ccf
 
 run_ndjsonld() {
   QUADS=${1%.jsonld}.nq
-  zcat $1 | ndjsonld canonize - $QUADS -c ccf-context.jsonld 
+  ndjsonld canonize $1 $QUADS -c ccf-context.jsonld 
   blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
 }
 
@@ -28,16 +28,20 @@ run_jsonld $DIR/atlas-enriched-dataset-graph.jsonld $HRA_POP
 run_jsonld $DIR/atlas-as-cell-summaries.jsonld $HRA_POP
 
 # Atlas LQ
-run_jsonld $DIR/full-enriched-dataset-graph.jsonld $HRA_POP_LQ
-run_jsonld $DIR/full-as-cell-summaries.jsonld $HRA_POP_LQ
+run_jsonld $DIR/atlas-lq-enriched-dataset-graph.jsonld $HRA_POP_LQ
+run_jsonld $DIR/atlas-lq-as-cell-summaries.jsonld $HRA_POP_LQ
+
+# Test Data
+run_jsonld $DIR/test-dataset-graph.jsonld "${HRA_POP}#test-data"
+run_jsonld $DIR/test-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
 
 # Precomputed Atlas distances and similarities
-#run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP}#distances"
-#run_ndjsonld $DIR/atlas-cell-summary-similarities.jsonl.gz "${HRA_POP}#similarities"
+run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP}#distances"
+run_ndjsonld $DIR/atlas-cell-summary-similarities.jsonl "${HRA_POP}#similarities"
 
 # Precomputed Atlas LQ distances and similarities
-#run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP_LQ}#distances"
-#run_ndjsonld $DIR/full-cell-summary-similarities.jsonl.gz "${HRA_POP_LQ}#similarities"
+run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP_LQ}#distances"
+run_ndjsonld $DIR/atlas-lq-cell-summary-similarities.jsonl "${HRA_POP_LQ}#similarities"
 
 # Import CCF.OWL
 curl -s -H "Accept: text/turtle" -L $CCF > $DIR/ccf.ttl

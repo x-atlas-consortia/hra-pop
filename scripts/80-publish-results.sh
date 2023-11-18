@@ -12,8 +12,8 @@ rm -rf $OUT/*
 cp $DIR/atlas-enriched-dataset-graph.jsonld $OUT
 cp $DIR/atlas-as-cell-summaries.jsonld $OUT
 
-cp $DIR/full-enriched-dataset-graph.jsonld $OUT
-cp $DIR/full-as-cell-summaries.jsonld $OUT
+cp $DIR/atlas-lq-enriched-dataset-graph.jsonld $OUT
+cp $DIR/atlas-lq-as-cell-summaries.jsonld $OUT
 
 cp $DIR/non-atlas-dataset-graph.csv $OUT
 
