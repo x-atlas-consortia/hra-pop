@@ -1,4 +1,4 @@
-Run started on Fri Nov 17 11:10:30 PM EST 2023...
+Run started on Sat Nov 18 12:19:38 AM EST 2023...
 
 >> Running scripts/10-build-deprecated-registrations.sh...
 
@@ -7,9 +7,9 @@ if [ "${DEPRECATED_REGISTRATIONS}" ]; then
 fi
 Saved 403 datasets
 
-real	0m3.392s
-user	0m0.649s
-sys	0m0.099s
+real	0m15.688s
+user	0m0.556s
+sys	0m0.079s
 
 >> Running scripts/10-process-registrations.sh...
 
@@ -24,9 +24,9 @@ node ./src/get-collisions.js $MERGED $COLLISIONS
 WARNING 114 RUI locations had zero collisions
 node ./src/compute-extraction-site-distances.js $MERGED $DISTANCES
 
-real	2m59.540s
-user	0m15.358s
-sys	0m1.122s
+real	3m9.650s
+user	0m9.820s
+sys	0m0.885s
 
 >> Running scripts/11-build-deprecated-corridors.sh...
 
@@ -34,9 +34,9 @@ if [ "${DEPRECATED_CORRIDORS}" ]; then
   node ./src/gen-deprecated-corridors.js $DEPRECATED_CORRIDORS
 fi
 
-real	0m0.109s
-user	0m0.070s
-sys	0m0.014s
+real	0m0.078s
+user	0m0.058s
+sys	0m0.005s
 
 >> Running scripts/20-build-deprecated-cell-summaries.sh...
 
@@ -83,27 +83,27 @@ ASCT+B has a duplicate cell summary.
 18-162 has a duplicate cell summary.
 18-142 has a duplicate cell summary.
 
-real	0m4.713s
-user	0m1.560s
-sys	0m0.217s
+real	0m3.509s
+user	0m1.242s
+sys	0m0.138s
 
 >> Running scripts/20-process-cell-summaries.sh...
 
 MERGED=$RAW_DIR/$VERSION/cell-summaries.jsonld
 node ./src/concatenate-jsonld.js $CELL_SUMMARIES $MERGED
 
-real	0m0.439s
-user	0m0.380s
-sys	0m0.060s
+real	0m0.378s
+user	0m0.352s
+sys	0m0.043s
 
 >> Running scripts/30-process-publications.sh...
 
 PUBS_GRAPH=$RAW_DIR/$VERSION/publications-dataset-graph.jsonld
 node ./src/unflatten-dataset-graph.js $PUBLICATIONS $PUBS_GRAPH
 
-real	0m1.196s
-user	0m0.186s
-sys	0m0.024s
+real	0m1.081s
+user	0m0.129s
+sys	0m0.025s
 
 >> Running scripts/40-normalize-dataset-graph.sh...
 
@@ -118,9 +118,9 @@ node ./src/flatten-dataset-graph.js \
 node ./src/unflatten-dataset-graph.js $DIR/full-dataset-graph.csv $DIR/full-dataset-graph.jsonld
 node ./src/flatten-dataset-graph.js $DIR/full-dataset-graph.jsonld $DIR/full-dataset-graph.csv
 
-real	0m0.847s
-user	0m0.762s
-sys	0m0.240s
+real	0m0.691s
+user	0m0.678s
+sys	0m0.122s
 
 >> Running scripts/45-split-dataset-graph.sh...
 
@@ -139,9 +139,9 @@ node ./src/unflatten-dataset-graph.js $DIR/atlas-dataset-graph.csv $DIR/atlas-da
 node ./src/unflatten-dataset-graph.js $DIR/atlas-lq-dataset-graph.csv $DIR/atlas-lq-dataset-graph.jsonld
 node ./src/unflatten-dataset-graph.js $DIR/test-dataset-graph.csv $DIR/test-dataset-graph.jsonld
 
-real	0m1.096s
-user	0m1.187s
-sys	0m0.201s
+real	0m0.937s
+user	0m0.961s
+sys	0m0.127s
 
 >> Running scripts/50-generate-as-cell-summaries.sh...
 
@@ -150,12 +150,21 @@ DIR=$RAW_DIR/$VERSION
 COLLISIONS=$DIR/collisions.jsonld
 SUMMARIES=$DIR/cell-summaries.jsonld
 
-node ./src/compute-as-cell-summaries.js $DIR/atlas-dataset-graph.csv $COLLISIONS $SUMMARIES $DIR/atlas-as-cell-summaries.jsonld
-node ./src/compute-as-cell-summaries.js $DIR/atlas-lq-dataset-graph.csv $COLLISIONS $SUMMARIES $DIR/atlas-lq-as-cell-summaries.jsonld
+node ./src/compute-as-cell-summaries.js \
+  $DIR/atlas-dataset-graph.csv \
+  $COLLISIONS \
+  $SUMMARIES \
+  $DIR/atlas-as-cell-summaries.jsonld
 
-real	0m0.521s
-user	0m0.423s
-sys	0m0.102s
+node ./src/compute-as-cell-summaries.js \
+  $DIR/atlas-lq-dataset-graph.csv \
+  $COLLISIONS \
+  $SUMMARIES \
+  $DIR/atlas-lq-as-cell-summaries.jsonld
+
+real	0m0.432s
+user	0m0.388s
+sys	0m0.051s
 
 >> Running scripts/55-generate-extraction-site-cell-summaries.sh...
 
@@ -164,19 +173,28 @@ DIR=$RAW_DIR/$VERSION
 COLLISIONS=$DIR/collisions.jsonld
 SUMMARIES=$DIR/cell-summaries.jsonld
 
-node ./src/compute-extraction-site-cell-summaries.js $DIR/atlas-dataset-graph.csv \
+node ./src/compute-extraction-site-cell-summaries.js \
+  $DIR/atlas-dataset-graph.csv \
   $SUMMARIES $DIR/atlas-extraction-site-cell-summaries.jsonld
-node ./src/compute-extraction-site-cell-summaries.js $DIR/atlas-lq-dataset-graph.csv \
+
+node ./src/compute-extraction-site-cell-summaries.js \
+  $DIR/atlas-lq-dataset-graph.csv \
   $SUMMARIES $DIR/atlas-lq-extraction-site-cell-summaries.jsonld
 
-node ./src/compute-extraction-site-as-cell-summaries.js $DIR/atlas-dataset-graph.csv \
-  $COLLISIONS $DIR/atlas-as-cell-summaries.jsonld $DIR/atlas-extraction-site-as-cell-summaries.jsonld
-node ./src/compute-extraction-site-as-cell-summaries.js $DIR/atlas-lq-dataset-graph.csv \
-  $COLLISIONS $DIR/atlas-lq-as-cell-summaries.jsonld $DIR/atlas-lq-extraction-site-as-cell-summaries.jsonld
+node ./src/compute-extraction-site-as-cell-summaries.js \
+  $DIR/atlas-dataset-graph.csv \
+  $COLLISIONS $DIR/atlas-as-cell-summaries.jsonld \
+  $DIR/atlas-extraction-site-as-cell-summaries.jsonld
 
-real	0m0.671s
-user	0m0.637s
-sys	0m0.088s
+node ./src/compute-extraction-site-as-cell-summaries.js \
+  $DIR/atlas-lq-dataset-graph.csv \
+  $COLLISIONS \
+  $DIR/atlas-lq-as-cell-summaries.jsonld \
+  $DIR/atlas-lq-extraction-site-as-cell-summaries.jsonld
+
+real	0m0.534s
+user	0m0.446s
+sys	0m0.104s
 
 >> Running scripts/58-compute-cell-summary-similarities.sh...
 
@@ -184,4 +202,4 @@ DIR=$RAW_DIR/$VERSION
 
 node ./src/compute-cell-summary-similarities.js $DIR/atlas-as-cell-summaries.jsonld \
   $DIR/cell-summaries.jsonld $DIR/atlas-extraction-site-as-cell-summaries.jsonld \
-  $DIR/atlas-cell-summary-similarities.jsonl
+  $DIR/atlas-cell-summary-similarities.ttl

@@ -7,7 +7,6 @@ DIR=$RAW_DIR/$VERSION
 OUT=$OUTPUT_DIR/$VERSION
 
 mkdir -p $OUT
-rm -rf $OUT/*
 
 cp $DIR/atlas-enriched-dataset-graph.jsonld $OUT
 cp $DIR/atlas-as-cell-summaries.jsonld $OUT

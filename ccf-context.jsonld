@@ -9,14 +9,9 @@
       "@prefix": true
     },
     "ctpop": {
-      "@id": "https://purl.humanatlas.io/graph/ctpop#",
+      "@id": "https://purl.humanatlas.io/graph/hra-pop#",
       "@prefix": true
     },
-    "ctpop_datasets": {
-      "@id": "https://purl.humanatlas.io/graph/ctpop#datasets_",
-      "@prefix": true
-    },
-
     "as_3d_id": {
       "@type": "@id"
     },

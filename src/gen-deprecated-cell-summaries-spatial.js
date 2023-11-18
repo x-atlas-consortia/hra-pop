@@ -8,7 +8,7 @@ import { getHbmToUuidLookup } from './utils/hubmap-uuid-lookup.js';
 const OUTPUT = process.argv[2];
 const CSV_PATTERN = 'hra-ct-summaries-mx-spatial-data/**/cell_type_counts/*.csv';
 const MODALITY = 'spatial';
-const BASE_IRI = 'ctpop_datasets:';
+const BASE_IRI = 'https://purl.humanatlas.io/graph/hra-pop#datasets_';
 const HUBMAP_TOKEN = process.env.HUBMAP_TOKEN;
 
 // Check out the hra-ct-summaries-mx-spatial-data repo with spatial summary csv files

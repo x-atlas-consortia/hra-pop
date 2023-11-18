@@ -9,7 +9,7 @@ const FIELDS =
   'dataset_id,source,excluded_from_atlas_construction,paper_id,HuBMAP_tissue_block_id,sample_id,ccf_api_endpoint,CxG_dataset_id_donor_id_organ'.split(
     ','
   );
-const BASE_IRI = 'ctpop_datasets:';
+const BASE_IRI = 'https://purl.humanatlas.io/graph/hra-pop#datasets_';
 const OUTPUT = process.argv[2];
 const HUBMAP_TOKEN = process.env.HUBMAP_TOKEN;
 
