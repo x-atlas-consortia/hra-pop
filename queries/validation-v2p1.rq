@@ -1,0 +1,72 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+
+SELECT ?sample ?dataset ?modality ?organ ?organId ?as ?similarity ?as_in_collisions
+WHERE {
+  GRAPH ctpop-graph: {
+    ?sample ccf:generates_dataset ?dataset .
+    ?sample ccf:has_registration_location ?rui_location .
+
+    ?dataset ccf:has_cell_summary [
+      ccf:modality ?modality ;
+    ] .
+
+    [] a ccf:SpatialPlacement ;
+      ccf:placement_for ?rui_location ;
+      ccf:placement_relative_to ?refOrgan .
+  }
+
+  GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+    ?refOrgan ccf:representation_of ?organIri .
+    ?organIri rdfs:label ?organ .
+
+    BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+  }
+
+  {
+    GRAPH ctpop:similarities {
+      [] ccf:cell_source_a ?dataset ;
+         ccf:cell_source_b ?as ;
+         ccf:similarity ?similarity .
+
+      FILTER (
+        STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
+        STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
+      )
+    }
+  } UNION {
+    GRAPH ctpop:similarities {
+      [] ccf:cell_source_a ?as ;
+         ccf:cell_source_b ?dataset ;
+         ccf:similarity ?similarity .
+      
+      FILTER (
+        STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
+        STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
+      )
+    }
+  }
+
+  BIND (EXISTS {
+    GRAPH ctpop-graph: {
+      ?rui_location ccf:has_collision_summary [
+        ccf:has_collision_item [
+          ccf:as_id ?as
+        ]
+      ]
+    }
+  } as ?as_in_collisions)
+}
+ORDER BY ?sample

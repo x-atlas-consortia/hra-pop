@@ -1,0 +1,11 @@
+#+ summary: Count of Cells and unique Cell Types
+#+ description: Count of Cells and unique Cell Types that occur in the Enriched RUI Locations
+
+PREFIX ctpop: <https://cns-iu.github.io/hra-cell-type-populations-supporting-information/data/enriched_rui_locations.jsonld#>
+
+
+SELECT (COUNT(DISTINCT(?as_id)) as ?ct_cnt)
+FROM ctpop:graph
+WHERE {
+    ?dataset ccf:has_cell_summary ?summary
+}

@@ -1,0 +1,88 @@
+#+ summary: RUI Location Statistics
+#+ description: Various aggregate statistics around rui locations
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT
+	(COUNT(?rui_location) as ?rui_location_count)
+	(SUM(IF(?rui_location_collision_count = 1, 1, 0)) as ?rui_location_one_as_count)
+	(SUM(IF(?rui_location_ct_count = 0,1,0)) as ?rui_locations_no_ct)
+FROM ctpop-graph:
+FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
+WHERE {
+	
+  	{ # Subquery from https://triplydb.com/bherr/-/queries/rui-location-counts
+      SELECT ?rui_location 
+      (COALESCE(?rui_location_dataset_count,0) as ?rui_location_dataset_count)
+      (COALESCE(?rui_location_collision_count,0) as ?rui_location_collision_count)
+      (COALESCE(?rui_location_ct_count, 0) as ?rui_location_ct_count)
+      (COALESCE(?rui_location_hra_ct_count,0) as ?rui_location_hra_ct_count)
+      WHERE {
+        # Select all rui locations
+        ?rui_location a ccf:SpatialEntity .
+        ?sample ccf:has_registration_location ?rui_location .
+
+        OPTIONAL
+        { # Get number of collisions per rui location
+          SELECT ?rui_location (COUNT(DISTINCT(?as_label)) as ?rui_location_collision_count)
+          WHERE {
+            ?rui_location a ccf:SpatialEntity .
+            ?rui_location ccf:has_collision_summary [
+                ccf:has_collision_item [
+                  ccf:as_label ?as_label ;
+                  ccf:as_volume ?as_volume ;
+                  ccf:has_reference_organ ?ref_organ ;
+                  ]
+            ] .
+          }
+          GROUP BY ?rui_location
+        }
+        OPTIONAL
+        { # Get number of cell types and hra cell types per rui location
+          SELECT ?rui_location (COUNT(DISTINCT(?cell_label)) as ?rui_location_ct_count) (COUNT(DISTINCT(?hra_ct_id)) as ?rui_location_hra_ct_count)
+          WHERE {
+            ?dataset a ccf:Dataset .
+            ?dataset ccf:has_cell_summary [
+                ccf:has_cell_summary_row [
+                  ccf:cell_id ?cell_id ;
+                  ccf:cell_label ?cell_label ;
+                  ccf:cell_count ?cell_count ;
+                  ]
+            ] .
+            ?sample ccf:generates_dataset ?dataset .
+            ?sample ccf:has_registration_location ?rui_location .
+
+            OPTIONAL {
+              ?hra_ct_id rdfs:label ?hra_ct_label .
+              FILTER (?hra_ct_id = ?cell_id)
+              # FILTER (?hra_ct_id = ?cell_id || ?hra_ct_label = ?cell_label)
+            }
+          }
+          GROUP BY ?rui_location
+        }
+        OPTIONAL
+        { # Get number of datasets associated with a RUI location
+          SELECT ?rui_location (COUNT(DISTINCT(?dataset)) as ?rui_location_dataset_count)
+          WHERE {
+            ?dataset a ccf:Dataset .
+            ?sample ccf:generates_dataset ?dataset .
+            ?sample ccf:has_registration_location ?rui_location .
+          }
+          GROUP BY ?rui_location
+        }
+      }
+      # GROUP BY ?rui_location
+    }
+}

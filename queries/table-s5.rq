@@ -1,0 +1,43 @@
+#+ summary: Table S5
+#+ description: RUI Location - Anatomical Structure intersections
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?rui_location ?organ ?as_label ?as_id ?intersection_volume ?as_volume ?tissue_block_volume
+FROM ctpop-graph:
+WHERE {
+
+	    # Get tissue block volume
+      ?rui_location a ccf:SpatialEntity ;
+        ccf:x_dimension ?rui_x ;
+        ccf:y_dimension ?rui_y ;
+        ccf:z_dimension ?rui_z .
+
+      BIND(?rui_x * ?rui_y * ?rui_z as ?tissue_block_volume)
+    
+    ?rui_location a ccf:SpatialEntity .
+    ?rui_location ccf:has_collision_summary [
+    	ccf:has_collision_item [
+        	ccf:as_id ?as_id ;
+         	ccf:as_label ?as_label ;
+					ccf:as_volume ?as_volume ;
+					ccf:has_reference_organ ?ref_organ ;
+					ccf:percentage_of_total ?percentage ;
+    	]
+    ]
+		BIND (?tissue_block_volume * ?percentage as ?intersection_volume)
+  	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
+}
+ORDER BY ?organ ?rui_location DESC(?as_volume)

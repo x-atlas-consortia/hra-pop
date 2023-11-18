@@ -1,0 +1,89 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?dataset ?reported_organ ?as (?shared_ds_cell_types / ?total_ds_cell_types as ?pct_hra_ct_overlap)
+WHERE {
+  { 
+    SELECT ?dataset  ?reported_organ
+    WHERE {
+      GRAPH ctpop:datasets {
+        ?dataset a ccf:Dataset ;
+          ctpop:reported_organ ?reported_organ
+        .
+      }
+      
+      # Filter out datasets used in atlas construction
+      FILTER(NOT EXISTS {
+        GRAPH ctpop-graph: {
+          [] ccf:generates_dataset ?dataset .
+        }
+      })
+    }
+  }
+
+  {
+    SELECT ?dataset (COUNT(DISTINCT(?dataset_cell_label)) as ?total_ds_cell_types)
+    WHERE {
+      GRAPH ctpop:datasets {
+        ?dataset ccf:has_cell_summary [
+            ccf:has_cell_summary_row [
+                ccf:cell_label ?dataset_cell_label ;
+            ]
+        ] .
+      }
+    }
+    GROUP BY ?dataset
+  }
+
+  {
+    SELECT ?dataset ?as (COUNT(DISTINCT(?cell_label)) as ?shared_ds_cell_types)
+    WHERE {
+      GRAPH ctpop:datasets {
+        ?dataset ccf:has_cell_summary [
+            ccf:has_cell_summary_row [
+                ccf:cell_id ?cell_id ;
+                ccf:cell_label ?cell_label ;
+            ]
+        ] .
+
+        GRAPH ctpop-graph: {
+          ?as ccf:has_cell_summary [] .
+        }
+
+        FILTER(
+          STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
+          STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
+        )
+      }
+
+      GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+        ?as ccf:ccf_asctb_type ?type .
+        FILTER (?type = 'AS')
+      }
+
+      FILTER(EXISTS {
+        GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+          ?cell_id ccf:ccf_asctb_type [] .
+        }
+      } || EXISTS {
+        GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+          [] ccf:ccf_asctb_type [] ;
+            rdfs:label ?cell_label .
+        }
+      })
+    }
+    GROUP BY ?dataset ?as
+  }
+}
+ORDER BY ?dataset DESC(?pct_hra_ct_overlap)

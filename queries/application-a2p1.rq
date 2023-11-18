@@ -1,0 +1,60 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+
+SELECT ?dataset ?reported_organ ?as ?similarity
+WHERE {
+  { 
+    SELECT ?dataset ?reported_organ
+    WHERE {
+      GRAPH ctpop:datasets {
+        ?dataset a ccf:Dataset ;
+          ctpop:reported_organ ?reported_organ
+        .
+      }
+      
+      # Filter out datasets used in atlas construction
+      FILTER(NOT EXISTS {
+        GRAPH ctpop-graph: {
+          [] ccf:generates_dataset ?dataset .
+        }
+      })
+    }
+  }
+
+  {
+    GRAPH ctpop:similarities {
+      [] ccf:cell_source_a ?dataset ;
+         ccf:cell_source_b ?as ;
+         ccf:similarity ?similarity .
+
+      FILTER (
+        STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
+        STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
+      )
+    }
+  } UNION {
+    GRAPH ctpop:similarities {
+      [] ccf:cell_source_a ?as ;
+         ccf:cell_source_b ?dataset ;
+         ccf:similarity ?similarity .
+      
+      FILTER (
+        STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
+        STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
+      )
+    }
+  }
+}
+ORDER BY ?dataset

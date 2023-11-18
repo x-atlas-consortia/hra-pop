@@ -1,0 +1,49 @@
+#+ summary: Table S4
+#+ description: (Spatial) Anatomical Structures in HRA v1.3, cell types, and average/sum counts of CTs
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT ?organ ?as_label ?cell_label
+	(SAMPLE(?cell_id) as ?cell_id)
+	(AVG(?cell_count) as ?mean_cell_count)
+	(SUM(?cell_count) as ?cell_count)
+FROM ctpop-graph:
+WHERE {
+	?dataset a ccf:Dataset .
+    ?dataset ccf:has_cell_summary [
+			ccf:modality ?modality ;
+  		ccf:has_cell_summary_row [
+        	ccf:cell_id ?cell_id ;
+			ccf:cell_label ?cell_label	;
+   			ccf:cell_count ?cell_count ;
+        ] ;
+      ] .
+    ?sample ccf:generates_dataset ?dataset .
+    ?sample ccf:has_registration_location ?rui_location .
+  
+    ?rui_location a ccf:SpatialEntity .
+    ?rui_location ccf:has_collision_summary [
+    	ccf:has_collision_item [
+        	ccf:as_id ?as_id ;
+         	ccf:as_label ?as_label ;
+            ccf:as_volume ?as_volume ;
+            ccf:has_reference_organ ?ref_organ ;
+    	]
+    ]
+  	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
+		FILTER (?modality = 'spatial')
+}
+GROUP BY ?organ ?as_label ?cell_label
+ORDER BY ?organ ?as_label ?cell_label

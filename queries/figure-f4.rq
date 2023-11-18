@@ -1,0 +1,47 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+# 3d ref organ | #meshes tagged with UBERON ID | total number of tissue blocks | sex | number of datasets
+SELECT
+	?organId
+    ?organ
+    ?sex
+    (COUNT(DISTINCT(?refOrganAs)) as ?organ_as_count)
+    (COUNT(DISTINCT(?rui_location)) as ?rui_location_count)
+	(COUNT(DISTINCT(?dataset)) as ?dataset_count)
+FROM ctpop-graph:
+WHERE {
+  GRAPH ctpop-graph: {
+    ?sample ccf:has_registration_location ?rui_location ;
+            ccf:generates_dataset ?dataset .
+
+    [] a ccf:SpatialPlacement ;
+      ccf:placement_for ?rui_location ;
+      ccf:placement_relative_to ?refOrgan .
+  }
+
+  GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+    ?refOrgan ccf:has_reference_organ ?refOrgan ;
+    		  ccf:representation_of ?organIri ;
+          ccf:organ_owner_sex ?sex .
+    
+    ?refOrganAs ccf:has_reference_organ ?refOrgan .
+
+    ?organIri rdfs:label ?organ .
+    BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+    FILTER(?refOrganAs != ?refOrgan)
+  }
+}
+GROUP BY ?organId ?organ ?sex
+ORDER BY ?organ ?sex
