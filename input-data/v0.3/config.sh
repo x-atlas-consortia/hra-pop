@@ -1,5 +1,4 @@
 VERSION="v0.3"
-MINIMUM_DIAMONDS=3 # Set to 3 when we have enough publications
 
 DEPRECATED_SPATIAL_CELL_SUMMARIES=input-data/${VERSION}/spatial-cell-summaries.jsonld
 DEPRECATED_BULK_CELL_SUMMARIES=input-data/${VERSION}/bulk-cell-summaries.jsonld

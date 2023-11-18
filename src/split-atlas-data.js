@@ -1,13 +1,12 @@
 import { readFileSync, writeFileSync } from 'fs';
 import Papa from 'papaparse';
 
-const MINIMUM_DIAMONDS = parseInt(process.argv[2]);
-const FLAT_DATASET_GRAPH = process.argv[3];
-const CELL_SUMMARIES = process.argv[4];
-const ATLAS_DATA = process.argv[5];
-const ATLAS_LQ_DATA = process.argv[6];
-const TEST_DATA = process.argv[7];
-const NON_ATLAS_DATA = process.argv[8];
+const FLAT_DATASET_GRAPH = process.argv[2];
+const CELL_SUMMARIES = process.argv[3];
+const ATLAS_DATA = process.argv[4];
+const ATLAS_LQ_DATA = process.argv[5];
+const TEST_DATA = process.argv[6];
+const NON_ATLAS_DATA = process.argv[7];
 
 const summaries = JSON.parse(readFileSync(CELL_SUMMARIES).toString());
 const summaryLookup = new Set(summaries['@graph'].map((s) => s.cell_source));
@@ -25,15 +24,19 @@ for (const row of data) {
   const maxDiamonds = 3;
   const diamonds = (hasExtractionSite ? 1 : 0) + (hasCellSummary ? 1 : 0) + (hasPublication ? 1 : 0);
 
-  if (hasExtractionSite && hasCellSummary && (MINIMUM_DIAMONDS < maxDiamonds || hasPublication)) {
+  // Find the highest quality datasets for the atlas
+  if (hasExtractionSite && hasCellSummary && hasPublication) {
     atlasData.push(row);
   }
+  // Find datasets that have both an extraction site and a cell summary
   if (hasExtractionSite && hasCellSummary) {
     atlasLqData.push(row);
   }
-  if (hasExtractionSite || hasCellSummary) {
+  // Find datasets that have either a cell summary or an extraction site (but not the other)
+  if ((hasExtractionSite && !hasCellSummary) || (hasCellSummary && !hasExtractionSite)) {
     testData.push(row);
   }
+  // Output all datasets that need more data to be included in the atlas
   if (diamonds < maxDiamonds) {
     nonAtlasData.push({
       diamonds,

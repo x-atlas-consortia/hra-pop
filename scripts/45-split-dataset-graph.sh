@@ -6,7 +6,6 @@ set -ev
 DIR=$RAW_DIR/$VERSION
 
 node ./src/split-atlas-data.js \
-  $MINIMUM_DIAMONDS \
   $DIR/full-dataset-graph.csv \
   $DIR/cell-summaries.jsonld \
   $DIR/atlas-dataset-graph.csv \
