@@ -4,10 +4,10 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
@@ -15,7 +15,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT ?sample ?rui_location ?dataset ?modality ?organ ?organId (?rui as ?corridor) ?similarity ?distance 
 WHERE {
-  GRAPH ctpop-graph: {
+  GRAPH HRApop: {
     ?sample ccf:generates_dataset ?dataset .
     ?sample ccf:has_registration_location ?rui_location .
     [] ccf:has_registration_location ?rui .
@@ -31,7 +31,7 @@ WHERE {
     FILTER (?rui != ?rui_location)
   }
 
-  GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+  GRAPH CCF: {
     ?refOrgan ccf:representation_of ?organIri .
     ?organIri rdfs:label ?organ .
 
@@ -39,14 +39,14 @@ WHERE {
   }
 
   {
-    GRAPH ctpop:distances {
+    GRAPH hra-pop:distances {
       [] a ccf:SpatialEntityDistance;
         ccf:entity_a ?rui ;
         ccf:entity_b ?rui_location ;
         ccf:distance ?distance1 .
     }
   } UNION {
-    GRAPH ctpop:distances {
+    GRAPH hra-pop:distances {
       [] a ccf:SpatialEntityDistance;
         ccf:entity_a ?rui_location ;
         ccf:entity_b ?rui ;
@@ -55,13 +55,13 @@ WHERE {
   }
 
   {
-    GRAPH ctpop:similarities {
+    GRAPH hra-pop:similarities {
       [] ccf:cell_source_a ?dataset ;
          ccf:cell_source_b ?rui ;
          ccf:similarity ?similarity1 .
     }
   } UNION {
-    GRAPH ctpop:similarities {
+    GRAPH hra-pop:similarities {
       [] ccf:cell_source_a ?rui ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity1 .

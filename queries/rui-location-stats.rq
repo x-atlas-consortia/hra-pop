@@ -7,10 +7,10 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
@@ -19,8 +19,8 @@ SELECT
 	(COUNT(?rui_location) as ?rui_location_count)
 	(SUM(IF(?rui_location_collision_count = 1, 1, 0)) as ?rui_location_one_as_count)
 	(SUM(IF(?rui_location_ct_count = 0,1,0)) as ?rui_locations_no_ct)
-FROM ctpop-graph:
-FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
+FROM HRApop:
+FROM CCF:
 WHERE {
 	
   	{ # Subquery from https://triplydb.com/bherr/-/queries/rui-location-counts

@@ -18,3 +18,10 @@ node ./src/enrich-dataset-graph.js \
   $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
   $DIR/atlas-lq-extraction-site-cell-summaries.jsonld \
   $DIR/atlas-lq-enriched-dataset-graph.jsonld
+
+node ./src/enrich-dataset-graph.js \
+  $DIR/test-dataset-graph.jsonld \
+  $DIR/collisions.jsonld \
+  $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
+  $DIR/test-extraction-site-cell-summaries.jsonld \
+  $DIR/test-enriched-dataset-graph.jsonld

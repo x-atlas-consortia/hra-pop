@@ -4,10 +4,10 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
@@ -15,7 +15,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT ?sample ?rui_location ?dataset ?modality ?organ ?organId ?similarity
 WHERE {
-  GRAPH ctpop-graph: {
+  GRAPH HRApop: {
     ?sample ccf:generates_dataset ?dataset .
     ?sample ccf:has_registration_location ?rui_location .
 
@@ -32,14 +32,14 @@ WHERE {
     BIND(IF(STR(?dataset) < STR(?rui_location), ?dataset, ?rui_location) as ?target)
   }
 
-  GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+  GRAPH CCF: {
     ?refOrgan ccf:representation_of ?organIri .
     ?organIri rdfs:label ?organ .
 
     BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
   }
 
-  GRAPH ctpop:similarities {
+  GRAPH hra-pop:similarities {
     ?edge ccf:cell_source_a ?source ;
           ccf:cell_source_b ?target ;
           ccf:similarity ?similarity .

@@ -4,12 +4,13 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#graph>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#graph>
 PREFIX iftu: <https://hubmapconsortium.github.io/hra-ui/apps/ftu-ui/assets/TEMP/2d-ftu-illustrations.jsonld>
 
 SELECT ?provider (COUNT(DISTINCT(?dataset)) as ?dataset_count) (SUM(?cell_count) as ?cell_count)
-FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
-FROM ctpop:
+FROM CCF:
+FROM hra-pop:
 WHERE {
   ?donor
     ccf:consortium_name ?consortium ;

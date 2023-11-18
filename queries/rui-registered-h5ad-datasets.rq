@@ -7,16 +7,16 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT (COUNT(DISTINCT ?dataset) as ?rui_registered_h5ad_datasets) 
-FROM ctpop-graph:
+FROM HRApop:
 WHERE {
   ?rui_location a ccf:SpatialEntity .
   ?dataset a ccf:Dataset .

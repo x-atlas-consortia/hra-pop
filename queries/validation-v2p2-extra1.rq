@@ -4,10 +4,10 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
@@ -18,7 +18,7 @@ WHERE {
   {
     SELECT ?as ?modality (COUNT(DISTINCT(?cell_label)) as ?total_as_cell_types)
     WHERE {
-      GRAPH ctpop-graph: {
+      GRAPH HRApop: {
         ?as ccf:has_cell_summary [
             ccf:modality ?modality ;
             ccf:has_cell_summary_row [
@@ -32,7 +32,7 @@ WHERE {
         )
       }
 
-      GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+      GRAPH CCF: {
         ?as ccf:ccf_asctb_type ?type .
         FILTER (?type = 'AS')
       }
@@ -43,7 +43,7 @@ WHERE {
   {
     SELECT ?as ?modality (COUNT(DISTINCT(?cell_label)) as ?shared_as_cell_types)
     WHERE {
-      GRAPH ctpop-graph: {
+      GRAPH HRApop: {
         ?as ccf:has_cell_summary [
             ccf:modality ?modality ;
             ccf:has_cell_summary_row [
@@ -58,17 +58,17 @@ WHERE {
         )
       }
 
-      GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+      GRAPH CCF: {
         ?as ccf:ccf_asctb_type ?type .
         FILTER (?type = 'AS')
       }
 
       FILTER(EXISTS {
-        GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+        GRAPH CCF: {
           ?cell_id ccf:ccf_asctb_type [] .
         }
       } || EXISTS {
-        GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+        GRAPH CCF: {
           [] ccf:ccf_asctb_type [] ;
             rdfs:label ?cell_label .
         }

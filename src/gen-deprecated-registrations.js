@@ -166,9 +166,9 @@ for (const dataset of allDatasets) {
     }
     const donor = donors[donorId];
     Object.assign(donor, {
-      'ctpop:portal': dataset.source,
+      consortium_name: dataset.source,
       'ctpop:cellxgene_development_stage': dataset.development_stage || undefined,
-      'ctpop:donor_race': dataset.donor_race || undefined,
+      race: dataset.donor_race || undefined,
       bmi: dataset.donor_body_mass_index_value || donor.bmi || undefined,
     });
 
@@ -211,15 +211,15 @@ for (const dataset of allDatasets) {
       };
     }
     Object.assign(hraDataset, {
-      'ctpop:study_paper': dataset.paper_title || undefined,
-      'ctpop:doi': dataset.doi || undefined,
-      'ctpop:lead_author': dataset.lead_author || undefined,
+      'publication_title': dataset.paper_title || undefined,
+      'publication': dataset.doi || undefined,
+      'publication_lead_author': dataset.lead_author || undefined,
+      'reported_organ': dataset.organ || undefined,
       'ctpop:is_azimuth_reference': dataset.is_azimuth_reference === 'TRUE' ? 'True' : undefined,
       'ctpop:omap_id': dataset.omap_id || undefined,
       'ctpop:hubmap_dataset_publication_status': dataset.HuBMAP_publication_status || undefined,
       'ctpop:excluded_from_atlas_construction': '' + dataset.excluded_from_atlas_construction === 'TRUE',
       'ctpop:reason_for_exclusion': dataset.reason_for_exclusion || undefined,
-      'ctpop:reported_organ': dataset.organ || undefined,
     });
     block.datasets.push(hraDataset);
     datasets[hraDataset['@id']] = hraDataset;

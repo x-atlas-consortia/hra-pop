@@ -4,10 +4,10 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
@@ -22,14 +22,14 @@ SELECT DISTINCT
   ?cell_id
   ?cell_label
   ?percentage
-FROM ctpop-graph:
+FROM HRApop:
 WHERE {
-  GRAPH ctpop-graph: {
+  GRAPH HRApop: {
     ?entity a ccf:SpatialEntity .
     ?sample ccf:has_registration_location ?entity ;
              ccf:generates_dataset ?dataset .
     
-    ?dataset ctpop:reported_organ ?reported_organ .
+    ?dataset ccf:organ_id ?reported_organ .
     
     ?entity ccf:x_dimension ?x ;
             ccf:y_dimension ?y ;
@@ -47,13 +47,13 @@ WHERE {
     BIND(REPLACE(REPLACE(STR(?cell_iri), STR(CL:), 'CL:'), STR(ASCTB-TEMP:), 'ASCTB-TEMP:') as ?cell_id)
   }
 
-  GRAPH ctpop-graph: {
+  GRAPH HRApop: {
     [] a ccf:SpatialPlacement ;
         ccf:placement_for ?entity ;
         ccf:placement_relative_to ?refOrgan .
   }
 
-  GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+  GRAPH CCF: {
     ?refOrgan ccf:representation_of ?organIri .
     ?organIri rdfs:label ?organ .
 

@@ -4,17 +4,17 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT DISTINCT ?sample ?dataset ?modality ?organ ?organId ?as (?shared_ds_cell_types / ?total_ds_cell_types as ?pct_hra_ct_overlap) ?as_in_collisions
 WHERE {
-  GRAPH ctpop-graph: {
+  GRAPH HRApop: {
     ?sample ccf:generates_dataset ?dataset .
     ?sample ccf:has_registration_location ?rui_location .
 
@@ -27,7 +27,7 @@ WHERE {
       ccf:placement_relative_to ?refOrgan .
   }
 
-  GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+  GRAPH CCF: {
     ?refOrgan ccf:representation_of ?organIri .
     ?organIri rdfs:label ?organ .
 
@@ -37,7 +37,7 @@ WHERE {
   {
     SELECT ?dataset (COUNT(DISTINCT(?dataset_cell_label)) as ?total_ds_cell_types)
     WHERE {
-      GRAPH ctpop-graph: {
+      GRAPH HRApop: {
         ?dataset ccf:has_cell_summary [
             ccf:has_cell_summary_row [
                 ccf:cell_label ?dataset_cell_label ;
@@ -51,7 +51,7 @@ WHERE {
   {
     SELECT ?dataset ?as (COUNT(DISTINCT(?cell_label)) as ?shared_ds_cell_types)
     WHERE {
-      GRAPH ctpop-graph: {
+      GRAPH HRApop: {
         ?dataset ccf:has_cell_summary [
             ccf:has_cell_summary_row [
                 ccf:cell_id ?cell_id ;
@@ -67,17 +67,17 @@ WHERE {
         )
       }
 
-      GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+      GRAPH CCF: {
         ?as ccf:ccf_asctb_type ?type .
         FILTER (?type = 'AS')
       }
 
       FILTER(EXISTS {
-        GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+        GRAPH CCF: {
           ?cell_id ccf:ccf_asctb_type [] .
         }
       } || EXISTS {
-        GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+        GRAPH CCF: {
           [] ccf:ccf_asctb_type [] ;
             rdfs:label ?cell_label .
         }
@@ -87,7 +87,7 @@ WHERE {
   }
 
   BIND (EXISTS {
-    GRAPH ctpop-graph: {
+    GRAPH HRApop: {
       ?rui_location ccf:has_collision_summary [
         ccf:has_collision_item [
           ccf:as_id ?as

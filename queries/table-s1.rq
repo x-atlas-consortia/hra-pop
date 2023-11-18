@@ -7,10 +7,10 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
@@ -24,7 +24,7 @@ SELECT DISTINCT
   (STRAFTER(STR(?donor), '#') as ?donor_id)
   ?donor_sex
   ?donor_age
-  ?cellxgene_development_stage
+  ?donor_development_stage
   ?donor_race
   ?donor_bmi
   ?organ_name
@@ -37,7 +37,6 @@ SELECT DISTINCT
   ?list_of_colliding_anatomical_structures_mesh
   ?list_of_colliding_anatomical_structures_bb_ids
   ?list_of_colliding_anatomical_structures_mesh_ids
-  ?rui_location_source_url
   (STRAFTER(STR(?dataset), '#') as ?dataset_id)
   (STRAFTER(STR(?dataset), '#') as ?unique_dataset_id)
   (?dataset_link as ?link_to_raw_data)
@@ -47,8 +46,8 @@ SELECT DISTINCT
   ?number_of_cells_total
   ?number_of_unique_cell_types
   ?hubmap_dataset_publication_status
-FROM ctpop-graph:
-FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
+FROM HRApop:
+FROM CCF:
 WHERE {
 
   # Relationships 
@@ -58,12 +57,11 @@ WHERE {
   # Data extracted from Donors
   {
     ?donor a ccf:Donor ;
-      ctpop:portal ?portal ;
-      ccf:consortium_name ?consortium ;
+      ccf:consortium_name ?portal ;
       ccf:tissue_provider_name ?tissue_provider .
 
-    OPTIONAL { ?donor ctpop:cellxgene_development_stage ?cellxgene_development_stage . } .
-    OPTIONAL { ?donor ctpop:donor_race ?donor_race . } .
+    OPTIONAL { ?donor ccf:development_stage ?donor_development_stage . } .
+    OPTIONAL { ?donor ccf:race ?donor_race . } .
     OPTIONAL { ?donor ccf:sex ?donor_sex . } .
     OPTIONAL { ?donor ccf:age ?donor_age . } .
     OPTIONAL { ?donor ccf:bmi ?donor_bmi . } .
@@ -83,9 +81,7 @@ WHERE {
       BIND(?rui_x * ?rui_y * ?rui_z as ?tissue_block_volume)
     }
 
-    OPTIONAL { ?rui_location ctpop:rui_location_source_url ?rui_location_source_url . }
-
-        # RUI Location Placement
+    # RUI Location Placement
     {
       ?placement a ccf:SpatialPlacement ;
         ccf:placement_for ?rui_location ;
@@ -157,14 +153,14 @@ WHERE {
       ccf:url ?dataset_link .
   }
 
-  OPTIONAL { ?dataset ctpop:study_paper ?study_paper . }
-  OPTIONAL { ?dataset ctpop:doi ?doi . }
-  OPTIONAL { ?dataset ctpop:lead_author ?lead_author . }
-  OPTIONAL { ?dataset ctpop:is_azimuth_reference ?is_azimuth_reference . }
-  OPTIONAL { ?dataset ctpop:omap_id ?omap_id . }
-  OPTIONAL { ?dataset ctpop:hubmap_dataset_publication_status ?hubmap_dataset_publication_status . }
-  OPTIONAL { ?dataset ctpop:excluded_from_atlas_construction ?excluded_from_atlas_construction . }
-  OPTIONAL { ?dataset ctpop:reason_for_exclusion ?reason_for_exclusion . }
+  OPTIONAL { ?dataset ccf:publication_title ?study_paper . }
+  OPTIONAL { ?dataset ccf:publication ?doi . }
+  OPTIONAL { ?dataset ccf:publication_lead_author ?lead_author . }
+  OPTIONAL { ?dataset hra-pop:is_azimuth_reference ?is_azimuth_reference . }
+  OPTIONAL { ?dataset hra-pop:omap_id ?omap_id . }
+  OPTIONAL { ?dataset hra-pop:hubmap_dataset_publication_status ?hubmap_dataset_publication_status . }
+  OPTIONAL { ?dataset hra-pop:excluded_from_atlas_construction ?excluded_from_atlas_construction . }
+  OPTIONAL { ?dataset hra-pop:reason_for_exclusion ?reason_for_exclusion . }
 
   # Dataset Cell Summary
   OPTIONAL {

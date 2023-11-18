@@ -4,10 +4,10 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
@@ -22,17 +22,17 @@ WHERE {
   # Get CTs only in ASCT+B
   {
     SELECT DISTINCT ?modality ?asctb {
-      GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+      GRAPH CCF: {
         ?asctb ccf:ccf_asctb_type ?type .
       }
-      GRAPH ctpop-graph: {
+      GRAPH HRApop: {
         [] ccf:has_cell_summary [
             ccf:modality ?modality ;
         ]
       }
       FILTER (?type = 'CT')
       FILTER NOT EXISTS {
-        GRAPH ctpop-graph: {
+        GRAPH HRApop: {
           [] ccf:has_cell_summary [
             ccf:modality ?modality ;
             ccf:has_cell_summary_row [
@@ -47,7 +47,7 @@ WHERE {
   # Get CTs only in Experimental Data
   {
     SELECT DISTINCT ?modality ?exp {
-      GRAPH ctpop-graph: {
+      GRAPH HRApop: {
         [] ccf:has_cell_summary [
           ccf:modality ?modality ;
           ccf:has_cell_summary_row [
@@ -56,7 +56,7 @@ WHERE {
         ] .
       }
       FILTER NOT EXISTS {
-        GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl>{
+        GRAPH CCF:{
           ?exp ccf:ccf_asctb_type ?type .
         }
         FILTER (?type = 'CT')
@@ -67,10 +67,10 @@ WHERE {
   # Get CTs in Both
   {
     SELECT DISTINCT ?modality ?both {
-      GRAPH <https://purl.org/ccf/releases/2.2.1/ccf.owl> {
+      GRAPH CCF: {
         ?both ccf:ccf_asctb_type ?type .
       }
-      GRAPH ctpop-graph: {
+      GRAPH HRApop: {
         [] ccf:has_cell_summary [
             ccf:modality ?modality ;
         ]
@@ -78,7 +78,7 @@ WHERE {
       FILTER (?type = 'CT')
       FILTER EXISTS {
         SELECT ?modality ?both {
-          GRAPH ctpop-graph: {
+          GRAPH HRApop: {
             [] ccf:has_cell_summary [
               ccf:modality ?modality ;
               ccf:has_cell_summary_row [

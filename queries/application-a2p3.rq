@@ -4,10 +4,10 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
-PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
@@ -18,15 +18,15 @@ WHERE {
   { 
     SELECT ?dataset ?reported_organ
     WHERE {
-      GRAPH ctpop:datasets {
+      GRAPH hra-pop:test-data {
         ?dataset a ccf:Dataset ;
-          ctpop:reported_organ ?reported_organ
+          ccf:organ_id ?reported_organ
         .
       }
       
       # Filter out datasets used in atlas construction
       FILTER(NOT EXISTS {
-        GRAPH ctpop-graph: {
+        GRAPH HRApop: {
           [] ccf:generates_dataset ?dataset .
         }
       })
@@ -34,7 +34,7 @@ WHERE {
   }
 
   {
-    GRAPH ctpop:similarities {
+    GRAPH hra-pop:similarities {
       [] ccf:cell_source_a ?dataset ;
          ccf:cell_source_b ?rui ;
          ccf:similarity ?similarity .
@@ -42,7 +42,7 @@ WHERE {
       FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/'))
     }
   } UNION {
-    GRAPH ctpop:similarities {
+    GRAPH hra-pop:similarities {
       [] ccf:cell_source_a ?rui ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .

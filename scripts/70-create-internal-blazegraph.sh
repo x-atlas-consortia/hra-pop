@@ -10,6 +10,7 @@ rm -f $JNL
 HRA_POP=https://purl.humanatlas.io/graph/hra-pop
 HRA_POP_LQ=https://purl.humanatlas.io/graph/hra-pop-lq
 CCF=https://purl.humanatlas.io/graph/ccf
+CCF_OWL=https://ccf-ontology.hubmapconsortium.org/v2.2.1/ccf.owl
 
 run_ndjsonld() {
   QUADS=${1%.jsonld}.nq
@@ -32,8 +33,8 @@ run_jsonld $DIR/atlas-lq-enriched-dataset-graph.jsonld $HRA_POP_LQ
 run_jsonld $DIR/atlas-lq-as-cell-summaries.jsonld $HRA_POP_LQ
 
 # Test Data
-run_jsonld $DIR/test-dataset-graph.jsonld "${HRA_POP}#test-data"
-run_jsonld $DIR/test-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
+run_jsonld $DIR/test-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
+run_jsonld $DIR/test-enriched-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
 
 # Precomputed Atlas distances and similarities
 run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP}#distances"
@@ -44,5 +45,5 @@ run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP_LQ}#distances"
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#similarities" $DIR/atlas-lq-cell-summary-similarities.ttl
 
 # Import CCF.OWL
-curl -s -H "Accept: text/turtle" -L $CCF > $DIR/ccf.ttl
-blazegraph-runner load --journal=$JNL "--graph=${CCF}" $DIR/ccf.ttl
+curl -s -L $CCF_OWL > $DIR/ccf.owl
+blazegraph-runner load --journal=$JNL "--graph=${CCF}" $DIR/ccf.owl

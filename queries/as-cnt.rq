@@ -2,9 +2,10 @@
 #+ description: Count of Anatomical Structures that occur in the 3D Reference Organs
 
 PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 
 SELECT (COUNT(DISTINCT(?as_id)) as ?as_cnt)
-FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
+FROM CCF:
 WHERE {
   ?as3d a ccf:spatial_entity ;
     ccf:has_reference_organ ?ref_organ ;

@@ -26,3 +26,9 @@ node ./src/compute-extraction-site-as-cell-summaries.js \
   $COLLISIONS \
   $DIR/atlas-lq-as-cell-summaries.jsonld \
   $DIR/atlas-lq-extraction-site-as-cell-summaries.jsonld
+
+node ./src/compute-extraction-site-as-cell-summaries.js \
+  $DIR/test-dataset-graph.csv \
+  $COLLISIONS \
+  $DIR/test-as-cell-summaries.jsonld \
+  $DIR/test-extraction-site-as-cell-summaries.jsonld

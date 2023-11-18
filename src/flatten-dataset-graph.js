@@ -47,7 +47,7 @@ async function flattenDatasetGraph(inputFile) {
       donor_race: donor.race || '',
 
       rui_location: block.rui_location ? JSON.stringify(block.rui_location) : '',
-      organ_id: '',
+      organ_id: dataset.organ_id || dataset.reported_organ || '',
       block_id: block['@id'],
       section_id: section?.['@id'] ?? '',
 

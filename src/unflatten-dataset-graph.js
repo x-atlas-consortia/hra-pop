@@ -31,10 +31,10 @@ class DatasetGraph {
     const id = flat[`${prefix}id`];
     if (id) {
       if (!objects[id]) {
-        const obj = objects[id] = {
+        const obj = (objects[id] = {
           '@id': id,
           '@type': type,
-        };
+        });
         for (const rel of relationships ?? []) {
           obj[rel] = [];
         }
