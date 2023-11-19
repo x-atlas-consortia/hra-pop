@@ -19,3 +19,5 @@ node ./src/compute-as-cell-summaries.js \
   $COLLISIONS \
   $SUMMARIES \
   $DIR/atlas-lq-as-cell-summaries.jsonld
+
+echo '{"@graph":[]}' > $DIR/test-as-cell-summaries.jsonld

@@ -5,4 +5,4 @@ LOG=$OUTPUT_DIR/$VERSION/log.txt
 rm $OUTPUT_DIR/$VERSION/*
 rm -rf $RAW_DIR/$VERSION/*
 
-time ./run.sh &> $LOG
+time bash -c "time ./run.sh 2>&1" | tee $LOG
