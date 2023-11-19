@@ -22,7 +22,6 @@ SELECT
 FROM HRApop:
 FROM CCF:
 WHERE {
-	
   	{ # Subquery from https://triplydb.com/bherr/-/queries/rui-location-counts
       SELECT ?rui_location 
       (COALESCE(?rui_location_dataset_count,0) as ?rui_location_dataset_count)

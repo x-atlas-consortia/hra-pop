@@ -20,7 +20,6 @@ SELECT
     (COUNT(DISTINCT(?refOrganAs)) as ?organ_as_count)
     (COUNT(DISTINCT(?rui_location)) as ?rui_location_count)
 	(COUNT(DISTINCT(?dataset)) as ?dataset_count)
-FROM HRApop:
 WHERE {
   GRAPH HRApop: {
     ?sample ccf:has_registration_location ?rui_location ;

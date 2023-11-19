@@ -16,7 +16,12 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT ?sample ?rui_location ?dataset ?modality ?organ ?organId ?similarity
 WHERE {
   GRAPH HRApop: {
-    ?sample ccf:generates_dataset ?dataset .
+    {
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?sample ccf:generates_dataset ?dataset .
+    }
     ?sample ccf:has_registration_location ?rui_location .
 
     ?dataset ccf:has_cell_summary [
@@ -26,10 +31,6 @@ WHERE {
     [] a ccf:SpatialPlacement ;
       ccf:placement_for ?rui_location ;
       ccf:placement_relative_to ?refOrgan .
-
-    # Source is always lexigraphically less than target
-    BIND(IF(STR(?dataset) < STR(?rui_location), ?rui_location, ?dataset) as ?source)
-    BIND(IF(STR(?dataset) < STR(?rui_location), ?dataset, ?rui_location) as ?target)
   }
 
   GRAPH CCF: {
@@ -40,9 +41,17 @@ WHERE {
   }
 
   GRAPH hra-pop:similarities {
-    ?edge ccf:cell_source_a ?source ;
-          ccf:cell_source_b ?target ;
-          ccf:similarity ?similarity .
+    {
+      [] ccf:cell_source_a ?rui_location ;
+         ccf:cell_source_b ?dataset ;
+         ccf:similarity ?similarity .
+    }
+    UNION
+    {
+      [] ccf:cell_source_a ?dataset ;
+         ccf:cell_source_b ?rui_location ;
+         ccf:similarity ?similarity .
+    }
   }
 }
 ORDER BY ?sample

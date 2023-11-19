@@ -15,22 +15,12 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT ?dataset ?reported_organ (?rui as ?corridor) ?similarity 
 WHERE {
-  { 
-    SELECT ?dataset ?reported_organ
-    WHERE {
-      GRAPH hra-pop:test-data {
-        ?dataset a ccf:Dataset ;
-          ccf:organ_id ?reported_organ
-        .
-      }
-      
-      # Filter out datasets used in atlas construction
-      FILTER(NOT EXISTS {
-        GRAPH HRApop: {
-          [] ccf:generates_dataset ?dataset .
-        }
-      })
-    }
+  GRAPH hra-pop:test-data {
+    ?dataset ccf:has_cell_summary [
+      ccf:modality ?modality ;
+    ] .
+
+    OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
   }
 
   {

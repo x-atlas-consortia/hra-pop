@@ -22,14 +22,13 @@ SELECT DISTINCT
   ?cell_id
   ?cell_label
   ?percentage
-FROM HRApop:
 WHERE {
   GRAPH HRApop: {
     ?entity a ccf:SpatialEntity .
     ?sample ccf:has_registration_location ?entity ;
              ccf:generates_dataset ?dataset .
     
-    ?dataset ccf:organ_id ?reported_organ .
+    OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
     
     ?entity ccf:x_dimension ?x ;
             ccf:y_dimension ?y ;
