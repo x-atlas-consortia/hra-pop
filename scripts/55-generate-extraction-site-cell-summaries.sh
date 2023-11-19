@@ -30,5 +30,11 @@ node ./src/compute-extraction-site-as-cell-summaries.js \
 node ./src/compute-extraction-site-as-cell-summaries.js \
   $DIR/test-dataset-graph.csv \
   $COLLISIONS \
-  $DIR/test-as-cell-summaries.jsonld \
-  $DIR/test-extraction-site-as-cell-summaries.jsonld
+  $DIR/atlas-as-cell-summaries.jsonld \
+  $DIR/test-atlas-extraction-site-as-cell-summaries.jsonld
+
+node ./src/compute-extraction-site-as-cell-summaries.js \
+  $DIR/test-dataset-graph.csv \
+  $COLLISIONS \
+  $DIR/atlas-lq-as-cell-summaries.jsonld \
+  $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld

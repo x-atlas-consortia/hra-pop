@@ -23,5 +23,12 @@ node ./src/enrich-dataset-graph.js \
   $DIR/test-dataset-graph.jsonld \
   $DIR/collisions.jsonld \
   $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
-  $DIR/test-extraction-site-cell-summaries.jsonld \
-  $DIR/test-enriched-dataset-graph.jsonld
+  $DIR/test-atlas-extraction-site-as-cell-summaries.jsonld \
+  $DIR/test-atlas-enriched-dataset-graph.jsonld
+
+node ./src/enrich-dataset-graph.js \
+  $DIR/test-dataset-graph.jsonld \
+  $DIR/collisions.jsonld \
+  $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
+  $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld \
+  $DIR/test-atlas-lq-enriched-dataset-graph.jsonld

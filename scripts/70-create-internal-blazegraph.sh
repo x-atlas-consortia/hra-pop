@@ -33,8 +33,8 @@ run_jsonld $DIR/atlas-lq-enriched-dataset-graph.jsonld $HRA_POP_LQ
 run_jsonld $DIR/atlas-lq-as-cell-summaries.jsonld $HRA_POP_LQ
 
 # Test Data
-run_jsonld $DIR/test-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
-run_jsonld $DIR/test-enriched-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
+run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
+run_jsonld $DIR/test-atlas-lq-enriched-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
 
 # Precomputed Atlas distances and similarities
 run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP}#distances"
