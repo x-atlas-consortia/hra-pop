@@ -1,5 +1,5 @@
-// Requires Node v18+ (for fetch support)
 import { readFileSync, writeFileSync } from 'fs';
+import fetch from 'node-fetch';
 import Papa from 'papaparse';
 import { getHbmToUuidLookup } from './utils/hubmap-uuid-lookup.js';
 
@@ -38,8 +38,8 @@ async function getDataSource(url) {
   url = ALIASES[url] || url;
 
   // Add token for HuBMAP's registrations if available
-  if (url === 'https://ccf-api.hubmapconsortium.org/v1/hubmap/rui_locations.jsonld' && HUBMAP_TOKEN) {
-    url += `?token=${HUBMAP_TOKEN}`;
+  if (url === 'https://apps.humanatlas.io/hra-api/v1/hubmap/rui_locations.jsonld' && HUBMAP_TOKEN) {
+    url += `?token=${HUBMAP_TOKEN}&cache=true`;
   }
   if (!dataSourcesCache[url] && url) {
     const graph = await fetch(url).then((r) => r.json());
@@ -103,10 +103,11 @@ function findInData(data, { donorId, ruiLocation, sampleId, datasetId }) {
 // Grab the datasets list from the given CSV_URL and convert to array of objects
 const allDatasets = await fetch(CSV_URL, { redirect: 'follow' })
   .then((r) => r.text())
-  .then((r) =>
-    Papa.parse(r, { header: true /*, fields: FIELDS */ }).data.filter(
-      (row) => row.excluded_from_atlas_construction !== 'TRUE'
-    )
+  .then(
+    (r) => Papa.parse(r, { header: true /*, fields: FIELDS */ }).data
+    // .filter(
+    //   (row) => row.excluded_from_atlas_construction !== 'TRUE'
+    // )
   );
 
 const hbmLookup = await getHbmToUuidLookup(
@@ -138,7 +139,7 @@ for (const dataset of allDatasets) {
     if (!result) {
       const sampleId = hbmLookup[dataset.HuBMAP_tissue_block_id];
       result = findInData(data, { sampleId });
-      if (!result) {
+      if (!result && dataset.excluded_from_atlas_construction !== 'TRUE') {
         console.log(`Investigate ${id}, ${sampleId}`);
       }
     }
@@ -211,10 +212,10 @@ for (const dataset of allDatasets) {
       };
     }
     Object.assign(hraDataset, {
-      'publication_title': dataset.paper_title || undefined,
-      'publication': dataset.doi || undefined,
-      'publication_lead_author': dataset.lead_author || undefined,
-      'reported_organ': dataset.organ || undefined,
+      publication_title: dataset.paper_title || undefined,
+      publication: dataset.doi || undefined,
+      publication_lead_author: dataset.lead_author || undefined,
+      reported_organ: dataset.organ || undefined,
       'ctpop:is_azimuth_reference': dataset.is_azimuth_reference === 'TRUE' ? 'True' : undefined,
       'ctpop:omap_id': dataset.omap_id || undefined,
       'ctpop:hubmap_dataset_publication_status': dataset.HuBMAP_publication_status || undefined,
@@ -223,7 +224,7 @@ for (const dataset of allDatasets) {
     });
     block.datasets.push(hraDataset);
     datasets[hraDataset['@id']] = hraDataset;
-  } else {
+  } else if (dataset.excluded_from_atlas_construction !== 'TRUE') {
     console.log(`Investigate ${dataset.source}: ${id}`);
   }
 }

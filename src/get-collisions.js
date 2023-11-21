@@ -1,19 +1,40 @@
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import fetch from 'node-fetch';
-import { readFileSync, writeFileSync } from 'fs';
 
 const REGISTRATIONS = process.argv[2];
 const OUTPUT = process.argv[3];
+const COLLISION_CACHE = 'raw-data/collision-cache.json';
 const donors = JSON.parse(readFileSync(REGISTRATIONS).toString());
 const API = 'https://pfn8zf2gtu.us-east-2.awsapprunner.com/get-collisions';
 
+let collisionCache = {};
+if (existsSync(COLLISION_CACHE)) {
+  collisionCache = JSON.parse(readFileSync(COLLISION_CACHE));
+}
+
 function getCollisions(ruiLocation) {
-  return fetch(API, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(ruiLocation),
-  })
-    .then((r) => r.json())
-    .catch((e) => (console.log(e, ruiLocation), []));
+  const id = ruiLocation['@id'];
+  if (collisionCache[id]) {
+    return collisionCache[id];
+  } else {
+    console.log(id);
+    return fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(ruiLocation),
+    })
+      .then((r) => r.json())
+      .then((r) => {
+        collisionCache[id] = r;
+        writeFileSync(COLLISION_CACHE, JSON.stringify(collisionCache, null, 2));
+        return r;
+      })
+      .catch((e) => {
+        console.log(e, ruiLocation);
+        delete collisionCache[id];
+        return [];
+      });
+  }
 }
 
 // Find all datasets in rui_locations.jsonld and add run collision detection on them
@@ -70,3 +91,5 @@ const jsonld = {
   '@graph': results,
 };
 writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+
+writeFileSync(COLLISION_CACHE, JSON.stringify(collisionCache, null, 2));

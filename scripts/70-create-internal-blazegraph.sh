@@ -37,11 +37,11 @@ run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
 run_jsonld $DIR/test-atlas-lq-enriched-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
 
 # Precomputed Atlas distances and similarities
-run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP}#distances"
+blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#distances" $DIR/euclidean-distances.ttl
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#similarities" $DIR/atlas-cell-summary-similarities.ttl
 
 # Precomputed Atlas LQ distances and similarities
-run_jsonld $DIR/euclidean-distances.jsonld "${HRA_POP_LQ}#distances"
+blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#distances" $DIR/euclidean-distances.ttl
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#similarities" $DIR/atlas-lq-cell-summary-similarities.ttl
 
 # Import CCF.OWL

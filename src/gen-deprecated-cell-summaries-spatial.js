@@ -6,6 +6,7 @@ import sh from 'shelljs';
 import { getHbmToUuidLookup } from './utils/hubmap-uuid-lookup.js';
 
 const OUTPUT = process.argv[2];
+const OUTPUT_CSV = process.argv[3];
 const CSV_PATTERN = 'hra-ct-summaries-mx-spatial-data/**/cell_type_counts/*.csv';
 const MODALITY = 'spatial';
 const BASE_IRI = 'https://purl.humanatlas.io/graph/hra-pop#datasets_';
@@ -86,8 +87,20 @@ for (const csvFile of allCSVs) {
   }
 }
 
+const metadataResults = results.map((summary) => {
+  const id = summary.cell_source;
+  return {
+    donor_id: `${id}$TEMP_DONOR`,
+    block_id: `${id}$TEMP_BLOCK`,
+    dataset_id: id
+  };
+});
+
 const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': results,
 };
 writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+
+const metadataCsv = Papa.unparse(metadataResults, { header: true });
+writeFileSync(OUTPUT_CSV, metadataCsv);

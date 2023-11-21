@@ -1,27 +1,33 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { createWriteStream, readFileSync } from 'fs';
 import { getAllSpatialEntityDistances } from './utils/spatial-entity-distance.js';
 
 const REGISTRATIONS = process.argv[2];
 const OUTPUT = process.argv[3];
 const donors = JSON.parse(readFileSync(REGISTRATIONS))['@graph'];
 
-const ruiLocations = [];
+const ruiLocationLookup = {};
 for (const donor of donors) {
   for (const block of donor['samples']) {
     const ruiLocation = block.rui_location;
-    ruiLocations.push(ruiLocation);
+    ruiLocationLookup[ruiLocation['@id']] = ruiLocation;
   }
 }
-ruiLocations.sort((a, b) => a['@id'].localeCompare(b['@id']))
+const ruiLocations = Object.values(ruiLocationLookup).sort((a, b) => a['@id'].localeCompare(b['@id']));
 
-const results = [];
-for await (const distance of getAllSpatialEntityDistances(ruiLocations)) {
-  results.push(distance);
-};
+const results = createWriteStream(OUTPUT, { autoClose: true });
 
-// Write out the new enriched_rui_locations.jsonld file
-const jsonld = {
-  ...JSON.parse(readFileSync('ccf-context.jsonld')),
-  '@graph': results,
-};
-writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 1));
+results.write(`@prefix Edge: <http://purl.org/ccf/SpatialEntityDistance> .
+@prefix a: <http://purl.org/ccf/entity_a> .
+@prefix b: <http://purl.org/ccf/entity_a> .
+@prefix dist: <http://purl.org/ccf/distance> .
+
+`);
+
+for await (const result of getAllSpatialEntityDistances(ruiLocations)) {
+  const a = result.entity_a;
+  const b = result.entity_b;
+  const dist = result.distance;
+  results.write(`[] a Edge: ; a: <${a}> ; b: <${b}> ; dist: ${dist} .\n`);
+}
+
+results.close();

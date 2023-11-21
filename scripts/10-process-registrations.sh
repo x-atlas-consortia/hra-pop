@@ -5,7 +5,7 @@ set -ev
 
 MERGED=$RAW_DIR/$VERSION/registrations-dataset-graph.jsonld
 COLLISIONS=$RAW_DIR/$VERSION/collisions.jsonld
-DISTANCES=$RAW_DIR/$VERSION/euclidean-distances.jsonld
+DISTANCES=$RAW_DIR/$VERSION/euclidean-distances.ttl
 
 node ./src/concatenate-jsonld.js $REGISTRATIONS $MERGED
 node ./src/get-collisions.js $MERGED $COLLISIONS

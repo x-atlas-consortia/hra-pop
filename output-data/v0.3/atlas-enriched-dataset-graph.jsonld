@@ -743,7 +743,7 @@
           "datasets": [],
           "sections": [
             {
-              "@id": "https://entity.api.hubmapconsortium.org/entities/f44c3b95dd43a62f943f42442480f2b0",
+              "@id": "https://entity.api.hubmapconsortium.org/entities/98c3ae12e048f1fde746ebcccd059c9e",
               "@type": "Sample",
               "datasets": [
                 {
@@ -1061,15 +1061,15 @@
                 }
               ],
               "sample_type": "Tissue Section",
-              "link": "https://portal.hubmapconsortium.org/browse/sample/f44c3b95dd43a62f943f42442480f2b0",
-              "label": "Registered 12/15/2021, Diane Salamon, TMC-UCSD",
-              "description": "5 x 10 x 2 millimeter, 2 millimeter, block"
+              "link": "https://portal.hubmapconsortium.org/browse/sample/98c3ae12e048f1fde746ebcccd059c9e",
+              "label": "Registered 9/7/2023, Amanda Knoten, Washington University Kidney TMC",
+              "description": "5 x 10 x 0.3 millimeter, 0.3 millimeter, block"
             }
           ],
           "sample_type": "Tissue Block",
           "link": "https://portal.hubmapconsortium.org/browse/sample/539d08c341db65d371ae0687bb314bb3",
           "label": "Registered 10/3/2021, Diane Salamon, TMC-UCSD",
-          "description": "5 x 10 x 2 millimeter, 0.3 millimeter, 6 Sections",
+          "description": "5 x 10 x 2 millimeter, 2 millimeter, 1 Sections",
           "rui_location": {
             "@id": "http://purl.org/ccf/1.5/cf4ba102-edf7-4fe4-bb1d-860cdf57609d",
             "@type": "SpatialEntity",
@@ -3765,13 +3765,13 @@
               "sample_type": "Tissue Section",
               "link": "https://portal.hubmapconsortium.org/browse/sample/58cea604ee70bfcf0620129ba3878511",
               "label": "Registered 7/13/2020, Diane Salamon, TMC-UCSD",
-              "description": "3 x 8 x 0.7 millimeter, 0.7 millimeter, block"
+              "description": "3 x 8 x 0.4 millimeter, 0.4 millimeter, block"
             }
           ],
           "sample_type": "Tissue Block",
           "link": "https://portal.hubmapconsortium.org/browse/sample/f7c5d23701bf7e9fd88b93aa0f48443d",
           "label": "Registered 9/23/2022, Diane Salamon, TMC-UCSD",
-          "description": "3 x 8 x 2 millimeter, 0.4 millimeter, 5 Sections",
+          "description": "3 x 8 x 2 millimeter, 0.7 millimeter, 3 Sections",
           "rui_location": {
             "@id": "http://purl.org/ccf/1.5/5166a7a1-bd21-4aa3-ba20-23453cb4c431",
             "@type": "SpatialEntity",
@@ -12648,7 +12648,7 @@
           "datasets": [],
           "sections": [
             {
-              "@id": "https://entity.api.hubmapconsortium.org/entities/d2a488545c2cd6dbe2b65361c919114f",
+              "@id": "https://entity.api.hubmapconsortium.org/entities/d373e7e4cec8391f7fb207ff481d2acf",
               "@type": "Sample",
               "datasets": [
                 {
@@ -12847,15 +12847,15 @@
                 }
               ],
               "sample_type": "Tissue Section",
-              "link": "https://portal.hubmapconsortium.org/browse/sample/d2a488545c2cd6dbe2b65361c919114f",
-              "label": "Registered 9/7/2021, daniel cotter, TMC-Stanford",
-              "description": "20 x 50 x 2.5 millimeter, 2.5 millimeter, block"
+              "link": "https://portal.hubmapconsortium.org/browse/sample/d373e7e4cec8391f7fb207ff481d2acf",
+              "label": "Registered 8/19/2022, Daniel Cotter, TMC-Stanford",
+              "description": "20 x 50 x 1.7 millimeter, 1.7 millimeter, block"
             }
           ],
           "sample_type": "Tissue Block",
           "link": "https://portal.hubmapconsortium.org/browse/sample/1de4ad9bd516660043b8e190e8978045",
           "label": "Registered 10/19/2021, Yiing Lin, TMC-Stanford",
-          "description": "20 x 50 x 5 millimeter, 1.7 millimeter, 3 Sections",
+          "description": "20 x 50 x 5 millimeter, 2.5 millimeter, 2 Sections",
           "rui_location": {
             "@id": "http://purl.org/ccf/1.5/df58ff32-e4db-41fe-9a25-47dbde90c694",
             "@type": "SpatialEntity",
@@ -61117,7 +61117,7 @@
       "provider_name": "LungMap",
       "provider_uuid": "d97e6b70-5aca-4694-806b-5dc57e4f42c4",
       "sex": "Male",
-      "race": "European",
+      "race": "Unkn",
       "link": "https://elifesciences.org/articles/62522",
       "label": "AllenWangLungMap_MALE_tissueblock",
       "description": "AllenWangLungMap_MALE_tissueblock"

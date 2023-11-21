@@ -1,6 +1,6 @@
 import { distance } from 'mathjs';
 
-const SPATIAL_PLACEMENT_LOOKUP = 'https://ccf-api.hubmapconsortium.org/v1/get-spatial-placement';
+const SPATIAL_PLACEMENT_LOOKUP = 'https://apps.humanatlas.io/hra-api/v1/get-spatial-placement';
 const GLOBAL_ENTITY_ID = 'http://purl.org/ccf/latest/ccf.owl#VHBothSexes';
 const GLOBAL_POINT_CACHE = {};
 
