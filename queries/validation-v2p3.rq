@@ -1,0 +1,70 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+
+SELECT ?sample ?rui_location ?dataset ?modality ?organ ?organId (?rui as ?corridor) ?similarity ?distance 
+WHERE {
+  GRAPH HRApop: {
+    ?sample ccf:generates_dataset ?dataset .
+    ?sample ccf:has_registration_location ?rui_location .
+    [] ccf:has_registration_location ?rui .
+
+    ?dataset ccf:has_cell_summary [
+      ccf:modality ?modality ;
+    ] .
+
+    [] a ccf:SpatialPlacement ;
+      ccf:placement_for ?rui_location ;
+      ccf:placement_relative_to ?refOrgan .
+
+    FILTER (?rui != ?rui_location)
+  }
+
+  GRAPH CCF: {
+    ?refOrgan ccf:representation_of ?organIri .
+    ?organIri rdfs:label ?organ .
+
+    BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+  }
+
+  GRAPH hra-pop:distances {
+    {
+      [] a ccf:SpatialEntityDistance;
+        ccf:entity_a ?rui ;
+        ccf:entity_b ?rui_location ;
+        ccf:distance ?distance1 .
+    } UNION {
+      [] a ccf:SpatialEntityDistance;
+        ccf:entity_a ?rui_location ;
+        ccf:entity_b ?rui ;
+        ccf:distance ?distance1 .
+    }
+  }
+
+  GRAPH hra-pop:similarities {
+    {
+      [] ccf:cell_source_a ?dataset ;
+          ccf:cell_source_b ?rui ;
+          ccf:similarity ?similarity1 .
+    } UNION {
+      [] ccf:cell_source_a ?rui ;
+          ccf:cell_source_b ?dataset ;
+          ccf:similarity ?similarity1 .
+    }
+  }
+
+  BIND(xsd:decimal(?distance1) as ?distance)
+  BIND(xsd:decimal(?similarity1) as ?similarity)
+}
+ORDER BY ?sample DESC(?similarity)
