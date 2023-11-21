@@ -18,7 +18,7 @@ const results = createWriteStream(OUTPUT, { autoClose: true });
 
 results.write(`@prefix Edge: <http://purl.org/ccf/SpatialEntityDistance> .
 @prefix a: <http://purl.org/ccf/entity_a> .
-@prefix b: <http://purl.org/ccf/entity_a> .
+@prefix b: <http://purl.org/ccf/entity_b> .
 @prefix dist: <http://purl.org/ccf/distance> .
 
 `);
