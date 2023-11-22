@@ -35,8 +35,8 @@ WHERE {
     BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
   }
 
-  {
-    GRAPH hra-pop:similarities {
+  GRAPH hra-pop:similarities {
+    {
       [] ccf:cell_source_a ?dataset ;
          ccf:cell_source_b ?as ;
          ccf:similarity ?similarity .
@@ -45,9 +45,7 @@ WHERE {
         STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
         STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
       )
-    }
-  } UNION {
-    GRAPH hra-pop:similarities {
+    } UNION {
       [] ccf:cell_source_a ?as ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .

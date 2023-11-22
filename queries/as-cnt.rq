@@ -7,7 +7,7 @@ PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 SELECT (COUNT(DISTINCT(?as_id)) as ?as_cnt)
 FROM CCF:
 WHERE {
-  ?as3d a ccf:spatial_entity ;
+  ?as3d
     ccf:has_reference_organ ?ref_organ ;
     ccf:representation_of ?as_id .
 }

@@ -27,12 +27,11 @@ WHERE {
     ] .
   }
 
+  GRAPH hra-pop:similarities
   {
-    GRAPH hra-pop:similarities {
+    {
       [] ccf:cell_source_a ?entity ;
-    }
-  } UNION {
-      GRAPH hra-pop:similarities {
+    } UNION {
       [] ccf:cell_source_b ?entity ;
     }
   }

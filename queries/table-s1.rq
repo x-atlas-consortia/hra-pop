@@ -97,7 +97,7 @@ WHERE {
 
     # Ref Organ GLB File
     {
-      ?some_ref_organ a ccf:spatial_entity, ?organ_iri ;
+      ?some_ref_organ a ?organ_iri ;
         ccf:organ_owner_sex ?ref_organ_sex ;
         ccf:has_object_reference [
           ccf:file_name ?organ_name_glb_file

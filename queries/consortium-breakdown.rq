@@ -9,7 +9,6 @@ PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX iftu: <https://hubmapconsortium.github.io/hra-ui/apps/ftu-ui/assets/TEMP/2d-ftu-illustrations.jsonld>
 
 SELECT ?consortium (COUNT(DISTINCT(?dataset)) as ?dataset_count) (SUM(?cell_count) as ?cell_count)
-FROM CCF:
 FROM HRApop:
 WHERE {
   ?donor

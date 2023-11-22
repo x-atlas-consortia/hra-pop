@@ -12,13 +12,12 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-# 3d ref organ | #meshes tagged with UBERON ID | total number of tissue blocks | sex | number of datasets
 SELECT
 	?organId
-    ?organ
-    ?sex
-    (COUNT(DISTINCT(?refOrganAs)) as ?organ_as_count)
-    (COUNT(DISTINCT(?rui_location)) as ?rui_location_count)
+  ?organ
+  ?sex
+  (COUNT(DISTINCT(?refOrganAs)) as ?organ_as_count)
+  (COUNT(DISTINCT(?rui_location)) as ?rui_location_count)
 	(COUNT(DISTINCT(?dataset)) as ?dataset_count)
 WHERE {
   GRAPH HRApop: {

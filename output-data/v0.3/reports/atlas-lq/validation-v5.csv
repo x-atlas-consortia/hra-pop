@@ -18,8 +18,8 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a
 https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:0000160,goblet cell,0.005835010060362173
 https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:0000186,myofibroblast cell,0.00482897384305835
 https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:0000097,mast cell,0.003420523138832998
-https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:0000192,smooth muscle cell,0.003420523138832998
 https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:1000413,endothelial cell of artery,0.003420523138832998
+https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:0000192,smooth muscle cell,0.003420523138832998
 https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:0000451,dendritic cell,0.003018108651911469
 https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:0002543,vein endothelial cell,0.002012072434607646
 https://api.cellxgene.cziscience.com/dp/v1/collections/b7ec6c2d-32e2-48b0-8335-a827aba01caa_D032_Lung,bulk,,respiratory system,UBERON:0001004,75,CL:0000359,vascular associated smooth muscle cell,0.001609657947686117
@@ -554,9 +554,9 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0000814,mature NK T cell,5.648919644118063E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0000906,"activated CD8-positive, alpha-beta T cell",4.236689733088547E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:1000309,epicardial adipocyte,4.236689733088547E-4
-https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0000896,"activated CD4-positive, alpha-beta T cell",1.412229911029516E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0000576,monocyte,1.412229911029516E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0000623,natural killer cell,1.412229911029516E-4
+https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0000896,"activated CD4-positive, alpha-beta T cell",1.412229911029516E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_left_cardiac_atrium,bulk,,heart,UBERON:0000948,8000,CL:0000057,fibroblast,0.4684154805317022
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_left_cardiac_atrium,bulk,,heart,UBERON:0000948,8000,CL:0002129,regular atrial cardiac myocyte,0.1444535936948594
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D2_Heart_left_cardiac_atrium,bulk,,heart,UBERON:0000948,8000,CL:0000669,pericyte,0.1265733443124338
@@ -616,8 +616,8 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000115,endothelial cell,0.009739614390777182
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0002397,"CD14-positive, CD16-positive monocyte",0.008745776187636653
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0002543,vein endothelial cell,0.006161796859471278
-https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0001054,CD14-positive monocyte,0.005963029218843173
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:1000309,epicardial adipocyte,0.005963029218843173
+https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0001054,CD14-positive monocyte,0.005963029218843173
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0002319,neural cell,0.004770423375074538
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000794,"CD8-positive, alpha-beta cytotoxic T cell",0.004174120453190221
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000623,natural killer cell,0.004174120453190221
@@ -626,10 +626,10 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000906,"activated CD8-positive, alpha-beta T cell",0.00278274696879348
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000236,B cell,0.00278274696879348
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000576,monocyte,0.00139137348439674
-https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000097,mast cell,5.963029218843172E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000451,dendritic cell,5.963029218843172E-4
-https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0002138,endothelial cell of lymphatic vessel,1.987676406281057E-4
+https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000097,mast cell,5.963029218843172E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0000814,mature NK T cell,1.987676406281057E-4
+https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_apex_of_heart,bulk,,heart,UBERON:0000948,3584,CL:0002138,endothelial cell of lymphatic vessel,1.987676406281057E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2496,CL:0000003,native cell,0.2188034188034188
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2496,CL:0002131,regular ventricular cardiac myocyte,0.2068376068376068
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2496,CL:0000057,fibroblast,0.1713346482577252
@@ -671,11 +671,11 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0002319,neural cell,0.001522842639593909
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0002397,"CD14-positive, CD16-positive monocyte",0.001522842639593909
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000934,"CD4-positive, alpha-beta cytotoxic T cell",0.001015228426395939
+https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000097,mast cell,5.076142131979696E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000451,dendritic cell,5.076142131979696E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000623,natural killer cell,5.076142131979696E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000906,"activated CD8-positive, alpha-beta T cell",5.076142131979696E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000794,"CD8-positive, alpha-beta cytotoxic T cell",5.076142131979696E-4
-https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000097,mast cell,5.076142131979696E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0002131,regular ventricular cardiac myocyte,0.3002020202020202
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0000003,native cell,0.2254545454545455
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_D3_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0000057,fibroblast,0.1696969696969697
@@ -1517,9 +1517,9 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0002138,endothelial cell of lymphatic vessel,0.001411930815390046
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000236,B cell,0.001058948111542534
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000814,mature NK T cell,8.824567596187787E-4
-https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000576,monocyte,5.294740557712672E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000451,dendritic cell,5.294740557712672E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000623,natural killer cell,5.294740557712672E-4
+https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000576,monocyte,5.294740557712672E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0000794,"CD8-positive, alpha-beta cytotoxic T cell",1.764913519237557E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_heart_right_ventricle,bulk,,heart,UBERON:0000948,1904,CL:0002397,"CD14-positive, CD16-positive monocyte",1.764913519237557E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H3_Heart_interventricular_septum,bulk,,heart,UBERON:0000948,2430,CL:0002131,regular ventricular cardiac myocyte,0.5430691277596815
@@ -1762,8 +1762,8 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:0000814,mature NK T cell,0.001931537718639339
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:0002543,vein endothelial cell,0.001609614765532782
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:0000623,natural killer cell,9.657688593196694E-4
-https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:0000576,monocyte,5.365382551775941E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:0001054,CD14-positive monocyte,5.365382551775941E-4
+https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:0000576,monocyte,5.365382551775941E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:0000896,"activated CD4-positive, alpha-beta T cell",4.292306041420754E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:0000451,dendritic cell,3.219229531065565E-4
 https://api.cellxgene.cziscience.com/dp/v1/collections/dd2f4658-d6e1-4d8a-a5f3-b9efed1bd1ca_H5_Heart_heart_left_ventricle,bulk,,heart,UBERON:0000948,2940,CL:1000309,epicardial adipocyte,3.219229531065565E-4
@@ -2276,21 +2276,21 @@ https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b5
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:cortical-vascular-smooth-muscle-pericyte,Cortical Vascular Smooth Muscle / Pericyte,0.002465667020270076
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:schwann-neural,Schwann / Neural,0.00243699647352275
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:descending-vasa-recta-endothelial,"Descending Vasa Recta Endothelial ",0.002408325926775424
-https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,0.0019495971788182
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-principal,Connecting Tubule Principal,0.0019495971788182
+https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,0.0019495971788182
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:descending-thin-limb-type-3,Descending Thin Limb Type 3,0.001834914991828894
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mesangial,Mesangial,0.001777573898334241
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mast,Mast,0.001318845150377018
-https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,0.001032139682903753
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:vascular-smooth-muscle-pericyte,Vascular Smooth Muscle / Pericyte,0.001032139682903753
+https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,0.001032139682903753
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:cortical-collecting-duct-intercalated-type-a,Cortical Collecting Duct Intercalated Type A,8.027753089251411E-4
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:monocyte-derived,Monocyte-derived,4.587287479572235E-4
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:b,B,4.300582012098971E-4
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:afferent-efferent-arteriole-endothelial,Afferent / Efferent Arteriole Endothelial,4.013876544625706E-4
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,1.146821869893059E-4
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,8.601164024197941E-5
-https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-2,Proximal Tubule Epithelial Segment 2,5.734109349465294E-5
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:papillary-tip-epithelial,Papillary Tip Epithelial,5.734109349465294E-5
+https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-2,Proximal Tubule Epithelial Segment 2,5.734109349465294E-5
 https://entity.api.hubmapconsortium.org/entities/069a6930776ca28f8e10c3781aa13b56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:renin-positive-juxtaglomerular-granular,Renin-positive Juxtaglomerular Granular,2.867054674732647E-5
 https://entity.api.hubmapconsortium.org/entities/0cecd7cf1da6f81d3654c1712a5d61a2,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:cortical-thick-ascending-limb,Cortical Thick Ascending Limb,0.2101854762653254
 https://entity.api.hubmapconsortium.org/entities/0cecd7cf1da6f81d3654c1712a5d61a2,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:descending-thin-limb-type-1,Descending Thin Limb Type 1,0.120873939012889
@@ -2643,10 +2643,10 @@ https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,3.60100828231905E-4
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,1.543289263851021E-4
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,1.543289263851021E-4
-https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,1.028859509234014E-4
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,1.028859509234014E-4
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:natural-killer-t,Natural Killer T,1.028859509234014E-4
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:papillary-tip-epithelial,Papillary Tip Epithelial,1.028859509234014E-4
+https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,1.028859509234014E-4
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:neutrophil,Neutrophil,5.144297546170071E-5
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:b,B,5.144297546170071E-5
 https://entity.api.hubmapconsortium.org/entities/28d7789ef980031fb7278646fe43ffe1,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:renin-positive-juxtaglomerular-granular,Renin-positive Juxtaglomerular Granular,5.144297546170071E-5
@@ -2689,11 +2689,11 @@ https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdc
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,4.115438036936056E-4
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:neutrophil,Neutrophil,3.086578527702042E-4
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mast,Mast,2.572148773085035E-4
-https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,2.057719018468028E-4
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,2.057719018468028E-4
+https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,2.057719018468028E-4
+https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,1.543289263851021E-4
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:papillary-tip-epithelial,Papillary Tip Epithelial,1.543289263851021E-4
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:classical-dendritic,Classical Dendritic,1.543289263851021E-4
-https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,1.543289263851021E-4
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:b,B,5.144297546170071E-5
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,5.144297546170071E-5
 https://entity.api.hubmapconsortium.org/entities/2a590db3d7ab1e1512816b165d95cdcf,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:renin-positive-juxtaglomerular-granular,Renin-positive Juxtaglomerular Granular,5.144297546170071E-5
@@ -3267,8 +3267,8 @@ https://entity.api.hubmapconsortium.org/entities/5a6470730104461ebb4358a11f70bd5
 https://entity.api.hubmapconsortium.org/entities/5a6470730104461ebb4358a11f70bd56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,8.315777802417119E-5
 https://entity.api.hubmapconsortium.org/entities/5a6470730104461ebb4358a11f70bd56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:renin-positive-juxtaglomerular-granular,Renin-positive Juxtaglomerular Granular,5.543851868278079E-5
 https://entity.api.hubmapconsortium.org/entities/5a6470730104461ebb4358a11f70bd56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,5.543851868278079E-5
-https://entity.api.hubmapconsortium.org/entities/5a6470730104461ebb4358a11f70bd56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:natural-killer-t,Natural Killer T,2.77192593413904E-5
 https://entity.api.hubmapconsortium.org/entities/5a6470730104461ebb4358a11f70bd56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:neutrophil,Neutrophil,2.77192593413904E-5
+https://entity.api.hubmapconsortium.org/entities/5a6470730104461ebb4358a11f70bd56,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:natural-killer-t,Natural Killer T,2.77192593413904E-5
 https://entity.api.hubmapconsortium.org/entities/5afac98d9f449f2169b505179dd96f0e,spatial,,small intestine,UBERON:0002108,1350,ASCTB-TEMP:enterocyte,Enterocyte,0.2975687630957528
 https://entity.api.hubmapconsortium.org/entities/5afac98d9f449f2169b505179dd96f0e,spatial,,small intestine,UBERON:0002108,1350,ASCTB-TEMP:smooth-muscle,Smooth muscle,0.1562842984002395
 https://entity.api.hubmapconsortium.org/entities/5afac98d9f449f2169b505179dd96f0e,spatial,,small intestine,UBERON:0002108,1350,ASCTB-TEMP:cd8-t,CD8+ T,0.0952206738284498
@@ -3876,12 +3876,12 @@ https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de14
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:afferent-efferent-arteriole-endothelial,Afferent / Efferent Arteriole Endothelial,8.549715009499683E-4
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,5.383153894870171E-4
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:medullary-fibroblast,Medullary Fibroblast,3.799873337555415E-4
-https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:descending-thin-limb-type-3,Descending Thin Limb Type 3,2.849905003166561E-4
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-2,Proximal Tubule Epithelial Segment 2,2.849905003166561E-4
+https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:descending-thin-limb-type-3,Descending Thin Limb Type 3,2.849905003166561E-4
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,2.53324889170361E-4
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mast,Mast,1.583280557314756E-4
-https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,1.266624445851805E-4
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,1.266624445851805E-4
+https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,1.266624445851805E-4
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,6.333122229259025E-5
 https://entity.api.hubmapconsortium.org/entities/911380980cd33eac5add7f72d86de146,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:natural-killer-t,Natural Killer T,3.166561114629513E-5
 https://entity.api.hubmapconsortium.org/entities/96f5c73df89d553cda6547b508aee854,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:enterocyte,Enterocyte,0.1926937763256308
@@ -4119,8 +4119,8 @@ https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:peritubular-capilary-endothelial,"Peritubular Capilary Endothelial ",0.00959806425594838
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:glomerular-capillary-endothelial,Glomerular Capillary Endothelial,0.005269525473854013
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:cortical-vascular-smooth-muscle-pericyte,Cortical Vascular Smooth Muscle / Pericyte,0.005081328135502084
-https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:macula-densa,Macula Densa,0.004893130797150155
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:m2-macrophage,M2 Macrophage,0.004893130797150155
+https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:macula-densa,Macula Densa,0.004893130797150155
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-intercalated-type-a,Outer Medullary Collecting Duct Intercalated Type A,0.004274768113993816
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:intercalated-type-b,Intercalated Type B,0.004032800107541337
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:ascending-vasa-recta-endothelial,Ascending Vasa Recta Endothelial,0.003602634762736927
@@ -4145,11 +4145,11 @@ https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,1.344266702513779E-4
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:b,B,1.344266702513779E-4
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,8.065600215082673E-5
+https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,5.377066810055115E-5
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,5.377066810055115E-5
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-2,Proximal Tubule Epithelial Segment 2,5.377066810055115E-5
-https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,5.377066810055115E-5
-https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:neutrophil,Neutrophil,2.688533405027557E-5
 https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,2.688533405027557E-5
+https://entity.api.hubmapconsortium.org/entities/aa97a7c3e11e210bfa1629ee467bdcf6,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:neutrophil,Neutrophil,2.688533405027557E-5
 https://entity.api.hubmapconsortium.org/entities/aabf05e28a70e7da1fc2558d9a2d82af,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:smooth-muscle,Smooth muscle,0.3807872730981032
 https://entity.api.hubmapconsortium.org/entities/aabf05e28a70e7da1fc2558d9a2d82af,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:stroma,Stroma,0.1122272078319396
 https://entity.api.hubmapconsortium.org/entities/aabf05e28a70e7da1fc2558d9a2d82af,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:enterocyte,Enterocyte,0.0652151743830308
@@ -4225,8 +4225,8 @@ https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:cortical-collecting-duct-intercalated-type-a,Cortical Collecting Duct Intercalated Type A,0.002711054104477612
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:classical-dendritic,Classical Dendritic,0.002536147388059701
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:descending-vasa-recta-endothelial,"Descending Vasa Recta Endothelial ",0.002390391791044776
-https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:m2-macrophage,M2 Macrophage,0.002273787313432836
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:parietal-epithelial,Parietal Epithelial,0.002273787313432836
+https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:m2-macrophage,M2 Macrophage,0.002273787313432836
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mesangial,Mesangial,0.00218633395522388
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:medullary-fibroblast,Medullary Fibroblast,0.001632462686567164
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,0.001603311567164179
@@ -4234,17 +4234,17 @@ https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,9.911380597014926E-4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:macula-densa,Macula Densa,3.206623134328358E-4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:papillary-tip-epithelial,Papillary Tip Epithelial,2.915111940298507E-4
-https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:monocyte-derived,Monocyte-derived,2.332089552238806E-4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:afferent-efferent-arteriole-endothelial,Afferent / Efferent Arteriole Endothelial,2.332089552238806E-4
+https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:monocyte-derived,Monocyte-derived,2.332089552238806E-4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,1.457555970149254E-4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,1.166044776119403E-4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,1.166044776119403E-4
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,8.745335820895522E-5
+https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mast,Mast,2.915111940298507E-5
+https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:schwann-neural,Schwann / Neural,2.915111940298507E-5
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:renin-positive-juxtaglomerular-granular,Renin-positive Juxtaglomerular Granular,2.915111940298507E-5
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-2,Proximal Tubule Epithelial Segment 2,2.915111940298507E-5
 https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:natural-killer-t,Natural Killer T,2.915111940298507E-5
-https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mast,Mast,2.915111940298507E-5
-https://entity.api.hubmapconsortium.org/entities/b0c09583b2a1b3c82eddce71706dba4b,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:schwann-neural,Schwann / Neural,2.915111940298507E-5
 https://entity.api.hubmapconsortium.org/entities/b1ac71625c1aba9d819fae1725c27a42,bulk,,heart,UBERON:0000948,1000,ASCTB-TEMP:fibroblast,Fibroblast,0.7958502699751259
 https://entity.api.hubmapconsortium.org/entities/b1ac71625c1aba9d819fae1725c27a42,bulk,,heart,UBERON:0000948,1000,ASCTB-TEMP:ventricular-cardiomycoyte,Ventricular Cardiomycoyte,0.06467269307771643
 https://entity.api.hubmapconsortium.org/entities/b1ac71625c1aba9d819fae1725c27a42,bulk,,heart,UBERON:0000948,1000,ASCTB-TEMP:b,B,0.04580476854941455
@@ -4392,8 +4392,8 @@ https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61a
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:descending-vasa-recta-endothelial,"Descending Vasa Recta Endothelial ",0.001558774986246103
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-principal,Connecting Tubule Principal,0.001512928663121218
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:descending-thin-limb-type-3,Descending Thin Limb Type 3,0.00119200440124702
-https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,7.335411699981661E-4
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:distal-convoluted-tubule-type-2,Distal Convoluted Tubule Type 2,7.335411699981661E-4
+https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,7.335411699981661E-4
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mast,Mast,4.584632312488538E-4
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,3.209242618741977E-4
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,2.750779387493123E-4
@@ -4401,12 +4401,12 @@ https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61a
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:renin-positive-juxtaglomerular-granular,Renin-positive Juxtaglomerular Granular,1.833852924995415E-4
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,1.833852924995415E-4
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,9.169264624977077E-5
-https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-2,Proximal Tubule Epithelial Segment 2,4.584632312488538E-5
-https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,4.584632312488538E-5
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:natural-killer-t,Natural Killer T,4.584632312488538E-5
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasmacytoid-dendritic,Plasmacytoid Dendritic,4.584632312488538E-5
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:neutrophil,Neutrophil,4.584632312488538E-5
 https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:papillary-tip-epithelial,Papillary Tip Epithelial,4.584632312488538E-5
+https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-2,Proximal Tubule Epithelial Segment 2,4.584632312488538E-5
+https://entity.api.hubmapconsortium.org/entities/bba1f664447f3bf1bccb0b6ebf2f61ad,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,4.584632312488538E-5
 https://entity.api.hubmapconsortium.org/entities/bca0d1d7fcb2bdcde16a31d1484e83e5,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:cortical-thick-ascending-limb,Cortical Thick Ascending Limb,0.2119773656082993
 https://entity.api.hubmapconsortium.org/entities/bca0d1d7fcb2bdcde16a31d1484e83e5,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:ascending-thin-limb,Ascending Thin Limb,0.1748192392329456
 https://entity.api.hubmapconsortium.org/entities/bca0d1d7fcb2bdcde16a31d1484e83e5,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-1,Proximal Tubule Epithelial Segment 1,0.1139264382269727
@@ -4797,8 +4797,8 @@ https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca
 https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca6,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:nk,NK,0.002204654971496961
 https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca6,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:cd7-immune,CD7+ Immune,7.873767755346288E-4
 https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca6,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:m1-macrophage,M1 Macrophage,6.29901420427703E-4
-https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca6,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:b,B,9.448521306415546E-5
 https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca6,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:cd57-enterocyte,CD57+ Enterocyte,9.448521306415546E-5
+https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca6,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:b,B,9.448521306415546E-5
 https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca6,spatial,,large intestine,UBERON:0000059,5000,ASCTB-TEMP:paneth,Paneth,0
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:cortical-thick-ascending-limb,Cortical Thick Ascending Limb,0.1902892926442053
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:ascending-thin-limb,Ascending Thin Limb,0.1181425295466573
@@ -4833,14 +4833,14 @@ https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cb
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mast,Mast,0.002028576468512965
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:mesangial,Mesangial,0.001940377491621097
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:afferent-efferent-arteriole-endothelial,Afferent / Efferent Arteriole Endothelial,9.260892573646146E-4
-https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:distal-convoluted-tubule-type-2,Distal Convoluted Tubule Type 2,6.614923266890104E-4
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:schwann-neural,Schwann / Neural,6.614923266890104E-4
+https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:distal-convoluted-tubule-type-2,Distal Convoluted Tubule Type 2,6.614923266890104E-4
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:connecting-tubule-intercalated-type-a,Connecting Tubule Intercalated Type A,3.527959075674722E-4
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:monocyte-derived,Monocyte-derived,2.645969306756042E-4
-https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,1.763979537837361E-4
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,1.763979537837361E-4
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:papillary-tip-epithelial,Papillary Tip Epithelial,1.763979537837361E-4
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:lymphatic-endothelial,Lymphatic Endothelial,1.763979537837361E-4
+https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:t,T,1.763979537837361E-4
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:plasma,Plasma,1.322984653378021E-4
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:proximal-tubule-epithelial-segment-2,Proximal Tubule Epithelial Segment 2,8.819897689186806E-5
 https://entity.api.hubmapconsortium.org/entities/f4b3c0e24e09e1e8c16f2e4e190a8cbb,bulk,,right kidney,UBERON:0004539,48,ASCTB-TEMP:neutrophil,Neutrophil,4.409948844593403E-5
@@ -5077,8 +5077,8 @@ https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,le
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:medullary-fibroblast,Medullary Fibroblast,0.009238665526090676
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:ascending-thin-limb,Ascending Thin Limb,0.009067579127459367
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:descending-thin-limb-type-2,Descending Thin Limb Type 2,0.003079555175363559
-https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:fibroblast,Fibroblast,0.002395209580838323
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:distal-convoluted-tubule-type-1,Distal Convoluted Tubule Type 1,0.002395209580838323
+https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:fibroblast,Fibroblast,0.002395209580838323
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:descending-vasa-recta-endothelial,"Descending Vasa Recta Endothelial ",0.002224123182207014
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:podocyte,Podocyte,0.001881950384944397
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:cortical-vascular-smooth-muscle-pericyte,Cortical Vascular Smooth Muscle / Pericyte,0.001368691189050471
@@ -5087,8 +5087,8 @@ https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,le
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:ascending-vasa-recta-endothelial,Ascending Vasa Recta Endothelial,8.55431993156544E-4
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,8.55431993156544E-4
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:cortical-collecting-duct-intercalated-type-a,Cortical Collecting Duct Intercalated Type A,6.843455945252353E-4
-https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:peritubular-capilary-endothelial,"Peritubular Capilary Endothelial ",3.421727972626176E-4
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:parietal-epithelial,Parietal Epithelial,3.421727972626176E-4
+https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:peritubular-capilary-endothelial,"Peritubular Capilary Endothelial ",3.421727972626176E-4
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:glomerular-capillary-endothelial,Glomerular Capillary Endothelial,1.710863986313088E-4
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:afferent-efferent-arteriole-endothelial,Afferent / Efferent Arteriole Endothelial,1.710863986313088E-4
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM476.ZWMS.768,bulk,Kidney,left kidney,UBERON:0004538,72,ASCTB-TEMP:connecting-tubule-principal,Connecting Tubule Principal,1.710863986313088E-4
@@ -5171,11 +5171,11 @@ https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,ri
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:medullary-fibroblast,Medullary Fibroblast,0.0718562874251497
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:connecting-tubule,Connecting Tubule,0.04790419161676647
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:ascending-vasa-recta-endothelial,Ascending Vasa Recta Endothelial,0.005988023952095809
-https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,0.003992015968063872
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:ascending-thin-limb,Ascending Thin Limb,0.003992015968063872
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:non-classical-monocyte,Non-classical monocyte,0.003992015968063872
-https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:parietal-epithelial,Parietal Epithelial,0.001996007984031936
+https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:outer-medullary-collecting-duct-principal,Outer Medullary Collecting Duct Principal,0.003992015968063872
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:descending-thin-limb-type-3,Descending Thin Limb Type 3,0.001996007984031936
+https://purl.humanatlas.io/graph/hra-pop#datasets_HBM752.ZRBH.538,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:parietal-epithelial,Parietal Epithelial,0.001996007984031936
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM785.LNQZ.992,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:connecting-tubule,Connecting Tubule,0.3249609984399376
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM785.LNQZ.992,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:inner-medullary-collecting-duct,Inner Medullary Collecting Duct,0.1875195007800312
 https://purl.humanatlas.io/graph/hra-pop#datasets_HBM785.LNQZ.992,bulk,Kidney,right kidney,UBERON:0004539,12,ASCTB-TEMP:distal-convoluted-tubule-type-1,Distal Convoluted Tubule Type 1,0.1199687987519501

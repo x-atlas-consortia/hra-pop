@@ -20,7 +20,6 @@ SELECT
 	(SUM(IF(?rui_location_collision_count = 1, 1, 0)) as ?rui_location_one_as_count)
 	(SUM(IF(?rui_location_ct_count = 0,1,0)) as ?rui_locations_no_ct)
 FROM HRApop:
-FROM CCF:
 WHERE {
   	{ # Subquery from https://triplydb.com/bherr/-/queries/rui-location-counts
       SELECT ?rui_location 

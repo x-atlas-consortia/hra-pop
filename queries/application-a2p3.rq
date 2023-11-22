@@ -16,23 +16,18 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT ?dataset ?reported_organ (?rui as ?corridor) ?similarity 
 WHERE {
   GRAPH hra-pop:test-data {
-    ?dataset ccf:has_cell_summary [
-      ccf:modality ?modality ;
-    ] .
-
+    ?dataset ccf:has_cell_summary [] .
     OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
   }
 
-  {
-    GRAPH hra-pop:similarities {
+  GRAPH hra-pop:similarities {
+    {
       [] ccf:cell_source_a ?dataset ;
          ccf:cell_source_b ?rui ;
          ccf:similarity ?similarity .
 
       FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/'))
-    }
-  } UNION {
-    GRAPH hra-pop:similarities {
+    } UNION {
       [] ccf:cell_source_a ?rui ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .
