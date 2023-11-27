@@ -6,7 +6,7 @@ This repository has the code, input data, and draft results for HRApop construct
 
 ### Requirements
 
-To run the construction algorithm, you will need:
+To run the construction algorithm, you will need the following installed:
 
 1. A unix-like environment (Linux, WSL2 / Ubuntu For Windows, or Mac (untested))
 2. Node.js v18+
@@ -14,7 +14,11 @@ To run the construction algorithm, you will need:
 4. [blazegraph-runner](https://github.com/balhoff/blazegraph-runner/)
 5. Docker
 
-### Input:
+### Setup
+
+1. Install node dependencies via `npm ci`
+
+### Input
 
 Each HRApop version is defined in a subdirectory of the input-data directory by version. A [config.sh](input-data/v0.3/config.sh) file is used to configure the sources and settings for the HRApop construction workflow.
 
@@ -25,11 +29,11 @@ In addition to the config.sh file, the input-data/$VERSION directory will have a
 - **cell summaries (spatial)** Spatial cell summaries (using a deprecated process at this point, but still needed)
 - **publications** Publications in hra-dataset-graphs flat csv format. Currently pulled from a curated [Google Sheet](https://docs.google.com/spreadsheets/d/1MK9KMPAFRHN6aU_e1ghApcbABAdkLGRTiaSUkliLNnw/edit#gid=1240375199).
 
-### Running:
+### Running
 
 To start a workflow run, check the constants.sh to ensure it's including the right config.sh for your version. Then run [./logged-run.sh](./logged-run.sh) which will run the whole workflow and place a log.txt file in the correct subdirectory of output-data.
 
-### Construction Workflow:
+### Construction Workflow
 
 | Script | Description |
 | :-- | :-- |
@@ -49,7 +53,7 @@ To start a workflow run, check the constants.sh to ensure it's including the rig
 | 75-run-reports.sh | Run reports against the generated blazegraph db using Atlas and Atlas LQ |
 | 80-publish-results.sh | Compile the data for publication, including Atlas and Atlas LQ enriched dataset graphs, non-atlas-dataset-graph.csv (for tracking/improving datasets), and the reports generated against the atlases. |
 
-### Output:
+### Output
 
 Data is compiled to output-data/$VERSION.
 
