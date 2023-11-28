@@ -1,15 +1,22 @@
 rui_location,organ,as_label,as_id,intersection_volume,as_volume,tissue_block_volume
+http://purl.org/ccf/1.5/04baf323-eda0-4f72-bea1-aa943aa70894,VHFHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,3862.528,229312.7801882646,4096
 http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc,VHFHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,3549.1499999999996,229312.7801882646,7425
 http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc,VHFHeart,heart right ventricle,http://purl.obolibrary.org/obo/UBERON_0002080,883.5749999999999,78714.75572486868,7425
 http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc,VHFHeart,interventricular septum,http://purl.obolibrary.org/obo/UBERON_0002094,5531.625,65894.53465930313,7425
 http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc,VHFHeart,Posteromedial head of posterior papillary muscle of left ventricle,http://purl.org/sig/ont/fma/fma7267,631.125,4401.498768462402,7425
+http://purl.org/ccf/1.5/16e98d8c-8983-48c2-bb41-7b1cfbbf2e4a,VHFHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,2670.122,229312.7801882646,3094
+http://purl.org/ccf/1.5/1995aefd-5289-4652-a7e0-cc66c495649f,VHFHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1491.7630000000001,229312.7801882646,2197
+http://purl.org/ccf/1.5/1995aefd-5289-4652-a7e0-cc66c495649f,VHFHeart,heart right ventricle,http://purl.obolibrary.org/obo/UBERON_0002080,347.126,78714.75572486868,2197
+http://purl.org/ccf/1.5/1995aefd-5289-4652-a7e0-cc66c495649f,VHFHeart,interventricular septum,http://purl.obolibrary.org/obo/UBERON_0002094,127.426,65894.53465930313,2197
 http://purl.org/ccf/1.5/1fe61622-ba53-47c9-967e-e764c21b8189,VHFHeart,heart right ventricle,http://purl.obolibrary.org/obo/UBERON_0002080,2023.1999999999998,78714.75572486868,2400
 http://purl.org/ccf/1.5/2156f837-2ab2-4305-8e7f-8084249e91cd,VHFHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,2687.1600000000003,229312.7801882646,2940
+http://purl.org/ccf/1.5/2816c343-c908-45bf-8964-974b1c54a5b9,VHFHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,3862.528,229312.7801882646,4096
 http://purl.org/ccf/1.5/53b083ab-cb70-4096-b385-85590ddc370c,VHFHeart,left cardiac atrium,http://purl.obolibrary.org/obo/UBERON_0002079,553.3919999999999,18115.96846829785,4536
 http://purl.org/ccf/1.5/53b083ab-cb70-4096-b385-85590ddc370c,VHFHeart,aortic valve,http://purl.obolibrary.org/obo/UBERON_0002137,22.68,3612.978819642568,4536
 http://purl.org/ccf/1.5/9abfed4e-2fde-4d80-a8aa-7439a106d895,VHFHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,6972.4800000000005,229312.7801882646,8640
 http://purl.org/ccf/1.5/9f2c1d5d-2ad4-4a7a-ad95-622c7328b554,VHFHeart,right cardiac atrium,http://purl.obolibrary.org/obo/UBERON_0002078,2096.64,33225.90134453539,4368
 http://purl.org/ccf/1.5/a04e60c6-693a-4c25-a069-62521783fd15,VHFHeart,right cardiac atrium,http://purl.obolibrary.org/obo/UBERON_0002078,564.0,33225.90134453539,800
+http://purl.org/ccf/1.5/e13cd910-c2df-4b83-ad68-2e7409089fa4,VHFHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,3862.528,229312.7801882646,4096
 http://purl.org/ccf/1.5/32214c14-bf21-4bf6-aea9-58ab721128ab,VHFLargeIntestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,4415.0,140721.8643302251,5000
 http://purl.org/ccf/1.5/3425fa0c-c5cb-4493-b6ba-41520334b13e,VHFLargeIntestine,ascending colon,http://purl.obolibrary.org/obo/UBERON_0001156,1295.0,46838.66491802995,5000
 http://purl.org/ccf/1.5/3425fa0c-c5cb-4493-b6ba-41520334b13e,VHFLargeIntestine,caecum,http://purl.obolibrary.org/obo/UBERON_0001153,300.0,31765.15370754535,5000
@@ -20,19 +27,68 @@ http://purl.org/ccf/1.5/8b652088-8c73-466d-b59c-3fbb8c01e399,VHFLargeIntestine,s
 http://purl.org/ccf/1.5/aab5a316-7fbc-4a57-8b3a-3fc1958c5292,VHFLargeIntestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,4415.0,140721.8643302251,5000
 http://purl.org/ccf/1.5/cd304e60-3de4-4dd9-b289-ce1a0efae4d7,VHFLargeIntestine,sigmoid colon,http://purl.obolibrary.org/obo/UBERON_0001159,260.0,30343.70958932816,5000
 http://purl.org/ccf/1.5/db4f3eca-e9f8-4f9c-88a1-795a20dd0f84,VHFLargeIntestine,transverse colon,http://purl.obolibrary.org/obo/UBERON_0001157,630.0,171672.2417935184,5000
+http://purl.org/ccf/1.5/26edd761-8b50-453c-9b03-2337806c9e3a,VHFLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,9.99,2673.250952813289,10
 http://purl.org/ccf/1.5/52c4948d-bdc2-4201-a991-61a2c0a565c0,VHFLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,23.951999999999998,2149.598320977015,24
 http://purl.org/ccf/1.5/61d9f366-c050-4c28-995f-32ab920a7ca8,VHFLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,9.216,8149.50311414705,16
 http://purl.org/ccf/1.5/8d126897-60f6-433e-a56b-cbe730475742,VHFLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,16,132321.2564316727,16
+http://purl.org/ccf/1.5/8f99a469-7d51-46dc-919d-2e002eeae868,VHFLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,30,2480.14764055751,30
+http://purl.org/ccf/1.5/bd004aeb-6e60-4d5b-8d40-cfdd55b8b6fe,VHFLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,26.0,132321.2564316727,52
+http://purl.org/ccf/1.5/bd004aeb-6e60-4d5b-8d40-cfdd55b8b6fe,VHFLeftKidney,renal column,http://purl.obolibrary.org/obo/UBERON_0001284,15.235999999999999,72301.89436880287,52
+http://purl.org/ccf/1.5/bd004aeb-6e60-4d5b-8d40-cfdd55b8b6fe,VHFLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,9.203999999999999,8149.50311414705,52
+http://purl.org/ccf/1.5/fd380a0c-2915-4d73-b3f4-d161badbaccb,VHFLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,24.696,132321.2564316727,72
+http://purl.org/ccf/1.5/fd380a0c-2915-4d73-b3f4-d161badbaccb,VHFLeftKidney,renal column,http://purl.obolibrary.org/obo/UBERON_0001284,0.432,72301.89436880287,72
+http://purl.org/ccf/1.5/fd380a0c-2915-4d73-b3f4-d161badbaccb,VHFLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,43.704,2896.476303276304,72
+http://purl.org/ccf/1.5/5764d42e-95e4-4e5a-b36e-ca498354906d,VHFLeftUreter,left ureter,http://purl.obolibrary.org/obo/UBERON_0001223,8.52,668.6659597939507,24
+http://purl.org/ccf/1.5/c5e652ed-7e40-41de-bfc0-a73f05a0c66a,VHFLeftUreter,left ureter,http://purl.obolibrary.org/obo/UBERON_0001223,4.96,668.6659597939507,32
+http://purl.org/ccf/1.5/05310dee-180d-4e59-8c58-b101d12f4c73,VHFLung,Right Superior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7366,588.2624999999999,234868.6743737205,1012.5
+http://purl.org/ccf/1.5/05310dee-180d-4e59-8c58-b101d12f4c73,VHFLung,Right Posterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7339,869.7375,161360.708983395,1012.5
+http://purl.org/ccf/1.5/09b9e49f-dd9c-4f9f-a7dc-258ac0d08530,VHFLung,Right anterior basal bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7364,245.0,185551.3043128985,1000
+http://purl.org/ccf/1.5/09b9e49f-dd9c-4f9f-a7dc-258ac0d08530,VHFLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,737.0,83916.23058980214,1000
 http://purl.org/ccf/1.5/0c1510fa-83b7-43aa-aa70-d261835ce604_LungMap_Female_AllenWangLungMap_FEMALE_tissueblock_RUI,VHFLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,75,149921.3888392674,75
 http://purl.org/ccf/1.5/0c1510fa-83b7-43aa-aa70-d261835ce604_LungMap_Female_AllenWangLungMap_FEMALE_tissueblock_RUI,VHFLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,36.225,83916.23058980214,75
 http://purl.org/ccf/1.5/0c1510fa-83b7-43aa-aa70-d261835ce604_LungMap_Female_AllenWangLungMap_FEMALE_tissueblock_RUI,VHFLung,Lateral segmental bronchus,http://purl.org/sig/ont/fma/fma7402,52.275,588.9754895789944,75
+http://purl.org/ccf/1.5/0cd47185-8e8a-4f56-a167-bf93de928553,VHFLung,Right anterior basal bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7364,600.0,185551.3043128985,1000
+http://purl.org/ccf/1.5/0cd47185-8e8a-4f56-a167-bf93de928553,VHFLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,484.0,83916.23058980214,1000
+http://purl.org/ccf/1.5/2243b679-6c6c-4b66-9479-fef2640f2872,VHFLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,1000,374148.9387129613,1000
+http://purl.org/ccf/1.5/25c3d20d-d856-4a22-b926-6ee9a5f4a1d4,VHFLung,Right anterior basal bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7364,927.0,185551.3043128985,1000
+http://purl.org/ccf/1.5/25c3d20d-d856-4a22-b926-6ee9a5f4a1d4,VHFLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,116.0,83916.23058980214,1000
+http://purl.org/ccf/1.5/3545c186-aafd-4477-adc5-6ee21219cf87,VHFLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,1000,374148.9387129613,1000
+http://purl.org/ccf/1.5/3c299376-82f1-4c1f-b283-2c03cb7922e2,VHFLung,Right anterior basal bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7364,432.0,185551.3043128985,562.5
+http://purl.org/ccf/1.5/3c299376-82f1-4c1f-b283-2c03cb7922e2,VHFLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,172.6875,149921.3888392674,562.5
+http://purl.org/ccf/1.5/4890aa9b-26a3-4db5-b25a-66e18cbc2158,VHFLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,1000,374148.9387129613,1000
+http://purl.org/ccf/1.5/559cb26d-2bed-41a6-8cdf-d5da5f4b52d2,VHFLung,Right Posterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7339,1500,161360.708983395,1500
+http://purl.org/ccf/1.5/8af0476d-e6e6-4b55-afae-5eec8c9c1cb5,VHFLung,Right anterior basal bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7364,634.5,185551.3043128985,843.75
+http://purl.org/ccf/1.5/8af0476d-e6e6-4b55-afae-5eec8c9c1cb5,VHFLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,287.71875,149921.3888392674,843.75
+http://purl.org/ccf/1.5/9131c76e-62cb-4433-a216-64e9fa0450c5,VHFLung,Right Posterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7339,1000,161360.708983395,1000
+http://purl.org/ccf/1.5/9131c76e-62cb-4433-a216-64e9fa0450c5,VHFLung,Right Apical Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7338,36.0,151252.0747039436,1000
+http://purl.org/ccf/1.5/965b263e-b1b5-44c3-86ef-bb682091be05,VHFLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,500,374148.9387129613,500
+http://purl.org/ccf/1.5/965b263e-b1b5-44c3-86ef-bb682091be05,VHFLung,Right apical segmental bronchus,http://purl.org/sig/ont/fma/fma7398,47.5,2537.34632998989,500
 http://purl.org/ccf/1.5/ab9cafec-3eff-49ac-b2a9-ba96c22d80f9,VHFLung,Left posterior bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7386,980.0,155013.6722653357,1000
 http://purl.org/ccf/1.5/ab9cafec-3eff-49ac-b2a9-ba96c22d80f9,VHFLung,Left apical bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7385,1000,113080.2759038704,1000
+http://purl.org/ccf/1.5/c5d8b584-d6b7-4a98-8330-a97ecec688f8,VHFLung,Right Superior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7366,337.5,234868.6743737205,500
+http://purl.org/ccf/1.5/c5d8b584-d6b7-4a98-8330-a97ecec688f8,VHFLung,Right Posterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7339,499.0,161360.708983395,500
+http://purl.org/ccf/1.5/ca4a4754-6937-4d08-9eb0-bf400492c22c,VHFLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,1000,149921.3888392674,1000
+http://purl.org/ccf/1.5/dcbd8b51-3a18-4025-97c1-e1867e346a18,VHFLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,1416.0,374148.9387129613,1500
+http://purl.org/ccf/1.5/dcbd8b51-3a18-4025-97c1-e1867e346a18,VHFLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,130.5,149921.3888392674,1500
+http://purl.org/ccf/1.5/dcbd8b51-3a18-4025-97c1-e1867e346a18,VHFLung,Right anterior segmental bronchus,http://purl.org/sig/ont/fma/fma7400,6.0,2374.754759128717,1500
+http://purl.org/ccf/1.5/e7d21a48-63dd-45d8-aedd-e4abed52d5d8,VHFLung,Right Apical Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7338,494.0,151252.0747039436,500
+http://purl.org/ccf/1.5/e7d21a48-63dd-45d8-aedd-e4abed52d5d8,VHFLung,right lung hilus,http://purl.obolibrary.org/obo/UBERON_0004888,5.0,-2918.497115637571,500
+http://purl.org/ccf/1.5/e7d21a48-63dd-45d8-aedd-e4abed52d5d8,VHFLung,right lung hilus,http://purl.obolibrary.org/obo/UBERON_0004888,5.0,-13356.05681413015,500
+http://purl.org/ccf/1.5/f1c3f780-6627-4c56-aada-97cb158f540d,VHFLung,Right Posterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7339,901.5,161360.708983395,1500
+http://purl.org/ccf/1.5/f1c3f780-6627-4c56-aada-97cb158f540d,VHFLung,Right Apical Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7338,1500,151252.0747039436,1500
+http://purl.org/ccf/1.5/f8a20a09-a700-439b-a518-60347cd7b156,VHFLung,Right anterior basal bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7364,431.0,185551.3043128985,1000
+http://purl.org/ccf/1.5/f8a20a09-a700-439b-a518-60347cd7b156,VHFLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,602.0,149921.3888392674,1000
+http://purl.org/ccf/1.5/f8a20a09-a700-439b-a518-60347cd7b156,VHFLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,237.0,83916.23058980214,1000
 http://purl.org/ccf/1.5/1d965182-bf13-4738-af05-72b817121959,VHFRightKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,1.95,84566.4834520329,50
 http://purl.org/ccf/1.5/1d965182-bf13-4738-af05-72b817121959,VHFRightKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,49.35,3490.234642146623,50
+http://purl.org/ccf/1.5/2a9e525a-4ad9-4085-bca9-31a2d0512008,VHFRightKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,29.43,84566.4834520329,30
+http://purl.org/ccf/1.5/4ae53bc8-b6da-4ba9-9030-a93ae44389b9,VHFRightKidney,renal column,http://purl.obolibrary.org/obo/UBERON_0001284,18,52318.48698040762,18
+http://purl.org/ccf/1.5/4e2e6f98-ec16-4627-a06a-d3cdc282ee1c,VHFRightKidney,renal column,http://purl.obolibrary.org/obo/UBERON_0001284,6.468,52318.48698040762,12
 http://purl.org/ccf/1.5/64c5c92d-dc07-40c4-a702-cbef17753fa6,VHFRightKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,11.532,84566.4834520329,12
 http://purl.org/ccf/1.5/64c5c92d-dc07-40c4-a702-cbef17753fa6,VHFRightKidney,kidney capsule,http://purl.obolibrary.org/obo/UBERON_0002015,0.372,10055.26167880638,12
 http://purl.org/ccf/1.5/6f74a57b-41ce-4581-a206-2e84b58c1c98,VHFRightKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,54.053999999999995,1702.38865605142,78
+http://purl.org/ccf/1.5/85ad9566-c363-4b61-a522-6576b253d9af,VHFRightKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,30,2260.911816312626,30
+http://purl.org/ccf/1.5/f66f91f9-c6c5-414d-b784-2faec33e0505,VHFRightKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,119.88,3490.234642146623,120
 http://purl.org/ccf/1.5/3b5d2036-3c56-4cf8-808f-462c9e3681e5,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,http://purl.org/sig/ont/fma/fma73165,384.8,726890.7114561738,400
 http://purl.org/ccf/1.5/6f04ffad-3b9d-4c1c-afc0-fd203b02e5a3,VHFSkin,skin of body,http://purl.obolibrary.org/obo/UBERON_0002097,1000,1833227.326257925,1000
 http://purl.org/ccf/1.5/9e77a7b5-e7e8-48e1-a30e-01eeaa300ed8,VHFSkin,skin of body,http://purl.obolibrary.org/obo/UBERON_0002097,2730,1833227.326257925,2730
@@ -51,11 +107,21 @@ http://purl.org/ccf/1.5/d1085194-4902-4252-95fd-faf03afd9288,VHFSmallIntestine,d
 http://purl.org/ccf/1.5/d194f593-af76-4ee7-84a6-00f7531d47cf,VHFSmallIntestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,139.04999999999998,32188.42710108468,1350
 http://purl.org/ccf/1.5/d8c8faa2-7e2a-4b74-9531-cd08be659c10,VHFSmallIntestine,ileum,http://purl.obolibrary.org/obo/UBERON_0002116,8.1,48943.48376722476,1350
 http://purl.org/ccf/1.5/d8c8faa2-7e2a-4b74-9531-cd08be659c10,VHFSmallIntestine,distal part of ileum,http://purl.org/sig/ont/fma/fma14966,360.45000000000005,4170.360444862809,1350
+http://purl.org/ccf/1.5/118235b7-38a4-4fcf-8834-bad5765f5eeb,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2070274211,1600
 http://purl.org/ccf/1.5/20a0c365-6a97-4224-ae14-16fba10c13f8,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,3397.6319999999996,121604.2070274211,3584
+http://purl.org/ccf/1.5/3156203b-0238-447d-9aae-c4341f2da943,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1463.3999999999999,121604.2070274211,1800
+http://purl.org/ccf/1.5/39e72b20-77e5-45a5-bb0e-f374ea5894ad,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1463.3999999999999,121604.2070274211,1800
+http://purl.org/ccf/1.5/5cb72454-f0fb-41d5-9cad-5797e1b447ae,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2070274211,1600
 http://purl.org/ccf/1.5/7296fad6-bf8e-49da-8f4a-ef76ee4cfeac,VHMHeart,right cardiac atrium,http://purl.obolibrary.org/obo/UBERON_0002078,705.76,27714.91711157488,1760
 http://purl.org/ccf/1.5/760368bf-6b4c-4d92-aa2b-24e17fd947d3,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,2406.144,121604.2070274211,2496
+http://purl.org/ccf/1.5/87df967f-1311-43ac-a306-04e47d2f4a60,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1463.3999999999999,121604.2070274211,1800
+http://purl.org/ccf/1.5/886e391d-0151-46d3-8a51-084bf6a06910,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2070274211,1600
+http://purl.org/ccf/1.5/a0ff0780-d666-42fe-8068-a3b41b1c6aa0,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2070274211,1600
 http://purl.org/ccf/1.5/bb9dbc76-88b2-43ad-9401-e1e87424efa5,VHMHeart,left cardiac atrium,http://purl.obolibrary.org/obo/UBERON_0002079,4584.0,31346.0636820313,8000
 http://purl.org/ccf/1.5/bb9dbc76-88b2-43ad-9401-e1e87424efa5,VHMHeart,aortic valve,http://purl.obolibrary.org/obo/UBERON_0002137,80.0,3027.459749680611,8000
+http://purl.org/ccf/1.5/ce5f3bd0-f091-49fe-8fe5-67004848078b,VHMHeart,heart right ventricle,http://purl.obolibrary.org/obo/UBERON_0002080,275.0,73988.45321948585,1000
+http://purl.org/ccf/1.5/da28394d-789a-4fba-842a-f8ba5046b221,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2070274211,1600
+http://purl.org/ccf/1.5/de8bd0bf-7765-44c4-9d22-5ff5c0586816,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1463.3999999999999,121604.2070274211,1800
 http://purl.org/ccf/1.5/f1790d4b-bbc0-434c-b8ed-f21e8b8be903,VHMHeart,heart right ventricle,http://purl.obolibrary.org/obo/UBERON_0002080,1348.032,73988.45321948585,1904
 http://purl.org/ccf/1.5/f6512db4-2809-4ffe-864d-ace61789dff6,VHMHeart,right cardiac atrium,http://purl.obolibrary.org/obo/UBERON_0002078,321.6,27714.91711157488,800
 http://purl.org/ccf/1.5/fdb0d1f7-94d5-4628-b345-dbe4975966fd,VHMHeart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,838.3499999999999,121604.2070274211,2430
@@ -92,21 +158,86 @@ http://purl.org/ccf/1.5/e7d386a6-d4fb-43b2-9737-fdc6f7508d79,VHMLargeIntestine,s
 http://purl.org/ccf/1.5/e7d386a6-d4fb-43b2-9737-fdc6f7508d79,VHMLargeIntestine,rectum,http://purl.obolibrary.org/obo/UBERON_0001052,30.0,55500.59872139351,5000
 http://purl.org/ccf/1.5/fb4cec06-b147-4277-a6cf-8aa21e294183,VHMLargeIntestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,119090.4126526517,5000
 http://purl.org/ccf/1.5/2990ecc8-1854-4794-8f11-1b31c5c94e5f,VHMLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,12,119897.3006204218,12
+http://purl.org/ccf/1.5/29e439fb-cfec-4c2d-a14e-3bc60eb8e255,VHMLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,12,2112.787327093366,12
+http://purl.org/ccf/1.5/29e439fb-cfec-4c2d-a14e-3bc60eb8e255,VHMLeftKidney,renal papilla,http://purl.obolibrary.org/obo/UBERON_0001228,3.4079999999999995,29.41792173604161,12
 http://purl.org/ccf/1.5/5166a7a1-bd21-4aa3-ba20-23453cb4c431,VHMLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,48,119897.3006204218,48
+http://purl.org/ccf/1.5/72ea5aad-4be7-4478-afc0-7736bc0d90e3,VHMLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,8.244,2112.787327093366,12
+http://purl.org/ccf/1.5/72ea5aad-4be7-4478-afc0-7736bc0d90e3,VHMLeftKidney,renal papilla,http://purl.obolibrary.org/obo/UBERON_0001228,11.040000000000001,29.41792173604161,12
+http://purl.org/ccf/1.5/7f7fe1b0-d9f6-48c2-a304-2ea5874c7392,VHMLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,1.2,119897.3006204218,30
+http://purl.org/ccf/1.5/7f7fe1b0-d9f6-48c2-a304-2ea5874c7392,VHMLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,30,6220.839356878388,30
+http://purl.org/ccf/1.5/c07ec91d-9dbe-4132-a93c-b960895b009d,VHMLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,22.040000000000003,119897.3006204218,40
+http://purl.org/ccf/1.5/c07ec91d-9dbe-4132-a93c-b960895b009d,VHMLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,21.880000000000003,6220.839356878388,40
 http://purl.org/ccf/1.5/cf4ba102-edf7-4fe4-bb1d-860cdf57609d,VHMLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,9.2,119897.3006204218,100
 http://purl.org/ccf/1.5/cf4ba102-edf7-4fe4-bb1d-860cdf57609d,VHMLeftKidney,renal column,http://purl.obolibrary.org/obo/UBERON_0001284,85.2,39325.42900374378,100
 http://purl.org/ccf/1.5/cf4ba102-edf7-4fe4-bb1d-860cdf57609d,VHMLeftKidney,hilum of kidney,http://purl.obolibrary.org/obo/UBERON_0008716,66.10000000000001,7937.076400845168,100
 http://purl.org/ccf/1.5/cf4ba102-edf7-4fe4-bb1d-860cdf57609d,VHMLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,14.299999999999999,3093.172890672951,100
 http://purl.org/ccf/1.5/f31c1726-c693-4734-8c1c-4f1d64bbe034,VHMLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,40.5,119897.3006204218,60
 http://purl.org/ccf/1.5/f31c1726-c693-4734-8c1c-4f1d64bbe034,VHMLeftKidney,kidney capsule,http://purl.obolibrary.org/obo/UBERON_0002015,5.159999999999999,6251.962236821093,60
+http://purl.org/ccf/1.5/f3f2fabb-6802-4fd4-920e-1914293db252,VHMLeftKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,40,119897.3006204218,40
+http://purl.org/ccf/1.5/f3f2fabb-6802-4fd4-920e-1914293db252,VHMLeftKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,0.04,6220.839356878388,40
+http://purl.org/ccf/1.5/19fee435-ebad-476c-bc9a-e11d2cee035e,VHMLeftUreter,left ureter,http://purl.obolibrary.org/obo/UBERON_0001223,0.568,1685.79976169795,8
+http://purl.org/ccf/1.5/1f414fc5-cb93-45b7-a1b8-0cd21dfa9f7d,VHMLeftUreter,left ureter,http://purl.obolibrary.org/obo/UBERON_0001223,0.28,1685.79976169795,8
+http://purl.org/ccf/1.5/3a25960a-8e7a-4020-8dfb-8ce6c3423e35,VHMLeftUreter,left ureter,http://purl.obolibrary.org/obo/UBERON_0001223,0.168,1685.79976169795,8
+http://purl.org/ccf/1.5/0364c64a-5b0a-493f-a5ee-3adfc837211c,VHMLung,Left posterior bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7386,1000,240984.6890340136,1000
+http://purl.org/ccf/1.5/0364c64a-5b0a-493f-a5ee-3adfc837211c,VHMLung,Left apical bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7385,791.0,174591.3885900344,1000
+http://purl.org/ccf/1.5/0f4be9aa-dfce-414f-9d40-47cb38f5eee8,VHMLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,500,309071.5618475564,500
+http://purl.org/ccf/1.5/11fcf508-762d-4f0c-b5c5-dad0cf38f4de,VHMLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,500,309071.5618475564,500
+http://purl.org/ccf/1.5/3e6d37df-e4f3-4654-b06d-3a76c2e665ea,VHMLung,Left Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7373,1003.5000000000001,444225.1660432583,1500
+http://purl.org/ccf/1.5/3e6d37df-e4f3-4654-b06d-3a76c2e665ea,VHMLung,Superior lingular bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7374,1500,299217.880850064,1500
+http://purl.org/ccf/1.5/3e6d37df-e4f3-4654-b06d-3a76c2e665ea,VHMLung,Left anterior segmental bronchus,http://purl.org/sig/ont/fma/fma7428,307.5,4557.780981819779,1500
+http://purl.org/ccf/1.5/527bfb3c-5cea-4131-a73a-72687feb8024,VHMLung,Left Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7373,996.0,444225.1660432583,1000
+http://purl.org/ccf/1.5/527bfb3c-5cea-4131-a73a-72687feb8024,VHMLung,Left anterior segmental bronchus,http://purl.org/sig/ont/fma/fma7428,26.0,4557.780981819779,1000
+http://purl.org/ccf/1.5/527bfb3c-5cea-4131-a73a-72687feb8024,VHMLung,Left apical segmental bronchus,http://purl.org/sig/ont/fma/fma7426,29.0,1850.032560770765,1000
+http://purl.org/ccf/1.5/56b136e7-40dd-477a-b5b6-9be0bb98374c,VHMLung,Left apical bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7385,1000,174591.3885900344,1000
+http://purl.org/ccf/1.5/56b136e7-40dd-477a-b5b6-9be0bb98374c,VHMLung,Left apical segmental bronchus,http://purl.org/sig/ont/fma/fma7426,1.0,1850.032560770765,1000
+http://purl.org/ccf/1.5/594902fb-c4c1-47c3-b98e-3101b93a73e4,VHMLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,295.0,229964.967376884,500
+http://purl.org/ccf/1.5/594902fb-c4c1-47c3-b98e-3101b93a73e4,VHMLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,500,162410.6783887328,500
+http://purl.org/ccf/1.5/5b4b476b-01e1-4d13-95e5-d17770f9ffa9,VHMLung,Left Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7373,948.0,444225.1660432583,1000
+http://purl.org/ccf/1.5/5b4b476b-01e1-4d13-95e5-d17770f9ffa9,VHMLung,Left posterior bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7386,6.0,240984.6890340136,1000
+http://purl.org/ccf/1.5/5b4b476b-01e1-4d13-95e5-d17770f9ffa9,VHMLung,Left apical segmental bronchus,http://purl.org/sig/ont/fma/fma7426,98.0,1850.032560770765,1000
+http://purl.org/ccf/1.5/616ef33e-ebcc-4ece-b440-ca218440c8b4,VHMLung,Inferior lingular bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7375,1750.0,130425.019760493,2000
+http://purl.org/ccf/1.5/74d8c134-9489-4599-afa7-95bd8cf9fc8a,VHMLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,489.5,309071.5618475564,500
+http://purl.org/ccf/1.5/76c77da1-c978-48fe-b30b-aeff33a5d054,VHMLung,Left Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7373,2490.0,444225.1660432583,2500
+http://purl.org/ccf/1.5/76c77da1-c978-48fe-b30b-aeff33a5d054,VHMLung,Superior lingular bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7374,95.0,299217.880850064,2500
+http://purl.org/ccf/1.5/76c77da1-c978-48fe-b30b-aeff33a5d054,VHMLung,Left anterior segmental bronchus,http://purl.org/sig/ont/fma/fma7428,732.5,4557.780981819779,2500
+http://purl.org/ccf/1.5/76c77da1-c978-48fe-b30b-aeff33a5d054,VHMLung,Left apical segmental bronchus,http://purl.org/sig/ont/fma/fma7426,7.5,1850.032560770765,2500
+http://purl.org/ccf/1.5/76c77da1-c978-48fe-b30b-aeff33a5d054,VHMLung,left lung hilus,http://purl.obolibrary.org/obo/UBERON_0004887,434.99999999999994,-14467.8025947732,2500
+http://purl.org/ccf/1.5/76c77da1-c978-48fe-b30b-aeff33a5d054,VHMLung,left lung hilus,http://purl.obolibrary.org/obo/UBERON_0004887,434.99999999999994,-31882.54665287885,2500
+http://purl.org/ccf/1.5/840b29a9-5a04-41cc-908d-0c4fa5720366,VHMLung,Left posterior bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7386,1467.0,240984.6890340136,1500
+http://purl.org/ccf/1.5/840b29a9-5a04-41cc-908d-0c4fa5720366,VHMLung,Left apical bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7385,1500,174591.3885900344,1500
+http://purl.org/ccf/1.5/853a9e2c-10ba-4491-9d9d-3551c0c5f26d,VHMLung,Left Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7373,750,444225.1660432583,750
+http://purl.org/ccf/1.5/853a9e2c-10ba-4491-9d9d-3551c0c5f26d,VHMLung,Superior lingular bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7374,728.25,299217.880850064,750
+http://purl.org/ccf/1.5/8c2283cd-667a-4fa1-9026-50e30bcfdcd1,VHMLung,Superior lingular bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7374,1000,299217.880850064,1000
+http://purl.org/ccf/1.5/8c2283cd-667a-4fa1-9026-50e30bcfdcd1,VHMLung,Inferior lingular bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7375,81.0,130425.019760493,1000
+http://purl.org/ccf/1.5/8c2283cd-667a-4fa1-9026-50e30bcfdcd1,VHMLung,Superior lingular bronchus,http://purl.org/sig/ont/fma/fma7430,17.0,254.0222038066852,1000
+http://purl.org/ccf/1.5/8d3e8fa1-185d-479b-83d9-9dfe2ead2d3e,VHMLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,1000,229964.967376884,1000
+http://purl.org/ccf/1.5/95190b47-b491-448a-8e9b-06d804bf2aa1,VHMLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,500,229964.967376884,500
+http://purl.org/ccf/1.5/95881dfc-b806-40ca-85fd-0e02d647c999,VHMLung,Right Posterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7339,190.0,353229.4321451719,500
+http://purl.org/ccf/1.5/95881dfc-b806-40ca-85fd-0e02d647c999,VHMLung,Right Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7359,483.5,309071.5618475564,500
+http://purl.org/ccf/1.5/95881dfc-b806-40ca-85fd-0e02d647c999,VHMLung,Right superior segmental bronchus,http://purl.org/sig/ont/fma/fma7416,14.5,1456.963575946762,500
 http://purl.org/ccf/1.5/ab2e49b2-1959-44af-8e83-ac16878f6c12,VHMLung,Left apical bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7385,1000,174591.3885900344,1000
+http://purl.org/ccf/1.5/aba1ebe3-af18-40cc-b536-b89843049ca5,VHMLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,500,162410.6783887328,500
 http://purl.org/ccf/1.5/bb8f70e2-273f-4902-a2ce-70a110aee2ec_AllenWangLungMap_MALE_tissueblock_RUI,VHMLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,75,162410.6783887328,75
 http://purl.org/ccf/1.5/bb8f70e2-273f-4902-a2ce-70a110aee2ec_AllenWangLungMap_MALE_tissueblock_RUI,VHMLung,Lateral segmental bronchus,http://purl.org/sig/ont/fma/fma7402,13.65,665.0720323461572,75
+http://purl.org/ccf/1.5/c8cdaa06-847b-4747-9a00-d89761cea031,VHMLung,Left apical bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7385,1000,174591.3885900344,1000
+http://purl.org/ccf/1.5/cfa23a23-1cef-4a6f-8303-d1198e91a773,VHMLung,Left posterior bronchopulmonary segment,http://purl.org/sig/ont/fma/fma7386,1000,240984.6890340136,1000
+http://purl.org/ccf/1.5/d51b9d67-837f-4451-a6c6-0b63c7879736,VHMLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,500,229964.967376884,500
+http://purl.org/ccf/1.5/d662fd53-e925-4921-8d8b-bc91eed1519b,VHMLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,746.25,229964.967376884,750
+http://purl.org/ccf/1.5/f15f5400-2ef9-45fc-bf0f-72f14d6f8f9e,VHMLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,750,229964.967376884,750
+http://purl.org/ccf/1.5/f4a116d7-f844-4d4a-bc8f-632151125313,VHMLung,Left Anterior Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7373,1000,444225.1660432583,1000
+http://purl.org/ccf/1.5/fd4fcec2-93c3-428f-ad3a-6c7ac4196da0,VHMLung,Right Medial Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7360,125.0,229964.967376884,500
+http://purl.org/ccf/1.5/fd4fcec2-93c3-428f-ad3a-6c7ac4196da0,VHMLung,Right Lateral Bronchopulmonary Segment,http://purl.org/sig/ont/fma/fma7361,500,162410.6783887328,500
 http://purl.org/ccf/1.5/5475ae38-db50-4868-92ba-8718bf136c7b,VHMProstate,peripheral zone of prostate,http://purl.obolibrary.org/obo/UBERON_8410026,319.2,4502.338753224233,700
 http://purl.org/ccf/1.5/5475ae38-db50-4868-92ba-8718bf136c7b,VHMProstate,peripheral zone of prostate,http://purl.obolibrary.org/obo/UBERON_8410026,320.6,4398.494894308656,700
 http://purl.org/ccf/1.5/5475ae38-db50-4868-92ba-8718bf136c7b,VHMProstate,central zone of prostate,http://purl.obolibrary.org/obo/UBERON_8410027,33.6,1846.379700236673,700
 http://purl.org/ccf/1.5/5475ae38-db50-4868-92ba-8718bf136c7b,VHMProstate,central zone of prostate,http://purl.obolibrary.org/obo/UBERON_8410027,30.099999999999998,1753.812347120709,700
+http://purl.org/ccf/1.5/57bab703-98bd-4106-9160-af951a74e4df,VHMRightKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,11.328,1911.796734311431,12
+http://purl.org/ccf/1.5/57bab703-98bd-4106-9160-af951a74e4df,VHMRightKidney,renal papilla,http://purl.obolibrary.org/obo/UBERON_0001228,5.712,32.27642989924912,12
+http://purl.org/ccf/1.5/69ac0df4-f442-4d62-90dc-86fcbc38eb23,VHMRightKidney,renal pyramid,http://purl.obolibrary.org/obo/UBERON_0004200,40,4454.755408253576,40
+http://purl.org/ccf/1.5/6a6392a9-8ac1-4666-a684-83d310ca055f,VHMRightKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,120,109924.9845169422,120
+http://purl.org/ccf/1.5/769ca7e9-ead0-4882-966c-d6f5c273c2ee,VHMRightKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,180,109924.9845169422,180
 http://purl.org/ccf/1.5/db35f27d-313f-4dd6-819b-375cf106aac1,VHMRightKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,12,109924.9845169422,12
+http://purl.org/ccf/1.5/df0b33f7-371a-47a4-a636-a27db19bdbc9,VHMRightKidney,outer cortex of kidney,http://purl.obolibrary.org/obo/UBERON_0002189,48,109924.9845169422,48
 http://purl.org/ccf/1.5/314450f7-0477-4152-b4d6-cb474cbc0cd7,VHMSkin,skin of body,http://purl.obolibrary.org/obo/UBERON_0002097,644.436,2109804.44224585,7956
 http://purl.org/ccf/1.5/56d63930-60f2-49f5-a3bb-afc8d865c152,VHMSkin,skin of body,http://purl.obolibrary.org/obo/UBERON_0002097,2352,2109804.44224585,2352
 http://purl.org/ccf/1.5/cce37703-e4e8-454c-a0c4-4ff58652ab8f,VHMSkin,skin of body,http://purl.obolibrary.org/obo/UBERON_0002097,1000,2109804.44224585,1000
@@ -137,6 +268,7 @@ http://purl.org/ccf/1.5/85765dd5-2197-4361-b4c6-c9d30186044a,VHMSmallIntestine,d
 http://purl.org/ccf/1.5/a1fc9d45-5af9-4fc4-b2be-340ef0716e09,VHMSmallIntestine,horizontal part of duodenum,http://purl.org/sig/ont/fma/fma14929,351.0,10554.93714232167,1350
 http://purl.org/ccf/1.5/a1fc9d45-5af9-4fc4-b2be-340ef0716e09,VHMSmallIntestine,ascending part of duodenum,http://purl.org/sig/ont/fma/fma14930,145.8,7109.889886530647,1350
 http://purl.org/ccf/1.5/b09f5826-e6fa-4bec-8054-2fb6e6f202ae,VHMSmallIntestine,distal part of ileum,http://purl.org/sig/ont/fma/fma14966,633.15,14601.44321103808,1350
+http://purl.org/ccf/1.5/bddd9066-3f8c-4330-8e33-23be89ee8a0b,VHMSmallIntestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,463.05,194372.0765770627,1350
 http://purl.org/ccf/1.5/d9aed544-4c6e-42c2-a137-9a9381d8f8c8,VHMSmallIntestine,horizontal part of duodenum,http://purl.org/sig/ont/fma/fma14929,351.0,10554.93714232167,1350
 http://purl.org/ccf/1.5/d9aed544-4c6e-42c2-a137-9a9381d8f8c8,VHMSmallIntestine,ascending part of duodenum,http://purl.org/sig/ont/fma/fma14930,145.8,7109.889886530647,1350
 http://purl.org/ccf/1.5/e4a44b76-53fd-4c88-9ccf-ba095fcb9673,VHMSmallIntestine,distal part of ileum,http://purl.org/sig/ont/fma/fma14966,633.15,14601.44321103808,1350

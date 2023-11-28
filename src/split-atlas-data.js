@@ -7,7 +7,9 @@ const ATLAS_DATA = process.argv[4];
 const ATLAS_LQ_DATA = process.argv[5];
 const TEST_DATA = process.argv[6];
 const NON_ATLAS_DATA = process.argv[7];
+const APPROVED_SOURCES = process.env.APPROVED_SOURCES || '';
 
+const approvedSources = new Set(APPROVED_SOURCES.split(/\W+/).filter(s => !!s));
 const summaries = JSON.parse(readFileSync(CELL_SUMMARIES).toString());
 const summaryLookup = new Set(summaries['@graph'].map((s) => s.cell_source));
 const { data } = Papa.parse(readFileSync(FLAT_DATASET_GRAPH).toString(), { header: true, skipEmptyLines: true });
@@ -21,11 +23,13 @@ for (const row of data) {
   const hasExtractionSite = !!row.rui_location;
   const hasCellSummary = summaryLookup.has(row.dataset_id);
   const hasPublication = !!row.publication;
+  const hasApprovedSource = approvedSources.has(row.consortium_name);
+  const isVerified = hasPublication || hasApprovedSource;
   const maxDiamonds = 3;
   const diamonds = (hasExtractionSite ? 1 : 0) + (hasCellSummary ? 1 : 0) + (hasPublication ? 1 : 0);
 
   // Find the highest quality datasets for the atlas
-  if (hasExtractionSite && hasCellSummary && hasPublication) {
+  if (hasExtractionSite && hasCellSummary && isVerified) {
     atlasData.push(row);
   }
   // Find datasets that have both an extraction site and a cell summary

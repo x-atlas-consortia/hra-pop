@@ -5,6 +5,9 @@ set -ev
 
 DIR=$RAW_DIR/$VERSION
 
+# Make APPROVED_SOURCES visible to process.env in node.js
+export APPROVED_SOURCES
+
 node ./src/split-atlas-data.js \
   $DIR/full-dataset-graph.csv \
   $DIR/cell-summaries.jsonld \

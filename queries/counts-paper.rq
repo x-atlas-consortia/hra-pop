@@ -1,13 +1,13 @@
 #+ summary: Count of Cells and unique Cell Types
 #+ description: Count of Cells and unique Cell Types that occur in the Enriched RUI Locations
 
-PREFIX ctpop: <https://cns-iu.github.io/hra-cell-type-populations-supporting-information/data/enriched_rui_locations.jsonld#>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX ccf: <http://purl.org/ccf/>
 
 SELECT
   (COUNT(DISTINCT(?cell_id)) as ?unique_cell_type_count)
   (SUM(?cell_count) as ?cell_count)
-FROM ctpop:graph
+FROM HRApop:
 WHERE {
   [] a ccf:Dataset ;
     ccf:has_cell_summary [

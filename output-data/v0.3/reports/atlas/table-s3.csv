@@ -50,11 +50,31 @@ VHFHeart,aortic valve,pericyte,http://purl.obolibrary.org/obo/CL_0000669,700.857
 VHFHeart,aortic valve,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,1128.57142857142857142857,7900
 VHFHeart,aortic valve,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,185.28571428571428571429,1297
 VHFHeart,aortic valve,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,64.85714285714285714286,454
+VHFHeart,heart left ventricle,Adipocyte,https://purl.org/ccf/ASCTB-TEMP_adipocyte,76.25,305
+VHFHeart,heart left ventricle,Arterial Endothelial,https://purl.org/ccf/ASCTB-TEMP_arterial-endothelial,371.25,1485
+VHFHeart,heart left ventricle,Atrial Cardiomyocyte,https://purl.org/ccf/ASCTB-TEMP_atrial-cardiomyocyte,21.25,85
+VHFHeart,heart left ventricle,B,https://purl.org/ccf/ASCTB-TEMP_b,2166,8664
 VHFHeart,heart left ventricle,B cell,http://purl.obolibrary.org/obo/CL_0000236,13.75,220
 VHFHeart,heart left ventricle,CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,46.6,466
 VHFHeart,heart left ventricle,"CD14-positive, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002397,39.8125,637
 VHFHeart,heart left ventricle,"CD4-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000934,24.42105263157894736842,464
 VHFHeart,heart left ventricle,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,15.11764705882352941176,257
+VHFHeart,heart left ventricle,Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial,757,3028
+VHFHeart,heart left ventricle,Endocardial,https://purl.org/ccf/ASCTB-TEMP_endocardial,175.75,703
+VHFHeart,heart left ventricle,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,4,16
+VHFHeart,heart left ventricle,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,24794.5,99178
+VHFHeart,heart left ventricle,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,56.5,226
+VHFHeart,heart left ventricle,Macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,674.25,2697
+VHFHeart,heart left ventricle,Mast,https://purl.org/ccf/ASCTB-TEMP_mast,67.5,270
+VHFHeart,heart left ventricle,Mesothelial,https://purl.org/ccf/ASCTB-TEMP_mesothelial,254.25,1017
+VHFHeart,heart left ventricle,Monocyte/cDC,https://purl.org/ccf/ASCTB-TEMP_monocyte-cdc,1025,4100
+VHFHeart,heart left ventricle,NK,https://purl.org/ccf/ASCTB-TEMP_nk,190.75,763
+VHFHeart,heart left ventricle,Neuronal,https://purl.org/ccf/ASCTB-TEMP_neuronal,61.75,247
+VHFHeart,heart left ventricle,Pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,925.75,3703
+VHFHeart,heart left ventricle,Smooth Muscle,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle,337.75,1351
+VHFHeart,heart left ventricle,T,https://purl.org/ccf/ASCTB-TEMP_t,116,464
+VHFHeart,heart left ventricle,Venous Endothelial,https://purl.org/ccf/ASCTB-TEMP_venous-endothelial,284.75,1139
+VHFHeart,heart left ventricle,Ventricular Cardiomycoyte,https://purl.org/ccf/ASCTB-TEMP_ventricular-cardiomycoyte,20966,83864
 VHFHeart,heart left ventricle,"activated CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000896,19.72727272727272727273,217
 VHFHeart,heart left ventricle,"activated CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000906,23,437
 VHFHeart,heart left ventricle,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,782.1,15642
@@ -76,11 +96,31 @@ VHFHeart,heart left ventricle,pericyte,http://purl.obolibrary.org/obo/CL_0000669
 VHFHeart,heart left ventricle,regular ventricular cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002131,2608.45,52169
 VHFHeart,heart left ventricle,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,201.1,4022
 VHFHeart,heart left ventricle,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,100.6,2012
+VHFHeart,heart right ventricle,Adipocyte,https://purl.org/ccf/ASCTB-TEMP_adipocyte,33,33
+VHFHeart,heart right ventricle,Arterial Endothelial,https://purl.org/ccf/ASCTB-TEMP_arterial-endothelial,313,313
+VHFHeart,heart right ventricle,Atrial Cardiomyocyte,https://purl.org/ccf/ASCTB-TEMP_atrial-cardiomyocyte,34,34
+VHFHeart,heart right ventricle,B,https://purl.org/ccf/ASCTB-TEMP_b,2015,2015
 VHFHeart,heart right ventricle,B cell,http://purl.obolibrary.org/obo/CL_0000236,17.66666666666666666667,159
 VHFHeart,heart right ventricle,CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,57.33333333333333333333,344
 VHFHeart,heart right ventricle,"CD14-positive, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002397,63.75,510
 VHFHeart,heart right ventricle,"CD4-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000934,15.69230769230769230769,204
 VHFHeart,heart right ventricle,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,12.90909090909090909091,142
+VHFHeart,heart right ventricle,Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial,928,928
+VHFHeart,heart right ventricle,Endocardial,https://purl.org/ccf/ASCTB-TEMP_endocardial,94,94
+VHFHeart,heart right ventricle,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,1,1
+VHFHeart,heart right ventricle,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,11647,11647
+VHFHeart,heart right ventricle,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,116,116
+VHFHeart,heart right ventricle,Macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1046,1046
+VHFHeart,heart right ventricle,Mast,https://purl.org/ccf/ASCTB-TEMP_mast,108,108
+VHFHeart,heart right ventricle,Mesothelial,https://purl.org/ccf/ASCTB-TEMP_mesothelial,275,275
+VHFHeart,heart right ventricle,Monocyte/cDC,https://purl.org/ccf/ASCTB-TEMP_monocyte-cdc,1607,1607
+VHFHeart,heart right ventricle,NK,https://purl.org/ccf/ASCTB-TEMP_nk,319,319
+VHFHeart,heart right ventricle,Neuronal,https://purl.org/ccf/ASCTB-TEMP_neuronal,45,45
+VHFHeart,heart right ventricle,Pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,970,970
+VHFHeart,heart right ventricle,Smooth Muscle,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle,189,189
+VHFHeart,heart right ventricle,T,https://purl.org/ccf/ASCTB-TEMP_t,203,203
+VHFHeart,heart right ventricle,Venous Endothelial,https://purl.org/ccf/ASCTB-TEMP_venous-endothelial,478,478
+VHFHeart,heart right ventricle,Ventricular Cardiomycoyte,https://purl.org/ccf/ASCTB-TEMP_ventricular-cardiomycoyte,39927,39927
 VHFHeart,heart right ventricle,"activated CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000896,20,120
 VHFHeart,heart right ventricle,"activated CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000906,18.36363636363636363636,202
 VHFHeart,heart right ventricle,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,572.92307692307692307692,7448
@@ -102,11 +142,31 @@ VHFHeart,heart right ventricle,pericyte,http://purl.obolibrary.org/obo/CL_000066
 VHFHeart,heart right ventricle,regular ventricular cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002131,2411.92307692307692307692,31355
 VHFHeart,heart right ventricle,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,167.38461538461538461538,2176
 VHFHeart,heart right ventricle,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,62,806
+VHFHeart,interventricular septum,Adipocyte,https://purl.org/ccf/ASCTB-TEMP_adipocyte,33,33
+VHFHeart,interventricular septum,Arterial Endothelial,https://purl.org/ccf/ASCTB-TEMP_arterial-endothelial,313,313
+VHFHeart,interventricular septum,Atrial Cardiomyocyte,https://purl.org/ccf/ASCTB-TEMP_atrial-cardiomyocyte,34,34
+VHFHeart,interventricular septum,B,https://purl.org/ccf/ASCTB-TEMP_b,2015,2015
 VHFHeart,interventricular septum,B cell,http://purl.obolibrary.org/obo/CL_0000236,24.4,122
 VHFHeart,interventricular septum,CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,107.66666666666666666667,323
 VHFHeart,interventricular septum,"CD14-positive, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002397,114.75,459
 VHFHeart,interventricular septum,"CD4-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000934,24.5,147
 VHFHeart,interventricular septum,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,26.5,106
+VHFHeart,interventricular septum,Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial,928,928
+VHFHeart,interventricular septum,Endocardial,https://purl.org/ccf/ASCTB-TEMP_endocardial,94,94
+VHFHeart,interventricular septum,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,1,1
+VHFHeart,interventricular septum,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,11647,11647
+VHFHeart,interventricular septum,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,116,116
+VHFHeart,interventricular septum,Macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1046,1046
+VHFHeart,interventricular septum,Mast,https://purl.org/ccf/ASCTB-TEMP_mast,108,108
+VHFHeart,interventricular septum,Mesothelial,https://purl.org/ccf/ASCTB-TEMP_mesothelial,275,275
+VHFHeart,interventricular septum,Monocyte/cDC,https://purl.org/ccf/ASCTB-TEMP_monocyte-cdc,1607,1607
+VHFHeart,interventricular septum,NK,https://purl.org/ccf/ASCTB-TEMP_nk,319,319
+VHFHeart,interventricular septum,Neuronal,https://purl.org/ccf/ASCTB-TEMP_neuronal,45,45
+VHFHeart,interventricular septum,Pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,970,970
+VHFHeart,interventricular septum,Smooth Muscle,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle,189,189
+VHFHeart,interventricular septum,T,https://purl.org/ccf/ASCTB-TEMP_t,203,203
+VHFHeart,interventricular septum,Venous Endothelial,https://purl.org/ccf/ASCTB-TEMP_venous-endothelial,478,478
+VHFHeart,interventricular septum,Ventricular Cardiomycoyte,https://purl.org/ccf/ASCTB-TEMP_ventricular-cardiomycoyte,39927,39927
 VHFHeart,interventricular septum,"activated CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000896,55,110
 VHFHeart,interventricular septum,"activated CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000906,20,100
 VHFHeart,interventricular septum,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,932.83333333333333333333,5597
@@ -186,6 +246,124 @@ VHFHeart,right cardiac atrium,pericyte,http://purl.obolibrary.org/obo/CL_0000669
 VHFHeart,right cardiac atrium,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,541.83333333333333333333,3251
 VHFHeart,right cardiac atrium,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,128.33333333333333333333,770
 VHFHeart,right cardiac atrium,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,106.33333333333333333333,638
+VHFLeftKidney,outer cortex of kidney,Afferent / Efferent Arteriole Endothelial,https://purl.org/ccf/ASCTB-TEMP_afferent-efferent-arteriole-endothelial,2,4
+VHFLeftKidney,outer cortex of kidney,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,68,136
+VHFLeftKidney,outer cortex of kidney,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,3.5,7
+VHFLeftKidney,outer cortex of kidney,B,https://purl.org/ccf/ASCTB-TEMP_b,1,1
+VHFLeftKidney,outer cortex of kidney,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,1114,2228
+VHFLeftKidney,outer cortex of kidney,Connecting Tubule Principal,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-principal,1,2
+VHFLeftKidney,outer cortex of kidney,Cortical Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-intercalated-type-a,32,64
+VHFLeftKidney,outer cortex of kidney,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,56,112
+VHFLeftKidney,outer cortex of kidney,Cortical Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_cortical-thick-ascending-limb,212,424
+VHFLeftKidney,outer cortex of kidney,Cortical Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_cortical-vascular-smooth-muscle-pericyte,11.5,23
+VHFLeftKidney,outer cortex of kidney,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,639.5,1279
+VHFLeftKidney,outer cortex of kidney,Descending Thin Limb Type 2,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-2,92,184
+VHFLeftKidney,outer cortex of kidney,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,4.5,9
+VHFLeftKidney,outer cortex of kidney,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,7.5,15
+VHFLeftKidney,outer cortex of kidney,Distal Convoluted Tubule Type 1,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-1,195.5,391
+VHFLeftKidney,outer cortex of kidney,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,10.5,21
+VHFLeftKidney,outer cortex of kidney,Glomerular Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_glomerular-capillary-endothelial,6.5,13
+VHFLeftKidney,outer cortex of kidney,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,1811,3622
+VHFLeftKidney,outer cortex of kidney,Intercalated Type B,https://purl.org/ccf/ASCTB-TEMP_intercalated-type-b,5,5
+VHFLeftKidney,outer cortex of kidney,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,6,6
+VHFLeftKidney,outer cortex of kidney,M2 Macrophage,https://purl.org/ccf/ASCTB-TEMP_m2-macrophage,36,36
+VHFLeftKidney,outer cortex of kidney,Macula Densa,https://purl.org/ccf/ASCTB-TEMP_macula-densa,54.5,109
+VHFLeftKidney,outer cortex of kidney,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,28,56
+VHFLeftKidney,outer cortex of kidney,Medullary Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_medullary-thick-ascending-limb,504.5,1009
+VHFLeftKidney,outer cortex of kidney,Mesangial,https://purl.org/ccf/ASCTB-TEMP_mesangial,2,2
+VHFLeftKidney,outer cortex of kidney,Natural Killer T,https://purl.org/ccf/ASCTB-TEMP_natural-killer-t,9,9
+VHFLeftKidney,outer cortex of kidney,Non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,1,1
+VHFLeftKidney,outer cortex of kidney,Outer Medullary Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-intercalated-type-a,105.5,211
+VHFLeftKidney,outer cortex of kidney,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,3.5,7
+VHFLeftKidney,outer cortex of kidney,Papillary Tip Epithelial,https://purl.org/ccf/ASCTB-TEMP_papillary-tip-epithelial,1,1
+VHFLeftKidney,outer cortex of kidney,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,5,10
+VHFLeftKidney,outer cortex of kidney,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,84,168
+VHFLeftKidney,outer cortex of kidney,Podocyte,https://purl.org/ccf/ASCTB-TEMP_podocyte,32,64
+VHFLeftKidney,outer cortex of kidney,Proximal Tubule Epithelial Segment 1,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-1,268,268
+VHFLeftKidney,outer cortex of kidney,Proximal Tubule Epithelial Segment 3,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-3,66.5,133
+VHFLeftKidney,outer cortex of kidney,T,https://purl.org/ccf/ASCTB-TEMP_t,17,17
+VHFLeftKidney,outer cortex of kidney,Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-pericyte,11,22
+VHFLeftKidney,renal column,Afferent / Efferent Arteriole Endothelial,https://purl.org/ccf/ASCTB-TEMP_afferent-efferent-arteriole-endothelial,1,1
+VHFLeftKidney,renal column,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,53,53
+VHFLeftKidney,renal column,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,5,5
+VHFLeftKidney,renal column,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,1060,1060
+VHFLeftKidney,renal column,Connecting Tubule Principal,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-principal,1,1
+VHFLeftKidney,renal column,Cortical Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-intercalated-type-a,4,4
+VHFLeftKidney,renal column,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,92,92
+VHFLeftKidney,renal column,Cortical Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_cortical-thick-ascending-limb,325,325
+VHFLeftKidney,renal column,Cortical Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_cortical-vascular-smooth-muscle-pericyte,8,8
+VHFLeftKidney,renal column,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,1232,1232
+VHFLeftKidney,renal column,Descending Thin Limb Type 2,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-2,18,18
+VHFLeftKidney,renal column,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,8,8
+VHFLeftKidney,renal column,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,13,13
+VHFLeftKidney,renal column,Distal Convoluted Tubule Type 1,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-1,14,14
+VHFLeftKidney,renal column,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,14,14
+VHFLeftKidney,renal column,Glomerular Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_glomerular-capillary-endothelial,1,1
+VHFLeftKidney,renal column,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,2163,2163
+VHFLeftKidney,renal column,Macula Densa,https://purl.org/ccf/ASCTB-TEMP_macula-densa,94,94
+VHFLeftKidney,renal column,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,54,54
+VHFLeftKidney,renal column,Medullary Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_medullary-thick-ascending-limb,601,601
+VHFLeftKidney,renal column,Outer Medullary Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-intercalated-type-a,55,55
+VHFLeftKidney,renal column,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,5,5
+VHFLeftKidney,renal column,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,2,2
+VHFLeftKidney,renal column,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,2,2
+VHFLeftKidney,renal column,Podocyte,https://purl.org/ccf/ASCTB-TEMP_podocyte,11,11
+VHFLeftKidney,renal column,Proximal Tubule Epithelial Segment 3,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-3,1,1
+VHFLeftKidney,renal column,Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-pericyte,8,8
+VHFLeftKidney,renal pyramid,Afferent / Efferent Arteriole Endothelial,https://purl.org/ccf/ASCTB-TEMP_afferent-efferent-arteriole-endothelial,1,1
+VHFLeftKidney,renal pyramid,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,22,66
+VHFLeftKidney,renal pyramid,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,5.66666666666666666667,17
+VHFLeftKidney,renal pyramid,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,969,2907
+VHFLeftKidney,renal pyramid,Connecting Tubule Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-intercalated-type-a,1,1
+VHFLeftKidney,renal pyramid,Connecting Tubule Principal,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-principal,4,12
+VHFLeftKidney,renal pyramid,Cortical Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-intercalated-type-a,17,34
+VHFLeftKidney,renal pyramid,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,122.33333333333333333333,367
+VHFLeftKidney,renal pyramid,Cortical Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_cortical-thick-ascending-limb,271.5,543
+VHFLeftKidney,renal pyramid,Cortical Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_cortical-vascular-smooth-muscle-pericyte,4.66666666666666666667,14
+VHFLeftKidney,renal pyramid,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,1380.66666666666666666667,4142
+VHFLeftKidney,renal pyramid,Descending Thin Limb Type 2,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-2,8,24
+VHFLeftKidney,renal pyramid,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,4.66666666666666666667,14
+VHFLeftKidney,renal pyramid,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,8,24
+VHFLeftKidney,renal pyramid,Distal Convoluted Tubule Type 1,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-1,9.33333333333333333333,28
+VHFLeftKidney,renal pyramid,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,25,75
+VHFLeftKidney,renal pyramid,Glomerular Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_glomerular-capillary-endothelial,1.5,3
+VHFLeftKidney,renal pyramid,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,1842,5526
+VHFLeftKidney,renal pyramid,Intercalated Type B,https://purl.org/ccf/ASCTB-TEMP_intercalated-type-b,2,2
+VHFLeftKidney,renal pyramid,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,1,1
+VHFLeftKidney,renal pyramid,M2 Macrophage,https://purl.org/ccf/ASCTB-TEMP_m2-macrophage,3,6
+VHFLeftKidney,renal pyramid,Macula Densa,https://purl.org/ccf/ASCTB-TEMP_macula-densa,54,162
+VHFLeftKidney,renal pyramid,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,48.33333333333333333333,145
+VHFLeftKidney,renal pyramid,Medullary Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_medullary-thick-ascending-limb,371,742
+VHFLeftKidney,renal pyramid,Monocyte-derived,https://purl.org/ccf/ASCTB-TEMP_monocyte-derived,1,1
+VHFLeftKidney,renal pyramid,Neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,1,1
+VHFLeftKidney,renal pyramid,Outer Medullary Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-intercalated-type-a,36,72
+VHFLeftKidney,renal pyramid,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,7,14
+VHFLeftKidney,renal pyramid,Papillary Tip Epithelial,https://purl.org/ccf/ASCTB-TEMP_papillary-tip-epithelial,57,57
+VHFLeftKidney,renal pyramid,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,1.66666666666666666667,5
+VHFLeftKidney,renal pyramid,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,6.33333333333333333333,19
+VHFLeftKidney,renal pyramid,Podocyte,https://purl.org/ccf/ASCTB-TEMP_podocyte,11,11
+VHFLeftKidney,renal pyramid,Proximal Tubule Epithelial Segment 3,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-3,1,2
+VHFLeftKidney,renal pyramid,Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-pericyte,5.33333333333333333333,16
+VHFLeftUreter,left ureter,Afferent / Efferent Arteriole Endothelial,https://purl.org/ccf/ASCTB-TEMP_afferent-efferent-arteriole-endothelial,1,1
+VHFLeftUreter,left ureter,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,3,3
+VHFLeftUreter,left ureter,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,846,846
+VHFLeftUreter,left ureter,Connecting Tubule Principal,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-principal,1,1
+VHFLeftUreter,left ureter,Cortical Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-intercalated-type-a,3,3
+VHFLeftUreter,left ureter,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,317,317
+VHFLeftUreter,left ureter,Cortical Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_cortical-vascular-smooth-muscle-pericyte,54,54
+VHFLeftUreter,left ureter,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,526,526
+VHFLeftUreter,left ureter,Descending Thin Limb Type 2,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-2,3,3
+VHFLeftUreter,left ureter,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,19,19
+VHFLeftUreter,left ureter,Distal Convoluted Tubule Type 1,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-1,10,10
+VHFLeftUreter,left ureter,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,362,362
+VHFLeftUreter,left ureter,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,7557,7557
+VHFLeftUreter,left ureter,M2 Macrophage,https://purl.org/ccf/ASCTB-TEMP_m2-macrophage,7,7
+VHFLeftUreter,left ureter,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,207,207
+VHFLeftUreter,left ureter,Outer Medullary Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-intercalated-type-a,19,19
+VHFLeftUreter,left ureter,Papillary Tip Epithelial,https://purl.org/ccf/ASCTB-TEMP_papillary-tip-epithelial,370,370
+VHFLeftUreter,left ureter,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,1,1
+VHFLeftUreter,left ureter,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,72,72
+VHFLeftUreter,left ureter,Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-pericyte,20,20
 VHFLung,Lateral segmental bronchus,B cell,http://purl.obolibrary.org/obo/CL_0000236,135,540
 VHFLung,Lateral segmental bronchus,T cell,http://purl.obolibrary.org/obo/CL_0000084,278.75,1115
 VHFLung,Lateral segmental bronchus,alveolar macrophage,http://purl.obolibrary.org/obo/CL_0000583,765.25,3061
@@ -282,6 +460,67 @@ VHFLung,Right Medial Bronchopulmonary Segment,type I pneumocyte,http://purl.obol
 VHFLung,Right Medial Bronchopulmonary Segment,type II pneumocyte,http://purl.obolibrary.org/obo/CL_0002063,627.5,2510
 VHFLung,Right Medial Bronchopulmonary Segment,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,24.5,98
 VHFLung,Right Medial Bronchopulmonary Segment,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,14.75,59
+VHFRightKidney,outer cortex of kidney,Afferent / Efferent Arteriole Endothelial,https://purl.org/ccf/ASCTB-TEMP_afferent-efferent-arteriole-endothelial,14,14
+VHFRightKidney,outer cortex of kidney,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,31,31
+VHFRightKidney,outer cortex of kidney,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,113,113
+VHFRightKidney,outer cortex of kidney,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,51,51
+VHFRightKidney,outer cortex of kidney,Connecting Tubule Principal,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-principal,1,1
+VHFRightKidney,outer cortex of kidney,Cortical Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-intercalated-type-a,27,27
+VHFRightKidney,outer cortex of kidney,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,39,39
+VHFRightKidney,outer cortex of kidney,Cortical Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_cortical-thick-ascending-limb,347,347
+VHFRightKidney,outer cortex of kidney,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,644,644
+VHFRightKidney,outer cortex of kidney,Descending Thin Limb Type 2,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-2,13,13
+VHFRightKidney,outer cortex of kidney,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,22,22
+VHFRightKidney,outer cortex of kidney,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,41,41
+VHFRightKidney,outer cortex of kidney,Distal Convoluted Tubule Type 1,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-1,109,109
+VHFRightKidney,outer cortex of kidney,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,19,19
+VHFRightKidney,outer cortex of kidney,Glomerular Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_glomerular-capillary-endothelial,1,1
+VHFRightKidney,outer cortex of kidney,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,599,599
+VHFRightKidney,outer cortex of kidney,Intercalated Type B,https://purl.org/ccf/ASCTB-TEMP_intercalated-type-b,4,4
+VHFRightKidney,outer cortex of kidney,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,1,1
+VHFRightKidney,outer cortex of kidney,M2 Macrophage,https://purl.org/ccf/ASCTB-TEMP_m2-macrophage,31,31
+VHFRightKidney,outer cortex of kidney,Macula Densa,https://purl.org/ccf/ASCTB-TEMP_macula-densa,12,12
+VHFRightKidney,outer cortex of kidney,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,242,242
+VHFRightKidney,outer cortex of kidney,Medullary Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_medullary-thick-ascending-limb,1228,1228
+VHFRightKidney,outer cortex of kidney,Outer Medullary Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-intercalated-type-a,10,10
+VHFRightKidney,outer cortex of kidney,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,2,2
+VHFRightKidney,outer cortex of kidney,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,9,9
+VHFRightKidney,outer cortex of kidney,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,34,34
+VHFRightKidney,outer cortex of kidney,Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-pericyte,6,6
+VHFRightKidney,renal pyramid,Afferent / Efferent Arteriole Endothelial,https://purl.org/ccf/ASCTB-TEMP_afferent-efferent-arteriole-endothelial,5.33333333333333333333,16
+VHFRightKidney,renal pyramid,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,39.5,79
+VHFRightKidney,renal pyramid,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,39.33333333333333333333,118
+VHFRightKidney,renal pyramid,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,930.33333333333333333333,2791
+VHFRightKidney,renal pyramid,Connecting Tubule Principal,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-principal,2,4
+VHFRightKidney,renal pyramid,Cortical Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-intercalated-type-a,19.5,39
+VHFRightKidney,renal pyramid,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,304.5,609
+VHFRightKidney,renal pyramid,Cortical Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_cortical-thick-ascending-limb,126.33333333333333333333,379
+VHFRightKidney,renal pyramid,Cortical Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_cortical-vascular-smooth-muscle-pericyte,1,1
+VHFRightKidney,renal pyramid,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,490.66666666666666666667,1472
+VHFRightKidney,renal pyramid,Descending Thin Limb Type 2,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-2,8.66666666666666666667,26
+VHFRightKidney,renal pyramid,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,15.33333333333333333333,46
+VHFRightKidney,renal pyramid,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,25.5,51
+VHFRightKidney,renal pyramid,Distal Convoluted Tubule Type 1,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-1,38,114
+VHFRightKidney,renal pyramid,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,24.66666666666666666667,74
+VHFRightKidney,renal pyramid,Glomerular Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_glomerular-capillary-endothelial,1,1
+VHFRightKidney,renal pyramid,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,525.66666666666666666667,1577
+VHFRightKidney,renal pyramid,Intercalated Type B,https://purl.org/ccf/ASCTB-TEMP_intercalated-type-b,4,8
+VHFRightKidney,renal pyramid,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,1,1
+VHFRightKidney,renal pyramid,M2 Macrophage,https://purl.org/ccf/ASCTB-TEMP_m2-macrophage,12.33333333333333333333,37
+VHFRightKidney,renal pyramid,Macula Densa,https://purl.org/ccf/ASCTB-TEMP_macula-densa,6.33333333333333333333,19
+VHFRightKidney,renal pyramid,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,195.33333333333333333333,586
+VHFRightKidney,renal pyramid,Medullary Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_medullary-thick-ascending-limb,2536,7608
+VHFRightKidney,renal pyramid,Mesangial,https://purl.org/ccf/ASCTB-TEMP_mesangial,2,2
+VHFRightKidney,renal pyramid,Neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,1,1
+VHFRightKidney,renal pyramid,Outer Medullary Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-intercalated-type-a,9.5,19
+VHFRightKidney,renal pyramid,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,2.33333333333333333333,7
+VHFRightKidney,renal pyramid,Papillary Tip Epithelial,https://purl.org/ccf/ASCTB-TEMP_papillary-tip-epithelial,60,60
+VHFRightKidney,renal pyramid,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,13,26
+VHFRightKidney,renal pyramid,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,17.5,35
+VHFRightKidney,renal pyramid,Proximal Tubule Epithelial Segment 2,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-2,1,1
+VHFRightKidney,renal pyramid,Proximal Tubule Epithelial Segment 3,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-3,5.5,11
+VHFRightKidney,renal pyramid,Renin-positive Juxtaglomerular Granular,https://purl.org/ccf/ASCTB-TEMP_renin-positive-juxtaglomerular-granular,1,1
+VHFRightKidney,renal pyramid,Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-pericyte,9.5,19
 VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,Adipocyte,https://purl.org/ccf/ASCTB-TEMP_adipocyte,880.5,1761
 VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,Endothelial cell,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell,293.66666666666666666667,881
 VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,Epithelial cell,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell,1933,5799
@@ -323,11 +562,31 @@ VHMHeart,aortic valve,pericyte,http://purl.obolibrary.org/obo/CL_0000669,1184.14
 VHMHeart,aortic valve,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,981.71428571428571428571,6872
 VHMHeart,aortic valve,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,302.28571428571428571429,2116
 VHMHeart,aortic valve,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,189.14285714285714285714,1324
+VHMHeart,heart left ventricle,Adipocyte,https://purl.org/ccf/ASCTB-TEMP_adipocyte,79,632
+VHMHeart,heart left ventricle,Arterial Endothelial,https://purl.org/ccf/ASCTB-TEMP_arterial-endothelial,244.875,1959
+VHMHeart,heart left ventricle,Atrial Cardiomyocyte,https://purl.org/ccf/ASCTB-TEMP_atrial-cardiomyocyte,20.25,162
+VHMHeart,heart left ventricle,B,https://purl.org/ccf/ASCTB-TEMP_b,2807.11111111111111111111,25264
 VHMHeart,heart left ventricle,B cell,http://purl.obolibrary.org/obo/CL_0000236,12.27777777777777777778,221
 VHMHeart,heart left ventricle,CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,37.83333333333333333333,454
 VHMHeart,heart left ventricle,"CD14-positive, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002397,68.125,1090
 VHMHeart,heart left ventricle,"CD4-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000934,61.33333333333333333333,1288
 VHMHeart,heart left ventricle,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,53.29411764705882352941,906
+VHMHeart,heart left ventricle,Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial,849.5,6796
+VHMHeart,heart left ventricle,Endocardial,https://purl.org/ccf/ASCTB-TEMP_endocardial,203.875,1631
+VHMHeart,heart left ventricle,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,7.5,30
+VHMHeart,heart left ventricle,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,21646,194814
+VHMHeart,heart left ventricle,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,67.375,539
+VHMHeart,heart left ventricle,Macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,779.5,6236
+VHMHeart,heart left ventricle,Mast,https://purl.org/ccf/ASCTB-TEMP_mast,57.75,462
+VHMHeart,heart left ventricle,Mesothelial,https://purl.org/ccf/ASCTB-TEMP_mesothelial,330.75,2646
+VHMHeart,heart left ventricle,Monocyte/cDC,https://purl.org/ccf/ASCTB-TEMP_monocyte-cdc,755.125,6041
+VHMHeart,heart left ventricle,NK,https://purl.org/ccf/ASCTB-TEMP_nk,203.75,1630
+VHMHeart,heart left ventricle,Neuronal,https://purl.org/ccf/ASCTB-TEMP_neuronal,63.625,509
+VHMHeart,heart left ventricle,Pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,883.375,7067
+VHMHeart,heart left ventricle,Smooth Muscle,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle,212.25,1698
+VHMHeart,heart left ventricle,T,https://purl.org/ccf/ASCTB-TEMP_t,108.375,867
+VHMHeart,heart left ventricle,Venous Endothelial,https://purl.org/ccf/ASCTB-TEMP_venous-endothelial,260.375,2083
+VHMHeart,heart left ventricle,Ventricular Cardiomycoyte,https://purl.org/ccf/ASCTB-TEMP_ventricular-cardiomycoyte,16466.22222222222222222222,148196
 VHMHeart,heart left ventricle,"activated CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000896,26.53333333333333333333,398
 VHMHeart,heart left ventricle,"activated CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000906,34.42857142857142857143,723
 VHMHeart,heart left ventricle,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,1145.42857142857142857143,24054
@@ -349,11 +608,30 @@ VHMHeart,heart left ventricle,pericyte,http://purl.obolibrary.org/obo/CL_0000669
 VHMHeart,heart left ventricle,regular ventricular cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002131,2009.76190476190476190476,42205
 VHMHeart,heart left ventricle,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,231.90476190476190476190,4870
 VHMHeart,heart left ventricle,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,91.09523809523809523810,1913
+VHMHeart,heart right ventricle,Adipocyte,https://purl.org/ccf/ASCTB-TEMP_adipocyte,59,59
+VHMHeart,heart right ventricle,Arterial Endothelial,https://purl.org/ccf/ASCTB-TEMP_arterial-endothelial,117,117
+VHMHeart,heart right ventricle,Atrial Cardiomyocyte,https://purl.org/ccf/ASCTB-TEMP_atrial-cardiomyocyte,13,13
+VHMHeart,heart right ventricle,B,https://purl.org/ccf/ASCTB-TEMP_b,2265,2265
 VHMHeart,heart right ventricle,B cell,http://purl.obolibrary.org/obo/CL_0000236,10.83333333333333333333,130
 VHMHeart,heart right ventricle,CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,50.57142857142857142857,354
 VHMHeart,heart right ventricle,"CD14-positive, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002397,81.55555555555555555556,734
 VHMHeart,heart right ventricle,"CD4-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000934,53,742
 VHMHeart,heart right ventricle,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,42.5,510
+VHMHeart,heart right ventricle,Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial,733,733
+VHMHeart,heart right ventricle,Endocardial,https://purl.org/ccf/ASCTB-TEMP_endocardial,185,185
+VHMHeart,heart right ventricle,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,39354,39354
+VHMHeart,heart right ventricle,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,106,106
+VHMHeart,heart right ventricle,Macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,591,591
+VHMHeart,heart right ventricle,Mast,https://purl.org/ccf/ASCTB-TEMP_mast,98,98
+VHMHeart,heart right ventricle,Mesothelial,https://purl.org/ccf/ASCTB-TEMP_mesothelial,622,622
+VHMHeart,heart right ventricle,Monocyte/cDC,https://purl.org/ccf/ASCTB-TEMP_monocyte-cdc,724,724
+VHMHeart,heart right ventricle,NK,https://purl.org/ccf/ASCTB-TEMP_nk,236,236
+VHMHeart,heart right ventricle,Neuronal,https://purl.org/ccf/ASCTB-TEMP_neuronal,25,25
+VHMHeart,heart right ventricle,Pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,658,658
+VHMHeart,heart right ventricle,Smooth Muscle,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle,285,285
+VHMHeart,heart right ventricle,T,https://purl.org/ccf/ASCTB-TEMP_t,129,129
+VHMHeart,heart right ventricle,Venous Endothelial,https://purl.org/ccf/ASCTB-TEMP_venous-endothelial,51,51
+VHMHeart,heart right ventricle,Ventricular Cardiomycoyte,https://purl.org/ccf/ASCTB-TEMP_ventricular-cardiomycoyte,3198,3198
 VHMHeart,heart right ventricle,"activated CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000896,26,182
 VHMHeart,heart right ventricle,"activated CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000906,39,546
 VHMHeart,heart right ventricle,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,930.28571428571428571429,13024
@@ -460,6 +738,37 @@ VHMHeart,right cardiac atrium,pericyte,http://purl.obolibrary.org/obo/CL_0000669
 VHMHeart,right cardiac atrium,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,780,5460
 VHMHeart,right cardiac atrium,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,115.14285714285714285714,806
 VHMHeart,right cardiac atrium,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,152.71428571428571428571,1069
+VHMLeftKidney,outer cortex of kidney,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,5,5
+VHMLeftKidney,outer cortex of kidney,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,1,1
+VHMLeftKidney,outer cortex of kidney,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,2494,2494
+VHMLeftKidney,outer cortex of kidney,Connecting Tubule Principal,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-principal,4,4
+VHMLeftKidney,outer cortex of kidney,Cortical Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-intercalated-type-a,260,260
+VHMLeftKidney,outer cortex of kidney,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,14,14
+VHMLeftKidney,outer cortex of kidney,Cortical Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_cortical-thick-ascending-limb,218,218
+VHMLeftKidney,outer cortex of kidney,Cortical Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_cortical-vascular-smooth-muscle-pericyte,50,50
+VHMLeftKidney,outer cortex of kidney,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,386,386
+VHMLeftKidney,outer cortex of kidney,Descending Thin Limb Type 2,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-2,212,212
+VHMLeftKidney,outer cortex of kidney,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,25,25
+VHMLeftKidney,outer cortex of kidney,Distal Convoluted Tubule Type 1,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-1,392,392
+VHMLeftKidney,outer cortex of kidney,Distal Convoluted Tubule Type 2,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-2,5,5
+VHMLeftKidney,outer cortex of kidney,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,179,179
+VHMLeftKidney,outer cortex of kidney,Glomerular Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_glomerular-capillary-endothelial,73,73
+VHMLeftKidney,outer cortex of kidney,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,1597,1597
+VHMLeftKidney,outer cortex of kidney,Intercalated Type B,https://purl.org/ccf/ASCTB-TEMP_intercalated-type-b,3,3
+VHMLeftKidney,outer cortex of kidney,M2 Macrophage,https://purl.org/ccf/ASCTB-TEMP_m2-macrophage,60,60
+VHMLeftKidney,outer cortex of kidney,Macula Densa,https://purl.org/ccf/ASCTB-TEMP_macula-densa,67,67
+VHMLeftKidney,outer cortex of kidney,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,19,19
+VHMLeftKidney,outer cortex of kidney,Medullary Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_medullary-thick-ascending-limb,865,865
+VHMLeftKidney,outer cortex of kidney,Mesangial,https://purl.org/ccf/ASCTB-TEMP_mesangial,2,2
+VHMLeftKidney,outer cortex of kidney,Monocyte-derived,https://purl.org/ccf/ASCTB-TEMP_monocyte-derived,7,7
+VHMLeftKidney,outer cortex of kidney,Neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,4,4
+VHMLeftKidney,outer cortex of kidney,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,9,9
+VHMLeftKidney,outer cortex of kidney,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,185,185
+VHMLeftKidney,outer cortex of kidney,Podocyte,https://purl.org/ccf/ASCTB-TEMP_podocyte,48,48
+VHMLeftKidney,outer cortex of kidney,Proximal Tubule Epithelial Segment 1,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-1,344,344
+VHMLeftKidney,outer cortex of kidney,Proximal Tubule Epithelial Segment 2,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-2,3,3
+VHMLeftKidney,outer cortex of kidney,Proximal Tubule Epithelial Segment 3,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-3,172,172
+VHMLeftKidney,outer cortex of kidney,Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-pericyte,39,39
 VHMLung,Lateral segmental bronchus,B cell,http://purl.obolibrary.org/obo/CL_0000236,98.8,494
 VHMLung,Lateral segmental bronchus,T cell,http://purl.obolibrary.org/obo/CL_0000084,397,1985
 VHMLung,Lateral segmental bronchus,alveolar macrophage,http://purl.obolibrary.org/obo/CL_0000583,911.8,4559
@@ -536,6 +845,77 @@ VHMProstate,peripheral zone of prostate,Glia,https://purl.org/ccf/ASCTB-TEMP_gli
 VHMProstate,peripheral zone of prostate,Immune (lymphocyte),https://purl.org/ccf/ASCTB-TEMP_immune-lymphocyte-,227.33333333333333333333,1364
 VHMProstate,peripheral zone of prostate,Immune (myeloid),https://purl.org/ccf/ASCTB-TEMP_immune-myeloid-,257,2056
 VHMProstate,peripheral zone of prostate,Muscle,https://purl.org/ccf/ASCTB-TEMP_muscle,560.75,4486
+VHMRightKidney,outer cortex of kidney,Afferent / Efferent Arteriole Endothelial,https://purl.org/ccf/ASCTB-TEMP_afferent-efferent-arteriole-endothelial,38.85714285714285714286,1088
+VHMRightKidney,outer cortex of kidney,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,2203.58620689655172413793,63904
+VHMRightKidney,outer cortex of kidney,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,184.07142857142857142857,5154
+VHMRightKidney,outer cortex of kidney,B,https://purl.org/ccf/ASCTB-TEMP_b,3.26666666666666666667,49
+VHMRightKidney,outer cortex of kidney,Classical Dendritic,https://purl.org/ccf/ASCTB-TEMP_classical-dendritic,213.14285714285714285714,5968
+VHMRightKidney,outer cortex of kidney,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,1855.58620689655172413793,53812
+VHMRightKidney,outer cortex of kidney,Connecting Tubule Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-intercalated-type-a,8,224
+VHMRightKidney,outer cortex of kidney,Connecting Tubule Principal,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule-principal,85.79310344827586206897,2488
+VHMRightKidney,outer cortex of kidney,Cortical Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-intercalated-type-a,95.20689655172413793103,2761
+VHMRightKidney,outer cortex of kidney,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,504.79310344827586206897,14639
+VHMRightKidney,outer cortex of kidney,Cortical Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_cortical-thick-ascending-limb,7085.93103448275862068966,205492
+VHMRightKidney,outer cortex of kidney,Cortical Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_cortical-vascular-smooth-muscle-pericyte,120.25,3367
+VHMRightKidney,outer cortex of kidney,Cycling Mononuclear Phagocyte,https://purl.org/ccf/ASCTB-TEMP_cycling-mononuclear-phagocyte,2,4
+VHMRightKidney,outer cortex of kidney,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,647,18763
+VHMRightKidney,outer cortex of kidney,Descending Thin Limb Type 2,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-2,1199.96551724137931034483,34799
+VHMRightKidney,outer cortex of kidney,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,53.17241379310344827586,1542
+VHMRightKidney,outer cortex of kidney,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,66.57142857142857142857,1864
+VHMRightKidney,outer cortex of kidney,Distal Convoluted Tubule Type 1,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-1,2283.79310344827586206897,66230
+VHMRightKidney,outer cortex of kidney,Distal Convoluted Tubule Type 2,https://purl.org/ccf/ASCTB-TEMP_distal-convoluted-tubule-type-2,47,1363
+VHMRightKidney,outer cortex of kidney,Fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,1547.24137931034482758621,44870
+VHMRightKidney,outer cortex of kidney,Glomerular Capillary Endothelial,https://purl.org/ccf/ASCTB-TEMP_glomerular-capillary-endothelial,182.42857142857142857143,5108
+VHMRightKidney,outer cortex of kidney,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,2052.13793103448275862069,59512
+VHMRightKidney,outer cortex of kidney,Intercalated Type B,https://purl.org/ccf/ASCTB-TEMP_intercalated-type-b,188.24137931034482758621,5459
+VHMRightKidney,outer cortex of kidney,Lymphatic Endothelial,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial,11.42857142857142857143,320
+VHMRightKidney,outer cortex of kidney,M2 Macrophage,https://purl.org/ccf/ASCTB-TEMP_m2-macrophage,95.72413793103448275862,2776
+VHMRightKidney,outer cortex of kidney,Macula Densa,https://purl.org/ccf/ASCTB-TEMP_macula-densa,128.65517241379310344828,3731
+VHMRightKidney,outer cortex of kidney,Mast,https://purl.org/ccf/ASCTB-TEMP_mast,19.74074074074074074074,533
+VHMRightKidney,outer cortex of kidney,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,57.51724137931034482759,1668
+VHMRightKidney,outer cortex of kidney,Medullary Thick Ascending Limb,https://purl.org/ccf/ASCTB-TEMP_medullary-thick-ascending-limb,354.03448275862068965517,10267
+VHMRightKidney,outer cortex of kidney,Mesangial,https://purl.org/ccf/ASCTB-TEMP_mesangial,93.75862068965517241379,2719
+VHMRightKidney,outer cortex of kidney,Monocyte-derived,https://purl.org/ccf/ASCTB-TEMP_monocyte-derived,90.07142857142857142857,2522
+VHMRightKidney,outer cortex of kidney,Natural Killer T,https://purl.org/ccf/ASCTB-TEMP_natural-killer-t,2.35714285714285714286,33
+VHMRightKidney,outer cortex of kidney,Neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,1.53333333333333333333,23
+VHMRightKidney,outer cortex of kidney,Non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,3,51
+VHMRightKidney,outer cortex of kidney,Outer Medullary Collecting Duct Intercalated Type A,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-intercalated-type-a,231.86206896551724137931,6724
+VHMRightKidney,outer cortex of kidney,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,69.71428571428571428571,1952
+VHMRightKidney,outer cortex of kidney,Papillary Tip Epithelial,https://purl.org/ccf/ASCTB-TEMP_papillary-tip-epithelial,5.76923076923076923077,150
+VHMRightKidney,outer cortex of kidney,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,114.37931034482758620690,3317
+VHMRightKidney,outer cortex of kidney,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,257.27586206896551724138,7461
+VHMRightKidney,outer cortex of kidney,Plasma,https://purl.org/ccf/ASCTB-TEMP_plasma,15.68,392
+VHMRightKidney,outer cortex of kidney,Plasmacytoid Dendritic,https://purl.org/ccf/ASCTB-TEMP_plasmacytoid-dendritic,1.28571428571428571429,9
+VHMRightKidney,outer cortex of kidney,Podocyte,https://purl.org/ccf/ASCTB-TEMP_podocyte,393.41379310344827586207,11409
+VHMRightKidney,outer cortex of kidney,Proximal Tubule Epithelial Segment 1,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-1,2842.55172413793103448276,82434
+VHMRightKidney,outer cortex of kidney,Proximal Tubule Epithelial Segment 2,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-2,10.41666666666666666667,250
+VHMRightKidney,outer cortex of kidney,Proximal Tubule Epithelial Segment 3,https://purl.org/ccf/ASCTB-TEMP_proximal-tubule-epithelial-segment-3,1523.34482758620689655172,44177
+VHMRightKidney,outer cortex of kidney,Renin-positive Juxtaglomerular Granular,https://purl.org/ccf/ASCTB-TEMP_renin-positive-juxtaglomerular-granular,1.38095238095238095238,29
+VHMRightKidney,outer cortex of kidney,Schwann / Neural,https://purl.org/ccf/ASCTB-TEMP_schwann-neural,18.57142857142857142857,520
+VHMRightKidney,outer cortex of kidney,T,https://purl.org/ccf/ASCTB-TEMP_t,3.42857142857142857143,72
+VHMRightKidney,outer cortex of kidney,Vascular Smooth Muscle / Pericyte,https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-pericyte,77.31034482758620689655,2242
+VHMRightKidney,renal papilla,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,2,2
+VHMRightKidney,renal papilla,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,3,3
+VHMRightKidney,renal papilla,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,24,24
+VHMRightKidney,renal papilla,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,38,38
+VHMRightKidney,renal papilla,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,150,150
+VHMRightKidney,renal papilla,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,1,1
+VHMRightKidney,renal papilla,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,242,242
+VHMRightKidney,renal papilla,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,36,36
+VHMRightKidney,renal papilla,Non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,2,2
+VHMRightKidney,renal papilla,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,2,2
+VHMRightKidney,renal papilla,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,1,1
+VHMRightKidney,renal pyramid,Ascending Thin Limb,https://purl.org/ccf/ASCTB-TEMP_ascending-thin-limb,2,2
+VHMRightKidney,renal pyramid,Ascending Vasa Recta Endothelial,https://purl.org/ccf/ASCTB-TEMP_ascending-vasa-recta-endothelial,3,3
+VHMRightKidney,renal pyramid,Connecting Tubule,https://purl.org/ccf/ASCTB-TEMP_connecting-tubule,24,24
+VHMRightKidney,renal pyramid,Cortical Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_cortical-collecting-duct-principal,38,38
+VHMRightKidney,renal pyramid,Descending Thin Limb Type 1,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-1,150,150
+VHMRightKidney,renal pyramid,Descending Thin Limb Type 3,https://purl.org/ccf/ASCTB-TEMP_descending-thin-limb-type-3,1,1
+VHMRightKidney,renal pyramid,Inner Medullary Collecting Duct,https://purl.org/ccf/ASCTB-TEMP_inner-medullary-collecting-duct,242,242
+VHMRightKidney,renal pyramid,Medullary Fibroblast,https://purl.org/ccf/ASCTB-TEMP_medullary-fibroblast,36,36
+VHMRightKidney,renal pyramid,Non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,2,2
+VHMRightKidney,renal pyramid,Outer Medullary Collecting Duct Principal,https://purl.org/ccf/ASCTB-TEMP_outer-medullary-collecting-duct-principal,2,2
+VHMRightKidney,renal pyramid,Parietal Epithelial,https://purl.org/ccf/ASCTB-TEMP_parietal-epithelial,1,1
 VHMSkin,skin of body,Adipocyte,https://purl.org/ccf/ASCTB-TEMP_adipocyte,19,19
 VHMSkin,skin of body,Endothelial cell,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell,1004,1004
 VHMSkin,skin of body,Epithelial cell,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell,502,502
