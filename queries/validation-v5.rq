@@ -21,6 +21,7 @@ SELECT DISTINCT
   ?rui_location_volume
   ?cell_id
   ?cell_label
+  ?cell_count
   ?percentage
 WHERE {
   GRAPH HRApop: {
@@ -40,6 +41,7 @@ WHERE {
       ccf:has_cell_summary_row [
         ccf:cell_id ?cell_iri ;
         ccf:cell_label ?cell_label ;
+        ccf:cell_count ?cell_count ;
         ccf:percentage_of_total ?percentage
       ]
     ] .
