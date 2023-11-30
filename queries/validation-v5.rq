@@ -13,6 +13,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT DISTINCT
+  ?consortium_name
   ?dataset
   ?modality
   ?reported_organ
@@ -27,8 +28,11 @@ WHERE {
   GRAPH HRApop: {
     ?entity a ccf:SpatialEntity .
     ?sample ccf:has_registration_location ?entity ;
-             ccf:generates_dataset ?dataset .
+             ccf:generates_dataset ?dataset ;
+             ccf:comes_from ?donor .
     
+    ?donor ccf:consortium_name ?consortium_name .
+
     OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
     
     ?entity ccf:x_dimension ?x ;
