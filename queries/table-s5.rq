@@ -15,8 +15,10 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT DISTINCT ?rui_location ?organ ?as_label ?as_id ?intersection_volume ?as_volume ?tissue_block_volume
+SELECT DISTINCT ?rui_location ?organ ?organ_label ?as_label ?as_id ?intersection_volume ?as_volume ?tissue_block_volume ?total_collision_percentage
+
 FROM HRApop:
+FROM CCF:
 WHERE {
 
 	    # Get tissue block volume
@@ -36,8 +38,27 @@ WHERE {
 					ccf:has_reference_organ ?ref_organ ;
 					ccf:percentage_of_total ?percentage ;
     	]
-    ]
+    ] .
+
+		{
+			SELECT ?rui_location ?modality (SUM(?percentage) as ?total_collision_percentage)
+			WHERE {
+				?rui_location a ccf:SpatialEntity .
+				?rui_location ccf:has_collision_summary [
+					ccf:has_collision_item [
+						ccf:percentage_of_total ?percentage ;
+					]
+				] .
+			}
+			GROUP BY ?rui_location ?modality
+		}
+
+	# get label for reference organ
+		?ref_organ ccf:representation_of ?organId .
+    ?organId rdfs:label ?organ_label
+
 		BIND (?tissue_block_volume * ?percentage as ?intersection_volume)
   	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
 }
-ORDER BY ?organ ?rui_location DESC(?as_volume)
+# ORDER BY ?organ ?rui_location DESC(?as_volume)
+ORDER BY DESC(?total_collision_percentage)
