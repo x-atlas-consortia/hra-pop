@@ -41,7 +41,7 @@ WHERE {
     ] .
 
 		{
-			SELECT ?rui_location ?modality (SUM(?percentage) as ?total_collision_percentage)
+			SELECT ?rui_location (SUM(?percentage) as ?total_collision_percentage)
 			WHERE {
 				?rui_location a ccf:SpatialEntity .
 				?rui_location ccf:has_collision_summary [
@@ -50,7 +50,7 @@ WHERE {
 					]
 				] .
 			}
-			GROUP BY ?rui_location ?modality
+			GROUP BY ?rui_location
 		}
 
 	# get label for reference organ

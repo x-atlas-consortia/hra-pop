@@ -4,6 +4,8 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
@@ -22,7 +24,9 @@ SELECT
     ?modality
     ?as_label
 
-FROM ctpop-graph:
+FROM HRApop:
+FROM CCF:
+
 FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
 
 WHERE {
