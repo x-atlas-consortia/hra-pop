@@ -1,5 +1,6 @@
-import fetch from 'node-fetch';
 import { readFileSync, writeFileSync } from 'fs';
+import fetch from 'node-fetch';
+import { gunzipSync } from 'zlib';
 
 const REGISTRATION_URLS = process.argv.slice(2, -1);
 const OUTPUT_JSONLD = process.argv.slice(-1)[0];
@@ -9,7 +10,11 @@ async function getJsonLd(inputFile) {
   if (inputFile.startsWith('http')) {
     document = await fetch(inputFile, { follow: true }).then((r) => r.json());
   } else {
-    document = JSON.parse(readFileSync(inputFile).toString());
+    if (inputFile.endsWith('.gz')) {
+      document = JSON.parse(gunzipSync(readFile(inputFile)));
+    } else {
+      document = JSON.parse(readFileSync(inputFile));
+    }
   }
 
   return document['@graph'] || document || [];
