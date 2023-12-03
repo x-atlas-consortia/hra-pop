@@ -11,7 +11,7 @@ async function getJsonLd(inputFile) {
     document = await fetch(inputFile, { follow: true }).then((r) => r.json());
   } else {
     if (inputFile.endsWith('.gz')) {
-      document = JSON.parse(gunzipSync(readFile(inputFile)));
+      document = JSON.parse(gunzipSync(readFileSync(inputFile)));
     } else {
       document = JSON.parse(readFileSync(inputFile));
     }

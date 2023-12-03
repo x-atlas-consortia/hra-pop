@@ -1,8 +1,8 @@
 VERSION="v0.4"
 
 DEPRECATED_SPATIAL_CELL_SUMMARIES=input-data/${VERSION}/spatial-cell-summaries.jsonld
+DEPRECATED_SPATIAL_CELL_SUMMARY_DATASETS=input-data/${VERSION}/spatial-dataset-metadata.csv
 DEPRECATED_CORRIDORS=raw-data/${VERSION}/corridors.jsonld
-DEPRECATED_SPATIAL_CELL_SUMMARY_DATASETS=input-data/${VERSION}/spatial-cell-summaries.csv
 
 REGISTRATIONS="https://apps.humanatlas.io/hra-api/v1/hubmap/rui_locations.jsonld?token=${HUBMAP_TOKEN}&cache=true \
   https://apps.humanatlas.io/hra-api/v1/sennet/rui_locations.jsonld?token=${SENNET_TOKEN}&cache=true \
@@ -13,4 +13,4 @@ PUBLICATIONS="https://docs.google.com/spreadsheets/d/1MK9KMPAFRHN6aU_e1ghApcbABA
 APPROVED_SOURCES="HuBMAP SenNet GTEx"
 
 CELL_SUMMARIES="input-data/${VERSION}/bulk-cell-summaries.jsonld.gz input-data/${VERSION}/spatial-cell-summaries.jsonld"
-CELL_SUMMARY_DATASETS="input-data/${VERSION}/bulk-cell-summaries.csv input-data/${VERSION}/spatial-cell-summaries.csv"
+CELL_SUMMARY_DATASETS="input-data/${VERSION}/bulk-dataset-metadata.csv input-data/${VERSION}/spatial-dataset-metadata.csv"
