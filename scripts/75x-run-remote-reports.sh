@@ -9,4 +9,4 @@ FILTER="$1"
 # SPARQL endpoint with hra-pop data loaded
 SPARQL_ENDPOINT=https://lod.humanatlas.io/sparql
 
-node ./src/run-reports.js $SPARQL_ENDPOINT $DIR/reports $FILTER
+node ./src/run-reports-remote.js $SPARQL_ENDPOINT $DIR/reports $FILTER

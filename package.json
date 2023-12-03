@@ -18,6 +18,7 @@
     "ndjsonld": "^0.1.2",
     "node-fetch": "^3.3.2",
     "papaparse": "^5.4.1",
-    "shelljs": "^0.8.5"
+    "shelljs": "^0.8.5",
+    "sparqljson-parse": "^2.2.0"
   }
 }
