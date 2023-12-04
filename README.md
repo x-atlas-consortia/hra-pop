@@ -11,12 +11,11 @@ To run the construction algorithm, you will need the following installed:
 1. A unix-like environment (Linux, WSL2 / Ubuntu For Windows, or Mac (untested))
 2. Node.js v18+
 3. Java 11 (for blazegraph-runner)
-4. [blazegraph-runner](https://github.com/balhoff/blazegraph-runner/)
-5. Docker
+4. Docker (optional)
 
 ### Setup
 
-1. Install node dependencies via `npm ci`
+1. Install node dependencies via `npm ci`, which also installs [blazegraph-runner](https://github.com/balhoff/blazegraph-runner/) into `node_modules/.bin` for querying and reports.
 
 ### Input
 
@@ -37,6 +36,7 @@ To start a workflow run, check the constants.sh to ensure it's including the rig
 
 | Script | Description |
 | :-- | :-- |
+| 00-setup-environment.sh | Additional environment setup (installs `blazegraph-runner`) |
 | 05-build-deprecated-cell-summaries.sh | Get cell summaries via old CTPop method |
 | 05-build-deprecated-corridors.sh | Get manually generated corridors (to eventually be replaced by a web service) |
 | 05-build-deprecated-registrations.sh | Get registrations (hra-dataset-graphs) via old CTPop method |
@@ -51,6 +51,7 @@ To start a workflow run, check the constants.sh to ensure it's including the rig
 | 60-enrich-dataset-graphs.sh | For Atlas, Atlas LQ, and test data, add collisions, corridors, and cell summaries to there dataset-graphs to generate *-enriched-dataset-graph.jsonld files |
 | 70-create-internal-blazegraph.sh | Load *-enriched-dataset-graph.jsonld files, extraction site distances, and cell summary similarities into a Blazegraph db for querying. |
 | 75-run-reports.sh | Run reports against the generated blazegraph db using Atlas and Atlas LQ |
+| 75x-run-remote-reports.sh | Run reports against Atlas and Atlas LQ using the HRA-KG SPARQL server at <https://lod.humanatlas.io/sparql>. |
 | 80-publish-results.sh | Compile the data for publication, including Atlas and Atlas LQ enriched dataset graphs, non-atlas-dataset-graph.csv (for tracking/improving datasets), and the reports generated against the atlases. |
 
 ### Output
