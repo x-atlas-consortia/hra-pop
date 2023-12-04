@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "./scripts/00-setup-environment.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
