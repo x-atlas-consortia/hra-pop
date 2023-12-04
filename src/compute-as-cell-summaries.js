@@ -28,12 +28,14 @@ function handleCellSummaries(summaries, collisions) {
     for (const cell of cellSummaryRows) {
       for (const collision of collisions) {
         const asIri = collision.as_id;
+        const asLabel = collision.as_label;
         const modality = dsSummary.modality;
         const weightedCellCount = cell.count * collision.percentage;
 
         const summary = (asCellSummaries[asIri + modality] = asCellSummaries[asIri + modality] || {
           '@type': 'CellSummary',
           cell_source: asIri,
+          cell_source_label: asLabel,
           annotation_method: 'Aggregation',
           aggregated_summary_count: 0,
           aggregated_summaries: new Set(),
