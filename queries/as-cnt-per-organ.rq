@@ -12,7 +12,7 @@ WHERE {
     ccf:representation_of ?as_id .
 
     BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
-     BIND (REPLACE(REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "V1.0", ""),"V1.1",""),"V1.2","") as ?organ)
+    BIND (REPLACE(REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "V1.0", ""),"V1.1",""),"V1.2","") as ?organ)
 }
 
 GROUP BY ?ref_organ
