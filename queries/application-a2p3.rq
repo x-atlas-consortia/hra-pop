@@ -26,13 +26,13 @@ WHERE {
          ccf:cell_source_b ?rui ;
          ccf:similarity ?similarity .
 
-      FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/'))
+      FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/') && ?similarity > 0.1)
     } UNION {
       [] ccf:cell_source_a ?rui ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .
 
-      FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/'))
+      FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/') && ?similarity > 0.1)
     }
   }
 }
