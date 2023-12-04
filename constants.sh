@@ -10,3 +10,5 @@ source input-data/v0.4/config.sh
 mkdir -p $RAW_DIR/$VERSION
 mkdir -p $INPUT_DIR/$VERSION
 mkdir -p $OUTPUT_DIR/$VERSION
+
+JAVA_OPTS="-Xms2g -Xmx32g"

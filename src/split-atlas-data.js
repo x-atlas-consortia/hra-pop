@@ -44,6 +44,9 @@ for (const row of data) {
   if (diamonds < maxDiamonds) {
     nonAtlasData.push({
       diamonds,
+      hasExtractionSite,
+      hasCellSummary,
+      hasPublication,
       ...row,
     });
   }
