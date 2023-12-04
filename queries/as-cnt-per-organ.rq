@@ -1,0 +1,18 @@
+#+ summary: Count of Anatomical Structures
+#+ description: Count of Anatomical Structures that occur in the 3D Reference Organs
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+
+SELECT (COUNT(DISTINCT(?as_id)) as ?as_cnt) ?ref_organ
+FROM CCF:
+WHERE {
+  ?as3d
+    ccf:has_reference_organ ?ref_organ ;
+    ccf:representation_of ?as_id .
+
+    BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
+    BIND (REPLACE(REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "V1.0", ""),"V1.1",""),"V1.2","") as ?organ)
+}
+
+GROUP BY ?ref_organ
