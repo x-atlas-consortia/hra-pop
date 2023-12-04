@@ -9,7 +9,7 @@ const HUBMAP_TOKEN = process.env.HUBMAP_TOKEN;
 const OUTPUT = process.argv[2];
 const OUTPUT_CSV = process.argv[3];
 const CSV_PATTERN = 'tissue-bar-graphs/csv/*/*.csv';
-const MODALITY = 'bulk';
+const MODALITY = 'sc_bulk';
 const BASE_IRI = 'https://purl.humanatlas.io/graph/hra-pop#datasets_';
 
 // A HuBMAP Token is required as some datasets are unpublished
