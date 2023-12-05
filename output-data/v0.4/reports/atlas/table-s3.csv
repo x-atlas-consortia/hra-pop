@@ -1,22 +1,40 @@
 organ,as_label,cell_label,cell_id,mean_cell_count,cell_count
-VHFHeart,heart left ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,475.16666666666666666667,2851
-VHFHeart,heart left ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,1554.83333333333333333333,9329
-VHFHeart,heart left ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,2227,13362
-VHFHeart,heart left ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,130,780
-VHFHeart,heart left ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1268.33333333333333333333,7610
-VHFHeart,heart left ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,279.66666666666666666667,1678
-VHFHeart,heart right ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,496,496
-VHFHeart,heart right ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,1792,1792
-VHFHeart,heart right ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,4186,4186
-VHFHeart,heart right ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,224,224
-VHFHeart,heart right ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,2372,2372
-VHFHeart,heart right ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,679,679
-VHFHeart,interventricular septum,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,496,496
-VHFHeart,interventricular septum,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,1792,1792
-VHFHeart,interventricular septum,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,4186,4186
-VHFHeart,interventricular septum,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,224,224
-VHFHeart,interventricular septum,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,2372,2372
-VHFHeart,interventricular septum,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,679,679
+VHFHeart,Posteromedial head of posterior papillary muscle of left ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,1462,52632
+VHFHeart,Posteromedial head of posterior papillary muscle of left ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,2654.5,95562
+VHFHeart,Posteromedial head of posterior papillary muscle of left ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,1037.66666666666666666667,37356
+VHFHeart,Posteromedial head of posterior papillary muscle of left ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,8.33333333333333333333,300
+VHFHeart,Posteromedial head of posterior papillary muscle of left ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,550,19800
+VHFHeart,Posteromedial head of posterior papillary muscle of left ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,1080,38880
+VHFHeart,heart left ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,1236.85714285714285714286,173160
+VHFHeart,heart left ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,3029.72142857142857142857,424161
+VHFHeart,heart left ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,1026.27142857142857142857,143678
+VHFHeart,heart left ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,13.80451127819548872180,1836
+VHFHeart,heart left ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,391.38571428571428571429,54794
+VHFHeart,heart left ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,1192.35,166929
+VHFHeart,heart right ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,970.45348837209302325581,83459
+VHFHeart,heart right ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,2815.76744186046511627907,242156
+VHFHeart,heart right ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,1055.25581395348837209302,90752
+VHFHeart,heart right ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,8.69767441860465116279,748
+VHFHeart,heart right ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,346.69767441860465116279,29816
+VHFHeart,heart right ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,983.68604651162790697674,84597
+VHFHeart,interventricular septum,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,1435.89189189189189189189,53128
+VHFHeart,interventricular septum,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,2631.18918918918918918919,97354
+VHFHeart,interventricular septum,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,1122.75675675675675675676,41542
+VHFHeart,interventricular septum,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,14.16216216216216216216,524
+VHFHeart,interventricular septum,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,599.24324324324324324324,22172
+VHFHeart,interventricular septum,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,1069.16216216216216216216,39559
+VHFHeart,left cardiac atrium,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,528.28571428571428571429,25886
+VHFHeart,left cardiac atrium,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,1507.57142857142857142857,73871
+VHFHeart,left cardiac atrium,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,697.85714285714285714286,34195
+VHFHeart,left cardiac atrium,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,10.14285714285714285714,497
+VHFHeart,left cardiac atrium,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,230.85714285714285714286,11312
+VHFHeart,left cardiac atrium,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,798.14285714285714285714,39109
+VHFHeart,right cardiac atrium,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,333.66666666666666666667,12012
+VHFHeart,right cardiac atrium,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,859.83333333333333333333,30954
+VHFHeart,right cardiac atrium,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,899.33333333333333333333,32376
+VHFHeart,right cardiac atrium,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,29.4,882
+VHFHeart,right cardiac atrium,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,152.5,5490
+VHFHeart,right cardiac atrium,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,255,9180
 VHFLargeIntestine,ascending colon,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,48.33333333333333333333,145
 VHFLargeIntestine,ascending colon,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,67.66666666666666666667,203
 VHFLargeIntestine,ascending colon,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,60,180
@@ -92,6 +110,90 @@ VHFLargeIntestine,transverse colon,neutrophil,https://purl.org/ccf/ASCTB-TEMP_ne
 VHFLargeIntestine,transverse colon,paneth cell of colon,https://purl.org/ccf/ASCTB-TEMP_paneth-cell-of-colon,40,120
 VHFLargeIntestine,transverse colon,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,40.66666666666666666667,122
 VHFLargeIntestine,transverse colon,transit amplifying cell of colon,https://purl.org/ccf/ASCTB-TEMP_transit-amplifying-cell-of-colon,80,80
+VHFLung,Lateral segmental bronchus,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,39.5,158
+VHFLung,Lateral segmental bronchus,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,506.5,2026
+VHFLung,Lateral segmental bronchus,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,106,424
+VHFLung,Lateral segmental bronchus,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,42.5,170
+VHFLung,Lateral segmental bronchus,basophil,https://purl.org/ccf/ASCTB-TEMP_basophil,31.5,126
+VHFLung,Lateral segmental bronchus,bronchial smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-smooth-muscle-cell,6,24
+VHFLung,Lateral segmental bronchus,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,151,604
+VHFLung,Lateral segmental bronchus,classical monocyte,https://purl.org/ccf/ASCTB-TEMP_classical-monocyte,142.5,570
+VHFLung,Lateral segmental bronchus,club cell,https://purl.org/ccf/ASCTB-TEMP_club-cell,239.5,958
+VHFLung,Lateral segmental bronchus,dendritic cell,https://purl.org/ccf/ASCTB-TEMP_dendritic-cell,12.5,50
+VHFLung,Lateral segmental bronchus,"effector CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd4-positive-alpha-beta-t-cell,17.5,70
+VHFLung,Lateral segmental bronchus,"effector CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd8-positive-alpha-beta-t-cell,132.5,530
+VHFLung,Lateral segmental bronchus,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,11,44
+VHFLung,Lateral segmental bronchus,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,59,236
+VHFLung,Lateral segmental bronchus,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,406.5,1626
+VHFLung,Lateral segmental bronchus,intermediate monocyte,https://purl.org/ccf/ASCTB-TEMP_intermediate-monocyte,3,6
+VHFLung,Lateral segmental bronchus,lung ciliated cell,https://purl.org/ccf/ASCTB-TEMP_lung-ciliated-cell,125,500
+VHFLung,Lateral segmental bronchus,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1229,4916
+VHFLung,Lateral segmental bronchus,mature NK T cell,https://purl.org/ccf/ASCTB-TEMP_mature-nk-t-cell,25.5,102
+VHFLung,Lateral segmental bronchus,neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,11,44
+VHFLung,Lateral segmental bronchus,non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,156.5,626
+VHFLung,Lateral segmental bronchus,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,23.5,94
+VHFLung,Lateral segmental bronchus,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,4,16
+VHFLung,Lateral segmental bronchus,respiratory goblet cell,https://purl.org/ccf/ASCTB-TEMP_respiratory-goblet-cell,17.5,70
+VHFLung,Lateral segmental bronchus,type I pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-i-pneumocyte,375.5,1502
+VHFLung,Lateral segmental bronchus,type II pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-ii-pneumocyte,1017.5,4070
+VHFLung,Lateral segmental bronchus,vascular associated smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_vascular-associated-smooth-muscle-cell,2,8
+VHFLung,Lateral segmental bronchus,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,56,224
+VHFLung,Right Lateral Bronchopulmonary Segment,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,39.5,158
+VHFLung,Right Lateral Bronchopulmonary Segment,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,506.5,2026
+VHFLung,Right Lateral Bronchopulmonary Segment,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,106,424
+VHFLung,Right Lateral Bronchopulmonary Segment,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,42.5,170
+VHFLung,Right Lateral Bronchopulmonary Segment,basophil,https://purl.org/ccf/ASCTB-TEMP_basophil,31.5,126
+VHFLung,Right Lateral Bronchopulmonary Segment,bronchial smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-smooth-muscle-cell,6,24
+VHFLung,Right Lateral Bronchopulmonary Segment,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,151,604
+VHFLung,Right Lateral Bronchopulmonary Segment,classical monocyte,https://purl.org/ccf/ASCTB-TEMP_classical-monocyte,142.5,570
+VHFLung,Right Lateral Bronchopulmonary Segment,club cell,https://purl.org/ccf/ASCTB-TEMP_club-cell,239.5,958
+VHFLung,Right Lateral Bronchopulmonary Segment,dendritic cell,https://purl.org/ccf/ASCTB-TEMP_dendritic-cell,12.5,50
+VHFLung,Right Lateral Bronchopulmonary Segment,"effector CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd4-positive-alpha-beta-t-cell,17.5,70
+VHFLung,Right Lateral Bronchopulmonary Segment,"effector CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd8-positive-alpha-beta-t-cell,132.5,530
+VHFLung,Right Lateral Bronchopulmonary Segment,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,11,44
+VHFLung,Right Lateral Bronchopulmonary Segment,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,59,236
+VHFLung,Right Lateral Bronchopulmonary Segment,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,406.5,1626
+VHFLung,Right Lateral Bronchopulmonary Segment,intermediate monocyte,https://purl.org/ccf/ASCTB-TEMP_intermediate-monocyte,3,6
+VHFLung,Right Lateral Bronchopulmonary Segment,lung ciliated cell,https://purl.org/ccf/ASCTB-TEMP_lung-ciliated-cell,125,500
+VHFLung,Right Lateral Bronchopulmonary Segment,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1229,4916
+VHFLung,Right Lateral Bronchopulmonary Segment,mature NK T cell,https://purl.org/ccf/ASCTB-TEMP_mature-nk-t-cell,25.5,102
+VHFLung,Right Lateral Bronchopulmonary Segment,neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,11,44
+VHFLung,Right Lateral Bronchopulmonary Segment,non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,156.5,626
+VHFLung,Right Lateral Bronchopulmonary Segment,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,23.5,94
+VHFLung,Right Lateral Bronchopulmonary Segment,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,4,16
+VHFLung,Right Lateral Bronchopulmonary Segment,respiratory goblet cell,https://purl.org/ccf/ASCTB-TEMP_respiratory-goblet-cell,17.5,70
+VHFLung,Right Lateral Bronchopulmonary Segment,type I pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-i-pneumocyte,375.5,1502
+VHFLung,Right Lateral Bronchopulmonary Segment,type II pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-ii-pneumocyte,1017.5,4070
+VHFLung,Right Lateral Bronchopulmonary Segment,vascular associated smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_vascular-associated-smooth-muscle-cell,2,8
+VHFLung,Right Lateral Bronchopulmonary Segment,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,56,224
+VHFLung,Right Medial Bronchopulmonary Segment,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,39.5,158
+VHFLung,Right Medial Bronchopulmonary Segment,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,506.5,2026
+VHFLung,Right Medial Bronchopulmonary Segment,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,106,424
+VHFLung,Right Medial Bronchopulmonary Segment,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,42.5,170
+VHFLung,Right Medial Bronchopulmonary Segment,basophil,https://purl.org/ccf/ASCTB-TEMP_basophil,31.5,126
+VHFLung,Right Medial Bronchopulmonary Segment,bronchial smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-smooth-muscle-cell,6,24
+VHFLung,Right Medial Bronchopulmonary Segment,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,151,604
+VHFLung,Right Medial Bronchopulmonary Segment,classical monocyte,https://purl.org/ccf/ASCTB-TEMP_classical-monocyte,142.5,570
+VHFLung,Right Medial Bronchopulmonary Segment,club cell,https://purl.org/ccf/ASCTB-TEMP_club-cell,239.5,958
+VHFLung,Right Medial Bronchopulmonary Segment,dendritic cell,https://purl.org/ccf/ASCTB-TEMP_dendritic-cell,12.5,50
+VHFLung,Right Medial Bronchopulmonary Segment,"effector CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd4-positive-alpha-beta-t-cell,17.5,70
+VHFLung,Right Medial Bronchopulmonary Segment,"effector CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd8-positive-alpha-beta-t-cell,132.5,530
+VHFLung,Right Medial Bronchopulmonary Segment,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,11,44
+VHFLung,Right Medial Bronchopulmonary Segment,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,59,236
+VHFLung,Right Medial Bronchopulmonary Segment,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,406.5,1626
+VHFLung,Right Medial Bronchopulmonary Segment,intermediate monocyte,https://purl.org/ccf/ASCTB-TEMP_intermediate-monocyte,3,6
+VHFLung,Right Medial Bronchopulmonary Segment,lung ciliated cell,https://purl.org/ccf/ASCTB-TEMP_lung-ciliated-cell,125,500
+VHFLung,Right Medial Bronchopulmonary Segment,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1229,4916
+VHFLung,Right Medial Bronchopulmonary Segment,mature NK T cell,https://purl.org/ccf/ASCTB-TEMP_mature-nk-t-cell,25.5,102
+VHFLung,Right Medial Bronchopulmonary Segment,neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,11,44
+VHFLung,Right Medial Bronchopulmonary Segment,non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,156.5,626
+VHFLung,Right Medial Bronchopulmonary Segment,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,23.5,94
+VHFLung,Right Medial Bronchopulmonary Segment,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,4,16
+VHFLung,Right Medial Bronchopulmonary Segment,respiratory goblet cell,https://purl.org/ccf/ASCTB-TEMP_respiratory-goblet-cell,17.5,70
+VHFLung,Right Medial Bronchopulmonary Segment,type I pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-i-pneumocyte,375.5,1502
+VHFLung,Right Medial Bronchopulmonary Segment,type II pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-ii-pneumocyte,1017.5,4070
+VHFLung,Right Medial Bronchopulmonary Segment,vascular associated smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_vascular-associated-smooth-muscle-cell,2,8
+VHFLung,Right Medial Bronchopulmonary Segment,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,56,224
 VHFRightLymphNode,Lymph vasculature,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,3565.5,7131
 VHFRightLymphNode,Lymph vasculature,T cell,https://purl.org/ccf/ASCTB-TEMP_t-cell,1002,2004
 VHFRightLymphNode,Lymph vasculature,classical monocyte,https://purl.org/ccf/ASCTB-TEMP_classical-monocyte,1,1
@@ -325,24 +427,36 @@ VHFSpleen,hilum of spleen,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cel
 VHFSpleen,hilum of spleen,platelet,https://purl.org/ccf/ASCTB-TEMP_platelet,47,47
 VHFSpleen,hilum of spleen,regulatory T cell,https://purl.org/ccf/ASCTB-TEMP_regulatory-t-cell,9,9
 VHFSpleen,hilum of spleen,type I NK T cell,https://purl.org/ccf/ASCTB-TEMP_type-i-nk-t-cell,77,154
-VHMHeart,heart left ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,532.07142857142857142857,7449
-VHMHeart,heart left ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,2129.26666666666666666667,31939
-VHMHeart,heart left ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,2136.2,32043
-VHMHeart,heart left ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,125.64285714285714285714,1759
-VHMHeart,heart left ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1215.35714285714285714286,17015
-VHMHeart,heart left ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,221.66666666666666666667,3325
-VHMHeart,heart right ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,351,351
-VHMHeart,heart right ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,1250,1250
-VHMHeart,heart right ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,2704,2704
-VHMHeart,heart right ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,87,87
-VHMHeart,heart right ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1539,1539
-VHMHeart,heart right ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,80,80
-VHMHeart,right cardiac atrium,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,2414.66666666666666666667,21732
-VHMHeart,right cardiac atrium,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,3264.33333333333333333333,29379
-VHMHeart,right cardiac atrium,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,3221,28989
-VHMHeart,right cardiac atrium,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,116,1044
-VHMHeart,right cardiac atrium,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,2345.66666666666666666667,21111
-VHMHeart,right cardiac atrium,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,829.66666666666666666667,7467
+VHMHeart,heart left ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,1662.26708074534161490683,267625
+VHMHeart,heart left ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,2458.02469135802469135802,398200
+VHMHeart,heart left ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,1103.95061728395061728395,178840
+VHMHeart,heart left ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,32.92207792207792207792,5070
+VHMHeart,heart left ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,601.72670807453416149068,96878
+VHMHeart,heart left ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,1165.80246913580246913580,188860
+VHMHeart,heart right ventricle,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,1410.33333333333333333333,139623
+VHMHeart,heart right ventricle,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,2380.25252525252525252525,235645
+VHMHeart,heart right ventricle,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,909.52525252525252525253,90043
+VHMHeart,heart right ventricle,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,19.43478260869565217391,1788
+VHMHeart,heart right ventricle,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,474.92929292929292929293,47018
+VHMHeart,heart right ventricle,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,950.05050505050505050505,94055
+VHMHeart,interventricular septum,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,1279.57142857142857142857,62699
+VHMHeart,interventricular septum,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,2588.42857142857142857143,126833
+VHMHeart,interventricular septum,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,678.71428571428571428571,33257
+VHMHeart,interventricular septum,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,22.14285714285714285714,1085
+VHMHeart,interventricular septum,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,451.42857142857142857143,22120
+VHMHeart,interventricular septum,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,852.71428571428571428571,41783
+VHMHeart,left cardiac atrium,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,1532.42857142857142857143,75089
+VHMHeart,left cardiac atrium,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,1397.14285714285714285714,68460
+VHMHeart,left cardiac atrium,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,1409,69041
+VHMHeart,left cardiac atrium,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,28.57142857142857142857,1400
+VHMHeart,left cardiac atrium,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,968.57142857142857142857,47460
+VHMHeart,left cardiac atrium,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,1282,62818
+VHMHeart,right cardiac atrium,cardiac endothelial cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-endothelial-cell,889.91379310344827586207,51615
+VHMHeart,right cardiac atrium,cardiac muscle cell,https://purl.org/ccf/ASCTB-TEMP_cardiac-muscle-cell,1417.5,82215
+VHMHeart,right cardiac atrium,fibroblast of cardiac tissue,https://purl.org/ccf/ASCTB-TEMP_fibroblast-of-cardiac-tissue,1445.77586206896551724138,83855
+VHMHeart,right cardiac atrium,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,40.50980392156862745098,2066
+VHMHeart,right cardiac atrium,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,853.13793103448275862069,49482
+VHMHeart,right cardiac atrium,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,430.46551724137931034483,24967
 VHMLargeIntestine,ascending colon,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,3.5,14
 VHMLargeIntestine,ascending colon,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,29.75,119
 VHMLargeIntestine,ascending colon,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,13.5,54
@@ -415,6 +529,37 @@ VHMLargeIntestine,transverse colon,neutrophil,https://purl.org/ccf/ASCTB-TEMP_ne
 VHMLargeIntestine,transverse colon,paneth cell of colon,https://purl.org/ccf/ASCTB-TEMP_paneth-cell-of-colon,48,288
 VHMLargeIntestine,transverse colon,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,10,40
 VHMLargeIntestine,transverse colon,transit amplifying cell of colon,https://purl.org/ccf/ASCTB-TEMP_transit-amplifying-cell-of-colon,23.8,119
+VHMLung,Lateral segmental bronchus,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,37,592
+VHMLung,Lateral segmental bronchus,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,599.25,9588
+VHMLung,Lateral segmental bronchus,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,104,1664
+VHMLung,Lateral segmental bronchus,adventitial cell,https://purl.org/ccf/ASCTB-TEMP_adventitial-cell,5,40
+VHMLung,Lateral segmental bronchus,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,22.5,360
+VHMLung,Lateral segmental bronchus,basophil,https://purl.org/ccf/ASCTB-TEMP_basophil,85,1360
+VHMLung,Lateral segmental bronchus,bronchial smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-smooth-muscle-cell,7.33333333333333333333,88
+VHMLung,Lateral segmental bronchus,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,224,3584
+VHMLung,Lateral segmental bronchus,classical monocyte,https://purl.org/ccf/ASCTB-TEMP_classical-monocyte,61,976
+VHMLung,Lateral segmental bronchus,club cell,https://purl.org/ccf/ASCTB-TEMP_club-cell,264.25,4228
+VHMLung,Lateral segmental bronchus,dendritic cell,https://purl.org/ccf/ASCTB-TEMP_dendritic-cell,16,128
+VHMLung,Lateral segmental bronchus,"effector CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd4-positive-alpha-beta-t-cell,20.75,332
+VHMLung,Lateral segmental bronchus,"effector CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd8-positive-alpha-beta-t-cell,84.25,1348
+VHMLung,Lateral segmental bronchus,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,5,80
+VHMLung,Lateral segmental bronchus,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,81.25,1300
+VHMLung,Lateral segmental bronchus,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,500.5,8008
+VHMLung,Lateral segmental bronchus,intermediate monocyte,https://purl.org/ccf/ASCTB-TEMP_intermediate-monocyte,1,12
+VHMLung,Lateral segmental bronchus,lung ciliated cell,https://purl.org/ccf/ASCTB-TEMP_lung-ciliated-cell,63,1008
+VHMLung,Lateral segmental bronchus,lung microvascular endothelial cell,https://purl.org/ccf/ASCTB-TEMP_lung-microvascular-endothelial-cell,1,8
+VHMLung,Lateral segmental bronchus,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1038.25,16612
+VHMLung,Lateral segmental bronchus,mature NK T cell,https://purl.org/ccf/ASCTB-TEMP_mature-nk-t-cell,21.25,340
+VHMLung,Lateral segmental bronchus,neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,12.75,204
+VHMLung,Lateral segmental bronchus,non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,135.5,2168
+VHMLung,Lateral segmental bronchus,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,29.25,468
+VHMLung,Lateral segmental bronchus,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,20.75,332
+VHMLung,Lateral segmental bronchus,plasmacytoid dendritic cell,https://purl.org/ccf/ASCTB-TEMP_plasmacytoid-dendritic-cell,4,16
+VHMLung,Lateral segmental bronchus,respiratory goblet cell,https://purl.org/ccf/ASCTB-TEMP_respiratory-goblet-cell,8.25,132
+VHMLung,Lateral segmental bronchus,type I pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-i-pneumocyte,371,5936
+VHMLung,Lateral segmental bronchus,type II pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-ii-pneumocyte,1057.5,16920
+VHMLung,Lateral segmental bronchus,vascular associated smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_vascular-associated-smooth-muscle-cell,2.33333333333333333333,28
+VHMLung,Lateral segmental bronchus,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,28,448
 VHMLung,Left apical bronchopulmonary segment,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,8.33333333333333333333,75
 VHMLung,Left apical bronchopulmonary segment,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,528.33333333333333333333,4755
 VHMLung,Left apical bronchopulmonary segment,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,253,2277
@@ -447,6 +592,37 @@ VHMLung,Left apical bronchopulmonary segment,type I pneumocyte,https://purl.org/
 VHMLung,Left apical bronchopulmonary segment,type II pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-ii-pneumocyte,5120.66666666666666666667,46086
 VHMLung,Left apical bronchopulmonary segment,vascular associated smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_vascular-associated-smooth-muscle-cell,16.33333333333333333333,147
 VHMLung,Left apical bronchopulmonary segment,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,246,2214
+VHMLung,Right Lateral Bronchopulmonary Segment,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,37,592
+VHMLung,Right Lateral Bronchopulmonary Segment,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,599.25,9588
+VHMLung,Right Lateral Bronchopulmonary Segment,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,104,1664
+VHMLung,Right Lateral Bronchopulmonary Segment,adventitial cell,https://purl.org/ccf/ASCTB-TEMP_adventitial-cell,5,40
+VHMLung,Right Lateral Bronchopulmonary Segment,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,22.5,360
+VHMLung,Right Lateral Bronchopulmonary Segment,basophil,https://purl.org/ccf/ASCTB-TEMP_basophil,85,1360
+VHMLung,Right Lateral Bronchopulmonary Segment,bronchial smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-smooth-muscle-cell,7.33333333333333333333,88
+VHMLung,Right Lateral Bronchopulmonary Segment,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,224,3584
+VHMLung,Right Lateral Bronchopulmonary Segment,classical monocyte,https://purl.org/ccf/ASCTB-TEMP_classical-monocyte,61,976
+VHMLung,Right Lateral Bronchopulmonary Segment,club cell,https://purl.org/ccf/ASCTB-TEMP_club-cell,264.25,4228
+VHMLung,Right Lateral Bronchopulmonary Segment,dendritic cell,https://purl.org/ccf/ASCTB-TEMP_dendritic-cell,16,128
+VHMLung,Right Lateral Bronchopulmonary Segment,"effector CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd4-positive-alpha-beta-t-cell,20.75,332
+VHMLung,Right Lateral Bronchopulmonary Segment,"effector CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_effector-cd8-positive-alpha-beta-t-cell,84.25,1348
+VHMLung,Right Lateral Bronchopulmonary Segment,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,5,80
+VHMLung,Right Lateral Bronchopulmonary Segment,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,81.25,1300
+VHMLung,Right Lateral Bronchopulmonary Segment,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,500.5,8008
+VHMLung,Right Lateral Bronchopulmonary Segment,intermediate monocyte,https://purl.org/ccf/ASCTB-TEMP_intermediate-monocyte,1,12
+VHMLung,Right Lateral Bronchopulmonary Segment,lung ciliated cell,https://purl.org/ccf/ASCTB-TEMP_lung-ciliated-cell,63,1008
+VHMLung,Right Lateral Bronchopulmonary Segment,lung microvascular endothelial cell,https://purl.org/ccf/ASCTB-TEMP_lung-microvascular-endothelial-cell,1,8
+VHMLung,Right Lateral Bronchopulmonary Segment,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,1038.25,16612
+VHMLung,Right Lateral Bronchopulmonary Segment,mature NK T cell,https://purl.org/ccf/ASCTB-TEMP_mature-nk-t-cell,21.25,340
+VHMLung,Right Lateral Bronchopulmonary Segment,neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,12.75,204
+VHMLung,Right Lateral Bronchopulmonary Segment,non-classical monocyte,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocyte,135.5,2168
+VHMLung,Right Lateral Bronchopulmonary Segment,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,29.25,468
+VHMLung,Right Lateral Bronchopulmonary Segment,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,20.75,332
+VHMLung,Right Lateral Bronchopulmonary Segment,plasmacytoid dendritic cell,https://purl.org/ccf/ASCTB-TEMP_plasmacytoid-dendritic-cell,4,16
+VHMLung,Right Lateral Bronchopulmonary Segment,respiratory goblet cell,https://purl.org/ccf/ASCTB-TEMP_respiratory-goblet-cell,8.25,132
+VHMLung,Right Lateral Bronchopulmonary Segment,type I pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-i-pneumocyte,371,5936
+VHMLung,Right Lateral Bronchopulmonary Segment,type II pneumocyte,https://purl.org/ccf/ASCTB-TEMP_type-ii-pneumocyte,1057.5,16920
+VHMLung,Right Lateral Bronchopulmonary Segment,vascular associated smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_vascular-associated-smooth-muscle-cell,2.33333333333333333333,28
+VHMLung,Right Lateral Bronchopulmonary Segment,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,28,448
 VHMProstate,central zone of prostate,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,151.75,4856
 VHMProstate,central zone of prostate,basal cell of prostate epithelium,https://purl.org/ccf/ASCTB-TEMP_basal-cell-of-prostate-epithelium,1181.75,37816
 VHMProstate,central zone of prostate,club cell,https://purl.org/ccf/ASCTB-TEMP_club-cell,1122.5,35920
