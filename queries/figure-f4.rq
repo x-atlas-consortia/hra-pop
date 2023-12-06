@@ -38,7 +38,6 @@ WHERE {
 
     ?organIri rdfs:label ?organ .
     BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
-    FILTER(?refOrganAs != ?refOrgan)
   }
 }
 GROUP BY ?organId ?organ ?sex
