@@ -17,13 +17,18 @@ const ruiCellSummaries = {};
 
 function handleCellSummaries(id, summaries) {
   for (const dsSummary of summaries) {
+    const modality = dsSummary.modality;
+    const annotation_method = dsSummary.annotation_method;
+    const summaryKey = id + modality + annotation_method;
     const cellSummaryRows = dsSummary.summary;
-    const summary = (ruiCellSummaries[id] = ruiCellSummaries[id] || {
+
+    const summary = (ruiCellSummaries[summaryKey] = ruiCellSummaries[summaryKey] || {
       '@type': 'CellSummary',
       cell_source: id,
-      annotation_method: 'Aggregation',
+      annotation_method,
       aggregated_summary_count: 0,
       aggregated_summaries: new Set(),
+      modality,
       summary: [],
     });
     summary.aggregated_summaries.add(dsSummary.cell_source);

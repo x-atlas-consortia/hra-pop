@@ -28,35 +28,36 @@ function handleCellSummaries(ruiLocation, collisions) {
 
     for (const asSummary of asSummaries ?? []) {
       const modality = asSummary.modality;
-      if (!ruiCellSummaries[ruiLocation + modality]) {
-        const summary = (ruiCellSummaries[ruiLocation + modality] = ruiCellSummaries[ruiLocation + modality] || {
-          '@type': 'CellSummary',
-          cell_source: ruiLocation,
-          annotation_method: 'AS Cell Summary',
-          aggregated_summary_count: 0,
-          aggregated_summaries: new Set(),
-          modality,
-          summary: [],
-        });
-        summary.aggregated_summaries.add(asIri);
+      const annotation_method = asSummary.annotation_method;
+      const summaryKey = ruiLocation + modality + annotation_method;
 
-        const cellSummaryRows = asSummary?.summary ?? [];
-        for (const cell of cellSummaryRows) {
-          const weightedCellCount = cell.count * collision.percentage;
+      const summary = (ruiCellSummaries[summaryKey] = ruiCellSummaries[summaryKey] || {
+        '@type': 'CellSummary',
+        cell_source: ruiLocation,
+        annotation_method,
+        aggregated_summary_count: 0,
+        aggregated_summaries: new Set(),
+        modality,
+        summary: [],
+      });
+      summary.aggregated_summaries.add(asIri);
 
-          let summaryRow = summary.summary.find((s) => s.cell_id === cell.cell_id);
-          if (summaryRow) {
-            summaryRow.count += weightedCellCount;
-          } else {
-            summaryRow = {
-              '@type': 'CellSummaryRow',
-              cell_id: cell.cell_id,
-              cell_label: cell.cell_label,
-              count: weightedCellCount,
-              percentage: 0, // to be computed at the end
-            };
-            summary.summary.push(summaryRow);
-          }
+      const cellSummaryRows = asSummary?.summary ?? [];
+      for (const cell of cellSummaryRows) {
+        const weightedCellCount = cell.count * collision.percentage;
+
+        let summaryRow = summary.summary.find((s) => s.cell_id === cell.cell_id);
+        if (summaryRow) {
+          summaryRow.count += weightedCellCount;
+        } else {
+          summaryRow = {
+            '@type': 'CellSummaryRow',
+            cell_id: cell.cell_id,
+            cell_label: cell.cell_label,
+            count: weightedCellCount,
+            percentage: 0, // to be computed at the end
+          };
+          summary.summary.push(summaryRow);
         }
       }
     }

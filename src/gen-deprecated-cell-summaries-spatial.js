@@ -60,7 +60,7 @@ function getCTSummary(path, datasetIri, modality = undefined) {
   return {
     '@type': 'CellSummary',
     cell_source: datasetIri,
-    annotation_method: 'Ad-Hoc',
+    annotation_method: 'spatial',
     modality,
     summary,
   };
@@ -77,7 +77,9 @@ const seen = new Set();
 const results = [];
 for (const csvFile of allCSVs) {
   const id = basename(csvFile, '.csv');
-  if (!seen.has(id)) {
+  if (!hbmLookup[id]) {
+    console.log(id, 'no longer exists (was deleted at HuBMAP).');
+  } else if (!seen.has(id)) {
     seen.add(id);
     const datasetIri = hbmLookup[id] || `${BASE_IRI}${id}`;
     const summary = getCTSummary(csvFile, datasetIri, MODALITY);
@@ -92,7 +94,7 @@ const metadataResults = results.map((summary) => {
   return {
     donor_id: `${id}$TEMP_DONOR`,
     block_id: `${id}$TEMP_BLOCK`,
-    dataset_id: id
+    dataset_id: id,
   };
 });
 

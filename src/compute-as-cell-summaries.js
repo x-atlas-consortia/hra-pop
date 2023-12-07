@@ -30,13 +30,15 @@ function handleCellSummaries(summaries, collisions) {
         const asIri = collision.as_id;
         const asLabel = collision.as_label;
         const modality = dsSummary.modality;
+        const annotation_method = dsSummary.annotation_method;
+        const summaryKey = asIri + modality + annotation_method;
         const weightedCellCount = cell.count * collision.percentage;
 
-        const summary = (asCellSummaries[asIri + modality] = asCellSummaries[asIri + modality] || {
+        const summary = (asCellSummaries[summaryKey] = asCellSummaries[summaryKey] || {
           '@type': 'CellSummary',
           cell_source: asIri,
           cell_source_label: asLabel,
-          annotation_method: 'Aggregation',
+          annotation_method,
           aggregated_summary_count: 0,
           aggregated_summaries: new Set(),
           modality,
