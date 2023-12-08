@@ -7,7 +7,7 @@ services:
         source: ./blazegraph.properties
         target: /data/blazegraph.properties
       - type: bind
-        source: raw-data/v0.3/blazegraph.jnl
+        source: raw-data/v0.4/blazegraph.jnl
         target: /data/blazegraph.jnl
 
     stdin_open: true # docker run -i

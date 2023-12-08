@@ -28,9 +28,17 @@ SELECT DISTINCT
 WHERE {
   GRAPH HRApop: {
     ?entity a ccf:SpatialEntity .
-    ?sample ccf:has_registration_location ?entity ;
-             ccf:generates_dataset ?dataset ;
-             ccf:comes_from ?donor .
+    
+    {
+      ?sample ccf:comes_from ?donor .
+      ?sample ccf:has_registration_location ?entity .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:comes_from ?donor .
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?entity .
+      ?sample ccf:generates_dataset ?dataset .
+    }
     
     ?donor ccf:consortium_name ?consortium_name .
 

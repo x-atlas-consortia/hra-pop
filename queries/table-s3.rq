@@ -22,29 +22,36 @@ SELECT ?organ ?as_label ?cell_label
 FROM HRApop:
 WHERE {
 	?dataset a ccf:Dataset .
-    ?dataset ccf:has_cell_summary [
-			ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-  		ccf:has_cell_summary_row [
-        	ccf:cell_id ?cell_id ;
+	?dataset ccf:has_cell_summary [
+		ccf:cell_annotation_method ?tool ;
+		ccf:modality ?modality ;
+		ccf:has_cell_summary_row [
+			ccf:cell_id ?cell_id ;
 			ccf:cell_label ?cell_label	;
-   			ccf:cell_count ?cell_count ;
-        ] ;
-      ] .
-    ?sample ccf:generates_dataset ?dataset .
-    ?sample ccf:has_registration_location ?rui_location .
-  
-    ?rui_location a ccf:SpatialEntity .
-    ?rui_location ccf:has_collision_summary [
-    	ccf:has_collision_item [
-        	ccf:as_id ?as_id ;
-         	ccf:as_label ?as_label ;
-            ccf:as_volume ?as_volume ;
-            ccf:has_reference_organ ?ref_organ ;
-    	]
-    ]
-  	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
-		FILTER (?modality = 'sc_bulk')
+			ccf:cell_count ?cell_count ;
+		] ;
+	] .
+
+	{
+		?sample ccf:has_registration_location ?rui_location .
+		?sample ccf:generates_dataset ?dataset .
+	} UNION {
+		?block ccf:subdivided_into_sections ?sample .
+		?block ccf:has_registration_location ?rui_location .
+		?sample ccf:generates_dataset ?dataset .
+	}
+
+	?rui_location a ccf:SpatialEntity .
+	?rui_location ccf:has_collision_summary [
+		ccf:has_collision_item [
+			ccf:as_id ?as_id ;
+			ccf:as_label ?as_label ;
+			ccf:as_volume ?as_volume ;
+			ccf:has_reference_organ ?ref_organ ;
+		]
+	]
+	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
+	FILTER (?modality = 'sc_bulk')
 }
 GROUP BY ?organ ?as_label ?cell_label
 ORDER BY ?organ ?as_label ?cell_label

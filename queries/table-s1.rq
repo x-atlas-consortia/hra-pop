@@ -51,8 +51,16 @@ FROM CCF:
 WHERE {
 
   # Relationships 
-  ?sample ccf:comes_from ?donor .
-  ?sample ccf:generates_dataset ?dataset .
+  {
+    ?sample ccf:comes_from ?donor .
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
 
   # Data extracted from Donors
   {
@@ -69,7 +77,7 @@ WHERE {
 
   # Data extracted from RUI Locations
   {
-    ?sample ccf:has_registration_location ?rui_location .
+    [] ccf:has_registration_location ?rui_location .
   
     # RUI Location
     {

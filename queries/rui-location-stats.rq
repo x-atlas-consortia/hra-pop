@@ -61,8 +61,17 @@ WHERE {
                 ccf:cell_count ?cell_count ;
               ]
             ] .
-            ?sample ccf:generates_dataset ?dataset .
-            ?sample ccf:has_registration_location ?rui_location .
+
+            {
+              ?sample ccf:comes_from ?donor .
+              ?sample ccf:has_registration_location ?rui_location .
+              ?sample ccf:generates_dataset ?dataset .
+            } UNION {
+              ?block ccf:comes_from ?donor .
+              ?block ccf:subdivided_into_sections ?sample .
+              ?block ccf:has_registration_location ?rui_location .
+              ?sample ccf:generates_dataset ?dataset .
+            }
 
             OPTIONAL {
               ?hra_ct_id rdfs:label ?hra_ct_label .
@@ -77,8 +86,17 @@ WHERE {
           SELECT ?rui_location (COUNT(DISTINCT(?dataset)) as ?rui_location_dataset_count)
           WHERE {
             ?dataset a ccf:Dataset .
-            ?sample ccf:generates_dataset ?dataset .
-            ?sample ccf:has_registration_location ?rui_location .
+
+            {
+              ?sample ccf:comes_from ?donor .
+              ?sample ccf:has_registration_location ?rui_location .
+              ?sample ccf:generates_dataset ?dataset .
+            } UNION {
+              ?block ccf:comes_from ?donor .
+              ?block ccf:subdivided_into_sections ?sample .
+              ?block ccf:has_registration_location ?rui_location .
+              ?sample ccf:generates_dataset ?dataset .
+            }
           }
           GROUP BY ?rui_location
         }

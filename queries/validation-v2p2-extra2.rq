@@ -15,8 +15,14 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT DISTINCT ?sample ?dataset ?tool ?modality ?organ ?organId ?as (?shared_ds_cell_types / ?total_ds_cell_types as ?pct_hra_ct_overlap)
 WHERE {
   GRAPH HRApop: {
-    ?sample ccf:generates_dataset ?dataset .
-    ?sample ccf:has_registration_location ?rui_location .
+    {
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
 
     ?dataset ccf:has_cell_summary [
       ccf:cell_annotation_method ?tool ;

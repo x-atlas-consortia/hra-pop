@@ -16,8 +16,15 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId (?rui as ?corridor) ?similarity ?distance 
 WHERE {
   GRAPH HRApop: {
-    ?sample ccf:generates_dataset ?dataset .
-    ?sample ccf:has_registration_location ?rui_location .
+    {
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+
     [] ccf:has_registration_location ?rui .
 
     ?dataset ccf:has_cell_summary [

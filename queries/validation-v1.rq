@@ -17,12 +17,13 @@ SELECT ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId ?similarit
 WHERE {
   GRAPH HRApop: {
     {
+      ?sample ccf:has_registration_location ?rui_location .
       ?sample ccf:generates_dataset ?dataset .
     } UNION {
       ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
       ?sample ccf:generates_dataset ?dataset .
     }
-    ?sample ccf:has_registration_location ?rui_location .
 
     ?dataset ccf:has_cell_summary [
       ccf:cell_annotation_method ?tool ;

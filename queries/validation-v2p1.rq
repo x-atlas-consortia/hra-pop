@@ -16,8 +16,14 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT ?sample ?dataset ?tool ?modality ?organ ?organId ?as ?similarity ?as_in_collisions
 WHERE {
   GRAPH HRApop: {
-    ?sample ccf:generates_dataset ?dataset .
-    ?sample ccf:has_registration_location ?rui_location .
+    {
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
 
     ?dataset ccf:has_cell_summary [
       ccf:cell_annotation_method ?tool ;

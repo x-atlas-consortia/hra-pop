@@ -20,6 +20,13 @@ FROM HRApop:
 WHERE {
   ?rui_location a ccf:SpatialEntity .
   ?dataset a ccf:Dataset .
-  [] ccf:generates_dataset ?dataset ;
-     ccf:has_registration_location ?rui_location .
+
+  {
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
 }

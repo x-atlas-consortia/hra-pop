@@ -16,22 +16,32 @@ SELECT DISTINCT
   (?datasetA as ?source)
   (?datasetB as ?target)
   (?similarity as ?weight)
-  ?datasetA ?tool ?modality ?entityA ?organA ?organIdA
-  ?datasetB ?tool ?modality ?entityB ?organB ?organIdB
+  ?tool ?modality ?organ ?organId
+  ?datasetA ?entityA ?datasetB ?entityB
   ?similarity ?distance
 WHERE {
   GRAPH HRApop: {
     ?entityA a ccf:SpatialEntity .
     ?entityB a ccf:SpatialEntity .
     FILTER(STR(?entityA) < STR(?entityB))
-  }
 
-  GRAPH HRApop: {
-    ?sampleA ccf:has_registration_location ?entityA ;
-             ccf:generates_dataset ?datasetA .
-    
-    ?sampleB ccf:has_registration_location ?entityB ;
-             ccf:generates_dataset ?datasetB .
+    {
+      ?sampleA ccf:has_registration_location ?entityA .
+      ?sampleA ccf:generates_dataset ?datasetA .
+    } UNION {
+      ?blockA ccf:subdivided_into_sections ?sampleA .
+      ?blockA ccf:has_registration_location ?entityA .
+      ?sampleA ccf:generates_dataset ?datasetA .
+    }
+
+    {
+      ?sampleB ccf:has_registration_location ?entityB .
+      ?sampleB ccf:generates_dataset ?datasetB .
+    } UNION {
+      ?blockB ccf:subdivided_into_sections ?sampleB .
+      ?blockB ccf:has_registration_location ?entityB .
+      ?sampleB ccf:generates_dataset ?datasetB .
+    }
 
     ?datasetA ccf:has_cell_summary [
       ccf:cell_annotation_method ?tool ;
@@ -42,6 +52,22 @@ WHERE {
       ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
     ] .
+
+    # Sample A
+    [] a ccf:SpatialPlacement ;
+        ccf:placement_for ?entityA ;
+        ccf:placement_relative_to ?refOrgan .
+
+    # Sample B
+    [] a ccf:SpatialPlacement ;
+        ccf:placement_for ?entityB ;
+        ccf:placement_relative_to ?refOrgan .
+  }
+  
+  GRAPH CCF: {
+    ?refOrgan ccf:representation_of ?organIri .
+    ?organIri rdfs:label ?organ .
+    BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
   }
 
   GRAPH hra-pop:distances {
@@ -55,35 +81,6 @@ WHERE {
     ?edge ccf:cell_source_a ?entityA ;
           ccf:cell_source_b ?entityB ;
           ccf:similarity ?similarity .
-  }
-
-  GRAPH HRApop: {
-    # Sample A
-    # ?sampleA ccf:has_registration_location ?entityA ;
-    #   rdfs:label ?labelA .
-    [] a ccf:SpatialPlacement ;
-        ccf:placement_for ?entityA ;
-        ccf:placement_relative_to ?refOrganA .
-
-    # Sample B
-    # ?sampleB ccf:has_registration_location ?entityB ;
-    #   rdfs:label ?labelB .
-    [] a ccf:SpatialPlacement ;
-        ccf:placement_for ?entityB ;
-        ccf:placement_relative_to ?refOrganB .
-  }
-  
-  GRAPH CCF: {
-    # Organ A
-    ?refOrganA ccf:representation_of ?organIriA .
-    ?organIriA rdfs:label ?organA .
-
-    # Organ B
-    ?refOrganB ccf:representation_of ?organIriB .
-    ?organIriB rdfs:label ?organB .
-
-    BIND(REPLACE(REPLACE(STR(?organIriA), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organIdA)
-    BIND(REPLACE(REPLACE(STR(?organIriB), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organIdB)
   }
 }
 # ORDER BY DESC(?similarity)

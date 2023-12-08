@@ -15,9 +15,16 @@ WHERE {
     ccf:consortium_name ?consortium ;
     ccf:tissue_provider_name ?provider .
   
-  ?sample ccf:comes_from ?donor ;
-    ccf:has_registration_location ?rui_location ;
-    ccf:generates_dataset ?dataset .
+  {
+    ?sample ccf:comes_from ?donor .
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
 
   ?dataset ccf:has_cell_summary [
     ccf:cell_annotation_method ?tool ;

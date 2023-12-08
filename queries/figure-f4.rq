@@ -21,8 +21,14 @@ SELECT
 	(COUNT(DISTINCT(?dataset)) as ?dataset_count)
 WHERE {
   GRAPH HRApop: {
-    ?sample ccf:has_registration_location ?rui_location ;
-            ccf:generates_dataset ?dataset .
+    {
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
 
     [] a ccf:SpatialPlacement ;
       ccf:placement_for ?rui_location ;

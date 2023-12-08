@@ -103,8 +103,15 @@ WHERE {
                   ccf:cell_count ?cell_count ;
                 ]
               ] .
-              ?sample ccf:generates_dataset ?dataset .
-              ?sample ccf:has_registration_location ?rui_location .
+
+              {
+                ?sample ccf:has_registration_location ?rui_location .
+                ?sample ccf:generates_dataset ?dataset .
+              } UNION {
+                ?block ccf:subdivided_into_sections ?sample .
+                ?block ccf:has_registration_location ?rui_location .
+                ?sample ccf:generates_dataset ?dataset .
+              }
 
               OPTIONAL {
                 ?hra_ct_id rdfs:label ?hra_ct_label .
@@ -119,8 +126,15 @@ WHERE {
             SELECT ?rui_location (COUNT(DISTINCT(?dataset)) as ?rui_location_dataset_count)
             WHERE {
               ?dataset a ccf:Dataset .
-              ?sample ccf:generates_dataset ?dataset .
-              ?sample ccf:has_registration_location ?rui_location .
+
+              {
+                ?sample ccf:has_registration_location ?rui_location .
+                ?sample ccf:generates_dataset ?dataset .
+              } UNION {
+                ?block ccf:subdivided_into_sections ?sample .
+                ?block ccf:has_registration_location ?rui_location .
+                ?sample ccf:generates_dataset ?dataset .
+              }
             }
             GROUP BY ?rui_location
           }
@@ -142,9 +156,16 @@ WHERE {
         (AVG(?cell_count) as ?predicted_cells_per_ct)
     WHERE {
       ?rui_location a ccf:SpatialEntity .
-      ?sample ccf:has_registration_location ?rui_location .
-      ?sample ccf:generates_dataset ?dataset .
       ?dataset a ccf:Dataset .
+
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
 
       ?rui_location ccf:has_collision_summary [
           ccf:has_collision_item [

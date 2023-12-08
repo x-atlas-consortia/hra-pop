@@ -28,9 +28,15 @@ FROM HRApop:
 FROM CCF:
 FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
 WHERE {
-    ?sample ccf:has_registration_location ?rui_location ;
-            ccf:generates_dataset ?dataset .
-    
+    {
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+
     ?dataset ccf:has_cell_summary [
       ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
@@ -47,3 +53,4 @@ WHERE {
     ?refOrgan ccf:representation_of ?organId .
     ?organId rdfs:label ?organ_label
 }
+ORDER BY ?refOrgan
