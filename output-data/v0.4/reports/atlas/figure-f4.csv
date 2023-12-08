@@ -1,14 +1,20 @@
 organId,organ,sex,organ_as_count,rui_location_count,dataset_count
 FMA:57987,Set of lactiferous glands in right breast,Female,9,1,3
-UBERON:0000948,heart,Female,17,2,13
-UBERON:0000948,heart,Male,17,16,61
+UBERON:0000948,heart,Female,17,3,15
+UBERON:0000948,heart,Male,17,18,67
 UBERON:0000059,large intestine,Female,11,6,14
-UBERON:0000059,large intestine,Male,11,17,35
-UBERON:0001223,left ureter,Male,1,1,2
+UBERON:0000059,large intestine,Male,11,24,51
+UBERON:0004538,left kidney,Female,31,11,44
+UBERON:0004538,left kidney,Male,27,16,64
+UBERON:0001223,left ureter,Female,1,3,6
+UBERON:0001223,left ureter,Male,1,6,19
 UBERON:0000079,male reproductive system,Male,19,1,4
-UBERON:0001004,respiratory system,Female,1,1,3
-UBERON:0004539,right kidney,Male,29,1,67
+UBERON:0001004,respiratory system,Female,1,9,19
+UBERON:0004539,right kidney,Female,29,7,14
+UBERON:0004539,right kidney,Male,29,10,87
 UBERON:0002097,skin of body,Male,1,1,3
-UBERON:0002108,small intestine,Female,11,6,12
-UBERON:0002108,small intestine,Male,12,20,41
+UBERON:0002108,small intestine,Female,11,12,21
+UBERON:0002108,small intestine,Male,12,24,50
 UBERON:0002106,spleen,Male,6,5,9
+UBERON:0001255,urinary bladder,Female,7,6,6
+UBERON:0001255,urinary bladder,Male,8,7,8
