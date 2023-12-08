@@ -23,7 +23,8 @@ FROM HRApop:
 WHERE {
 	?dataset a ccf:Dataset .
     ?dataset ccf:has_cell_summary [
-			ccf:modality ?modality ;
+			ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
   		ccf:has_cell_summary_row [
         	ccf:cell_id ?cell_id ;
 			ccf:cell_label ?cell_label	;

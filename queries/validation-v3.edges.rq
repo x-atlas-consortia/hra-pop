@@ -16,8 +16,8 @@ SELECT DISTINCT
   (?datasetA as ?source)
   (?datasetB as ?target)
   (?similarity as ?weight)
-  ?datasetA ?modalityA ?entityA ?organA ?organIdA
-  ?datasetB ?modalityB ?entityB ?organB ?organIdB
+  ?datasetA ?tool ?modality ?entityA ?organA ?organIdA
+  ?datasetB ?tool ?modality ?entityB ?organB ?organIdB
   ?similarity ?distance
 WHERE {
   GRAPH HRApop: {
@@ -34,11 +34,13 @@ WHERE {
              ccf:generates_dataset ?datasetB .
 
     ?datasetA ccf:has_cell_summary [
-      ccf:modality ?modalityA ;
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
     ] .
 
     ?datasetB ccf:has_cell_summary [
-      ccf:modality ?modalityB ;
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
     ] .
   }
 

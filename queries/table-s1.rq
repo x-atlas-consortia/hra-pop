@@ -41,7 +41,7 @@ SELECT DISTINCT
   (STRAFTER(STR(?dataset), '#') as ?unique_dataset_id)
   (?dataset_link as ?link_to_raw_data)
   (?dataset_modality as ?bulk_or_spatial)
-  (?annotation_method as ?cell_type_annotation_tool)
+  (?tool as ?cell_type_annotation_tool)
   ?omap_id
   ?number_of_cells_total
   ?number_of_unique_cell_types
@@ -165,8 +165,8 @@ WHERE {
   # Dataset Cell Summary
   OPTIONAL {
     ?dataset ccf:has_cell_summary [
-        ccf:modality ?dataset_modality ;
-        ccf:cell_annotation_method ?annotation_method
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
     ] .
 
     {
@@ -175,10 +175,12 @@ WHERE {
         (COUNT(DISTINCT(?cell_id)) as ?number_of_unique_cell_types)
       WHERE {
         ?dataset ccf:has_cell_summary [
-            ccf:has_cell_summary_row [
-                ccf:cell_id ?cell_id ;
-                ccf:cell_count ?cell_count ;
-            ]
+          ccf:cell_annotation_method ?tool ;
+          ccf:modality ?modality ;
+          ccf:has_cell_summary_row [
+            ccf:cell_id ?cell_id ;
+            ccf:cell_count ?cell_count ;
+          ]
         ] .
       }
       GROUP BY ?dataset

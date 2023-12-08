@@ -21,22 +21,20 @@ SELECT
     ?refOrgan
     ?refOrganAs
     ?dataset
+    ?tool
     ?modality
     ?as_label
-
 FROM HRApop:
 FROM CCF:
-
 FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
-
 WHERE {
-
     ?sample ccf:has_registration_location ?rui_location ;
             ccf:generates_dataset ?dataset .
     
     ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
-      ] .
+    ] .
 
     ?rui_location ccf:has_collision_summary [
         ccf:has_collision_item [

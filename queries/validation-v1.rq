@@ -13,7 +13,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 
-SELECT ?sample ?rui_location ?dataset ?modality ?organ ?organId ?similarity
+SELECT ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId ?similarity
 WHERE {
   GRAPH HRApop: {
     {
@@ -25,6 +25,7 @@ WHERE {
     ?sample ccf:has_registration_location ?rui_location .
 
     ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
     ] .
 

@@ -95,11 +95,13 @@ WHERE {
             WHERE {
               ?dataset a ccf:Dataset .
               ?dataset ccf:has_cell_summary [
-                  ccf:has_cell_summary_row [
-                      ccf:cell_id ?cell_id ;
-                      ccf:cell_label ?cell_label ;
-                      ccf:cell_count ?cell_count ;
-                  ]
+                ccf:cell_annotation_method ?tool ;
+                ccf:modality ?modality ;
+                ccf:has_cell_summary_row [
+                  ccf:cell_id ?cell_id ;
+                  ccf:cell_label ?cell_label ;
+                  ccf:cell_count ?cell_count ;
+                ]
               ] .
               ?sample ccf:generates_dataset ?dataset .
               ?sample ccf:has_registration_location ?rui_location .
@@ -153,11 +155,13 @@ WHERE {
       ] .
 
       ?dataset ccf:has_cell_summary [
-          ccf:has_cell_summary_row [
-            ccf:cell_id ?cell_id ;
-            ccf:cell_label ?cell_label ;
-            ccf:cell_count ?cell_count ;
-          ]
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+        ccf:has_cell_summary_row [
+          ccf:cell_id ?cell_id ;
+          ccf:cell_label ?cell_label ;
+          ccf:cell_count ?cell_count ;
+        ]
       ] .
 
       OPTIONAL {

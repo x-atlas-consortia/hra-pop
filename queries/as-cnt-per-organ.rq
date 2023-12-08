@@ -13,6 +13,5 @@ WHERE {
 
     BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.[0-9]$", "", "i") as ?organ)
 }
-
 GROUP BY ?organ 
 ORDER BY DESC(?as_cnt)

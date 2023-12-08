@@ -12,18 +12,18 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT DISTINCT ?as ?modality (?shared_as_cell_types / ?total_as_cell_types as ?pct_hra_ct_overlap)
+SELECT DISTINCT ?as ?tool ?modality (?shared_as_cell_types / ?total_as_cell_types as ?pct_hra_ct_overlap)
 WHERE {
-
   {
-    SELECT ?as ?modality (COUNT(DISTINCT(?cell_label)) as ?total_as_cell_types)
+    SELECT ?as ?tool ?modality (COUNT(DISTINCT(?cell_label)) as ?total_as_cell_types)
     WHERE {
       GRAPH HRApop: {
         ?as ccf:has_cell_summary [
-            ccf:modality ?modality ;
-            ccf:has_cell_summary_row [
-                ccf:cell_label ?cell_label ;
-            ]
+          ccf:cell_annotation_method ?tool ;
+          ccf:modality ?modality ;
+          ccf:has_cell_summary_row [
+            ccf:cell_label ?cell_label ;
+          ]
         ] .
 
         FILTER (
@@ -37,19 +37,20 @@ WHERE {
         FILTER (?type = 'AS')
       }
     }
-    GROUP BY ?as ?modality
+    GROUP BY ?as ?tool ?modality
   }
 
   {
-    SELECT ?as ?modality (COUNT(DISTINCT(?cell_label)) as ?shared_as_cell_types)
+    SELECT ?as ?tool ?modality (COUNT(DISTINCT(?cell_label)) as ?shared_as_cell_types)
     WHERE {
       GRAPH HRApop: {
         ?as ccf:has_cell_summary [
-            ccf:modality ?modality ;
-            ccf:has_cell_summary_row [
-                ccf:cell_id ?cell_id ;
-                ccf:cell_label ?cell_label ;
-            ]
+          ccf:cell_annotation_method ?tool ;
+          ccf:modality ?modality ;
+          ccf:has_cell_summary_row [
+            ccf:cell_id ?cell_id ;
+            ccf:cell_label ?cell_label ;
+          ]
         ] .
 
         FILTER (
@@ -74,7 +75,7 @@ WHERE {
         }
       })
     }
-    GROUP BY ?dataset ?modality ?as
+    GROUP BY ?dataset ?tool ?modality ?as
   }
 }
-ORDER BY ?as ?modality
+ORDER BY ?as ?modality ?tool

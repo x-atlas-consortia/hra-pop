@@ -15,6 +15,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT DISTINCT
   ?consortium_name
   ?dataset
+  ?tool
   ?modality
   ?reported_organ
   ?organ
@@ -41,6 +42,7 @@ WHERE {
   
     BIND(?x * ?y * ?z as ?rui_location_volume)
     ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
       ccf:has_cell_summary_row [
         ccf:cell_id ?cell_iri ;
