@@ -1003,3 +1003,61 @@ Creating report: validation-v4
 Creating report: validation-v5
 Creating report: application-a1
 Creating report: application-a2p1
+Creating report: application-a2p2
+Creating report: application-a2p3
+Creating report: as-cnt-per-organ
+Creating report: as-cnt
+Creating report: as-datasets-modality
+Creating report: consortium-breakdown
+Creating report: counts-paper
+Creating report: figure-f4
+Creating report: provider-breakdown
+Creating report: rui-location-stats
+Creating report: rui-registered-h5ad-datasets
+Creating report: table-s1
+Creating report: table-s2
+Creating report: table-s3
+Creating report: table-s4
+Creating report: table-s5
+Creating report: test
+Creating report: validation-v1
+Creating report: validation-v2p1
+Creating report: validation-v2p2-extra1
+Creating report: validation-v2p2-extra2
+Creating report: validation-v2p2-extra3
+Creating report: validation-v2p2
+Creating report: validation-v2p3
+Creating report: validation-v3.edges
+Creating report: validation-v3.nodes
+Creating report: validation-v4
+Creating report: validation-v5
+
+real	201m22.567s
+user	1518m5.467s
+sys	244m29.824s
+
+>> Running scripts/80-publish-results.sh...
+
+DIR=$RAW_DIR/$VERSION
+OUT=$OUTPUT_DIR/$VERSION
+
+mkdir -p $OUT
+
+cp $DIR/atlas-enriched-dataset-graph.jsonld $OUT
+cp $DIR/atlas-as-cell-summaries.jsonld $OUT
+
+cp $DIR/atlas-lq-enriched-dataset-graph.jsonld $OUT
+cp $DIR/atlas-lq-as-cell-summaries.jsonld $OUT
+
+cp $DIR/non-atlas-dataset-graph.csv $OUT
+
+cp -r $DIR/reports $OUT
+
+echo `date` > $OUT/CREATION_DATE
+
+real	0m0.502s
+user	0m0.013s
+sys	0m0.468s
+
+
+Run finished on Fri Dec 8 06:33:15 PM EST 2023
