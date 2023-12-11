@@ -75,4 +75,4 @@ WHERE {
     BIND(REPLACE(REPLACE(STR(?organIri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?organId)
   }
 }
-ORDER BY ?dataset ?modality DESC(?percentage)
+ORDER BY ?dataset ?tool ?modality DESC(?percentage)
