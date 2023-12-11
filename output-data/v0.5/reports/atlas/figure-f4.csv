@@ -1,19 +1,29 @@
 organId,organ,sex,modality,tool,organ_as_count,rui_location_count,dataset_count
 FMA:57987,Set of lactiferous glands in right breast,Female,sc_bulk,popv,12,1,3
-UBERON:0000948,heart,Female,sc_bulk,popv,82,11,48
+UBERON:0000948,heart,Female,sc_bulk,celltypist,51,11,48
+UBERON:0000948,heart,Female,sc_bulk,popv,31,11,48
+UBERON:0000948,heart,Female,sc_bulk,azimuth,51,11,48
 UBERON:0000948,heart,Male,sc_bulk,popv,86,18,66
-UBERON:0000059,large intestine,Female,sc_bulk,popv,23,10,14
+UBERON:0000948,heart,Male,sc_bulk,azimuth,86,18,66
+UBERON:0000948,heart,Male,sc_bulk,celltypist,86,18,66
+UBERON:0000059,large intestine,Female,sc_bulk,popv,19,10,14
 UBERON:0000059,large intestine,Male,sc_bulk,popv,41,22,27
-UBERON:0004538,left kidney,Female,sc_bulk,azimuth,56,16,61
+UBERON:0004538,left kidney,Female,sc_bulk,azimuth,49,16,61
 UBERON:0004538,left kidney,Male,sc_bulk,azimuth,51,16,65
 UBERON:0001223,left ureter,Female,sc_bulk,azimuth,3,3,7
 UBERON:0001223,left ureter,Male,sc_bulk,azimuth,4,6,19
+UBERON:0002107,liver,Male,sc_bulk,celltypist,29,2,2
 UBERON:0002107,liver,Male,sc_bulk,popv,29,2,2
 UBERON:0000079,male reproductive system,Male,sc_bulk,popv,34,1,4
-UBERON:0001004,respiratory system,Female,sc_bulk,popv,43,19,42
+UBERON:0001004,respiratory system,Female,sc_bulk,popv,21,19,42
+UBERON:0001004,respiratory system,Female,sc_bulk,azimuth,21,19,42
+UBERON:0001004,respiratory system,Female,sc_bulk,celltypist,21,19,42
+UBERON:0001004,respiratory system,Male,sc_bulk,celltypist,61,27,86
 UBERON:0001004,respiratory system,Male,sc_bulk,popv,61,27,86
-UBERON:0004539,right kidney,Female,sc_bulk,azimuth,40,11,31
+UBERON:0001004,respiratory system,Male,sc_bulk,azimuth,61,27,86
+UBERON:0004539,right kidney,Female,sc_bulk,azimuth,6,11,31
 UBERON:0004539,right kidney,Male,sc_bulk,azimuth,40,10,87
+UBERON:0002097,skin of body,Male,sc_bulk,celltypist,4,1,3
 UBERON:0002097,skin of body,Male,sc_bulk,popv,4,1,3
 UBERON:0002108,small intestine,Female,sc_bulk,popv,31,12,13
 UBERON:0002108,small intestine,Male,sc_bulk,popv,42,23,26
@@ -21,7 +31,7 @@ UBERON:0002106,spleen,Female,sc_bulk,popv,2,1,2
 UBERON:0002106,spleen,Male,sc_bulk,popv,13,5,9
 UBERON:0001255,urinary bladder,Female,sc_bulk,popv,14,6,6
 UBERON:0001255,urinary bladder,Male,sc_bulk,popv,9,7,8
-UBERON:0000059,large intestine,Female,spatial,spatial,23,8,8
+UBERON:0000059,large intestine,Female,spatial,spatial,19,8,8
 UBERON:0000059,large intestine,Male,spatial,spatial,41,24,24
 UBERON:0002097,skin of body,Female,spatial,spatial,3,3,3
 UBERON:0002097,skin of body,Male,spatial,spatial,5,7,7
