@@ -19,7 +19,8 @@ SELECT
   ?modality
   ?tool
 
-  (SAMPLE(?organ_as_count) as ?organ_as_count)
+  (SAMPLE(?total_organ_as_count) as ?total_organ_as_count)
+  (SAMPLE(?organ_as_count_with_collisions) as ?organ_as_count_with_collisions)
   (COUNT(DISTINCT(?rui_location)) as ?rui_location_count)
 	(COUNT(DISTINCT(?dataset)) as ?dataset_count)
 FROM HRApop:
@@ -45,13 +46,32 @@ WHERE {
 
   ?refOrgan ccf:representation_of ?organIri ;
         ccf:organ_owner_sex ?sex .
-  
+
   {
-    SELECT ?refOrgan (COUNT(DISTINCT(?refOrganAs)) as ?organ_as_count)
+    SELECT ?organIri ?sex (COUNT(DISTINCT(?refOrganAsIri)) as ?total_organ_as_count)
     WHERE {
-      ?refOrganAs ccf:has_reference_organ ?refOrgan .
+      ?refOrgan ccf:representation_of ?organIri ;
+        ccf:organ_owner_sex ?sex .
+      ?refOrganAs ccf:has_reference_organ ?refOrgan ;
+        ccf:representation_of ?refOrganAsIri .
     }
-    GROUP BY ?refOrgan
+    GROUP BY ?organIri ?sex 
+  }
+
+  {
+    SELECT ?organIri ?sex (COUNT(DISTINCT(?refOrganAsIri)) as ?organ_as_count_with_collisions) 
+      WHERE {
+        [] ccf:has_collision_summary [
+          ccf:has_collision_item [
+              ccf:as_id ?refOrganAsIri ;
+              ccf:has_reference_organ ?refOrgan
+          ]
+        ] .
+
+        ?refOrgan ccf:representation_of ?organIri ;
+          ccf:organ_owner_sex ?sex .
+    }
+    GROUP BY ?organIri ?sex 
   }
   
   ?organIri rdfs:label ?organ .
