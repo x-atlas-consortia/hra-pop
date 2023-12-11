@@ -14,16 +14,16 @@ const ruiSummaries = JSON.parse(readFileSync(EXTRACTION_SITE_CELL_SUMMARIES));
 const donors = JSON.parse(readFileSync(DATASET_GRAPH));
 
 const summaryLookup = datasetSummaries['@graph'].concat(ruiSummaries['@graph'])
-  .reduce((acc, summary) => (acc[summary['cell_source']] = summary, acc), {});
+  .reduce((acc, summary) => {
+    const summaries = acc[summary['cell_source']] = acc[summary['cell_source']] || [];
+    summaries.push(summary);
+    delete summary.cell_source;
+    return acc; 
+  }, {});
 
 // Add summary to an object if it exists in *-cell-sumaries.jsonld
 function enrichWithSummaries(obj) {
-  const summary = summaryLookup[obj['@id']];
-  if (summary) {
-    obj.summaries = obj.summaries ?? [];
-    obj.summaries.push(summary);
-    delete summary.cell_source;
-  }
+  obj.summaries = summaryLookup[obj['@id']] || [];
 }
 
 const collisionLookup = collisions['@graph']
