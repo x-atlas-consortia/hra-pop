@@ -11,8 +11,10 @@ mkdir -p $OUT
 cp $DIR/atlas-enriched-dataset-graph.jsonld $OUT
 cp $DIR/atlas-as-cell-summaries.jsonld $OUT
 
-cp $DIR/atlas-lq-enriched-dataset-graph.jsonld $OUT
-cp $DIR/atlas-lq-as-cell-summaries.jsonld $OUT
+if [ "$COMPUTE_LQ" == "true" ]; then
+  cp $DIR/atlas-lq-enriched-dataset-graph.jsonld $OUT
+  cp $DIR/atlas-lq-as-cell-summaries.jsonld $OUT
+fi
 
 cp $DIR/non-atlas-dataset-graph.csv $OUT
 

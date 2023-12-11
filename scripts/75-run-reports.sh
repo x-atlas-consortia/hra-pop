@@ -6,4 +6,4 @@ shopt -s extglob
 DIR=$RAW_DIR/$VERSION
 FILTER="$1"
 
-node ./src/run-reports-blazegraph.js $DIR/blazegraph.jnl $DIR/reports $FILTER
+node ./src/run-reports-blazegraph.js $DIR/blazegraph.jnl $DIR/reports "$COMPUTE_LQ" $FILTER

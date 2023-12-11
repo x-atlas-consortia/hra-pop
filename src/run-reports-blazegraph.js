@@ -5,11 +5,15 @@ import sh from 'shelljs';
 
 const JOURNAL = process.argv[2];
 const OUT_DIR = process.argv[3];
-const FILTER = process.argv.length === 5 ? process.argv[4] : undefined;
+const COMPUTE_LQ = process.argv[4] === 'true';
+const FILTER = process.argv.length === 6 ? process.argv[5] : undefined;
 
 // Ensure reports output directory exists
 sh.mkdir('-p', join(OUT_DIR, 'atlas'));
-sh.mkdir('-p', join(OUT_DIR, 'atlas-lq'));
+
+if (COMPUTE_LQ) {
+  sh.mkdir('-p', join(OUT_DIR, 'atlas-lq'));
+}
 
 async function runQueries(graphName, dirName) {
   // Go through each query in queries, run them, and save out the csv report to ../data/reports/
@@ -35,4 +39,10 @@ async function runQueries(graphName, dirName) {
   }
 }
 
-await Promise.all([runQueries('hra-pop', 'atlas'), runQueries('hra-pop-lq', 'atlas-lq')]);
+const runs = [runQueries('hra-pop', 'atlas')];
+
+if (COMPUTE_LQ) {
+  runs.push(runQueries('hra-pop-lq', 'atlas-lq'))
+}
+
+await Promise.all(runs);

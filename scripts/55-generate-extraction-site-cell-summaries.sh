@@ -12,20 +12,10 @@ node ./src/compute-extraction-site-cell-summaries.js \
   $DIR/atlas-dataset-graph.csv \
   $SUMMARIES $DIR/atlas-extraction-site-cell-summaries.jsonld
 
-node ./src/compute-extraction-site-cell-summaries.js \
-  $DIR/atlas-lq-dataset-graph.csv \
-  $SUMMARIES $DIR/atlas-lq-extraction-site-cell-summaries.jsonld
-
 node ./src/compute-extraction-site-as-cell-summaries.js \
   $DIR/atlas-dataset-graph.csv \
   $COLLISIONS $DIR/atlas-as-cell-summaries.jsonld \
   $DIR/atlas-extraction-site-as-cell-summaries.jsonld
-
-node ./src/compute-extraction-site-as-cell-summaries.js \
-  $DIR/atlas-lq-dataset-graph.csv \
-  $COLLISIONS \
-  $DIR/atlas-lq-as-cell-summaries.jsonld \
-  $DIR/atlas-lq-extraction-site-as-cell-summaries.jsonld
 
 node ./src/compute-extraction-site-as-cell-summaries.js \
   $DIR/test-dataset-graph.csv \
@@ -33,8 +23,20 @@ node ./src/compute-extraction-site-as-cell-summaries.js \
   $DIR/atlas-as-cell-summaries.jsonld \
   $DIR/test-atlas-extraction-site-as-cell-summaries.jsonld
 
-node ./src/compute-extraction-site-as-cell-summaries.js \
-  $DIR/test-dataset-graph.csv \
-  $COLLISIONS \
-  $DIR/atlas-lq-as-cell-summaries.jsonld \
-  $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld
+if [ "$COMPUTE_LQ" == "true" ]; then
+  node ./src/compute-extraction-site-cell-summaries.js \
+    $DIR/atlas-lq-dataset-graph.csv \
+    $SUMMARIES $DIR/atlas-lq-extraction-site-cell-summaries.jsonld
+
+  node ./src/compute-extraction-site-as-cell-summaries.js \
+    $DIR/atlas-lq-dataset-graph.csv \
+    $COLLISIONS \
+    $DIR/atlas-lq-as-cell-summaries.jsonld \
+    $DIR/atlas-lq-extraction-site-as-cell-summaries.jsonld
+
+  node ./src/compute-extraction-site-as-cell-summaries.js \
+    $DIR/test-dataset-graph.csv \
+    $COLLISIONS \
+    $DIR/atlas-lq-as-cell-summaries.jsonld \
+    $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld
+fi
