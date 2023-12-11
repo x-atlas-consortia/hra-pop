@@ -16,6 +16,9 @@ SELECT
 	?organId
   ?organ
   ?sex
+  ?modality
+  ?tool
+
   (COUNT(DISTINCT(?refOrganAs)) as ?organ_as_count)
   (COUNT(DISTINCT(?rui_location)) as ?rui_location_count)
 	(COUNT(DISTINCT(?dataset)) as ?dataset_count)
@@ -24,11 +27,17 @@ WHERE {
     {
       ?sample ccf:has_registration_location ?rui_location .
       ?sample ccf:generates_dataset ?dataset .
+      
+      
     } UNION {
       ?block ccf:subdivided_into_sections ?sample .
       ?block ccf:has_registration_location ?rui_location .
       ?sample ccf:generates_dataset ?dataset .
     }
+
+      ?dataset ccf:has_cell_summary ?cell_summary .
+      ?cell_summary ccf:modality ?modality ;
+       ccf:cell_annotation_method ?tool . 
 
     [] a ccf:SpatialPlacement ;
       ccf:placement_for ?rui_location ;
@@ -46,5 +55,5 @@ WHERE {
     BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
   }
 }
-GROUP BY ?organId ?organ ?sex
+GROUP BY ?organId ?organ ?sex ?modality ?tool
 ORDER BY ?organ ?sex
