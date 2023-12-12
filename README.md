@@ -1,6 +1,6 @@
 # HRApop
 
-This repository has the code, input data, and draft results for HRApop construction. Final versions of the HRApop atlas are published to <https://lod.humanatlas.io/graph/hra-pop> (and <https://lod.humanatlas.io/graph/hra-pop-lq> for the lower-quality version).
+This repository has the code, input data, and draft results for HRApop construction. Final versions of the HRApop atlas are published to <https://lod.humanatlas.io/graph/hra-pop> (and <https://lod.humanatlas.io/graph/hra-pop-lq> for the lower-quality version). An ER Diagram of the resulting graph is [here](./er-diagram.mmd).
 
 ## Construction Algorithm
 
