@@ -1,0 +1,312 @@
+organId,organ,as1_label,as2_label,cosine_sim,as1_dataset_count,as2_dataset_count
+UBERON:0000948,heart,interventricular septum,Posteromedial head of posterior papillary muscle of left ventricle,0.9990545465426707,14,6
+UBERON:0000948,heart,heart right ventricle,interventricular septum,0.9945217318608393,29,14
+UBERON:0000948,heart,heart right ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.9944113243541881,29,6
+UBERON:0000948,heart,heart right ventricle,heart left ventricle,0.979055054616781,29,70
+UBERON:0000948,heart,heart left ventricle,interventricular septum,0.967954714894634,70,14
+UBERON:0000948,heart,heart left ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.9605940969668194,70,6
+UBERON:0000948,heart,left cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.9574525115896348,14,6
+UBERON:0000948,heart,left cardiac atrium,interventricular septum,0.9448681224752309,14,14
+UBERON:0000948,heart,right cardiac atrium,left cardiac atrium,0.9422573632682139,15,14
+UBERON:0000948,heart,left cardiac atrium,heart right ventricle,0.9411376382751543,14,29
+UBERON:0000948,heart,right cardiac atrium,heart right ventricle,0.9150410561874484,15,29
+UBERON:0000948,heart,right cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.9117194795771209,15,6
+UBERON:0000948,heart,right cardiac atrium,interventricular septum,0.9000710603011163,15,14
+UBERON:0000948,heart,right cardiac atrium,heart left ventricle,0.8763777219445943,15,70
+UBERON:0000948,heart,left cardiac atrium,heart left ventricle,0.8646821797979396,14,70
+UBERON:0000059,large intestine,caecum,descending colon,0.9745886822733076,5,19
+UBERON:0000059,large intestine,transverse colon,descending colon,0.9664202770339225,17,19
+UBERON:0000059,large intestine,transverse colon,sigmoid colon,0.96189869064484,17,19
+UBERON:0000059,large intestine,caecum,transverse colon,0.96143468265481,5,17
+UBERON:0000059,large intestine,descending colon,sigmoid colon,0.9394994685178456,19,19
+UBERON:0000059,large intestine,caecum,sigmoid colon,0.9199901429844143,5,19
+UBERON:0000059,large intestine,rectum,ascending colon,0.9113554356576407,13,18
+UBERON:0000059,large intestine,caecum,ascending colon,0.00020745297362158882,5,18
+UBERON:0000059,large intestine,ascending colon,sigmoid colon,0.00020043112131682444,18,19
+UBERON:0000059,large intestine,rectum,caecum,0.00019232930985492775,13,5
+UBERON:0000059,large intestine,ascending colon,transverse colon,0.0001907625555213787,18,17
+UBERON:0000059,large intestine,rectum,sigmoid colon,0.00018581936215881996,13,19
+UBERON:0000059,large intestine,rectum,transverse colon,0.00017685565074865238,13,17
+UBERON:0000059,large intestine,ascending colon,descending colon,0.00013288247132524662,18,19
+UBERON:0000059,large intestine,rectum,descending colon,0.00012319512010669135,13,19
+UBERON:0004538,left kidney,renal column,hilum of kidney,0.9398021415850267,23,8
+UBERON:0004538,left kidney,outer cortex of kidney,kidney pyramid,0.9096549086928603,149,116
+UBERON:0004538,left kidney,kidney capsule,outer cortex of kidney,0.8897324752843527,9,149
+UBERON:0004538,left kidney,renal column,kidney pyramid,0.864349386859434,23,116
+UBERON:0004538,left kidney,kidney capsule,kidney pyramid,0.8519067231256479,9,116
+UBERON:0004538,left kidney,kidney pyramid,hilum of kidney,0.804471503102105,116,8
+UBERON:0004538,left kidney,renal column,outer cortex of kidney,0.758417167655456,23,149
+UBERON:0004538,left kidney,outer cortex of kidney,hilum of kidney,0.6996385143507127,149,8
+UBERON:0004538,left kidney,renal column,kidney capsule,0.6947917638179433,23,9
+UBERON:0004538,left kidney,renal papilla,kidney capsule,0.6718034744321723,6,9
+UBERON:0004538,left kidney,kidney capsule,hilum of kidney,0.6430524084865803,9,8
+UBERON:0004538,left kidney,renal papilla,outer cortex of kidney,0.5242535235363688,6,149
+UBERON:0004538,left kidney,renal papilla,kidney pyramid,0.5231127159471358,6,116
+UBERON:0004538,left kidney,renal papilla,renal column,0.4387040405772201,6,23
+UBERON:0004538,left kidney,renal papilla,hilum of kidney,0.32517025571456437,6,8
+UBERON:0002107,liver,Gastric impression of liver,Diaphragmatic surface of liver,1,2,2
+UBERON:0002107,liver,capsule of liver,Gastric impression of liver,1,2,2
+UBERON:0002107,liver,capsule of liver,Diaphragmatic surface of liver,0.9999999999999998,2,2
+UBERON:0000079,male reproductive system,peripheral zone of prostate,central zone of prostate,1,4,4
+UBERON:0002509,mesenteric lymph node,medulla of lymph node,lymph node T cell domain,0.9999960534487514,3,3
+UBERON:0002509,mesenteric lymph node,medulla of lymph node,capsule of lymph node,0.9999801707407839,3,3
+UBERON:0002509,mesenteric lymph node,capsule of lymph node,lymph node T cell domain,0.9999585317544123,3,3
+UBERON:0002509,mesenteric lymph node,capsule of lymph node,lymph node follicle,0.999953003102368,3,3
+UBERON:0002509,mesenteric lymph node,medulla of lymph node,lymph node follicle,0.9998721212730312,3,3
+UBERON:0002509,mesenteric lymph node,lymph vasculature,lymph node follicle,0.9998578383186908,3,3
+UBERON:0002509,mesenteric lymph node,lymph node T cell domain,lymph node follicle,0.9998232465414193,3,3
+UBERON:0002509,mesenteric lymph node,capsule of lymph node,lymph vasculature,0.9996473791315121,3,3
+UBERON:0002509,mesenteric lymph node,medulla of lymph node,lymph vasculature,0.9994603335587884,3,3
+UBERON:0002509,mesenteric lymph node,lymph vasculature,lymph node T cell domain,0.9993641017087578,3,3
+UBERON:0002509,mesenteric lymph node,efferent lymphatic vessel,lymph node T cell domain,0.9980217488994364,3,3
+UBERON:0002509,mesenteric lymph node,medulla of lymph node,efferent lymphatic vessel,0.9978411802418908,3,3
+UBERON:0002509,mesenteric lymph node,capsule of lymph node,efferent lymphatic vessel,0.9974078183295859,3,3
+UBERON:0002509,mesenteric lymph node,efferent lymphatic vessel,lymph node follicle,0.9966633366566555,3,3
+UBERON:0002509,mesenteric lymph node,lymph vasculature,efferent lymphatic vessel,0.9951453925945152,3,3
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Right anterior segmental bronchus,0.9952548581219851,13,2
+UBERON:0001004,respiratory system,left lung hilus,Left anterior segmental bronchus,0.9932163371626209,3,7
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.9923462140248054,13,9
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.9893602938602954,7,9
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Left anterior bronchopulmonary segment,0.9879906208421362,7,13
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.9872513894020926,18,8
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Right posterior bronchopulmonary segment,0.9870904769972227,7,13
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Left anterior segmental bronchus,0.9863916616780842,5,7
+UBERON:0001004,respiratory system,left lung hilus,Inferior lingular bronchopulmonary segment,0.984689748742699,3,5
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Right superior bronchopulmonary segment,0.9843628697935273,18,4
+UBERON:0001004,respiratory system,right lung hilus,Left posterior bronchopulmonary segment,0.9820229493695157,2,8
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.9815792770535594,50,5
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Left anterior bronchopulmonary segment,0.9804397465267962,13,13
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Right anterior bronchopulmonary segment,0.9801799766298024,7,18
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.9800114183513098,18,9
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Right anterior segmental bronchus,0.9792252953194611,7,2
+UBERON:0001004,respiratory system,left lung hilus,Lateral bronchopulmonary segment,0.9790509598903118,3,31
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Left anterior bronchopulmonary segment,0.978664135656136,18,13
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.9784546596095681,4,8
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Right anterior segmental bronchus,0.9780914222099419,13,2
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Right superior bronchopulmonary segment,0.9772345472232798,13,4
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Right anterior segmental bronchus,0.9766995803576655,14,2
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Left anterior segmental bronchus,0.9766787780166357,31,7
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.9746168661443854,13,14
+UBERON:0001004,respiratory system,Right apical segmental bronchus,Right superior segmental bronchus,0.9745189184051182,2,2
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.974354092278521,13,8
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Left posterior bronchopulmonary segment,0.9740573459713504,7,8
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Left anterior segmental bronchus,0.9739950942042336,7,7
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.9738813565034926,14,5
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Left anterior segmental bronchus,0.973505451955084,13,7
+UBERON:0001004,respiratory system,left lung hilus,Medial bronchopulmonary segment,0.9727329201321322,3,50
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.9723296728760249,13,9
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Right superior bronchopulmonary segment,0.9723070957769941,7,4
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Right anterior segmental bronchus,0.9722458148647968,4,2
+UBERON:0001004,respiratory system,right lung hilus,Right anterior bronchopulmonary segment,0.9719125469375411,2,18
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Left anterior segmental bronchus,0.97136437157833,13,7
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Right anterior segmental bronchus,0.9712349327326044,9,2
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Left anterior segmental bronchus,0.9706159077779384,14,7
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Right anterior bronchopulmonary segment,0.9699890441442948,13,18
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Right anterior segmental bronchus,0.9698146495510382,18,2
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Left posterior bronchopulmonary segment,0.9696769043775935,9,8
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.9675735381413667,13,5
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.9674021696757297,4,9
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Lateral bronchopulmonary segment,0.967363870091917,50,31
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Left anterior bronchopulmonary segment,0.9669382589838189,4,13
+UBERON:0001004,respiratory system,right lung hilus,Right superior bronchopulmonary segment,0.9662942951407624,2,4
+UBERON:0001004,respiratory system,Right anterior segmental bronchus,Left anterior segmental bronchus,0.9661917661963733,2,7
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.9661785763437842,31,5
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Left anterior segmental bronchus,0.9656533688110611,50,7
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Right anterior segmental bronchus,0.9649239374585032,5,2
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Left anterior bronchopulmonary segment,0.963507439750911,14,13
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.9614514305113374,50,14
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.9610791367117759,31,14
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.9596240601331497,13,8
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Left anterior segmental bronchus,0.9588732223052501,9,7
+UBERON:0001004,respiratory system,left lung hilus,Right anterior basal bronchopulmonary segment,0.9579665458456378,3,14
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Left apical segmental bronchus,0.9572738886045127,4,9
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.9548328519193864,7,14
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Left apical segmental bronchus,0.9525496622364483,9,9
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Right superior segmental bronchus,0.952532227056431,7,2
+UBERON:0001004,respiratory system,Left posterior bronchopulmonary segment,Right anterior segmental bronchus,0.9516665544048373,8,2
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Superior lingular bronchus,0.9503190637448633,9,2
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.9490061352981857,13,11
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.9482912503668541,14,11
+UBERON:0001004,respiratory system,right lung hilus,Right apical bronchopulmonary segment,0.9480886266555872,2,7
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Right superior segmental bronchus,0.94792606820363,9,2
+UBERON:0001004,respiratory system,Left apical bronchopulmonary segment,Right anterior segmental bronchus,0.947442464252219,11,2
+UBERON:0001004,respiratory system,left lung hilus,Left anterior bronchopulmonary segment,0.9462260476944369,3,13
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Lateral bronchopulmonary segment,0.9455515694764876,7,31
+UBERON:0001004,respiratory system,left lung hilus,Right posterior bronchopulmonary segment,0.9454385483492181,3,13
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.9449724116026839,7,5
+UBERON:0001004,respiratory system,left lung hilus,Right apical bronchopulmonary segment,0.9447509548391358,3,7
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.9446217589790166,14,9
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.9441226734172078,13,5
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Left apical segmental bronchus,0.9438236056897086,13,9
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Left anterior bronchopulmonary segment,0.9435516413181421,31,13
+UBERON:0001004,respiratory system,right lung hilus,Right superior segmental bronchus,0.9433093661649224,2,2
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Superior lingular bronchus,0.9430663478335235,31,2
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Left apical segmental bronchus,0.9429649856020855,18,9
+UBERON:0001004,respiratory system,Left posterior bronchopulmonary segment,Right superior segmental bronchus,0.9396346900901207,8,2
+UBERON:0001004,respiratory system,right lung hilus,Superior lingular bronchopulmonary segment,0.9390510891550252,2,9
+UBERON:0001004,respiratory system,left lung hilus,Right anterior segmental bronchus,0.9386618198426611,3,2
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.9373227763314218,13,31
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.9373013871164696,31,9
+UBERON:0001004,respiratory system,Left posterior bronchopulmonary segment,Left apical segmental bronchus,0.935759711830599,8,9
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Right superior segmental bronchus,0.9349298152994545,4,2
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Left anterior segmental bronchus,0.933667513821577,18,7
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Medial bronchopulmonary segment,0.9322619377849595,13,50
+UBERON:0001004,respiratory system,right lung hilus,Left anterior bronchopulmonary segment,0.9312260425291594,2,13
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Right anterior segmental bronchus,0.9307344988686015,31,2
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Superior lingular bronchus,0.9305408258255777,7,2
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.9293198283246622,13,11
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Left apical bronchopulmonary segment,0.9289375568071804,5,11
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Right superior segmental bronchus,0.9277635511164083,18,2
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Superior lingular bronchus,0.9275695161544343,13,2
+UBERON:0001004,respiratory system,left lung hilus,Superior lingular bronchopulmonary segment,0.9271832906719326,3,9
+UBERON:0001004,respiratory system,Left apical bronchopulmonary segment,Left anterior segmental bronchus,0.9271012281877009,11,7
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.9262999797124776,9,5
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Right superior segmental bronchus,0.9259116683346205,13,2
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Right apical segmental bronchus,0.9257122846873259,9,2
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Right anterior segmental bronchus,0.9256674117984561,50,2
+UBERON:0001004,respiratory system,Left apical bronchopulmonary segment,Left posterior bronchopulmonary segment,0.9255537088710217,11,8
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Left apical segmental bronchus,0.9249654817984302,7,9
+UBERON:0001004,respiratory system,Left anterior segmental bronchus,Superior lingular bronchus,0.9246336021745831,7,2
+UBERON:0001004,respiratory system,Right superior segmental bronchus,Left apical segmental bronchus,0.924428770450236,2,9
+UBERON:0001004,respiratory system,Left posterior bronchopulmonary segment,Left anterior segmental bronchus,0.9225355036306617,8,7
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.9217191311102139,18,14
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Right superior bronchopulmonary segment,0.9210351036144934,14,4
+UBERON:0001004,respiratory system,right lung hilus,Right posterior bronchopulmonary segment,0.9206018965832312,2,13
+UBERON:0001004,respiratory system,right lung hilus,Left apical segmental bronchus,0.9196516981871055,2,9
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Left apical bronchopulmonary segment,0.9186635119743676,4,11
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Left anterior segmental bronchus,0.9182888793490721,4,7
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Left apical segmental bronchus,0.9161860985181972,13,9
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.9159049001201155,18,11
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.9154858642431549,14,8
+UBERON:0001004,respiratory system,right lung hilus,Right apical segmental bronchus,0.9154831971293703,2,2
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Right superior segmental bronchus,0.9148090078496802,13,2
+UBERON:0001004,respiratory system,Right anterior segmental bronchus,Left apical segmental bronchus,0.9138390073605054,2,9
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Left apical bronchopulmonary segment,0.9133626553491198,7,11
+UBERON:0001004,respiratory system,Right apical segmental bronchus,Left apical segmental bronchus,0.911820432639832,2,9
+UBERON:0001004,respiratory system,left lung hilus,Superior lingular bronchus,0.9116361903458169,3,2
+UBERON:0001004,respiratory system,right lung hilus,Right anterior segmental bronchus,0.9115598289567828,2,2
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Right apical segmental bronchus,0.9102126515847884,7,2
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Medial bronchopulmonary segment,0.9094482088228366,7,50
+UBERON:0001004,respiratory system,Right apical segmental bronchus,Superior lingular bronchus,0.9083867953040832,2,2
+UBERON:0001004,respiratory system,left lung hilus,Left apical bronchopulmonary segment,0.9053432741071432,3,11
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Left apical bronchopulmonary segment,0.903712279034791,50,11
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.9020551816809532,18,5
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Superior lingular bronchus,0.9019118726258473,13,2
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Superior lingular bronchus,0.9018975252269568,5,2
+UBERON:0001004,respiratory system,Right superior segmental bronchus,Superior lingular bronchus,0.901754275079151,2,2
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Left anterior bronchopulmonary segment,0.9009495611493931,50,13
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.900180788175642,4,5
+UBERON:0001004,respiratory system,Right anterior segmental bronchus,Superior lingular bronchus,0.898993751485011,2,2
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Right apical segmental bronchus,0.8983149856573092,18,2
+UBERON:0001004,respiratory system,Left posterior bronchopulmonary segment,Right apical segmental bronchus,0.897308985658422,8,2
+UBERON:0001004,respiratory system,left lung hilus,Right anterior bronchopulmonary segment,0.8936723844435511,3,18
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Left apical bronchopulmonary segment,0.8926448460051485,9,11
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Superior lingular bronchus,0.8916951865784323,18,2
+UBERON:0001004,respiratory system,Left apical segmental bronchus,Superior lingular bronchus,0.8905755508919297,9,2
+UBERON:0001004,respiratory system,Right anterior segmental bronchus,Right superior segmental bronchus,0.8902986262147023,2,2
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.8886514411205105,18,31
+UBERON:0001004,respiratory system,Right superior segmental bronchus,Left anterior segmental bronchus,0.8881787349222815,2,7
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Right apical segmental bronchus,0.8869525286595199,13,2
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Right apical segmental bronchus,0.8851254636715739,4,2
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Superior lingular bronchus,0.8808779215915311,14,2
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.8792827301696376,50,9
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Left posterior bronchopulmonary segment,0.8787223992759804,5,8
+UBERON:0001004,respiratory system,left lung hilus,Left posterior bronchopulmonary segment,0.8786840926819168,3,8
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Superior lingular bronchus,0.8723632788421332,4,2
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Left posterior bronchopulmonary segment,0.8710271011486725,31,8
+UBERON:0001004,respiratory system,left lung hilus,Right superior bronchopulmonary segment,0.87099012823571,3,4
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Left apical segmental bronchus,0.8690465566749782,14,9
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Right superior bronchopulmonary segment,0.8674765117209525,31,4
+UBERON:0001004,respiratory system,right lung hilus,Left anterior segmental bronchus,0.8659757034886457,2,7
+UBERON:0001004,respiratory system,right lung hilus,Left apical bronchopulmonary segment,0.8619714076582532,2,11
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Left apical bronchopulmonary segment,0.8615487194309634,31,11
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Superior lingular bronchus,0.8612304026549925,50,2
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Right superior segmental bronchus,0.859360197594374,31,2
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Lateral segmental bronchus,0.8579224958556798,14,9
+UBERON:0001004,respiratory system,Left apical segmental bronchus,Left anterior segmental bronchus,0.8569735610236927,9,7
+UBERON:0001004,respiratory system,Left posterior bronchopulmonary segment,Superior lingular bronchus,0.8547933422985886,8,2
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Medial bronchopulmonary segment,0.8520904155929057,18,50
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Right superior segmental bronchus,0.8496796182601523,14,2
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Right apical segmental bronchus,0.8491730741886461,13,2
+UBERON:0001004,respiratory system,right lung hilus,Right anterior basal bronchopulmonary segment,0.8489392153579793,2,14
+UBERON:0001004,respiratory system,Right anterior segmental bronchus,Lateral segmental bronchus,0.8449810070787,2,9
+UBERON:0001004,respiratory system,left lung hilus,Right superior segmental bronchus,0.8405212264855229,3,2
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Right superior bronchopulmonary segment,0.8404884371702179,50,4
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Right superior segmental bronchus,0.8334116069499679,5,2
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Left posterior bronchopulmonary segment,0.8333485658205747,50,8
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Left apical segmental bronchus,0.8322068558357237,31,9
+UBERON:0001004,respiratory system,Right apical segmental bronchus,Right anterior segmental bronchus,0.8308761360144661,2,2
+UBERON:0001004,respiratory system,Right apical segmental bronchus,Left anterior segmental bronchus,0.829373688286994,2,7
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Left apical segmental bronchus,0.8285325288208694,5,9
+UBERON:0001004,respiratory system,Left apical bronchopulmonary segment,Left apical segmental bronchus,0.8253967698802593,11,9
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Right apical segmental bronchus,0.8244198047939054,31,2
+UBERON:0001004,respiratory system,Right posterior bronchopulmonary segment,Lateral segmental bronchus,0.8220138104423945,13,9
+UBERON:0001004,respiratory system,right lung hilus,Superior lingular bronchus,0.8181120030956466,2,2
+UBERON:0001004,respiratory system,right lung hilus,Inferior lingular bronchopulmonary segment,0.8116689483541792,2,5
+UBERON:0001004,respiratory system,left lung hilus,right lung hilus,0.810412674584161,3,2
+UBERON:0001004,respiratory system,left lung hilus,Left apical segmental bronchus,0.8073027954603627,3,9
+UBERON:0001004,respiratory system,right lung hilus,Lateral bronchopulmonary segment,0.8068852240107307,2,31
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Lateral segmental bronchus,0.8005897823464385,5,9
+UBERON:0001004,respiratory system,Left apical bronchopulmonary segment,Right superior segmental bronchus,0.7997925892509008,11,2
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Lateral segmental bronchus,0.7955543352650236,50,9
+UBERON:0001004,respiratory system,Right superior bronchopulmonary segment,Lateral segmental bronchus,0.7924418919967408,4,9
+UBERON:0001004,respiratory system,Lateral segmental bronchus,Left apical segmental bronchus,0.7879326582857338,9,9
+UBERON:0001004,respiratory system,Superior lingular bronchopulmonary segment,Lateral segmental bronchus,0.7844536439026786,9,9
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Right superior segmental bronchus,0.7844124537814786,50,2
+UBERON:0001004,respiratory system,Left anterior bronchopulmonary segment,Lateral segmental bronchus,0.7832687716292348,13,9
+UBERON:0001004,respiratory system,Right anterior basal bronchopulmonary segment,Right apical segmental bronchus,0.7814643232803872,14,2
+UBERON:0001004,respiratory system,left lung hilus,Right apical segmental bronchus,0.7807340057336094,3,2
+UBERON:0001004,respiratory system,Left apical bronchopulmonary segment,Lateral segmental bronchus,0.7781711589132666,11,9
+UBERON:0001004,respiratory system,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.7761675192132194,31,9
+UBERON:0001004,respiratory system,Right anterior bronchopulmonary segment,Lateral segmental bronchus,0.7687754630348265,18,9
+UBERON:0001004,respiratory system,Right apical bronchopulmonary segment,Lateral segmental bronchus,0.7668878547686294,7,9
+UBERON:0001004,respiratory system,Left apical bronchopulmonary segment,Superior lingular bronchus,0.7602640663301881,11,2
+UBERON:0001004,respiratory system,Inferior lingular bronchopulmonary segment,Right apical segmental bronchus,0.7588915647045524,5,2
+UBERON:0001004,respiratory system,right lung hilus,Medial bronchopulmonary segment,0.7544515469884872,2,50
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Left apical segmental bronchus,0.7532062299609056,50,9
+UBERON:0001004,respiratory system,Lateral segmental bronchus,Left anterior segmental bronchus,0.7510089475955902,9,7
+UBERON:0001004,respiratory system,Lateral segmental bronchus,Superior lingular bronchus,0.7434044364022437,9,2
+UBERON:0001004,respiratory system,Left posterior bronchopulmonary segment,Lateral segmental bronchus,0.7304023849140365,8,9
+UBERON:0001004,respiratory system,left lung hilus,Lateral segmental bronchus,0.7202619214403582,3,9
+UBERON:0001004,respiratory system,Medial bronchopulmonary segment,Right apical segmental bronchus,0.7063078847813646,50,2
+UBERON:0001004,respiratory system,Left apical bronchopulmonary segment,Right apical segmental bronchus,0.6997435036104321,11,2
+UBERON:0001004,respiratory system,right lung hilus,Lateral segmental bronchus,0.6660362393650134,2,9
+UBERON:0001004,respiratory system,Lateral segmental bronchus,Right superior segmental bronchus,0.6641918059479004,9,2
+UBERON:0001004,respiratory system,Right apical segmental bronchus,Lateral segmental bronchus,0.6172247027577066,2,9
+UBERON:0004539,right kidney,renal column,hilum of kidney,0.9398021415850267,23,8
+UBERON:0004539,right kidney,outer cortex of kidney,kidney pyramid,0.9096549086928603,149,116
+UBERON:0004539,right kidney,kidney capsule,outer cortex of kidney,0.8897324752843527,9,149
+UBERON:0004539,right kidney,renal column,kidney pyramid,0.864349386859434,23,116
+UBERON:0004539,right kidney,kidney capsule,kidney pyramid,0.8519067231256479,9,116
+UBERON:0004539,right kidney,kidney pyramid,hilum of kidney,0.804471503102105,116,8
+UBERON:0004539,right kidney,renal column,outer cortex of kidney,0.758417167655456,23,149
+UBERON:0004539,right kidney,outer cortex of kidney,hilum of kidney,0.6996385143507127,149,8
+UBERON:0004539,right kidney,renal column,kidney capsule,0.6947917638179433,23,9
+UBERON:0004539,right kidney,renal papilla,kidney capsule,0.6718034744321723,6,9
+UBERON:0004539,right kidney,kidney capsule,hilum of kidney,0.6430524084865803,9,8
+UBERON:0004539,right kidney,renal papilla,outer cortex of kidney,0.5242535235363688,6,149
+UBERON:0004539,right kidney,renal papilla,kidney pyramid,0.5231127159471358,6,116
+UBERON:0004539,right kidney,renal papilla,renal column,0.4387040405772201,6,23
+UBERON:0004539,right kidney,renal papilla,hilum of kidney,0.32517025571456437,6,8
+UBERON:0002108,small intestine,Horizontal part of duodenum,Ascending part of duodenum,0.9998810445234015,18,18
+UBERON:0002108,small intestine,jejunum,Horizontal part of duodenum,0.988491507694445,16,18
+UBERON:0002108,small intestine,jejunum,Ascending part of duodenum,0.9873478546445245,16,18
+UBERON:0002108,small intestine,Descending part of duodenum,Horizontal part of duodenum,0.9872313167993614,18,18
+UBERON:0002108,small intestine,Descending part of duodenum,Ascending part of duodenum,0.9857738973611526,18,18
+UBERON:0002108,small intestine,Ascending part of duodenum,Distal part of ileum,0.9759071051682783,18,17
+UBERON:0002108,small intestine,Horizontal part of duodenum,Distal part of ileum,0.9729582640292388,18,17
+UBERON:0002108,small intestine,jejunum,Descending part of duodenum,0.9697925868656623,16,18
+UBERON:0002108,small intestine,jejunum,Distal part of ileum,0.9493585613319008,16,17
+UBERON:0002108,small intestine,Superior part of duodenum,Descending part of duodenum,0.9428161913564643,6,18
+UBERON:0002108,small intestine,Descending part of duodenum,Distal part of ileum,0.9387703640299905,18,17
+UBERON:0002108,small intestine,ileum,Distal part of ileum,0.9305547581499694,5,17
+UBERON:0002108,small intestine,Superior part of duodenum,Ascending part of duodenum,0.9229846746809158,6,18
+UBERON:0002108,small intestine,Superior part of duodenum,Horizontal part of duodenum,0.9225988111864096,6,18
+UBERON:0002108,small intestine,Superior part of duodenum,Distal part of ileum,0.8961307802444509,6,17
+UBERON:0002108,small intestine,jejunum,Superior part of duodenum,0.8924465941918329,16,6
+UBERON:0002108,small intestine,ileum,Ascending part of duodenum,0.8750965410578535,5,18
+UBERON:0002108,small intestine,ileum,Horizontal part of duodenum,0.8695433248867224,5,18
+UBERON:0002108,small intestine,ileum,Superior part of duodenum,0.8342696607074783,5,6
+UBERON:0002108,small intestine,ileum,Descending part of duodenum,0.8259072394063592,5,18
+UBERON:0002108,small intestine,jejunum,ileum,0.8251041626302765,16,5
+UBERON:0002106,spleen,hilum of spleen,Diaphragmatic surface of spleen,0.9655684682856052,6,11
