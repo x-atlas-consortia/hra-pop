@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT ?tool ?cell_id (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+FROM HRApop:
+FROM CCF:
+FROM <https://purl.org/ccf/releases/2.2.1/ccf.owl>
+WHERE {
+    ?dataset a ccf:Dataset ;
+      ccf:has_cell_summary [
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+        ccf:has_cell_summary_row [
+          ccf:cell_id ?cell_id ;
+        ] ;
+      ] .
+
+    FILTER(STRSTARTS(STR(?cell_id), "https://purl.org/ccf/ASCTB-TEMP_"))
+}
+GROUP BY ?tool ?cell_id
+ORDER BY ?tool ?cell_id
