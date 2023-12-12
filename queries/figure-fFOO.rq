@@ -1,0 +1,101 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT
+	?organId
+  ?organ
+  ?as1_label
+  ?as2_label
+  (AVG(?similarity) as ?cosine_sim)
+
+  (COUNT(DISTINCT(?as1_dataset)) as ?as1_dataset_count)
+  (COUNT(DISTINCT(?as2_dataset)) as ?as2_dataset_count)
+FROM HRApop:
+FROM CCF:
+FROM hra-pop:similarities
+WHERE {
+  {
+    ?refOrgan ccf:representation_of ?organIri ;
+      ccf:has_reference_organ ?refOrgan .
+  }
+
+  {
+    [] ccf:representation_of ?as1 ;
+      ccf:has_reference_organ [
+        ccf:representation_of ?organIri
+      ] .
+      
+    ?as1 rdfs:label ?as1_label .
+  }
+
+  {
+    [] ccf:representation_of ?as2 ;
+      ccf:has_reference_organ [
+        ccf:representation_of ?organIri
+      ] .
+
+    ?as2 rdfs:label ?as2_label .
+  }
+
+  {
+    [] ccf:cell_source_a ?as1 ;
+      ccf:cell_source_b ?as2 ;
+      ccf:similarity ?similarity .
+  }
+
+  {
+    SELECT (?refOrganAs as ?as1) (?dataset as ?as1_dataset)
+    WHERE  {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?rui_location ccf:has_collision_summary [
+          ccf:has_collision_item [
+              ccf:as_id ?refOrganAs ;
+          ]
+      ] .
+    }
+  }
+
+  {
+    SELECT (?refOrganAs as ?as2) (?dataset as ?as2_dataset)
+    WHERE  {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?rui_location ccf:has_collision_summary [
+          ccf:has_collision_item [
+              ccf:as_id ?refOrganAs ;
+          ]
+      ] .
+    }
+  }
+
+  ?organIri rdfs:label ?organ .
+  BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+}
+GROUP BY ?organId ?organ ?as1_label ?as2_label
+ORDER BY ?organ DESC(?cosine_sim)
