@@ -1,0 +1,147 @@
+erDiagram
+
+
+Donor {
+  string label
+  string comment
+  string url
+
+  string consortium_name
+  string tissue_provider_name
+  string tissue_provider_uuid 
+
+  string age
+  string sex
+  string bmi
+  string race
+}
+
+
+Sample {
+  string sample_type
+  string label
+  string comment
+  string url
+}
+Sample ||--o{ Donor : comes_from
+Sample ||--o{ Dataset : generates_dataset
+Sample ||--o{ Sample : subdivided_into_sections
+Sample ||--o{ SpatialEntity : has_registration_location
+
+
+Dataset {
+  string label
+  string comment
+  string url
+  string organ_id
+  string publication
+  string publication_lead_author
+  string publication_title
+  string technology
+  string thumbnail
+}
+Dataset ||--o{ CellSummary : has_cell_summary
+
+
+CellSummary {
+  string cell_source_label
+  string cell_annotation_method
+  string modality
+  integer aggregated_summary_count
+}
+CellSummary ||--o{ CellSummaryRow : has_cell_summary_row
+CellSummary ||--o{ Dataset : aggregates
+
+
+CellSummaryRow {
+  string cell_label
+  decimal cell_count
+  decimal percentage_of_total
+}
+CellSummaryRow ||--o{ CellType : cell_id
+CellSummaryRow ||--o{ GeneExpression : gene_expr
+
+
+GeneExpression {
+  string gene_label
+  decimal mean_gene_expr_value
+}
+GeneExpression ||--o{ GeneBiomarker : gene_id
+
+
+SpatialEntity {
+  string created
+  string creator
+  string creator_first_name
+  string creator_last_name
+
+  decimal x_dimension
+  decimal y_dimension
+  decimal z_dimension
+  string dimension_unit
+  
+  integer slice_count
+  decimal slice_thickness
+}
+SpatialEntity ||--o{ Corridor : has_corridor
+SpatialEntity ||--o{ CollisionSummary : has_collision_summary
+SpatialEntity ||--o{ CellSummary : has_cell_summary
+SpatialEntity ||--o{ AnatomicalStructure : collides_with
+
+
+SpatialPlacement {
+  string created
+  decimal x_rotation
+  decimal y_rotation
+  decimal z_rotation
+  string rotation_unit
+  string rotation_order
+
+  decimal x_scaling
+  decimal y_scaling
+  decimal z_scaling
+  string scaling_unit
+
+  decimal x_translation
+  decimal y_translation
+  decimal z_translation
+  string translation_unit
+}
+SpatialPlacement ||--o{ SpatialEntity : placement_for
+SpatialPlacement ||--o{ SpatialEntity : placement_relative_to
+
+
+Corridor {
+  string file_format
+  string file_url
+}
+
+
+CollisionSummary {
+  string collision_method
+}
+CollisionSummary ||--o{ CollisionItem : has_collision_item
+
+CollisionItem {
+  string as_label
+  decimal as_volume
+  decimal percentage_of_total
+}
+CollisionItem ||--o{ AnatomicalStructure : as_id
+CollisionItem ||--o{ SpatialEntity : as_3d_id
+CollisionItem ||--o{ SpatialEntity : has_reference_organ
+
+AnatomicalStructure {
+  string label
+}
+AnatomicalStructure ||--o{ CellSummary : has_cell_summary
+
+
+CellType {
+  string label
+}
+
+
+GeneBiomarker {
+  string label
+}
