@@ -30,6 +30,9 @@ run_jsonld $DIR/atlas-as-cell-summaries.jsonld $HRA_POP
 # Test Data
 run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
 
+# Full Dataset
+run_jsonld $DIR/full-dataset-graph.jsonld "${HRA_POP}#full-dataset"
+
 # Precomputed Atlas distances and similarities
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#distances" $DIR/euclidean-distances.ttl
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#similarities" $DIR/atlas-cell-summary-similarities.ttl
