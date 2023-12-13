@@ -2924,100 +2924,101 @@ VHMHeart,left cardiac atrium,vCM3_stressed,https://purl.org/ccf/ASCTB-TEMP_vcm3s
 VHMHeart,left cardiac atrium,vCM4,https://purl.org/ccf/ASCTB-TEMP_vcm4,1,21
 VHMHeart,left cardiac atrium,vCM5,https://purl.org/ccf/ASCTB-TEMP_vcm5,3.33333333333333333333,70
 VHMHeart,right cardiac atrium,AVN_P_cell,https://purl.org/ccf/ASCTB-TEMP_avnpcell,3,9
-VHMHeart,right cardiac atrium,Adip1,https://purl.org/ccf/ASCTB-TEMP_adip1,22.8,1026
-VHMHeart,right cardiac atrium,Adip2,https://purl.org/ccf/ASCTB-TEMP_adip2,18.69230769230769230769,729
-VHMHeart,right cardiac atrium,Adip3,https://purl.org/ccf/ASCTB-TEMP_adip3,6,108
-VHMHeart,right cardiac atrium,Adip4,https://purl.org/ccf/ASCTB-TEMP_adip4,1,9
-VHMHeart,right cardiac atrium,B,https://purl.org/ccf/ASCTB-TEMP_b,35.30769230769230769231,1377
-VHMHeart,right cardiac atrium,B cell,http://purl.obolibrary.org/obo/CL_0000236,49.4,2223
-VHMHeart,right cardiac atrium,B_plasma,https://purl.org/ccf/ASCTB-TEMP_bplasma,7.9,237
-VHMHeart,right cardiac atrium,CD14+Mo,https://purl.org/ccf/ASCTB-TEMP_cd14-mo,60,2700
-VHMHeart,right cardiac atrium,CD16+Mo,https://purl.org/ccf/ASCTB-TEMP_cd16-mo,148.46666666666666666667,6681
-VHMHeart,right cardiac atrium,CD4+T_Tfh,https://purl.org/ccf/ASCTB-TEMP_cd4-ttfh,2,54
-VHMHeart,right cardiac atrium,CD4+T_Th1,https://purl.org/ccf/ASCTB-TEMP_cd4-tth1,6,36
-VHMHeart,right cardiac atrium,CD4+T_Th2,https://purl.org/ccf/ASCTB-TEMP_cd4-tth2,4,108
-VHMHeart,right cardiac atrium,CD4+T_act,https://purl.org/ccf/ASCTB-TEMP_cd4-tact,30,1350
-VHMHeart,right cardiac atrium,CD4+T_naive,https://purl.org/ccf/ASCTB-TEMP_cd4-tnaive,29.8,1341
-VHMHeart,right cardiac atrium,CD4+T_reg,https://purl.org/ccf/ASCTB-TEMP_cd4-treg,2.33333333333333333333,42
-VHMHeart,right cardiac atrium,CD8+T_cytox,https://purl.org/ccf/ASCTB-TEMP_cd8-tcytox,18.93333333333333333333,852
-VHMHeart,right cardiac atrium,CD8+T_em,https://purl.org/ccf/ASCTB-TEMP_cd8-tem,15.07692307692307692308,588
-VHMHeart,right cardiac atrium,CD8+T_te,https://purl.org/ccf/ASCTB-TEMP_cd8-tte,43.86666666666666666667,1974
-VHMHeart,right cardiac atrium,CD8+T_trans,https://purl.org/ccf/ASCTB-TEMP_cd8-ttrans,29.26666666666666666667,1317
-VHMHeart,right cardiac atrium,EC10_CMC-like,https://purl.org/ccf/ASCTB-TEMP_ec10cmc-like,51.6,2322
-VHMHeart,right cardiac atrium,EC1_cap,https://purl.org/ccf/ASCTB-TEMP_ec1cap,223.13333333333333333333,10041
-VHMHeart,right cardiac atrium,EC2_cap,https://purl.org/ccf/ASCTB-TEMP_ec2cap,35.6,1602
-VHMHeart,right cardiac atrium,EC3_cap,https://purl.org/ccf/ASCTB-TEMP_ec3cap,48.6,2187
-VHMHeart,right cardiac atrium,EC4_immune,https://purl.org/ccf/ASCTB-TEMP_ec4immune,16.46666666666666666667,741
-VHMHeart,right cardiac atrium,EC5_art,https://purl.org/ccf/ASCTB-TEMP_ec5art,251.33333333333333333333,11310
-VHMHeart,right cardiac atrium,EC6_ven,https://purl.org/ccf/ASCTB-TEMP_ec6ven,313.86666666666666666667,14124
-VHMHeart,right cardiac atrium,EC7_endocardial,https://purl.org/ccf/ASCTB-TEMP_ec7endocardial,224.8,10116
-VHMHeart,right cardiac atrium,EC8_ln,https://purl.org/ccf/ASCTB-TEMP_ec8ln,84.71428571428571428571,1779
-VHMHeart,right cardiac atrium,EC9_FB-like,https://purl.org/ccf/ASCTB-TEMP_ec9fb-like,1,12
-VHMHeart,right cardiac atrium,FB1,https://purl.org/ccf/ASCTB-TEMP_fb1,300.6,13527
-VHMHeart,right cardiac atrium,FB2,https://purl.org/ccf/ASCTB-TEMP_fb2,682.8,30726
-VHMHeart,right cardiac atrium,FB3,https://purl.org/ccf/ASCTB-TEMP_fb3,204.2,9189
-VHMHeart,right cardiac atrium,FB4_activated,https://purl.org/ccf/ASCTB-TEMP_fb4activated,245.6,11052
-VHMHeart,right cardiac atrium,FB5,https://purl.org/ccf/ASCTB-TEMP_fb5,68.86666666666666666667,3099
-VHMHeart,right cardiac atrium,FB6,https://purl.org/ccf/ASCTB-TEMP_fb6,17.53333333333333333333,789
-VHMHeart,right cardiac atrium,LYVE1+IGF1+MP,https://purl.org/ccf/ASCTB-TEMP_lyve1-igf1-mp,239.46666666666666666667,10776
-VHMHeart,right cardiac atrium,LYVE1+MP_cycling,https://purl.org/ccf/ASCTB-TEMP_lyve1-mpcycling,17.8,801
-VHMHeart,right cardiac atrium,LYVE1+TIMD4+MP,https://purl.org/ccf/ASCTB-TEMP_lyve1-timd4-mp,124.6,5607
-VHMHeart,right cardiac atrium,MAIT-like,https://purl.org/ccf/ASCTB-TEMP_mait-like,4.86666666666666666667,219
-VHMHeart,right cardiac atrium,Mast,https://purl.org/ccf/ASCTB-TEMP_mast,10,330
-VHMHeart,right cardiac atrium,Meso,https://purl.org/ccf/ASCTB-TEMP_meso,35,945
-VHMHeart,right cardiac atrium,MoMP,https://purl.org/ccf/ASCTB-TEMP_momp,58.53333333333333333333,2634
-VHMHeart,right cardiac atrium,NC1_glial,https://purl.org/ccf/ASCTB-TEMP_nc1glial,75.46666666666666666667,3396
-VHMHeart,right cardiac atrium,NC2_glial_NGF+,https://purl.org/ccf/ASCTB-TEMP_nc2glialngf-,8.06666666666666666667,363
-VHMHeart,right cardiac atrium,NC3_glial,https://purl.org/ccf/ASCTB-TEMP_nc3glial,1,12
+VHMHeart,right cardiac atrium,Adip1,https://purl.org/ccf/ASCTB-TEMP_adip1,20.24137931034482758621,1174
+VHMHeart,right cardiac atrium,Adip2,https://purl.org/ccf/ASCTB-TEMP_adip2,18.45098039215686274510,941
+VHMHeart,right cardiac atrium,Adip3,https://purl.org/ccf/ASCTB-TEMP_adip3,5.5,154
+VHMHeart,right cardiac atrium,Adip4,https://purl.org/ccf/ASCTB-TEMP_adip4,1,10
+VHMHeart,right cardiac atrium,B,https://purl.org/ccf/ASCTB-TEMP_b,49.07843137254901960784,2503
+VHMHeart,right cardiac atrium,B cell,http://purl.obolibrary.org/obo/CL_0000236,63.53448275862068965517,3685
+VHMHeart,right cardiac atrium,B_plasma,https://purl.org/ccf/ASCTB-TEMP_bplasma,12.31707317073170731707,505
+VHMHeart,right cardiac atrium,CD14+Mo,https://purl.org/ccf/ASCTB-TEMP_cd14-mo,53.79310344827586206897,3120
+VHMHeart,right cardiac atrium,CD16+Mo,https://purl.org/ccf/ASCTB-TEMP_cd16-mo,129.20689655172413793103,7494
+VHMHeart,right cardiac atrium,CD4+T_Tfh,https://purl.org/ccf/ASCTB-TEMP_cd4-ttfh,2.18918918918918918919,81
+VHMHeart,right cardiac atrium,CD4+T_Th1,https://purl.org/ccf/ASCTB-TEMP_cd4-tth1,6,42
+VHMHeart,right cardiac atrium,CD4+T_Th2,https://purl.org/ccf/ASCTB-TEMP_cd4-tth2,4.03225806451612903226,125
+VHMHeart,right cardiac atrium,CD4+T_act,https://purl.org/ccf/ASCTB-TEMP_cd4-tact,33.13793103448275862069,1922
+VHMHeart,right cardiac atrium,CD4+T_naive,https://purl.org/ccf/ASCTB-TEMP_cd4-tnaive,30.27586206896551724138,1756
+VHMHeart,right cardiac atrium,CD4+T_reg,https://purl.org/ccf/ASCTB-TEMP_cd4-treg,3.07407407407407407407,83
+VHMHeart,right cardiac atrium,CD8+T_cytox,https://purl.org/ccf/ASCTB-TEMP_cd8-tcytox,17.77586206896551724138,1031
+VHMHeart,right cardiac atrium,CD8+T_em,https://purl.org/ccf/ASCTB-TEMP_cd8-tem,15.37254901960784313725,784
+VHMHeart,right cardiac atrium,CD8+T_te,https://purl.org/ccf/ASCTB-TEMP_cd8-tte,45.96551724137931034483,2666
+VHMHeart,right cardiac atrium,CD8+T_trans,https://purl.org/ccf/ASCTB-TEMP_cd8-ttrans,30.82758620689655172414,1788
+VHMHeart,right cardiac atrium,EC10_CMC-like,https://purl.org/ccf/ASCTB-TEMP_ec10cmc-like,48.01724137931034482759,2785
+VHMHeart,right cardiac atrium,EC1_cap,https://purl.org/ccf/ASCTB-TEMP_ec1cap,185.89655172413793103448,10782
+VHMHeart,right cardiac atrium,EC2_cap,https://purl.org/ccf/ASCTB-TEMP_ec2cap,30.03448275862068965517,1742
+VHMHeart,right cardiac atrium,EC3_cap,https://purl.org/ccf/ASCTB-TEMP_ec3cap,44.65517241379310344828,2590
+VHMHeart,right cardiac atrium,EC4_immune,https://purl.org/ccf/ASCTB-TEMP_ec4immune,15.15517241379310344828,879
+VHMHeart,right cardiac atrium,EC5_art,https://purl.org/ccf/ASCTB-TEMP_ec5art,221.01724137931034482759,12819
+VHMHeart,right cardiac atrium,EC6_ven,https://purl.org/ccf/ASCTB-TEMP_ec6ven,268.63793103448275862069,15581
+VHMHeart,right cardiac atrium,EC7_endocardial,https://purl.org/ccf/ASCTB-TEMP_ec7endocardial,207.74137931034482758621,12049
+VHMHeart,right cardiac atrium,EC8_ln,https://purl.org/ccf/ASCTB-TEMP_ec8ln,77.95652173913043478261,1793
+VHMHeart,right cardiac atrium,EC9_FB-like,https://purl.org/ccf/ASCTB-TEMP_ec9fb-like,1,13
+VHMHeart,right cardiac atrium,FB1,https://purl.org/ccf/ASCTB-TEMP_fb1,235.20689655172413793103,13642
+VHMHeart,right cardiac atrium,FB2,https://purl.org/ccf/ASCTB-TEMP_fb2,625.13793103448275862069,36258
+VHMHeart,right cardiac atrium,FB3,https://purl.org/ccf/ASCTB-TEMP_fb3,193.31034482758620689655,11212
+VHMHeart,right cardiac atrium,FB4_activated,https://purl.org/ccf/ASCTB-TEMP_fb4activated,199.43103448275862068966,11567
+VHMHeart,right cardiac atrium,FB5,https://purl.org/ccf/ASCTB-TEMP_fb5,56.12068965517241379310,3255
+VHMHeart,right cardiac atrium,FB6,https://purl.org/ccf/ASCTB-TEMP_fb6,14.67241379310344827586,851
+VHMHeart,right cardiac atrium,LYVE1+IGF1+MP,https://purl.org/ccf/ASCTB-TEMP_lyve1-igf1-mp,194.37931034482758620690,11274
+VHMHeart,right cardiac atrium,LYVE1+MP_cycling,https://purl.org/ccf/ASCTB-TEMP_lyve1-mpcycling,15.44827586206896551724,896
+VHMHeart,right cardiac atrium,LYVE1+TIMD4+MP,https://purl.org/ccf/ASCTB-TEMP_lyve1-timd4-mp,128.13793103448275862069,7432
+VHMHeart,right cardiac atrium,MAIT-like,https://purl.org/ccf/ASCTB-TEMP_mait-like,5.05172413793103448276,293
+VHMHeart,right cardiac atrium,Mast,https://purl.org/ccf/ASCTB-TEMP_mast,8.06818181818181818182,355
+VHMHeart,right cardiac atrium,Meso,https://purl.org/ccf/ASCTB-TEMP_meso,36.63333333333333333333,1099
+VHMHeart,right cardiac atrium,MoMP,https://purl.org/ccf/ASCTB-TEMP_momp,53.75862068965517241379,3118
+VHMHeart,right cardiac atrium,NC1_glial,https://purl.org/ccf/ASCTB-TEMP_nc1glial,69.01724137931034482759,4003
+VHMHeart,right cardiac atrium,NC2_glial_NGF+,https://purl.org/ccf/ASCTB-TEMP_nc2glialngf-,7.74137931034482758621,449
+VHMHeart,right cardiac atrium,NC3_glial,https://purl.org/ccf/ASCTB-TEMP_nc3glial,1,14
 VHMHeart,right cardiac atrium,NC4_glial,https://purl.org/ccf/ASCTB-TEMP_nc4glial,1,3
-VHMHeart,right cardiac atrium,NC6_schwann,https://purl.org/ccf/ASCTB-TEMP_nc6schwann,1,12
-VHMHeart,right cardiac atrium,NK_CD16hi,https://purl.org/ccf/ASCTB-TEMP_nkcd16hi,78.26666666666666666667,3522
-VHMHeart,right cardiac atrium,NK_CD56hi,https://purl.org/ccf/ASCTB-TEMP_nkcd56hi,14.46153846153846153846,564
-VHMHeart,right cardiac atrium,Neut,https://purl.org/ccf/ASCTB-TEMP_neut,8.75,105
-VHMHeart,right cardiac atrium,PC1_vent,https://purl.org/ccf/ASCTB-TEMP_pc1vent,88.73333333333333333333,3993
-VHMHeart,right cardiac atrium,PC2_atria,https://purl.org/ccf/ASCTB-TEMP_pc2atria,170.86666666666666666667,7689
-VHMHeart,right cardiac atrium,PC3_str,https://purl.org/ccf/ASCTB-TEMP_pc3str,48.4,2178
-VHMHeart,right cardiac atrium,PC4_CMC-like,https://purl.org/ccf/ASCTB-TEMP_pc4cmc-like,3.54545454545454545455,117
+VHMHeart,right cardiac atrium,NC5_glial,https://purl.org/ccf/ASCTB-TEMP_nc5glial,1,7
+VHMHeart,right cardiac atrium,NC6_schwann,https://purl.org/ccf/ASCTB-TEMP_nc6schwann,1,14
+VHMHeart,right cardiac atrium,NK_CD16hi,https://purl.org/ccf/ASCTB-TEMP_nkcd16hi,69.12068965517241379310,4009
+VHMHeart,right cardiac atrium,NK_CD56hi,https://purl.org/ccf/ASCTB-TEMP_nkcd56hi,13.27450980392156862745,677
+VHMHeart,right cardiac atrium,Neut,https://purl.org/ccf/ASCTB-TEMP_neut,9.30769230769230769231,121
+VHMHeart,right cardiac atrium,PC1_vent,https://purl.org/ccf/ASCTB-TEMP_pc1vent,74.98275862068965517241,4349
+VHMHeart,right cardiac atrium,PC2_atria,https://purl.org/ccf/ASCTB-TEMP_pc2atria,190.60344827586206896552,11055
+VHMHeart,right cardiac atrium,PC3_str,https://purl.org/ccf/ASCTB-TEMP_pc3str,44.22413793103448275862,2565
+VHMHeart,right cardiac atrium,PC4_CMC-like,https://purl.org/ccf/ASCTB-TEMP_pc4cmc-like,3.97727272727272727273,175
 VHMHeart,right cardiac atrium,Purkinje_cell,https://purl.org/ccf/ASCTB-TEMP_purkinjecell,4.5,27
 VHMHeart,right cardiac atrium,SAN_P_cell,https://purl.org/ccf/ASCTB-TEMP_sanpcell,3.5,21
-VHMHeart,right cardiac atrium,SMC1_basic,https://purl.org/ccf/ASCTB-TEMP_smc1basic,126.53333333333333333333,5694
-VHMHeart,right cardiac atrium,SMC2_art,https://purl.org/ccf/ASCTB-TEMP_smc2art,21.46666666666666666667,966
-VHMHeart,right cardiac atrium,Schwann cell,http://purl.obolibrary.org/obo/CL_0002573,82.33333333333333333333,3705
-VHMHeart,right cardiac atrium,T cell,http://purl.obolibrary.org/obo/CL_0000084,134.6,6057
-VHMHeart,right cardiac atrium,T/NK_cycling,https://purl.org/ccf/ASCTB-TEMP_t-nkcycling,6,144
-VHMHeart,right cardiac atrium,aCM1,https://purl.org/ccf/ASCTB-TEMP_acm1,54.86666666666666666667,2469
-VHMHeart,right cardiac atrium,aCM2,https://purl.org/ccf/ASCTB-TEMP_acm2,521.33333333333333333333,23460
-VHMHeart,right cardiac atrium,aCM3,https://purl.org/ccf/ASCTB-TEMP_acm3,87.38461538461538461538,3408
-VHMHeart,right cardiac atrium,aCM4,https://purl.org/ccf/ASCTB-TEMP_acm4,106.73333333333333333333,4803
-VHMHeart,right cardiac atrium,aCM5,https://purl.org/ccf/ASCTB-TEMP_acm5,1,6
-VHMHeart,right cardiac atrium,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,527,23715
-VHMHeart,right cardiac atrium,cardiac endothelial cell,http://purl.obolibrary.org/obo/CL_0010008,1027.33333333333333333333,46230
-VHMHeart,right cardiac atrium,cardiac muscle cell,http://purl.obolibrary.org/obo/CL_0000746,1573.26666666666666666667,70797
-VHMHeart,right cardiac atrium,"dendritic cell, human",http://purl.obolibrary.org/obo/CL_0001056,23.73333333333333333333,1068
-VHMHeart,right cardiac atrium,endocardial cell,http://purl.obolibrary.org/obo/CL_0002350,236.6,10647
-VHMHeart,right cardiac atrium,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,61.61538461538461538462,2403
-VHMHeart,right cardiac atrium,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,159.33333333333333333333,7170
-VHMHeart,right cardiac atrium,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,85.14285714285714285714,1788
-VHMHeart,right cardiac atrium,endothelial cell of venule,http://purl.obolibrary.org/obo/CL_1000414,194.4,8748
-VHMHeart,right cardiac atrium,fat cell,http://purl.obolibrary.org/obo/CL_0000136,29.86666666666666666667,1344
-VHMHeart,right cardiac atrium,fibroblast of cardiac tissue,http://purl.obolibrary.org/obo/CL_0002548,1632.06666666666666666667,73443
-VHMHeart,right cardiac atrium,hepatocyte,http://purl.obolibrary.org/obo/CL_0000182,42.66666666666666666667,1920
-VHMHeart,right cardiac atrium,innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,2.8,42
-VHMHeart,right cardiac atrium,kidney interstitial fibroblast,http://purl.obolibrary.org/obo/CL_0000057,1502.4,67608
-VHMHeart,right cardiac atrium,macrophage,http://purl.obolibrary.org/obo/CL_0000235,600.86666666666666666667,54078
-VHMHeart,right cardiac atrium,mast cell,http://purl.obolibrary.org/obo/CL_0000097,11.53333333333333333333,519
-VHMHeart,right cardiac atrium,mesothelial cell,http://purl.obolibrary.org/obo/CL_0000077,53.54545454545454545455,1767
-VHMHeart,right cardiac atrium,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,406.2,18279
-VHMHeart,right cardiac atrium,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623,127.6,5742
-VHMHeart,right cardiac atrium,pericyte,http://purl.obolibrary.org/obo/CL_0000669,319.66666666666666666667,14385
-VHMHeart,right cardiac atrium,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,744.6,33507
-VHMHeart,right cardiac atrium,regular ventricular cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002131,817.90909090909090909091,26991
-VHMHeart,right cardiac atrium,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,285.26666666666666666667,25674
-VHMHeart,right cardiac atrium,vCM1,https://purl.org/ccf/ASCTB-TEMP_vcm1,368.69230769230769230769,14379
-VHMHeart,right cardiac atrium,vCM2,https://purl.org/ccf/ASCTB-TEMP_vcm2,6,90
-VHMHeart,right cardiac atrium,vCM3_stressed,https://purl.org/ccf/ASCTB-TEMP_vcm3stressed,327,2943
+VHMHeart,right cardiac atrium,SMC1_basic,https://purl.org/ccf/ASCTB-TEMP_smc1basic,116.53448275862068965517,6759
+VHMHeart,right cardiac atrium,SMC2_art,https://purl.org/ccf/ASCTB-TEMP_smc2art,20.43103448275862068966,1185
+VHMHeart,right cardiac atrium,Schwann cell,http://purl.obolibrary.org/obo/CL_0002573,75.94827586206896551724,4405
+VHMHeart,right cardiac atrium,T cell,http://purl.obolibrary.org/obo/CL_0000084,148,8584
+VHMHeart,right cardiac atrium,T/NK_cycling,https://purl.org/ccf/ASCTB-TEMP_t-nkcycling,6.18518518518518518519,167
+VHMHeart,right cardiac atrium,aCM1,https://purl.org/ccf/ASCTB-TEMP_acm1,60,3480
+VHMHeart,right cardiac atrium,aCM2,https://purl.org/ccf/ASCTB-TEMP_acm2,504.41379310344827586207,29256
+VHMHeart,right cardiac atrium,aCM3,https://purl.org/ccf/ASCTB-TEMP_acm3,87.75,4563
+VHMHeart,right cardiac atrium,aCM4,https://purl.org/ccf/ASCTB-TEMP_acm4,96.81034482758620689655,5615
+VHMHeart,right cardiac atrium,aCM5,https://purl.org/ccf/ASCTB-TEMP_acm5,1,7
+VHMHeart,right cardiac atrium,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,463.18965517241379310345,26865
+VHMHeart,right cardiac atrium,cardiac endothelial cell,http://purl.obolibrary.org/obo/CL_0010008,889.91379310344827586207,51615
+VHMHeart,right cardiac atrium,cardiac muscle cell,http://purl.obolibrary.org/obo/CL_0000746,1417.5,82215
+VHMHeart,right cardiac atrium,"dendritic cell, human",http://purl.obolibrary.org/obo/CL_0001056,20.06896551724137931034,1164
+VHMHeart,right cardiac atrium,endocardial cell,http://purl.obolibrary.org/obo/CL_0002350,217.20689655172413793103,12598
+VHMHeart,right cardiac atrium,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,58.66666666666666666667,2992
+VHMHeart,right cardiac atrium,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,136.34482758620689655172,7908
+VHMHeart,right cardiac atrium,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,78.26086956521739130435,1800
+VHMHeart,right cardiac atrium,endothelial cell of venule,http://purl.obolibrary.org/obo/CL_1000414,156.48275862068965517241,9076
+VHMHeart,right cardiac atrium,fat cell,http://purl.obolibrary.org/obo/CL_0000136,28.10344827586206896552,1630
+VHMHeart,right cardiac atrium,fibroblast of cardiac tissue,http://purl.obolibrary.org/obo/CL_0002548,1445.77586206896551724138,83855
+VHMHeart,right cardiac atrium,hepatocyte,http://purl.obolibrary.org/obo/CL_0000182,40.50980392156862745098,2066
+VHMHeart,right cardiac atrium,innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,7.39130434782608695652,170
+VHMHeart,right cardiac atrium,kidney interstitial fibroblast,http://purl.obolibrary.org/obo/CL_0000057,1309.39655172413793103448,75945
+VHMHeart,right cardiac atrium,macrophage,http://purl.obolibrary.org/obo/CL_0000235,540.51724137931034482759,62700
+VHMHeart,right cardiac atrium,mast cell,http://purl.obolibrary.org/obo/CL_0000097,9.70689655172413793103,563
+VHMHeart,right cardiac atrium,mesothelial cell,http://purl.obolibrary.org/obo/CL_0000077,46.11111111111111111111,2075
+VHMHeart,right cardiac atrium,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,364.27586206896551724138,21128
+VHMHeart,right cardiac atrium,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623,114.58620689655172413793,6646
+VHMHeart,right cardiac atrium,pericyte,http://purl.obolibrary.org/obo/CL_0000669,320.84482758620689655172,18609
+VHMHeart,right cardiac atrium,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,728.53448275862068965517,42255
+VHMHeart,right cardiac atrium,regular ventricular cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002131,730.16216216216216216216,27016
+VHMHeart,right cardiac atrium,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,277.31896551724137931034,32169
+VHMHeart,right cardiac atrium,vCM1,https://purl.org/ccf/ASCTB-TEMP_vcm1,282.27450980392156862745,14396
+VHMHeart,right cardiac atrium,vCM2,https://purl.org/ccf/ASCTB-TEMP_vcm2,5.75,92
+VHMHeart,right cardiac atrium,vCM3_stressed,https://purl.org/ccf/ASCTB-TEMP_vcm3stressed,184.375,2950
 VHMHeart,right cardiac atrium,vCM4,https://purl.org/ccf/ASCTB-TEMP_vcm4,899.33333333333333333333,8094
-VHMHeart,right cardiac atrium,vCM5,https://purl.org/ccf/ASCTB-TEMP_vcm5,12.44444444444444444444,336
+VHMHeart,right cardiac atrium,vCM5,https://purl.org/ccf/ASCTB-TEMP_vcm5,11.33333333333333333333,340
 VHMLargeIntestine,ascending colon,B cell,http://purl.obolibrary.org/obo/CL_0000236,45.14285714285714285714,316
 VHMLargeIntestine,ascending colon,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,48,336
 VHMLargeIntestine,ascending colon,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,41.71428571428571428571,292
