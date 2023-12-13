@@ -41,6 +41,12 @@ WHERE {
     } UNION {
       [] ccf:cell_source_b ?entity ;
     }
+
+    FILTER EXISTS {
+      GRAPH HRApop: {
+        ?entity a ccf:SpatialEntity .
+      }
+    }
   }
 
   GRAPH HRApop: {
