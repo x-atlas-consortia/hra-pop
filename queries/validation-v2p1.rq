@@ -13,7 +13,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 
-SELECT ?sample ?dataset ?tool ?modality ?organ ?organId ?as ?similarity ?as_in_collisions
+SELECT ?sample ?dataset ?tool ?modality ?organ ?organId ?as ?as_tool ?similarity ?as_in_collisions
 FROM hra-pop:similarities
 FROM HRApop:
 FROM CCF:
@@ -21,14 +21,16 @@ WHERE {
   {
     ?dataset a ccf:Dataset .
     [] ccf:modality ?modality ;
-        ccf:cell_source_b_tool ?tool ;
+        ccf:cell_source_a_tool ?tool ;
+        ccf:cell_source_b_tool ?as_tool ;
         ccf:cell_source_a ?dataset ;
         ccf:cell_source_b ?as ;
         ccf:similarity ?similarity .
   } UNION {
     ?dataset a ccf:Dataset .
     [] ccf:modality ?modality ;
-        ccf:cell_source_a_tool ?tool ;
+        ccf:cell_source_a_tool ?as_tool ;
+        ccf:cell_source_b_tool ?tool ;
         ccf:cell_source_a ?as ;
         ccf:cell_source_b ?dataset ;
         ccf:similarity ?similarity .

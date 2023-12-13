@@ -19,71 +19,101 @@ SELECT DISTINCT
   ?tool ?modality ?organ ?organId
   ?datasetA ?entityA ?datasetB ?entityB
   ?similarity ?distance
+
+WITH {
+  SELECT ?tool ?modality ?organ ?organId 
+    ?datasetA ?entityA ?datasetB ?entityB
+  WHERE {
+    GRAPH HRApop: {
+      ?entityA a ccf:SpatialEntity .
+      ?entityB a ccf:SpatialEntity .
+      FILTER(STR(?entityA) < STR(?entityB))
+
+      {
+        ?sampleA ccf:has_registration_location ?entityA .
+        ?sampleA ccf:generates_dataset ?datasetA .
+      } UNION {
+        ?blockA ccf:subdivided_into_sections ?sampleA .
+        ?blockA ccf:has_registration_location ?entityA .
+        ?sampleA ccf:generates_dataset ?datasetA .
+      }
+
+      {
+        ?sampleB ccf:has_registration_location ?entityB .
+        ?sampleB ccf:generates_dataset ?datasetB .
+      } UNION {
+        ?blockB ccf:subdivided_into_sections ?sampleB .
+        ?blockB ccf:has_registration_location ?entityB .
+        ?sampleB ccf:generates_dataset ?datasetB .
+      }
+
+      ?datasetA ccf:has_cell_summary [
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+      ] .
+
+      ?datasetB ccf:has_cell_summary [
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+      ] .
+
+      # Sample A
+      [] a ccf:SpatialPlacement ;
+          ccf:placement_for ?entityA ;
+          ccf:placement_relative_to ?refOrgan .
+
+      # Sample B
+      [] a ccf:SpatialPlacement ;
+          ccf:placement_for ?entityB ;
+          ccf:placement_relative_to ?refOrgan .
+    }
+    
+    GRAPH CCF: {
+      ?refOrgan ccf:representation_of ?organIri .
+      ?organIri rdfs:label ?organ .
+      BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+    }
+  }
+} AS %data
+
+WITH {
+  SELECT *
+  WHERE {
+    GRAPH HRApop: {
+      ?entityA a ccf:SpatialEntity .
+      ?entityB a ccf:SpatialEntity .
+      FILTER(STR(?entityA) < STR(?entityB))
+    }
+    GRAPH hra-pop:distances {
+      [] a ccf:SpatialEntityDistance;
+        ccf:entity_a ?entityA ;
+        ccf:entity_b ?entityB ;
+        ccf:distance ?distance .
+    }
+  }
+} AS %distances
+
+WITH {
+  SELECT ?tool ?entityA ?entityB ?similarity
+  WHERE {
+    GRAPH HRApop: {
+      ?entityA a ccf:SpatialEntity .
+      ?entityB a ccf:SpatialEntity .
+      FILTER(STR(?entityA) < STR(?entityB))
+    }
+
+    GRAPH hra-pop:similarities {
+      [] ccf:cell_source_a_tool ?tool ;
+        ccf:cell_source_b_tool ?tool ;
+        ccf:cell_source_a ?entityA ;
+        ccf:cell_source_b ?entityB ;
+        ccf:similarity ?similarity .
+    }
+  }
+} AS %sims
+
 WHERE {
-  GRAPH HRApop: {
-    ?entityA a ccf:SpatialEntity .
-    ?entityB a ccf:SpatialEntity .
-    FILTER(STR(?entityA) < STR(?entityB))
-
-    {
-      ?sampleA ccf:has_registration_location ?entityA .
-      ?sampleA ccf:generates_dataset ?datasetA .
-    } UNION {
-      ?blockA ccf:subdivided_into_sections ?sampleA .
-      ?blockA ccf:has_registration_location ?entityA .
-      ?sampleA ccf:generates_dataset ?datasetA .
-    }
-
-    {
-      ?sampleB ccf:has_registration_location ?entityB .
-      ?sampleB ccf:generates_dataset ?datasetB .
-    } UNION {
-      ?blockB ccf:subdivided_into_sections ?sampleB .
-      ?blockB ccf:has_registration_location ?entityB .
-      ?sampleB ccf:generates_dataset ?datasetB .
-    }
-
-    ?datasetA ccf:has_cell_summary [
-      ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-    ] .
-
-    ?datasetB ccf:has_cell_summary [
-      ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-    ] .
-
-    # Sample A
-    [] a ccf:SpatialPlacement ;
-        ccf:placement_for ?entityA ;
-        ccf:placement_relative_to ?refOrgan .
-
-    # Sample B
-    [] a ccf:SpatialPlacement ;
-        ccf:placement_for ?entityB ;
-        ccf:placement_relative_to ?refOrgan .
-  }
-  
-  GRAPH CCF: {
-    ?refOrgan ccf:representation_of ?organIri .
-    ?organIri rdfs:label ?organ .
-    BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
-  }
-
-  GRAPH hra-pop:distances {
-    [] a ccf:SpatialEntityDistance;
-      ccf:entity_a ?entityA ;
-      ccf:entity_b ?entityB ;
-      ccf:distance ?distance .
-  }
-
-  GRAPH hra-pop:similarities {
-    ?edge ccf:modality ?modality ;
-          ccf:cell_source_a_tool ?tool ;
-          ccf:cell_source_b_tool ?tool ;
-          ccf:cell_source_a ?entityA ;
-          ccf:cell_source_b ?entityB ;
-          ccf:similarity ?similarity .
-  }
+  INCLUDE %data
+  INCLUDE %sims
+  INCLUDE %distances  
 }
-# ORDER BY DESC(?similarity)

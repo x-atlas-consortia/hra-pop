@@ -13,24 +13,26 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 
-SELECT ?dataset ?reported_organ ?tool ?modality (?rui as ?corridor) ?similarity 
+SELECT ?dataset ?reported_organ ?tool ?modality ?corridor ?corridor_tool ?similarity 
 WHERE {
   GRAPH hra-pop:similarities {
     {
       [] ccf:modality ?modality ;
-         ccf:cell_source_b_tool ?tool ;
+         ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_b_tool ?corridor_tool ;
          ccf:cell_source_a ?dataset ;
-         ccf:cell_source_b ?rui ;
+         ccf:cell_source_b ?corridor ;
          ccf:similarity ?similarity .
     } UNION {
       [] ccf:modality ?modality ;
-         ccf:cell_source_a_tool ?tool ;
-         ccf:cell_source_a ?rui ;
+         ccf:cell_source_a_tool ?corridor_tool ;
+          ccf:cell_source_b_tool ?tool ;
+         ccf:cell_source_a ?corridor ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .
     }
 
-    FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/'))
+    FILTER (STRSTARTS(STR(?corridor), 'http://purl.org/ccf/1.5/'))
 
     FILTER EXISTS  {
       GRAPH hra-pop:test-data {
