@@ -1,10 +1,10 @@
-Run started on Tue Dec 12 07:12:11 PM EST 2023...
+Run started on Wed Dec 13 03:16:04 PM EST 2023...
 
 >> Running scripts/00-setup-environment.sh...
 
-real	0m0.023s
+real	0m0.024s
 user	0m0.001s
-sys	0m0.007s
+sys	0m0.009s
 
 >> Running scripts/05-build-deprecated-cell-summaries.sh...
 
@@ -16,9 +16,9 @@ if [ "${DEPRECATED_BULK_CELL_SUMMARIES}" != "" ]; then
   node ./src/gen-deprecated-cell-summaries-bulk.js $DEPRECATED_BULK_CELL_SUMMARIES $DEPRECATED_BULK_CELL_SUMMARY_DATASETS
 fi
 
-real	0m0.991s
-user	0m0.189s
-sys	0m0.020s
+real	0m1.505s
+user	0m0.428s
+sys	0m0.241s
 
 >> Running scripts/05-build-deprecated-corridors.sh...
 
@@ -26,9 +26,9 @@ if [ "${DEPRECATED_CORRIDORS}" ]; then
   node ./src/gen-deprecated-corridors.js $DEPRECATED_CORRIDORS
 fi
 
-real	0m0.082s
-user	0m0.048s
-sys	0m0.020s
+real	0m0.145s
+user	0m0.100s
+sys	0m0.041s
 
 >> Running scripts/05-build-deprecated-registrations.sh...
 
@@ -36,9 +36,9 @@ if [ "${DEPRECATED_REGISTRATIONS}" ]; then
   node ./src/gen-deprecated-registrations.js $DEPRECATED_REGISTRATIONS
 fi
 
-real	0m0.028s
-user	0m0.002s
-sys	0m0.007s
+real	0m0.043s
+user	0m0.015s
+sys	0m0.002s
 
 >> Running scripts/10-process-registrations.sh...
 
@@ -53,9 +53,9 @@ node ./src/get-collisions.js $MERGED $COLLISIONS
 WARNING 193 RUI locations had zero collisions
 node ./src/compute-extraction-site-distances.js $MERGED $DISTANCES
 
-real	0m45.256s
-user	0m5.549s
-sys	0m0.631s
+real	1m12.240s
+user	0m7.280s
+sys	0m2.223s
 
 >> Running scripts/20-process-cell-summaries.sh...
 
@@ -65,18 +65,18 @@ node ./src/concatenate-jsonld.js $CELL_SUMMARIES $MERGED
 MERGED_DATASETS=$RAW_DIR/$VERSION/cell-summary-dataset-graph.jsonld
 node ./src/unflatten-dataset-graph.js $CELL_SUMMARY_DATASETS $MERGED_DATASETS
 
-real	0m3.935s
-user	0m4.351s
-sys	0m0.684s
+real	0m9.415s
+user	0m5.429s
+sys	0m5.571s
 
 >> Running scripts/30-process-publications.sh...
 
 PUBS_GRAPH=$RAW_DIR/$VERSION/publications-dataset-graph.jsonld
 node ./src/unflatten-dataset-graph.js $PUBLICATIONS $PUBS_GRAPH
 
-real	0m0.548s
-user	0m0.120s
-sys	0m0.028s
+real	0m1.251s
+user	0m0.150s
+sys	0m0.032s
 
 >> Running scripts/40-normalize-dataset-graph.sh...
 
@@ -91,9 +91,9 @@ node ./src/flatten-dataset-graph.js \
 node ./src/unflatten-dataset-graph.js $DIR/full-dataset-graph.csv $DIR/full-dataset-graph.jsonld
 node ./src/flatten-dataset-graph.js $DIR/full-dataset-graph.jsonld $DIR/full-dataset-graph.csv
 
-real	0m1.298s
-user	0m1.397s
-sys	0m0.203s
+real	0m1.615s
+user	0m1.624s
+sys	0m0.361s
 
 >> Running scripts/45-split-dataset-graph.sh...
 
@@ -117,9 +117,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
   node ./src/unflatten-dataset-graph.js $DIR/atlas-lq-dataset-graph.csv $DIR/atlas-lq-dataset-graph.jsonld
 fi
 
-real	0m2.660s
-user	0m2.827s
-sys	0m0.393s
+real	0m3.288s
+user	0m3.414s
+sys	0m0.636s
 
 >> Running scripts/50-generate-as-cell-summaries.sh...
 
@@ -144,9 +144,9 @@ fi
 
 echo '{"@graph":[]}' > $DIR/test-as-cell-summaries.jsonld
 
-real	0m1.501s
-user	0m1.608s
-sys	0m0.213s
+real	0m1.727s
+user	0m1.781s
+sys	0m0.332s
 
 >> Running scripts/55-generate-extraction-site-cell-summaries.sh...
 
@@ -188,9 +188,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
     $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld
 fi
 
-real	0m1.933s
-user	0m2.023s
-sys	0m0.333s
+real	0m2.196s
+user	0m2.377s
+sys	0m0.399s
 
 >> Running scripts/58-compute-cell-summary-similarities.sh...
 
@@ -208,9 +208,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
     $DIR/atlas-lq-cell-summary-similarities.ttl
 fi
 
-real	14m37.593s
-user	14m45.240s
-sys	0m24.105s
+real	17m56.584s
+user	17m51.037s
+sys	0m31.379s
 
 >> Running scripts/60-enrich-dataset-graphs.sh...
 
@@ -246,9 +246,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
     $DIR/test-atlas-lq-enriched-dataset-graph.jsonld
 fi
 
-real	0m5.437s
-user	0m5.581s
-sys	0m1.160s
+real	0m8.505s
+user	0m6.634s
+sys	0m3.586s
 
 >> Running scripts/70-create-internal-blazegraph.sh...
 
@@ -292,11 +292,11 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 bl-sice-g7241f3.ads.iu.edu
-Tue Dec 12 19:28:07 EST 2023
+Wed Dec 13 15:36:02 EST 2023
 Linux/5.15.133.1-microsoft-standard-WSL2 amd64
 11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
 Ubuntu 11.0.21
-freeMemory=1014448184
+freeMemory=1014439896
 buildVersion=2.1.4
 gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
 
@@ -332,11 +332,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2023.12.12 19:28:08:071[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2023.12.13 15:36:02:770[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.5/atlas-enriched-dataset-graph.nq[0m
-[36m[1m2023.12.12 19:28:15:248[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    1355969 stmts added in 6.472 secs, rate= 209513, commitLatency=636ms, {failSet=0,good
-    Set=0}[0m
+[36m[1m2023.12.13 15:36:10:861[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    1355969 stmts added in 7.147 secs, rate= 189725, commitLatency=853ms, {failSet=0,goodSet=0}[0m
 run_jsonld $DIR/atlas-as-cell-summaries.jsonld $HRA_POP
 log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
 log4j:WARN Please initialize the log4j system properly.
@@ -356,11 +355,11 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 bl-sice-g7241f3.ads.iu.edu
-Tue Dec 12 19:28:16 EST 2023
+Wed Dec 13 15:36:11 EST 2023
 Linux/5.15.133.1-microsoft-standard-WSL2 amd64
 11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
 Ubuntu 11.0.21
-freeMemory=1015456336
+freeMemory=1015448552
 buildVersion=2.1.4
 gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
 
@@ -396,11 +395,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2023.12.12 19:28:16:632[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2023.12.13 15:36:12:416[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.5/atlas-as-cell-summaries.nq[0m
-[36m[1m2023.12.12 19:28:17:718[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    28745 stmts added in 0.687 secs, rate= 41841, commitLatency=300ms, {failSet=0,goodSet
-    =0}[0m
+[36m[1m2023.12.13 15:36:13:564[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    28745 stmts added in 0.691 secs, rate= 41599, commitLatency=358ms, {failSet=0,goodSet=0}[0m
 
 # Test Data
 run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
@@ -422,11 +420,11 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 bl-sice-g7241f3.ads.iu.edu
-Tue Dec 12 19:29:27 EST 2023
+Wed Dec 13 15:37:49 EST 2023
 Linux/5.15.133.1-microsoft-standard-WSL2 amd64
 11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
 Ubuntu 11.0.21
-freeMemory=1014421128
+freeMemory=1014445472
 buildVersion=2.1.4
 gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
 
@@ -462,11 +460,75 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2023.12.12 19:29:28:197[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2023.12.13 15:37:50:567[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.5/test-atlas-enriched-dataset-graph.nq[0m
-[36m[1m2023.12.12 19:29:59:291[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    5674305 stmts added in 29.828 secs, rate= 190234, commitLatency=1197ms, {failSet=0,go
-    odSet=0}[0m
+[36m[1m2023.12.13 15:38:27:854[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    5674319 stmts added in 36.165 secs, rate= 156900, commitLatency=1041ms, {failSet=0,goodSet=0}[0m
+
+# Full Dataset
+run_jsonld $DIR/full-dataset-graph.jsonld "${HRA_POP}#full-dataset"
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Wed Dec 13 15:38:30 EST 2023
+Linux/5.15.133.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.21
+freeMemory=1014429312
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2023.12.13 15:38:31:065[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.5/full-dataset-graph.nq[0m
+[36m[1m2023.12.13 15:38:34:011[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    170252 stmts added in 2.283 secs, rate= 74573, commitLatency=533ms, {failSet=0,goodSet=0}[0m
 
 # Precomputed Atlas distances and similarities
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#distances" $DIR/euclidean-distances.ttl
@@ -488,11 +550,11 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 bl-sice-g7241f3.ads.iu.edu
-Tue Dec 12 19:29:59 EST 2023
+Wed Dec 13 15:38:34 EST 2023
 Linux/5.15.133.1-microsoft-standard-WSL2 amd64
 11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
 Ubuntu 11.0.21
-freeMemory=1014436808
+freeMemory=1015456440
 buildVersion=2.1.4
 gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
 
@@ -528,11 +590,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2023.12.12 19:30:00:381[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2023.12.13 15:38:35:230[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.5/euclidean-distances.ttl[0m
-[36m[1m2023.12.12 19:30:18:511[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    3508600 stmts added in 17.039 secs, rate= 205915, commitLatency=1019ms, {failSet=0,go
-    odSet=0}[0m
+[36m[1m2023.12.13 15:38:55:901[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    3508600 stmts added in 19.191 secs, rate= 182825, commitLatency=1391ms, {failSet=0,goodSet=0}[0m
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#similarities" $DIR/atlas-cell-summary-similarities.ttl
 log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
 log4j:WARN Please initialize the log4j system properly.
@@ -552,7 +613,86 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 bl-sice-g7241f3.ads.iu.edu
-Tue Dec 12 19:30:18 EST 2023
+Wed Dec 13 15:38:56 EST 2023
+Linux/5.15.133.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.21
+freeMemory=1014445472
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2023.12.13 15:38:57:057[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.5/atlas-cell-summary-similarities.ttl[0m
+[36m[1m2023.12.13 15:43:36:052[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    47431580 stmts added in 276.889 secs, rate= 171301, commitLatency=1996ms, {failSet=0,goodSet=0}[0m
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  # Atlas LQ
+  run_jsonld $DIR/atlas-lq-enriched-dataset-graph.jsonld $HRA_POP_LQ
+  run_jsonld $DIR/atlas-lq-as-cell-summaries.jsonld $HRA_POP_LQ
+
+  # Test Data LQ
+  run_jsonld $DIR/test-atlas-lq-enriched-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
+
+  # Precomputed Atlas LQ distances and similarities
+  blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#distances" $DIR/euclidean-distances.ttl
+  blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#similarities" $DIR/atlas-lq-cell-summary-similarities.ttl
+fi
+
+# Import CCF.OWL
+curl -s $CCF -H "Accept: application/rdf+xml" > $DIR/ccf.owl
+blazegraph-runner load --journal=$JNL "--graph=${CCF}" $DIR/ccf.owl
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Wed Dec 13 15:43:38 EST 2023
 Linux/5.15.133.1-microsoft-standard-WSL2 amd64
 11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
 Ubuntu 11.0.21
@@ -592,96 +732,77 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2023.12.12 19:30:19:430[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
-    Loading ./raw-data/v0.5/atlas-cell-summary-similarities.ttl[0m
-[36m[1m2023.12.12 19:34:31:354[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    47431580 stmts added in 250.772 secs, rate= 189142, commitLatency=1088ms, {failSet=0,
-    goodSet=0}[0m
-
-if [ "$COMPUTE_LQ" == "true" ]; then
-  # Atlas LQ
-  run_jsonld $DIR/atlas-lq-enriched-dataset-graph.jsonld $HRA_POP_LQ
-  run_jsonld $DIR/atlas-lq-as-cell-summaries.jsonld $HRA_POP_LQ
-
-  # Test Data LQ
-  run_jsonld $DIR/test-atlas-lq-enriched-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
-
-  # Precomputed Atlas LQ distances and similarities
-  blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#distances" $DIR/euclidean-distances.ttl
-  blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#similarities" $DIR/atlas-lq-cell-summary-similarities.ttl
-fi
-
-# Import CCF.OWL
-curl -s $CCF -H "Accept: application/rdf+xml" > $DIR/ccf.owl
-blazegraph-runner load --journal=$JNL "--graph=${CCF}" $DIR/ccf.owl
-log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
-Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
-  and / or 
-Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
-
-BlazeGraph(TM) Graph Engine
-
-                   Flexible
-                   Reliable
-                  Affordable
-      Web-Scale Computing for the Enterprise
-
-Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
-
-bl-sice-g7241f3.ads.iu.edu
-Tue Dec 12 19:34:33 EST 2023
-Linux/5.15.133.1-microsoft-standard-WSL2 amd64
-11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
-Ubuntu 11.0.21
-freeMemory=1014436824
-buildVersion=2.1.4
-gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
-
-Dependency         License                                                                 
-ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
-bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
-blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
-colt               http://acs.lbl.gov/software/colt/license.html                           
-commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
-commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
-commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
-commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
-dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
-fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
-flot               http://www.opensource.org/licenses/mit-license.php                      
-high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
-httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
-httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
-httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
-httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
-jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
-jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
-jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
-jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
-log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
-lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
-nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
-rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
-river              http://www.apache.org/licenses/LICENSE-2.0.html                         
-semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
-servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
-sesame             http://www.openrdf.org/download.jsp                                     
-slf4j              http://www.slf4j.org/license.html                                       
-zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
-
-[36m[1m2023.12.12 19:34:34:424[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2023.12.13 15:43:39:434[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.5/ccf.owl[0m
-[36m[1m2023.12.12 19:34:40:968[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    558585 stmts added in 5.84 secs, rate= 95648, commitLatency=627ms, {failSet=0,goodSet
-    =0}[0m
+[36m[1m2023.12.13 15:43:46:587[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    558585 stmts added in 6.291 secs, rate= 88791, commitLatency=776ms, {failSet=0,goodSet=0}[0m
 
-real	6m47.856s
-user	33m47.909s
-sys	0m51.834s
+real	8m3.838s
+user	38m20.133s
+sys	1m17.877s
 
 >> Running scripts/75-run-reports.sh...
 Creating report: application-a1
 Creating report: application-a2p1
+Creating report: application-a2p2
+Creating report: application-a2p3
+Creating report: as-cnt-per-organ
+Creating report: as-cnt
+Creating report: as-datasets-modality
+Creating report: consortium-breakdown
+Creating report: counts-paper
+Creating report: figure-as-as-sim
+Creating report: figure-f4
+Creating report: provider-breakdown
+Creating report: rui-location-stats
+Creating report: rui-registered-h5ad-datasets
+Creating report: table-s1
+Creating report: table-s2
+Creating report: table-s3
+Creating report: table-s4
+Creating report: table-s5
+Creating report: test
+Creating report: unmapped-cell-ids
+Creating report: validation-v1
+Creating report: validation-v2p1
+Creating report: validation-v2p2-extra1
+Creating report: validation-v2p2-extra2
+Creating report: validation-v2p2-extra3
+Creating report: validation-v2p2
+Creating report: validation-v2p3
+Creating report: validation-v3.edges
+Creating report: validation-v3.nodes
+Creating report: validation-v4
+Creating report: validation-v5
+
+real	24m2.821s
+user	167m17.806s
+sys	14m28.177s
+
+>> Running scripts/80-publish-results.sh...
+
+DIR=$RAW_DIR/$VERSION
+OUT=$OUTPUT_DIR/$VERSION
+
+mkdir -p $OUT
+
+cp $DIR/atlas-enriched-dataset-graph.jsonld $OUT
+cp $DIR/atlas-as-cell-summaries.jsonld $OUT
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  cp $DIR/atlas-lq-enriched-dataset-graph.jsonld $OUT
+  cp $DIR/atlas-lq-as-cell-summaries.jsonld $OUT
+fi
+
+cp $DIR/non-atlas-dataset-graph.csv $OUT
+
+cp -r $DIR/reports $OUT
+
+echo `date` > $OUT/CREATION_DATE
+
+real	0m0.224s
+user	0m0.012s
+sys	0m0.196s
+
+
+Run finished on Wed Dec 13 04:07:49 PM EST 2023
