@@ -62,11 +62,15 @@ WHERE {
 
   GRAPH hra-pop:similarities {
     {
-      [] ccf:cell_source_a ?dataset ;
+      [] ccf:modality ?modality ;
+          ccf:cell_source_b_tool ?tool ;
+          ccf:cell_source_a ?dataset ;
           ccf:cell_source_b ?rui ;
           ccf:similarity ?similarity1 .
     } UNION {
-      [] ccf:cell_source_a ?rui ;
+      [] ccf:modality ?modality ;
+          ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_a ?rui ;
           ccf:cell_source_b ?dataset ;
           ccf:similarity ?similarity1 .
     }

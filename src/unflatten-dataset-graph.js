@@ -60,6 +60,9 @@ class DatasetGraph {
   }
 
   addFlatDataset(flat) {
+    if (!flat.donor_id) {
+      flat.donor_id = flat.block_id || flat.dataset_id;
+    }
     const donor = this.getObject(flat, this.donors, 'donor_', 'Donor', ['samples'], undefined, this.extraDonorProps);
     const block = this.getObject(flat, this.blocks, 'block_', 'Sample', ['datasets', 'sections'], 'Tissue Block');
     const section = this.getObject(flat, this.sections, 'section_', 'Sample', ['datasets'], 'Tissue Section');

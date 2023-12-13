@@ -15,6 +15,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT
 	?organId
   ?organ
+  ?modality
   ?as1_label
   ?as2_label
   (AVG(?similarity) as ?cosine_sim)
@@ -49,7 +50,8 @@ WHERE {
   }
 
   {
-    [] ccf:cell_source_a ?as1 ;
+    [] ccf:modality ?modality ;
+      ccf:cell_source_a ?as1 ;
       ccf:cell_source_b ?as2 ;
       ccf:similarity ?similarity .
   }
@@ -97,5 +99,5 @@ WHERE {
   ?organIri rdfs:label ?organ .
   BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
 }
-GROUP BY ?organId ?organ ?as1_label ?as2_label
+GROUP BY ?organId ?organ ?modality ?as1_label ?as2_label
 ORDER BY ?organ DESC(?cosine_sim)

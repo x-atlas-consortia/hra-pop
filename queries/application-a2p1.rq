@@ -13,51 +13,41 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 
-SELECT ?dataset (COALESCE(?reported_organ, 'Unknown') as ?reported_organ) ?tool ?modality ?as ?similarity
+SELECT ?dataset ?reported_organ ?tool ?modality ?as ?similarity
 WHERE {
-  GRAPH hra-pop:test-data {
-    ?dataset ccf:has_cell_summary [
-      ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-    ] .
-
-    OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
-  }
-
-  GRAPH HRApop: {
-    ?as ccf:has_cell_summary [
-      ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-    ] .
+  GRAPH hra-pop:similarities {
+    {
+      [] ccf:modality ?modality ;
+          ccf:cell_source_b_tool ?tool ;
+          ccf:cell_source_a ?dataset ;
+          ccf:cell_source_b ?as ;
+          ccf:similarity ?similarity .
+    }
+    UNION 
+    {
+      [] ccf:modality ?modality ;
+          ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_a ?as ;
+          ccf:cell_source_b ?dataset ;
+          ccf:similarity ?similarity .
+    }
 
     FILTER (
       STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
       STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
     )
+
+    FILTER EXISTS  {
+      GRAPH hra-pop:test-data {
+        ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [];
+      }
+    }
   }
 
-  GRAPH hra-pop:similarities {
-    {
-      [] ccf:cell_source_a ?dataset ;
-          ccf:cell_source_b ?as ;
-          ccf:similarity ?similarity .
-
-      FILTER (
-        STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
-        STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
-      )
-    }
-    UNION 
-    {
-      [] ccf:cell_source_a ?as ;
-          ccf:cell_source_b ?dataset ;
-          ccf:similarity ?similarity .
-
-      FILTER (
-        STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
-        STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
-      )
+  OPTIONAL {
+    GRAPH hra-pop:test-data {
+      ?dataset ccf:organ_id ?reported_organ .
     }
   }
 }
-ORDER BY ?dataset

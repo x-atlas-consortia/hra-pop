@@ -15,7 +15,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT DISTINCT
   (?dataset as ?id)
   (?organ as ?label)
-  ?dataset ?tool ?modality ?entity ?organ ?organId
+  ?dataset ?modality ?entity ?organ ?organId
 WHERE {
   GRAPH HRApop: {
     ?entity a ccf:SpatialEntity .
@@ -30,7 +30,6 @@ WHERE {
     }
 
     ?dataset ccf:has_cell_summary [
-      ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
     ] .
   }

@@ -15,36 +15,34 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT ?dataset ?reported_organ ?tool ?modality (?rui as ?corridor) ?similarity 
 WHERE {
-  GRAPH hra-pop:test-data {
-    ?dataset ccf:has_cell_summary [
-      ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-    ] .
-    OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
-  }
-
-  GRAPH HRApop: {
-    ?rui ccf:has_cell_summary [
-      ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-    ] .
-
-    FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/'))
-  }
-
   GRAPH hra-pop:similarities {
     {
-      [] ccf:cell_source_a ?dataset ;
+      [] ccf:modality ?modality ;
+         ccf:cell_source_b_tool ?tool ;
+         ccf:cell_source_a ?dataset ;
          ccf:cell_source_b ?rui ;
          ccf:similarity ?similarity .
-
-      FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/') && ?similarity > 0.1)
     } UNION {
-      [] ccf:cell_source_a ?rui ;
+      [] ccf:modality ?modality ;
+         ccf:cell_source_a_tool ?tool ;
+         ccf:cell_source_a ?rui ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .
+    }
 
-      FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/') && ?similarity > 0.1)
+    FILTER (STRSTARTS(STR(?rui), 'http://purl.org/ccf/1.5/'))
+
+    FILTER EXISTS  {
+      GRAPH hra-pop:test-data {
+        ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [];
+      }
+    }
+  }
+
+  OPTIONAL {
+    GRAPH hra-pop:test-data {
+      ?dataset ccf:organ_id ?reported_organ .
     }
   }
 }

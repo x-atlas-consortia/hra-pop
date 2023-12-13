@@ -44,7 +44,9 @@ WHERE {
 
   GRAPH hra-pop:similarities {
     {
-      [] ccf:cell_source_a ?dataset ;
+      [] ccf:modality ?modality ;
+         ccf:cell_source_b_tool ?tool ;
+         ccf:cell_source_a ?dataset ;
          ccf:cell_source_b ?as ;
          ccf:similarity ?similarity .
 
@@ -53,7 +55,9 @@ WHERE {
         STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
       )
     } UNION {
-      [] ccf:cell_source_a ?as ;
+      [] ccf:modality ?modality ;
+         ccf:cell_source_a_tool ?tool ;
+         ccf:cell_source_a ?as ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .
       
