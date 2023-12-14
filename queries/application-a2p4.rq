@@ -1,0 +1,55 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT ?dataset ?reported_organ ?tool ?modality ?atlas_dataset ?atlas_dataset_tool ?similarity 
+WHERE {
+  GRAPH hra-pop:similarities {
+    {
+      [] ccf:modality ?modality ;
+         ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_b_tool ?atlas_dataset_tool ;
+         ccf:cell_source_a ?dataset ;
+         ccf:cell_source_b ?atlas_dataset ;
+         ccf:similarity ?similarity .
+    } UNION {
+      [] ccf:modality ?modality ;
+         ccf:cell_source_a_tool ?atlas_dataset_tool ;
+          ccf:cell_source_b_tool ?tool ;
+         ccf:cell_source_a ?atlas_dataset ;
+         ccf:cell_source_b ?dataset ;
+         ccf:similarity ?similarity .
+    }
+
+    FILTER EXISTS  {
+      GRAPH HRApop: {
+        ?atlas_dataset a ccf:Dataset ;
+          ccf:has_cell_summary [];
+      }
+    }
+    
+    FILTER EXISTS  {
+      GRAPH hra-pop:test-data {
+        ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [];
+      }
+    }
+  }
+
+  OPTIONAL {
+    GRAPH hra-pop:test-data {
+      ?dataset ccf:organ_id ?reported_organ .
+    }
+  }
+}
+#ORDER BY ?dataset DESC(?similarity)
