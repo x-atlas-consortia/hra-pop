@@ -33,7 +33,10 @@ async function runQueries(graphName, dirName) {
       .replaceAll('<https://purl.humanatlas.io/graph/hra-pop', `<https://purl.humanatlas.io/graph/${graphName}`);
     writeFileSync(`${reportCsv}.rq`, query);
   
-    sh.exec(`blazegraph-runner --journal=${JOURNAL} select --outformat=json ${reportCsv}.rq ${reportCsv}.json`, {silent: true})
+    const result = sh.exec(`blazegraph-runner --journal=${JOURNAL} select --outformat=json ${reportCsv}.rq ${reportCsv}.json`, {silent: true});
+    if (result.code) {
+      console.log('[ERROR]', result.stderr);
+    }
     sh.exec(`./src/sparql-json2csv.js ${reportCsv}.json ${reportCsv}`);
     sh.exec(`rm -f ${reportCsv}.json  ${reportCsv}.rq`);
   }

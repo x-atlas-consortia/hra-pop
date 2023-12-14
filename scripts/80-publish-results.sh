@@ -20,4 +20,9 @@ cp $DIR/non-atlas-dataset-graph.csv $OUT
 
 cp -r $DIR/reports $OUT
 
+for file in `find $OUT -name "*.*" -size +95M`; do
+  zip -j ${file}.zip $file
+  rm $file
+done
+
 echo `date` > $OUT/CREATION_DATE
