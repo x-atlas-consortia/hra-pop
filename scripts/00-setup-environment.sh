@@ -3,6 +3,10 @@ source constants.sh
 shopt -s extglob
 set -e
 
+if [ ! -e "node_modules" ]; then
+  npm ci
+fi
+
 # Install Blazegraph Runner
 ENV="./node_modules/.bin"
 if [ ! -e "$ENV/opt/blazegraph-runner" ]; then
