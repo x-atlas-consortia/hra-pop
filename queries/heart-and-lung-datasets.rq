@@ -13,7 +13,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 
-SELECT DISTINCT ?dataset ?organ ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?study_paper ?doi ?lead_author
+SELECT DISTINCT ?dataset ?organ ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?study_paper ?doi ?lead_author
 FROM hra-pop:full-dataset
 FROM CCF:
 WHERE {
@@ -68,6 +68,40 @@ WHERE {
   UNION
   {
     ?dataset ccf:organ_id ?reportedOrganIri .
+  }
+
+  OPTIONAL {
+    SELECT ?dataset (SAMPLE(?cell_count_by_tool) as ?cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?tool (COUNT(?count) as ?cell_count_by_tool)
+        WHERE {
+          {
+            GRAPH HRApop: {
+              ?dataset ccf:has_cell_summary [
+                ccf:cell_annotation_method ?tool ;
+                ccf:has_cell_summary_row [
+                  ccf:cell_count ?count ;
+                ]
+              ];
+            }
+          }
+          UNION
+          {
+            GRAPH hra-pop:test-data {
+              ?dataset ccf:has_cell_summary [
+                ccf:cell_annotation_method ?tool ;
+                ccf:has_cell_summary_row [
+                  ccf:cell_count ?count ;
+                ]
+              ];
+            }
+          }
+        }
+        GROUP BY ?dataset ?tool
+      }
+    }
+    GROUP BY ?dataset
   }
 
   BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
