@@ -21,6 +21,7 @@ WHERE {
     (<http://purl.obolibrary.org/obo/UBERON_0002182> "Lung") # Main Bronchus
     (<http://purl.obolibrary.org/obo/UBERON_0002048> "Lung") # Lung
     (<http://purl.obolibrary.org/obo/UBERON_0001004> "Lung") # Respiratory System
+    (<http://purl.obolibrary.org/obo/UBERON_0002113> "Kidney" ) # Kidney
     (<http://purl.obolibrary.org/obo/UBERON_0004538> "Kidney") # Left Kidney
     (<http://purl.obolibrary.org/obo/UBERON_0004539> "Kidney") # Right Kidney
   }
