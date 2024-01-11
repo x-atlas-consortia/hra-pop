@@ -36,6 +36,7 @@ run_jsonld $DIR/full-dataset-graph.jsonld "${HRA_POP}#full-dataset"
 # Precomputed Atlas distances and similarities
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#distances" $DIR/euclidean-distances.ttl
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#similarities" $DIR/atlas-cell-summary-similarities.ttl
+blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#as-as-sims" $DIR/atlas-as-as-cell-summary-similarities.ttl
 
 if [ "$COMPUTE_LQ" == "true" ]; then
   # Atlas LQ
@@ -48,6 +49,7 @@ if [ "$COMPUTE_LQ" == "true" ]; then
   # Precomputed Atlas LQ distances and similarities
   blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#distances" $DIR/euclidean-distances.ttl
   blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#similarities" $DIR/atlas-lq-cell-summary-similarities.ttl
+  blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#as-as-sims" $DIR/atlas-lq-as-as-cell-summary-similarities.ttl
 fi
 
 # Import CCF.OWL

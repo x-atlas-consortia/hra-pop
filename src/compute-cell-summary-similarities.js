@@ -3,8 +3,8 @@ import { getAllCellSummarySimilarities } from './utils/cell-summary-similarity.j
 
 const CELL_SUMMARIES = process.argv.slice(2, -1);
 const OUTPUT = process.argv.slice(-1)[0];
-const MIN_SIMILARITY = 0.1;
-
+const MIN_SIMILARITY = process.env.hasOwnProperty('MIN_SIMILARITY') ? parseFloat(process.env['MIN_SIMILARITY']) : 0.1;
+console.log(MIN_SIMILARITY)
 const summaryLookup = {};
 for (const path of CELL_SUMMARIES) {
   const summaries = JSON.parse(readFileSync(path))['@graph'];

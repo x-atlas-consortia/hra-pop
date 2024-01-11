@@ -12,7 +12,7 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT ?organId ?organ ?modality ?as1_label ?as2_label ?cosine_sim ?as1_dataset_count ?as2_dataset_count
+SELECT DISTINCT ?organId ?organ ?modality ?as1_label ?as2_label ?cosine_sim ?as1_dataset_count ?as2_dataset_count
 
 WITH {
   SELECT ?refOrganAs (COUNT(DISTINCT(?dataset)) as ?as_dataset_count)
@@ -45,7 +45,7 @@ WITH {
       [] ccf:representation_of ?as2 .
     }
 
-    GRAPH hra-pop:similarities {
+    GRAPH hra-pop:as-as-sims {
       [] ccf:modality ?modality ;
         ccf:cell_source_a ?as1 ;
         ccf:cell_source_b ?as2 ;
