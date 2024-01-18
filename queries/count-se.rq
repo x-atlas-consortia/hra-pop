@@ -1,0 +1,10 @@
+# Count the unique number of Spatial Entities
+
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT (count(DISTINCT ?spatial_entity) as ?se_ct)
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+    ?spatial_entity a ccf:SpatialEntity.
+}

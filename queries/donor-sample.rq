@@ -1,0 +1,10 @@
+# Query Samples and associated donors
+
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT (COUNT(DISTINCT ?sample) AS ?sample_ct) (COUNT(DISTINCT ?donor) AS ?donor_ct)
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+  ?sample ccf:comes_from ?donor
+}

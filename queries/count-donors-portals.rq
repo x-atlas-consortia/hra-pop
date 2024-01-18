@@ -1,0 +1,11 @@
+# Count the unique number of Donors and portals
+
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT (COUNT(DISTINCT ?donor) AS ?donor_ct) (COUNT(DISTINCT ?consortium_name) AS ?consortium_name_ct)
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+    ?donor a ccf:Donor.
+    ?donor ccf:consortium_name ?consortium_name
+}

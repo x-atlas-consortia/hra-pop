@@ -1,0 +1,16 @@
+# Query the information of Donors 
+
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT DISTINCT ?d_url ?d_tissue_provider_name ?d_age ?d_sex ?d_race
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+  ?d_url a ccf:Donor.
+  OPTIONAL {
+      ?d_url ccf:tissue_provider_name ?d_tissue_provider_name .
+      ?d_url ccf:age ?d_age .
+      ?d_url ccf:sex ?d_sex .
+      ?d_url ccf:race ?d_race .
+    }
+}

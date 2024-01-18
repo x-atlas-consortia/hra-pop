@@ -1,0 +1,10 @@
+# Count the unique number of datasets 
+
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT (COUNT(DISTINCT ?dataset) AS ?dataset_ct)
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+    ?dataset a ccf:Dataset.
+}

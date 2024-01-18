@@ -1,0 +1,11 @@
+# Query Samples and associated datasets
+
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT (COUNT(DISTINCT ?sample) AS ?sample_ct) (COUNT(DISTINCT ?dataset) AS ?dataset_ct)
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+  ?sample a ccf:Sample.
+  ?sample ccf:generates_dataset ?dataset
+}

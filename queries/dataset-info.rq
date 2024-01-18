@@ -1,0 +1,20 @@
+# Query the information of Datasets
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?dataset ?technology ?description ?annotation_method (count(DISTINCT ?cell_id) as ?ct_cnt)
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+  ?dataset a ccf:Dataset.
+  OPTIONAL {
+        ?dataset ccf:technology ?technology.
+        ?dataset rdfs:comment ?description.
+        ?dataset ccf:has_cell_summary ?cell_summary.
+        ?cell_summary ccf:cell_annotation_method ?annotation_method.
+        ?cell_summary ccf:has_cell_summary_row ?cell_summary_row .
+        ?cell_summary_row ccf:cell_id ?cell_id .
+    }
+}
+GROUP BY ?dataset ?technology ?description ?annotation_method
