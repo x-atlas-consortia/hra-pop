@@ -1,0 +1,12 @@
+# Count the unique number of SpatialEntity with slice_count
+
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT (count(DISTINCT ?spatial_entity) as ?se_ct)
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+    ?spatial_entity a ccf:SpatialEntity.
+    ?spatial_entity ccf:slice_count ?slice_count.
+    FILTER (?slice_count > 0)
+}

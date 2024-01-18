@@ -1,0 +1,10 @@
+# Count the unique number of Spatial Placement
+
+PREFIX ccf: <http://purl.org/ccf/>
+
+SELECT (COUNT(DISTINCT ?spatial_placement) AS ?sp_ct)
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+    ?spatial_placement a ccf:SpatialPlacement.
+}
