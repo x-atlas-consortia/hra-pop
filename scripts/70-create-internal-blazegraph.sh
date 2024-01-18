@@ -9,6 +9,7 @@ rm -f $JNL
 
 HRA_POP=https://purl.humanatlas.io/graph/hra-pop
 HRA_POP_LQ=https://purl.humanatlas.io/graph/hra-pop-lq
+HRA_POP_FULL=https://purl.humanatlas.io/ds-graph/hra-pop-full
 CCF=https://purl.humanatlas.io/graph/ccf
 
 run_ndjsonld() {
@@ -31,7 +32,7 @@ run_jsonld $DIR/atlas-as-cell-summaries.jsonld $HRA_POP
 run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
 
 # Full Dataset
-run_jsonld $DIR/full-dataset-graph.jsonld "${HRA_POP}#full-dataset"
+run_jsonld $DIR/full-dataset-graph.jsonld "${HRA_POP_FULL}"
 
 # Precomputed Atlas distances and similarities
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#distances" $DIR/euclidean-distances.ttl
