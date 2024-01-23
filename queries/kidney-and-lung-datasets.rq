@@ -7,6 +7,7 @@ PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
@@ -14,7 +15,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 
 SELECT DISTINCT ?dataset ?organ ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?study_paper ?doi ?lead_author
-FROM hra-pop:full-dataset
+FROM HRApopFull:
 FROM CCF:
 WHERE {
   VALUES (?organIri ?organ) {

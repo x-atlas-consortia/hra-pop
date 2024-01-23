@@ -1,11 +1,11 @@
 organId,organ,sex,modality,tool,total_organ_as_count,organ_as_count_with_collisions,rui_location_count,dataset_count,non_atlas_dataset_count
 FMA:57987,Set of lactiferous glands in right breast,Female,sc_bulk,popv,9,1,1,3,4
+UBERON:0000948,heart,Female,sc_bulk,popv,17,6,11,48,96
 UBERON:0000948,heart,Female,sc_bulk,azimuth,17,6,11,48,96
 UBERON:0000948,heart,Female,sc_bulk,celltypist,17,6,11,48,96
-UBERON:0000948,heart,Female,sc_bulk,popv,17,6,11,48,96
-UBERON:0000948,heart,Male,sc_bulk,azimuth,17,5,18,67,155
-UBERON:0000948,heart,Male,sc_bulk,celltypist,17,5,18,67,155
 UBERON:0000948,heart,Male,sc_bulk,popv,17,5,18,67,155
+UBERON:0000948,heart,Male,sc_bulk,celltypist,17,5,18,67,155
+UBERON:0000948,heart,Male,sc_bulk,azimuth,17,5,18,67,155
 UBERON:0000059,large intestine,Female,sc_bulk,popv,11,5,10,14,186
 UBERON:0000059,large intestine,Male,sc_bulk,popv,11,5,22,27,279
 UBERON:0004538,left kidney,Female,sc_bulk,azimuth,9,5,16,61,260
@@ -18,9 +18,9 @@ UBERON:0000079,male reproductive system,Male,sc_bulk,popv,14,2,1,4,8
 UBERON:0001004,respiratory system,Female,sc_bulk,azimuth,62,11,19,42,176
 UBERON:0001004,respiratory system,Female,sc_bulk,celltypist,62,11,19,42,176
 UBERON:0001004,respiratory system,Female,sc_bulk,popv,62,11,19,42,176
+UBERON:0001004,respiratory system,Male,sc_bulk,popv,59,15,27,86,309
 UBERON:0001004,respiratory system,Male,sc_bulk,azimuth,59,15,27,86,309
 UBERON:0001004,respiratory system,Male,sc_bulk,celltypist,59,15,27,86,309
-UBERON:0001004,respiratory system,Male,sc_bulk,popv,59,15,27,86,309
 UBERON:0004539,right kidney,Female,sc_bulk,azimuth,9,4,11,31,132
 UBERON:0004539,right kidney,Male,sc_bulk,azimuth,9,3,10,87,258
 UBERON:0002097,skin of body,Male,sc_bulk,celltypist,1,1,1,3,50

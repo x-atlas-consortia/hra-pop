@@ -7,6 +7,7 @@ PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
@@ -33,7 +34,7 @@ WHERE {
       {
         SELECT ?dataset ?sex ?rui_location ?ruiOrganIri
         WHERE {
-          GRAPH hra-pop:full-dataset {
+          GRAPH HRApopFull: {
             {
               ?sample ccf:comes_from ?donor .
               ?sample ccf:has_registration_location ?rui_location .
@@ -59,7 +60,7 @@ WHERE {
       }
       UNION
       {
-        GRAPH hra-pop:full-dataset {
+        GRAPH HRApopFull: {
           {
             ?sample ccf:comes_from ?donor .
             ?sample ccf:has_registration_location ?rui_location .

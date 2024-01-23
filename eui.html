@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HRA Exploration User Interface</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/hubmapconsortium/ccf-ui@staging/styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/hubmapconsortium/ccf-ui@staging/wc.js" async></script>
+  <script src="sw-loader.js"></script>
+</head>
+<body>
+  <ccf-eui use-remote-api="false" remote-api-endpoint="/api/v1"
+    base-href="https://cdn.jsdelivr.net/gh/hubmapconsortium/ccf-ui@staging/"
+    data-sources='["https://cdn.humanatlas.io/digital-objects/ds-graph/hra-pop-full/v0.5.1/assets/full-dataset-graph.jsonld"]'
+    home-url="." hubmap-data-url="" login-disabled="true" logo-tooltip=""></ccf-eui>
+</body>
+</html>

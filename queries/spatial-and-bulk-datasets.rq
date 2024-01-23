@@ -13,18 +13,41 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-
-SELECT DISTINCT ?dataset ?organ ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?study_paper ?doi ?lead_author
+SELECT DISTINCT ?dataset ?modality ?sex ?organ ?side ?organ_id ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?study_paper ?doi ?lead_author
 FROM HRApopFull:
 FROM CCF:
 WHERE {
-  VALUES (?organIri ?organ) {
-    (<http://purl.obolibrary.org/obo/UBERON_0000948> "Heart") # Heart
-    (<http://purl.obolibrary.org/obo/UBERON_0002182> "Lung") # Main Bronchus
-    (<http://purl.obolibrary.org/obo/UBERON_0002048> "Lung") # Lung
-    (<http://purl.obolibrary.org/obo/UBERON_0001004> "Lung") # Respiratory System
+  VALUES (?organLabel ?organ ?side) {
+    ("blood" "blood" "")
+    ("blood vasculature" "blood vasculature" "")
+    ("bone marrow" "bone marrow" "")
+    ("brain" "brain" "")
+    ("eye" "eye" "")
+    ("heart" "heart" "")
+    ("kidney" "kidney" "")
+    ("large intestine" "large intestine" "")
+    ("left kidney" "kidney" "left")
+    ("left ureter" "ureter" "left")
+    ("liver" "liver" "")
+    ("lung" "lung" "")
+    ("lymph node" "lymph node" "")
+    ("male reproductive system" "male reproductive system" "")
+    ("mammary gland" "mammary gland" "")
+    ("mesenteric lymph node" "lymph node" "")
+    ("pancreas" "pancreas" "")
+    ("prostate gland" "prostate gland" "")
+    ("respiratory system" "lung" "")
+    ("right kidney" "kidney" "right")
+    ("right mammary gland" "mammary gland" "right")
+    ("skin of body" "skin" "")
+    ("skin" "skin" "")
+    ("small intestine" "small intestine" "")
+    ("spleen" "spleen" "")
+    ("thymus" "thymus" "")
+    ("trachea" "trachea" "")
+    ("urinary bladder" "urinary bladder" "")
+    ("uterus" "uterus" "")
   }
-
   [] ccf:generates_dataset ?dataset .
 
   OPTIONAL { ?dataset ccf:publication ?doi . }
@@ -40,12 +63,11 @@ WHERE {
       ?block ccf:subdivided_into_sections ?sample .
       ?sample ccf:generates_dataset ?dataset .
     }
-
     ?donor ccf:consortium_name ?portal .
   }
 
   {
-    SELECT ?dataset ?rui_location ?ruiOrganIri
+    SELECT ?dataset ?rui_location ?ruiOrganIri ?ruiOrganLabel ?ruiOrganSex ?ruiOrganSide
     WHERE {
       {
         ?sample ccf:comes_from ?donor .
@@ -64,22 +86,36 @@ WHERE {
 
       ?ref_organ ccf:representation_of ?refOrganIri .
       ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
+
+      ?refOrganIri ccf:ccf_pref_label ?ruiOrganLabel .
+      ?ref_organ ccf:organ_owner_sex ?ruiOrganSex .
+      OPTIONAL {
+        ?ref_organ ccf:organ_side ?ruiOrganSide .
+      }
     }
   }
   UNION
   {
-    ?dataset ccf:organ_id ?reportedOrganIri .
+    ?dataset ccf:organ_id ?_reportedOrganIri .
+    BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
+    OPTIONAL {
+      ?reportedOrganIri rdfs:label ?reportedOrganLabel .
+    }
+    OPTIONAL {
+      ?donor ccf:sex ?reportedSex .
+    }
   }
 
   OPTIONAL {
-    SELECT ?dataset (SAMPLE(?cell_count_by_tool) as ?cell_count)
+    SELECT ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
     WHERE {
       {
-        SELECT ?dataset ?tool (COUNT(?count) as ?cell_count_by_tool)
+        SELECT ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
         WHERE {
           {
             GRAPH HRApop: {
               ?dataset ccf:has_cell_summary [
+                ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
                   ccf:cell_count ?count ;
@@ -91,6 +127,7 @@ WHERE {
           {
             GRAPH hra-pop:test-data {
               ?dataset ccf:has_cell_summary [
+                ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
                   ccf:cell_count ?count ;
@@ -99,14 +136,20 @@ WHERE {
             }
           }
         }
-        GROUP BY ?dataset ?tool
+        GROUP BY ?dataset ?modality ?tool
       }
     }
-    GROUP BY ?dataset
+    GROUP BY ?dataset ?modality
   }
 
-  BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
-    IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
+  BIND (IF(BOUND(?ruiOrganIri), ?ruiOrganIri,
+    IF(BOUND(?reportedOrganIri), ?reportedOrganIri, "N/A")) as ?organ_id)
+
+  BIND (STR(IF(BOUND(?ruiOrganLabel), ?ruiOrganLabel,
+    IF(BOUND(?reportedOrganLabel), ?reportedOrganLabel, ?reportedOrganIri))) as ?organLabel)
+
+  BIND (LCASE(IF(BOUND(?ruiOrganSex), ?ruiOrganSex,
+    IF(BOUND(?reportedSex), ?reportedSex, "unknown"))) as ?sex)
 
   BIND (BOUND(?portal) && (?portal = 'HuBMAP' || ?portal = 'SenNet' || ?portal = 'GTEx') as ?in_high_quality_portal)
 
@@ -131,6 +174,6 @@ WHERE {
   } as ?has_cell_summary)
   BIND (BOUND(?doi) as ?has_publication)
 
-  FILTER(?organ_id = ?organIri)
+  FILTER(?has_cell_summary)
 }
-ORDER BY ?organ ?portal ?dataset
+ORDER BY ?dataset

@@ -1,6 +1,7 @@
-consortium,dataset_count,cell_count
-GTEx,16,267059
-HCA,82,1458402
-HuBMAP,598,22588476
-NHLBI/LungMap,9,139500
-SenNet,2,43735
+consortium,dataset_count,cell_count,modality
+GTEx,16,267059,sc_bulk
+HCA,82,1458402,sc_bulk
+HuBMAP,524,19971882,sc_bulk
+HuBMAP,74,2616594,spatial
+NHLBI/LungMap,9,139500,sc_bulk
+SenNet,2,43735,sc_bulk
