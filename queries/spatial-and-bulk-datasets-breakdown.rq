@@ -13,7 +13,7 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT ?organ ?side ?sex ?modality (COUNT(DISTINCT(?dataset)) as ?dataset_cnt) (SUM(?cell_count) as ?cell_cnt)
+SELECT ?organ ?side ?sex ?modality ?status (COUNT(DISTINCT(?dataset)) as ?dataset_cnt) (SUM(?cell_count) as ?cell_cnt)
 FROM HRApopFull:
 FROM CCF:
 WHERE {
@@ -174,7 +174,8 @@ WHERE {
   } as ?has_cell_summary)
   BIND (BOUND(?doi) as ?has_publication)
 
+  BIND(IF(?in_atlas, "Atlas", "Non-Atlas") as ?status)
   FILTER(?has_cell_summary)
 }
-GROUP BY ?organ ?side ?sex ?modality
-ORDER BY ?organ ?side ?sex ?modality
+GROUP BY ?organ ?side ?sex ?modality ?status
+ORDER BY ?organ ?side ?sex ?modality ?status
