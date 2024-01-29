@@ -1,8 +1,5 @@
 [core]
-    remote = readonly
-['remote "rw"']
+    remote = s3
+['remote "s3"']
     url = s3://cdn-humanatlas-io/dvc/hra-pop
-    version_aware = true
-['remote "readonly"']
-    url = https://cdn.humanatlas.io/dvc/hra-pop
     version_aware = true
