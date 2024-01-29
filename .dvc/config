@@ -5,3 +5,4 @@
     version_aware = true
 ['remote "readonly"']
     url = https://cdn.humanatlas.io/dvc/hra-pop
+    version_aware = true
