@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { globSync } from 'glob';
-import { basename, join } from 'path';
+import { basename, dirname, join } from 'path';
 import sh from 'shelljs';
 
 const JOURNAL = process.argv[2];
@@ -8,16 +8,9 @@ const OUT_DIR = process.argv[3];
 const COMPUTE_LQ = process.argv[4] === 'true';
 const FILTER = process.argv.length === 6 ? process.argv[5] : undefined;
 
-// Ensure reports output directory exists
-sh.mkdir('-p', join(OUT_DIR, 'atlas'));
-
-if (COMPUTE_LQ) {
-  sh.mkdir('-p', join(OUT_DIR, 'atlas-lq'));
-}
-
 async function runQueries(graphName, dirName) {
   // Go through each query in queries, run them, and save out the csv report to ../data/reports/
-  for (const queryFile of globSync('queries/*.rq').sort()) {
+  for (const queryFile of globSync('queries/*/*.rq').sort()) {
     const isLarge = queryFile.endsWith('.lg.rq');
 
     const reportName = basename(queryFile, isLarge ? '.lg.rq' : '.rq');
@@ -25,7 +18,11 @@ async function runQueries(graphName, dirName) {
       continue;
     }
 
-    const reportCsv = join(OUT_DIR, dirName, `${reportName}.csv`);
+    // Ensure output directory exists
+    const reportDir = join(OUT_DIR, dirName, basename(dirname(queryFile)));
+    sh.mkdir('-p', reportDir);
+
+    const reportCsv = join(reportDir, `${reportName}.csv`);
     console.log('Creating report:', reportName);
 
     const query = readFileSync(queryFile)
@@ -42,10 +39,10 @@ async function runQueries(graphName, dirName) {
   }
 }
 
-const runs = [runQueries('hra-pop', 'atlas')];
+const runs = [runQueries('hra-pop', '.')];
 
 if (COMPUTE_LQ) {
-  runs.push(runQueries('hra-pop-lq', 'atlas-lq'))
+  runs.push(runQueries('hra-pop-lq', 'lq'))
 }
 
 await Promise.all(runs);
