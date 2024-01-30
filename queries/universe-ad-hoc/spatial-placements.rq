@@ -1,0 +1,13 @@
+#+ summary: Universe Spatial Placements
+#+ description: Spatial placements considered or used in HRApop
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT DISTINCT ?spatial_placement
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?spatial_placement a ccf:SpatialPlacement .
+}

@@ -1,0 +1,14 @@
+#+ summary: Universe Donor and Portal Counts
+#+ description: Counts the unique number of donors and portal/consortia considered or used in HRApop
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT (COUNT(DISTINCT ?donor) AS ?donor_count) (COUNT(DISTINCT ?consortium_name) AS ?portal_count)
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?donor a ccf:Donor;
+    ccf:consortium_name ?consortium_name .
+}

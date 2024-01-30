@@ -1,10 +1,10 @@
-#+ summary: Count of Anatomical Structures
+#+ summary: Count of Anatomical Structures by Organ
 #+ description: Count of Anatomical Structures that occur in the 3D Reference Organs
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 
-SELECT (COUNT(DISTINCT(?as_id)) as ?as_cnt) ?organ
+SELECT (COUNT(DISTINCT(?as_id)) as ?as_count) ?organ
 FROM CCF:
 WHERE {
   ?as3d
@@ -14,4 +14,4 @@ WHERE {
     BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.[0-9]$", "", "i") as ?organ)
 }
 GROUP BY ?organ 
-ORDER BY DESC(?as_cnt)
+ORDER BY DESC(?as_count)

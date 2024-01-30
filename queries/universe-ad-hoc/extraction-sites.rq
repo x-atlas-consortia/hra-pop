@@ -1,0 +1,13 @@
+#+ summary: Universe Extraction Sites with `slice_count`s Count
+#+ description: extraction sites considered or used in HRApop
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT DISTINCT ?extraction_site
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?extraction_site a ccf:SpatialEntity.
+}

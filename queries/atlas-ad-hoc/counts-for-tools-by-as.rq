@@ -1,5 +1,5 @@
-#+ summary: Table S3
-#+ description: (Bulk) Anatomical Structures in HRA, cell types, and average/sum counts of CTs
+#+ summary: Bulk Tool-Organ-AS Cell Distributions
+#+ description: Organ anatomical structures with associated cell types and average/sum counts of cell types by bulk annotation tool
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -15,7 +15,7 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT ?organ ?as_label ?cell_label
+SELECT ?tool ?organ ?as_label ?cell_label
 	(SAMPLE(?cell_id) as ?cell_id)
 	(AVG(?cell_count) as ?mean_cell_count)
 	(SUM(?cell_count) as ?cell_count)
@@ -53,5 +53,5 @@ WHERE {
 	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
 	FILTER (?modality = 'sc_bulk')
 }
-GROUP BY ?organ ?as_label ?cell_label
-ORDER BY ?organ ?as_label ?cell_label
+GROUP BY ?tool ?organ ?as_label ?cell_label
+ORDER BY ?tool ?organ ?as_label ?cell_label

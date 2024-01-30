@@ -1,0 +1,47 @@
+#+ summary: Sample information
+#+ description: Sample with associated extraction site metadata, anatomical structure, and cell counts in data considered or used in HRApop
+
+## TODO: This query is a little wonky and needs reworked
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT ?sample ?sample_type ?label ?description ?link 
+  ?extraction_site ?x_dimension ?y_dimension ?z_dimension 
+  ?creator ?creator_first_name ?creator_last_name
+  ?as_id (COUNT(DISTINCT ?cell_id) as ?unique_cell_type_count)
+FROM HRApop:
+FROM HRApopFull:
+FROM HRApopTestData:
+WHERE {
+  ?sample a ccf:Sample.
+  ?sample ccf:sample_type ?sample_type.
+  ?sample rdfs:label ?label.
+  ?sample rdfs:comment ?description.
+  ?sample ccf:url ?link.
+  ?sample ccf:has_registration_location ?extraction_site.
+  ?extraction_site ccf:x_dimension ?x_dimension.
+  ?extraction_site ccf:y_dimension ?y_dimension.
+  ?extraction_site ccf:z_dimension ?z_dimension.
+  ?extraction_site dcterms:creator ?creator.
+  ?extraction_site ccf:creator_first_name ?creator_first_name.
+  ?extraction_site ccf:creator_last_name ?creator_last_name.
+
+  OPTIONAL {
+      ?extraction_site ccf:has_collision_summary ?collision_summary.
+      ?collisionsummary ccf:has_collision_item ?collision.
+      ?collision ccf:reference_organ ?reference_organ.
+      ?collision ccf:as_3d_id ?as_3d_id.
+      ?collision ccf:as_id ?as_id.
+      ?collision ccf:as_label ?as_label.
+
+      ?extraction_site ccf:has_cell_summary ?cell_summary .
+      ?cell_summary ccf:has_cell_summary_row ?cell_summary_row .
+      ?cell_summary_row ccf:cell_id ?cell_id .
+    }
+}
+GROUP BY ?sample ?sample_type ?label ?description ?link ?extraction_site ?x_dimension ?y_dimension ?z_dimension ?creator ?creator_first_name ?creator_last_name ?as_id

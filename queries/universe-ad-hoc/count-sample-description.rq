@@ -1,0 +1,15 @@
+#+ summary: Universe Samples with Decription Counts
+#+ description: Counts the unique number of samples with descriptions considered or used in HRApop
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT (COUNT(DISTINCT ?sample) AS ?sample_count) (COUNT(DISTINCT ?description) AS ?description_count)
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?sample a ccf:Sample ;
+    rdfs:comment ?description .
+}

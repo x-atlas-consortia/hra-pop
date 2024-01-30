@@ -1,5 +1,5 @@
-#+ summary: Table S3
-#+ description: (Bulk) Anatomical Structures in HRA, cell types, and average/sum counts of CTs
+#+ summary: Kidney AS Cell Distributions
+#+ description: Kidney anatomical structures with associated cell types and average/sum counts of cell types
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -51,7 +51,7 @@ WHERE {
 		]
 	]
 	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
-	FILTER (?modality = 'sc_bulk')
+	FILTER (?as_label='renal papilla' || ?as_label = 'renal pyramid')
 }
 GROUP BY ?organ ?as_label ?cell_label
 ORDER BY ?organ ?as_label ?cell_label

@@ -1,0 +1,14 @@
+#+ summary: Universe Sample and Dataset Counts
+#+ description: Counts the unique number of samples and associated datasets considered or used in HRApop
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT (COUNT(DISTINCT ?sample) AS ?sample_count) (COUNT(DISTINCT ?dataset) AS ?dataset_count)
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?sample a ccf:Sample ;
+    ccf:generates_dataset ?dataset .
+}

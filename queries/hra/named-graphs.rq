@@ -1,0 +1,10 @@
+#+ summary: Named graphs in the db
+#+ description: All named graphs in the queried SPARQL database
+
+SELECT ?graph (COUNT(*) as ?triples) WHERE {
+  GRAPH ?graph {
+    ?s ?p ?o .
+  }
+}
+GROUP BY ?graph
+ORDER BY ?graph
