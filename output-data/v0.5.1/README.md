@@ -1,13 +1,11 @@
 # HRApop v0.5.1
 
-HRApop is part of the Human Reference Atlas (HRA) <https://humanatlas.io>. HRApop v0.5.1 was generated on Thu Jan 11 12:10:56 PM EST 2024.
+HRApop is part of the Human Reference Atlas (HRA) <https://humanatlas.io> and published in the HRA Knowledge Graph (HRA-KG). HRApop v0.5.1 was generated on Thu Jan 11 12:10:56 PM EST 2024. Users should use the data published to the HRA-KG at <https://lod.humanatlas.io/graph/hra-pop/v0.5.1/>. The full dataset graph of all datasets considered for HRApop v0.5.1 without enrichment is also available at <https://lod.humanatlas.io/ds-graph/hra-pop-full/v0.5.1/>.
 
-The primary outputs, which is considered The HRApop are:
+Primary outputs which make up the official HRApop:
 
-* AS Cell Summaries: [atlas-as-cell-summaries.jsonld](atlas-as-cell-summaries.jsonld)
+* Anatomical Structure (AS) Cell Summaries: [atlas-as-cell-summaries.jsonld](atlas-as-cell-summaries.jsonld)
 * Atlas Enriched Dataset Graph: [atlas-enriched-dataset-graph.jsonld](atlas-enriched-dataset-graph.jsonld)
-
-HRApop v0.5.1 is published as part of the HRA Knowledge Graph. Users should use the data published there at <https://lod.humanatlas.io/graph/hra-pop/v0.5.1/>. The full dataset graph of all datasets considered for HRApop v0.5.1 without enrichment is also available at <https://lod.humanatlas.io/ds-graph/hra-pop-full/v0.5.1/>
 
 Secondary outputs include:
 
