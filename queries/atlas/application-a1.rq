@@ -1,3 +1,6 @@
+#+ summary: Application A1
+#+ description:
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
@@ -7,15 +10,14 @@ PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
-PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-
 SELECT DISTINCT ?sample ?rui_location ?organ ?organId ?tool ?modality ?cell_id ?cell_label ?cell_count ?percentage_of_total
 WHERE {
-  GRAPH hra-pop:test-data {
+  GRAPH HRApopTestData: {
     ?sample ccf:has_registration_location ?rui_location .
     ?rui_location ccf:has_cell_summary [
       ccf:cell_annotation_method ?tool ;

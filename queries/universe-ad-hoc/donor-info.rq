@@ -1,0 +1,17 @@
+#+ summary: Universe Donor information
+#+ description: Universe donor information, including provider name, age, sex, and race
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT DISTINCT ?donor ?tissue_provider ?age ?sex ?race
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?donor a ccf:Donor .
+  OPTIONAL { ?donor ccf:tissue_provider_name ?tissue_provider . }
+  OPTIONAL { ?donor ccf:age ?age . }
+  OPTIONAL { ?donor ccf:sex ?sex . }
+  OPTIONAL { ?donor ccf:race ?race . }
+}

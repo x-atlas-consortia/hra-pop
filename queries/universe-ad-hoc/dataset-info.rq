@@ -1,0 +1,26 @@
+#+ summary: Dataset information
+#+ description: Dataset technology, description, annotation method, and cell type counts
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT DISTINCT ?dataset ?technology ?description ?annotation_method (COUNT(DISTINCT ?cell_id) as ?unique_cell_type_count)
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?dataset a ccf:Dataset.
+  OPTIONAL {
+    ?dataset ccf:technology ?technology ;
+      rdfs:comment ?description ;
+  }
+  OPTIONAL {
+    ?dataset ccf:has_cell_summary ?cell_summary .
+    ?cell_summary ccf:cell_annotation_method ?annotation_method ;
+                  ccf:has_cell_summary_row [
+                    ccf:cell_id ?cell_id
+                  ] .
+  }
+}
+GROUP BY ?dataset ?technology ?description ?annotation_method

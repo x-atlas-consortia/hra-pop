@@ -1,0 +1,38 @@
+#+ summary: Atlas consortium breakdown
+#+ description: For each consortium in the atlas, show the number of contributed datasets, cells, and modality
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX iftu: <https://hubmapconsortium.github.io/hra-ui/apps/ftu-ui/assets/TEMP/2d-ftu-illustrations.jsonld>
+
+SELECT ?consortium (COUNT(DISTINCT(?dataset)) as ?dataset_count) (SUM(?cell_count) as ?cell_count) ?modality
+FROM HRApop:
+WHERE {
+  ?donor
+    ccf:consortium_name ?consortium ;
+    ccf:tissue_provider_name ?provider .
+
+  {
+    ?sample ccf:comes_from ?donor .
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  ?dataset ccf:has_cell_summary [
+    ccf:cell_annotation_method ?tool ;
+    ccf:modality ?modality ;
+    ccf:has_cell_summary_row [
+      ccf:cell_count ?cell_count ;
+    ] ;
+  ] .
+}
+GROUP BY ?consortium ?modality
+ORDER BY ?consortium

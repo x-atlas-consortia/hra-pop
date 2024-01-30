@@ -1,3 +1,6 @@
+#+ summary: Validation V1
+#+ description:
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
@@ -11,7 +14,6 @@ PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
-
 
 SELECT ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId ?similarity
 

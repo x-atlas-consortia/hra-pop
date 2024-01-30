@@ -1,5 +1,5 @@
 #+ summary: Table S2
-#+ description: Anatomical Structures in HRA v1.3, their volume, and predicted CT populations
+#+ description: Anatomical Structures in HRA, their volume, and predicted CT populations
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

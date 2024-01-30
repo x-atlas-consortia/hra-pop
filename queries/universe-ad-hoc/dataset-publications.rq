@@ -1,0 +1,16 @@
+#+ summary: Dataset Publications
+#+ description: Dataset publication information
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT DISTINCT ?dataset ?publication ?publication_lead_author ?publication_title
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?sample ccf:generates_dataset ?dataset .
+  OPTIONAL { ?dataset ccf:publication ?publication . }
+  OPTIONAL { ?dataset ccf:publication_lead_author ?publication_lead_author . }
+  OPTIONAL { ?dataset ccf:publication_title ?publication_title . }
+}

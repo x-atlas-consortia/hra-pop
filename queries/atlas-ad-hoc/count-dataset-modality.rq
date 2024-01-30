@@ -1,0 +1,15 @@
+#+ summary: Datasets by modality
+#+ description: Counts the unique number of datasets by modality used in HRApop
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT (COUNT(DISTINCT ?dataset) AS ?dataset_ct) ?modality 
+FROM HRApop:
+WHERE {
+  ?dataset a ccf:Dataset;
+    ccf:has_cell_summary [
+  		ccf:modality ?modality
+    ] .
+}
+GROUP BY ?modality

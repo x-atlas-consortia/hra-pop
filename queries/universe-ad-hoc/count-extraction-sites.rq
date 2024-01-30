@@ -1,0 +1,13 @@
+#+ summary: Universe Extraction Site Count
+#+ description: Counts the unique number of extraction sites considered or used in HRApop
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT (COUNT(DISTINCT ?spatial_entity) as ?extraction_site_count)
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?spatial_entity a ccf:SpatialEntity .
+}
