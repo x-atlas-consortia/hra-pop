@@ -27,4 +27,7 @@ for file in `find $OUT -name "*.*" -size +95M`; do
   rm $file
 done
 
-echo `date` > $OUT/CREATION_DATE
+CREATION_DATE=$(date)
+echo "$CREATION_DATE" > $OUT/CREATION_DATE
+
+node src/gen-readme.js $VERSION "$CREATION_DATE" $OUT/README.md
