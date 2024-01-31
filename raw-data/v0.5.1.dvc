@@ -548,6 +548,13 @@ outs:
       s3:
         etag: e559ba246edd702c5c977ea99cc3968c
         version_id: DnN2soNZNPe34tZ5XA4IgVFKvH4JK2aX
+  - relpath: reports/universe-ad-hoc/popv-cells.csv
+    md5: aa18daaf5bca231175df6a3a74bc2231
+    size: 190258
+    cloud:
+      s3:
+        etag: aa18daaf5bca231175df6a3a74bc2231
+        version_id: JvNeTChCrlBfmaT4b9F1ZRLlJpufu_AT
   - relpath: reports/universe-ad-hoc/sample-info.csv
     md5: e34996591aa15192822b41d8d2f5df5c
     size: 336274
