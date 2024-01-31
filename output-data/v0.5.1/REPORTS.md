@@ -60,6 +60,7 @@
   * [Universe Extraction Sites with `slice_count`s Count (extraction-sites)](#extraction-sites)
   * [Heart and Lung dataset info (heart-and-lung-datasets)](#heart-and-lung-datasets)
   * [Kidney and Lung dataset info (kidney-and-lung-datasets)](#kidney-and-lung-datasets)
+  * [Popv cells information (popv-cells)](#popv-cells)
   * [Sample information (sample-info)](#sample-info)
   * [Spatial and bulk dataset breakdown (spatial-and-bulk-datasets-breakdown)](#spatial-and-bulk-datasets-breakdown)
   * [Spatial and bulk dataset information (spatial-and-bulk-datasets)](#spatial-and-bulk-datasets)
@@ -1159,17 +1160,10 @@ WHERE {
 ([View Source](../../queries/atlas/application-a2p4.rq))
 </details>
 
-#### Results ([View CSV File](reports/atlas/application-a2p4.csv))
-
+#### Columns
 | dataset | reported_organ | tool | modality | atlas_dataset | atlas_dataset_tool | similarity |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/24d42e5e-ce6d-45ff-a66b-a3b3b715deaf#Donor1$bone%20marrow | http://purl.obolibrary.org/obo/UBERON_0002371 | popv | sc_bulk | https://entity.api.hubmapconsortium.org/entities/2dac500177620d78ca174c2c1d36a6c8 | popv | 0.5892935787943765 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/24d42e5e-ce6d-45ff-a66b-a3b3b715deaf#Donor1$bone%20marrow | http://purl.obolibrary.org/obo/UBERON_0002371 | popv | sc_bulk | https://entity.api.hubmapconsortium.org/entities/2dac500177620d78ca174c2c1d36a6c8 | celltypist | 0.33631512855012013 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/24d42e5e-ce6d-45ff-a66b-a3b3b715deaf#Donor1$lower%20lobe%20of%20left%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | azimuth | sc_bulk | https://entity.api.hubmapconsortium.org/entities/2dac500177620d78ca174c2c1d36a6c8 | azimuth | 0.11600017470683432 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/24d42e5e-ce6d-45ff-a66b-a3b3b715deaf#Donor1$lower%20lobe%20of%20left%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | popv | sc_bulk | https://entity.api.hubmapconsortium.org/entities/2dac500177620d78ca174c2c1d36a6c8 | popv | 0.1656439472309419 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/24d42e5e-ce6d-45ff-a66b-a3b3b715deaf#Donor1$lower%20lobe%20of%20left%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | celltypist | sc_bulk | https://entity.api.hubmapconsortium.org/entities/2dac500177620d78ca174c2c1d36a6c8 | celltypist | 0.3236186140149292 |
 | ... | ... | ... | ... | ... | ... | ... |
-
 
 ### <a id="cell-and-cell-type-count"></a>Count of Cells and unique Cell Types (cell-and-cell-type-count)
 
@@ -4604,6 +4598,123 @@ ORDER BY ?organ ?portal ?dataset
 | https://api.cellxgene.cziscience.com/dp/v1/collections/120e86b4-1195-48c5-845b-b98054105eec#F38$kidney | Kidney | 30 | false | true | false | true | false | CxG | Spatiotemporal immune zonation of the human kidney | https://doi.org/10.1126/science.aat5031 | Benjamin J. Stewart |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/120e86b4-1195-48c5-845b-b98054105eec#F41$kidney | Kidney | 28 | false | true | false | true | false | CxG | Spatiotemporal immune zonation of the human kidney | https://doi.org/10.1126/science.aat5031 | Benjamin J. Stewart |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="popv-cells"></a>Popv cells information (popv-cells)
+
+Information about cells mapped via Popv considered or used in HRApop
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Popv cells information
+#+ description: Information about cells mapped via Popv considered or used in HRApop
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT 
+  (REPLACE(?organLabel, "skin of body", "skin") as ?Organ_Label)
+  (REPLACE(STR(?organ_id), STR(UBERON:), "UBERON:") as ?Organ_ID) 
+  (SAMPLE(?cell_label) as ?Annotation_Label)
+  (REPLACE(STR(?cell_id), STR(CL:), "CL:") AS ?Annotation_Label_ID)
+  (SAMPLE(?cell_label) as ?CL_Label)
+  (REPLACE(STR(?cell_id), STR(CL:), "CL:") AS ?CL_ID)
+  ("" as ?CL_Match)
+  (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+  (SUM(?count) as ?cell_count)
+FROM CCF:
+FROM HRApop:
+FROM HRApopTestData:
+WHERE {
+  [] ccf:generates_dataset ?dataset .
+
+  ?dataset ccf:has_cell_summary [
+    ccf:cell_annotation_method ?tool ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?cell_label ;
+      ccf:cell_count ?count ;
+    ]
+  ] .
+
+  {
+    SELECT ?dataset ?ruiOrganIri ?ruiOrganLabel
+    WHERE {
+      {
+        ?sample ccf:comes_from ?donor .
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:comes_from ?donor .
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+
+      ?ref_organ ccf:representation_of ?refOrganIri .
+      ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
+
+      ?refOrganIri ccf:ccf_pref_label ?ruiOrganLabel .
+    }
+  }
+  UNION
+  {
+    ?dataset ccf:organ_id ?_reportedOrganIri .
+    BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
+    OPTIONAL {
+      {
+        ?reportedOrganIri rdfs:label ?reportedOrganLabel .
+      }
+      UNION
+      {
+        ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganLabel .
+      }
+    }
+  }
+
+  BIND (IF(BOUND(?ruiOrganIri), ?ruiOrganIri,
+    IF(BOUND(?reportedOrganIri), ?reportedOrganIri, "N/A")) as ?organ_id)
+
+  BIND (STR(IF(BOUND(?ruiOrganLabel), ?ruiOrganLabel,
+    IF(BOUND(?reportedOrganLabel), ?reportedOrganLabel, ?reportedOrganIri))) as ?organLabel)
+
+  FILTER (?tool = "popv")
+}
+GROUP BY ?organLabel ?organ_id ?cell_id
+ORDER BY ?Organ_Label ?Annotation_Label
+
+```
+
+([View Source](../../queries/universe-ad-hoc/popv-cells.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/popv-cells.csv))
+
+| Organ_Label | Organ_ID | Annotation_Label | Annotation_Label_ID | CL_Label | CL_ID | CL_Match | dataset_count | cell_count |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| blood | UBERON:0000178 | CD141-positive myeloid dendritic cell | CL:0002394 | CD141-positive myeloid dendritic cell | CL:0002394 |  | 274 | 1710 |
+| blood | UBERON:0000178 | CD4-positive, alpha-beta memory T cell | CL:0000897 | CD4-positive, alpha-beta memory T cell | CL:0000897 |  | 1403 | 3171770 |
+| blood | UBERON:0000178 | CD8-positive, alpha-beta T cell | CL:0000625 | CD8-positive, alpha-beta T cell | CL:0000625 |  | 1402 | 861526 |
+| blood | UBERON:0000178 | CD8-positive, alpha-beta cytokine secreting effector T cell | CL:0000908 | CD8-positive, alpha-beta cytokine secreting effector T cell | CL:0000908 |  | 1404 | 1354440 |
+| blood | UBERON:0000178 | T cell | CL:0000084 | T cell | CL:0000084 |  | 315 | 3654 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="sample-info"></a>Sample information (sample-info)
