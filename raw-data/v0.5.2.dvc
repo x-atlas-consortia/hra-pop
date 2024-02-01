@@ -1,0 +1,641 @@
+outs:
+- hash: md5
+  path: v0.5.2
+  files:
+  - relpath: atlas-as-as-cell-summary-similarities.ttl
+    md5: e73a970cc6078fc55d4aee8e4cce0aa5
+    size: 2578157
+    cloud:
+      s3:
+        etag: e73a970cc6078fc55d4aee8e4cce0aa5
+        version_id: hHw.nrnLqHbmHf9Dt5OAx8frrg6fmHa4
+  - relpath: atlas-as-cell-summaries.jsonld
+    md5: 2a1cd196ee578720606af315b133db97
+    size: 1594467
+    cloud:
+      s3:
+        etag: 2a1cd196ee578720606af315b133db97
+        version_id: VLv9yntZSEMwutFuRkAv199icFMVHbcy
+  - relpath: atlas-as-cell-summaries.nq
+    md5: cef304b4d56ef29d5f10efe0a37240a1
+    size: 3656413
+    cloud:
+      s3:
+        etag: cef304b4d56ef29d5f10efe0a37240a1
+        version_id: LFbX1uhzojfXFlqRZv6ZbRrAWjTKaYit
+  - relpath: atlas-cell-summary-similarities.ttl
+    md5: 9b678b46d2e809a5546380e755aed456
+    size: 2351266874
+    cloud:
+      s3:
+        etag: b09d17756fdcc468f4c2ec76f99b9e0f-45
+        version_id: yFI6zhGZTTxaCz8P5mTGgDQ09CtKKde9
+  - relpath: atlas-dataset-graph.csv
+    md5: f01f4f3f5bc613a06682abc81acade26
+    size: 1651369
+    cloud:
+      s3:
+        etag: f01f4f3f5bc613a06682abc81acade26
+        version_id: VIrLzjrvUETc8el8mK8Hhs8uw9aTLy4j
+  - relpath: atlas-dataset-graph.jsonld
+    md5: 5ad36eb499b8a475cde6351b02a5c394
+    size: 1341772
+    cloud:
+      s3:
+        etag: 5ad36eb499b8a475cde6351b02a5c394
+        version_id: jOoTGbeleuUZ.XPl2YaQKARsOOx3DDEa
+  - relpath: atlas-enriched-dataset-graph.jsonld
+    md5: 4d12b0dfd288e6c716c8976c9fd8eacd
+    size: 84157164
+    cloud:
+      s3:
+        etag: 4d12b0dfd288e6c716c8976c9fd8eacd
+        version_id: .Yq4aoy8gnmF4HRlPUykamekBU8vXHmR
+  - relpath: atlas-enriched-dataset-graph.nq
+    md5: cca0a4d3bff6ca3c19a24841a8eeece7
+    size: 116952067
+    cloud:
+      s3:
+        etag: 38a5c74f70f46464450facdb3e71907a-3
+        version_id: ByDZ3u9ADpW7z3tb4T9vwYX0G5fJ5LJu
+  - relpath: atlas-extraction-site-as-cell-summaries.jsonld
+    md5: 532e8dfdfb6050b1f8eb62736a1b3003
+    size: 3389522
+    cloud:
+      s3:
+        etag: 532e8dfdfb6050b1f8eb62736a1b3003
+        version_id: YicEkLsJkdQYaUy.bHFDc.oesbteF7Gy
+  - relpath: atlas-extraction-site-cell-summaries.jsonld
+    md5: aaa435a5798744856c1af622e3fa44c9
+    size: 3037301
+    cloud:
+      s3:
+        etag: aaa435a5798744856c1af622e3fa44c9
+        version_id: uJI29p9R5Z5Xx5tn4laCVTdO68jybv.I
+  - relpath: atlas-lq-dataset-graph.csv
+    md5: f01f4f3f5bc613a06682abc81acade26
+    size: 1651369
+    cloud:
+      s3:
+        etag: f01f4f3f5bc613a06682abc81acade26
+        version_id: HMKgYI7AazJ7t1erVpdkEKuTn5oZOD9l
+  - relpath: blazegraph.jnl
+    md5: 6778aa71b058fb49b1284110b3056fb7
+    size: 11083186176
+    cloud:
+      s3:
+        etag: 0dc0e59a542ce9c4c980b4f6c22beeaa-212
+        version_id: z56M819W0MlFY.tcrZf8tarI2EKwANAL
+  - relpath: ccf.owl
+    md5: 925719b4685eee94c66592350b32d6a3
+    size: 49185484
+    cloud:
+      s3:
+        etag: 925719b4685eee94c66592350b32d6a3
+        version_id: XNQFCQTKGlSDd8cV5wZaZok4GZOM2RFE
+  - relpath: cell-summaries-no-metadata.jsonld
+    md5: 4a24504c0e77c922ba9dd45288a92090
+    size: 281064353
+    cloud:
+      s3:
+        etag: c8ae26a0761199fb16109ef11f242be8-6
+        version_id: FHs7FyB9suOr5tB3ZByY_2E9d189lEuK
+  - relpath: cell-summaries.jsonld
+    md5: 0204c4829e3ded74e0432f7de9f3c70b
+    size: 281272309
+    cloud:
+      s3:
+        etag: 4e1e715ad66ea252c0e3487f1f9e42a0-6
+        version_id: KUVqlYiNlDrihHE35WSDWKO4CT.bVWpF
+  - relpath: cell-summary-dataset-graph.jsonld
+    md5: 707b839617679f27c3f6c6822eff188e
+    size: 9051761
+    cloud:
+      s3:
+        etag: 707b839617679f27c3f6c6822eff188e
+        version_id: HCnVCHLUoh6nnz.qsk4GfYsaPGrAJVtu
+  - relpath: collisions.jsonld
+    md5: a64655be04ce8c303ae3e759e9df844a
+    size: 1603194
+    cloud:
+      s3:
+        etag: a64655be04ce8c303ae3e759e9df844a
+        version_id: zpiSbyePKXJo.4oRvL.L0fTy7nHga0Fj
+  - relpath: corridors.jsonld
+    md5: 3ac876207ea65284c54be896d89529b7
+    size: 212475
+    cloud:
+      s3:
+        etag: 3ac876207ea65284c54be896d89529b7
+        version_id: NOMm7S2PNsFzVmB3ido0WRP5nNhr1Pu6
+  - relpath: euclidean-distances.ttl
+    md5: 55c5aaca934ea07ba46644533dc0abbf
+    size: 153586806
+    cloud:
+      s3:
+        etag: 7e37819eb110ac76071d7216efb1a5c0-3
+        version_id: 9NwU_j.r7KJjJ6nxw7D6eM9X9qvMXxNh
+  - relpath: full-dataset-graph.csv
+    md5: 712cd6233a94f6499ffa95d84b2ea8a2
+    size: 14139671
+    cloud:
+      s3:
+        etag: 712cd6233a94f6499ffa95d84b2ea8a2
+        version_id: zDl_XRq6D1VlMrqtl.GK187.LW5YlDmu
+  - relpath: full-dataset-graph.jsonld
+    md5: 9411981ba15d79474a354fb89cd93064
+    size: 13077299
+    cloud:
+      s3:
+        etag: 9411981ba15d79474a354fb89cd93064
+        version_id: SaXDjwIr9mPYkzmwk7hD8a2L5s7VzxQ9
+  - relpath: full-dataset-graph.nq
+    md5: 9d6419dc03ef04fccfd22efa5ffd9b98
+    size: 31718992
+    cloud:
+      s3:
+        etag: 9d6419dc03ef04fccfd22efa5ffd9b98
+        version_id: Aob7FWBZ0kj56cASgszoXAm7t8M9KjM_
+  - relpath: non-atlas-dataset-graph.csv
+    md5: 85862dbf9c319a7ff2cc8fda8e49dbec
+    size: 13938289
+    cloud:
+      s3:
+        etag: 85862dbf9c319a7ff2cc8fda8e49dbec
+        version_id: 0kAA4bxpw9RTH6Nx7uzL6LelVIXPei8o
+  - relpath: publications-dataset-graph.jsonld
+    md5: 473ef8896c749c4430623c8e9dcfb07f
+    size: 372402
+    cloud:
+      s3:
+        etag: 473ef8896c749c4430623c8e9dcfb07f
+        version_id: TsoJ0M3189UU1v56GYHLT6GNXwt9XwMY
+  - relpath: registrations-dataset-graph.jsonld
+    md5: fb3ae37b2b7c3d8ba10628b82a0a3b5d
+    size: 14357496
+    cloud:
+      s3:
+        etag: fb3ae37b2b7c3d8ba10628b82a0a3b5d
+        version_id: V4s2mvLGqtBuXWjOYCifD3GFHI5f08HI
+  - relpath: reports/atlas-ad-hoc/as-datasets-modality.csv
+    md5: 1e8ba4574de9c000ea266f78d48e458d
+    size: 1170844
+    cloud:
+      s3:
+        etag: 1e8ba4574de9c000ea266f78d48e458d
+        version_id: h8LcEs13DkRlvvG7Nesdy3mXqZb4lITy
+  - relpath: reports/atlas-ad-hoc/consortium-breakdown.csv
+    md5: d67b6668e8a329031eceab5466b8f1e9
+    size: 199
+    cloud:
+      s3:
+        etag: d67b6668e8a329031eceab5466b8f1e9
+        version_id: iitN7iOcEECVq91iKoR3GRRKvaDZzLij
+  - relpath: reports/atlas-ad-hoc/count-dataset-modality.csv
+    md5: 09ab6e55dc51840312a6dec319e25ca1
+    size: 43
+    cloud:
+      s3:
+        etag: 09ab6e55dc51840312a6dec319e25ca1
+        version_id: w7bSa.l.XpbTJ5xpxTexq4xz4.dOvBnx
+  - relpath: reports/atlas-ad-hoc/counts-for-kidney-as.csv
+    md5: 25b6ba36d3c898a62cb371206f62138c
+    size: 28750
+    cloud:
+      s3:
+        etag: 25b6ba36d3c898a62cb371206f62138c
+        version_id: 3zhcir.vFlEH_qz5zA6n3.zH3poQI7IV
+  - relpath: reports/atlas-ad-hoc/counts-for-tools-by-as.csv
+    md5: 56cae117f6d44d19ab1d3c91b63ef38f
+    size: 779075
+    cloud:
+      s3:
+        etag: 56cae117f6d44d19ab1d3c91b63ef38f
+        version_id: TshO.hKSIEyRQF0h7qzS75ZkxHONlsEF
+  - relpath: reports/atlas-ad-hoc/extraction-site-stats.csv
+    md5: 189d8f0d2aa14cdd61accf1a9a0ac499
+    size: 75
+    cloud:
+      s3:
+        etag: 189d8f0d2aa14cdd61accf1a9a0ac499
+        version_id: mpg9Dsue1xeYx_8IQcPrw9H4fspIKWL_
+  - relpath: reports/atlas-ad-hoc/provider-breakdown.csv
+    md5: 62e84c4086b8fa2537c74ab322a1c8ed
+    size: 255
+    cloud:
+      s3:
+        etag: 62e84c4086b8fa2537c74ab322a1c8ed
+        version_id: AmGlO8xZQ2Ga2aizlGMGFFGXa9VmEk1E
+  - relpath: reports/atlas-ad-hoc/rui-registered-h5ad-datasets.csv
+    md5: c53acab2a0e447d30868a8774bb0f050
+    size: 71
+    cloud:
+      s3:
+        etag: c53acab2a0e447d30868a8774bb0f050
+        version_id: 4WRO50rbV4JsRTvgm3w2IfWbzut8cHuf
+  - relpath: reports/atlas-ad-hoc/unmapped-cell-ids.csv
+    md5: 5036e0581fedfe2d76f47f89965b2467
+    size: 10761
+    cloud:
+      s3:
+        etag: 5036e0581fedfe2d76f47f89965b2467
+        version_id: 74mmyvxzlJ3H73ezNNfahojR4xgVlYql
+  - relpath: reports/atlas/application-a1.csv
+    md5: b73be30c3d7f9aab7c80602392e0850a
+    size: 2730622
+    cloud:
+      s3:
+        etag: b73be30c3d7f9aab7c80602392e0850a
+        version_id: kTeY_nbjKsUiJqUjeKOyUaLvKWD4dJp4
+  - relpath: reports/atlas/application-a2p1.csv
+    md5: a2f5c2cf9f141d00be7000e2477fd09b
+    size: 27657703
+    cloud:
+      s3:
+        etag: a2f5c2cf9f141d00be7000e2477fd09b
+        version_id: F9cTOiZ2Z051DIXzjv4dRkgSL2dnFm_2
+  - relpath: reports/atlas/application-a2p2.csv
+    md5: ff9ab8a4641b302eb3b82839cfd8337e
+    size: 28901126
+    cloud:
+      s3:
+        etag: ff9ab8a4641b302eb3b82839cfd8337e
+        version_id: M90rScvduCiwEppikpP58AgdcACPJsbi
+  - relpath: reports/atlas/application-a2p3.csv
+    md5: dbc0b138566d92a0f4403838c567b43a
+    size: 54961768
+    cloud:
+      s3:
+        etag: dbc0b138566d92a0f4403838c567b43a
+        version_id: DR_NCmEp0z3VVM84IS6WswgQrL54rJFv
+  - relpath: reports/atlas/application-a2p4.csv
+    md5: d4ad416d91940deb7bf365e158b47dc5
+    size: 164519934
+    cloud:
+      s3:
+        etag: b6f8415fc9ca87d6a6aa6a3930d0b52a-4
+        version_id: C6kV7kuDrJY0sk4k5LvpJnALYtHXpKOC
+  - relpath: reports/atlas/cell-and-cell-type-count-by-modality.csv
+    md5: 67f1488238f7edacecb1941525f4732b
+    size: 83
+    cloud:
+      s3:
+        etag: 67f1488238f7edacecb1941525f4732b
+        version_id: 963B1gYEaLzzhaOv_AsO82OMCbq5sos8
+  - relpath: reports/atlas/cell-and-cell-type-count.csv
+    md5: 24b7749c6c115cf5ef8361b1b6039739
+    size: 47
+    cloud:
+      s3:
+        etag: 24b7749c6c115cf5ef8361b1b6039739
+        version_id: YRVJqDz.DDtxBzHooFOxbE1H1s93whnY
+  - relpath: reports/atlas/figure-as-as-sim.csv
+    md5: c9fa56bdedf6b7a6c1359a6e2dd108d6
+    size: 42971
+    cloud:
+      s3:
+        etag: c9fa56bdedf6b7a6c1359a6e2dd108d6
+        version_id: VO0GIn6m6wexsDhQ_omkufnWC03_X_lY
+  - relpath: reports/atlas/figure-f4.csv
+    md5: 4c8894ccfda0d6dfe8739db53744783f
+    size: 2545
+    cloud:
+      s3:
+        etag: 4c8894ccfda0d6dfe8739db53744783f
+        version_id: WVjQEDtOStLrQqRnD_pIzMcHF6j.1o4L
+  - relpath: reports/atlas/table-s1.csv
+    md5: 2263c74c40b9cd0624b024dcb489f599
+    size: 762495
+    cloud:
+      s3:
+        etag: 2263c74c40b9cd0624b024dcb489f599
+        version_id: SZo_7mS36qKXOnsuKOjVGQrZAVGZ112H
+  - relpath: reports/atlas/table-s2.csv
+    md5: ed96641a365b0095008b399da2becd4a
+    size: 144278
+    cloud:
+      s3:
+        etag: ed96641a365b0095008b399da2becd4a
+        version_id: DyzXRBPK08gCRM_.oAot3fy8uCIDQ0gg
+  - relpath: reports/atlas/table-s3.csv
+    md5: c679e7b1ced61083df74ce73e143221e
+    size: 671768
+    cloud:
+      s3:
+        etag: c679e7b1ced61083df74ce73e143221e
+        version_id: WrLTyuSn_NHbriMSmxQmZZ4P_Zt35iWA
+  - relpath: reports/atlas/table-s4.csv
+    md5: f282fb9c1025cdef6092fd3819b65ea9
+    size: 57343
+    cloud:
+      s3:
+        etag: f282fb9c1025cdef6092fd3819b65ea9
+        version_id: wUcb8aLrJp.Oq1QkfuLCQY4QeEcZcbH8
+  - relpath: reports/atlas/table-s5.csv
+    md5: 4d78cb463eab2feb199c51d20bc216d0
+    size: 65175
+    cloud:
+      s3:
+        etag: 4d78cb463eab2feb199c51d20bc216d0
+        version_id: zVdkmPTPk4sIb11g69JRQ3JlJMbAt1L0
+  - relpath: reports/atlas/validation-v1.csv
+    md5: b7e06678d13fc08ea6a6db2efc574f6b
+    size: 757785
+    cloud:
+      s3:
+        etag: b7e06678d13fc08ea6a6db2efc574f6b
+        version_id: 5wwtnVx.xXesdhD7OVSkUxSzhqzHJUnm
+  - relpath: reports/atlas/validation-v2p1.csv
+    md5: 9456819b322c66b19943b60aa038d594
+    size: 12523610
+    cloud:
+      s3:
+        etag: 9456819b322c66b19943b60aa038d594
+        version_id: X15MXbESjtqFeXfuZv.bTpz5QhcvmRFx
+  - relpath: reports/atlas/validation-v2p2-extra1.csv
+    md5: e8631bc5ffb4f900ac2ab6c6883487c7
+    size: 3835
+    cloud:
+      s3:
+        etag: e8631bc5ffb4f900ac2ab6c6883487c7
+        version_id: tApeoG_5HhFWlUDubMm_AGqW3cpJFIid
+  - relpath: reports/atlas/validation-v2p2-extra2.csv
+    md5: 595b23b245b770455537ae5f013f52d6
+    size: 6896648
+    cloud:
+      s3:
+        etag: 595b23b245b770455537ae5f013f52d6
+        version_id: IRcvX_PkVpwHGXFSJGhUPEqcq9g1nTPZ
+  - relpath: reports/atlas/validation-v2p2-extra3.csv
+    md5: a7f87c0b10b354a5275708a1c944caa7
+    size: 6947181
+    cloud:
+      s3:
+        etag: a7f87c0b10b354a5275708a1c944caa7
+        version_id: PgxklLXhHrO5UJmucTg__Iv.fu_UvwB.
+  - relpath: reports/atlas/validation-v2p2.csv
+    md5: 2be9e7fe6f90b52d3ec1278776466988
+    size: 8600230
+    cloud:
+      s3:
+        etag: 2be9e7fe6f90b52d3ec1278776466988
+        version_id: lkihwRopx81KiMXJ3zBxrB6hkKDSUTD5
+  - relpath: reports/atlas/validation-v2p3.csv
+    md5: 74494c179db2445fb624ebad7106272c
+    size: 53177935
+    cloud:
+      s3:
+        etag: 74494c179db2445fb624ebad7106272c
+        version_id: aoCH8EyJqXX8qtpIPimhUFQeFsn15rd4
+  - relpath: reports/atlas/validation-v3.edges.csv
+    md5: c92826ca77ad25e2926652f837b2e7f7
+    size: 11485790
+    cloud:
+      s3:
+        etag: c92826ca77ad25e2926652f837b2e7f7
+        version_id: uvXmVIGSUM7urcR1nW5Xkvwq7rm3cOKn
+  - relpath: reports/atlas/validation-v3.nodes.csv
+    md5: 9b066eeffa32f8e109659d402fbc0083
+    size: 188292
+    cloud:
+      s3:
+        etag: 9b066eeffa32f8e109659d402fbc0083
+        version_id: 1ADjjFXOR_CdcAyz7arx6NW9g7SODWyJ
+  - relpath: reports/atlas/validation-v4.csv
+    md5: 3b8e0622bce77c2c12029e9f29ca9f08
+    size: 147
+    cloud:
+      s3:
+        etag: 3b8e0622bce77c2c12029e9f29ca9f08
+        version_id: Pb5zQvav6SBqQN920YZL0YbCMROU94P0
+  - relpath: reports/atlas/validation-v5.csv
+    md5: 058627a627c26c566571f35390fecb47
+    size: 9169635
+    cloud:
+      s3:
+        etag: 058627a627c26c566571f35390fecb47
+        version_id: BUl1V.yMoUAr24bjmKnCa_YtIYvFdn1a
+  - relpath: reports/hra/as-cnt-per-organ.csv
+    md5: ae502c8064a12eb5542b5167468cc1a5
+    size: 1076
+    cloud:
+      s3:
+        etag: ae502c8064a12eb5542b5167468cc1a5
+        version_id: xzzh2btKDPUaECxQ_ZJ.4YZzjyJIPq.M
+  - relpath: reports/hra/as-cnt.csv
+    md5: 56d609937227c2e0629c766a9dab5fe2
+    size: 11
+    cloud:
+      s3:
+        etag: 56d609937227c2e0629c766a9dab5fe2
+        version_id: YToRtRHz09J9hYh6ytgigmZeRPPbGp3N
+  - relpath: reports/hra/named-graphs.csv
+    md5: 753aa6556c784f0e06bbdd0a8b038105
+    size: 403
+    cloud:
+      s3:
+        etag: 753aa6556c784f0e06bbdd0a8b038105
+        version_id: a8kt2UVebZDoFiCrAiUbtilu2nngk0Af
+  - relpath: reports/universe-ad-hoc/count-dataset-samples.csv
+    md5: 73fdd74bbae9462437b729c112905ad7
+    size: 38
+    cloud:
+      s3:
+        etag: 73fdd74bbae9462437b729c112905ad7
+        version_id: j9InXuBqykxg4c1KfcUU.C4w7JLMD8ji
+  - relpath: reports/universe-ad-hoc/count-datasets.csv
+    md5: 2a18f1f37130b40fe0055364bf9fb87e
+    size: 20
+    cloud:
+      s3:
+        etag: 2a18f1f37130b40fe0055364bf9fb87e
+        version_id: GzrUCYtgEIEuOMakQhHWDM4rTBU0Vxy.
+  - relpath: reports/universe-ad-hoc/count-donors-portals.csv
+    md5: a8e5c356ec146bbe135938fb4dc0ee8b
+    size: 33
+    cloud:
+      s3:
+        etag: a8e5c356ec146bbe135938fb4dc0ee8b
+        version_id: ObwaFkGJUvhd.lqZigMkIucx41EIskMS
+  - relpath: reports/universe-ad-hoc/count-donors-samples.csv
+    md5: 8c2e33b42ffb8142725ecb59dacf8a7f
+    size: 35
+    cloud:
+      s3:
+        etag: 8c2e33b42ffb8142725ecb59dacf8a7f
+        version_id: QINTNkAHRLCn06rpUua7hx_AAHq4B7Bi
+  - relpath: reports/universe-ad-hoc/count-donors.csv
+    md5: d2dfcc7b98bda66c9cd7b9544ab2b816
+    size: 17
+    cloud:
+      s3:
+        etag: d2dfcc7b98bda66c9cd7b9544ab2b816
+        version_id: UE9Tu8iyw7PjYOmrYTbE7Sg017Rvm.9q
+  - relpath: reports/universe-ad-hoc/count-extraction-sites-with-slice.csv
+    md5: c5d0f57c87e60eea237f08d12f34dbfe
+    size: 26
+    cloud:
+      s3:
+        etag: c5d0f57c87e60eea237f08d12f34dbfe
+        version_id: ng37fIX79q3uotFPRRjuKvGoQp8z6.5.
+  - relpath: reports/universe-ad-hoc/count-extraction-sites.csv
+    md5: cc1dada515eccf66071d2b90ae84506f
+    size: 26
+    cloud:
+      s3:
+        etag: cc1dada515eccf66071d2b90ae84506f
+        version_id: kqTAQ9UaTp2CokH5D3CVLNwMuSd3V4wV
+  - relpath: reports/universe-ad-hoc/count-sample-description.csv
+    md5: 759c0647f42528fe63aa82cc56d7e0b8
+    size: 40
+    cloud:
+      s3:
+        etag: 759c0647f42528fe63aa82cc56d7e0b8
+        version_id: zyTQ.k3h29bdYuS7x8UOBFKijXpOyCDU
+  - relpath: reports/universe-ad-hoc/count-samples.csv
+    md5: 58147dd234d7538760cd51430be667f0
+    size: 18
+    cloud:
+      s3:
+        etag: 58147dd234d7538760cd51430be667f0
+        version_id: 4rBwkSSIqLa.zSIZ2VLWW7erGZTg9xUY
+  - relpath: reports/universe-ad-hoc/count-spatial-placements.csv
+    md5: 9c6ff05a1225a570db953d0f53ca46f3
+    size: 28
+    cloud:
+      s3:
+        etag: 9c6ff05a1225a570db953d0f53ca46f3
+        version_id: Rj_9lj3YkWz93ft7kw0X3ClpzlHJCbNR
+  - relpath: reports/universe-ad-hoc/dataset-info.csv
+    md5: c7a689734aa7a9996ac85c81a2ba5507
+    size: 1341147
+    cloud:
+      s3:
+        etag: c7a689734aa7a9996ac85c81a2ba5507
+        version_id: 45c5I_REgVYY7UXrarrhVrBMYZPvmIkU
+  - relpath: reports/universe-ad-hoc/dataset-publications.csv
+    md5: 926e87d30bdb292a324fe80ad74696f2
+    size: 1915146
+    cloud:
+      s3:
+        etag: 926e87d30bdb292a324fe80ad74696f2
+        version_id: HRBev5Xe02Khhk3fJ1xLwzTIVl7SDd0b
+  - relpath: reports/universe-ad-hoc/donor-info.csv
+    md5: 2799da67368f379e70a2659316f02c67
+    size: 929818
+    cloud:
+      s3:
+        etag: 2799da67368f379e70a2659316f02c67
+        version_id: 5yC8vQUNY759grFsB9WETIIIg0MIui8S
+  - relpath: reports/universe-ad-hoc/donors-portals.csv
+    md5: d0104a445c51cbea7d048230d3d20a66
+    size: 812554
+    cloud:
+      s3:
+        etag: d0104a445c51cbea7d048230d3d20a66
+        version_id: Bci8q45WnuG0FCego7pTCqIuKq5JwCHq
+  - relpath: reports/universe-ad-hoc/extraction-site-slices.csv
+    md5: db3450094bbae51ecf8d6ce020cfee75
+    size: 6995
+    cloud:
+      s3:
+        etag: db3450094bbae51ecf8d6ce020cfee75
+        version_id: dAJWsOIPlLH6rbXQnBQNPlt..MHa6U4m
+  - relpath: reports/universe-ad-hoc/extraction-sites.csv
+    md5: 6c87a5074f38ba7fd5a1d5e6a1ed76f1
+    size: 44851
+    cloud:
+      s3:
+        etag: 6c87a5074f38ba7fd5a1d5e6a1ed76f1
+        version_id: qsCd4LPjqonN9_3WxrQBqH.Qwmz0B.RA
+  - relpath: reports/universe-ad-hoc/heart-and-lung-datasets.csv
+    md5: 2b203525e6e15621006eb126a0fdd2f3
+    size: 507207
+    cloud:
+      s3:
+        etag: 2b203525e6e15621006eb126a0fdd2f3
+        version_id: vKUpvBBiimR4g37jIwPPb.oGhNxablQZ
+  - relpath: reports/universe-ad-hoc/kidney-and-lung-datasets.csv
+    md5: 3d869282bb989d1584297d8beffd6a60
+    size: 612989
+    cloud:
+      s3:
+        etag: 3d869282bb989d1584297d8beffd6a60
+        version_id: xy58x_fiVSoQkfD29L1rUg_UZewMepw8
+  - relpath: reports/universe-ad-hoc/popv-cells.csv
+    md5: f86d215d8b5b6b071961fc5feea18836
+    size: 190258
+    cloud:
+      s3:
+        etag: f86d215d8b5b6b071961fc5feea18836
+        version_id: Ip5pFiSw6dC9TCSxqDI2gCCx5CE_J5y7
+  - relpath: reports/universe-ad-hoc/sample-info.csv
+    md5: 0b0c7b9fba6ee0fcda70c000d07f452e
+    size: 337846
+    cloud:
+      s3:
+        etag: 0b0c7b9fba6ee0fcda70c000d07f452e
+        version_id: Bh9Vx7RwTf7gCnZ7H0RDGHYN_YLm6wmL
+  - relpath: reports/universe-ad-hoc/spatial-and-bulk-datasets-breakdown.csv
+    md5: ae0e384abb34c0548eda4a96d65eeb1a
+    size: 3334
+    cloud:
+      s3:
+        etag: ae0e384abb34c0548eda4a96d65eeb1a
+        version_id: cjnSwXA6iDZ4yndqgpVBtbbBgDy06HuF
+  - relpath: reports/universe-ad-hoc/spatial-and-bulk-datasets.csv
+    md5: c33ccd2b092cbf8ac8a9581c5d61646c
+    size: 2620892
+    cloud:
+      s3:
+        etag: c33ccd2b092cbf8ac8a9581c5d61646c
+        version_id: M.bIUysmshT_H0Ka4yM1NlYv0NeATKrk
+  - relpath: reports/universe-ad-hoc/spatial-placements.csv
+    md5: b0a630bb61e0892be90aacd7544154c6
+    size: 52203
+    cloud:
+      s3:
+        etag: b0a630bb61e0892be90aacd7544154c6
+        version_id: xQNhUz3tJ3bTFWQALMGOJXVvCZ3dzrHX
+  - relpath: test-as-cell-summaries.jsonld
+    md5: 9298fef328970d9a245b1940e4051c1f
+    size: 14
+    cloud:
+      s3:
+        etag: 9298fef328970d9a245b1940e4051c1f
+        version_id: .FHagKtSyUfr0dcl.CzqGbcLSBCh1j5y
+  - relpath: test-atlas-enriched-dataset-graph.jsonld
+    md5: b6a2a3efd0ad2a2992fc267a6f50b77f
+    size: 334097755
+    cloud:
+      s3:
+        etag: ea4d7886352e7ac4b483e10fb4449f74-7
+        version_id: 6m7b9zV_xeKMX7sJyaeUZvB7NZh7KKlQ
+  - relpath: test-atlas-enriched-dataset-graph.nq
+    md5: 7c0963b84fc9f198ea97930a8e9ea0c0
+    size: 490401755
+    cloud:
+      s3:
+        etag: 5d6f9cc89df90c997724881e91dc0b8c-10
+        version_id: UapHWYhifzAMcYZ6qwBojleu18W4liOx
+  - relpath: test-atlas-extraction-site-as-cell-summaries.jsonld
+    md5: 30dd95b4dfa5438bba8d311ea4d6422a
+    size: 5131754
+    cloud:
+      s3:
+        etag: 30dd95b4dfa5438bba8d311ea4d6422a
+        version_id: xp349hTFejWq4Dkwy.vmCGhvPegDT7aP
+  - relpath: test-dataset-graph.csv
+    md5: 85576843cef91d88f263d20d1a0f2274
+    size: 11491142
+    cloud:
+      s3:
+        etag: 85576843cef91d88f263d20d1a0f2274
+        version_id: 5a0BGAHt5H14ijMv71304bXE7.pAKjM.
+  - relpath: test-dataset-graph.jsonld
+    md5: e0c86e7f1fba187e68afd492dc927087
+    size: 10322522
+    cloud:
+      s3:
+        etag: e0c86e7f1fba187e68afd492dc927087
+        version_id: i8xDWA2aq_IWpu9DcXsgoaUpykWWw4GZ
