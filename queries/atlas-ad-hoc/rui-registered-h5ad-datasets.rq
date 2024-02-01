@@ -1,5 +1,5 @@
-#+ summary: RUI Registered H5AD Dataset Count
-#+ description: Count of all rui-registered h5ad datasets
+#+ summary: RUI Registered H5AD Dataset and TB Count
+#+ description: Count of all rui-registered h5ad datasets and tissue blocks
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -16,14 +16,15 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT (COUNT(DISTINCT ?dataset) as ?rui_registered_h5ad_datasets) 
+  (COUNT(DISTINCT ?block) as ?rui_registered_h5ad_tissue_blocks) 
 FROM HRApop:
 WHERE {
   ?rui_location a ccf:SpatialEntity .
   ?dataset a ccf:Dataset .
 
   {
-    ?sample ccf:has_registration_location ?rui_location .
-    ?sample ccf:generates_dataset ?dataset .
+    ?block ccf:has_registration_location ?rui_location .
+    ?block ccf:generates_dataset ?dataset .
   } UNION {
     ?block ccf:subdivided_into_sections ?sample .
     ?block ccf:has_registration_location ?rui_location .

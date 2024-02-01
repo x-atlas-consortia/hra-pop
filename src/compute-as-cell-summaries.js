@@ -31,11 +31,13 @@ function handleCellSummaries(summaries, collisions) {
         const asLabel = collision.as_label;
         const modality = dsSummary.modality;
         const annotation_method = dsSummary.annotation_method;
-        const summaryKey = asIri + modality + annotation_method;
+        const sex = collision.as_3d_id.startsWith('http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans') ? 'Male' : 'Female';
+        const summaryKey = sex + asIri + modality + annotation_method;
         const weightedCellCount = cell.count * collision.percentage;
 
         const summary = (asCellSummaries[summaryKey] = asCellSummaries[summaryKey] || {
           '@type': 'CellSummary',
+          sex,
           cell_source: asIri,
           cell_source_label: asLabel,
           annotation_method,

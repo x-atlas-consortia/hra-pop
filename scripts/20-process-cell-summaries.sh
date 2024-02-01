@@ -3,7 +3,7 @@ source constants.sh
 shopt -s extglob
 set -ev
 
-MERGED=$RAW_DIR/$VERSION/cell-summaries.jsonld
+MERGED=$RAW_DIR/$VERSION/cell-summaries-no-metadata.jsonld
 node ./src/concatenate-jsonld.js $CELL_SUMMARIES $MERGED
 
 MERGED_DATASETS=$RAW_DIR/$VERSION/cell-summary-dataset-graph.jsonld

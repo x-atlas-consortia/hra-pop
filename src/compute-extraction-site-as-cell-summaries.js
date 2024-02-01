@@ -21,12 +21,12 @@ const asCellSummaryLookup = asCellSummaries['@graph'].reduce(
 
 const ruiCellSummaries = {};
 
-function handleCellSummaries(ruiLocation, collisions) {
+function handleCellSummaries(sex, ruiLocation, collisions) {
   for (const collision of collisions) {
     const asIri = collision.as_id;
-    const asSummaries = asCellSummaryLookup[asIri];
+    const asSummaries = asCellSummaryLookup[asIri] ?? [];
 
-    for (const asSummary of asSummaries ?? []) {
+    for (const asSummary of asSummaries.filter((s) => s.sex === sex)) {
       const modality = asSummary.modality;
       const annotation_method = asSummary.annotation_method;
       const summaryKey = ruiLocation + modality + annotation_method;
@@ -34,6 +34,7 @@ function handleCellSummaries(ruiLocation, collisions) {
       const summary = (ruiCellSummaries[summaryKey] = ruiCellSummaries[summaryKey] || {
         '@type': 'CellSummary',
         cell_source: ruiLocation,
+        sex,
         annotation_method,
         aggregated_summary_count: 0,
         aggregated_summaries: new Set(),
@@ -75,11 +76,11 @@ function finalizeAsCellSummaries() {
 }
 
 const { data } = Papa.parse(readFileSync(DATASET_GRAPH_CSV).toString(), { header: true, skipEmptyLines: true });
-for (const { rui_location } of data) {
+for (const { donor_sex, rui_location } of data) {
   const rui_location_id = rui_location ? JSON.parse(rui_location)['@id'] : undefined;
   const collisions = collisionLookup[rui_location_id] || [];
   if (rui_location_id && collisions.length > 0) {
-    handleCellSummaries(rui_location_id, collisions);
+    handleCellSummaries(donor_sex, rui_location_id, collisions);
   }
 }
 

@@ -17,11 +17,28 @@ class DatasetGraph {
   }
 
   setMetadata(obj, flat, prefix, extraProps = undefined) {
-    for (const [key, value] of Object.entries(flat)) {
+    for (let [key, value] of Object.entries(flat)) {
       const prop = key.replace(prefix, '');
       const goodProp = prop !== 'id' && (key.startsWith(prefix) || (extraProps && extraProps.includes(prop)));
       if (goodProp && value && !obj.hasOwnProperty(prop)) {
-        obj[prop] = value;
+        // Must ensure sex is formatted correctly
+        if (prop === 'sex' && value) {
+          switch (value.trim().toLowerCase()) {
+            case 'male':
+              value = 'Male';
+              break;
+            case 'female':
+              value = 'Female';
+              break;
+            case 'Unknown':
+            default:
+              value = undefined;
+              break;
+          }
+        }
+        if (value !== undefined) {
+          obj[prop] = value;
+        }
       }
     }
     return obj;
@@ -96,6 +113,12 @@ class DatasetGraph {
     }
   }
 
+  fixDonorSex() {
+    for (const donor of Object.values(this.donors)) {
+      donor.sex = donor.sex || 'Unknown';
+    }
+  }
+
   toJsonLd() {
     return {
       '@context': 'https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld',
@@ -122,6 +145,7 @@ async function unflattenDatasetGraphs(inputFiles) {
   for (const inputFile of inputFiles) {
     await unflattenDatasetGraph(inputFile, graph);
   }
+  graph.fixDonorSex();
   return graph.toJsonLd();
 }
 

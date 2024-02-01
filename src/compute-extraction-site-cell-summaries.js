@@ -15,7 +15,7 @@ const summaryLookup = summaries['@graph'].reduce((lookup, summary) => {
 
 const ruiCellSummaries = {};
 
-function handleCellSummaries(id, summaries) {
+function handleCellSummaries(sex, id, summaries) {
   for (const dsSummary of summaries) {
     const modality = dsSummary.modality;
     const annotation_method = dsSummary.annotation_method;
@@ -25,6 +25,7 @@ function handleCellSummaries(id, summaries) {
     const summary = (ruiCellSummaries[summaryKey] = ruiCellSummaries[summaryKey] || {
       '@type': 'CellSummary',
       cell_source: id,
+      sex,
       annotation_method,
       aggregated_summary_count: 0,
       aggregated_summaries: new Set(),
@@ -62,11 +63,11 @@ function finalizeCellSummaries() {
 }
 
 const { data } = Papa.parse(readFileSync(DATASET_GRAPH_CSV).toString(), { header: true, skipEmptyLines: true });
-for (const { dataset_id, rui_location } of data) {
+for (const { donor_sex, dataset_id, rui_location } of data) {
   const rui_location_id = rui_location ? JSON.parse(rui_location)['@id'] : undefined;
   const summaries = summaryLookup[dataset_id] || [];
   if (rui_location_id && summaries.length > 0) {
-    handleCellSummaries(rui_location_id, summaries);
+    handleCellSummaries(donor_sex, rui_location_id, summaries);
   }
 }
 

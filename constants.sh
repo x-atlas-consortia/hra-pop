@@ -5,7 +5,7 @@ RAW_DIR="./raw-data"
 
 export PATH=./node_modules/.bin:${PATH}
 
-source input-data/v0.5.1/config.sh
+source input-data/v0.5.2/config.sh
 
 mkdir -p $RAW_DIR/$VERSION
 mkdir -p $INPUT_DIR/$VERSION
