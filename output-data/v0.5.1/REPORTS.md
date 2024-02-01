@@ -49,7 +49,7 @@
   * [Universe Donor Count (count-donors)](#count-donors)
   * [Universe Extraction Sites with `slice_count`s Count (count-extraction-sites-with-slice)](#count-extraction-sites-with-slice)
   * [Universe Extraction Site Count (count-extraction-sites)](#count-extraction-sites)
-  * [Universe Samples with Decription Counts (count-sample-description)](#count-sample-description)
+  * [Universe Samples with Description Counts (count-sample-description)](#count-sample-description)
   * [Universe Sample Count (count-samples)](#count-samples)
   * [Universe Spatial Placement Count (count-spatial-placements)](#count-spatial-placements)
   * [Dataset information (dataset-info)](#dataset-info)
@@ -3911,7 +3911,7 @@ WHERE {
 | 731 |
 
 
-### <a id="count-sample-description"></a>Universe Samples with Decription Counts (count-sample-description)
+### <a id="count-sample-description"></a>Universe Samples with Description Counts (count-sample-description)
 
 Counts the unique number of samples with descriptions considered or used in HRApop
 
@@ -3919,7 +3919,7 @@ Counts the unique number of samples with descriptions considered or used in HRAp
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: Universe Samples with Decription Counts
+#+ summary: Universe Samples with Description Counts
 #+ description: Counts the unique number of samples with descriptions considered or used in HRApop
 
 PREFIX ccf: <http://purl.org/ccf/>
