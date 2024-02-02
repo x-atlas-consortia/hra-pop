@@ -17,7 +17,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT 
   (REPLACE(?organLabel, "skin of body", "skin") as ?Organ_Label)
-  (REPLACE(STR(?organ_id), STR(UBERON:), "UBERON:") as ?Organ_ID) 
+  (REPLACE(STR(?organ_id), STR(UBERON:), "UBERON:") as ?Organ_ID)
   (SAMPLE(?cell_label) as ?Annotation_Label)
   (REPLACE(STR(?cell_id), STR(CL:), "CL:") AS ?Annotation_Label_ID)
   (SAMPLE(?cell_label) as ?CL_Label)
@@ -40,8 +40,9 @@ WHERE {
     ]
   ] .
 
-  {
-    SELECT ?dataset ?ruiOrganIri ?ruiOrganLabel
+  OPTIONAL {
+    SELECT ?dataset ?refOrganIri 
+      (COALESCE(?refOrganRdfsLabel, ?refOrganCcfLabel) as ?refOrganLabel)
     WHERE {
       {
         ?sample ccf:comes_from ?donor .
@@ -59,32 +60,31 @@ WHERE {
         ccf:placement_relative_to ?ref_organ .
 
       ?ref_organ ccf:representation_of ?refOrganIri .
-      ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
-
-      ?refOrganIri ccf:ccf_pref_label ?ruiOrganLabel .
+      
+      OPTIONAL {
+        ?refOrganIri rdfs:label ?refOrganRdfsLabel .
+      }
+      OPTIONAL {
+        ?refOrganIri ccf:ccf_pref_label ?refOrganCcfLabel .
+      }
     }
   }
-  UNION
-  {
+
+  OPTIONAL {
     ?dataset ccf:organ_id ?_reportedOrganIri .
     BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
+
     OPTIONAL {
-      {
-        ?reportedOrganIri rdfs:label ?reportedOrganLabel .
-      }
-      UNION
-      {
-        ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganLabel .
-      }
+      ?reportedOrganIri rdfs:label ?reportedOrganRdfsLabel .
     }
+    OPTIONAL {
+      ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganCcfLabel .
+    }
+    BIND(IF(BOUND(?reportedOrganRdfsLabel), ?reportedOrganRdfsLabel, ?reportedOrganCcfLabel) as ?reportedOrganLabel)
   }
 
-  BIND (IF(BOUND(?ruiOrganIri), ?ruiOrganIri,
-    IF(BOUND(?reportedOrganIri), ?reportedOrganIri, "N/A")) as ?organ_id)
-
-  BIND (STR(IF(BOUND(?ruiOrganLabel), ?ruiOrganLabel,
-    IF(BOUND(?reportedOrganLabel), ?reportedOrganLabel, ?reportedOrganIri))) as ?organLabel)
-
+  BIND (COALESCE(?reportedOrganIri, ?refOrganIri, 'N/A') as ?organ_id)
+  BIND (STR(COALESCE(?reportedOrganLabel, ?refOrganLabel, 'N/A')) as ?organLabel)
   FILTER (?tool = "popv")
 }
 GROUP BY ?organLabel ?organ_id ?cell_id
