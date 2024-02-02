@@ -563,12 +563,12 @@ outs:
         etag: 3d869282bb989d1584297d8beffd6a60
         version_id: xy58x_fiVSoQkfD29L1rUg_UZewMepw8
   - relpath: reports/universe-ad-hoc/popv-cells.csv
-    md5: f86d215d8b5b6b071961fc5feea18836
-    size: 190258
+    md5: cde1b6da15f089505f4597ad86978fde
+    size: 39865
     cloud:
       s3:
-        etag: f86d215d8b5b6b071961fc5feea18836
-        version_id: Ip5pFiSw6dC9TCSxqDI2gCCx5CE_J5y7
+        etag: cde1b6da15f089505f4597ad86978fde
+        version_id: rWkinHi5ovvkx91znGaGCW8RZrjaIBrS
   - relpath: reports/universe-ad-hoc/sample-info.csv
     md5: 0b0c7b9fba6ee0fcda70c000d07f452e
     size: 337846
