@@ -16,6 +16,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT DISTINCT
+  ?sex
   (?dataset as ?id)
   (?organ as ?label)
   ?dataset ?modality ?entity ?organ ?organId
@@ -33,6 +34,7 @@ WHERE {
     }
 
     ?dataset ccf:has_cell_summary [
+      ccf:sex ?sex ;
       ccf:modality ?modality ;
     ] .
   }

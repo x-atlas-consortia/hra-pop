@@ -1,10 +1,20 @@
-provider,dataset_count,cell_count
-Broad Institute,82,1458402
-GTEx,16,267059
-NHLBI/LungMap,9,139500
-RTI-General Electric,10,13489
-TMC-CalTech,26,3042770
-TMC-Florida,14,123301
-TMC-Stanford,148,2901694
-TMC-UCSD,400,16507222
-Washington University TMC,2,43735
+sex,provider,dataset_count,cell_count
+Female,Broad Institute,40,659085
+Male,Broad Institute,42,799317
+Female,GTEx,7,123723
+Male,GTEx,9,143336
+Female,NHLBI/LungMap,2,29691
+Male,NHLBI/LungMap,7,109809
+Female,RTI-General Electric,4,4937
+Male,RTI-General Electric,6,8552
+Female,TMC-CalTech,5,532621
+Male,TMC-CalTech,21,2510149
+Female,TMC-Florida,4,30976
+Male,TMC-Florida,10,92325
+Female,TMC-Stanford,45,661867
+Male,TMC-Stanford,103,2239827
+Female,TMC-UCSD,133,4674075
+Male,TMC-UCSD,258,11771158
+Unknown,TMC-UCSD,9,61989
+Female,Washington University TMC,1,21772
+Male,Washington University TMC,1,21963

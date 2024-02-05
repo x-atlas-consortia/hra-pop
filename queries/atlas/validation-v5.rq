@@ -16,6 +16,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT DISTINCT
+  ?sex
   ?consortium_name
   ?dataset
   ?tool
@@ -53,6 +54,7 @@ WHERE {
   
     BIND(?x * ?y * ?z as ?rui_location_volume)
     ?dataset ccf:has_cell_summary [
+      ccf:sex ?sex ;
       ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
       ccf:has_cell_summary_row [
@@ -78,4 +80,4 @@ WHERE {
     BIND(REPLACE(REPLACE(STR(?organIri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?organId)
   }
 }
-ORDER BY ?dataset ?tool ?modality DESC(?percentage)
+ORDER BY ?sex ?dataset ?tool ?modality DESC(?percentage)

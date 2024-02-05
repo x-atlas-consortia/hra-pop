@@ -1,3 +1,6 @@
-dataset_ct,modality
-633,sc_bulk
-74,spatial
+sex,dataset_ct,modality
+Male,54,spatial
+Male,403,sc_bulk
+Female,221,sc_bulk
+Female,20,spatial
+Unknown,9,sc_bulk

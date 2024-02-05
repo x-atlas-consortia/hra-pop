@@ -102,6 +102,7 @@ WHERE {
   }
 
   ?dataset ccf:has_cell_summary [
+    ccf:sex ?sex ;
     ccf:cell_annotation_method ?tool ;
     ccf:modality ?modality ;
   ] .

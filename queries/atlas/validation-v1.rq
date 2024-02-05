@@ -15,10 +15,10 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId ?similarity
+SELECT ?sex ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId ?similarity
 
 WITH {
-  SELECT ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId
+  SELECT ?sex ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId
   WHERE {
     GRAPH HRApop: {
       {
@@ -31,6 +31,7 @@ WITH {
       }
 
       ?dataset ccf:has_cell_summary [
+        ccf:sex ?sex ;
         ccf:cell_annotation_method ?tool ;
         ccf:modality ?modality ;
       ] .
@@ -50,7 +51,7 @@ WITH {
 } AS %data
 
 WITH {
-  SELECT ?rui_location ?dataset ?tool ?similarity
+  SELECT ?sex ?rui_location ?dataset ?tool ?similarity
   WHERE {
     GRAPH HRApop: {
       ?dataset a ccf:Dataset .
@@ -59,7 +60,9 @@ WITH {
 
     GRAPH hra-pop:similarities {
       {
-        [] ccf:cell_source_a_tool ?tool ;
+        [] ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ; 
+          ccf:cell_source_a_tool ?tool ;
           ccf:cell_source_b_tool ?tool ;
           ccf:cell_source_a ?rui_location ;
           ccf:cell_source_b ?dataset ;
@@ -67,7 +70,9 @@ WITH {
       }
       UNION
       {
-        [] ccf:cell_source_a_tool ?tool ;
+        [] ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ;
+          ccf:cell_source_a_tool ?tool ;
           ccf:cell_source_b_tool ?tool ;
           ccf:cell_source_a ?dataset ;
           ccf:cell_source_b ?rui_location ;

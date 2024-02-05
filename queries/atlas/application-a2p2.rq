@@ -19,6 +19,7 @@ SELECT DISTINCT ?dataset ?reported_organ ?tool ?modality ?as (?shared_ds_cell_ty
 WHERE {
   GRAPH hra-pop:test-data {
     ?dataset ccf:has_cell_summary [
+      ccf:sex ?sex ;
       ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
     ] .
@@ -27,10 +28,11 @@ WHERE {
   }
 
   {
-    SELECT ?dataset ?tool ?modality (COUNT(DISTINCT(?dataset_cell_label)) as ?total_ds_cell_types)
+    SELECT ?dataset ?sex ?tool ?modality (COUNT(DISTINCT(?dataset_cell_label)) as ?total_ds_cell_types)
     WHERE {
       GRAPH hra-pop:test-data {
         ?dataset ccf:has_cell_summary [
+          ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
           ccf:modality ?modality ;
           ccf:has_cell_summary_row [
@@ -39,14 +41,15 @@ WHERE {
         ] .
       }
     }
-    GROUP BY ?dataset ?tool ?modality
+    GROUP BY ?dataset ?sex ?tool ?modality
   }
 
   {
-    SELECT ?dataset ?as ?tool ?modality (COUNT(DISTINCT(?cell_label)) as ?shared_ds_cell_types)
+    SELECT ?dataset ?as ?sex ?tool ?modality (COUNT(DISTINCT(?cell_label)) as ?shared_ds_cell_types)
     WHERE {
       GRAPH hra-pop:test-data {
         ?dataset ccf:has_cell_summary [
+          ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
           ccf:modality ?modality ;
           ccf:has_cell_summary_row [
@@ -57,6 +60,7 @@ WHERE {
 
         GRAPH HRApop: {
           ?as ccf:has_cell_summary [
+            ccf:sex ?sex ;
             ccf:cell_annotation_method ?tool ;
             ccf:modality ?modality ;
           ] .
@@ -84,7 +88,7 @@ WHERE {
         }
       })
     }
-    GROUP BY ?dataset ?as ?tool ?modality
+    GROUP BY ?dataset ?as ?sex ?tool ?modality
   }
 }
-ORDER BY ?dataset DESC(?pct_hra_ct_overlap)
+ORDER BY ?sex ?dataset DESC(?pct_hra_ct_overlap)

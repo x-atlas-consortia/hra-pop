@@ -5,9 +5,12 @@ PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 
-SELECT (COUNT(DISTINCT ?sample) AS ?sample_count) (COUNT(DISTINCT ?donor) AS ?donor_count)
+SELECT ?sex (COUNT(DISTINCT ?sample) AS ?sample_count) (COUNT(DISTINCT ?donor) AS ?donor_count)
 FROM HRApop:
 FROM HRApopFull:
 WHERE {
-  ?sample ccf:comes_from ?donor  .
+  ?sample ccf:comes_from ?donor .
+  ?donor ccf:sex ?sex .
 }
+GROUP BY ?sex
+ORDER BY ?sex

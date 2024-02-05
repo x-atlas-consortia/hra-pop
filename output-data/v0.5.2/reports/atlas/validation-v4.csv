@@ -1,5 +1,10 @@
-tool,modality,asctb_only,both,exp_only
-azimuth,sc_bulk,1123,72,20
-popv,sc_bulk,1130,65,20
-spatial,spatial,1192,3,26
-celltypist,sc_bulk,1174,21,157
+sex,tool,modality,asctb_only,both,exp_only
+Female,azimuth,sc_bulk,1123,72,17
+Male,azimuth,sc_bulk,1124,71,20
+Unknown,azimuth,sc_bulk,1155,40,4
+Female,celltypist,sc_bulk,1174,21,141
+Female,popv,sc_bulk,1134,61,20
+Male,popv,sc_bulk,1130,65,18
+Male,celltypist,sc_bulk,1174,21,157
+Male,spatial,spatial,1192,3,26
+Female,spatial,spatial,1192,3,26

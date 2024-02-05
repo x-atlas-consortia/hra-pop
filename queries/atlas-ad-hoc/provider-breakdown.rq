@@ -8,12 +8,13 @@ PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX iftu: <https://hubmapconsortium.github.io/hra-ui/apps/ftu-ui/assets/TEMP/2d-ftu-illustrations.jsonld>
 
-SELECT ?provider (COUNT(DISTINCT(?dataset)) as ?dataset_count) (SUM(?cell_count) as ?cell_count)
+SELECT ?sex ?provider (COUNT(DISTINCT(?dataset)) as ?dataset_count) (SUM(?cell_count) as ?cell_count)
 FROM HRApop:
 WHERE {
   ?donor
     ccf:consortium_name ?consortium ;
-    ccf:tissue_provider_name ?provider .
+    ccf:tissue_provider_name ?provider ;
+    ccf:sex ?sex .
   
   {
     ?sample ccf:comes_from ?donor .
@@ -34,5 +35,5 @@ WHERE {
     ] ;
   ] .
 }
-GROUP BY ?provider
-ORDER BY ?provider
+GROUP BY ?provider ?sex
+ORDER BY ?provider ?sex

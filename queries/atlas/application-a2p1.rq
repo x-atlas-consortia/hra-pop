@@ -15,11 +15,13 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT ?dataset ?reported_organ ?tool ?modality ?as ?as_tool ?similarity
+SELECT ?dataset ?reported_organ ?sex ?tool ?modality ?as ?as_tool ?similarity
 WHERE {
   GRAPH hra-pop:similarities {
     {
       [] ccf:modality ?modality ;
+          ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ;
           ccf:cell_source_a_tool ?tool ;
           ccf:cell_source_b_tool ?as_tool ;
           ccf:cell_source_a ?dataset ;
@@ -29,6 +31,8 @@ WHERE {
     UNION 
     {
       [] ccf:modality ?modality ;
+          ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ;
           ccf:cell_source_a_tool ?as_tool ;
           ccf:cell_source_b_tool ?tool ;
           ccf:cell_source_a ?as ;

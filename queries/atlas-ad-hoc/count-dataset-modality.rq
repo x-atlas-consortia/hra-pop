@@ -4,12 +4,13 @@
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 
-SELECT (COUNT(DISTINCT ?dataset) AS ?dataset_ct) ?modality 
+SELECT ?sex (COUNT(DISTINCT ?dataset) AS ?dataset_ct) ?modality 
 FROM HRApop:
 WHERE {
   ?dataset a ccf:Dataset;
     ccf:has_cell_summary [
+      ccf:sex ?sex ;
   		ccf:modality ?modality
     ] .
 }
-GROUP BY ?modality
+GROUP BY ?sex ?modality

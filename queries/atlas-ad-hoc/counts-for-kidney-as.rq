@@ -15,7 +15,7 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT ?organ ?as_label ?cell_label
+SELECT ?sex ?organ ?as_label ?cell_label
 	(SAMPLE(?cell_id) as ?cell_id)
 	(AVG(?cell_count) as ?mean_cell_count)
 	(SUM(?cell_count) as ?cell_count)
@@ -23,6 +23,7 @@ FROM HRApop:
 WHERE {
 	?dataset a ccf:Dataset .
 	?dataset ccf:has_cell_summary [
+		ccf:sex ?sex ;
 		ccf:cell_annotation_method ?tool ;
 		ccf:modality ?modality ;
 		ccf:has_cell_summary_row [
@@ -53,5 +54,5 @@ WHERE {
 	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
 	FILTER (?as_label='renal papilla' || ?as_label = 'renal pyramid')
 }
-GROUP BY ?organ ?as_label ?cell_label
-ORDER BY ?organ ?as_label ?cell_label
+GROUP BY ?sex ?organ ?as_label ?cell_label
+ORDER BY ?sex ?organ ?as_label ?cell_label

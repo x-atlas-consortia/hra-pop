@@ -9,5 +9,8 @@ SELECT (COUNT(DISTINCT ?donor) AS ?donor_count)
 FROM HRApop:
 FROM HRApopFull:
 WHERE {
-  ?donor a ccf:Donor.
+  ?donor a ccf:Donor ;
+    ccf:sex ?sex .
 }
+GROUP BY ?sex
+ORDER BY ?sex

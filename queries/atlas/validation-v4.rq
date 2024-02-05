@@ -16,6 +16,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT
+  ?sex
   ?tool 
   ?modality
   (COUNT(DISTINCT(?asctb)) as ?asctb_only) 
@@ -24,12 +25,13 @@ SELECT
 WHERE {
   # Get CTs only in ASCT+B
   {
-    SELECT DISTINCT ?tool ?modality ?asctb {
+    SELECT DISTINCT ?sex ?tool ?modality ?asctb {
       GRAPH CCF: {
         ?asctb ccf:ccf_asctb_type ?type .
       }
       GRAPH HRApop: {
         [] ccf:has_cell_summary [
+          ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
           ccf:modality ?modality ;
         ]
@@ -38,6 +40,7 @@ WHERE {
       FILTER NOT EXISTS {
         GRAPH HRApop: {
           [] ccf:has_cell_summary [
+            ccf:sex ?sex ;
             ccf:cell_annotation_method ?tool ;
             ccf:modality ?modality ;
             ccf:has_cell_summary_row [
@@ -51,9 +54,10 @@ WHERE {
 
   # Get CTs only in Experimental Data
   {
-    SELECT DISTINCT ?tool ?modality ?exp {
+    SELECT DISTINCT ?sex ?tool ?modality ?exp {
       GRAPH HRApop: {
         [] ccf:has_cell_summary [
+          ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
           ccf:modality ?modality ;
           ccf:has_cell_summary_row [
@@ -72,21 +76,23 @@ WHERE {
 
   # Get CTs in Both
   {
-    SELECT DISTINCT ?tool ?modality ?both {
+    SELECT DISTINCT ?sex ?tool ?modality ?both {
       GRAPH CCF: {
         ?both ccf:ccf_asctb_type ?type .
       }
       GRAPH HRApop: {
         [] ccf:has_cell_summary [
+          ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
           ccf:modality ?modality ;
         ]
       }
       FILTER (?type = 'CT')
       FILTER EXISTS {
-        SELECT ?tool ?modality ?both {
+        SELECT ?sex ?tool ?modality ?both {
           GRAPH HRApop: {
             [] ccf:has_cell_summary [
+              ccf:sex ?sex ;
               ccf:cell_annotation_method ?tool ;
               ccf:modality ?modality ;
               ccf:has_cell_summary_row [
@@ -99,4 +105,4 @@ WHERE {
     }
   }
 }
-GROUP BY ?tool ?modality
+GROUP BY ?sex ?tool ?modality

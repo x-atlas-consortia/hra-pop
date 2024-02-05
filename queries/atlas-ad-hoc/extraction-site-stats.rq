@@ -16,13 +16,16 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT
+  ?sex
 	(COUNT(?rui_location) as ?rui_location_count)
 	(SUM(IF(?rui_location_collision_count = 1, 1, 0)) as ?rui_location_one_as_count)
 	(SUM(IF(?rui_location_ct_count = 0,1,0)) as ?rui_locations_no_ct)
 FROM HRApop:
 WHERE {
   	{ # Subquery from https://triplydb.com/bherr/-/queries/rui-location-counts
-      SELECT ?rui_location 
+      SELECT 
+      ?sex
+      ?rui_location 
       (COALESCE(?rui_location_dataset_count,0) as ?rui_location_dataset_count)
       (COALESCE(?rui_location_collision_count,0) as ?rui_location_collision_count)
       (COALESCE(?rui_location_ct_count, 0) as ?rui_location_ct_count)
@@ -49,10 +52,11 @@ WHERE {
         }
         OPTIONAL
         { # Get number of cell types and hra cell types per rui location
-          SELECT ?rui_location (COUNT(DISTINCT(?cell_label)) as ?rui_location_ct_count) (COUNT(DISTINCT(?hra_ct_id)) as ?rui_location_hra_ct_count)
+          SELECT ?sex ?rui_location (COUNT(DISTINCT(?cell_label)) as ?rui_location_ct_count) (COUNT(DISTINCT(?hra_ct_id)) as ?rui_location_hra_ct_count)
           WHERE {
             ?dataset a ccf:Dataset .
             ?dataset ccf:has_cell_summary [
+              ccf:sex ?sex ;
               ccf:cell_annotation_method ?tool ;
               ccf:modality ?modality ;
               ccf:has_cell_summary_row [
@@ -79,7 +83,7 @@ WHERE {
               # FILTER (?hra_ct_id = ?cell_id || ?hra_ct_label = ?cell_label)
             }
           }
-          GROUP BY ?rui_location
+          GROUP BY ?sex ?rui_location
         }
         OPTIONAL
         { # Get number of datasets associated with a RUI location
@@ -104,3 +108,4 @@ WHERE {
       # GROUP BY ?rui_location
     }
 }
+GROUP BY ?sex

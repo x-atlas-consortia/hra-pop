@@ -19,6 +19,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 # anatomical structure IRI | dataset_id | modality
 SELECT
+  ?sex
   ?organId
   ?organ_label
   ?refOrgan
@@ -40,6 +41,7 @@ WHERE {
   }
 
   ?dataset ccf:has_cell_summary [
+    ccf:sex ?sex ;
     ccf:cell_annotation_method ?tool ;
     ccf:modality ?modality ;
   ] .

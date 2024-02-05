@@ -11,4 +11,4 @@ mkdir -p $RAW_DIR/$VERSION
 mkdir -p $INPUT_DIR/$VERSION
 mkdir -p $OUTPUT_DIR/$VERSION
 
-JAVA_OPTS="-Xms2g -Xmx32g"
+JAVA_OPTS="-Xms2g -Xmx64g"

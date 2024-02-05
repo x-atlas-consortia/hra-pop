@@ -15,7 +15,7 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT DISTINCT ?organId ?organ ?modality ?as1_label ?as2_label ?cosine_sim ?as1_dataset_count ?as2_dataset_count
+SELECT DISTINCT ?organId ?organ ?sex ?modality ?as1_label ?as2_label ?cosine_sim ?as1_dataset_count ?as2_dataset_count
 
 WITH {
   SELECT ?refOrganAs (COUNT(DISTINCT(?dataset)) as ?as_dataset_count)
@@ -41,7 +41,7 @@ WITH {
 } AS %as_data
 
 WITH {
-  SELECT ?modality ?as1 ?as2 (AVG(?similarity) as ?cosine_sim)
+  SELECT ?sex ?modality ?as1 ?as2 (AVG(?similarity) as ?cosine_sim)
   WHERE {
     GRAPH CCF: {
       [] ccf:representation_of ?as1 .
@@ -52,10 +52,12 @@ WITH {
       [] ccf:modality ?modality ;
         ccf:cell_source_a ?as1 ;
         ccf:cell_source_b ?as2 ;
+        ccf:cell_source_a_sex ?sex ;
+        ccf:cell_source_b_sex ?sex ;
         ccf:similarity ?similarity .
     }
   }
-  GROUP BY ?modality ?as1 ?as2
+  GROUP BY ?sex ?modality ?as1 ?as2
 } AS %sims
 
 WHERE {

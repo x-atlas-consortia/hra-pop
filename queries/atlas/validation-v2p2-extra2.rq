@@ -15,7 +15,7 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT DISTINCT ?sample ?dataset ?tool ?modality ?organ ?organId ?as (?shared_ds_cell_types / ?total_ds_cell_types as ?pct_hra_ct_overlap)
+SELECT DISTINCT ?sex ?sample ?dataset ?tool ?modality ?organ ?organId ?as (?shared_ds_cell_types / ?total_ds_cell_types as ?pct_hra_ct_overlap)
 WHERE {
   GRAPH HRApop: {
     {
@@ -28,6 +28,7 @@ WHERE {
     }
 
     ?dataset ccf:has_cell_summary [
+      ccf:sex ?sex ;
       ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
     ] .
@@ -45,10 +46,11 @@ WHERE {
   }
 
   {
-    SELECT ?dataset (COUNT(DISTINCT(?dataset_cell_label)) as ?total_ds_cell_types)
+    SELECT ?sex ?dataset (COUNT(DISTINCT(?dataset_cell_label)) as ?total_ds_cell_types)
     WHERE {
       GRAPH HRApop: {
         ?dataset ccf:has_cell_summary [
+          ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
           ccf:modality ?modality ;
           ccf:has_cell_summary_row [
@@ -57,14 +59,15 @@ WHERE {
         ] .
       }
     }
-    GROUP BY ?dataset
+    GROUP BY ?sex ?dataset
   }
 
   {
-    SELECT ?dataset ?as (COUNT(DISTINCT(?cell_label)) as ?shared_ds_cell_types)
+    SELECT ?sex ?dataset ?as (COUNT(DISTINCT(?cell_label)) as ?shared_ds_cell_types)
     WHERE {
       GRAPH HRApop: {
         ?dataset ccf:has_cell_summary [
+          ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
           ccf:modality ?modality ;
           ccf:has_cell_summary_row [
@@ -73,6 +76,7 @@ WHERE {
         ] .
 
         ?as ccf:has_cell_summary [
+          ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
           ccf:modality ?modality ;
           ccf:has_cell_summary_row [
@@ -91,6 +95,6 @@ WHERE {
         FILTER (?type = 'AS')
       }
     }
-    GROUP BY ?dataset ?as
+    GROUP BY ?sex ?dataset ?as
   }
 }

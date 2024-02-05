@@ -19,12 +19,12 @@ SELECT DISTINCT
   (?datasetA as ?source)
   (?datasetB as ?target)
   (?similarity as ?weight)
-  ?tool ?modality ?organ ?organId
+  ?sex ?tool ?modality ?organ ?organId
   ?datasetA ?entityA ?datasetB ?entityB
   ?similarity ?distance
 
 WITH {
-  SELECT ?tool ?modality ?organ ?organId 
+  SELECT ?sex ?tool ?modality ?organ ?organId 
     ?datasetA ?entityA ?datasetB ?entityB
   WHERE {
     GRAPH HRApop: {
@@ -51,11 +51,13 @@ WITH {
       }
 
       ?datasetA ccf:has_cell_summary [
+        ccf:sex ?sex ;
         ccf:cell_annotation_method ?tool ;
         ccf:modality ?modality ;
       ] .
 
       ?datasetB ccf:has_cell_summary [
+        ccf:sex ?sex ;
         ccf:cell_annotation_method ?tool ;
         ccf:modality ?modality ;
       ] .
@@ -97,7 +99,7 @@ WITH {
 } AS %distances
 
 WITH {
-  SELECT ?tool ?entityA ?entityB ?similarity
+  SELECT ?sex ?tool ?entityA ?entityB ?similarity
   WHERE {
     GRAPH HRApop: {
       ?entityA a ccf:SpatialEntity .
@@ -106,7 +108,9 @@ WITH {
     }
 
     GRAPH hra-pop:similarities {
-      [] ccf:cell_source_a_tool ?tool ;
+      [] ccf:cell_source_a_sex ?sex ;
+        ccf:cell_source_b_sex ?sex ;
+        ccf:cell_source_a_tool ?tool ;
         ccf:cell_source_b_tool ?tool ;
         ccf:cell_source_a ?entityA ;
         ccf:cell_source_b ?entityB ;

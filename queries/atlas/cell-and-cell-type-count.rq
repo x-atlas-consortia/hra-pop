@@ -5,12 +5,14 @@ PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 
 SELECT
+  ?sex
   (COUNT(DISTINCT(?cell_id)) as ?unique_cell_type_count)
   (SUM(?cell_count) as ?cell_count)
 FROM HRApop:
 WHERE {
   [] a ccf:Dataset ;
     ccf:has_cell_summary [
+      ccf:sex ?sex ;
       ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
       ccf:has_cell_summary_row [
@@ -19,3 +21,4 @@ WHERE {
       ] ;
     ] .
 }
+GROUP BY ?sex

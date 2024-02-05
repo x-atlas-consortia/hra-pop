@@ -111,14 +111,15 @@ WHERE {
   }
 
   OPTIONAL {
-    SELECT ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
+    SELECT ?sex ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
     WHERE {
       {
-        SELECT ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
+        SELECT ?sex ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
         WHERE {
           {
             GRAPH HRApop: {
               ?dataset ccf:has_cell_summary [
+                ccf:sex ?sex ;
                 ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
@@ -131,6 +132,7 @@ WHERE {
           {
             GRAPH HRApopTestData: {
               ?dataset ccf:has_cell_summary [
+                ccf:sex ?sex ;
                 ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
@@ -140,10 +142,10 @@ WHERE {
             }
           }
         }
-        GROUP BY ?dataset ?modality ?tool
+        GROUP BY ?sex ?dataset ?modality ?tool
       }
     }
-    GROUP BY ?dataset ?modality
+    GROUP BY ?sex ?dataset ?modality
   }
 
   BIND (IF(BOUND(?ruiOrganIri), ?ruiOrganIri,

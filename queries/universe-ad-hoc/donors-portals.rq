@@ -5,10 +5,12 @@ PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 
-SELECT DISTINCT ?donor ?consortium_name
+SELECT DISTINCT ?sex ?donor ?consortium_name
 FROM HRApop:
 FROM HRApopFull:
 WHERE {
     ?donor a ccf:Donor ;
-        ccf:consortium_name ?consortium_name .
+        ccf:consortium_name ?consortium_name ;
+        ccf:sex ?sex .
 }
+ORDER BY ?sex ?consortium_name

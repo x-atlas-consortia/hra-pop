@@ -17,7 +17,7 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT DISTINCT ?dataset ?modality ?sex ?organ ?side ?organ_id ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?study_paper ?doi ?lead_author
+SELECT DISTINCT ?sex ?dataset ?modality ?organ ?side ?organ_id ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?study_paper ?doi ?lead_author
 FROM HRApopFull:
 FROM CCF:
 WHERE {
@@ -67,7 +67,8 @@ WHERE {
       ?block ccf:subdivided_into_sections ?sample .
       ?sample ccf:generates_dataset ?dataset .
     }
-    ?donor ccf:consortium_name ?portal .
+    ?donor ccf:consortium_name ?portal ;
+      ccf:sex ?sex .
   }
 
   {
