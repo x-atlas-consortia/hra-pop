@@ -11,11 +11,25 @@ const { data: datasets } = Papa.parse(readFileSync(DATASET_GRAPH_CSV).toString()
 });
 const datasetLookup = datasets.reduce((acc, row) => ((acc[row.dataset_id] = row), acc), {});
 
+function getRuiSex(ruiString) {
+  let sex = 'Unknown';
+  if (ruiString && ruiString.length > 0) {
+    const rui = JSON.parse(ruiString);
+    if (rui?.placement?.target?.startsWith('http://purl.org/ccf/latest/ccf.owl#VHF')) {
+      sex = 'Female';
+    } else if (rui?.placement?.target?.startsWith('http://purl.org/ccf/latest/ccf.owl#VHM')) {
+      sex = 'Male';
+    }
+  }
+  return sex;
+}
+
 const cellSummaries = JSON.parse(readFileSync(CELL_SUMMARIES));
 for (const summary of cellSummaries['@graph']) {
   const dataset = datasetLookup[summary['cell_source']];
   if (dataset) {
     const sex = (dataset.donor_sex || '').toLowerCase();
+    const ruiSex = getRuiSex(dataset.rui_location);
     switch (sex) {
       case 'female':
         summary.sex = 'Female';
@@ -24,7 +38,7 @@ for (const summary of cellSummaries['@graph']) {
         summary.sex = 'Male';
         break;
       default:
-        summary.sex = 'Unknown';
+        summary.sex = ruiSex;
         break;
     }
   }
