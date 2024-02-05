@@ -5028,7 +5028,8 @@ WHERE {
       ?block ccf:subdivided_into_sections ?sample .
       ?sample ccf:generates_dataset ?dataset .
     }
-    ?donor ccf:consortium_name ?portal .
+    ?donor ccf:consortium_name ?portal ;
+      ccf:sex ?donorSex .
   }
 
   {
@@ -5072,15 +5073,15 @@ WHERE {
   }
 
   OPTIONAL {
-    SELECT ?sex ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
+    SELECT ?cellSummarySex ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
     WHERE {
       {
-        SELECT ?sex ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
+        SELECT ?cellSummarySex ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
         WHERE {
           {
             GRAPH HRApop: {
               ?dataset ccf:has_cell_summary [
-                ccf:sex ?sex ;
+                ccf:sex ?cellSummarySex ;
                 ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
@@ -5093,7 +5094,7 @@ WHERE {
           {
             GRAPH HRApopTestData: {
               ?dataset ccf:has_cell_summary [
-                ccf:sex ?sex ;
+                ccf:sex ?cellSummarySex ;
                 ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
@@ -5103,10 +5104,10 @@ WHERE {
             }
           }
         }
-        GROUP BY ?sex ?dataset ?modality ?tool
+        GROUP BY ?cellSummarySex ?dataset ?modality ?tool
       }
     }
-    GROUP BY ?sex ?dataset ?modality
+    GROUP BY ?cellSummarySex ?dataset ?modality
   }
 
   BIND (IF(BOUND(?ruiOrganIri), ?ruiOrganIri,
@@ -5115,8 +5116,7 @@ WHERE {
   BIND (STR(IF(BOUND(?ruiOrganLabel), ?ruiOrganLabel,
     IF(BOUND(?reportedOrganLabel), ?reportedOrganLabel, ?reportedOrganIri))) as ?organLabel)
 
-  BIND (LCASE(IF(BOUND(?ruiOrganSex), ?ruiOrganSex,
-    IF(BOUND(?reportedSex), ?reportedSex, "unknown"))) as ?sex)
+  BIND (LCASE(COALESCE(?donorSex, ?ruiOrganSex, ?reportedSex, ?cellSummarySex, 'Unknown')) as ?sex)
 
   BIND (BOUND(?portal) && (?portal = 'HuBMAP' || ?portal = 'SenNet' || ?portal = 'GTEx') as ?in_high_quality_portal)
 
@@ -5156,7 +5156,12 @@ ORDER BY ?organ ?side ?sex ?modality ?status
 
 | organ | side | sex | modality | status | dataset_count | cell_count |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
+| blood |  | female | sc_bulk | Non-Atlas | 1332 | 31040 |
+| blood |  | male | sc_bulk | Non-Atlas | 1037 | 24201 |
+| blood |  | unknown | sc_bulk | Non-Atlas | 35 | 761 |
+| blood vasculature |  | female | sc_bulk | Non-Atlas | 5 | 74 |
+| blood vasculature |  | male | sc_bulk | Non-Atlas | 5 | 100 |
+| ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="spatial-and-bulk-datasets"></a>Spatial and bulk dataset information (spatial-and-bulk-datasets)
@@ -5237,7 +5242,7 @@ WHERE {
       ?sample ccf:generates_dataset ?dataset .
     }
     ?donor ccf:consortium_name ?portal ;
-      ccf:sex ?sex .
+      ccf:sex ?donorSex .
   }
 
   {
@@ -5281,14 +5286,15 @@ WHERE {
   }
 
   OPTIONAL {
-    SELECT ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
+    SELECT ?cellSummarySex ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
     WHERE {
       {
-        SELECT ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
+        SELECT ?cellSummarySex ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
         WHERE {
           {
             GRAPH HRApop: {
               ?dataset ccf:has_cell_summary [
+                ccf:sex ?cellSummarySex ;
                 ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
@@ -5301,6 +5307,7 @@ WHERE {
           {
             GRAPH HRApopTestData: {
               ?dataset ccf:has_cell_summary [
+                ccf:sex ?cellSummarySex ;
                 ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
@@ -5310,10 +5317,10 @@ WHERE {
             }
           }
         }
-        GROUP BY ?dataset ?modality ?tool
+        GROUP BY ?cellSummarySex ?dataset ?modality ?tool
       }
     }
-    GROUP BY ?dataset ?modality
+    GROUP BY ?cellSummarySex ?dataset ?modality
   }
 
   BIND (IF(BOUND(?ruiOrganIri), ?ruiOrganIri,
@@ -5322,8 +5329,7 @@ WHERE {
   BIND (STR(IF(BOUND(?ruiOrganLabel), ?ruiOrganLabel,
     IF(BOUND(?reportedOrganLabel), ?reportedOrganLabel, ?reportedOrganIri))) as ?organLabel)
 
-  BIND (LCASE(IF(BOUND(?ruiOrganSex), ?ruiOrganSex,
-    IF(BOUND(?reportedSex), ?reportedSex, "unknown"))) as ?sex)
+  BIND (LCASE(COALESCE(?donorSex, ?ruiOrganSex, ?reportedSex, ?cellSummarySex, 'Unknown')) as ?sex)
 
   BIND (BOUND(?portal) && (?portal = 'HuBMAP' || ?portal = 'SenNet' || ?portal = 'GTEx') as ?in_high_quality_portal)
 
@@ -5361,7 +5367,12 @@ ORDER BY ?dataset
 
 | sex | dataset | modality | organ | side | organ_id | cell_count | in_atlas | has_cell_summary | has_extraction_site | has_publication | in_high_quality_portal | portal | study_paper | doi | lead_author |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
+| unknown | https://api.cellxgene.cziscience.com/dp/v1/collections/02b01703-bf1b-48de-b99a-23bef8cccc81#VS-LN$lymph%20node | sc_bulk | lymph node |  | http://purl.obolibrary.org/obo/UBERON_0000029 | 94 | false | true | false | true | false | CxG | Spatially mapping T cell receptors and transcriptomes | https://doi.org/10.1016/j.immuni.2022.09.002 | Sophia Liu |
+| unknown | https://api.cellxgene.cziscience.com/dp/v1/collections/02b01703-bf1b-48de-b99a-23bef8cccc81#VS-TON$tonsil | sc_bulk | lung |  | http://purl.obolibrary.org/obo/UBERON_0001004 | 47 | false | true | false | true | false | CxG | Spatially mapping T cell receptors and transcriptomes | https://doi.org/10.1016/j.immuni.2022.09.002 | Sophia Liu |
+| female | https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp1$alveolus%20of%20lung | sc_bulk | lung |  | http://purl.obolibrary.org/obo/UBERON_0002048 | 32 | false | true | false | true | false | CxG | Emphysema Cell Atlas | https://doi.org/10.1016/j.immuni.2023.01.032 | Chaoqun Wang |
+| female | https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp2$alveolus%20of%20lung | sc_bulk | lung |  | http://purl.obolibrary.org/obo/UBERON_0002048 | 33 | false | true | false | true | false | CxG | Emphysema Cell Atlas | https://doi.org/10.1016/j.immuni.2023.01.032 | Chaoqun Wang |
+| female | https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp3$alveolus%20of%20lung | sc_bulk | lung |  | http://purl.obolibrary.org/obo/UBERON_0002048 | 32 | false | true | false | true | false | CxG | Emphysema Cell Atlas | https://doi.org/10.1016/j.immuni.2023.01.032 | Chaoqun Wang |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="spatial-placements"></a>Universe Spatial Placements (spatial-placements)

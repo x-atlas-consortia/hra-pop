@@ -577,19 +577,19 @@ outs:
         etag: c025d9cd644be38d82909dfbd20a1400
         version_id: lmbdO_ooGjm4_Y3EqNDlz5ST7PpKwv.C
   - relpath: reports/universe-ad-hoc/spatial-and-bulk-datasets-breakdown.csv
-    md5: 81e678137fba97aa257acdbc5f550220
-    size: 56
+    md5: c462b0e0fb11e15f795beff87f86c756
+    size: 3336
     cloud:
       s3:
-        etag: 81e678137fba97aa257acdbc5f550220
-        version_id: YPsFTSS1SjIFi2p48IFGhJUbCHypM9dQ
+        etag: c462b0e0fb11e15f795beff87f86c756
+        version_id: EVKhsSfFALR6YeDXa0hyIF03no3w2R5X
   - relpath: reports/universe-ad-hoc/spatial-and-bulk-datasets.csv
-    md5: 4bbda2a16ed4c7f68351415a5f8ba4f6
-    size: 172
+    md5: 1deba59163bc4e90791a231fbb4e049a
+    size: 2620915
     cloud:
       s3:
-        etag: 4bbda2a16ed4c7f68351415a5f8ba4f6
-        version_id: GCoZ.JiMszGbsMrGwP5ygPeXvos86aeK
+        etag: 1deba59163bc4e90791a231fbb4e049a
+        version_id: SemwmKVUT7pDyjLAVot34ncZs9nk6VyO
   - relpath: reports/universe-ad-hoc/spatial-placements.csv
     md5: 8f0b448f187824d63c83f1d567977ecc
     size: 52203

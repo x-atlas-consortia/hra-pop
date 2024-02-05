@@ -68,7 +68,7 @@ WHERE {
       ?sample ccf:generates_dataset ?dataset .
     }
     ?donor ccf:consortium_name ?portal ;
-      ccf:sex ?sex .
+      ccf:sex ?donorSex .
   }
 
   {
@@ -112,14 +112,15 @@ WHERE {
   }
 
   OPTIONAL {
-    SELECT ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
+    SELECT ?cellSummarySex ?dataset ?modality (MAX(?cell_count_by_tool) as ?cell_count)
     WHERE {
       {
-        SELECT ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
+        SELECT ?cellSummarySex ?dataset ?modality ?tool (COUNT(?count) as ?cell_count_by_tool)
         WHERE {
           {
             GRAPH HRApop: {
               ?dataset ccf:has_cell_summary [
+                ccf:sex ?cellSummarySex ;
                 ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
@@ -132,6 +133,7 @@ WHERE {
           {
             GRAPH HRApopTestData: {
               ?dataset ccf:has_cell_summary [
+                ccf:sex ?cellSummarySex ;
                 ccf:modality ?modality ;
                 ccf:cell_annotation_method ?tool ;
                 ccf:has_cell_summary_row [
@@ -141,10 +143,10 @@ WHERE {
             }
           }
         }
-        GROUP BY ?dataset ?modality ?tool
+        GROUP BY ?cellSummarySex ?dataset ?modality ?tool
       }
     }
-    GROUP BY ?dataset ?modality
+    GROUP BY ?cellSummarySex ?dataset ?modality
   }
 
   BIND (IF(BOUND(?ruiOrganIri), ?ruiOrganIri,
@@ -153,8 +155,7 @@ WHERE {
   BIND (STR(IF(BOUND(?ruiOrganLabel), ?ruiOrganLabel,
     IF(BOUND(?reportedOrganLabel), ?reportedOrganLabel, ?reportedOrganIri))) as ?organLabel)
 
-  BIND (LCASE(IF(BOUND(?ruiOrganSex), ?ruiOrganSex,
-    IF(BOUND(?reportedSex), ?reportedSex, "unknown"))) as ?sex)
+  BIND (LCASE(COALESCE(?donorSex, ?ruiOrganSex, ?reportedSex, ?cellSummarySex, 'Unknown')) as ?sex)
 
   BIND (BOUND(?portal) && (?portal = 'HuBMAP' || ?portal = 'SenNet' || ?portal = 'GTEx') as ?in_high_quality_portal)
 
