@@ -1,0 +1,104 @@
+#+ summary: Cell types per organ per annotation tool
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?Organ
+  (SAMPLE(?_Azimuth) as ?Azimuth)
+  (SAMPLE(?_CellTypist) as ?CellTypist)
+  (SAMPLE(?_popV) as ?popV)
+  (SAMPLE(?_hasReferenceOrgan) as ?hasReferenceOrgan)
+FROM CCF:
+FROM CTAnn:
+WHERE {
+  {
+    SELECT ?Organ (SAMPLE(?_organ_id) as ?organ_id) (COUNT(DISTINCT(?cell_id)) as ?_Azimuth)
+    WHERE {
+      ?annotation a ccf:AnnotationItem ;
+          ccf:tool ?tool ;
+          ccf:organ_id ?_organ_id ;
+          ccf:organ_level ?organ_level ;
+          ccf:cell_id ?cell_id ;
+      .
+      FILTER(?tool = 'azimuth')
+
+            OPTIONAL {
+        ?_organ_id ccf:ccf_pref_label ?OrganPrefLabel .
+      }
+      OPTIONAL {
+        ?_organ_id rdfs:label ?OrganRdfsLabel .
+      }
+
+      BIND(COALESCE(?OrganPrefLabel, ?OrganRdfsLabel, IF(?_organ_id = <http://purl.obolibrary.org/obo/UBERON_0001134>, 'skeletal muscle tissue', ?_organ_id)) as ?Organ)
+    }
+    GROUP BY ?Organ
+  }
+  UNION
+  {
+    SELECT ?Organ (SAMPLE(?_organ_id) as ?organ_id) (COUNT(DISTINCT(?cell_id)) as ?_CellTypist)
+    WHERE {
+      ?annotation a ccf:AnnotationItem ;
+          ccf:tool ?tool ;
+          ccf:organ_id ?_organ_id ;
+          ccf:organ_level ?organ_level ;
+          ccf:cell_id ?cell_id ;
+      .
+      FILTER(?tool = 'celltypist')
+
+      OPTIONAL {
+        ?_organ_id ccf:ccf_pref_label ?OrganPrefLabel .
+      }
+      OPTIONAL {
+        ?_organ_id rdfs:label ?OrganRdfsLabel .
+      }
+
+      BIND(COALESCE(?OrganPrefLabel, ?OrganRdfsLabel, IF(?_organ_id = <http://purl.obolibrary.org/obo/UBERON_0001134>, 'skeletal muscle tissue', ?_organ_id)) as ?Organ)
+    }
+    GROUP BY ?Organ
+  }
+  UNION
+  {
+    SELECT ?Organ (SAMPLE(?_organ_id) as ?organ_id) (COUNT(DISTINCT(?cell_id)) as ?_popV)
+    WHERE {
+      ?annotation a ccf:AnnotationItem ;
+          ccf:tool ?tool ;
+          ccf:organ_id ?_organ_id ;
+          ccf:organ_level ?organ_level ;
+          ccf:cell_id ?cell_id ;
+      .
+      FILTER(?tool = 'popv')
+
+      OPTIONAL {
+        ?_organ_id ccf:ccf_pref_label ?OrganPrefLabel .
+      }
+      OPTIONAL {
+        ?_organ_id rdfs:label ?OrganRdfsLabel .
+      }
+
+      BIND(COALESCE(?OrganPrefLabel, ?OrganRdfsLabel, IF(?_organ_id = <http://purl.obolibrary.org/obo/UBERON_0001134>, 'skeletal muscle tissue', ?_organ_id)) as ?Organ)
+    }
+    GROUP BY ?Organ
+  }
+
+  OPTIONAL {
+    SELECT DISTINCT ?organ_id ?_hasReferenceOrgan
+    WHERE {
+      ?annotation a ccf:AnnotationItem ;
+        ccf:organ_id ?organ_id .
+      {
+        ?refOrgan ccf:representation_of ?organ_id .
+      }
+      UNION
+      {
+        ?refOrgan ccf:representation_of [
+          ccf:ccf_part_of ?organ_id
+        ] .
+      }
+
+      BIND(IF(BOUND(?refOrgan), 'x', '') as ?_hasReferenceOrgan) 
+    }
+  }
+}
+GROUP BY ?Organ
+ORDER BY ?Organ
