@@ -3781,15 +3781,20 @@ WHERE {
 ```sparql
 #+ summary: Cell types per organ per annotation tool
 PREFIX ccf: <http://purl.org/ccf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
 
 SELECT ?Organ
+  ?H5AD
+  ?AS3D
+  ?AS
+  ?CT
   ?Azimuth
   ?CellTypist
   ?popV
-  ?hasReferenceOrgan
+  (IF(?AS3D > 0, 'x', '') as ?hasReferenceOrgan)
 FROM CCF:
 FROM CTAnn:
 WHERE {
@@ -3831,20 +3836,71 @@ WHERE {
   }
   
   {
-    SELECT DISTINCT ?organ_id ?hasReferenceOrgan
+    SELECT ?organ_id (COUNT(DISTINCT(?refOrganAs)) as ?AS3D) 
     WHERE {
       ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
       OPTIONAL {
-        ?refOrgan ccf:representation_of ?organ_id .
+        [] ccf:representation_of ?organ_id ;
+          ccf:has_reference_organ ?refOrganIri .
+
+        ?refOrganAs a ccf:SpatialEntity ;
+          ccf:has_reference_organ ?refOrganIri .
       }
       OPTIONAL {
-        ?refOrgan ccf:representation_of [
+        [] ccf:representation_of [
           ccf:ccf_part_of ?organ_id
-        ] .
+        ] ;
+        ccf:has_reference_organ ?refOrganIri .
+
+        ?refOrganAs a ccf:SpatialEntity ;
+          ccf:has_reference_organ ?refOrganIri .
       }
-      BIND(IF(BOUND(?refOrgan), 'x', '') as ?hasReferenceOrgan) 
     }
+    GROUP BY ?organ_id
   }
+
+  {
+    SELECT ?organ_id (COUNT(DISTINCT(?child)) as ?AS)
+    WHERE {
+      ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
+      OPTIONAL {
+        ?organ_id ^ccf:ccf_part_of* ?child .
+      }
+    }
+    GROUP BY ?organ_id
+  }
+
+  {
+    SELECT ?organ_id (COUNT(DISTINCT(?ct)) as ?CT)
+    WHERE {
+      ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
+      OPTIONAL {
+        ?organ_id ^ccf:ccf_part_of* ?child .
+        ?ct ccf:ccf_located_in ?child .
+      }
+    }
+    GROUP BY ?organ_id
+  }
+
+  {
+    SELECT ?organ_id (COUNT(DISTINCT(?dataset)) as ?H5AD) 
+    WHERE {
+      ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
+
+      OPTIONAL {
+        GRAPH HRApopTestData: {
+          [] ccf:generates_dataset ?dataset .
+          ?dataset ccf:has_cell_summary [] ;
+            ccf:organ_id ?_organ_id .
+
+          BIND(IRI(?_organ_id) as ?organ_id)
+        }
+      }
+    }
+    GROUP BY ?organ_id
+  }
+
+  FILTER(?Organ != 'respiratory system')
 }
 ORDER BY ?Organ
 
@@ -3855,14 +3911,14 @@ ORDER BY ?Organ
 
 #### Results ([View CSV File](reports/hra/ct-per-organ-per-tool.csv))
 
-| Organ | Azimuth | CellTypist | popV | hasReferenceOrgan |
-| :--- | :--- | :--- | :--- | :--- |
-| blood | 41 | 26 | 18 |  |
-| bone marrow | 43 | 39 | 14 |  |
-| breast mammary gland | 0 | 0 | 14 | x |
-| eye | 0 | 0 | 27 | x |
-| heart | 25 | 49 | 6 | x |
-| ... | ... | ... | ... | ... |
+| Organ | H5AD | AS3D | AS | CT | Azimuth | CellTypist | popV | hasReferenceOrgan |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| blood | 2404 | 0 | 1 | 29 | 41 | 26 | 18 |  |
+| blood vasculature | 10 | 244 | 1178 | 65 | 0 | 0 | 14 | x |
+| bone marrow | 117 | 0 | 1 | 47 | 43 | 39 | 14 |  |
+| breast mammary gland | 0 | 18 | 3 | 10 | 0 | 0 | 14 | x |
+| eye | 143 | 96 | 41 | 58 | 0 | 0 | 27 | x |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="named-graphs"></a>Named graphs in the db (named-graphs)

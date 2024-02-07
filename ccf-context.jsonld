@@ -62,6 +62,9 @@
       "@id": "ccf:percentage_of_total"
     },
 
+    "organ_id": {
+      "@type": "@id"
+    },
     "cell_source_a": {
       "@type": "@id"
     },
