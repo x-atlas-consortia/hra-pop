@@ -11,6 +11,7 @@ HRA_POP=https://purl.humanatlas.io/graph/hra-pop
 HRA_POP_LQ=https://purl.humanatlas.io/graph/hra-pop-lq
 HRA_POP_FULL=https://purl.humanatlas.io/ds-graph/hra-pop-full
 CCF=https://purl.humanatlas.io/graph/ccf
+CTANN_CROSSWALKS=https://purl.humanatlas.io/graph/ctann-crosswalks
 
 run_ndjsonld() {
   QUADS=${1%.jsonld}.nq
@@ -56,3 +57,7 @@ fi
 # Import CCF.OWL
 curl -s $CCF -H "Accept: application/rdf+xml" > $DIR/ccf.owl
 blazegraph-runner load --journal=$JNL "--graph=${CCF}" $DIR/ccf.owl
+
+# Import ctann-crosswalks
+curl -s $CTANN_CROSSWALKS -H "Accept: application/rdf+xml" > $DIR/ctann-crosswalks.xml
+blazegraph-runner load --journal=$JNL "--graph=${CTANN_CROSSWALKS}" $DIR/ctann-crosswalks.xml
