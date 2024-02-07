@@ -1,0 +1,41 @@
+sex,consortium,dataset_count,cell_count,modality
+Female,Allen Institute for Brain Science,5,0,
+Male,Allen Institute for Brain Science,6,0,
+Female,CxG,2310,20146095,sc_bulk
+Female,CxG,693,0,
+Male,CxG,2254,21066494,sc_bulk
+Male,CxG,573,0,
+Unknown,CxG,271,2202973,sc_bulk
+Unknown,CxG,91,0,
+Female,GTEx,7,123723,sc_bulk
+Female,GTEx,30,0,
+Male,GTEx,9,143336,sc_bulk
+Male,GTEx,29,0,
+Female,HCA,40,659085,sc_bulk
+Female,HCA,76,0,
+Male,HCA,42,799317,sc_bulk
+Male,HCA,71,0,
+Male,"HIRN, ESPACE",1,0,
+Female,HRA,1,0,
+Female,HuBMAP,171,5349394,sc_bulk
+Female,HuBMAP,20,555082,spatial
+Female,HuBMAP,1368,0,
+Male,HuBMAP,352,16087912,sc_bulk
+Male,HuBMAP,54,2061512,spatial
+Male,HuBMAP,1710,0,
+Unknown,HuBMAP,68,0,
+Male,KPMP,3,0,
+Female,LungMap,4,0,
+Male,LungMap,5,0,
+Female,NHLBI/LungMap,2,29691,sc_bulk
+Male,NHLBI/LungMap,7,109809,sc_bulk
+Male,NHLBI/LungMap,1,0,
+Female,SEA-AD,1,0,
+Female,SPARC,14,0,
+Male,SPARC,12,0,
+Female,SenNet,1,21772,sc_bulk
+Female,SenNet,81,0,
+Male,SenNet,1,21963,sc_bulk
+Male,SenNet,82,0,
+Female,UEdinburgh,36,0,
+Male,UEdinburgh,28,0,

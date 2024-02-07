@@ -44,6 +44,8 @@
   * [Cell types per organ per annotation tool (ct-per-organ-per-tool)](#ct-per-organ-per-tool)
   * [Named graphs in the db (named-graphs)](#named-graphs)
 * universe-ad-hoc
+  * [Universe consortium breakdown (consortium-breakdown)](#consortium-breakdown)
+  * [Universe consortium breakdown (count-consortium-datasets)](#count-consortium-datasets)
   * [Universe Sample and Dataset Counts (count-dataset-samples)](#count-dataset-samples)
   * [Universe Dataset Count (count-datasets)](#count-datasets)
   * [Universe Donor and Portal Counts (count-donors-portals)](#count-donors-portals)
@@ -193,14 +195,21 @@ WHERE {
     ?sample ccf:generates_dataset ?dataset .
   }
 
-  ?dataset ccf:has_cell_summary [
-    ccf:sex ?sex ;
-    ccf:cell_annotation_method ?tool ;
-    ccf:modality ?modality ;
-    ccf:has_cell_summary_row [
-      ccf:cell_count ?cell_count ;
-    ] ;
-  ] .
+  {
+    SELECT ?dataset ?sex ?modality (SUM(?_cell_count) as ?cell_count)
+    WHERE {
+      ?dataset ccf:has_cell_summary [
+        ccf:sex ?sex ;
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+        ccf:has_cell_summary_row [
+          ccf:cell_count ?_cell_count ;
+        ] ;
+      ] .
+    }
+    GROUP BY ?dataset ?sex ?modality
+  }
+  
 }
 GROUP BY ?sex ?consortium ?modality
 ORDER BY ?consortium ?sex
@@ -3958,6 +3967,185 @@ ORDER BY ?graph
 | https://purl.humanatlas.io/graph/hra-pop#test-data | 5663656 |
 
 
+### <a id="consortium-breakdown"></a>Universe consortium breakdown (consortium-breakdown)
+
+For each consortium in the universe of datasets, show the number of contributed datasets, cells, and modality
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Universe consortium breakdown
+#+ description: For each consortium in the universe of datasets, show the number of contributed datasets, cells, and modality
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX iftu: <https://hubmapconsortium.github.io/hra-ui/apps/ftu-ui/assets/TEMP/2d-ftu-illustrations.jsonld>
+
+SELECT ?sex ?consortium (COUNT(DISTINCT(?dataset)) as ?dataset_count) (SUM(?cell_count) as ?cell_count) ?modality
+FROM HRApop:
+FROM HRApopTestData:
+FROM HRApopFull:
+WHERE {
+  ?donor ccf:consortium_name ?consortium ;
+    ccf:sex ?sex .
+
+  {
+    ?sample ccf:comes_from ?donor .
+    # ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    # ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  OPTIONAL {
+    ?dataset ccf:has_cell_summary [
+      ccf:sex ?sex ;
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
+      ccf:has_cell_summary_row [
+        ccf:cell_count ?cell_count ;
+      ] ;
+    ] .
+  }
+}
+GROUP BY ?sex ?consortium ?modality
+ORDER BY ?consortium ?sex
+
+```
+
+([View Source](../../queries/universe-ad-hoc/consortium-breakdown.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/consortium-breakdown.csv))
+
+| sex | consortium | dataset_count | cell_count | modality |
+| :--- | :--- | :--- | :--- | :--- |
+| Female | GTEx | 7 | 123723 | sc_bulk |
+| Male | GTEx | 9 | 143336 | sc_bulk |
+| Female | HCA | 40 | 659085 | sc_bulk |
+| Male | HCA | 42 | 799317 | sc_bulk |
+| Female | HuBMAP | 176 | 5380390 | sc_bulk |
+| ... | ... | ... | ... | ... |
+
+## universe-ad-hoc
+
+### <a id="count-consortium-datasets"></a>Universe consortium breakdown (count-consortium-datasets)
+
+For each consortium in the universe of datasets, show the number of contributed datasets, cells, and modality
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Universe consortium breakdown
+#+ description: For each consortium in the universe of datasets, show the number of contributed datasets, cells, and modality
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX iftu: <https://hubmapconsortium.github.io/hra-ui/apps/ftu-ui/assets/TEMP/2d-ftu-illustrations.jsonld>
+
+SELECT ?consortium 
+  ?dataset_count
+  ?atlas_dataset_count
+  ?test_dataset_count
+WHERE {
+  {
+    SELECT ?consortium
+      (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+      }
+    }
+    GROUP BY ?consortium
+  }
+
+  OPTIONAL {
+    SELECT ?consortium
+      (COUNT(DISTINCT(?atlas_dataset)) as ?atlas_dataset_count)
+    WHERE {
+      GRAPH HRApop: {
+        ?donor ccf:consortium_name ?consortium .
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?atlas_dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?atlas_dataset .
+        }
+      }
+    }
+    GROUP BY ?consortium
+  }
+
+  OPTIONAL {
+    SELECT ?consortium
+      (COUNT(DISTINCT(?test_dataset)) as ?test_dataset_count)
+    WHERE {
+      GRAPH HRApopTestData: {
+        ?donor ccf:consortium_name ?consortium .
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?test_dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?test_dataset .
+        }
+      }
+    }
+    GROUP BY ?consortium
+  }
+}
+ORDER BY ?consortium
+
+```
+
+([View Source](../../queries/universe-ad-hoc/count-consortium-datasets.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/count-consortium-datasets.csv))
+
+| consortium | dataset_count | atlas_dataset_count | test_dataset_count |
+| :--- | :--- | :--- | :--- |
+| Allen Institute for Brain Science | 11 |  | 11 |
+| CxG | 6192 |  | 4835 |
+| GTEx | 75 | 16 | 50 |
+| HCA | 229 | 82 | 65 |
+| HIRN, ESPACE | 1 |  | 1 |
+| ... | ... | ... | ... |
+
+
 ### <a id="count-dataset-samples"></a>Universe Sample and Dataset Counts (count-dataset-samples)
 
 Counts the unique number of samples and associated datasets considered or used in HRApop
@@ -3992,7 +4180,6 @@ WHERE {
 | :--- | :--- |
 | 7088 | 10530 |
 
-## universe-ad-hoc
 
 ### <a id="count-datasets"></a>Universe Dataset Count (count-datasets)
 

@@ -80,12 +80,12 @@ outs:
         etag: f01f4f3f5bc613a06682abc81acade26
         version_id: HMKgYI7AazJ7t1erVpdkEKuTn5oZOD9l
   - relpath: blazegraph.jnl
-    md5: 7ef34eba25c07113a73f3e8ccf891f76
+    md5: 6d0ce20b6965a94b963d0de301156db7
     size: 11083186176
     cloud:
       s3:
-        etag: b587b1d3245cc51202d786c727325567-212
-        version_id: PrEkUoaugZRk1wpRseLjbS7hdarhZUJz
+        etag: e2ec7109d2b3bb51a885966e3cbd2c22-212
+        version_id: 7i74h4DLLjSL6ocrIbA.xv3mpjg4mfyK
   - relpath: ccf.owl
     md5: 925719b4685eee94c66592350b32d6a3
     size: 49185484
@@ -128,6 +128,13 @@ outs:
       s3:
         etag: 3ac876207ea65284c54be896d89529b7
         version_id: NOMm7S2PNsFzVmB3ido0WRP5nNhr1Pu6
+  - relpath: ctann-crosswalks.xml
+    md5: 375baba3073c791c6ae54ef102817096
+    size: 963105
+    cloud:
+      s3:
+        etag: 375baba3073c791c6ae54ef102817096
+        version_id: DSENoie5jAVkJx8z9lKSh9PWCewn8HhX
   - relpath: euclidean-distances.ttl
     md5: 55c5aaca934ea07ba46644533dc0abbf
     size: 153586806
@@ -429,6 +436,13 @@ outs:
       s3:
         etag: 56d609937227c2e0629c766a9dab5fe2
         version_id: YToRtRHz09J9hYh6ytgigmZeRPPbGp3N
+  - relpath: reports/hra/ct-per-organ-per-tool.csv
+    md5: 7d59071b4717d6c7e2b0cd41c9f7145e
+    size: 921
+    cloud:
+      s3:
+        etag: 7d59071b4717d6c7e2b0cd41c9f7145e
+        version_id: xVihRxP8H8x_VvdWFmFB.f509g_X3E.t
   - relpath: reports/hra/named-graphs.csv
     md5: 753aa6556c784f0e06bbdd0a8b038105
     size: 403
@@ -436,6 +450,20 @@ outs:
       s3:
         etag: 753aa6556c784f0e06bbdd0a8b038105
         version_id: a8kt2UVebZDoFiCrAiUbtilu2nngk0Af
+  - relpath: reports/universe-ad-hoc/consortium-breakdown.csv
+    md5: 763cb7e203cf35659c2eb8588d461a21
+    size: 1046
+    cloud:
+      s3:
+        etag: 763cb7e203cf35659c2eb8588d461a21
+        version_id: iTd3ACaL2OHzvSNjybp.3HvRwC3coaNj
+  - relpath: reports/universe-ad-hoc/count-consortium-datasets.csv
+    md5: 109111804335527e75065be02c69f488
+    size: 300
+    cloud:
+      s3:
+        etag: 109111804335527e75065be02c69f488
+        version_id: XQBEUI0dH_9cQslczgqBX4gzDAlhwmz5
   - relpath: reports/universe-ad-hoc/count-dataset-samples.csv
     md5: 73fdd74bbae9462437b729c112905ad7
     size: 38
