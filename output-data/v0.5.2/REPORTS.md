@@ -41,6 +41,7 @@
 * hra
   * [Count of Anatomical Structures by Organ (as-cnt-per-organ)](#as-cnt-per-organ)
   * [Count of Anatomical Structures (as-cnt)](#as-cnt)
+  * [Cell types per organ per annotation tool (ct-per-organ-per-tool)](#ct-per-organ-per-tool)
   * [Named graphs in the db (named-graphs)](#named-graphs)
 * universe-ad-hoc
   * [Universe Sample and Dataset Counts (count-dataset-samples)](#count-dataset-samples)
@@ -3768,6 +3769,100 @@ WHERE {
 | as_cnt |
 | :--- |
 | 519 |
+
+
+### <a id="ct-per-organ-per-tool"></a>Cell types per organ per annotation tool (ct-per-organ-per-tool)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Cell types per organ per annotation tool
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?Organ
+  ?Azimuth
+  ?CellTypist
+  ?popV
+  ?hasReferenceOrgan
+FROM CCF:
+FROM CTAnn:
+WHERE {
+  {
+    SELECT ?organ_id 
+    	(SUM(IF(?tool = 'azimuth', ?cell_type_count, 0)) as ?Azimuth)
+	    (SUM(IF(?tool = 'celltypist', ?cell_type_count, 0)) as ?CellTypist)
+    	(SUM(IF(?tool = 'popv', ?cell_type_count, 0)) as ?popV)
+    WHERE {
+      {
+        SELECT ?organ_id ?tool (COUNT(DISTINCT(?cell_id)) as ?cell_type_count)
+        WHERE {
+          ?annotation a ccf:AnnotationItem ;
+            ccf:tool ?tool ;
+            ccf:organ_id ?organ_id ;
+            ccf:organ_level ?organ_level ;
+            ccf:cell_id ?cell_id ;
+          .
+        }
+        GROUP BY ?organ_id ?tool
+      }
+    }
+    GROUP BY ?organ_id
+  }
+
+  {
+    SELECT ?organ_id (SAMPLE(?_Organ) as ?Organ)
+    WHERE {
+      ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
+      OPTIONAL {
+        ?organ_id ccf:ccf_pref_label ?OrganPrefLabel .
+      }
+      OPTIONAL {
+        ?organ_id rdfs:label ?OrganRdfsLabel .
+      }
+      BIND(STR(COALESCE(?OrganPrefLabel, ?OrganRdfsLabel, IF(?organ_id = <http://purl.obolibrary.org/obo/UBERON_0001134>, 'skeletal muscle tissue', ?organ_id))) as ?_Organ)
+    }
+    GROUP BY ?organ_id
+  }
+  
+  {
+    SELECT DISTINCT ?organ_id ?hasReferenceOrgan
+    WHERE {
+      ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
+      OPTIONAL {
+        ?refOrgan ccf:representation_of ?organ_id .
+      }
+      OPTIONAL {
+        ?refOrgan ccf:representation_of [
+          ccf:ccf_part_of ?organ_id
+        ] .
+      }
+      BIND(IF(BOUND(?refOrgan), 'x', '') as ?hasReferenceOrgan) 
+    }
+  }
+}
+ORDER BY ?Organ
+
+```
+
+([View Source](../../queries/hra/ct-per-organ-per-tool.rq))
+</details>
+
+#### Results ([View CSV File](reports/hra/ct-per-organ-per-tool.csv))
+
+| Organ | Azimuth | CellTypist | popV | hasReferenceOrgan |
+| :--- | :--- | :--- | :--- | :--- |
+| blood | 41 | 26 | 18 |  |
+| bone marrow | 43 | 39 | 14 |  |
+| breast mammary gland | 0 | 0 | 14 | x |
+| eye | 0 | 0 | 27 | x |
+| heart | 25 | 49 | 6 | x |
+| ... | ... | ... | ... | ... |
 
 
 ### <a id="named-graphs"></a>Named graphs in the db (named-graphs)
