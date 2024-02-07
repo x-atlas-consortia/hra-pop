@@ -5,100 +5,64 @@ PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?Organ
-  (SAMPLE(?_Azimuth) as ?Azimuth)
-  (SAMPLE(?_CellTypist) as ?CellTypist)
-  (SAMPLE(?_popV) as ?popV)
-  (SAMPLE(?_hasReferenceOrgan) as ?hasReferenceOrgan)
+  ?Azimuth
+  ?CellTypist
+  ?popV
+  ?hasReferenceOrgan
 FROM CCF:
 FROM CTAnn:
 WHERE {
   {
-    SELECT ?Organ (SAMPLE(?_organ_id) as ?organ_id) (COUNT(DISTINCT(?cell_id)) as ?_Azimuth)
+    SELECT ?organ_id 
+    	(SUM(IF(?tool = 'azimuth', ?cell_type_count, 0)) as ?Azimuth)
+	    (SUM(IF(?tool = 'celltypist', ?cell_type_count, 0)) as ?CellTypist)
+    	(SUM(IF(?tool = 'popv', ?cell_type_count, 0)) as ?popV)
     WHERE {
-      ?annotation a ccf:AnnotationItem ;
-          ccf:tool ?tool ;
-          ccf:organ_id ?_organ_id ;
-          ccf:organ_level ?organ_level ;
-          ccf:cell_id ?cell_id ;
-      .
-      FILTER(?tool = 'azimuth')
-
-            OPTIONAL {
-        ?_organ_id ccf:ccf_pref_label ?OrganPrefLabel .
-      }
-      OPTIONAL {
-        ?_organ_id rdfs:label ?OrganRdfsLabel .
-      }
-
-      BIND(COALESCE(?OrganPrefLabel, ?OrganRdfsLabel, IF(?_organ_id = <http://purl.obolibrary.org/obo/UBERON_0001134>, 'skeletal muscle tissue', ?_organ_id)) as ?Organ)
-    }
-    GROUP BY ?Organ
-  }
-  UNION
-  {
-    SELECT ?Organ (SAMPLE(?_organ_id) as ?organ_id) (COUNT(DISTINCT(?cell_id)) as ?_CellTypist)
-    WHERE {
-      ?annotation a ccf:AnnotationItem ;
-          ccf:tool ?tool ;
-          ccf:organ_id ?_organ_id ;
-          ccf:organ_level ?organ_level ;
-          ccf:cell_id ?cell_id ;
-      .
-      FILTER(?tool = 'celltypist')
-
-      OPTIONAL {
-        ?_organ_id ccf:ccf_pref_label ?OrganPrefLabel .
-      }
-      OPTIONAL {
-        ?_organ_id rdfs:label ?OrganRdfsLabel .
-      }
-
-      BIND(COALESCE(?OrganPrefLabel, ?OrganRdfsLabel, IF(?_organ_id = <http://purl.obolibrary.org/obo/UBERON_0001134>, 'skeletal muscle tissue', ?_organ_id)) as ?Organ)
-    }
-    GROUP BY ?Organ
-  }
-  UNION
-  {
-    SELECT ?Organ (SAMPLE(?_organ_id) as ?organ_id) (COUNT(DISTINCT(?cell_id)) as ?_popV)
-    WHERE {
-      ?annotation a ccf:AnnotationItem ;
-          ccf:tool ?tool ;
-          ccf:organ_id ?_organ_id ;
-          ccf:organ_level ?organ_level ;
-          ccf:cell_id ?cell_id ;
-      .
-      FILTER(?tool = 'popv')
-
-      OPTIONAL {
-        ?_organ_id ccf:ccf_pref_label ?OrganPrefLabel .
-      }
-      OPTIONAL {
-        ?_organ_id rdfs:label ?OrganRdfsLabel .
-      }
-
-      BIND(COALESCE(?OrganPrefLabel, ?OrganRdfsLabel, IF(?_organ_id = <http://purl.obolibrary.org/obo/UBERON_0001134>, 'skeletal muscle tissue', ?_organ_id)) as ?Organ)
-    }
-    GROUP BY ?Organ
-  }
-
-  OPTIONAL {
-    SELECT DISTINCT ?organ_id ?_hasReferenceOrgan
-    WHERE {
-      ?annotation a ccf:AnnotationItem ;
-        ccf:organ_id ?organ_id .
       {
+        SELECT ?organ_id ?tool (COUNT(DISTINCT(?cell_id)) as ?cell_type_count)
+        WHERE {
+          ?annotation a ccf:AnnotationItem ;
+            ccf:tool ?tool ;
+            ccf:organ_id ?organ_id ;
+            ccf:organ_level ?organ_level ;
+            ccf:cell_id ?cell_id ;
+          .
+        }
+        GROUP BY ?organ_id ?tool
+      }
+    }
+    GROUP BY ?organ_id
+  }
+
+  {
+    SELECT ?organ_id (SAMPLE(?_Organ) as ?Organ)
+    WHERE {
+      ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
+      OPTIONAL {
+        ?organ_id ccf:ccf_pref_label ?OrganPrefLabel .
+      }
+      OPTIONAL {
+        ?organ_id rdfs:label ?OrganRdfsLabel .
+      }
+      BIND(STR(COALESCE(?OrganPrefLabel, ?OrganRdfsLabel, IF(?organ_id = <http://purl.obolibrary.org/obo/UBERON_0001134>, 'skeletal muscle tissue', ?organ_id))) as ?_Organ)
+    }
+    GROUP BY ?organ_id
+  }
+  
+  {
+    SELECT DISTINCT ?organ_id ?hasReferenceOrgan
+    WHERE {
+      ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
+      OPTIONAL {
         ?refOrgan ccf:representation_of ?organ_id .
       }
-      UNION
-      {
+      OPTIONAL {
         ?refOrgan ccf:representation_of [
           ccf:ccf_part_of ?organ_id
         ] .
       }
-
-      BIND(IF(BOUND(?refOrgan), 'x', '') as ?_hasReferenceOrgan) 
+      BIND(IF(BOUND(?refOrgan), 'x', '') as ?hasReferenceOrgan) 
     }
   }
 }
-GROUP BY ?Organ
 ORDER BY ?Organ
