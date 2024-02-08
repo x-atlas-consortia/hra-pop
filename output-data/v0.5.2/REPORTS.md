@@ -41,6 +41,7 @@
 * hra
   * [Count of Anatomical Structures by Organ (as-cnt-per-organ)](#as-cnt-per-organ)
   * [Count of Anatomical Structures (as-cnt)](#as-cnt)
+  * [Cell types per annotation tool (count-ct-per-tool)](#count-ct-per-tool)
   * [Cell types per organ per annotation tool (ct-per-organ-per-tool)](#ct-per-organ-per-tool)
   * [Named graphs in the db (named-graphs)](#named-graphs)
 * universe-ad-hoc
@@ -3778,6 +3779,44 @@ WHERE {
 | as_cnt |
 | :--- |
 | 519 |
+
+
+### <a id="count-ct-per-tool"></a>Cell types per annotation tool (count-ct-per-tool)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Cell types per annotation tool
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
+
+SELECT ?tool (COUNT(DISTINCT(?cell_id)) as ?cell_type_count)
+FROM CTAnn:
+WHERE {
+  [] a ccf:AnnotationItem ;
+    ccf:tool ?tool ;
+    ccf:cell_id ?cell_id ;
+  .
+}
+GROUP BY ?tool
+
+```
+
+([View Source](../../queries/hra/count-ct-per-tool.rq))
+</details>
+
+#### Results ([View CSV File](reports/hra/count-ct-per-tool.csv))
+
+| tool | cell_type_count |
+| :--- | :--- |
+| azimuth | 194 |
+| celltypist | 214 |
+| popv | 134 |
 
 
 ### <a id="ct-per-organ-per-tool"></a>Cell types per organ per annotation tool (ct-per-organ-per-tool)

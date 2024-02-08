@@ -1,0 +1,15 @@
+#+ summary: Cell types per annotation tool
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
+
+SELECT ?tool (COUNT(DISTINCT(?cell_id)) as ?cell_type_count)
+FROM CTAnn:
+WHERE {
+  [] a ccf:AnnotationItem ;
+    ccf:tool ?tool ;
+    ccf:cell_id ?cell_id ;
+  .
+}
+GROUP BY ?tool

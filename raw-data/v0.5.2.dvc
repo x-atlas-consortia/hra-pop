@@ -436,6 +436,13 @@ outs:
       s3:
         etag: 56d609937227c2e0629c766a9dab5fe2
         version_id: YToRtRHz09J9hYh6ytgigmZeRPPbGp3N
+  - relpath: reports/hra/count-ct-per-tool.csv
+    md5: c54befb940b3ce2617bac9d31bb66a95
+    size: 57
+    cloud:
+      s3:
+        etag: c54befb940b3ce2617bac9d31bb66a95
+        version_id: U4Bd7h8x5XibRzEzTZuZPSW0iIQpHo8B
   - relpath: reports/hra/ct-per-organ-per-tool.csv
     md5: 7d59071b4717d6c7e2b0cd41c9f7145e
     size: 921
