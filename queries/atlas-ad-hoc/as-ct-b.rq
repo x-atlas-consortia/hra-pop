@@ -1,0 +1,44 @@
+#+ summary: Atlas AS with CT and B info from exp data
+#+ description: Atlas-level AS with cell type and biomarker information, including mean gene expression, derived from experimental data.
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+
+SELECT ?sex ?tool  
+  (SAMPLE(?_as_label) as ?as_label)
+  (SAMPLE(?cell_label) AS ?cell_label)
+  ?gene_label
+  ?as ?cell_id
+  (SUM(?_cell_count) AS ?cell_count)
+  (AVG(xsd:decimal(?gene_expr)) as ?mean_gene_expr)
+FROM CCF:
+FROM HRApop:
+WHERE {
+  ?as ccf:has_cell_summary [
+      ccf:sex ?sex ;
+      ccf:aggregates ?dataset 
+    ] .
+  ?as ccf:ccf_pref_label ?_as_label .
+  ?dataset ccf:has_cell_summary [
+    ccf:sex ?sex ;
+    ccf:cell_annotation_method ?tool ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?cell_label ;
+      ccf:cell_count ?count ;
+      ccf:gene_expr [
+        ccf:gene_label ?gene_label ;
+        ccf:mean_gene_expr_value ?gene_expr ;
+      ]
+    ]
+  ] .
+  BIND (xsd:decimal(?count) AS ?_cell_count)
+
+  FILTER(STRSTARTS(STR(?as), STR(UBERON:)) || STRSTARTS(STR(?as), STR(FMA:)))
+}
+GROUP BY ?sex ?as ?tool ?cell_id ?gene_label
+ORDER BY ?tool ?sex ?as_label DESC(?mean_gene_expr)

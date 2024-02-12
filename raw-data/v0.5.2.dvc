@@ -184,6 +184,13 @@ outs:
       s3:
         etag: fb3ae37b2b7c3d8ba10628b82a0a3b5d
         version_id: V4s2mvLGqtBuXWjOYCifD3GFHI5f08HI
+  - relpath: reports/atlas-ad-hoc/as-ct-b.csv
+    md5: 13a8f47829569ae6b57f069cd1746c36
+    size: 15225978
+    cloud:
+      s3:
+        etag: 13a8f47829569ae6b57f069cd1746c36
+        version_id: iXKYsuVecyo2UsSKe8yyCl2DbguPv2n0
   - relpath: reports/atlas-ad-hoc/as-datasets-modality.csv
     md5: f4dfd0f1a738d656013b28073db6bc4a
     size: 1194305

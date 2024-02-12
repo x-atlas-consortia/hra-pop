@@ -3,6 +3,7 @@
   ## Table of Contents
 
 * atlas-ad-hoc
+  * [Atlas AS with CT and B info from exp data (as-ct-b)](#as-ct-b)
   * [Atlas dataset tool, modality, and AS info (as-datasets-modality)](#as-datasets-modality)
   * [Atlas consortium breakdown (consortium-breakdown)](#consortium-breakdown)
   * [Datasets by modality (count-dataset-modality)](#count-dataset-modality)
@@ -72,6 +73,77 @@
   * [Universe Spatial Placements (spatial-placements)](#spatial-placements)
 
 
+
+### <a id="as-ct-b"></a>Atlas AS with CT and B info from exp data (as-ct-b)
+
+Atlas-level AS with cell type and biomarker information, including mean gene expression, derived from experimental data.
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Atlas AS with CT and B info from exp data
+#+ description: Atlas-level AS with cell type and biomarker information, including mean gene expression, derived from experimental data.
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+
+SELECT ?sex ?tool  
+  (SAMPLE(?_as_label) as ?as_label)
+  (SAMPLE(?cell_label) AS ?cell_label)
+  ?gene_label
+  ?as ?cell_id
+  (SUM(?_cell_count) AS ?cell_count)
+  (AVG(xsd:decimal(?gene_expr)) as ?mean_gene_expr)
+FROM CCF:
+FROM HRApop:
+WHERE {
+  ?as ccf:has_cell_summary [
+      ccf:sex ?sex ;
+      ccf:aggregates ?dataset 
+    ] .
+  ?as ccf:ccf_pref_label ?_as_label .
+  ?dataset ccf:has_cell_summary [
+    ccf:sex ?sex ;
+    ccf:cell_annotation_method ?tool ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?cell_label ;
+      ccf:cell_count ?count ;
+      ccf:gene_expr [
+        ccf:gene_label ?gene_label ;
+        ccf:mean_gene_expr_value ?gene_expr ;
+      ]
+    ]
+  ] .
+  BIND (xsd:decimal(?count) AS ?_cell_count)
+
+  FILTER(STRSTARTS(STR(?as), STR(UBERON:)) || STRSTARTS(STR(?as), STR(FMA:)))
+}
+GROUP BY ?sex ?as ?tool ?cell_id ?gene_label
+ORDER BY ?tool ?sex ?as_label DESC(?mean_gene_expr)
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/as-ct-b.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/as-ct-b.csv))
+
+| sex | tool | as_label | cell_label | gene_label | as | cell_id | cell_count | mean_gene_expr |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | azimuth | kidney capsule | kidney loop of Henle short descending thin limb epithelial cell | ENSG00000280441.3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 6055 | 1139.4583129882815 |
+| Female | azimuth | kidney capsule | kidney inner medulla collecting duct principal cell | ENSG00000280441.3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_1000718 | 21425 | 191.4571075439453 |
+| Female | azimuth | kidney capsule | kidney loop of Henle short descending thin limb epithelial cell | ENSG00000198938.2 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 359 | 166.7955589294434 |
+| Female | azimuth | kidney capsule | podocyte | ENSG00000187391.22 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_0000653 | 1388 | 154.51090272267661166667 |
+| Female | azimuth | kidney capsule | kidney loop of Henle short descending thin limb epithelial cell | ENSG00000210082.2 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 6289 | 141.930960845947246 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+## atlas-ad-hoc
 
 ### <a id="as-datasets-modality"></a>Atlas dataset tool, modality, and AS info (as-datasets-modality)
 
@@ -158,7 +230,6 @@ ORDER BY ?refOrgan
 | Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | popv | sc_bulk | descending colon |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
-## atlas-ad-hoc
 
 ### <a id="consortium-breakdown"></a>Atlas consortium breakdown (consortium-breakdown)
 
