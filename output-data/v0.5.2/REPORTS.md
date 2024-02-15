@@ -4170,8 +4170,9 @@ PREFIX iftu: <https://hubmapconsortium.github.io/hra-ui/apps/ftu-ui/assets/TEMP/
 
 SELECT ?consortium 
   ?dataset_count
-  ?atlas_dataset_count
-  ?test_dataset_count
+  (COALESCE(?atlas_dataset_count, 0) as ?atlas_dataset_count)
+  (COALESCE(?test_dataset_count, 0) as ?test_dataset_count)
+  (COALESCE(?excluded_dataset_count, 0) as ?excluded_dataset_count)
 WHERE {
   {
     SELECT ?consortium
@@ -4236,6 +4237,38 @@ WHERE {
     }
     GROUP BY ?consortium
   }
+
+  OPTIONAL {
+    SELECT ?consortium
+      (COUNT(DISTINCT(?dataset)) as ?excluded_dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+      }
+
+      FILTER(NOT EXISTS {
+        GRAPH HRApop: {
+          [] ccf:generates_dataset ?dataset;
+        }
+      } && NOT EXISTS {
+        GRAPH HRApopTestData: {
+          [] ccf:generates_dataset ?dataset;
+        }
+      })
+    }
+    GROUP BY ?consortium
+  }
 }
 ORDER BY ?consortium
 
@@ -4246,14 +4279,14 @@ ORDER BY ?consortium
 
 #### Results ([View CSV File](reports/universe-ad-hoc/count-consortium-datasets.csv))
 
-| consortium | dataset_count | atlas_dataset_count | test_dataset_count |
-| :--- | :--- | :--- | :--- |
-| Allen Institute for Brain Science | 11 |  | 11 |
-| CxG | 6192 |  | 4835 |
-| GTEx | 75 | 16 | 50 |
-| HCA | 229 | 82 | 65 |
-| HIRN, ESPACE | 1 |  | 1 |
-| ... | ... | ... | ... |
+| consortium | dataset_count | atlas_dataset_count | test_dataset_count | excluded_dataset_count |
+| :--- | :--- | :--- | :--- | :--- |
+| Allen Institute for Brain Science | 11 | 0 | 11 | 0 |
+| CxG | 6192 | 0 | 4835 | 1357 |
+| GTEx | 75 | 16 | 50 | 9 |
+| HCA | 229 | 82 | 65 | 82 |
+| HIRN, ESPACE | 1 | 0 | 1 | 0 |
+| ... | ... | ... | ... | ... |
 
 
 ### <a id="count-dataset-samples"></a>Universe Sample and Dataset Counts (count-dataset-samples)
