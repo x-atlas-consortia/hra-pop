@@ -474,6 +474,10 @@ outs:
   - relpath: reports/universe-ad-hoc/count-consortium-datasets.csv
     md5: 1b4354f0aae70c8341ff31eee9f3512e
     size: 366
+    cloud:
+      s3:
+        etag: 1b4354f0aae70c8341ff31eee9f3512e
+        version_id: 48c8VRrWjESpLCVyQtKyP3okdi24ecER
   - relpath: reports/universe-ad-hoc/count-dataset-samples.csv
     md5: 73fdd74bbae9462437b729c112905ad7
     size: 38
