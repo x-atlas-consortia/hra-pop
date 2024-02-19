@@ -1,0 +1,37 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX dbxref: <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX HGNC: <http://purl.bioontology.org/ontology/HGNC/>
+
+SELECT DISTINCT ?gene_label ?gene_id ?gene
+FROM CCF:
+FROM HRApop:
+WHERE {
+  {
+    SELECT DISTINCT ?gene_label ?clean_gene_label
+    WHERE {
+      [] ccf:gene_label ?gene_label .
+      BIND(IF(STRSTARTS(?gene_label, 'ENSG'), STRBEFORE(?gene_label, '.'), ?gene_label) as ?clean_gene_label)
+      hint:SubQuery hint:runOnce true;
+    }    
+  }
+
+  OPTIONAL {
+    {
+      ?gene dbxref: ?clean_gene_label ;
+        oboInOwl:id ?gene_id .
+    }
+    UNION {
+      ?gene HGNC:symbol ?clean_gene_label ;
+        oboInOwl:id ?gene_id .
+    }
+  }
+
+  # FILTER(BOUND(?gene))
+  # FILTER(!STRSTARTS(?gene_label, 'ENSG'))
+}

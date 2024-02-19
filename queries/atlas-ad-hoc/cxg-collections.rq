@@ -1,0 +1,16 @@
+#+ summary: Atlas-level CxG collections
+#+ description: Atlas-level CellxGene collections and number of datasets extracted from each
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT ?collection (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+FROM HRApop:
+WHERE {
+  [] ccf:generates_dataset ?dataset .
+  FILTER(STRSTARTS(STR(?dataset), 'https://api.cellxgene.cziscience.com'))
+  BIND(STRBEFORE(STR(?dataset), '#') as ?_collection)
+  BIND(IF(STRLEN(?_collection) = 0, STRBEFORE(STR(?dataset), '_'), ?_collection) as ?collection)
+}
+GROUP BY ?collection
+ORDER BY DESC(?dataset_count)

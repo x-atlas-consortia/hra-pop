@@ -1,0 +1,68 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?sex ?dataset ?rui_location ?publication ?technology ?description ?annotation_method (COUNT(DISTINCT ?cell_id) as ?unique_cell_type_count)
+FROM HRApop:
+#FROM HRApopFull:
+WHERE {
+  ?dataset a ccf:Dataset.
+
+  OPTIONAL {
+    ?dataset ccf:publication ?publication
+  }
+
+  {
+    ?block ccf:has_registration_location ?rui_location .
+    ?block ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  OPTIONAL {
+    ?dataset ccf:technology ?technology ;
+      rdfs:comment ?description ;
+  }
+  OPTIONAL {
+    ?dataset ccf:has_cell_summary ?cell_summary .
+    ?cell_summary ccf:cell_annotation_method ?annotation_method ;
+                  ccf:sex ?sex ;
+                  ccf:has_cell_summary_row [
+                    ccf:cell_id ?cell_id
+                  ] .
+  }
+
+  {
+    SELECT ?rui_location (COUNT(DISTINCT(?as_label)) as ?rui_location_collision_count)
+    WHERE {
+      ?rui_location a ccf:SpatialEntity .
+      OPTIONAL {
+        ?rui_location ccf:has_collision_summary [
+            ccf:has_collision_item [
+              ccf:as_label ?as_label ;
+              ccf:as_volume ?as_volume ;
+              ccf:has_reference_organ ?ref_organ ;
+            ]
+        ] .
+      }
+    }
+    GROUP BY ?rui_location
+    ORDER BY ?rui_location_collision_count
+  }
+  FILTER (?rui_location_collision_count = 0)
+}
+GROUP BY ?sex ?dataset ?rui_location ?publication ?technology ?description ?annotation_method
+ORDER BY DESC(?unique_cell_type_count)

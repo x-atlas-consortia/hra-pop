@@ -9,6 +9,7 @@
   * [Datasets by modality (count-dataset-modality)](#count-dataset-modality)
   * [Kidney AS Cell Distributions (counts-for-kidney-as)](#counts-for-kidney-as)
   * [Bulk Tool-Organ-AS Cell Distributions (counts-for-tools-by-as)](#counts-for-tools-by-as)
+  * [Atlas-level CxG collections (cxg-collections)](#cxg-collections)
   * [Extraction Site Statistics (extraction-site-stats)](#extraction-site-stats)
   * [Tissue Provider Counts (provider-breakdown)](#provider-breakdown)
   * [RUI Registered H5AD Dataset and TB Count (rui-registered-h5ad-datasets)](#rui-registered-h5ad-datasets)
@@ -21,6 +22,7 @@
   * [Application A2P4 (application-a2p4)](#application-a2p4)
   * [Count of Cells and unique Cell Types by Modality (cell-and-cell-type-count-by-modality)](#cell-and-cell-type-count-by-modality)
   * [Count of Cells and unique Cell Types (cell-and-cell-type-count)](#cell-and-cell-type-count)
+  * [Atlas-level Donor information (donor-info)](#donor-info)
   * [Figure AS-AS Sim Data (figure-as-as-sim)](#figure-as-as-sim)
   * [Figure F4 (figure-f4)](#figure-f4)
   * [Table S1 (table-s1)](#table-s1)
@@ -58,6 +60,7 @@
   * [Universe Samples with Description Counts (count-sample-description)](#count-sample-description)
   * [Universe Sample Count (count-samples)](#count-samples)
   * [Universe Spatial Placement Count (count-spatial-placements)](#count-spatial-placements)
+  * [Universe CxG collections (cxg-collections)](#cxg-collections)
   * [Dataset information (dataset-info)](#dataset-info)
   * [Dataset Publications (dataset-publications)](#dataset-publications)
   * [Universe Donor information (donor-info)](#donor-info)
@@ -509,6 +512,44 @@ ORDER BY ?sex ?tool ?organ ?as_label ?cell_label
 | Female | azimuth | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | capillary endothelial cell | http://purl.obolibrary.org/obo/CL_0002144 | 1361.66666666666666666667 | 49020 |
 | Female | azimuth | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | endocardial cell | http://purl.obolibrary.org/obo/CL_0002350 | 10.6 | 318 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="cxg-collections"></a>Atlas-level CxG collections (cxg-collections)
+
+Atlas-level CellxGene collections and number of datasets extracted from each
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Atlas-level CxG collections
+#+ description: Atlas-level CellxGene collections and number of datasets extracted from each
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT ?collection (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+FROM HRApop:
+WHERE {
+  [] ccf:generates_dataset ?dataset .
+  FILTER(STRSTARTS(STR(?dataset), 'https://api.cellxgene.cziscience.com'))
+  BIND(STRBEFORE(STR(?dataset), '#') as ?_collection)
+  BIND(IF(STRLEN(?_collection) = 0, STRBEFORE(STR(?dataset), '_'), ?_collection) as ?collection)
+}
+GROUP BY ?collection
+ORDER BY DESC(?dataset_count)
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/cxg-collections.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/cxg-collections.csv))
+
+| collection | dataset_count |
+| :--- | :--- |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72 | 82 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837 | 9 |
 
 
 ### <a id="extraction-site-stats"></a>Extraction Site Statistics (extraction-site-stats)
@@ -1376,6 +1417,49 @@ GROUP BY ?sex
 | :--- | :--- | :--- |
 | Male | 334 | 17727429 |
 | Female | 316 | 6769743 |
+
+
+### <a id="donor-info"></a>Atlas-level Donor information (donor-info)
+
+Atlas-level donor information, including provider name, age, sex, bmi, and race
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Atlas-level Donor information
+#+ description: Atlas-level donor information, including provider name, age, sex, bmi, and race
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?donor ?consortium ?tissue_provider ?age ?sex ?bmi ?race
+FROM HRApop:
+WHERE {
+  ?donor a ccf:Donor .
+  OPTIONAL { ?donor ccf:consortium_name ?consortium . }
+  OPTIONAL { ?donor ccf:tissue_provider_name ?tissue_provider . }
+  OPTIONAL { ?donor ccf:age ?age . }
+  OPTIONAL { ?donor ccf:sex ?sex . }
+  OPTIONAL { ?donor ccf:bmi ?bmi . }
+  OPTIONAL { ?donor ccf:race ?race . }
+}
+
+```
+
+([View Source](../../queries/atlas/donor-info.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/donor-info.csv))
+
+| donor | consortium | tissue_provider | age | sex | bmi | race |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| https://entity.api.hubmapconsortium.org/entities/b98fceee74b721925c833424a5bd63d4 | HuBMAP | TMC-UCSD | 53 | Male |  | White |
+| https://entity.api.hubmapconsortium.org/entities/be425f8a2963dda1d3a7a0c79de5e466 | HuBMAP | TMC-Stanford | 24 | Female | 23.2 | White |
+| https://entity.api.hubmapconsortium.org/entities/c37ed0a5fa384dceb5d8914e221e9f08 | HuBMAP | RTI-General Electric | 72 | Male | 27.4 | White |
+| https://entity.api.hubmapconsortium.org/entities/c86683ee308b4a492821d6827c5fd073 | HuBMAP | TMC-UCSD |  | Unknown |  |  |
+| https://entity.api.hubmapconsortium.org/entities/d15df1013d0948b4416a88fec00f5385 | HuBMAP | TMC-UCSD |  | Male |  |  |
+| ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="figure-as-as-sim"></a>Figure AS-AS Sim Data (figure-as-as-sim)
@@ -4649,6 +4733,46 @@ WHERE {
 | 735 |
 
 
+### <a id="cxg-collections"></a>Universe CxG collections (cxg-collections)
+
+Universe CellxGene collections and number of datasets extracted from each
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Universe CxG collections
+#+ description: Universe CellxGene collections and number of datasets extracted from each
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT ?collection (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  [] ccf:generates_dataset ?dataset .
+  FILTER(STRSTARTS(STR(?dataset), 'https://api.cellxgene.cziscience.com'))
+  BIND(STRBEFORE(STR(?dataset), '#') as ?_collection)
+  BIND(IF(STRLEN(?_collection) = 0, STRBEFORE(STR(?dataset), '_'), ?_collection) as ?collection)
+}
+GROUP BY ?collection
+ORDER BY DESC(?dataset_count)
+
+```
+
+([View Source](../../queries/universe-ad-hoc/cxg-collections.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/cxg-collections.csv))
+
+| collection | dataset_count |
+| :--- | :--- |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72 | 82 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837 | 9 |
+
+
 ### <a id="dataset-info"></a>Dataset information (dataset-info)
 
 Dataset technology, description, annotation method, and cell type counts
@@ -4746,27 +4870,29 @@ WHERE {
 
 ### <a id="donor-info"></a>Universe Donor information (donor-info)
 
-Universe donor information, including provider name, age, sex, and race
+Universe donor information, including provider name, age, sex, bmi, and race
 
 <details>
   <summary>View Sparql Query</summary>
 
 ```sparql
 #+ summary: Universe Donor information
-#+ description: Universe donor information, including provider name, age, sex, and race
+#+ description: Universe donor information, including provider name, age, sex, bmi, and race
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 
-SELECT DISTINCT ?donor ?tissue_provider ?age ?sex ?race
+SELECT DISTINCT ?donor ?consortium ?tissue_provider ?age ?sex ?bmi ?race
 FROM HRApop:
 FROM HRApopFull:
 WHERE {
   ?donor a ccf:Donor .
+  OPTIONAL { ?donor ccf:consortium_name ?consortium . }
   OPTIONAL { ?donor ccf:tissue_provider_name ?tissue_provider . }
   OPTIONAL { ?donor ccf:age ?age . }
   OPTIONAL { ?donor ccf:sex ?sex . }
+  OPTIONAL { ?donor ccf:bmi ?bmi . }
   OPTIONAL { ?donor ccf:race ?race . }
 }
 
@@ -4775,16 +4901,16 @@ WHERE {
 ([View Source](../../queries/universe-ad-hoc/donor-info.rq))
 </details>
 
-#### Results ([View CSV File](reports/universe-ad-hoc/donor-info.csv))
+#### Results ([View CSV File](reports/atlas/donor-info.csv))
 
-| donor | tissue_provider | age | sex | race |
-| :--- | :--- | :--- | :--- | :--- |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/5c868b6f-62c5-4532-9d7f-a346ad4b50a7#134300$ileum_Block | CxG |  | Male | unknown |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/5c868b6f-62c5-4532-9d7f-a346ad4b50a7#134764$ileal%20epithelium_Block | CxG |  | Male | unknown |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/5c868b6f-62c5-4532-9d7f-a346ad4b50a7#134764$ileum_Block | CxG |  | Male | unknown |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/5c868b6f-62c5-4532-9d7f-a346ad4b50a7#139892$ileal%20epithelium_Block | CxG |  | Male | unknown |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/5c868b6f-62c5-4532-9d7f-a346ad4b50a7#139892$ileum_Block | CxG |  | Male | unknown |
-| ... | ... | ... | ... | ... |
+| donor | consortium | tissue_provider | age | sex | bmi | race |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| https://entity.api.hubmapconsortium.org/entities/b98fceee74b721925c833424a5bd63d4 | HuBMAP | TMC-UCSD | 53 | Male |  | White |
+| https://entity.api.hubmapconsortium.org/entities/be425f8a2963dda1d3a7a0c79de5e466 | HuBMAP | TMC-Stanford | 24 | Female | 23.2 | White |
+| https://entity.api.hubmapconsortium.org/entities/c37ed0a5fa384dceb5d8914e221e9f08 | HuBMAP | RTI-General Electric | 72 | Male | 27.4 | White |
+| https://entity.api.hubmapconsortium.org/entities/c86683ee308b4a492821d6827c5fd073 | HuBMAP | TMC-UCSD |  | Unknown |  |  |
+| https://entity.api.hubmapconsortium.org/entities/d15df1013d0948b4416a88fec00f5385 | HuBMAP | TMC-UCSD |  | Male |  |  |
+| ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="donors-portals"></a>Universe Donors and Portals (donors-portals)

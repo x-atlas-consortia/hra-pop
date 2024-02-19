@@ -226,6 +226,9 @@ outs:
       s3:
         etag: cc45d7a208e95cb34a2cad16b15d04ce
         version_id: YVStMD__bg9ZvDm2rMD.6Yev3rsXqGg4
+  - relpath: reports/atlas-ad-hoc/cxg-collections.csv
+    md5: 82cd6ac20f4f7ae39a8222faa69a4fa3
+    size: 214
   - relpath: reports/atlas-ad-hoc/extraction-site-stats.csv
     md5: d79cac0f6d1491668c59d0032efcde0f
     size: 100
@@ -303,6 +306,9 @@ outs:
       s3:
         etag: 485f49ce6a3628fe5fc65165e51fd737
         version_id: SIjh.VO.rV70ilWv.UgbyQfsvbdmDM3q
+  - relpath: reports/atlas/donor-info.csv
+    md5: 51510b1643921b794e5190f3fde42770
+    size: 15355
   - relpath: reports/atlas/figure-as-as-sim.csv
     md5: b9a558f2d0f260bf22277d68ace091de
     size: 44093
@@ -548,6 +554,9 @@ outs:
       s3:
         etag: 9c6ff05a1225a570db953d0f53ca46f3
         version_id: Rj_9lj3YkWz93ft7kw0X3ClpzlHJCbNR
+  - relpath: reports/universe-ad-hoc/cxg-collections.csv
+    md5: 43d092aa32356bae8f6629527b5dfa88
+    size: 11689
   - relpath: reports/universe-ad-hoc/dataset-info.csv
     md5: d24fd8579f1938c4ef980208b25f3a9e
     size: 1357808
@@ -563,12 +572,8 @@ outs:
         etag: 4730c1f253be42954966bb9b6a7c27e0
         version_id: 5zD.XvYJY8o7U2zxA7OsbZjRWZdpEGFb
   - relpath: reports/universe-ad-hoc/donor-info.csv
-    md5: 742cfd69d3aa02d5b7a635f73ae664bc
-    size: 929818
-    cloud:
-      s3:
-        etag: 742cfd69d3aa02d5b7a635f73ae664bc
-        version_id: 10n.5OIQtQghPw1dyibkRhaQPwxHvdui
+    md5: 49e3d503f2d594cd51d561e72055b008
+    size: 964926
   - relpath: reports/universe-ad-hoc/donors-portals.csv
     md5: f89496d358f98928ce5c946547a970d0
     size: 853423
