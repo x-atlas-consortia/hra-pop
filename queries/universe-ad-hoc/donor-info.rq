@@ -7,7 +7,10 @@ PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 
 SELECT DISTINCT ?donor ?tissue_provider ?age ?sex ?race
 FROM HRApop:
+
+#+remove this line to only get donor info for atlas
 FROM HRApopFull:
+
 WHERE {
   ?donor a ccf:Donor .
   OPTIONAL { ?donor ccf:tissue_provider_name ?tissue_provider . }
