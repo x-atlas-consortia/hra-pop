@@ -59,5 +59,5 @@ curl -s $CCF -H "Accept: application/rdf+xml" > $DIR/ccf.owl
 blazegraph-runner load --journal=$JNL "--graph=${CCF}" $DIR/ccf.owl
 
 # Import ctann-crosswalks
-curl -s $CTANN_CROSSWALKS -H "Accept: application/rdf+xml" > $DIR/ctann-crosswalks.xml
-blazegraph-runner load --journal=$JNL "--graph=${CTANN_CROSSWALKS}" $DIR/ctann-crosswalks.xml
+curl -s $CTANN_CROSSWALKS -H "Accept: text/turtle" > $DIR/ctann-crosswalks.ttl
+blazegraph-runner load --journal=$JNL "--graph=${CTANN_CROSSWALKS}" $DIR/ctann-crosswalks.ttl

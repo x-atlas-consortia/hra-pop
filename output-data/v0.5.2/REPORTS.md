@@ -70,6 +70,7 @@
   * [Heart and Lung dataset info (heart-and-lung-datasets)](#heart-and-lung-datasets)
   * [Kidney and Lung dataset info (kidney-and-lung-datasets)](#kidney-and-lung-datasets)
   * [Popv cells information (popv-cells)](#popv-cells)
+  * [RUI Registered H5AD Dataset and TB Count (rui-registered-datasets)](#rui-registered-datasets)
   * [Sample information (sample-info)](#sample-info)
   * [Spatial and bulk dataset breakdown (spatial-and-bulk-datasets-breakdown)](#spatial-and-bulk-datasets-breakdown)
   * [Spatial and bulk dataset information (spatial-and-bulk-datasets)](#spatial-and-bulk-datasets)
@@ -3950,10 +3951,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
 
-SELECT ?tool (COUNT(DISTINCT(?cell_id)) as ?cell_type_count)
+SELECT ?tool (COUNT(DISTINCT(?organ_id)) as ?organ_count) (COUNT(DISTINCT(?cell_id)) as ?cell_type_count)
 FROM CTAnn:
 WHERE {
   [] a ccf:AnnotationItem ;
+    ccf:organ_id ?organ_id ;
     ccf:tool ?tool ;
     ccf:cell_id ?cell_id ;
   .
@@ -4257,6 +4259,8 @@ SELECT ?consortium
   (COALESCE(?atlas_dataset_count, 0) as ?atlas_dataset_count)
   (COALESCE(?test_dataset_count, 0) as ?test_dataset_count)
   (COALESCE(?excluded_dataset_count, 0) as ?excluded_dataset_count)
+  (COALESCE(?no_rui_dataset_count, 0) as ?no_rui_dataset_count)
+  (COALESCE(?no_summary_dataset_count, 0) as ?no_summary_dataset_count)
 WHERE {
   {
     SELECT ?consortium
@@ -4353,6 +4357,72 @@ WHERE {
     }
     GROUP BY ?consortium
   }
+
+  OPTIONAL {
+    SELECT ?consortium
+      (COUNT(DISTINCT(?dataset)) as ?no_rui_dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium .
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+
+        FILTER(NOT EXISTS {
+          ?donor ccf:consortium_name ?consortium .
+          {
+            ?sample ccf:comes_from ?donor .
+            ?sample ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          } UNION {
+            ?block ccf:comes_from ?donor .
+            ?block ccf:subdivided_into_sections ?sample .
+            ?block ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          }
+        })
+      }
+    }
+    GROUP BY ?consortium
+  }
+
+  OPTIONAL {
+    SELECT ?consortium
+      (COUNT(DISTINCT(?dataset)) as ?no_summary_dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium .
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+      }
+
+      FILTER(NOT EXISTS {
+        GRAPH HRApop: {
+          ?dataset ccf:has_cell_summary [] .
+        }
+      } && NOT EXISTS {
+        GRAPH HRApopTestData: {
+          ?dataset ccf:has_cell_summary [] .
+        }
+      })
+    }
+    GROUP BY ?consortium
+  }
 }
 ORDER BY ?consortium
 
@@ -4363,14 +4433,14 @@ ORDER BY ?consortium
 
 #### Results ([View CSV File](reports/universe-ad-hoc/count-consortium-datasets.csv))
 
-| consortium | dataset_count | atlas_dataset_count | test_dataset_count | excluded_dataset_count |
-| :--- | :--- | :--- | :--- | :--- |
-| Allen Institute for Brain Science | 11 | 0 | 11 | 0 |
-| CxG | 6192 | 0 | 4835 | 1357 |
-| GTEx | 75 | 16 | 50 | 9 |
-| HCA | 229 | 82 | 65 | 82 |
-| HIRN, ESPACE | 1 | 0 | 1 | 0 |
-| ... | ... | ... | ... | ... |
+| consortium | dataset_count | atlas_dataset_count | test_dataset_count | excluded_dataset_count | no_rui_dataset_count | no_summary_dataset_count |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Allen Institute for Brain Science | 11 | 0 | 11 | 0 | 0 | 11 |
+| CxG | 6192 | 0 | 4835 | 1357 | 6192 | 1357 |
+| GTEx | 75 | 16 | 50 | 9 | 9 | 59 |
+| HCA | 229 | 82 | 65 | 82 | 82 | 147 |
+| HIRN, ESPACE | 1 | 0 | 1 | 0 | 0 | 1 |
+| ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="count-dataset-samples"></a>Universe Sample and Dataset Counts (count-dataset-samples)
@@ -5480,6 +5550,62 @@ ORDER BY ?Organ_Label ?Annotation_Label
 | blood | UBERON:0000178 | CD8-positive, alpha-beta cytokine secreting effector T cell | CL:0000908 | CD8-positive, alpha-beta cytokine secreting effector T cell | CL:0000908 |  | 1404 | 677220 |
 | blood | UBERON:0000178 | T cell | CL:0000084 | T cell | CL:0000084 |  | 315 | 1827 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="rui-registered-datasets"></a>RUI Registered H5AD Dataset and TB Count (rui-registered-datasets)
+
+Count of all rui-registered h5ad datasets and tissue blocks
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: RUI Registered H5AD Dataset and TB Count
+#+ description: Count of all rui-registered h5ad datasets and tissue blocks
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT (COUNT(DISTINCT ?dataset) as ?rui_registered_datasets) 
+  (COUNT(DISTINCT ?block) as ?rui_registered_tissue_blocks)
+FROM HRApop:
+FROM HRApopFull:
+WHERE {
+  ?rui_location a ccf:SpatialEntity .
+  ?dataset a ccf:Dataset .
+
+  {
+    ?block ccf:has_registration_location ?rui_location .
+    ?block ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+}
+
+```
+
+([View Source](../../queries/universe-ad-hoc/rui-registered-datasets.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/rui-registered-datasets.csv))
+
+| rui_registered_datasets | rui_registered_tissue_blocks |
+| :--- | :--- |
+| 4229 | 852 |
 
 
 ### <a id="sample-info"></a>Sample information (sample-info)

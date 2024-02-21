@@ -15,6 +15,8 @@ SELECT ?consortium
   (COALESCE(?atlas_dataset_count, 0) as ?atlas_dataset_count)
   (COALESCE(?test_dataset_count, 0) as ?test_dataset_count)
   (COALESCE(?excluded_dataset_count, 0) as ?excluded_dataset_count)
+  (COALESCE(?no_rui_dataset_count, 0) as ?no_rui_dataset_count)
+  (COALESCE(?no_summary_dataset_count, 0) as ?no_summary_dataset_count)
 WHERE {
   {
     SELECT ?consortium
@@ -106,6 +108,72 @@ WHERE {
       } && NOT EXISTS {
         GRAPH HRApopTestData: {
           [] ccf:generates_dataset ?dataset;
+        }
+      })
+    }
+    GROUP BY ?consortium
+  }
+
+  OPTIONAL {
+    SELECT ?consortium
+      (COUNT(DISTINCT(?dataset)) as ?no_rui_dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium .
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+
+        FILTER(NOT EXISTS {
+          ?donor ccf:consortium_name ?consortium .
+          {
+            ?sample ccf:comes_from ?donor .
+            ?sample ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          } UNION {
+            ?block ccf:comes_from ?donor .
+            ?block ccf:subdivided_into_sections ?sample .
+            ?block ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          }
+        })
+      }
+    }
+    GROUP BY ?consortium
+  }
+
+  OPTIONAL {
+    SELECT ?consortium
+      (COUNT(DISTINCT(?dataset)) as ?no_summary_dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium .
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+      }
+
+      FILTER(NOT EXISTS {
+        GRAPH HRApop: {
+          ?dataset ccf:has_cell_summary [] .
+        }
+      } && NOT EXISTS {
+        GRAPH HRApopTestData: {
+          ?dataset ccf:has_cell_summary [] .
         }
       })
     }
