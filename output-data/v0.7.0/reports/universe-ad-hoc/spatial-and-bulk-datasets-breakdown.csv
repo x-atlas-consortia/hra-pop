@@ -1,0 +1,70 @@
+organ,side,sex,modality,status,dataset_count,cell_count
+blood,,female,sc_bulk,Non-Atlas,12,287
+blood,,male,sc_bulk,Non-Atlas,7,160
+blood,,unknown,sc_bulk,Non-Atlas,6,132
+bone marrow,,female,sc_bulk,Non-Atlas,3,100
+bone marrow,,male,sc_bulk,Non-Atlas,6,135
+eye,,female,sc_bulk,Non-Atlas,6,75
+eye,,male,sc_bulk,Non-Atlas,8,84
+eye,,unknown,sc_bulk,Non-Atlas,2,17
+heart,,female,sc_bulk,Atlas,49,8241
+heart,,female,sc_bulk,Non-Atlas,1,17
+heart,,male,sc_bulk,Atlas,65,12143
+heart,,male,sc_bulk,Non-Atlas,10,291
+kidney,,female,sc_bulk,Atlas,90,3291
+kidney,,female,sc_bulk,Non-Atlas,1,35
+kidney,,male,sc_bulk,Atlas,169,6254
+kidney,,male,sc_bulk,Non-Atlas,8,272
+kidney,,unknown,sc_bulk,Atlas,9,306
+kidney,left,female,sc_bulk,Atlas,54,6018
+kidney,left,male,sc_bulk,Atlas,62,6240
+kidney,left,unknown,sc_bulk,Atlas,8,807
+kidney,right,female,sc_bulk,Atlas,30,3333
+kidney,right,male,sc_bulk,Atlas,88,11133
+kidney,right,unknown,sc_bulk,Atlas,1,111
+large intestine,,female,sc_bulk,Atlas,14,10325
+large intestine,,female,sc_bulk,Non-Atlas,3,115
+large intestine,,female,spatial,Atlas,8,1200
+large intestine,,male,sc_bulk,Atlas,27,18956
+large intestine,,male,sc_bulk,Non-Atlas,2,10
+large intestine,,male,spatial,Atlas,24,3600
+large intestine,,unknown,sc_bulk,Non-Atlas,1,32
+liver,,female,sc_bulk,Atlas,1,80
+liver,,female,sc_bulk,Non-Atlas,2,23
+liver,,male,sc_bulk,Atlas,1,80
+liver,,male,sc_bulk,Non-Atlas,2,27
+liver,,unknown,sc_bulk,Non-Atlas,2,32
+lung,,female,sc_bulk,Atlas,38,14308
+lung,,female,sc_bulk,Non-Atlas,4,144
+lung,,male,sc_bulk,Atlas,95,35144
+lung,,male,sc_bulk,Non-Atlas,7,280
+lung,,unknown,sc_bulk,Non-Atlas,2,70
+lymph node,,female,sc_bulk,Non-Atlas,1,14
+male reproductive system,,male,sc_bulk,Atlas,4,192
+mammary gland,,female,sc_bulk,Atlas,3,37
+mammary gland,right,female,sc_bulk,Atlas,3,185
+pancreas,,male,sc_bulk,Non-Atlas,2,18
+prostate gland,,male,sc_bulk,Atlas,4,48
+prostate gland,,male,sc_bulk,Non-Atlas,4,36
+skin,,female,sc_bulk,Atlas,1,143
+skin,,female,spatial,Atlas,4,160
+skin,,male,sc_bulk,Atlas,2,286
+skin,,male,sc_bulk,Non-Atlas,5,91
+skin,,male,spatial,Atlas,6,240
+small intestine,,female,sc_bulk,Atlas,13,8862
+small intestine,,female,sc_bulk,Non-Atlas,2,84
+small intestine,,female,spatial,Atlas,8,1200
+small intestine,,male,sc_bulk,Atlas,26,16506
+small intestine,,male,spatial,Atlas,24,3600
+small intestine,,unknown,sc_bulk,Non-Atlas,2,54
+spleen,,female,sc_bulk,Atlas,2,396
+spleen,,female,sc_bulk,Non-Atlas,2,40
+spleen,,male,sc_bulk,Atlas,9,1776
+thymus,,female,sc_bulk,Non-Atlas,2,34
+thymus,,male,sc_bulk,Non-Atlas,2,33
+ureter,left,female,sc_bulk,Atlas,6,1392
+ureter,left,male,sc_bulk,Atlas,19,3704
+urinary bladder,,female,sc_bulk,Atlas,6,560
+urinary bladder,,male,sc_bulk,Atlas,7,602
+uterus,,female,sc_bulk,Non-Atlas,2,16
+uterus,,unknown,sc_bulk,Non-Atlas,2,8

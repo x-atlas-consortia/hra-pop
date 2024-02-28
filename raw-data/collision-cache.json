@@ -46105,5 +46105,33 @@
       "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
       "tissue_volume": 4950
     }
+  ],
+  "http://purl.org/ccf/1.5/615aa60c-0a0a-4614-bae2-f85112479919": [
+    {
+      "AS_volume": 238660.6294253222,
+      "id": "http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_ascending_colon",
+      "intersection_volume": 13612.409999999998,
+      "is_closed": true,
+      "label": "ascending colon",
+      "node_name": "VH_M_ascending_colon",
+      "organ": "SBU_M_Intestine_Large",
+      "percentage_of_AS": 0.057036680213144966,
+      "percentage_of_tissue_block": 0.287,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001156",
+      "tissue_volume": 47430
+    },
+    {
+      "AS_volume": 127774.58152865933,
+      "id": "http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_caecum",
+      "intersection_volume": 8821.98,
+      "is_closed": true,
+      "label": "caecum",
+      "node_name": "VH_M_caecum",
+      "organ": "SBU_M_Intestine_Large",
+      "percentage_of_AS": 0.06904330966657296,
+      "percentage_of_tissue_block": 0.186,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001153",
+      "tissue_volume": 47430
+    }
   ]
 }

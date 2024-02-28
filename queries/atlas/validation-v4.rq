@@ -19,90 +19,75 @@ SELECT
   ?sex
   ?tool 
   ?modality
-  (COUNT(DISTINCT(?asctb)) as ?asctb_only) 
-  (COUNT(DISTINCT(?both)) as ?both) 
-  (COUNT(DISTINCT(?exp)) as ?exp_only)
+  (SAMPLE(?asctb_only) as ?asctb_only)
+  (SUM(IF(?in_asctb, 1, 0)) as ?both) 
+  (SUM(IF(?in_asctb, 0, 1)) as ?exp_only)
 WHERE {
-  # Get CTs only in ASCT+B
-  {
-    SELECT DISTINCT ?sex ?tool ?modality ?asctb {
-      GRAPH CCF: {
-        ?asctb ccf:ccf_asctb_type ?type .
-      }
-      GRAPH HRApop: {
-        [] ccf:has_cell_summary [
-          ccf:sex ?sex ;
-          ccf:cell_annotation_method ?tool ;
-          ccf:modality ?modality ;
+  GRAPH HRApop: {
+    SELECT DISTINCT ?sex ?tool ?modality ?cell_id
+    WHERE {
+      [] ccf:has_cell_summary [
+        ccf:sex ?sex ;
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+        ccf:has_cell_summary_row [
+          ccf:cell_id ?cell_id ;
         ]
+      ] .
+    }
+  }
+
+  {
+    SELECT ?sex ?tool ?modality 
+      (COUNT(DISTINCT(?asctb_cell_id)) as ?asctb_only)
+    WHERE {
+      GRAPH CCF: {
+        SELECT DISTINCT ?asctb_cell_id
+        WHERE {
+          ?asctb_cell_id ccf:ccf_asctb_type ?type .
+          FILTER (?type = 'CT')
+        } 
       }
-      FILTER (?type = 'CT')
-      FILTER NOT EXISTS {
-        GRAPH HRApop: {
+
+      GRAPH HRApop: {
+        SELECT DISTINCT ?sex ?tool ?modality
+        WHERE {
           [] ccf:has_cell_summary [
             ccf:sex ?sex ;
             ccf:cell_annotation_method ?tool ;
             ccf:modality ?modality ;
-            ccf:has_cell_summary_row [
-              ccf:cell_id ?asctb ;
-            ]
           ] .
         }
       }
-    }
-  }
 
-  # Get CTs only in Experimental Data
-  {
-    SELECT DISTINCT ?sex ?tool ?modality ?exp {
-      GRAPH HRApop: {
-        [] ccf:has_cell_summary [
-          ccf:sex ?sex ;
-          ccf:cell_annotation_method ?tool ;
-          ccf:modality ?modality ;
-          ccf:has_cell_summary_row [
-            ccf:cell_id ?exp ;
-          ]
-        ] .
-      }
-      FILTER NOT EXISTS {
-        GRAPH CCF:{
-          ?exp ccf:ccf_asctb_type ?type .
-        }
-        FILTER (?type = 'CT')
-      }
-    }
-  }
-
-  # Get CTs in Both
-  {
-    SELECT DISTINCT ?sex ?tool ?modality ?both {
-      GRAPH CCF: {
-        ?both ccf:ccf_asctb_type ?type .
-      }
-      GRAPH HRApop: {
-        [] ccf:has_cell_summary [
-          ccf:sex ?sex ;
-          ccf:cell_annotation_method ?tool ;
-          ccf:modality ?modality ;
-        ]
-      }
-      FILTER (?type = 'CT')
-      FILTER EXISTS {
-        SELECT ?sex ?tool ?modality ?both {
-          GRAPH HRApop: {
+      FILTER (NOT EXISTS { 
+        GRAPH HRApop: {
+          SELECT DISTINCT ?sex ?tool ?modality ?asctb_cell_id
+          WHERE {
             [] ccf:has_cell_summary [
               ccf:sex ?sex ;
               ccf:cell_annotation_method ?tool ;
               ccf:modality ?modality ;
               ccf:has_cell_summary_row [
-                ccf:cell_id ?both ;
+                ccf:cell_id ?asctb_cell_id ;
               ]
             ] .
           }
         }
+       })
+    }
+    GROUP BY ?sex ?tool ?modality
+  }
+  
+  BIND(EXISTS {
+    GRAPH CCF: {
+      SELECT DISTINCT ?cell_id
+      WHERE {
+        ?cell_id ccf:ccf_asctb_type ?type .
+        FILTER (?type = 'CT')
       }
     }
-  }
+  } as ?in_asctb)
 }
 GROUP BY ?sex ?tool ?modality
+ORDER BY ?modality ?tool ?sex

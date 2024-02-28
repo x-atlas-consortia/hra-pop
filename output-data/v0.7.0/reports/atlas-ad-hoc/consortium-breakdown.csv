@@ -1,0 +1,13 @@
+sex,consortium,dataset_count,cell_count,modality
+Female,GTEx,7,47863,sc_bulk
+Male,GTEx,9,70153,sc_bulk
+Female,HCA,40,636494,sc_bulk
+Male,HCA,41,780811,sc_bulk
+Female,HuBMAP,172,5441242,sc_bulk
+Female,HuBMAP,20,555082,spatial
+Male,HuBMAP,346,14640655,sc_bulk
+Male,HuBMAP,54,2061512,spatial
+Female,NHLBI/LungMap,2,29691,sc_bulk
+Male,NHLBI/LungMap,7,109809,sc_bulk
+Female,SenNet,1,21772,sc_bulk
+Male,SenNet,6,85592,sc_bulk
