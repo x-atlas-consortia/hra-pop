@@ -49,6 +49,7 @@
   * [Named graphs in the db (named-graphs)](#named-graphs)
 * universe-ad-hoc
   * [Universe consortium breakdown (consortium-breakdown)](#consortium-breakdown)
+  * [Universe consortium breakdown with cell count (count-consortium-breakdown)](#count-consortium-breakdown)
   * [Universe consortium breakdown (count-consortium-datasets)](#count-consortium-datasets)
   * [Universe Sample and Dataset Counts (count-dataset-samples)](#count-dataset-samples)
   * [Universe Dataset Count (count-datasets)](#count-datasets)
@@ -4233,6 +4234,293 @@ ORDER BY ?consortium ?sex
 | ... | ... | ... | ... | ... |
 
 ## universe-ad-hoc
+
+### <a id="count-consortium-breakdown"></a>Universe consortium breakdown with cell count (count-consortium-breakdown)
+
+For each consortium in the universe of datasets, show the number of contributed datasets, cells, and modality
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Universe consortium breakdown with cell count
+#+ description: For each consortium in the universe of datasets, show the number of contributed datasets, cells, and modality
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX iftu: <https://hubmapconsortium.github.io/hra-ui/apps/ftu-ui/assets/TEMP/2d-ftu-illustrations.jsonld>
+
+SELECT ?consortium
+  (COALESCE(?sex, 'Unknown') as ?sex)
+  ?dataset_count
+  (COALESCE(?atlas_dataset_count, 0) as ?atlas_dataset_count)
+  (COALESCE(?test_dataset_count, 0) as ?test_dataset_count)
+  (COALESCE(?excluded_dataset_count, 0) as ?excluded_dataset_count)
+  (COALESCE(?no_rui_dataset_count, 0) as ?no_rui_dataset_count)
+  (COALESCE(?no_summary_dataset_count, 0) as ?no_summary_dataset_count)
+  (COALESCE(?modality, 'N/A') as ?modality)
+  (COALESCE(?atlas_cell_count, 0) + COALESCE(?test_cell_count, 0) as ?cell_count)
+WHERE {
+  {
+    SELECT ?consortium ?sex
+      (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium ;
+          ccf:sex ?sex .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+      }
+    }
+    GROUP BY ?consortium ?sex
+  }
+
+  OPTIONAL {
+    SELECT ?consortium ?sex ?modality (SUM(xsd:decimal(?cell_count)) as ?atlas_cell_count)
+    WHERE {
+      GRAPH HRApop: {
+        ?donor ccf:consortium_name ?consortium ;
+          ccf:sex ?sex .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+
+        {
+          ?dataset ccf:has_cell_summary [
+            ccf:cell_annotation_method ?tool ;
+            ccf:modality ?modality ;
+            ccf:has_cell_summary_row [
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+        }
+      }
+    }
+    GROUP BY ?consortium ?sex ?modality
+  }
+
+  OPTIONAL {
+    SELECT ?consortium ?sex ?modality (SUM(xsd:decimal(?cell_count)) as ?test_cell_count)
+    WHERE {
+      GRAPH HRApopTestData: {
+        ?donor ccf:consortium_name ?consortium ;
+          ccf:sex ?sex .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+
+        {
+          ?dataset ccf:has_cell_summary [
+            ccf:cell_annotation_method ?tool ;
+            ccf:modality ?modality ;
+            ccf:has_cell_summary_row [
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+        }
+      }
+    }
+    GROUP BY ?consortium ?sex ?modality
+  }
+
+  OPTIONAL {
+    SELECT ?consortium ?sex
+      (COUNT(DISTINCT(?atlas_dataset)) as ?atlas_dataset_count)
+    WHERE {
+      GRAPH HRApop: {
+        ?donor ccf:consortium_name ?consortium ;
+          ccf:sex ?sex .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?atlas_dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?atlas_dataset .
+        }
+      }
+    }
+    GROUP BY ?consortium ?sex
+  }
+
+  OPTIONAL {
+    SELECT ?consortium ?sex
+      (COUNT(DISTINCT(?test_dataset)) as ?test_dataset_count)
+    WHERE {
+      GRAPH HRApopTestData: {
+        ?donor ccf:consortium_name ?consortium ;
+          ccf:sex ?sex .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?test_dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?test_dataset .
+        }
+      }
+    }
+    GROUP BY ?consortium ?sex
+  }
+
+  OPTIONAL {
+    SELECT ?consortium ?sex
+      (COUNT(DISTINCT(?dataset)) as ?excluded_dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium ;
+          ccf:sex ?sex .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+      }
+
+      FILTER(NOT EXISTS {
+        GRAPH HRApop: {
+          [] ccf:generates_dataset ?dataset;
+        }
+      } && NOT EXISTS {
+        GRAPH HRApopTestData: {
+          [] ccf:generates_dataset ?dataset;
+        }
+      })
+    }
+    GROUP BY ?consortium ?sex
+  }
+
+  OPTIONAL {
+    SELECT ?consortium ?sex
+      (COUNT(DISTINCT(?dataset)) as ?no_rui_dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium ;
+          ccf:sex ?sex .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+
+        FILTER(NOT EXISTS {
+          ?donor ccf:consortium_name ?consortium .
+          {
+            ?sample ccf:comes_from ?donor .
+            ?sample ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          } UNION {
+            ?block ccf:comes_from ?donor .
+            ?block ccf:subdivided_into_sections ?sample .
+            ?block ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          }
+        })
+      }
+    }
+    GROUP BY ?consortium ?sex
+  }
+
+  OPTIONAL {
+    SELECT ?consortium ?sex
+      (COUNT(DISTINCT(?dataset)) as ?no_summary_dataset_count)
+    WHERE {
+      GRAPH HRApopFull: {
+        ?donor ccf:consortium_name ?consortium ;
+          ccf:sex ?sex .
+
+        {
+          ?sample ccf:comes_from ?donor .
+          # ?sample ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        } UNION {
+          ?block ccf:comes_from ?donor .
+          ?block ccf:subdivided_into_sections ?sample .
+          # ?block ccf:has_registration_location ?rui_location .
+          ?sample ccf:generates_dataset ?dataset .
+        }
+      }
+
+      FILTER(NOT EXISTS {
+        GRAPH HRApop: {
+          ?dataset ccf:has_cell_summary [] .
+        }
+      } && NOT EXISTS {
+        GRAPH HRApopTestData: {
+          ?dataset ccf:has_cell_summary [] .
+        }
+      })
+    }
+    GROUP BY ?consortium ?sex
+  }
+}
+ORDER BY ?consortium ?sex
+
+```
+
+([View Source](../../queries/universe-ad-hoc/count-consortium-breakdown.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/count-consortium-breakdown.csv))
+
+| consortium | sex | dataset_count | atlas_dataset_count | test_dataset_count | excluded_dataset_count | no_rui_dataset_count | no_summary_dataset_count | modality | cell_count |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Allen Institute for Brain Science | Female | 5 | 0 | 5 | 0 | 0 | 5 | N/A | 0 |
+| Allen Institute for Brain Science | Male | 6 | 0 | 6 | 0 | 0 | 6 | N/A | 0 |
+| CxG | Female | 3003 | 0 | 2310 | 693 | 3003 | 693 | sc_bulk | 20146095 |
+| CxG | Male | 2827 | 0 | 2254 | 573 | 2827 | 573 | sc_bulk | 21066494 |
+| CxG | Unknown | 362 | 0 | 271 | 91 | 362 | 91 | sc_bulk | 2202973 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
 
 ### <a id="count-consortium-datasets"></a>Universe consortium breakdown (count-consortium-datasets)
 

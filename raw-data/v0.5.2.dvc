@@ -229,6 +229,10 @@ outs:
   - relpath: reports/atlas-ad-hoc/cxg-collections.csv
     md5: 82cd6ac20f4f7ae39a8222faa69a4fa3
     size: 214
+    cloud:
+      s3:
+        etag: 82cd6ac20f4f7ae39a8222faa69a4fa3
+        version_id: hwvNK4REGiS4uPOKcbs2zz9FOwtLSW1a
   - relpath: reports/atlas-ad-hoc/extraction-site-stats.csv
     md5: d79cac0f6d1491668c59d0032efcde0f
     size: 100
@@ -309,6 +313,10 @@ outs:
   - relpath: reports/atlas/donor-info.csv
     md5: 51510b1643921b794e5190f3fde42770
     size: 15355
+    cloud:
+      s3:
+        etag: 51510b1643921b794e5190f3fde42770
+        version_id: 7WKr.tV30POlyE7uSh8JB7p3bF0SU8NK
   - relpath: reports/atlas/figure-as-as-sim.csv
     md5: b9a558f2d0f260bf22277d68ace091de
     size: 44093
@@ -477,13 +485,20 @@ outs:
       s3:
         etag: 763cb7e203cf35659c2eb8588d461a21
         version_id: iTd3ACaL2OHzvSNjybp.3HvRwC3coaNj
-  - relpath: reports/universe-ad-hoc/count-consortium-datasets.csv
-    md5: 1b4354f0aae70c8341ff31eee9f3512e
-    size: 366
+  - relpath: reports/universe-ad-hoc/count-consortium-breakdown.csv
+    md5: 96aabfa365ecf545bc1f2d6ecd32ad50
+    size: 1306
     cloud:
       s3:
-        etag: 1b4354f0aae70c8341ff31eee9f3512e
-        version_id: 48c8VRrWjESpLCVyQtKyP3okdi24ecER
+        etag: 96aabfa365ecf545bc1f2d6ecd32ad50
+        version_id: E82Lvnnebkfo5jf2mt190VQsR_jIBlaa
+  - relpath: reports/universe-ad-hoc/count-consortium-datasets.csv
+    md5: 8705a956f2c36457bdbaf5d5597fe5bb
+    size: 486
+    cloud:
+      s3:
+        etag: 8705a956f2c36457bdbaf5d5597fe5bb
+        version_id: t1GMwA.jNbnJKKWt2jyQaRH3x7g9U9lI
   - relpath: reports/universe-ad-hoc/count-dataset-samples.csv
     md5: 73fdd74bbae9462437b729c112905ad7
     size: 38
@@ -557,6 +572,10 @@ outs:
   - relpath: reports/universe-ad-hoc/cxg-collections.csv
     md5: 43d092aa32356bae8f6629527b5dfa88
     size: 11689
+    cloud:
+      s3:
+        etag: 43d092aa32356bae8f6629527b5dfa88
+        version_id: oXnNTf37DfHhRdOrnb3KD9QJvp6.DbIW
   - relpath: reports/universe-ad-hoc/dataset-info.csv
     md5: d24fd8579f1938c4ef980208b25f3a9e
     size: 1357808
@@ -574,6 +593,10 @@ outs:
   - relpath: reports/universe-ad-hoc/donor-info.csv
     md5: 49e3d503f2d594cd51d561e72055b008
     size: 964926
+    cloud:
+      s3:
+        etag: 49e3d503f2d594cd51d561e72055b008
+        version_id: BwDNQrvwOVMoPb539OzGLUMau5dgKLlI
   - relpath: reports/universe-ad-hoc/donors-portals.csv
     md5: f89496d358f98928ce5c946547a970d0
     size: 853423
@@ -616,6 +639,13 @@ outs:
       s3:
         etag: cde1b6da15f089505f4597ad86978fde
         version_id: rWkinHi5ovvkx91znGaGCW8RZrjaIBrS
+  - relpath: reports/universe-ad-hoc/rui-registered-datasets.csv
+    md5: afe455ccaa3e24f720fa78ce705e04f1
+    size: 62
+    cloud:
+      s3:
+        etag: afe455ccaa3e24f720fa78ce705e04f1
+        version_id: laboQ7LTEcBoPXGGqJQ1Nfsous7CzdV1
   - relpath: reports/universe-ad-hoc/sample-info.csv
     md5: b0d97ca133b9f5534f8fd9823bd9befb
     size: 337846
