@@ -35,6 +35,8 @@ async function flattenDatasetGraph(inputFile) {
       publication: dataset.publication || dataset.publicationId || '',
       publication_title: dataset.publication_title || dataset.publicationTitle || '',
       publication_lead_author: dataset.publication_lead_author || dataset.publicationLeadAuthor || '',
+      dataset_cell_count: dataset.cell_count || '',
+      dataset_gene_count: dataset.gene_count || '',
 
       consortium_name: donor.consortium_name || '',
       provider_name: donor.provider_name || '',

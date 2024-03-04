@@ -10,12 +10,14 @@ To run the construction algorithm, you will need the following installed:
 
 1. A unix-like environment (Linux, WSL2 / Ubuntu For Windows, or Mac (untested))
 2. Node.js v18+
-3. Java 11 (for blazegraph-runner)
-4. Docker (optional)
+3. jq (a lightweight command-line JSON processor)
+4. Java 11 (for blazegraph-runner)
+5. Docker (optional)
 
 ### Setup
 
 1. Install node dependencies via `npm ci`, which also installs [blazegraph-runner](https://github.com/balhoff/blazegraph-runner/) into `node_modules/.bin` for querying and reports.
+2. Install Java 11 and jq. On Ubuntu, this is typically done via `sudo apt install openjdk-11-jdk jq`
 
 ### Input
 
