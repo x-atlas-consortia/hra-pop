@@ -60518,13 +60518,14 @@
       "cell_source": "http://purl.obolibrary.org/obo/UBERON_0002078",
       "cell_source_label": "right cardiac atrium",
       "annotation_method": "azimuth",
-      "aggregated_summary_count": 6,
+      "aggregated_summary_count": 7,
       "aggregated_summaries": [
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$right%20cardiac%20atrium",
+        "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$right%20cardiac%20atrium"
       ],
       "modality": "sc_bulk",
@@ -60533,141 +60534,141 @@
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000057",
           "cell_label": "Fibroblast",
-          "count": 3622.1710000000003,
-          "percentage": 0.26974448315911737
+          "count": 3768.1050000000005,
+          "percentage": 0.25669727555589295
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002129",
           "cell_label": "Atrial Cardiomyocyte",
-          "count": 3102.4900000000002,
-          "percentage": 0.231043636966982
+          "count": 3355.3680000000004,
+          "percentage": 0.2285801016923428
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000669",
           "cell_label": "Pericyte",
-          "count": 847.754,
-          "percentage": 0.06313257010121123
+          "count": 1062.756,
+          "percentage": 0.07239887683084165
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002144",
           "cell_label": "Capillary Endothelial",
-          "count": 1302.266,
-          "percentage": 0.0969802555168409
+          "count": 1366.8780000000002,
+          "percentage": 0.09311679441451017
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000623",
           "cell_label": "NK",
-          "count": 421.64900000000006,
-          "percentage": 0.031400365024058415
+          "count": 433.34600000000006,
+          "percentage": 0.029521135311527672
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000235",
           "cell_label": "Macrophage",
-          "count": 289.64000000000004,
-          "percentage": 0.02156960345113656
+          "count": 359.26500000000004,
+          "percentage": 0.02447446307960842
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002573",
           "cell_label": "Neuronal",
-          "count": 253.43500000000003,
-          "percentage": 0.018873403019744488
+          "count": 272.93,
+          "percentage": 0.018593002959702516
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002350",
           "cell_label": "Endocardial",
-          "count": 915.1510000000001,
-          "percentage": 0.06815165090426416
+          "count": 939.6590000000001,
+          "percentage": 0.06401305304697581
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000115",
           "cell_label": "Endothelial",
-          "count": 218.901,
-          "percentage": 0.01630164260826282
+          "count": 234.497,
+          "percentage": 0.01597480458374441
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000136",
           "cell_label": "Adipocyte",
-          "count": 69.625,
-          "percentage": 0.005185000829600134
+          "count": 82.436,
+          "percentage": 0.005615845791910148
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000192",
           "cell_label": "Smooth Muscle",
-          "count": 354.8090000000001,
-          "percentage": 0.02642276422764229
+          "count": 403.82500000000005,
+          "percentage": 0.02751005539955985
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0011031",
           "cell_label": "Monocyte/cDC",
-          "count": 709.6179999999999,
-          "percentage": 0.052845528455284556
+          "count": 834.943,
+          "percentage": 0.05687941109508994
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000084",
           "cell_label": "T",
-          "count": 479.577,
-          "percentage": 0.03571428571428572
+          "count": 612.143,
+          "percentage": 0.04170144949533279
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000413",
           "cell_label": "Arterial Endothelial",
-          "count": 286.298,
-          "percentage": 0.021320723411315752
+          "count": 304.122,
+          "percentage": 0.02071791758366852
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000097",
           "cell_label": "Mast",
-          "count": 20.609,
-          "percentage": 0.0015347602455616398
+          "count": 21.166,
+          "percentage": 0.00144190635197693
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000414",
           "cell_label": "Venous Endothelial",
-          "count": 151.50400000000002,
-          "percentage": 0.011282561805209892
+          "count": 155.96,
+          "percentage": 0.01062457311983001
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002131",
           "cell_label": "Ventricular Cardiomycoyte",
           "count": 13.925,
-          "percentage": 0.0010370001659200268
+          "percentage": 0.0009486225999848223
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000236",
           "cell_label": "B",
-          "count": 198.292,
-          "percentage": 0.014766882362701182
+          "count": 286.298,
+          "percentage": 0.019503680655687947
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000077",
           "cell_label": "Mesothelial",
-          "count": 163.75799999999998,
-          "percentage": 0.012195121951219513
+          "count": 164.87199999999999,
+          "percentage": 0.011231691583820294
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002138",
           "cell_label": "Lymphatic Endothelial",
           "count": 6.684000000000001,
-          "percentage": 0.0004977600796416129
+          "percentage": 0.00045533884799271474
         }
       ]
     },
@@ -60677,12 +60678,13 @@
       "cell_source": "http://purl.obolibrary.org/obo/UBERON_0002078",
       "cell_source_label": "right cardiac atrium",
       "annotation_method": "celltypist",
-      "aggregated_summary_count": 4,
+      "aggregated_summary_count": 5,
       "aggregated_summaries": [
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$right%20cardiac%20atrium",
-        "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$right%20cardiac%20atrium"
+        "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$right%20cardiac%20atrium",
+        "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium"
       ],
       "modality": "sc_bulk",
       "summary": [
@@ -60690,246 +60692,246 @@
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000057",
           "cell_label": "FB2",
-          "count": 3059.6010000000006,
-          "percentage": 0.3162166829773761
+          "count": 3200.5220000000004,
+          "percentage": 0.292909211398277
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002129",
           "cell_label": "aCM4",
-          "count": 2762.7200000000003,
-          "percentage": 0.2855333601980312
+          "count": 3016.7120000000004,
+          "percentage": 0.27608706733955246
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000669",
           "cell_label": "PC2_atria",
-          "count": 502.971,
-          "percentage": 0.05198319037476253
+          "count": 717.973,
+          "percentage": 0.06570831421726053
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002543",
           "cell_label": "EC6_ven",
-          "count": 305.236,
-          "percentage": 0.03154683092510505
+          "count": 329.187,
+          "percentage": 0.030126930723352197
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000625",
           "cell_label": "CD8+T_trans",
-          "count": 33.42,
-          "percentage": 0.0034540325830407
+          "count": 56.257000000000005,
+          "percentage": 0.005148595605852068
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000235",
           "cell_label": "LYVE1+TIMD4+MP",
-          "count": 416.07900000000006,
-          "percentage": 0.04300270565885672
+          "count": 556.4430000000001,
+          "percentage": 0.05092521792322986
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0010020",
           "cell_label": "NC1_glial",
-          "count": 159.859,
-          "percentage": 0.016521789188878016
+          "count": 179.911,
+          "percentage": 0.016465310699903146
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002350",
           "cell_label": "EC7_endocardial",
-          "count": 757.5200000000001,
-          "percentage": 0.07829140521558921
+          "count": 787.5980000000001,
+          "percentage": 0.07208033848192895
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000115",
           "cell_label": "EC10_CMC-like",
-          "count": 116.41300000000001,
-          "percentage": 0.012031546830925105
+          "count": 126.43900000000001,
+          "percentage": 0.011571596064637814
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000895",
           "cell_label": "CD4+T_naive",
-          "count": 40.661,
-          "percentage": 0.004202406309366185
+          "count": 62.384,
+          "percentage": 0.005709333741142886
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000136",
           "cell_label": "Adip1",
-          "count": 69.625,
-          "percentage": 0.007195901214668125
+          "count": 90.791,
+          "percentage": 0.008309119641127594
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002144",
           "cell_label": "EC3_cap",
-          "count": 272.373,
-          "percentage": 0.0281503655517817
+          "count": 306.907,
+          "percentage": 0.028087882958658304
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002057",
           "cell_label": "CD14+Mo",
-          "count": 129.781,
-          "percentage": 0.013413159864141384
+          "count": 138.693,
+          "percentage": 0.012693072335219454
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000359",
           "cell_label": "SMC2_art",
-          "count": 174.89800000000002,
-          "percentage": 0.01807610385124633
+          "count": 220.01500000000004,
+          "percentage": 0.020135596676352147
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002396",
           "cell_label": "CD16+Mo",
-          "count": 164.315,
-          "percentage": 0.016982326866616774
+          "count": 201.077,
+          "percentage": 0.01840240607636234
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000451",
           "cell_label": "DC",
-          "count": 16.71,
-          "percentage": 0.00172701629152035
+          "count": 21.166,
+          "percentage": 0.0019370953764591937
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000413",
           "cell_label": "EC5_art",
-          "count": 194.95000000000002,
-          "percentage": 0.02014852340107075
+          "count": 226.699,
+          "percentage": 0.02074731100576031
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000097",
           "cell_label": "Mast",
-          "count": 7.241,
-          "percentage": 0.0007483737263254849
+          "count": 7.798,
+          "percentage": 0.0007136667176428608
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000939",
           "cell_label": "NK_CD16hi",
-          "count": 137.579,
-          "percentage": 0.014219100800184214
+          "count": 139.80700000000002,
+          "percentage": 0.01279502472345415
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0001043",
           "cell_label": "CD4+T_act",
-          "count": 42.88900000000001,
-          "percentage": 0.004432675148235566
+          "count": 72.41000000000001,
+          "percentage": 0.006626905235255137
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000913",
           "cell_label": "CD8+T_em",
-          "count": 22.837,
-          "percentage": 0.0023602555984111448
+          "count": 32.306,
+          "percentage": 0.0029566192588061373
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002131",
           "cell_label": "vCM1",
-          "count": 6.684,
-          "percentage": 0.0006908065166081399
+          "count": 7.798,
+          "percentage": 0.0007136667176428608
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000492",
           "cell_label": "CD4+T_Tfh",
-          "count": 3.3420000000000005,
-          "percentage": 0.00034540325830407
+          "count": 5.013000000000001,
+          "percentage": 0.0004587857470561249
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000794",
           "cell_label": "CD8+T_cytox",
-          "count": 41.775000000000006,
-          "percentage": 0.0043175407288008755
+          "count": 45.67400000000001,
+          "percentage": 0.004180047917622471
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000786",
           "cell_label": "B_plasma",
-          "count": 7.798000000000001,
-          "percentage": 0.00080594093604283
+          "count": 26.179000000000002,
+          "percentage": 0.0023958811235153185
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000236",
           "cell_label": "B",
-          "count": 33.977000000000004,
-          "percentage": 0.003511599792758045
+          "count": 106.38700000000001,
+          "percentage": 0.009736453076413316
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0001050",
           "cell_label": "CD8+T_te",
-          "count": 75.75200000000001,
-          "percentage": 0.007829140521558921
+          "count": 105.27300000000001,
+          "percentage": 0.009634500688178622
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000791",
           "cell_label": "MAIT-like",
-          "count": 7.241000000000001,
-          "percentage": 0.0007483737263254851
+          "count": 11.140000000000002,
+          "percentage": 0.0010195238823469443
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000077",
           "cell_label": "Meso",
           "count": 76.86600000000001,
-          "percentage": 0.00794427494099361
+          "percentage": 0.007034714788193915
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000938",
           "cell_label": "NK_CD56hi",
-          "count": 17.824,
-          "percentage": 0.00184215071095504
+          "count": 21.723000000000003,
+          "percentage": 0.001988071570576541
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000546",
           "cell_label": "CD4+T_Th2",
           "count": 3.8990000000000005,
-          "percentage": 0.000402970468021415
+          "percentage": 0.00035683335882143044
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000814",
           "cell_label": "T/NK_cycling",
           "count": 10.026000000000002,
-          "percentage": 0.00103620977491221
+          "percentage": 0.0009175714941122498
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002138",
           "cell_label": "EC8_ln",
           "count": 1.114,
-          "percentage": 0.00011513441943469
+          "percentage": 0.00010195238823469441
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0001065",
           "cell_label": "ILC",
-          "count": 1.114,
-          "percentage": 0.00011513441943469
+          "count": 11.140000000000002,
+          "percentage": 0.0010195238823469443
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000792",
           "cell_label": "CD4+T_reg",
-          "count": 0.557,
-          "percentage": 0.000057567209717345
+          "count": 3.342,
+          "percentage": 0.0003058571647040832
         }
       ]
     },
@@ -60939,13 +60941,14 @@
       "cell_source": "http://purl.obolibrary.org/obo/UBERON_0002078",
       "cell_source_label": "right cardiac atrium",
       "annotation_method": "popv",
-      "aggregated_summary_count": 9,
+      "aggregated_summary_count": 10,
       "aggregated_summaries": [
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$right%20cardiac%20atrium",
+        "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium",
         "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$right%20cardiac%20atrium",
         "https://doi.org/10.1126/science.abl4290#GTEX-15RIE-5015-SM-H8L6X",
         "https://doi.org/10.1126/science.abl4290#GTEX-1ICG6-5003-SM-GHS9A",
@@ -60957,43 +60960,43 @@
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002548",
           "cell_label": "fibroblast of cardiac tissue",
-          "count": 8011.339000000001,
-          "percentage": 0.28478782622840704
+          "count": 8250.292000000001,
+          "percentage": 0.28079479881611574
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000746",
           "cell_label": "cardiac muscle cell",
-          "count": 7781.7570000000005,
-          "percentage": 0.27662662387245
+          "count": 8141.022,
+          "percentage": 0.2770758458788576
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000192",
           "cell_label": "smooth muscle cell",
-          "count": 2138.529,
-          "percentage": 0.0760206284163495
+          "count": 2393.0779999999995,
+          "percentage": 0.08144728157030956
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0010008",
           "cell_label": "cardiac endothelial cell",
-          "count": 5186.319,
-          "percentage": 0.1843637516945776
+          "count": 5289.921,
+          "percentage": 0.18003996742759476
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000182",
           "cell_label": "hepatocyte",
           "count": 221.21800000000002,
-          "percentage": 0.007863878103597382
+          "percentage": 0.0075290503420368015
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000235",
           "cell_label": "macrophage",
-          "count": 4791.742,
-          "percentage": 0.17033729168461845
+          "count": 5086.395,
+          "percentage": 0.17311305596508547
         }
       ]
     },

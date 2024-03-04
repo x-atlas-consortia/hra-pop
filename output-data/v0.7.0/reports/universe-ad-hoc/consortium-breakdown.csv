@@ -1,19 +1,19 @@
 sex,consortium,dataset_count,cell_count,modality
 Female,Allen Institute for Brain Science,5,0,
 Male,Allen Institute for Brain Science,6,0,
-Female,CxG,41,501088,sc_bulk
-Female,CxG,46,0,
-Male,CxG,61,740111,sc_bulk
-Male,CxG,46,0,
-Unknown,CxG,15,295903,sc_bulk
-Unknown,CxG,16,0,
+Female,CxG,1632,11775806,sc_bulk
+Female,CxG,1518,0,
+Male,CxG,1627,13215648,sc_bulk
+Male,CxG,1437,0,
+Unknown,CxG,164,1476619,sc_bulk
+Unknown,CxG,198,0,
 Female,GTEx,7,47863,sc_bulk
 Female,GTEx,30,0,
 Male,GTEx,9,70153,sc_bulk
 Male,GTEx,29,0,
 Female,HCA,40,636494,sc_bulk
 Female,HCA,76,0,
-Male,HCA,41,780811,sc_bulk
+Male,HCA,42,787549,sc_bulk
 Male,HCA,71,0,
 Male,"HIRN, ESPACE",1,0,
 Female,HRA,1,0,
@@ -35,9 +35,9 @@ Female,SEA-AD,1,0,
 Female,SPARC,14,0,
 Male,SPARC,12,0,
 Female,SenNet,1,21772,sc_bulk
-Female,SenNet,123,0,
+Female,SenNet,126,0,
 Male,SenNet,6,85592,sc_bulk
-Male,SenNet,125,0,
+Male,SenNet,126,0,
 Unknown,SenNet,2,20022,sc_bulk
 Female,UEdinburgh,36,0,
 Male,UEdinburgh,28,0,

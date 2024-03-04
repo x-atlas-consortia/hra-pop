@@ -1,410 +1,410 @@
 organId,organ,sex,modality,as1_label,as2_label,cosine_sim,as1_dataset_count,as2_dataset_count
-UBERON:0000059,large intestine,Male,sc_bulk,transverse colon,descending colon,0.90494339407619365,17,19
-UBERON:0000059,large intestine,Female,spatial,transverse colon,descending colon,0.7094714167030884,17,19
-UBERON:0000059,large intestine,Male,spatial,transverse colon,descending colon,0.9675243919754691,17,19
-UBERON:0000059,large intestine,Female,sc_bulk,transverse colon,descending colon,0.62263607769710685,17,19
+UBERON:0004538,left kidney,Male,sc_bulk,outer cortex of kidney,hilum of kidney,0.508871484950648,152,8
+UBERON:0004538,left kidney,Female,sc_bulk,outer cortex of kidney,hilum of kidney,0.8626349739496233,152,8
+UBERON:0004539,right kidney,Male,sc_bulk,outer cortex of kidney,hilum of kidney,0.508871484950648,152,8
+UBERON:0004539,right kidney,Female,sc_bulk,outer cortex of kidney,hilum of kidney,0.8626349739496233,152,8
+UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,hilum of kidney,0.1338713098529722,6,8
+UBERON:0004539,right kidney,Male,sc_bulk,kidney pyramid,hilum of kidney,0.7133997024433053,112,8
+UBERON:0004538,left kidney,Male,sc_bulk,kidney pyramid,hilum of kidney,0.7133997024433053,112,8
+UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,kidney pyramid,0.36670186206631433,6,112
+UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,kidney pyramid,0.36670186206631433,6,112
+UBERON:0004539,right kidney,Female,sc_bulk,renal column,hilum of kidney,0.9757010838702566,21,8
+UBERON:0004539,right kidney,Male,sc_bulk,renal column,hilum of kidney,0.9999999999999999,21,8
+UBERON:0004538,left kidney,Male,sc_bulk,renal column,hilum of kidney,0.9999999999999999,21,8
+UBERON:0004538,left kidney,Female,sc_bulk,renal column,hilum of kidney,0.9757010838702566,21,8
+UBERON:0004539,right kidney,Female,sc_bulk,kidney pyramid,hilum of kidney,0.7254467602189292,112,8
+UBERON:0004538,left kidney,Female,sc_bulk,kidney pyramid,hilum of kidney,0.7254467602189292,112,8
+UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,hilum of kidney,0.1338713098529722,6,8
+UBERON:0004538,left kidney,Female,sc_bulk,renal column,kidney pyramid,0.7841318174754989,21,112
+UBERON:0004539,right kidney,Female,sc_bulk,renal column,kidney pyramid,0.7841318174754989,21,112
+UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,renal column,0.13387130985297216,6,21
+UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,renal column,0.13387130985297216,6,21
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Right posterior bronchopulmonary segment,0.24341144024434093111,3,16
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right posterior bronchopulmonary segment,0.6758628946113662,2,16
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right posterior bronchopulmonary segment,0.64102221515423927889,7,16
+UBERON:0000059,large intestine,Male,sc_bulk,rectum,transverse colon,0.87659952665061475,13,17
+UBERON:0000059,large intestine,Male,spatial,rectum,transverse colon,0.9503327437886709,13,17
+UBERON:0004539,right kidney,Female,sc_bulk,outer cortex of kidney,kidney pyramid,0.9402004383058423,152,112
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right anterior bronchopulmonary segment,0.74662504641414316667,2,21
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right anterior bronchopulmonary segment,0.61141111259220362778,7,21
+UBERON:0004539,right kidney,Male,sc_bulk,renal column,kidney capsule,0.15539363607857437,21,9
+UBERON:0004538,left kidney,Male,sc_bulk,renal column,kidney capsule,0.15539363607857437,21,9
+UBERON:0004538,left kidney,Female,sc_bulk,renal column,kidney capsule,0.6896636384220072,21,9
+UBERON:0004539,right kidney,Female,sc_bulk,renal column,kidney capsule,0.6896636384220072,21,9
+UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,kidney capsule,0.9249612531937624,6,9
+UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,kidney capsule,0.9249612531937624,6,9
+UBERON:0004539,right kidney,Male,sc_bulk,kidney capsule,kidney pyramid,0.49407181432137065,9,112
+UBERON:0004539,right kidney,Female,sc_bulk,kidney capsule,kidney pyramid,0.8879000797633886,9,112
+UBERON:0004538,left kidney,Male,sc_bulk,kidney capsule,kidney pyramid,0.49407181432137065,9,112
+UBERON:0004538,left kidney,Female,sc_bulk,kidney capsule,kidney pyramid,0.8879000797633886,9,112
+UBERON:0004538,left kidney,Female,sc_bulk,outer cortex of kidney,kidney pyramid,0.9402004383058423,152,112
+UBERON:0004539,right kidney,Male,sc_bulk,renal column,kidney pyramid,0.7133997024433052,21,112
+UBERON:0004538,left kidney,Male,sc_bulk,renal column,kidney pyramid,0.7133997024433052,21,112
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left posterior bronchopulmonary segment,0.54673978668943454,3,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left posterior bronchopulmonary segment,0.72758865241776400667,31,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left posterior bronchopulmonary segment,0.70319578582528721111,50,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.38415667747841486,16,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.7397856394983656,21,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Medial bronchopulmonary segment,0.71198014214740667778,16,50
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Medial bronchopulmonary segment,0.32296313862958863556,16,50
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Medial bronchopulmonary segment,0.64394889383789470556,2,50
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Medial bronchopulmonary segment,0.64173666533309084444,21,50
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Medial bronchopulmonary segment,0.74294723203502534444,21,50
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Medial bronchopulmonary segment,0.54386426016560118556,7,50
+UBERON:0004538,left kidney,Male,sc_bulk,outer cortex of kidney,kidney pyramid,0.782185159069107,152,112
+UBERON:0004539,right kidney,Male,sc_bulk,outer cortex of kidney,kidney pyramid,0.782185159069107,152,112
+UBERON:0004539,right kidney,Male,sc_bulk,kidney capsule,outer cortex of kidney,0.5013715856483061,9,152
+UBERON:0004538,left kidney,Male,sc_bulk,kidney capsule,outer cortex of kidney,0.5013715856483061,9,152
 UBERON:0000059,large intestine,Male,spatial,rectum,ascending colon,0.9837198418641342,13,18
 UBERON:0000059,large intestine,Male,sc_bulk,rectum,ascending colon,0.86141996081421785,13,18
 UBERON:0000059,large intestine,Female,sc_bulk,caecum,ascending colon,1.0000000000000001,5,18
 UBERON:0000059,large intestine,Female,spatial,caecum,ascending colon,0.9999999999999998,5,18
-UBERON:0000059,large intestine,Male,spatial,rectum,descending colon,0.9849517112197309,13,19
-UBERON:0000059,large intestine,Male,sc_bulk,rectum,descending colon,0.8902717657234509,13,19
-UBERON:0000059,large intestine,Female,sc_bulk,caecum,descending colon,0.8638549322047776,5,19
-UBERON:0000059,large intestine,Female,spatial,caecum,descending colon,0.9224812226256441,5,19
-UBERON:0000059,large intestine,Female,sc_bulk,ascending colon,descending colon,0.8638549322047777,18,19
-UBERON:0000059,large intestine,Male,sc_bulk,ascending colon,descending colon,0.97640125723120925,18,19
-UBERON:0000059,large intestine,Female,spatial,ascending colon,descending colon,0.922481222625644,18,19
-UBERON:0000059,large intestine,Male,spatial,ascending colon,descending colon,0.9906216712240895,18,19
-UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,kidney pyramid,0.36670186206631433,6,112
-UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,kidney pyramid,0.36670186206631433,6,112
-UBERON:0000059,large intestine,Male,spatial,rectum,transverse colon,0.9503327437886709,13,17
-UBERON:0000059,large intestine,Male,sc_bulk,rectum,transverse colon,0.87659952665061475,13,17
-UBERON:0000059,large intestine,Female,sc_bulk,caecum,transverse colon,0.91177858131727665,5,17
-UBERON:0000059,large intestine,Female,spatial,caecum,transverse colon,0.879770365196477,5,17
-UBERON:0000059,large intestine,Female,sc_bulk,ascending colon,transverse colon,0.91177858131727675,18,17
-UBERON:0000059,large intestine,Male,spatial,ascending colon,transverse colon,0.9816842926384989,18,17
-UBERON:0000059,large intestine,Male,sc_bulk,ascending colon,transverse colon,0.9169866764704814,18,17
-UBERON:0000059,large intestine,Female,spatial,ascending colon,transverse colon,0.8797703651964769,18,17
-UBERON:0000059,large intestine,Male,spatial,rectum,sigmoid colon,0.9999999999999999,13,19
-UBERON:0000059,large intestine,Male,sc_bulk,rectum,sigmoid colon,0.9999999999999998,13,19
-UBERON:0000059,large intestine,Male,spatial,descending colon,sigmoid colon,0.9849517112197308,19,19
-UBERON:0000059,large intestine,Female,spatial,descending colon,sigmoid colon,0.588722910462506,19,19
-UBERON:0000059,large intestine,Male,sc_bulk,descending colon,sigmoid colon,0.89027176572345075,19,19
-UBERON:0000059,large intestine,Female,sc_bulk,descending colon,sigmoid colon,0.9213889355436317,19,19
-UBERON:0000059,large intestine,Female,sc_bulk,caecum,sigmoid colon,0.7873809259850978,5,19
-UBERON:0000059,large intestine,Female,spatial,caecum,sigmoid colon,0.7778282876292474,5,19
-UBERON:0000059,large intestine,Male,sc_bulk,ascending colon,sigmoid colon,0.86141996081421785,18,19
-UBERON:0000059,large intestine,Female,sc_bulk,ascending colon,sigmoid colon,0.78738092598509785,18,19
-UBERON:0000059,large intestine,Female,spatial,ascending colon,sigmoid colon,0.7778282876292475,18,19
-UBERON:0000059,large intestine,Male,spatial,ascending colon,sigmoid colon,0.9837198418641342,18,19
-UBERON:0000059,large intestine,Female,sc_bulk,transverse colon,sigmoid colon,0.53094977249897458,17,19
-UBERON:0000059,large intestine,Male,spatial,transverse colon,sigmoid colon,0.9503327437886709,17,19
-UBERON:0000059,large intestine,Female,spatial,transverse colon,sigmoid colon,0.9734216805751224,17,19
-UBERON:0000059,large intestine,Male,sc_bulk,transverse colon,sigmoid colon,0.8765995266506149,17,19
-UBERON:0004539,right kidney,Female,sc_bulk,kidney capsule,kidney pyramid,0.8879000797633886,9,112
-UBERON:0004539,right kidney,Male,sc_bulk,kidney capsule,kidney pyramid,0.49407181432137065,9,112
-UBERON:0004538,left kidney,Female,sc_bulk,kidney capsule,kidney pyramid,0.8879000797633886,9,112
-UBERON:0004538,left kidney,Male,sc_bulk,kidney capsule,kidney pyramid,0.49407181432137065,9,112
-UBERON:0004538,left kidney,Male,sc_bulk,outer cortex of kidney,kidney pyramid,0.782185159069107,152,112
-UBERON:0004538,left kidney,Female,sc_bulk,outer cortex of kidney,kidney pyramid,0.9402004383058423,152,112
-UBERON:0004539,right kidney,Male,sc_bulk,outer cortex of kidney,kidney pyramid,0.782185159069107,152,112
-UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,outer cortex of kidney,0.508257129596555,6,152
-UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,outer cortex of kidney,0.508257129596555,6,152
-UBERON:0004539,right kidney,Female,sc_bulk,outer cortex of kidney,kidney pyramid,0.9402004383058423,152,112
-UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,kidney capsule,0.9249612531937624,6,9
-UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,kidney capsule,0.9249612531937624,6,9
-UBERON:0004539,right kidney,Male,sc_bulk,renal column,kidney pyramid,0.7133997024433052,21,112
-UBERON:0004538,left kidney,Male,sc_bulk,renal column,kidney pyramid,0.7133997024433052,21,112
-UBERON:0004539,right kidney,Female,sc_bulk,renal column,kidney pyramid,0.7841318174754989,21,112
-UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,renal column,0.13387130985297216,6,21
-UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,renal column,0.13387130985297216,6,21
-UBERON:0004538,left kidney,Female,sc_bulk,renal column,kidney pyramid,0.7841318174754989,21,112
-UBERON:0004539,right kidney,Male,sc_bulk,renal column,kidney capsule,0.15539363607857437,21,9
-UBERON:0004538,left kidney,Male,sc_bulk,renal column,kidney capsule,0.15539363607857437,21,9
-UBERON:0004539,right kidney,Female,sc_bulk,renal column,kidney capsule,0.6896636384220072,21,9
-UBERON:0004538,left kidney,Female,sc_bulk,renal column,kidney capsule,0.6896636384220072,21,9
-UBERON:0004538,left kidney,Male,sc_bulk,kidney capsule,outer cortex of kidney,0.5013715856483061,9,152
-UBERON:0004539,right kidney,Male,sc_bulk,kidney capsule,outer cortex of kidney,0.5013715856483061,9,152
-UBERON:0000948,heart,Female,sc_bulk,heart left ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.46714181848776383722,70,6
-UBERON:0000948,heart,Female,sc_bulk,heart right ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.53719685148070857622,29,6
-UBERON:0000948,heart,Female,sc_bulk,left cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.26656088172274280622,14,6
-UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.27124476485938177333,15,6
-UBERON:0000948,heart,Female,sc_bulk,interventricular septum,Posteromedial head of posterior papillary muscle of left ventricle,0.55637742979976396544,14,6
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.500851693109755700425,1,1
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left anterior basal bronchopulmonary segment,0.0442224935423446165,3,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.06752930669977389483,50,1
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Right superior segmental bronchus,0.43797663325417799111,3,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Right superior segmental bronchus,0.21388914519519952467,1,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Right superior segmental bronchus,0.55646402073901771,50,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Right superior segmental bronchus,0.43723667898779755333,16,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Right superior segmental bronchus,0.62535333026868022,21,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Right superior segmental bronchus,0.57798165775686666222,31,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.299169084843459515,16,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.1638398122571639545,21,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.07824066757394388033,31,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.04548862266167344317,5,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.07933619720756065567,9,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.08162303080854255567,14,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.09433251058326925567,1,9
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left posterior bronchopulmonary segment,0.54673978668943454,3,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.09433251058326925567,1,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left posterior bronchopulmonary segment,0.70319578582528721111,50,9
-UBERON:0004539,right kidney,Female,sc_bulk,renal column,outer cortex of kidney,0.9030719467583146,21,152
-UBERON:0004538,left kidney,Female,sc_bulk,renal column,outer cortex of kidney,0.9030719467583146,21,152
-UBERON:0004539,right kidney,Male,sc_bulk,renal column,outer cortex of kidney,0.508871484950648,21,152
-UBERON:0004538,left kidney,Male,sc_bulk,renal column,outer cortex of kidney,0.508871484950648,21,152
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left apical segmental bronchus,0.33586957893797353111,16,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left apical segmental bronchus,0.6490228418874602,21,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left apical segmental bronchus,0.63263635185727121111,31,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Left apical segmental bronchus,0.51353920593324248111,9,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left apical segmental bronchus,0.68969395796007350667,12,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Left apical segmental bronchus,0.69986319684875685556,9,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left apical segmental bronchus,0.52151105880415265333,5,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left apical segmental bronchus,0.68192750840721501556,9,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left apical segmental bronchus,0.63028839301206343667,14,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left anterior segmental bronchus,0.048279082762116639,1,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Left anterior segmental bronchus,0.46443652711362152667,5,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Right superior segmental bronchus,0.44794966842380966778,5,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Right superior segmental bronchus,0.61246679038588122222,9,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Right superior segmental bronchus,0.53491547719382892222,14,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left apical segmental bronchus,0.095136244020596590,1,10
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left apical segmental bronchus,0.52500270576021367667,3,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left apical segmental bronchus,0.095136244020596590,1,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left apical segmental bronchus,0.60220491045045704667,50,10
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left anterior segmental bronchus,0.58872121425610494,14,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Superior lingular bronchus,0.06642476434878426183,1,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Superior lingular bronchus,0.54370446158938023333,5,2
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Superior lingular bronchus,0.51657528028424359111,3,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Superior lingular bronchus,0.64243555177394928,50,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Superior lingular bronchus,0.31264061278985566556,16,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Superior lingular bronchus,0.63177452926138948667,21,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Superior lingular bronchus,0.65661079188388531222,31,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Right superior segmental bronchus,0.48747873636902022556,9,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Right superior segmental bronchus,0.61315404805198668889,12,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Right superior segmental bronchus,0.63580152547755536778,9,5
-UBERON:0000948,heart,Female,sc_bulk,heart right ventricle,interventricular septum,0.53887119649234152022,29,14
-UBERON:0000948,heart,Male,sc_bulk,heart right ventricle,interventricular septum,0.52782448327897517078,29,14
-UBERON:0000948,heart,Female,sc_bulk,left cardiac atrium,interventricular septum,0.27448451140515138478,14,14
-UBERON:0000948,heart,Male,sc_bulk,left cardiac atrium,interventricular septum,0.31718563771243888022,14,14
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.08782209297456622017,1,12
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left apical bronchopulmonary segment,0.52911523429781202444,3,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.08782209297456622017,1,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left apical bronchopulmonary segment,0.71377528466885545556,50,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.37259842075296483556,16,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left anterior segmental bronchus,0.57272764955318078556,50,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left anterior segmental bronchus,0.25974873192944629556,16,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left anterior segmental bronchus,0.51968070025927165889,21,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left anterior segmental bronchus,0.57246204490613820222,31,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Left anterior segmental bronchus,0.42205670195966577333,9,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left anterior segmental bronchus,0.56060875439972079778,12,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Left anterior segmental bronchus,0.57828020028336622778,9,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left anterior segmental bronchus,0.50974857066428790,5,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left anterior segmental bronchus,0.58735207567534734444,9,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical segmental bronchus,Left anterior segmental bronchus,0.55078401283572156889,10,8
-UBERON:0004539,right kidney,Female,sc_bulk,kidney capsule,outer cortex of kidney,0.8589156031500489,9,152
-UBERON:0004538,left kidney,Female,sc_bulk,kidney capsule,outer cortex of kidney,0.8589156031500489,9,152
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Superior lingular bronchus,0.55619099127128782556,9,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Superior lingular bronchus,0.67550962552608291556,12,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Superior lingular bronchus,0.68250477336616346444,9,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Superior lingular bronchus,0.55073345362323470222,5,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Superior lingular bronchus,0.68048275437907628889,9,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical segmental bronchus,Superior lingular bronchus,0.61654340652412377333,10,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Superior lingular bronchus,0.60159469254872346556,14,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.50085169310975570035,1,1
-UBERON:0004539,right kidney,Female,sc_bulk,kidney pyramid,hilum of kidney,0.7254467602189292,112,8
-UBERON:0004538,left kidney,Female,sc_bulk,kidney pyramid,hilum of kidney,0.7254467602189292,112,8
-UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,hilum of kidney,0.1338713098529722,6,8
-UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,hilum of kidney,0.1338713098529722,6,8
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Lateral segmental bronchus,0.50739547083168412222,2,9
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior segmental bronchus,Lateral segmental bronchus,0.62939273378936926667,2,9
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left anterior segmental bronchus,0.54290566988989298889,3,8
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left anterior segmental bronchus,0.048279082762116639,1,8
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Lateral segmental bronchus,0.39654900597170706222,3,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Lateral segmental bronchus,0.20138884690389989533,1,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Lateral segmental bronchus,0.61245640526119700333,50,9
-UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Lateral segmental bronchus,0.66526794047521197222,50,9
-UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Lateral segmental bronchus,0.57730726985086734,16,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Lateral segmental bronchus,0.34499524031231194667,16,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Lateral segmental bronchus,0.58790726119285383333,21,9
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Lateral segmental bronchus,0.60871345701289993667,21,9
-UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.59032677075192373,31,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.58777851822751559778,31,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Lateral segmental bronchus,0.63317799735705935556,12,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Lateral segmental bronchus,0.59118864571996333778,9,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left posterior basal segmental bronchus,0.06752930669977389533,50,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.29916908484345954867,16,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.163839812257163960,21,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left posterior basal segmental bronchus,0.0782406675739438945,31,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Left posterior basal segmental bronchus,0.20138884690389984467,9,1
-UBERON:0004538,left kidney,Female,sc_bulk,renal column,hilum of kidney,0.9757010838702566,21,8
-UBERON:0004538,left kidney,Male,sc_bulk,renal column,hilum of kidney,0.9999999999999999,21,8
-UBERON:0004539,right kidney,Female,sc_bulk,renal column,hilum of kidney,0.9757010838702566,21,8
-UBERON:0004539,right kidney,Male,sc_bulk,renal column,hilum of kidney,0.9999999999999999,21,8
-UBERON:0004539,right kidney,Female,sc_bulk,kidney capsule,hilum of kidney,0.6033820673569319,9,8
-UBERON:0004538,left kidney,Female,sc_bulk,kidney capsule,hilum of kidney,0.6033820673569319,9,8
-UBERON:0000948,heart,Male,sc_bulk,heart left ventricle,interventricular septum,0.49609032669787010422,70,14
-UBERON:0000948,heart,Female,sc_bulk,heart left ventricle,interventricular septum,0.47324722584556129956,70,14
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.74050876123842678889,21,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left apical bronchopulmonary segment,0.72835420320381422778,31,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left apical bronchopulmonary segment,0.58001629480990465556,5,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left apical bronchopulmonary segment,0.75862582739507173333,9,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.64932706615415495556,14,12
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Lateral segmental bronchus,0.20138884690389989533,1,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Left apical segmental bronchus,0.55850330280406705778,5,10
-UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right anterior bronchopulmonary segment,0.73143803071355605222,16,21
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Right anterior bronchopulmonary segment,0.42442274055886268444,16,21
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right anterior bronchopulmonary segment,0.61141111259220362778,7,21
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left posterior basal segmental bronchus,0.08782209297456622817,12,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.09433251058326927083,9,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left posterior basal segmental bronchus,0.0454886226616734445,5,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left posterior basal segmental bronchus,0.079336197207560662,9,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical segmental bronchus,Left posterior basal segmental bronchus,0.0951362440205966095,10,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.08162303080854255183,14,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.38415667747841486,16,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.7397856394983656,21,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left posterior bronchopulmonary segment,0.72758865241776400667,31,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left posterior bronchopulmonary segment,0.79482463889099366667,12,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left posterior bronchopulmonary segment,0.57793283131893392333,5,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left posterior bronchopulmonary segment,0.76531365985656653333,9,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.66615501676388952222,14,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Right superior segmental bronchus,0.21388914519519952467,1,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left medial basal segmental bronchus,0.500851693109755750475,1,1
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left medial basal segmental bronchus,0.0442224935423446265,3,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior segmental bronchus,Left medial basal segmental bronchus,0.04827908276211665083,8,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left medial basal segmental bronchus,0.500851693109755750475,1,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left medial basal segmental bronchus,0.06752930669977390133,50,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left medial basal segmental bronchus,0.29916908484345950043,16,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left medial basal segmental bronchus,0.16383981225716396767,21,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left medial basal segmental bronchus,0.07824066757394389427,31,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Left medial basal segmental bronchus,0.20138884690389988483,9,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left medial basal segmental bronchus,0.08782209297456623342,12,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Left medial basal segmental bronchus,0.0943325105832692795,9,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left medial basal segmental bronchus,0.04548862266167344817,5,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left medial basal segmental bronchus,0.07933619720756065733,9,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left apical segmental bronchus,Left medial basal segmental bronchus,0.09513624402059662583,10,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left medial basal segmental bronchus,0.08162303080854256067,14,1
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left posterior basal segmental bronchus,0.04422249354234460783,3,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior segmental bronchus,Left posterior basal segmental bronchus,0.04827908276211664792,8,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.50085169310975570035,1,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior segmental bronchus,Superior lingular bronchus,0.54089881189341841889,8,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Superior lingular bronchus,0.06642476434878426183,1,2
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Lateral segmental bronchus,0.51149944797138562111,5,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Lateral segmental bronchus,0.58599468746669715222,9,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Lateral segmental bronchus,0.48071503232493209111,14,9
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Lateral segmental bronchus,0.45018301461856037444,7,9
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior basal bronchopulmonary segment,Lateral segmental bronchus,0.54383305730580173333,14,9
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical segmental bronchus,Lateral segmental bronchus,0.42075269098743997333,2,9
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right anterior bronchopulmonary segment,0.74662504641414316667,2,21
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Right anterior bronchopulmonary segment,0.48955858769513532556,3,21
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchus,Left posterior basal segmental bronchus,0.06642476434878428217,2,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal segmental bronchus,Left posterior basal segmental bronchus,0.5008516931097557006,1,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Left medial basal segmental bronchus,0.21388914519519954533,5,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchus,Left medial basal segmental bronchus,0.06642476434878427533,2,1
-UBERON:0004538,left kidney,Male,sc_bulk,kidney pyramid,hilum of kidney,0.7133997024433053,112,8
-UBERON:0004539,right kidney,Female,sc_bulk,outer cortex of kidney,hilum of kidney,0.8626349739496233,152,8
-UBERON:0004539,right kidney,Male,sc_bulk,outer cortex of kidney,hilum of kidney,0.508871484950648,152,8
-UBERON:0004538,left kidney,Female,sc_bulk,outer cortex of kidney,hilum of kidney,0.8626349739496233,152,8
-UBERON:0004538,left kidney,Male,sc_bulk,outer cortex of kidney,hilum of kidney,0.508871484950648,152,8
-UBERON:0004538,left kidney,Male,sc_bulk,kidney capsule,hilum of kidney,0.15539363607857434,9,8
-UBERON:0004539,right kidney,Male,sc_bulk,kidney capsule,hilum of kidney,0.15539363607857434,9,8
-UBERON:0001004,respiratory system,Female,sc_bulk,Right superior bronchopulmonary segment,Lateral segmental bronchus,0.58609024949511731889,4,9
-UBERON:0004539,right kidney,Male,sc_bulk,kidney pyramid,hilum of kidney,0.7133997024433053,112,8
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right superior bronchopulmonary segment,0.72322925204613038222,2,4
-UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Right superior bronchopulmonary segment,0.71914031627305467778,50,4
-UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right superior bronchopulmonary segment,0.70572476671543682778,16,4
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Right superior bronchopulmonary segment,0.76012530719154557778,21,4
-UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Right superior bronchopulmonary segment,0.67657413225218733667,31,4
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right superior bronchopulmonary segment,0.58571633323817836556,7,4
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior basal bronchopulmonary segment,Right superior bronchopulmonary segment,0.66337643202425531667,14,4
-UBERON:0000948,heart,Female,sc_bulk,left cardiac atrium,heart right ventricle,0.25222749692436259528,14,29
-UBERON:0000948,heart,Male,sc_bulk,left cardiac atrium,heart right ventricle,0.39448699958313720667,14,29
-UBERON:0000948,heart,Male,sc_bulk,right cardiac atrium,heart right ventricle,0.28997699801945919467,15,29
 UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Medial bronchopulmonary segment,0.54778838039590249778,3,50
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Medial bronchopulmonary segment,0.32296313862958863556,16,50
-UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Medial bronchopulmonary segment,0.71198014214740667778,16,50
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Medial bronchopulmonary segment,0.64173666533309084444,21,50
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Medial bronchopulmonary segment,0.74294723203502534444,21,50
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Medial bronchopulmonary segment,0.54386426016560118556,7,50
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Lateral bronchopulmonary segment,0.63120211434375919444,2,31
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Lateral bronchopulmonary segment,0.54744032359048559556,3,31
-UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,interventricular septum,0.27481453955801055878,15,14
-UBERON:0000948,heart,Male,sc_bulk,right cardiac atrium,interventricular septum,0.23056288882252557611,15,14
-UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Left posterior basal segmental bronchus,0.21388914519519958067,5,1
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right anterior basal bronchopulmonary segment,0.64775555774040334444,2,14
-UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.66977912420358926667,50,14
-UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.69859459131500607778,16,14
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.69342321380835776667,21,14
-UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.6941431924590670,31,14
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right posterior bronchopulmonary segment,0.6758628946113662,2,16
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Right posterior bronchopulmonary segment,0.24341144024434093111,3,16
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right posterior bronchopulmonary segment,0.64102221515423927889,7,16
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Medial bronchopulmonary segment,0.64394889383789470556,2,50
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right anterior segmental bronchus,0.70944321103491531667,2,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Right anterior segmental bronchus,0.78725529794929577778,50,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right anterior segmental bronchus,0.73786639245441623333,16,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Right anterior segmental bronchus,0.7794847114483448,21,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Right anterior segmental bronchus,0.72231574244123092222,31,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right anterior segmental bronchus,0.60061786640449403778,7,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior basal bronchopulmonary segment,Right anterior segmental bronchus,0.69247235644173804,14,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Right superior bronchopulmonary segment,Right anterior segmental bronchus,0.75280995444430148889,4,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical segmental bronchus,Right anterior segmental bronchus,0.60848684511009366667,2,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.62081507278158335,7,14
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right apical bronchopulmonary segment,0.58582557135373001556,2,7
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left medial basal bronchopulmonary segment,0.0442224935423446165,3,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.06752930669977389483,50,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.299169084843459515,16,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.1638398122571639545,21,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.07824066757394388033,31,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.04548862266167344317,5,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.07933619720756065567,9,1
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.08162303080854255567,14,1
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left anterior bronchopulmonary segment,0.56783235043661372556,3,14
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left anterior bronchopulmonary segment,0.62164370899941908,50,14
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left anterior bronchopulmonary segment,0.31621699752741189667,16,14
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left anterior bronchopulmonary segment,0.60945013896818684889,21,14
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left anterior bronchopulmonary segment,0.63325190031410194444,31,14
+UBERON:0004539,right kidney,Male,sc_bulk,renal column,outer cortex of kidney,0.508871484950648,21,152
+UBERON:0004539,right kidney,Female,sc_bulk,renal column,outer cortex of kidney,0.9030719467583146,21,152
+UBERON:0004538,left kidney,Male,sc_bulk,renal column,outer cortex of kidney,0.508871484950648,21,152
+UBERON:0004538,left kidney,Female,sc_bulk,renal column,outer cortex of kidney,0.9030719467583146,21,152
 UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Lateral bronchopulmonary segment,0.72071208774079308889,50,31
 UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Lateral bronchopulmonary segment,0.69745492053151770,50,31
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.33913598177675746667,16,31
 UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.71793682842054732222,16,31
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.67104016927493060667,21,31
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.33913598177675746667,16,31
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Lateral bronchopulmonary segment,0.63120211434375919444,2,31
 UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.70271507611071986667,21,31
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.67104016927493060667,21,31
 UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Lateral bronchopulmonary segment,0.62011888150261198889,7,31
+UBERON:0000059,large intestine,Female,sc_bulk,transverse colon,descending colon,0.62263607769710685,17,19
+UBERON:0000059,large intestine,Male,sc_bulk,transverse colon,descending colon,0.90494339407619365,17,19
+UBERON:0000059,large intestine,Female,spatial,transverse colon,descending colon,0.7094714167030884,17,19
+UBERON:0000059,large intestine,Male,spatial,transverse colon,descending colon,0.9675243919754691,17,19
+UBERON:0000059,large intestine,Female,spatial,ascending colon,sigmoid colon,0.7778282876292475,18,19
+UBERON:0000059,large intestine,Female,sc_bulk,ascending colon,sigmoid colon,0.78738092598509785,18,19
+UBERON:0000059,large intestine,Male,sc_bulk,ascending colon,sigmoid colon,0.86141996081421785,18,19
+UBERON:0000059,large intestine,Female,sc_bulk,descending colon,sigmoid colon,0.9213889355436317,19,19
+UBERON:0000059,large intestine,Male,sc_bulk,descending colon,sigmoid colon,0.89027176572345075,19,19
+UBERON:0004539,right kidney,Female,sc_bulk,kidney capsule,outer cortex of kidney,0.8589156031500489,9,152
+UBERON:0004538,left kidney,Female,sc_bulk,kidney capsule,outer cortex of kidney,0.8589156031500489,9,152
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Right anterior bronchopulmonary segment,0.48955858769513532556,3,21
+UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right anterior bronchopulmonary segment,0.73143803071355605222,16,21
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Right anterior bronchopulmonary segment,0.42442274055886268444,16,21
+UBERON:0004539,right kidney,Female,sc_bulk,kidney capsule,hilum of kidney,0.6033820673569319,9,8
+UBERON:0004538,left kidney,Female,sc_bulk,kidney capsule,hilum of kidney,0.6033820673569319,9,8
+UBERON:0004539,right kidney,Male,sc_bulk,kidney capsule,hilum of kidney,0.15539363607857434,9,8
+UBERON:0004538,left kidney,Male,sc_bulk,kidney capsule,hilum of kidney,0.15539363607857434,9,8
+UBERON:0000059,large intestine,Male,sc_bulk,transverse colon,sigmoid colon,0.8765995266506149,17,19
+UBERON:0000059,large intestine,Female,sc_bulk,transverse colon,sigmoid colon,0.53094977249897458,17,19
+UBERON:0000059,large intestine,Female,spatial,transverse colon,sigmoid colon,0.9734216805751224,17,19
+UBERON:0000059,large intestine,Male,spatial,transverse colon,sigmoid colon,0.9503327437886709,17,19
+UBERON:0000059,large intestine,Female,spatial,caecum,sigmoid colon,0.7778282876292474,5,19
+UBERON:0000059,large intestine,Female,sc_bulk,caecum,sigmoid colon,0.7873809259850978,5,19
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Lateral bronchopulmonary segment,0.54744032359048559556,3,31
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.64932706615415495556,14,12
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left apical bronchopulmonary segment,0.75862582739507173333,9,12
+UBERON:0002108,small intestine,Male,spatial,Descending part of duodenum,Ascending part of duodenum,0.9906690739026441,18,18
+UBERON:0002108,small intestine,Female,sc_bulk,Horizontal part of duodenum,Ascending part of duodenum,1.0000000000000001,18,18
+UBERON:0002108,small intestine,Male,sc_bulk,Horizontal part of duodenum,Ascending part of duodenum,1,18,18
+UBERON:0002108,small intestine,Female,spatial,Horizontal part of duodenum,Ascending part of duodenum,1,18,18
+UBERON:0002108,small intestine,Male,spatial,Horizontal part of duodenum,Ascending part of duodenum,1.0000000000000002,18,18
+UBERON:0002108,small intestine,Male,sc_bulk,jejunum,Ascending part of duodenum,0.97422411115235115,16,18
+UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Ascending part of duodenum,0.9980024346854078,16,18
+UBERON:0002108,small intestine,Female,spatial,jejunum,Ascending part of duodenum,0.7767372730030294,16,18
+UBERON:0002108,small intestine,Male,spatial,jejunum,Ascending part of duodenum,0.9897819721665767,16,18
+UBERON:0002108,small intestine,Female,sc_bulk,Superior part of duodenum,Ascending part of duodenum,0.9721497019394062,6,18
+UBERON:0002108,small intestine,Female,spatial,Superior part of duodenum,Ascending part of duodenum,0.7211960159620723,6,18
+UBERON:0002108,small intestine,Female,spatial,ileum,Ascending part of duodenum,0.8987792823144939,5,18
+UBERON:0002108,small intestine,Female,sc_bulk,ileum,Ascending part of duodenum,0.9927434553091437,5,18
+UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Right anterior segmental bronchus,0.72231574244123092222,31,2
+UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Right anterior segmental bronchus,0.78725529794929577778,50,2
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical segmental bronchus,Right anterior segmental bronchus,0.60848684511009366667,2,2
+UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right anterior segmental bronchus,0.73786639245441623333,16,2
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right anterior segmental bronchus,0.70944321103491531667,2,2
+UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Right superior bronchopulmonary segment,0.67657413225218733667,31,4
+UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Right superior bronchopulmonary segment,0.71914031627305467778,50,4
+UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right superior bronchopulmonary segment,0.70572476671543682778,16,4
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right superior bronchopulmonary segment,0.72322925204613038222,2,4
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Right superior bronchopulmonary segment,0.76012530719154557778,21,4
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right superior bronchopulmonary segment,0.58571633323817836556,7,4
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior basal bronchopulmonary segment,Right superior bronchopulmonary segment,0.66337643202425531667,14,4
+UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.6941431924590670,31,14
+UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.66977912420358926667,50,14
+UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.69859459131500607778,16,14
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right anterior basal bronchopulmonary segment,0.64775555774040334444,2,14
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.69342321380835776667,21,14
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.62081507278158335,7,14
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right apical bronchopulmonary segment,0.58582557135373001556,2,7
+UBERON:0002108,small intestine,Female,spatial,jejunum,Horizontal part of duodenum,0.7767372730030294,16,18
+UBERON:0002108,small intestine,Male,spatial,jejunum,Horizontal part of duodenum,0.9897819721665768,16,18
+UBERON:0002108,small intestine,Male,sc_bulk,jejunum,Horizontal part of duodenum,0.9742241111523510,16,18
+UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Horizontal part of duodenum,0.99800243468540765,16,18
+UBERON:0002108,small intestine,Female,sc_bulk,Superior part of duodenum,Horizontal part of duodenum,0.97214970193940615,6,18
+UBERON:0002108,small intestine,Female,spatial,Superior part of duodenum,Horizontal part of duodenum,0.7211960159620723,6,18
+UBERON:0002108,small intestine,Female,spatial,ileum,Horizontal part of duodenum,0.898779282314494,5,18
+UBERON:0002108,small intestine,Female,sc_bulk,ileum,Horizontal part of duodenum,0.99274345530914355,5,18
 UBERON:0002108,small intestine,Female,sc_bulk,Descending part of duodenum,Distal part of ileum,0.96519541875811455,18,17
 UBERON:0002108,small intestine,Male,sc_bulk,Descending part of duodenum,Distal part of ileum,0.87905729836528915,18,17
 UBERON:0002108,small intestine,Male,sc_bulk,Horizontal part of duodenum,Distal part of ileum,0.87157241739279945,18,17
 UBERON:0002108,small intestine,Female,sc_bulk,Horizontal part of duodenum,Distal part of ileum,0.9927434553091435,18,17
 UBERON:0002108,small intestine,Female,spatial,Horizontal part of duodenum,Distal part of ileum,0.898779282314494,18,17
 UBERON:0002108,small intestine,Male,spatial,Horizontal part of duodenum,Distal part of ileum,0.965481930082274,18,17
-UBERON:0002108,small intestine,Male,sc_bulk,Ascending part of duodenum,Distal part of ileum,0.87157241739279945,18,17
-UBERON:0002108,small intestine,Male,spatial,Ascending part of duodenum,Distal part of ileum,0.965481930082274,18,17
-UBERON:0002108,small intestine,Female,sc_bulk,Ascending part of duodenum,Distal part of ileum,0.9927434553091436,18,17
-UBERON:0002108,small intestine,Female,spatial,Ascending part of duodenum,Distal part of ileum,0.8987792823144939,18,17
+UBERON:0004539,right kidney,Male,sc_bulk,renal papilla,outer cortex of kidney,0.508257129596555,6,152
+UBERON:0004538,left kidney,Male,sc_bulk,renal papilla,outer cortex of kidney,0.508257129596555,6,152
+UBERON:0000059,large intestine,Female,sc_bulk,ascending colon,transverse colon,0.91177858131727675,18,17
+UBERON:0000059,large intestine,Male,sc_bulk,ascending colon,transverse colon,0.9169866764704814,18,17
+UBERON:0000059,large intestine,Female,spatial,ascending colon,transverse colon,0.8797703651964769,18,17
+UBERON:0000059,large intestine,Male,spatial,ascending colon,transverse colon,0.9816842926384989,18,17
+UBERON:0000059,large intestine,Female,sc_bulk,caecum,transverse colon,0.91177858131727665,5,17
+UBERON:0000059,large intestine,Female,spatial,caecum,transverse colon,0.879770365196477,5,17
+UBERON:0000059,large intestine,Male,sc_bulk,rectum,descending colon,0.8902717657234509,13,19
+UBERON:0000059,large intestine,Male,spatial,rectum,descending colon,0.9849517112197309,13,19
+UBERON:0000059,large intestine,Male,sc_bulk,ascending colon,descending colon,0.97640125723120925,18,19
+UBERON:0000059,large intestine,Female,spatial,ascending colon,descending colon,0.922481222625644,18,19
+UBERON:0000059,large intestine,Male,spatial,ascending colon,descending colon,0.9906216712240895,18,19
+UBERON:0000059,large intestine,Female,sc_bulk,ascending colon,descending colon,0.8638549322047777,18,19
+UBERON:0000059,large intestine,Female,sc_bulk,caecum,descending colon,0.8638549322047776,5,19
+UBERON:0000059,large intestine,Female,spatial,caecum,descending colon,0.9224812226256441,5,19
+UBERON:0000059,large intestine,Male,spatial,rectum,sigmoid colon,0.9999999999999999,13,19
+UBERON:0000059,large intestine,Male,sc_bulk,rectum,sigmoid colon,0.9999999999999998,13,19
+UBERON:0000059,large intestine,Male,spatial,ascending colon,sigmoid colon,0.9837198418641342,18,19
+UBERON:0000059,large intestine,Male,spatial,descending colon,sigmoid colon,0.9849517112197308,19,19
+UBERON:0000059,large intestine,Female,spatial,descending colon,sigmoid colon,0.588722910462506,19,19
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Lateral segmental bronchus,0.39654900597170706222,3,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Lateral segmental bronchus,0.20138884690389989533,1,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.59032677075192373,31,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.58777851822751559778,31,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Lateral segmental bronchus,0.61245640526119700333,50,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Lateral segmental bronchus,0.66526794047521197222,50,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Lateral segmental bronchus,0.34499524031231194667,16,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Lateral segmental bronchus,0.57730726985086734,16,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Lateral segmental bronchus,0.63317799735705935556,12,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior basal bronchopulmonary segment,Lateral segmental bronchus,0.54383305730580173333,14,9
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left anterior segmental bronchus,0.54290566988989298889,3,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left anterior segmental bronchus,0.048279082762116639,1,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left anterior segmental bronchus,0.57246204490613820222,31,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left anterior segmental bronchus,0.57272764955318078556,50,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left anterior segmental bronchus,0.25974873192944629556,16,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Left anterior segmental bronchus,0.57828020028336622778,9,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left anterior segmental bronchus,0.51968070025927165889,21,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Left anterior segmental bronchus,0.42205670195966577333,9,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left apical segmental bronchus,0.60220491045045704667,50,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left apical segmental bronchus,0.33586957893797353111,16,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Left apical segmental bronchus,0.69986319684875685556,9,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left apical segmental bronchus,0.6490228418874602,21,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Left apical segmental bronchus,0.51353920593324248111,9,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Left apical segmental bronchus,0.55850330280406705778,5,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left apical segmental bronchus,0.095136244020596590,1,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left apical segmental bronchus,0.63028839301206343667,14,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left apical segmental bronchus,0.68192750840721501556,9,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left apical segmental bronchus,0.52151105880415265333,5,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left apical segmental bronchus,0.68969395796007350667,12,10
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left apical bronchopulmonary segment,0.52911523429781202444,3,12
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Left posterior basal segmental bronchus,0.20138884690389984467,9,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Left posterior basal segmental bronchus,0.21388914519519958067,5,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.50085169310975570035,1,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.08162303080854255183,14,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left posterior basal segmental bronchus,0.079336197207560662,9,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left posterior basal segmental bronchus,0.0454886226616734445,5,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left posterior basal segmental bronchus,0.08782209297456622817,12,1
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Right superior segmental bronchus,0.43797663325417799111,3,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.09433251058326925567,1,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.09433251058326925567,1,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left posterior bronchopulmonary segment,0.66615501676388952222,14,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left posterior bronchopulmonary segment,0.76531365985656653333,9,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left posterior bronchopulmonary segment,0.57793283131893392333,5,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left posterior bronchopulmonary segment,0.79482463889099366667,12,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical segmental bronchus,Lateral segmental bronchus,0.42075269098743997333,2,9
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Lateral segmental bronchus,0.50739547083168412222,2,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical segmental bronchus,Left anterior segmental bronchus,0.55078401283572156889,10,8
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left anterior basal bronchopulmonary segment,0.0442224935423446165,3,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.07824066757394388033,31,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.06752930669977389483,50,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.299169084843459515,16,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.1638398122571639545,21,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.500851693109755700425,1,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.08162303080854255567,14,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.07933619720756065567,9,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.04548862266167344317,5,1
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left medial basal bronchopulmonary segment,0.0442224935423446165,3,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Right superior segmental bronchus,0.21388914519519952467,1,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Right superior segmental bronchus,0.57798165775686666222,31,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Right superior segmental bronchus,0.55646402073901771,50,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Right superior segmental bronchus,0.43723667898779755333,16,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Right superior segmental bronchus,0.63580152547755536778,9,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Right superior segmental bronchus,0.62535333026868022,21,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.07824066757394388033,31,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.06752930669977389483,50,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.299169084843459515,16,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.1638398122571639545,21,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.08162303080854255567,14,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.07933619720756065567,9,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.04548862266167344317,5,1
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left posterior basal segmental bronchus,0.04422249354234460783,3,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.50085169310975570035,1,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Lateral segmental bronchus,0.59118864571996333778,9,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Right superior segmental bronchus,0.48747873636902022556,9,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Right superior segmental bronchus,0.21388914519519952467,1,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Right superior segmental bronchus,0.53491547719382892222,14,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Right superior segmental bronchus,0.61246679038588122222,9,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Right superior segmental bronchus,0.44794966842380966778,5,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Right superior segmental bronchus,0.61315404805198668889,12,5
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left anterior bronchopulmonary segment,0.56783235043661372556,3,14
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Lateral segmental bronchus,0.58790726119285383333,21,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Lateral segmental bronchus,0.60871345701289993667,21,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Lateral segmental bronchus,0.45018301461856037444,7,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Lateral segmental bronchus,0.20138884690389989533,1,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Right superior bronchopulmonary segment,Lateral segmental bronchus,0.58609024949511731889,4,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Lateral segmental bronchus,0.48071503232493209111,14,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Lateral segmental bronchus,0.58599468746669715222,9,9
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior segmental bronchus,Lateral segmental bronchus,0.62939273378936926667,2,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Lateral segmental bronchus,0.51149944797138562111,5,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical segmental bronchus,Left medial basal segmental bronchus,0.09513624402059662583,10,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left medial basal segmental bronchus,0.16383981225716396767,21,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Left medial basal segmental bronchus,0.20138884690389988483,9,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Left medial basal segmental bronchus,0.21388914519519954533,5,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left medial basal segmental bronchus,0.500851693109755750475,1,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left medial basal segmental bronchus,0.08162303080854256067,14,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left medial basal segmental bronchus,0.07933619720756065733,9,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left medial basal segmental bronchus,0.04548862266167344817,5,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left medial basal segmental bronchus,0.08782209297456623342,12,1
 UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Superior lingular bronchopulmonary segment,0.55866688167644383778,3,9
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.71885637220554637667,31,9
 UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.69622364221647308889,50,9
 UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.36163184252895598222,16,9
 UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.71014708617103005889,21,9
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.71885637220554637667,31,9
 UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.66338385570790079444,14,9
-UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Inferior lingular bronchopulmonary segment,0.48948108725207865778,3,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.60964801853588570778,50,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.25228534519328045222,16,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.52321064445507011556,21,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.57632400230964000667,31,5
-UBERON:0002108,small intestine,Male,spatial,jejunum,Distal part of ileum,0.9519213633238642,16,17
-UBERON:0002108,small intestine,Female,spatial,jejunum,Distal part of ileum,0.8682169264342164,16,17
-UBERON:0002108,small intestine,Male,sc_bulk,jejunum,Distal part of ileum,0.9371945217705543,16,17
-UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Distal part of ileum,0.9919222752603013,16,17
-UBERON:0002108,small intestine,Female,spatial,Descending part of duodenum,Distal part of ileum,0.8342696607074782,18,17
-UBERON:0002108,small intestine,Male,spatial,Descending part of duodenum,Distal part of ileum,0.9423920148934781,18,17
-UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,heart right ventricle,0.24889909877313818183,15,29
-UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,left cardiac atrium,0.48505792493888749556,15,14
-UBERON:0000948,heart,Male,sc_bulk,right cardiac atrium,left cardiac atrium,0.48602634178783909222,15,14
-UBERON:0000948,heart,Male,sc_bulk,heart right ventricle,heart left ventricle,0.47780780835782525556,29,70
-UBERON:0000948,heart,Female,sc_bulk,heart right ventricle,heart left ventricle,0.47259134818992623533,29,70
-UBERON:0000948,heart,Female,sc_bulk,left cardiac atrium,heart left ventricle,0.28825294363479331722,14,70
-UBERON:0000948,heart,Male,sc_bulk,left cardiac atrium,heart left ventricle,0.28695472999644883278,14,70
-UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,heart left ventricle,0.27144467805971670033,15,70
-UBERON:0000948,heart,Male,sc_bulk,right cardiac atrium,heart left ventricle,0.22692911852138489722,15,70
-UBERON:0002108,small intestine,Female,spatial,Superior part of duodenum,Distal part of ileum,0.8342696607074784,6,17
-UBERON:0002108,small intestine,Female,sc_bulk,Superior part of duodenum,Distal part of ileum,0.9651954187581145,6,17
-UBERON:0002108,small intestine,Female,sc_bulk,ileum,Distal part of ileum,1,5,17
-UBERON:0002108,small intestine,Female,spatial,ileum,Distal part of ileum,0.9999999999999999,5,17
-UBERON:0002108,small intestine,Female,spatial,jejunum,ileum,0.8682169264342166,16,5
-UBERON:0002108,small intestine,Female,sc_bulk,jejunum,ileum,0.99192227526030125,16,5
-UBERON:0002108,small intestine,Female,spatial,Superior part of duodenum,Descending part of duodenum,0.9999999999999999,6,18
-UBERON:0002108,small intestine,Female,sc_bulk,ileum,Descending part of duodenum,0.96519541875811445,5,18
-UBERON:0002108,small intestine,Female,spatial,jejunum,Horizontal part of duodenum,0.7767372730030294,16,18
-UBERON:0002108,small intestine,Male,spatial,jejunum,Horizontal part of duodenum,0.9897819721665768,16,18
-UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Horizontal part of duodenum,0.99800243468540765,16,18
-UBERON:0002108,small intestine,Male,sc_bulk,jejunum,Horizontal part of duodenum,0.9742241111523510,16,18
-UBERON:0002108,small intestine,Female,spatial,Descending part of duodenum,Horizontal part of duodenum,0.7211960159620722,18,18
-UBERON:0002108,small intestine,Male,spatial,Descending part of duodenum,Horizontal part of duodenum,0.9906690739026442,18,18
-UBERON:0002108,small intestine,Male,sc_bulk,Descending part of duodenum,Horizontal part of duodenum,0.99044819337962455,18,18
-UBERON:0002108,small intestine,Female,sc_bulk,Descending part of duodenum,Horizontal part of duodenum,0.97214970193940615,18,18
-UBERON:0002108,small intestine,Female,spatial,Superior part of duodenum,Horizontal part of duodenum,0.7211960159620723,6,18
-UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.58075456306470536333,9,5
-UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.54617556320277048778,14,5
-UBERON:0002108,small intestine,Female,spatial,jejunum,Superior part of duodenum,0.9500230832971585,16,6
-UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Superior part of duodenum,0.9670646593186980,16,6
-UBERON:0002108,small intestine,Female,sc_bulk,ileum,Superior part of duodenum,0.9651954187581145,5,6
-UBERON:0002108,small intestine,Female,spatial,ileum,Superior part of duodenum,0.8342696607074783,5,6
-UBERON:0002108,small intestine,Female,spatial,jejunum,Descending part of duodenum,0.9500230832971583,16,18
-UBERON:0002108,small intestine,Male,spatial,jejunum,Descending part of duodenum,0.9691012047378897,16,18
-UBERON:0002108,small intestine,Male,sc_bulk,jejunum,Descending part of duodenum,0.97010717511780065,16,18
-UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Descending part of duodenum,0.9670646593186980,16,18
-UBERON:0002108,small intestine,Female,sc_bulk,Superior part of duodenum,Descending part of duodenum,1,6,18
-UBERON:0002108,small intestine,Female,sc_bulk,ileum,Horizontal part of duodenum,0.99274345530914355,5,18
-UBERON:0002108,small intestine,Female,spatial,ileum,Horizontal part of duodenum,0.898779282314494,5,18
-UBERON:0002108,small intestine,Male,spatial,jejunum,Ascending part of duodenum,0.9897819721665767,16,18
-UBERON:0002108,small intestine,Female,spatial,jejunum,Ascending part of duodenum,0.7767372730030294,16,18
-UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Ascending part of duodenum,0.9980024346854078,16,18
-UBERON:0002108,small intestine,Male,sc_bulk,jejunum,Ascending part of duodenum,0.97422411115235115,16,18
-UBERON:0002108,small intestine,Female,spatial,Descending part of duodenum,Ascending part of duodenum,0.7211960159620722,18,18
-UBERON:0002108,small intestine,Male,spatial,Descending part of duodenum,Ascending part of duodenum,0.9906690739026441,18,18
-UBERON:0002108,small intestine,Male,sc_bulk,Descending part of duodenum,Ascending part of duodenum,0.9904481933796245,18,18
-UBERON:0002108,small intestine,Female,sc_bulk,Descending part of duodenum,Ascending part of duodenum,0.9721497019394062,18,18
-UBERON:0002108,small intestine,Female,sc_bulk,Horizontal part of duodenum,Ascending part of duodenum,1.0000000000000001,18,18
-UBERON:0002108,small intestine,Male,sc_bulk,Horizontal part of duodenum,Ascending part of duodenum,1,18,18
-UBERON:0002108,small intestine,Male,spatial,Horizontal part of duodenum,Ascending part of duodenum,1.0000000000000002,18,18
-UBERON:0002108,small intestine,Female,spatial,Horizontal part of duodenum,Ascending part of duodenum,1,18,18
-UBERON:0002108,small intestine,Female,sc_bulk,Superior part of duodenum,Ascending part of duodenum,0.9721497019394062,6,18
-UBERON:0002108,small intestine,Female,spatial,Superior part of duodenum,Ascending part of duodenum,0.7211960159620723,6,18
-UBERON:0002108,small intestine,Female,sc_bulk,ileum,Ascending part of duodenum,0.9927434553091437,5,18
-UBERON:0002108,small intestine,Female,spatial,ileum,Ascending part of duodenum,0.8987792823144939,5,18
-UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right apical segmental bronchus,0.70239092876335959333,2,2
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Superior lingular bronchus,0.51657528028424359111,3,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Superior lingular bronchus,0.06642476434878426183,1,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Superior lingular bronchus,0.65661079188388531222,31,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Superior lingular bronchus,0.64243555177394928,50,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left anterior bronchopulmonary segment,0.63325190031410194444,31,14
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left anterior bronchopulmonary segment,0.62164370899941908,50,14
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left anterior bronchopulmonary segment,0.31621699752741189667,16,14
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left anterior bronchopulmonary segment,0.60945013896818684889,21,14
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left medial basal segmental bronchus,0.0442224935423446265,3,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left medial basal segmental bronchus,0.500851693109755750475,1,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left medial basal segmental bronchus,0.07824066757394389427,31,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left medial basal segmental bronchus,0.06752930669977390133,50,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left medial basal segmental bronchus,0.29916908484345950043,16,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Left medial basal segmental bronchus,0.0943325105832692795,9,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchus,Left medial basal segmental bronchus,0.06642476434878427533,2,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Left anterior segmental bronchus,0.46443652711362152667,5,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left anterior segmental bronchus,0.048279082762116639,1,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Left anterior segmental bronchus,0.58872121425610494,14,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Left anterior segmental bronchus,0.58735207567534734444,9,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left anterior segmental bronchus,0.50974857066428790,5,8
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Left anterior segmental bronchus,0.56060875439972079778,12,8
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Left apical segmental bronchus,0.52500270576021367667,3,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left apical segmental bronchus,0.095136244020596590,1,10
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left apical segmental bronchus,0.63263635185727121111,31,10
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Right anterior segmental bronchus,0.7794847114483448,21,2
+UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right anterior segmental bronchus,0.60061786640449403778,7,2
+UBERON:0001004,respiratory system,Female,sc_bulk,Right superior bronchopulmonary segment,Right anterior segmental bronchus,0.75280995444430148889,4,2
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior basal bronchopulmonary segment,Right anterior segmental bronchus,0.69247235644173804,14,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.08782209297456622017,1,12
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left apical bronchopulmonary segment,0.72835420320381422778,31,12
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left apical bronchopulmonary segment,0.71377528466885545556,50,12
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.37259842075296483556,16,12
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left apical bronchopulmonary segment,0.74050876123842678889,21,12
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.08782209297456622017,1,12
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Left apical bronchopulmonary segment,0.58001629480990465556,5,12
+UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Right apical segmental bronchus,0.55544646172648042667,31,2
 UBERON:0001004,respiratory system,Female,sc_bulk,Medial bronchopulmonary segment,Right apical segmental bronchus,0.51030569002048527222,50,2
 UBERON:0001004,respiratory system,Female,sc_bulk,Right posterior bronchopulmonary segment,Right apical segmental bronchus,0.60870307026591251889,16,2
+UBERON:0001004,respiratory system,Female,sc_bulk,right lung hilus,Right apical segmental bronchus,0.70239092876335959333,2,2
 UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior bronchopulmonary segment,Right apical segmental bronchus,0.66669947242764999889,21,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Lateral bronchopulmonary segment,Right apical segmental bronchus,0.55544646172648042667,31,2
 UBERON:0001004,respiratory system,Female,sc_bulk,Right apical bronchopulmonary segment,Right apical segmental bronchus,0.57184234010057536667,7,2
-UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior basal bronchopulmonary segment,Right apical segmental bronchus,0.59659157601297585667,14,2
 UBERON:0001004,respiratory system,Female,sc_bulk,Right superior bronchopulmonary segment,Right apical segmental bronchus,0.64059861183985331111,4,2
+UBERON:0001004,respiratory system,Female,sc_bulk,Right anterior basal bronchopulmonary segment,Right apical segmental bronchus,0.59659157601297585667,14,2
+UBERON:0002108,small intestine,Female,sc_bulk,Descending part of duodenum,Horizontal part of duodenum,0.97214970193940615,18,18
+UBERON:0002108,small intestine,Male,sc_bulk,Descending part of duodenum,Horizontal part of duodenum,0.99044819337962455,18,18
+UBERON:0002108,small intestine,Male,sc_bulk,jejunum,Distal part of ileum,0.9371945217705543,16,17
+UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Distal part of ileum,0.9919222752603013,16,17
+UBERON:0002108,small intestine,Female,spatial,jejunum,Distal part of ileum,0.8682169264342164,16,17
+UBERON:0002108,small intestine,Male,spatial,jejunum,Distal part of ileum,0.9519213633238642,16,17
+UBERON:0002108,small intestine,Female,spatial,Ascending part of duodenum,Distal part of ileum,0.8987792823144939,18,17
+UBERON:0002108,small intestine,Male,spatial,Ascending part of duodenum,Distal part of ileum,0.965481930082274,18,17
+UBERON:0002108,small intestine,Female,sc_bulk,Ascending part of duodenum,Distal part of ileum,0.9927434553091436,18,17
+UBERON:0002108,small intestine,Male,sc_bulk,Ascending part of duodenum,Distal part of ileum,0.87157241739279945,18,17
+UBERON:0002108,small intestine,Female,sc_bulk,Superior part of duodenum,Distal part of ileum,0.9651954187581145,6,17
+UBERON:0002108,small intestine,Female,spatial,Superior part of duodenum,Distal part of ileum,0.8342696607074784,6,17
+UBERON:0002108,small intestine,Female,spatial,ileum,Distal part of ileum,0.9999999999999999,5,17
+UBERON:0002108,small intestine,Female,sc_bulk,ileum,Distal part of ileum,1,5,17
+UBERON:0002108,small intestine,Female,spatial,Descending part of duodenum,Horizontal part of duodenum,0.7211960159620722,18,18
+UBERON:0002108,small intestine,Male,spatial,Descending part of duodenum,Horizontal part of duodenum,0.9906690739026442,18,18
+UBERON:0002108,small intestine,Female,spatial,Descending part of duodenum,Distal part of ileum,0.8342696607074782,18,17
+UBERON:0002108,small intestine,Male,spatial,Descending part of duodenum,Distal part of ileum,0.9423920148934781,18,17
+UBERON:0000948,heart,Female,sc_bulk,interventricular septum,Posteromedial head of posterior papillary muscle of left ventricle,0.55637742979976396544,14,6
+UBERON:0000948,heart,Female,sc_bulk,heart left ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.46714181848776383722,70,6
+UBERON:0000948,heart,Male,sc_bulk,heart right ventricle,interventricular septum,0.52782448327897517078,29,14
+UBERON:0000948,heart,Female,sc_bulk,heart right ventricle,interventricular septum,0.53887119649234152022,29,14
+UBERON:0000948,heart,Female,sc_bulk,heart left ventricle,interventricular septum,0.47324722584556129956,70,14
+UBERON:0000948,heart,Male,sc_bulk,heart left ventricle,interventricular septum,0.49609032669787010422,70,14
 UBERON:0000079,male reproductive system,Male,sc_bulk,peripheral zone of prostate,central zone of prostate,1,4,4
+UBERON:0000948,heart,Male,sc_bulk,heart right ventricle,heart left ventricle,0.47780780835782525556,29,70
+UBERON:0000948,heart,Female,sc_bulk,heart right ventricle,heart left ventricle,0.47259134818992623533,29,70
+UBERON:0002108,small intestine,Female,sc_bulk,jejunum,ileum,0.99192227526030125,16,5
+UBERON:0002108,small intestine,Female,spatial,jejunum,ileum,0.8682169264342166,16,5
+UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Superior part of duodenum,0.9670646593186980,16,6
+UBERON:0002108,small intestine,Female,spatial,jejunum,Superior part of duodenum,0.9500230832971585,16,6
+UBERON:0002108,small intestine,Female,spatial,ileum,Superior part of duodenum,0.8342696607074783,5,6
+UBERON:0002108,small intestine,Female,sc_bulk,ileum,Superior part of duodenum,0.9651954187581145,5,6
+UBERON:0002108,small intestine,Female,sc_bulk,jejunum,Descending part of duodenum,0.9670646593186980,16,18
+UBERON:0002108,small intestine,Male,sc_bulk,jejunum,Descending part of duodenum,0.97010717511780065,16,18
+UBERON:0002108,small intestine,Female,spatial,jejunum,Descending part of duodenum,0.9500230832971583,16,18
+UBERON:0002108,small intestine,Male,spatial,jejunum,Descending part of duodenum,0.9691012047378897,16,18
+UBERON:0002108,small intestine,Female,sc_bulk,Superior part of duodenum,Descending part of duodenum,1,6,18
+UBERON:0002108,small intestine,Female,spatial,Superior part of duodenum,Descending part of duodenum,0.9999999999999999,6,18
+UBERON:0002108,small intestine,Female,spatial,ileum,Descending part of duodenum,0.8342696607074782,5,18
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Left posterior basal segmental bronchus,0.0782406675739438945,31,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Left posterior basal segmental bronchus,0.06752930669977389533,50,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.29916908484345954867,16,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.09433251058326927083,9,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.163839812257163960,21,1
+UBERON:0000948,heart,Male,sc_bulk,left cardiac atrium,heart left ventricle,0.28695472999644883278,14,70
+UBERON:0000948,heart,Female,sc_bulk,left cardiac atrium,heart left ventricle,0.28825294363479331722,14,70
+UBERON:0000948,heart,Male,sc_bulk,right cardiac atrium,heart left ventricle,0.23260318602087162022,16,70
+UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,heart left ventricle,0.27144467805971670033,16,70
+UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,left cardiac atrium,0.48505792493888749556,16,14
+UBERON:0000948,heart,Male,sc_bulk,right cardiac atrium,left cardiac atrium,0.49401174842169407778,16,14
 UBERON:0002107,liver,Male,sc_bulk,capsule of liver,Gastric impression of liver,0.6969721172213345025,2,2
 UBERON:0002107,liver,Male,sc_bulk,capsule of liver,Diaphragmatic surface of liver,0.696972117221334415,2,2
 UBERON:0002107,liver,Male,sc_bulk,Gastric impression of liver,Diaphragmatic surface of liver,0.6969721172213344525,2,2
 UBERON:0002106,spleen,Female,sc_bulk,hilum of spleen,Diaphragmatic surface of spleen,0.9999999999999998,6,11
 UBERON:0002106,spleen,Male,sc_bulk,hilum of spleen,Diaphragmatic surface of spleen,0.954670912528831,6,11
-UBERON:0002108,small intestine,Female,spatial,ileum,Descending part of duodenum,0.8342696607074782,5,18
-UBERON:0002108,small intestine,Female,sc_bulk,Superior part of duodenum,Horizontal part of duodenum,0.97214970193940615,6,18
+UBERON:0000948,heart,Male,sc_bulk,left cardiac atrium,heart right ventricle,0.39448699958313720667,14,29
+UBERON:0000948,heart,Female,sc_bulk,left cardiac atrium,heart right ventricle,0.25222749692436259528,14,29
+UBERON:0000948,heart,Male,sc_bulk,right cardiac atrium,heart right ventricle,0.29561871690008270189,16,29
+UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,heart right ventricle,0.24889909877313818183,16,29
+UBERON:0000948,heart,Female,sc_bulk,heart right ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.53719685148070857622,29,6
+UBERON:0000948,heart,Female,sc_bulk,left cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.26656088172274280622,14,6
+UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.27124476485938177333,16,6
+UBERON:0002108,small intestine,Female,sc_bulk,ileum,Descending part of duodenum,0.96519541875811445,5,18
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Superior lingular bronchus,0.31264061278985566556,16,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Left posterior bronchopulmonary segment,Superior lingular bronchus,0.68250477336616346444,9,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical segmental bronchus,Superior lingular bronchus,0.61654340652412377333,10,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Superior lingular bronchus,0.63177452926138948667,21,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral segmental bronchus,Superior lingular bronchus,0.55619099127128782556,9,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Right superior segmental bronchus,Superior lingular bronchus,0.54370446158938023333,5,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal bronchopulmonary segment,Superior lingular bronchus,0.06642476434878426183,1,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Superior lingular bronchus,0.60159469254872346556,14,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Superior lingular bronchus,0.68048275437907628889,9,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Inferior lingular bronchopulmonary segment,Superior lingular bronchus,0.55073345362323470222,5,2
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical bronchopulmonary segment,Superior lingular bronchus,0.67550962552608291556,12,2
+UBERON:0000948,heart,Male,sc_bulk,left cardiac atrium,interventricular septum,0.31718563771243888022,14,14
+UBERON:0000948,heart,Female,sc_bulk,left cardiac atrium,interventricular septum,0.27448451140515138478,14,14
+UBERON:0000948,heart,Female,sc_bulk,right cardiac atrium,interventricular septum,0.27481453955801055878,16,14
+UBERON:0000948,heart,Male,sc_bulk,right cardiac atrium,interventricular septum,0.23427122480370716611,16,14
+UBERON:0001004,respiratory system,Male,sc_bulk,left lung hilus,Inferior lingular bronchopulmonary segment,0.48948108725207865778,3,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Lateral bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.57632400230964000667,31,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Medial bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.60964801853588570778,50,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Right posterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.25228534519328045222,16,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Right anterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.52321064445507011556,21,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.54617556320277048778,14,5
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchopulmonary segment,Inferior lingular bronchopulmonary segment,0.58075456306470536333,9,5
+UBERON:0002108,small intestine,Female,sc_bulk,Descending part of duodenum,Ascending part of duodenum,0.9721497019394062,18,18
+UBERON:0002108,small intestine,Male,sc_bulk,Descending part of duodenum,Ascending part of duodenum,0.9904481933796245,18,18
+UBERON:0001004,respiratory system,Male,sc_bulk,Superior lingular bronchus,Left posterior basal segmental bronchus,0.06642476434878428217,2,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left medial basal segmental bronchus,Left posterior basal segmental bronchus,0.5008516931097557006,1,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left apical segmental bronchus,Left posterior basal segmental bronchus,0.0951362440205966095,10,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior segmental bronchus,Left posterior basal segmental bronchus,0.04827908276211664792,8,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior segmental bronchus,Left medial basal segmental bronchus,0.04827908276211665083,8,1
+UBERON:0001004,respiratory system,Male,sc_bulk,Left anterior segmental bronchus,Superior lingular bronchus,0.54089881189341841889,8,2
+UBERON:0002108,small intestine,Female,spatial,Descending part of duodenum,Ascending part of duodenum,0.7211960159620722,18,18
