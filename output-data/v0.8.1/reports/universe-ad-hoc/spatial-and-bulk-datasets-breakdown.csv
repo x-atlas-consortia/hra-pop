@@ -1,0 +1,37 @@
+organ,side,sex,modality,status,dataset_count,cell_count
+heart,,female,sc_transcriptomics,Atlas,49,9002
+heart,,male,sc_transcriptomics,Atlas,66,13503
+kidney,,female,sc_transcriptomics,Atlas,93,3381
+kidney,,male,sc_transcriptomics,Atlas,172,6379
+kidney,,unknown,sc_transcriptomics,Atlas,9,306
+kidney,left,female,sc_transcriptomics,Atlas,55,6129
+kidney,left,male,sc_transcriptomics,Atlas,64,6477
+kidney,left,unknown,sc_transcriptomics,Atlas,8,807
+kidney,right,female,sc_transcriptomics,Atlas,31,3396
+kidney,right,male,sc_transcriptomics,Atlas,89,11271
+kidney,right,unknown,sc_transcriptomics,Atlas,1,111
+large intestine,,female,sc_proteomics,Atlas,8,1200
+large intestine,,female,sc_transcriptomics,Atlas,14,10325
+large intestine,,male,sc_proteomics,Atlas,24,3600
+large intestine,,male,sc_transcriptomics,Atlas,27,18956
+liver,,unknown,sc_transcriptomics,Atlas,2,160
+lung,,female,sc_transcriptomics,Atlas,38,14472
+lung,,male,sc_transcriptomics,Atlas,95,35320
+male reproductive system,,male,sc_transcriptomics,Atlas,4,192
+mammary gland,,female,sc_transcriptomics,Atlas,3,37
+mammary gland,right,female,sc_transcriptomics,Atlas,3,185
+prostate gland,,male,sc_transcriptomics,Atlas,4,48
+skin,,female,sc_proteomics,Atlas,4,160
+skin,,female,sc_transcriptomics,Atlas,1,143
+skin,,male,sc_proteomics,Atlas,6,240
+skin,,male,sc_transcriptomics,Atlas,1,220
+small intestine,,female,sc_proteomics,Atlas,8,1200
+small intestine,,female,sc_transcriptomics,Atlas,13,8862
+small intestine,,male,sc_proteomics,Atlas,24,3600
+small intestine,,male,sc_transcriptomics,Atlas,26,16506
+spleen,,female,sc_transcriptomics,Atlas,2,396
+spleen,,male,sc_transcriptomics,Atlas,9,1776
+ureter,left,female,sc_transcriptomics,Atlas,7,1648
+ureter,left,male,sc_transcriptomics,Atlas,19,3704
+urinary bladder,,female,sc_transcriptomics,Atlas,6,560
+urinary bladder,,male,sc_transcriptomics,Atlas,8,700
