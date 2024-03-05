@@ -8,7 +8,7 @@ import { getHbmToUuidLookup } from './utils/hubmap-uuid-lookup.js';
 const OUTPUT = process.argv[2];
 const OUTPUT_CSV = process.argv[3];
 const CSV_PATTERN = 'hra-ct-summaries-mx-spatial-data/**/cell_type_counts/*.csv';
-const MODALITY = 'spatial';
+const MODALITY = 'sc_proteomics';
 const BASE_IRI = 'https://purl.humanatlas.io/graph/hra-pop#datasets_';
 const HUBMAP_TOKEN = process.env.HUBMAP_TOKEN;
 
@@ -60,7 +60,7 @@ function getCTSummary(path, datasetIri, modality = undefined) {
   return {
     '@type': 'CellSummary',
     cell_source: datasetIri,
-    annotation_method: 'spatial',
+    annotation_method: 'sc_proteomics',
     modality,
     summary,
   };

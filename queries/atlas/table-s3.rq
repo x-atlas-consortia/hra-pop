@@ -51,7 +51,7 @@ WHERE {
 		]
 	]
 	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
-	FILTER (?modality = 'sc_bulk')
+	FILTER (?modality = 'sc_transcriptomics')
 }
 GROUP BY ?organ ?as_label ?cell_label
 ORDER BY ?organ ?as_label ?cell_label
