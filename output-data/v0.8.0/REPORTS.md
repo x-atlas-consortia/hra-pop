@@ -62,6 +62,7 @@
   * [Universe Sample Count (count-samples)](#count-samples)
   * [Universe Spatial Placement Count (count-spatial-placements)](#count-spatial-placements)
   * [Universe CxG collections (cxg-collections)](#cxg-collections)
+  * [dataset-cell-count-check](#dataset-cell-count-check)
   * [Dataset information (dataset-info)](#dataset-info)
   * [Dataset Publications (dataset-publications)](#dataset-publications)
   * [Universe Donor information (donor-info)](#donor-info)
@@ -304,7 +305,7 @@ ORDER BY ?consortium ?sex
 | Male | GTEx | 8 | 70113 | sc_bulk |
 | Female | HCA | 40 | 626348 | sc_bulk |
 | Male | HCA | 42 | 745782 | sc_bulk |
-| Female | HuBMAP | 20 | 555082 | spatial |
+| Female | HuBMAP | 172 | 5341193 | sc_bulk |
 | ... | ... | ... | ... | ... |
 
 
@@ -4189,7 +4190,7 @@ ORDER BY ?consortium ?sex
 | Male | GTEx | 8 | 70113 | sc_bulk |
 | Female | HCA | 40 | 626348 | sc_bulk |
 | Male | HCA | 42 | 745782 | sc_bulk |
-| Female | HuBMAP | 20 | 555082 | spatial |
+| Female | HuBMAP | 172 | 5341193 | sc_bulk |
 | ... | ... | ... | ... | ... |
 
 ## universe-ad-hoc
@@ -5088,6 +5089,66 @@ ORDER BY DESC(?dataset_count)
 | :--- | :--- |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72 | 82 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837 | 9 |
+
+
+### <a id="dataset-cell-count-check"></a>dataset-cell-count-check
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT DISTINCT ?dataset ?count_dx ?tool ?cell_count ?tool_cell_count
+FROM HRApop:
+FROM HRApopTestData:
+FROM HRApopFull:
+WHERE {
+  ?dataset ccf:cell_count ?cell_count ;
+  ccf:gene_count ?gene_count ;
+    a ccf:Dataset .
+
+  OPTIONAL {
+    SELECT ?dataset ?tool (SUM(?cell_count) as ?tool_cell_count)
+    WHERE {
+      ?dataset ccf:has_cell_summary [
+        ccf:cell_annotation_method ?tool ;
+        ccf:has_cell_summary_row [
+          ccf:cell_count ?cell_count ;
+        ] ;
+      ] .
+    }
+    GROUP BY ?dataset ?tool
+  }
+
+  BIND(xsd:integer(COALESCE(?tool_cell_count, ?cell_count)) - xsd:integer(?cell_count) as ?count_dx)
+
+  FILTER(BOUND(?tool_cell_count))
+  # FILTER(BOUND(?tool_cell_count) && ?count_dx < 0)
+}
+ORDER BY ?count_dx ?dataset ?tool
+
+```
+
+([View Source](../../queries/universe-ad-hoc/dataset-cell-count-check.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/dataset-cell-count-check.csv))
+
+| dataset | count_dx | tool | cell_count | tool_cell_count |
+| :--- | :--- | :--- | :--- | :--- |
+| https://entity.api.hubmapconsortium.org/entities/58167d0f778284d5b95af782bd8132da | -92300 | popv | 100527 | 8227 |
+| https://entity.api.hubmapconsortium.org/entities/ee6e44b3e6cb77ef1806e722390a01a8 | -92300 | popv | 100527 | 8227 |
+| https://entity.api.hubmapconsortium.org/entities/426940c89892024677d5d26bfbf157a0 | -88374 | popv | 100947 | 12573 |
+| https://entity.api.hubmapconsortium.org/entities/b8afc634e3e2b2a10f759596fa30101c | -88037 | popv | 100943 | 12906 |
+| https://entity.api.hubmapconsortium.org/entities/668a833e9d3ba0071d8648d6108828df | -85275 | popv | 100981 | 15706 |
+| ... | ... | ... | ... | ... |
 
 
 ### <a id="dataset-info"></a>Dataset information (dataset-info)

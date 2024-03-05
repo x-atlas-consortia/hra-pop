@@ -1,0 +1,34 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+
+SELECT DISTINCT ?dataset ?count_dx ?tool ?cell_count ?tool_cell_count
+FROM HRApop:
+FROM HRApopTestData:
+FROM HRApopFull:
+WHERE {
+  ?dataset ccf:cell_count ?cell_count ;
+  ccf:gene_count ?gene_count ;
+    a ccf:Dataset .
+
+  OPTIONAL {
+    SELECT ?dataset ?tool (SUM(?cell_count) as ?tool_cell_count)
+    WHERE {
+      ?dataset ccf:has_cell_summary [
+        ccf:cell_annotation_method ?tool ;
+        ccf:has_cell_summary_row [
+          ccf:cell_count ?cell_count ;
+        ] ;
+      ] .
+    }
+    GROUP BY ?dataset ?tool
+  }
+
+  BIND(xsd:integer(COALESCE(?tool_cell_count, ?cell_count)) - xsd:integer(?cell_count) as ?count_dx)
+
+  FILTER(BOUND(?tool_cell_count))
+  # FILTER(BOUND(?tool_cell_count) && ?count_dx < 0)
+}
+ORDER BY ?count_dx ?dataset ?tool
