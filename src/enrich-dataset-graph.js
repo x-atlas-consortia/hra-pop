@@ -67,4 +67,4 @@ const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': donors['@graph'],
 };
-writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+writeFileSync(OUTPUT, JSON.stringify(jsonld));
