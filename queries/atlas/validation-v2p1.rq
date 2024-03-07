@@ -16,7 +16,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 
-SELECT ?sex ?sample ?dataset ?tool ?modality ?organ ?organId ?as ?as_tool ?similarity ?as_in_collisions
+SELECT ?sex ?sample ?dataset ?tool ?modality ?organ ?organId ?as_label ?as ?as_tool ?similarity ?as_in_collisions
 FROM hra-pop:similarities
 FROM HRApop:
 FROM CCF:
@@ -47,6 +47,8 @@ WHERE {
     STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
     STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
   )
+
+  ?as ccf:ccf_pref_label ?as_label .
 
   {
     ?sample ccf:has_registration_location ?rui_location .

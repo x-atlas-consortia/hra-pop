@@ -31,24 +31,24 @@ WHERE {
       ]
     ] .
 
-    [] a ccf:SpatialPlacement ;
-        ccf:placement_for ?rui_location ;
-        ccf:placement_relative_to ?refOrgan .
+    # [] a ccf:SpatialPlacement ;
+    #     ccf:placement_for ?rui_location ;
+    #     ccf:placement_relative_to ?refOrgan .
 
-    BIND(EXISTS {
-      GRAPH HRApop: {
-        [] ccf:has_registration_location ?rui_location .
-      }
-    } as ?in_atlas)
+    # BIND(EXISTS {
+    #   GRAPH HRApop: {
+    #     [] ccf:has_registration_location ?rui_location .
+    #   }
+    # } as ?in_atlas)
   }
 
-  GRAPH CCF: {
-    ?refOrgan ccf:representation_of ?organIri .
-    ?organIri rdfs:label ?organ .
+  # GRAPH CCF: {
+  #   ?refOrgan ccf:representation_of ?organIri .
+  #   ?organIri rdfs:label ?organ .
 
-    BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
-  }
+  #   BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+  # }
 
-  FILTER (?in_atlas != TRUE)
+  # FILTER (?in_atlas != TRUE)
 }
 ORDER BY ?sample DESC(?cell_count)

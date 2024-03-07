@@ -21,13 +21,7 @@ run_ndjsonld() {
 
 run_jsonld() {
   QUADS=${1%.jsonld}.nq
-  jsonld canonize $1 > $QUADS
-  blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
-}
-
-run_big_jsonld() {
-  QUADS=${1%.jsonld}.nq
-  cat $1 | jq -c '.["@graph"] | .[]' | ndjsonld canonize -c ccf-context.jsonld - $QUADS
+  ./src/jsonld-to-nq.js $1 $QUADS
   blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
 }
 
@@ -36,7 +30,7 @@ run_jsonld $DIR/atlas-enriched-dataset-graph.jsonld $HRA_POP
 run_jsonld $DIR/atlas-as-cell-summaries.jsonld $HRA_POP
 
 # Test Data
-run_big_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
+run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
 
 # Full Dataset
 run_jsonld $DIR/full-dataset-graph.jsonld "${HRA_POP_FULL}"

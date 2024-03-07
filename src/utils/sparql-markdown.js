@@ -46,13 +46,13 @@ ${sparql.query}
 </details>
 `;
 
-  if (csv) {
+  if (csv && csv.columns) {
     md += `
-#### Results ([View CSV File](${csv?.path}))
+#### Results ([View CSV File](${csv.path}))
 
-| ${csv?.columns.join(' | ')} |
-| ${csv?.columns.map((_c) => ':---').join(' | ')} |
-${csv?.preview.map((row) => '| ' + row.join(' | ') + ' |').join('\n')}
+| ${csv.columns.join(' | ')} |
+| ${csv.columns.map((_c) => ':---').join(' | ')} |
+${csv.preview.map((row) => '| ' + row.join(' | ') + ' |').join('\n')}
 
 `;
   } else if (sparql.columns) {

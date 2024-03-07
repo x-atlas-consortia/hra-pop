@@ -1,0 +1,91 @@
+#+ summary: Atlas Datasets with a given Cell Type
+#+ description: Atlas Datasets that have a given Cell Type. There is one CT-BM expression per row.
+
+#+ defaults:
+#+   - celltype: http://purl.obolibrary.org/obo/CL_0000136
+
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hgnc: <http://purl.bioontology.org/ontology/HGNC/>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?source ?dataset ?organ ?as ?as_iri ?age ?sex ?bmi ?tool ?cell_type ?cell_type_label ?cell_type_count ?cell_type_percentage ?biomarker ?mean_expression_value
+FROM CCF:
+FROM HRApop:
+WHERE {
+  VALUES (?_celltype_iri) {
+    (<http://purl.obolibrary.org/obo/CL_0000136>)
+  }
+ 
+  ?donor ccf:consortium_name ?source .
+
+  OPTIONAL {
+    ?donor ccf:age ?age .
+  }
+  OPTIONAL {
+    ?donor ccf:bmi ?bmi .
+  }
+
+  {
+    ?sample ccf:comes_from ?donor .
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+  
+  ?rui_location ccf:has_collision_summary [
+    ccf:has_collision_item [
+      ccf:as_id ?as_iri ;
+      ccf:as_label ?as ;
+    ]
+  ] .
+
+  {
+    ?dataset ccf:organ_id ?reportedOrganIriString .
+    BIND(IRI(?reportedOrganIriString) as ?reportedOrganIri)
+
+    OPTIONAL {
+      ?reportedOrganIri rdfs:label ?reportedOrganRdfsLabel .
+    }
+    OPTIONAL {
+      ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganCcfLabel .
+    }
+    BIND(IF(BOUND(?reportedOrganRdfsLabel), ?reportedOrganRdfsLabel, ?reportedOrganCcfLabel) as ?organ)
+  }
+
+  ?dataset ccf:has_cell_summary [
+    ccf:sex ?sex ;
+    ccf:cell_annotation_method ?tool ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_id ?_celltype_iri ;
+      ccf:cell_label ?cell_type_label ;
+      ccf:cell_count ?cell_type_count ;
+      ccf:percentage_of_total ?cell_type_percentage ;
+      ccf:gene_expr [
+        ccf:gene_label ?gene_label ;
+        ccf:mean_gene_expr_value ?gene_expr ;
+      ]
+    ]
+  ] .
+
+  OPTIONAL {
+    GRAPH <https://purl.humanatlas.io/vocab/hgnc> {
+      ?hgnc oboInOwl:hasDbXref ?bmref ;
+        hgnc:symbol ?biomarker_label .
+      FILTER(STR(?bmref) = STR(?gene_label) || STR(?bmref) = STRBEFORE(?gene_label, '.'))
+    }
+  }
+
+  BIND(IF(BOUND(?biomarker_label), ?biomarker_label, ?gene_label) as ?biomarker)
+  BIND(REPLACE(STR(?cell_id), STR(CL:), 'CL:') as ?cell_type)
+  BIND(xsd:decimal(?gene_expr) as ?mean_expression_value)
+}

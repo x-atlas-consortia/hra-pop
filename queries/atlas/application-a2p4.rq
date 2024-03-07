@@ -17,6 +17,30 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT ?dataset ?reported_organ ?sex ?tool ?modality ?atlas_dataset ?atlas_dataset_tool ?similarity 
 WHERE {
+  GRAPH HRApop: {
+    SELECT DISTINCT ?atlas_dataset ?sex 
+    WHERE {
+      ?atlas_dataset a ccf:Dataset ;
+      ccf:has_cell_summary [
+        ccf:sex ?sex ;
+      ] .
+      hint:SubQuery hint:runOnce true .
+    }    
+  }
+
+  GRAPH hra-pop:test-data {
+    SELECT DISTINCT ?dataset ?sex (COALESCE(?reported_organ, 'Unknown') as ?reported_organ)
+    WHERE {
+      ?dataset a ccf:Dataset ;
+      ccf:has_cell_summary [
+        ccf:sex ?sex ;
+      ] .
+
+      OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
+      hint:SubQuery hint:runOnce true .
+    }
+  }
+
   GRAPH hra-pop:similarities {
     {
       [] ccf:modality ?modality ;
@@ -36,26 +60,6 @@ WHERE {
          ccf:cell_source_a ?atlas_dataset ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .
-    }
-
-    FILTER EXISTS  {
-      GRAPH HRApop: {
-        ?atlas_dataset a ccf:Dataset ;
-          ccf:has_cell_summary [];
-      }
-    }
-    
-    FILTER EXISTS  {
-      GRAPH hra-pop:test-data {
-        ?dataset a ccf:Dataset ;
-          ccf:has_cell_summary [];
-      }
-    }
-  }
-
-  OPTIONAL {
-    GRAPH hra-pop:test-data {
-      ?dataset ccf:organ_id ?reported_organ .
     }
   }
 }
