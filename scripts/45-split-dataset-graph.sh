@@ -14,7 +14,8 @@ node ./src/split-atlas-data.js \
   $DIR/atlas-dataset-graph.csv \
   $DIR/atlas-lq-dataset-graph.csv \
   $DIR/test-dataset-graph.csv \
-  $DIR/non-atlas-dataset-graph.csv
+  $DIR/non-atlas-dataset-graph.csv \
+  $DIR/all-dataset-graph.csv
 
 node ./src/unflatten-dataset-graph.js $DIR/atlas-dataset-graph.csv $DIR/atlas-dataset-graph.jsonld
 node ./src/unflatten-dataset-graph.js $DIR/test-dataset-graph.csv $DIR/test-dataset-graph.jsonld

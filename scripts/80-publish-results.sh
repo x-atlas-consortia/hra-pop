@@ -17,6 +17,7 @@ if [ "$COMPUTE_LQ" == "true" ]; then
 fi
 
 cp $DIR/non-atlas-dataset-graph.csv $OUT
+cp $DIR/all-dataset-graph.csv $OUT
 
 cp -r $DIR/reports $OUT
 
