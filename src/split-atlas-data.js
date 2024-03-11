@@ -9,6 +9,7 @@ const TEST_DATA = process.argv[6];
 const NON_ATLAS_DATA = process.argv[7];
 const ALL_DATA = process.argv[8];
 const APPROVED_SOURCES = process.env.APPROVED_SOURCES || '';
+const UTF8_BOM = '\uFEFF';
 
 const approvedSources = new Set(APPROVED_SOURCES.split(/\W+/).filter((s) => !!s));
 const summaries = JSON.parse(readFileSync(CELL_SUMMARIES).toString());
@@ -115,4 +116,4 @@ writeFileSync(ATLAS_DATA, Papa.unparse(atlasData, { header: true }));
 writeFileSync(ATLAS_LQ_DATA, Papa.unparse(atlasLqData, { header: true }));
 writeFileSync(TEST_DATA, Papa.unparse(testData, { header: true }));
 writeFileSync(NON_ATLAS_DATA, Papa.unparse(nonAtlasData, { header: true }));
-writeFileSync(ALL_DATA, Papa.unparse(allData, { header: true }));
+writeFileSync(ALL_DATA, UTF8_BOM + Papa.unparse(allData, { header: true }));
