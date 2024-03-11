@@ -10,16 +10,65 @@ const NON_ATLAS_DATA = process.argv[7];
 const ALL_DATA = process.argv[8];
 const APPROVED_SOURCES = process.env.APPROVED_SOURCES || '';
 
-const approvedSources = new Set(APPROVED_SOURCES.split(/\W+/).filter(s => !!s));
+const approvedSources = new Set(APPROVED_SOURCES.split(/\W+/).filter((s) => !!s));
 const summaries = JSON.parse(readFileSync(CELL_SUMMARIES).toString());
 const summaryLookup = new Set(summaries['@graph'].map((s) => s.cell_source));
 const { data } = Papa.parse(readFileSync(FLAT_DATASET_GRAPH).toString(), { header: true, skipEmptyLines: true });
+
+async function lookupOrganLabels(data) {
+  const organIds = {};
+  const ruiOrganIds = {};
+  for (const row of data) {
+    organIds[row.organ_id] = row.organ_id.replace('http://purl.obolibrary.org/obo/UBERON_', 'UBERON:');
+    if (!row.organ_id && row.rui_location.startsWith('{')) {
+      const rui = JSON.parse(row.rui_location);
+      row.organ_id = rui.placement.target;
+      ruiOrganIds[row.organ_id] = row.organ_id.replace('http://purl.org/ccf/latest/ccf.owl#', '');
+    }
+  }
+
+  const values = Object.keys(organIds)
+    .filter((id) => id.startsWith('http'))
+    .map((id) => `(<${id}>)`)
+    .join(' ');
+  const ruiValues = Object.keys(ruiOrganIds)
+    .filter((id) => id.startsWith('http'))
+    .map((id) => `(<${id}>)`)
+    .join(' ');
+  const query = `SELECT DISTINCT ?organ_id ?organ WHERE {
+      {
+        VALUES (?organ_id) { ${values} }
+        ?organ_id <http://www.w3.org/2000/01/rdf-schema#label> ?organ .
+      }
+      UNION
+      {
+        VALUES (?organ_id) { ${ruiValues} }
+        ?organ_id <http://purl.org/ccf/representation_of> ?_organ_id .
+        ?_organ_id <http://www.w3.org/2000/01/rdf-schema#label> ?organ .
+      }
+    }`;
+
+  const resultString = await fetch('https://lod.humanatlas.io/sparql', {
+    method: 'POST',
+    headers: { Accept: 'text/csv', 'Content-Type': 'application/sparql-query' },
+    body: query,
+  }).then((r) => r.text());
+
+  const { data: labels } = Papa.parse(resultString, { header: true, skipEmptyLines: true });
+
+  const lookup = {};
+  for (const { organ_id, organ } of labels) {
+    lookup[organ_id] = organ;
+  }
+
+  return data.map((row) => ({ organ: lookup[row.organ_id], ...row }));
+}
 
 const atlasData = [];
 const atlasLqData = [];
 const testData = [];
 const nonAtlasData = [];
-const allData = [];
+let allData = [];
 
 for (const row of data) {
   const hasExtractionSite = !!row.rui_location;
@@ -51,7 +100,7 @@ for (const row of data) {
     hasCellSummary,
     hasPublication,
     ...row,
-  }
+  };
   // Output all datasets that need more data to be included in the atlas
   if (diamonds < maxDiamonds) {
     nonAtlasData.push(fullRow);
@@ -60,6 +109,7 @@ for (const row of data) {
 }
 nonAtlasData.sort((a, b) => b.diamonds - a.diamonds);
 allData.sort((a, b) => b.diamonds - a.diamonds);
+allData = await lookupOrganLabels(allData);
 
 writeFileSync(ATLAS_DATA, Papa.unparse(atlasData, { header: true }));
 writeFileSync(ATLAS_LQ_DATA, Papa.unparse(atlasLqData, { header: true }));
