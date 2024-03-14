@@ -13,10 +13,18 @@ const UTF8_BOM = '\uFEFF';
 
 const approvedSources = new Set(APPROVED_SOURCES.split(/\W+/).filter((s) => !!s));
 const summaries = JSON.parse(readFileSync(CELL_SUMMARIES).toString());
-const summaryLookup = new Set(summaries['@graph'].map((s) => s.cell_source));
+// const summaryLookup = new Set(summaries['@graph'].map((s) => s.cell_source));
+const summaryLookup = summaries['@graph'].reduce((acc, summary) => {
+  const src = summary.cell_source;
+  if (!acc.has(src)) {
+    acc.set(src, new Set());
+  }
+  acc.get(src).add(summary.modality);
+  return acc;
+}, new Map());
 const { data } = Papa.parse(readFileSync(FLAT_DATASET_GRAPH).toString(), { header: true, skipEmptyLines: true });
 
-async function lookupOrganLabels(data) {
+async function enrichAllData(data) {
   const organIds = {};
   const ruiOrganIds = {};
   for (const row of data) {
@@ -62,7 +70,11 @@ async function lookupOrganLabels(data) {
     lookup[organ_id] = organ;
   }
 
-  return data.map((row) => ({ organ: lookup[row.organ_id], ...row }));
+  return data.map((row) => ({
+    organ: lookup[row.organ_id],
+    modality: [...(summaryLookup.get(row.dataset_id) ?? ['Unknown'])],
+    ...row,
+  }));
 }
 
 const atlasData = [];
@@ -110,7 +122,7 @@ for (const row of data) {
 }
 nonAtlasData.sort((a, b) => b.diamonds - a.diamonds);
 allData.sort((a, b) => b.diamonds - a.diamonds);
-allData = await lookupOrganLabels(allData);
+allData = await enrichAllData(allData);
 
 writeFileSync(ATLAS_DATA, Papa.unparse(atlasData, { header: true }));
 writeFileSync(ATLAS_LQ_DATA, Papa.unparse(atlasLqData, { header: true }));
