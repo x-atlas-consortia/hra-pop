@@ -10,6 +10,7 @@
   * [Kidney AS Cell Distributions (counts-for-kidney-as)](#counts-for-kidney-as)
   * [Bulk Tool-Organ-AS Cell Distributions (counts-for-tools-by-as)](#counts-for-tools-by-as)
   * [Atlas-level CxG collections (cxg-collections)](#cxg-collections)
+  * [Atlas Datasets and their cell types and biomarkers (datasets-ct-bm-data)](#datasets-ct-bm-data)
   * [Atlas Datasets with a given Cell Type (datasets-with-adipocytes)](#datasets-with-adipocytes)
   * [Extraction Site Statistics (extraction-site-stats)](#extraction-site-stats)
   * [Tissue Provider Counts (provider-breakdown)](#provider-breakdown)
@@ -554,6 +555,109 @@ ORDER BY DESC(?dataset_count)
 | :--- | :--- |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72 | 82 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837 | 9 |
+
+
+### <a id="datasets-ct-bm-data"></a>Atlas Datasets and their cell types and biomarkers (datasets-ct-bm-data)
+
+Atlas Datasets and their cell types and biomarkers. There is one CT-BM expression per row. Used for a 
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Atlas Datasets and their cell types and biomarkers
+#+ description: Atlas Datasets and their cell types and biomarkers. There is one CT-BM expression per row. Used for a 
+
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hgnc: <http://purl.bioontology.org/ontology/HGNC/>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?source ?dataset ?organ ?age ?sex ?bmi ?tool ?cell_type ?cell_type_label ?cell_type_count ?cell_type_percentage ?biomarker ?mean_expression_value
+FROM CCF:
+FROM HRApop:
+WHERE {
+  ?donor ccf:consortium_name ?source .
+
+  OPTIONAL {
+    ?donor ccf:age ?age .
+  }
+  OPTIONAL {
+    ?donor ccf:bmi ?bmi .
+  }
+
+  {
+    ?sample ccf:comes_from ?donor .
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  {
+    ?dataset ccf:organ_id ?reportedOrganIriString .
+    BIND(IRI(?reportedOrganIriString) as ?reportedOrganIri)
+
+    OPTIONAL {
+      ?reportedOrganIri rdfs:label ?reportedOrganRdfsLabel .
+    }
+    OPTIONAL {
+      ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganCcfLabel .
+    }
+    BIND(IF(BOUND(?reportedOrganRdfsLabel), ?reportedOrganRdfsLabel, ?reportedOrganCcfLabel) as ?organ)
+  }
+
+  ?dataset ccf:has_cell_summary [
+    ccf:sex ?sex ;
+    ccf:cell_annotation_method ?tool ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_id ?_celltype_iri ;
+      ccf:cell_label ?cell_type_label ;
+      ccf:cell_count ?cell_type_count ;
+      ccf:percentage_of_total ?cell_type_percentage ;
+      ccf:gene_expr [
+        ccf:gene_label ?gene_label ;
+        ccf:mean_gene_expr_value ?gene_expr ;
+      ]
+    ]
+  ] .
+
+  OPTIONAL {
+    GRAPH <https://purl.humanatlas.io/vocab/hgnc> {
+      ?hgnc oboInOwl:hasDbXref ?bmref ;
+        hgnc:symbol ?biomarker_label .
+      FILTER(STR(?bmref) = STR(?gene_label) || STR(?bmref) = STRBEFORE(?gene_label, '.'))
+    }
+  }
+
+  BIND(IF(BOUND(?biomarker_label), ?biomarker_label, ?gene_label) as ?biomarker)
+  BIND(REPLACE(STR(?cell_id), STR(CL:), 'CL:') as ?cell_type)
+  BIND(xsd:decimal(?gene_expr) as ?mean_expression_value)
+}
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/datasets-ct-bm-data.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/datasets-ct-bm-data.csv))
+
+| source | dataset | organ | age | sex | bmi | tool | cell_type | cell_type_label | cell_type_count | cell_type_percentage | biomarker | mean_expression_value |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/63349325056ccff582f1d095055c7e12 | kidney | 66 | Male | 29.1 | azimuth | CL:1001108 | Medullary Thick Ascending Limb | 2518 | 0.3018460800767202 | SLC12A1 | 27.49656295776367 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/63349325056ccff582f1d095055c7e12 | kidney | 66 | Male | 29.1 | azimuth | CL:1001108 | Medullary Thick Ascending Limb | 2518 | 0.3018460800767202 | ESRRG | 43.51315307617188 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/63349325056ccff582f1d095055c7e12 | kidney | 66 | Male | 29.1 | azimuth | CL:1001108 | Medullary Thick Ascending Limb | 2518 | 0.3018460800767202 | MAST4 | 8.665641784667969 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/63349325056ccff582f1d095055c7e12 | kidney | 66 | Male | 29.1 | azimuth | CL:1001108 | Medullary Thick Ascending Limb | 2518 | 0.3018460800767202 | ESRRB | 6.511519432067871 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/63349325056ccff582f1d095055c7e12 | kidney | 66 | Male | 29.1 | azimuth | CL:1001108 | Medullary Thick Ascending Limb | 2518 | 0.3018460800767202 | SLC4A7 | 6.428339958190918 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="datasets-with-adipocytes"></a>Atlas Datasets with a given Cell Type (datasets-with-adipocytes)
