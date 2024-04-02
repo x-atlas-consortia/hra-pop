@@ -11,7 +11,7 @@
 
 ## Failures
 
-- 35 cases where the annotation tool predicts to few unique cells to allow for further processing with scanpy's `rank_genes_groups`
+- 35 cases where the annotation tool predicts too few unique cells to allow for further processing with scanpy's `rank_genes_groups`
 
 - 4 failures for azimuth all with the following error:
 
