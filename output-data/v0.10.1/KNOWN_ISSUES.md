@@ -1,19 +1,22 @@
 ## Excluded datasets 
 
-- 1963 datasets for which an organ uberon code could not be determined based on the tissue
+- 1963 datasets contains tissues that is not supported by any of the annotation tools.
+  - [Unsupported tissue codes](#unsupported-tissue-codes) lists the unique tissue codes that are not supported.
 
-- 107 datasets with fewer than 100 rows
+- 107 datasets with fewer than 100 rows.
 
-- 1 cellxgene collection without valid raw counts
+- 1 cellxgene collection without valid raw counts.
   - https://api.cellxgene.cziscience.com/dp/v1/collections/fdebfda9-bb9a-4b4b-97e5-651097ea07b0
 
-**Note:** Some of the above categories may overlap
+**Note:** Some of the above categories may overlap.
 
 ## Failures
 
-- 35 cases where the annotation tool predicts too few unique cells to allow for further processing with scanpy's `rank_genes_groups`
+- 1 dataset is too large (10.53GiB h5ad file) to run through the annotation tools. Attempts to annotate the dataset failed even when the process was given 100GiB of RAM.
 
-- 4 failures for azimuth all with the following error:
+- 35 cases where the annotation tool predicts too few unique cells to allow for further processing with scanpy's `rank_genes_groups`.
+
+- 4 datasets fail in azimuth all with the same error:
 
   ```
   Error in idx[i, ] <- res[[i]][[1]] : number of items to replace is not a multiple of replacement length
@@ -23,3 +26,166 @@
   - https://api.cellxgene.cziscience.com/dp/v1/collections/c8565c6a-01a1-435b-a549-f11b452a83a8#GW17$primary%20motor%20cortex
   - https://api.cellxgene.cziscience.com/dp/v1/collections/2a0b02c0-fea6-47bd-92b9-9b03f5d2580c#MM10$bone%20marrow
   - https://api.cellxgene.cziscience.com/dp/v1/collections/2a0b02c0-fea6-47bd-92b9-9b03f5d2580c#MM14$bone%20marrow
+
+### Unsupported tissue codes
+- CL:0000010
+- CL:0000082
+- CL:0000115
+- CL:0000351
+- CL:0002322
+- CL:0002327
+- CL:0002328
+- CL:0002334
+- CL:0002335
+- CL:0002633
+- CL:0010003
+- UBERON:0000004
+- UBERON:0000029
+- UBERON:0000030
+- UBERON:0000056
+- UBERON:0000088
+- UBERON:0000160
+- UBERON:0000175
+- UBERON:0000310
+- UBERON:0000328
+- UBERON:0000344
+- UBERON:0000451
+- UBERON:0000453
+- UBERON:0000473
+- UBERON:0000945
+- UBERON:0000955
+- UBERON:0000956
+- UBERON:0000977
+- UBERON:0000988
+- UBERON:0000991
+- UBERON:0000992
+- UBERON:0001005
+- UBERON:0001040
+- UBERON:0001043
+- UBERON:0001046
+- UBERON:0001049
+- UBERON:0001134
+- UBERON:0001161
+- UBERON:0001162
+- UBERON:0001165
+- UBERON:0001388
+- UBERON:0001542
+- UBERON:0001630
+- UBERON:0001707
+- UBERON:0001728
+- UBERON:0001828
+- UBERON:0001831
+- UBERON:0001832
+- UBERON:0001836
+- UBERON:0001870
+- UBERON:0001871
+- UBERON:0001872
+- UBERON:0001873
+- UBERON:0001874
+- UBERON:0001875
+- UBERON:0001876
+- UBERON:0001880
+- UBERON:0001882
+- UBERON:0001891
+- UBERON:0001893
+- UBERON:0001898
+- UBERON:0001965
+- UBERON:0001976
+- UBERON:0001987
+- UBERON:0002022
+- UBERON:0002023
+- UBERON:0002037
+- UBERON:0002046
+- UBERON:0002049
+- UBERON:0002110
+- UBERON:0002129
+- UBERON:0002132
+- UBERON:0002151
+- UBERON:0002185
+- UBERON:0002190
+- UBERON:0002228
+- UBERON:0002240
+- UBERON:0002317
+- UBERON:0002369
+- UBERON:0002372
+- UBERON:0002378
+- UBERON:0002382
+- UBERON:0002385
+- UBERON:0002429
+- UBERON:0002436
+- UBERON:0002450
+- UBERON:0002563
+- UBERON:0002630
+- UBERON:0002657
+- UBERON:0002661
+- UBERON:0002663
+- UBERON:0002686
+- UBERON:0002728
+- UBERON:0002739
+- UBERON:0002751
+- UBERON:0002771
+- UBERON:0002883
+- UBERON:0002981
+- UBERON:0003017
+- UBERON:0003027
+- UBERON:0003544
+- UBERON:0003688
+- UBERON:0003889
+- UBERON:0004023
+- UBERON:0004024
+- UBERON:0004025
+- UBERON:0004026
+- UBERON:0004070
+- UBERON:0004167
+- UBERON:0004339
+- UBERON:0004648
+- UBERON:0004725
+- UBERON:0005290
+- UBERON:0005343
+- UBERON:0005406
+- UBERON:0006092
+- UBERON:0006101
+- UBERON:0006107
+- UBERON:0006108
+- UBERON:0006479
+- UBERON:0006483
+- UBERON:0007106
+- UBERON:0007224
+- UBERON:0007225
+- UBERON:0007644
+- UBERON:0007650
+- UBERON:0008612
+- UBERON:0008933
+- UBERON:0008989
+- UBERON:0009472
+- UBERON:0009834
+- UBERON:0009835
+- UBERON:0010225
+- UBERON:0010414
+- UBERON:0012168
+- UBERON:0012474
+- UBERON:0012648
+- UBERON:0013473
+- UBERON:0013550
+- UBERON:0013556
+- UBERON:0013706
+- UBERON:0013756
+- UBERON:0014454
+- UBERON:0014455
+- UBERON:0014614
+- UBERON:0014648
+- UBERON:0016530
+- UBERON:0016538
+- UBERON:0016540
+- UBERON:0016632
+- UBERON:0018303
+- UBERON:0018707
+- UBERON:0022232
+- UBERON:0034751
+- UBERON:0034891
+- UBERON:0034892
+- UBERON:0034893
+- UBERON:0035328
+- UBERON:0039167
+- UBERON:8410010
+- UBERON:8440012
