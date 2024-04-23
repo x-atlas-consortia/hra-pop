@@ -70,7 +70,6 @@ WHERE {
 
     OPTIONAL { ?donor ccf:development_stage ?donor_development_stage . } .
     OPTIONAL { ?donor ccf:race ?donor_race . } .
-    OPTIONAL { ?donor ccf:sex ?donor_sex . } .
     OPTIONAL { ?donor ccf:age ?donor_age . } .
     OPTIONAL { ?donor ccf:bmi ?donor_bmi . } .
   }
@@ -175,6 +174,7 @@ WHERE {
     ?dataset ccf:has_cell_summary [
       ccf:cell_annotation_method ?tool ;
       ccf:modality ?modality ;
+      ccf:sex ?donor_sex ;
     ] .
 
     {
