@@ -43,6 +43,7 @@
   * [Validation V3 Nodes (validation-v3.nodes)](#validation-v3.nodes)
   * [Validation V4 (validation-v4)](#validation-v4)
   * [Validation V5 (validation-v5)](#validation-v5)
+  * [Validation V6 (validation-v6)](#validation-v6)
 * hra
   * [Count of Anatomical Structures by Organ (as-cnt-per-organ)](#as-cnt-per-organ)
   * [Count of Anatomical Structures (as-cnt)](#as-cnt)
@@ -4070,6 +4071,90 @@ ORDER BY ?sex ?dataset ?tool ?modality DESC(?percentage)
 | Female | NHLBI/LungMap | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D139$lung | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0002048 | respiratory system | UBERON:0001004 | 75 | CL:0002144 | EC general capillary | 523 | 0.1002491853555683 |
 | Female | NHLBI/LungMap | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D139$lung | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0002048 | respiratory system | UBERON:0001004 | 75 | ASCTB-TEMP:monocyte-derived-m | Monocyte-derived Mφ | 508 | 0.09737396971439524 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="validation-v6"></a>Validation V6 (validation-v6)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Validation V6
+#+ description:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT
+  ?sex
+  ?tool
+  ?modality
+  ?organ
+  ?organId
+  ?as
+  ?as_id
+  ?as3d_id
+  ?cell_id
+  ?cell_label
+  ?cell_count
+  ?percentage
+FROM HRApop:
+FROM CCF:
+WHERE {
+  ?as3d_id
+    ccf:has_reference_organ ?ref_organ ;
+    ccf:representation_of ?as_iri .
+
+  ?as_iri ccf:has_cell_summary [
+    ccf:sex ?sex ;
+    ccf:cell_annotation_method ?tool ;
+    ccf:modality ?modality ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_iri ;
+      ccf:cell_label ?cell_label ;
+      ccf:cell_count ?cell_count ;
+      ccf:percentage_of_total ?percentage
+    ]
+  ] .
+
+  BIND(REPLACE(REPLACE(STR(?cell_iri), STR(CL:), 'CL:'), STR(ASCTB-TEMP:), 'ASCTB-TEMP:') as ?cell_id)
+
+  ?ref_organ ccf:representation_of ?organIri .
+  ?organIri rdfs:label ?organ .
+  BIND(REPLACE(REPLACE(STR(?organIri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?organId)
+
+  ?as_iri rdfs:label ?as .
+  BIND(REPLACE(REPLACE(STR(?as_iri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?as_id)
+}
+
+```
+
+([View Source](../../queries/atlas/validation-v6.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/validation-v6.csv))
+
+| sex | tool | modality | organ | organId | as | as_id | as3d_id | cell_id | cell_label | cell_count | percentage |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L_i | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
+| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L_h | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
+| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L_f | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
+| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L_g | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
+| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="as-cnt-per-organ"></a>Count of Anatomical Structures by Organ (as-cnt-per-organ)
