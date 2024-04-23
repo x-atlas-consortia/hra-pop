@@ -23,7 +23,6 @@ SELECT DISTINCT
   ?organId
   ?as
   ?as_id
-  ?as3d_id
   ?cell_id
   ?cell_label
   ?cell_count

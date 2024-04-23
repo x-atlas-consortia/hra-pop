@@ -2027,6 +2027,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 SELECT
   ?portal
   ?sex
+  ?modality
   (COUNT(DISTINCT(?study_paper)) as ?studies)
   (COUNT(DISTINCT(?donor)) as ?donors)
   (COUNT(DISTINCT(?organ_iri)) as ?organs)
@@ -2065,7 +2066,6 @@ WHERE {
   # Ref Organ Name
   {
     ?ref_organ ccf:representation_of ?organ_iri .
-    ?ref_organ ccf:organ_owner_sex ?sex .
     ?organ_iri rdfs:label ?organ_name .
   }
 
@@ -2082,8 +2082,8 @@ WHERE {
     ] .
   }
 }
-GROUP BY ?portal ?sex
-ORDER BY ?portal ?sex
+GROUP BY ?portal ?sex ?modality
+ORDER BY ?portal ?sex ?modality
 
 ```
 
@@ -2092,17 +2092,14 @@ ORDER BY ?portal ?sex
 
 #### Results ([View CSV File](reports/atlas/table-1.csv))
 
-| portal | sex | studies | donors | organs | tissue_blocks | tissue_sections | datasets | cell_types | cells |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| GTEx | Female | 1 | 3 | 1 | 3 | 0 | 3 | 14 | 9770 |
-| GTEx | Male | 1 | 5 | 4 | 8 | 0 | 8 | 122 | 143256 |
-| HCA | Female | 1 | 7 | 1 | 40 | 0 | 40 | 53 | 659085 |
-| HCA | Male | 1 | 7 | 1 | 42 | 0 | 42 | 53 | 799317 |
-| HuBMAP | Female | 0 | 29 | 9 | 60 | 44 | 134 | 271 | 3883960 |
-| HuBMAP | Male | 0 | 41 | 10 | 110 | 57 | 304 | 325 | 12031387 |
-| NHLBI/LungMap | Female | 1 | 2 | 1 | 2 | 0 | 2 | 67 | 29691 |
-| NHLBI/LungMap | Male | 1 | 6 | 1 | 6 | 0 | 6 | 77 | 92100 |
-| SenNet | Male | 0 | 2 | 1 | 2 | 2 | 2 | 20 | 43735 |
+| portal | sex | modality | studies | donors | organs | tissue_blocks | tissue_sections | datasets | cell_types | cells |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| GTEx | Female | sc_transcriptomics | 1 | 6 | 4 | 7 | 0 | 7 | 109 | 123723 |
+| GTEx | Male | sc_transcriptomics | 1 | 5 | 4 | 8 | 0 | 8 | 122 | 143256 |
+| HCA | Female | sc_transcriptomics | 1 | 7 | 1 | 40 | 0 | 40 | 53 | 659085 |
+| HCA | Male | sc_transcriptomics | 1 | 7 | 1 | 42 | 0 | 42 | 53 | 799317 |
+| HuBMAP | Female | sc_proteomics | 0 | 6 | 3 | 20 | 8 | 20 | 29 | 555082 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="table-s1"></a>Table S1 (table-s1)
@@ -4213,7 +4210,6 @@ SELECT DISTINCT
   ?organId
   ?as
   ?as_id
-  ?as3d_id
   ?cell_id
   ?cell_label
   ?cell_count
@@ -4254,14 +4250,14 @@ WHERE {
 
 #### Results ([View CSV File](reports/atlas/validation-v6.csv))
 
-| sex | tool | modality | organ | organId | as | as_id | as3d_id | cell_id | cell_label | cell_count | percentage |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L_i | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
-| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L_h | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
-| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L_f | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
-| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L_g | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
-| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans_VH_M_renal_pyramid_L | CL:1001107 | Ascending Thin Limb | 90454.55999999998 | 0.04604473365954859 |
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| sex | tool | modality | organ | organId | as | as_id | cell_id | cell_label | cell_count | percentage |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | azimuth | sc_transcriptomics | right kidney | UBERON:0004539 | kidney pyramid | UBERON:0004200 | CL:4030011 | Proximal Tubule Epithelial Segment 3 | 9777.792000000001 | 0.004977259614313142 |
+| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | CL:4030011 | Proximal Tubule Epithelial Segment 3 | 9777.792000000001 | 0.004977259614313142 |
+| Female | azimuth | sc_transcriptomics | right kidney | UBERON:0004539 | kidney pyramid | UBERON:0004200 | CL:0000890 | M2 Macrophage | 4110.993 | 0.002092648261859531 |
+| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | CL:0000890 | M2 Macrophage | 4110.993 | 0.002092648261859531 |
+| Female | azimuth | sc_transcriptomics | right kidney | UBERON:0004539 | kidney pyramid | UBERON:0004200 | ASCTB-TEMP:descending-vasa-recta-endothelial | Descending Vasa Recta Endothelial  | 29730.1 | 0.01513372610702816 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="as-cnt-per-organ"></a>Count of Anatomical Structures by Organ (as-cnt-per-organ)
