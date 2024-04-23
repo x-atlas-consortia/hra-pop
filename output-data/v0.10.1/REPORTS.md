@@ -27,6 +27,7 @@
   * [Atlas-level Donor information (donor-info)](#donor-info)
   * [Figure AS-AS Sim Data (figure-as-as-sim)](#figure-as-as-sim)
   * [Figure F4 (figure-f4)](#figure-f4)
+  * [Table 1 (table-1)](#table-1)
   * [Table S1 (table-s1)](#table-s1)
   * [Table S2 (table-s2)](#table-s2)
   * [Table S3 (table-s3)](#table-s3)
@@ -1996,6 +1997,112 @@ ORDER BY ?modality ?organ ?sex
 | UBERON:0002097 | skin of body | Male | sc_proteomics | sc_proteomics | 1 | 1 | 6 | 6 | 3 |
 | UBERON:0002108 | small intestine | Female | sc_proteomics | sc_proteomics | 11 | 7 | 8 | 8 | 145 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="table-1"></a>Table 1 (table-1)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Table 1
+#+ description:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT
+  ?portal
+  ?sex
+  (COUNT(DISTINCT(?study_paper)) as ?studies)
+  (COUNT(DISTINCT(?donor)) as ?donors)
+  (COUNT(DISTINCT(?organ_iri)) as ?organs)
+  (COUNT(DISTINCT(?block)) as ?tissue_blocks)
+  (COUNT(DISTINCT(?section)) as ?tissue_sections)
+  (COUNT(DISTINCT(?dataset)) as ?datasets)
+  (COUNT(DISTINCT(?cell_iri)) as ?cell_types)
+  (SUM(?cell_count) as ?cells)
+FROM HRApop:
+FROM CCF:
+WHERE {
+  ?donor a ccf:Donor ;
+    ccf:consortium_name ?portal .
+
+  # Relationships 
+  {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:has_registration_location ?rui_location .
+    ?block ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?section .
+    ?block ccf:has_registration_location ?rui_location .
+    ?section ccf:generates_dataset ?dataset .
+  }
+
+  OPTIONAL { ?dataset ccf:publication_title ?study_paper . }
+
+  # RUI Location Placement
+  {
+    ?placement a ccf:SpatialPlacement ;
+      ccf:placement_for ?rui_location ;
+      ccf:placement_relative_to ?ref_organ .
+  }
+
+  # Ref Organ Name
+  {
+    ?ref_organ ccf:representation_of ?organ_iri .
+    ?ref_organ ccf:organ_owner_sex ?sex .
+    ?organ_iri rdfs:label ?organ_name .
+  }
+
+  # Cells
+  {
+    ?dataset ccf:has_cell_summary [
+      ccf:sex ?sex ;
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_iri ;
+        ccf:cell_count ?cell_count ;
+      ] ;
+    ] .
+  }
+}
+GROUP BY ?portal ?sex
+ORDER BY ?portal ?sex
+
+```
+
+([View Source](../../queries/atlas/table-1.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/table-1.csv))
+
+| portal | sex | studies | donors | organs | tissue_blocks | tissue_sections | datasets | cell_types | cells |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| GTEx | Female | 1 | 3 | 1 | 3 | 0 | 3 | 14 | 9770 |
+| GTEx | Male | 1 | 5 | 4 | 8 | 0 | 8 | 122 | 143256 |
+| HCA | Female | 1 | 7 | 1 | 40 | 0 | 40 | 53 | 659085 |
+| HCA | Male | 1 | 7 | 1 | 42 | 0 | 42 | 53 | 799317 |
+| HuBMAP | Female | 0 | 29 | 9 | 60 | 44 | 134 | 271 | 3883960 |
+| HuBMAP | Male | 0 | 41 | 10 | 110 | 57 | 304 | 325 | 12031387 |
+| NHLBI/LungMap | Female | 1 | 2 | 1 | 2 | 0 | 2 | 67 | 29691 |
+| NHLBI/LungMap | Male | 1 | 6 | 1 | 6 | 0 | 6 | 77 | 92100 |
+| SenNet | Male | 0 | 2 | 1 | 2 | 2 | 2 | 20 | 43735 |
 
 
 ### <a id="table-s1"></a>Table S1 (table-s1)

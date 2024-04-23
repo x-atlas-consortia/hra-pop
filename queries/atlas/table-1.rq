@@ -1,0 +1,77 @@
+#+ summary: Table 1
+#+ description:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT
+  ?portal
+  ?sex
+  (COUNT(DISTINCT(?study_paper)) as ?studies)
+  (COUNT(DISTINCT(?donor)) as ?donors)
+  (COUNT(DISTINCT(?organ_iri)) as ?organs)
+  (COUNT(DISTINCT(?block)) as ?tissue_blocks)
+  (COUNT(DISTINCT(?section)) as ?tissue_sections)
+  (COUNT(DISTINCT(?dataset)) as ?datasets)
+  (COUNT(DISTINCT(?cell_iri)) as ?cell_types)
+  (SUM(?cell_count) as ?cells)
+FROM HRApop:
+FROM CCF:
+WHERE {
+  ?donor a ccf:Donor ;
+    ccf:consortium_name ?portal .
+
+  # Relationships 
+  {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:has_registration_location ?rui_location .
+    ?block ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?section .
+    ?block ccf:has_registration_location ?rui_location .
+    ?section ccf:generates_dataset ?dataset .
+  }
+
+  OPTIONAL { ?dataset ccf:publication_title ?study_paper . }
+
+  # RUI Location Placement
+  {
+    ?placement a ccf:SpatialPlacement ;
+      ccf:placement_for ?rui_location ;
+      ccf:placement_relative_to ?ref_organ .
+  }
+
+  # Ref Organ Name
+  {
+    ?ref_organ ccf:representation_of ?organ_iri .
+    ?ref_organ ccf:organ_owner_sex ?sex .
+    ?organ_iri rdfs:label ?organ_name .
+  }
+
+  # Cells
+  {
+    ?dataset ccf:has_cell_summary [
+      ccf:sex ?sex ;
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_iri ;
+        ccf:cell_count ?cell_count ;
+      ] ;
+    ] .
+  }
+}
+GROUP BY ?portal ?sex
+ORDER BY ?portal ?sex

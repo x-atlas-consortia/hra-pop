@@ -1,0 +1,10 @@
+portal,sex,studies,donors,organs,tissue_blocks,tissue_sections,datasets,cell_types,cells
+GTEx,Female,1,3,1,3,0,3,14,9770
+GTEx,Male,1,5,4,8,0,8,122,143256
+HCA,Female,1,7,1,40,0,40,53,659085
+HCA,Male,1,7,1,42,0,42,53,799317
+HuBMAP,Female,0,29,9,60,44,134,271,3883960
+HuBMAP,Male,0,41,10,110,57,304,325,12031387
+NHLBI/LungMap,Female,1,2,1,2,0,2,67,29691
+NHLBI/LungMap,Male,1,6,1,6,0,6,77,92100
+SenNet,Male,0,2,1,2,2,2,20,43735
