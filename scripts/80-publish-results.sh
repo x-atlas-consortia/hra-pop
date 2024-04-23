@@ -20,6 +20,7 @@ cp $DIR/non-atlas-dataset-graph.csv $OUT
 cp $DIR/all-dataset-graph.csv $OUT
 
 cp -r $DIR/reports $OUT
+cp -r $DIR/corridors $OUT
 
 node src/gen-report-markdown.js $OUT/REPORTS.md queries $OUT/reports
 

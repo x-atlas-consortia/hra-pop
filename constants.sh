@@ -8,6 +8,8 @@ export NODE_OPTIONS="--max-old-space-size=64000"
 
 source input-data/v0.10.1/config.sh
 
+export VERSION
+
 mkdir -p $RAW_DIR/$VERSION
 mkdir -p $INPUT_DIR/$VERSION
 mkdir -p $OUTPUT_DIR/$VERSION
