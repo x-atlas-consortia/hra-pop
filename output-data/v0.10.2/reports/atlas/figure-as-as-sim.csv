@@ -1,0 +1,193 @@
+organId,organ,sex,modality,as1_label,as2_label,cosine_sim,as1_dataset_count,as2_dataset_count
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,hilum of kidney,0.06750799460377013,4,3
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,hilum of kidney,0.06750799460377013,4,3
+UBERON:0004539,right kidney,Female,sc_transcriptomics,kidney capsule,hilum of kidney,0.7179742859929701,6,3
+UBERON:0004539,right kidney,Male,sc_transcriptomics,kidney capsule,hilum of kidney,0.0844693470195993,6,3
+UBERON:0004538,left kidney,Female,sc_transcriptomics,kidney capsule,hilum of kidney,0.7179742859929701,6,3
+UBERON:0004538,left kidney,Male,sc_transcriptomics,kidney capsule,hilum of kidney,0.0844693470195993,6,3
+UBERON:0004539,right kidney,Male,sc_transcriptomics,outer cortex of kidney,hilum of kidney,0.5327195347623155,117,3
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal column,hilum of kidney,1.0000000000000002,13,3
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal column,hilum of kidney,0.9453150100890143,13,3
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal column,hilum of kidney,1.0000000000000002,13,3
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal column,hilum of kidney,0.9453150100890143,13,3
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal column,outer cortex of kidney,0.7887651035612127,13,117
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal column,outer cortex of kidney,0.5327195347623155,13,117
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal column,outer cortex of kidney,0.7887651035612127,13,117
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal column,outer cortex of kidney,0.5327195347623155,13,117
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,outer cortex of kidney,0.4570894352448568,4,117
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,outer cortex of kidney,0.4570894352448568,4,117
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal column,kidney capsule,0.08446934701959927,13,6
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal column,kidney capsule,0.7881827355652239,13,6
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal column,kidney capsule,0.08446934701959927,13,6
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal column,kidney capsule,0.7881827355652239,13,6
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,kidney capsule,0.9278614250944998,4,6
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,kidney capsule,0.9278614250944998,4,6
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal column,kidney pyramid,0.728374320181615,13,88
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal column,kidney pyramid,0.728374320181615,13,88
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,renal column,0.06750799460377015,4,13
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,renal column,0.06750799460377015,4,13
+UBERON:0000948,heart,Female,sc_transcriptomics,heart right ventricle,interventricular septum,0.53954512419015874322,29,14
+UBERON:0000948,heart,Male,sc_transcriptomics,heart right ventricle,interventricular septum,0.52840350296809123056,29,14
+UBERON:0000948,heart,Female,sc_transcriptomics,heart left ventricle,interventricular septum,0.47667849222726587256,64,14
+UBERON:0000948,heart,Male,sc_transcriptomics,heart left ventricle,interventricular septum,0.43415693397368329433,64,14
+UBERON:0000948,heart,Female,sc_transcriptomics,left cardiac atrium,interventricular septum,0.28985396550153183256,14,14
+UBERON:0000948,heart,Male,sc_transcriptomics,left cardiac atrium,interventricular septum,0.318036975394533109,14,14
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,interventricular septum,0.27681170535899028122,16,14
+UBERON:0000948,heart,Male,sc_transcriptomics,right cardiac atrium,interventricular septum,0.38926226377097672956,16,14
+UBERON:0000948,heart,Female,sc_transcriptomics,heart right ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.53785610900201101489,29,6
+UBERON:0000948,heart,Female,sc_transcriptomics,heart left ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.47061804387551627956,64,6
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal column,kidney pyramid,0.7175571295258735,13,88
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,kidney pyramid,0.32614602303197543,4,88
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal column,kidney pyramid,0.7175571295258735,13,88
+UBERON:0004538,left kidney,Female,sc_transcriptomics,outer cortex of kidney,kidney pyramid,0.894924893465926,117,88
+UBERON:0004539,right kidney,Male,sc_transcriptomics,outer cortex of kidney,kidney pyramid,0.7769177590021035,117,88
+UBERON:0004539,right kidney,Female,sc_transcriptomics,outer cortex of kidney,kidney pyramid,0.894924893465926,117,88
+UBERON:0000948,heart,Female,sc_transcriptomics,left cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.28261428140904038722,14,6
+UBERON:0000948,heart,Female,sc_transcriptomics,interventricular septum,Posteromedial head of posterior papillary muscle of left ventricle,0.55770536696212396867,14,6
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.27321150919961056122,16,6
+UBERON:0000059,large intestine,Female,sc_proteomics,transverse colon,descending colon,0.7094714167030884,15,19
+UBERON:0000059,large intestine,Female,sc_transcriptomics,transverse colon,descending colon,0.6185714908021777,15,19
+UBERON:0000059,large intestine,Male,sc_transcriptomics,transverse colon,descending colon,0.91100819156248265,15,19
+UBERON:0000059,large intestine,Male,sc_proteomics,transverse colon,descending colon,0.9675243919754691,15,19
+UBERON:0000059,large intestine,Female,sc_proteomics,caecum,descending colon,0.9224812226256441,5,19
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,descending colon,0.8649183401037414,5,19
+UBERON:0000059,large intestine,Male,sc_proteomics,rectum,descending colon,0.9849517112197308,13,19
+UBERON:0000059,large intestine,Male,sc_transcriptomics,rectum,descending colon,0.9001776395898415,13,19
+UBERON:0004538,left kidney,Male,sc_transcriptomics,outer cortex of kidney,hilum of kidney,0.5327195347623155,117,3
+UBERON:0004539,right kidney,Female,sc_transcriptomics,outer cortex of kidney,hilum of kidney,0.7366625544522778,117,3
+UBERON:0004538,left kidney,Female,sc_transcriptomics,outer cortex of kidney,hilum of kidney,0.7366625544522778,117,3
+UBERON:0000948,heart,Female,sc_transcriptomics,heart right ventricle,heart left ventricle,0.47300702510933923878,29,64
+UBERON:0000948,heart,Male,sc_transcriptomics,heart right ventricle,heart left ventricle,0.458431203281822677,29,64
+UBERON:0000948,heart,Female,sc_transcriptomics,left cardiac atrium,heart left ventricle,0.29807203188521999511,14,64
+UBERON:0000948,heart,Male,sc_transcriptomics,left cardiac atrium,heart left ventricle,0.36120740318656694144,14,64
+UBERON:0000948,heart,Male,sc_transcriptomics,right cardiac atrium,heart left ventricle,0.39517751208127283889,16,64
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,heart left ventricle,0.27403174337127124567,16,64
+UBERON:0004539,right kidney,Male,sc_transcriptomics,kidney pyramid,hilum of kidney,0.7175571295258734,88,3
+UBERON:0004539,right kidney,Female,sc_transcriptomics,kidney pyramid,hilum of kidney,0.6440044918197785,88,3
+UBERON:0004538,left kidney,Female,sc_transcriptomics,kidney pyramid,hilum of kidney,0.6440044918197785,88,3
+UBERON:0004538,left kidney,Male,sc_transcriptomics,kidney pyramid,hilum of kidney,0.7175571295258734,88,3
+UBERON:0004538,left kidney,Male,sc_transcriptomics,outer cortex of kidney,kidney pyramid,0.7769177590021035,117,88
+UBERON:0000059,large intestine,Female,sc_proteomics,ascending colon,descending colon,0.922481222625644,18,19
+UBERON:0000059,large intestine,Male,sc_proteomics,ascending colon,descending colon,0.9906216712240895,18,19
+UBERON:0000059,large intestine,Male,sc_transcriptomics,ascending colon,descending colon,0.9752599097458169,18,19
+UBERON:0000059,large intestine,Female,sc_transcriptomics,ascending colon,descending colon,0.8649183401037415,18,19
+UBERON:0000059,large intestine,Female,sc_proteomics,transverse colon,sigmoid colon,0.9734216805751224,15,19
+UBERON:0000059,large intestine,Male,sc_transcriptomics,transverse colon,sigmoid colon,0.9093346621128646,15,19
+UBERON:0000059,large intestine,Female,sc_transcriptomics,transverse colon,sigmoid colon,0.52501039505954433,15,19
+UBERON:0000059,large intestine,Male,sc_proteomics,transverse colon,sigmoid colon,0.9503327437886708,15,19
+UBERON:0000059,large intestine,Male,sc_transcriptomics,descending colon,sigmoid colon,0.9001776395898413,19,19
+UBERON:0000059,large intestine,Female,sc_transcriptomics,descending colon,sigmoid colon,0.92280179954036515,19,19
+UBERON:0000059,large intestine,Male,sc_proteomics,descending colon,sigmoid colon,0.9849517112197308,19,19
+UBERON:0000059,large intestine,Female,sc_proteomics,descending colon,sigmoid colon,0.588722910462506,19,19
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,sigmoid colon,0.78954503549733715,5,19
+UBERON:0000059,large intestine,Female,sc_proteomics,caecum,sigmoid colon,0.7778282876292474,5,19
+UBERON:0000059,large intestine,Male,sc_proteomics,rectum,sigmoid colon,1.0000000000000002,13,19
+UBERON:0000059,large intestine,Male,sc_transcriptomics,rectum,sigmoid colon,0.9999999999999999,13,19
+UBERON:0000059,large intestine,Male,sc_transcriptomics,ascending colon,sigmoid colon,0.88753610230385985,18,19
+UBERON:0000059,large intestine,Female,sc_transcriptomics,ascending colon,sigmoid colon,0.7895450354973372,18,19
+UBERON:0000059,large intestine,Male,sc_proteomics,ascending colon,sigmoid colon,0.9837198418641342,18,19
+UBERON:0000059,large intestine,Female,sc_proteomics,ascending colon,sigmoid colon,0.7778282876292475,18,19
+UBERON:0004539,right kidney,Male,sc_transcriptomics,kidney capsule,kidney pyramid,0.4623503165715804,6,88
+UBERON:0004539,right kidney,Female,sc_transcriptomics,kidney capsule,kidney pyramid,0.8979010970685835,6,88
+UBERON:0004538,left kidney,Male,sc_transcriptomics,kidney capsule,kidney pyramid,0.4623503165715804,6,88
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,kidney pyramid,0.32614602303197543,4,88
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Ascending part of duodenum,0.8987792823144939,5,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Ascending part of duodenum,0.9922879493082384,5,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Descending part of duodenum,Ascending part of duodenum,0.7211960159620722,18,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Descending part of duodenum,Ascending part of duodenum,0.99058915095020145,18,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Descending part of duodenum,Ascending part of duodenum,0.9719424186243977,18,18
+UBERON:0002108,small intestine,Male,sc_proteomics,Descending part of duodenum,Ascending part of duodenum,0.9906690739026441,18,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Horizontal part of duodenum,Ascending part of duodenum,1.0000000000000001,18,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Horizontal part of duodenum,Ascending part of duodenum,1.0000000000000001,18,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Horizontal part of duodenum,Ascending part of duodenum,1,18,18
+UBERON:0002108,small intestine,Male,sc_proteomics,Horizontal part of duodenum,Ascending part of duodenum,1,18,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Superior part of duodenum,0.9668276248203654,16,6
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Superior part of duodenum,0.9500230832971585,16,6
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Superior part of duodenum,0.8342696607074783,5,6
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Superior part of duodenum,0.96540419856824255,5,6
+UBERON:0004538,left kidney,Male,sc_transcriptomics,kidney capsule,outer cortex of kidney,0.4617062847639361,6,117
+UBERON:0004538,left kidney,Female,sc_transcriptomics,kidney capsule,outer cortex of kidney,0.8439534139104061,6,117
+UBERON:0004539,right kidney,Male,sc_transcriptomics,kidney capsule,outer cortex of kidney,0.4617062847639361,6,117
+UBERON:0004539,right kidney,Female,sc_transcriptomics,kidney capsule,outer cortex of kidney,0.8439534139104061,6,117
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Descending part of duodenum,0.96958433211635525,16,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Descending part of duodenum,0.96682762482036545,16,18
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Descending part of duodenum,0.9500230832971583,16,18
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Descending part of duodenum,0.8342696607074782,5,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Descending part of duodenum,0.9654041985682425,5,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Horizontal part of duodenum,0.9980407110881900,16,18
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Horizontal part of duodenum,0.7767372730030294,16,18
+UBERON:0002108,small intestine,Male,sc_proteomics,jejunum,Horizontal part of duodenum,0.9897819721665767,16,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Ascending part of duodenum,0.99804071108819005,16,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Superior part of duodenum,Horizontal part of duodenum,0.9719424186243977,6,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Superior part of duodenum,Horizontal part of duodenum,0.7211960159620723,6,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Horizontal part of duodenum,0.9922879493082384,5,18
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Horizontal part of duodenum,0.898779282314494,5,18
+UBERON:0002108,small intestine,Male,sc_proteomics,Descending part of duodenum,Horizontal part of duodenum,0.9906690739026442,18,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Descending part of duodenum,Horizontal part of duodenum,0.9719424186243977,18,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Descending part of duodenum,Horizontal part of duodenum,0.7211960159620722,18,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Descending part of duodenum,Horizontal part of duodenum,0.99058915095020145,18,18
+UBERON:0000948,heart,Female,sc_transcriptomics,left cardiac atrium,heart right ventricle,0.26139695107288106967,14,29
+UBERON:0000948,heart,Male,sc_transcriptomics,left cardiac atrium,heart right ventricle,0.39594093553220991189,14,29
+UBERON:0004538,left kidney,Female,sc_transcriptomics,kidney capsule,kidney pyramid,0.8979010970685835,6,88
+UBERON:0000948,heart,Male,sc_transcriptomics,right cardiac atrium,heart right ventricle,0.43063158754536694333,16,29
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,heart right ventricle,0.24976265114137837844,16,29
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,left cardiac atrium,0.48339713451506283378,16,14
+UBERON:0000948,heart,Male,sc_transcriptomics,right cardiac atrium,left cardiac atrium,0.48627065345974789444,16,14
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,peripheral zone of prostate,central zone of prostate,1,4,4
+UBERON:0002106,spleen,Male,sc_transcriptomics,hilum of spleen,Diaphragmatic surface of spleen,0.9543582170912271,6,11
+UBERON:0002106,spleen,Female,sc_transcriptomics,hilum of spleen,Diaphragmatic surface of spleen,1,6,11
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Lateral bronchopulmonary segment,0.72069857876750307778,34,20
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Lateral bronchopulmonary segment,0.65579645496942263444,34,20
+UBERON:0002107,liver,Male,sc_transcriptomics,capsule of liver,Gastric impression of liver,0.686663664306616625,2,2
+UBERON:0002107,liver,Male,sc_transcriptomics,capsule of liver,Diaphragmatic surface of liver,0.686663664306616615,2,2
+UBERON:0002107,liver,Male,sc_transcriptomics,Gastric impression of liver,Diaphragmatic surface of liver,0.68666366430661660,2,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left apical bronchopulmonary segment,0.64086015673459839333,20,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left apical bronchopulmonary segment,0.63377733006617705556,34,3
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Distal part of ileum,0.9366777648024824,16,17
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Distal part of ileum,0.8682169264342164,16,17
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Distal part of ileum,0.99111309978788345,16,17
+UBERON:0002108,small intestine,Female,sc_proteomics,Superior part of duodenum,Distal part of ileum,0.8342696607074784,6,17
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Superior part of duodenum,Distal part of ileum,0.96540419856824255,6,17
+UBERON:0002108,small intestine,Male,sc_proteomics,jejunum,Distal part of ileum,0.9519213633238642,16,17
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Ascending part of duodenum,Distal part of ileum,0.86905113418931685,18,17
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Ascending part of duodenum,Distal part of ileum,0.9922879493082382,18,17
+UBERON:0002108,small intestine,Male,sc_proteomics,Ascending part of duodenum,Distal part of ileum,0.9654819300822738,18,17
+UBERON:0002108,small intestine,Female,sc_proteomics,Ascending part of duodenum,Distal part of ileum,0.8987792823144939,18,17
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Distal part of ileum,0.9999999999999999,5,17
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Distal part of ileum,1,5,17
+UBERON:0000059,large intestine,Female,sc_proteomics,caecum,transverse colon,0.879770365196477,5,15
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,transverse colon,0.90946143878340205,5,15
+UBERON:0000059,large intestine,Male,sc_proteomics,rectum,transverse colon,0.9503327437886709,13,15
+UBERON:0000059,large intestine,Male,sc_transcriptomics,rectum,transverse colon,0.9093346621128649,13,15
+UBERON:0000059,large intestine,Male,sc_proteomics,ascending colon,transverse colon,0.9816842926384987,18,15
+UBERON:0000059,large intestine,Male,sc_transcriptomics,ascending colon,transverse colon,0.9153435681661956,18,15
+UBERON:0000059,large intestine,Female,sc_proteomics,ascending colon,transverse colon,0.8797703651964769,18,15
+UBERON:0000059,large intestine,Female,sc_transcriptomics,ascending colon,transverse colon,0.9094614387834021,18,15
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,ascending colon,1.0000000000000001,5,18
+UBERON:0000059,large intestine,Female,sc_proteomics,caecum,ascending colon,0.9999999999999998,5,18
+UBERON:0000059,large intestine,Male,sc_transcriptomics,rectum,ascending colon,0.88753610230385985,13,18
+UBERON:0000059,large intestine,Male,sc_proteomics,rectum,ascending colon,0.9837198418641341,13,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Descending part of duodenum,Distal part of ileum,0.8342696607074782,18,17
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Descending part of duodenum,Distal part of ileum,0.8768385029379677,18,17
+UBERON:0002108,small intestine,Male,sc_proteomics,Descending part of duodenum,Distal part of ileum,0.942392014893478,18,17
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Descending part of duodenum,Distal part of ileum,0.9654041985682426,18,17
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,ileum,0.9911130997878834,16,5
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,ileum,0.8682169264342166,16,5
+UBERON:0002108,small intestine,Male,sc_proteomics,jejunum,Descending part of duodenum,0.9691012047378897,16,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Ascending part of duodenum,0.97345072793176645,16,18
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Ascending part of duodenum,0.7767372730030294,16,18
+UBERON:0002108,small intestine,Male,sc_proteomics,jejunum,Ascending part of duodenum,0.9897819721665767,16,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Superior part of duodenum,Ascending part of duodenum,0.9719424186243977,6,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Superior part of duodenum,Ascending part of duodenum,0.7211960159620723,6,18
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.60314065853520118333,20,9
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.65579645496942262222,20,9
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Lateral segmental bronchus,0.65579645496942263556,34,9
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Lateral segmental bronchus,0.57617170207806193889,34,9
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Lateral segmental bronchus,0.74130301680509218889,3,9
+UBERON:0002108,small intestine,Female,sc_proteomics,Horizontal part of duodenum,Distal part of ileum,0.898779282314494,18,17
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Horizontal part of duodenum,Distal part of ileum,0.86905113418931695,18,17
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Horizontal part of duodenum,Distal part of ileum,0.99228794930823825,18,17
+UBERON:0002108,small intestine,Male,sc_proteomics,Horizontal part of duodenum,Distal part of ileum,0.965481930082274,18,17
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Superior part of duodenum,Descending part of duodenum,1,6,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Superior part of duodenum,Descending part of duodenum,0.9999999999999999,6,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Horizontal part of duodenum,0.97345072793176635,16,18

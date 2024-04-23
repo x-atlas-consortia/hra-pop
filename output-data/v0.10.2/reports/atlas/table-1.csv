@@ -1,0 +1,12 @@
+portal,sex,modality,studies,donors,organs,tissue_blocks,tissue_sections,datasets,cell_types,cells
+GTEx,Female,sc_transcriptomics,1,6,4,7,0,7,109,123723
+GTEx,Male,sc_transcriptomics,1,5,4,8,0,8,122,143256
+HCA,Female,sc_transcriptomics,1,7,1,40,0,40,53,659085
+HCA,Male,sc_transcriptomics,1,7,1,42,0,42,53,799317
+HuBMAP,Female,sc_proteomics,0,6,3,20,8,20,29,555082
+HuBMAP,Female,sc_transcriptomics,0,26,8,58,42,116,246,3340954
+HuBMAP,Male,sc_proteomics,0,12,3,54,17,54,29,2061512
+HuBMAP,Male,sc_transcriptomics,0,35,9,103,52,255,301,10314608
+NHLBI/LungMap,Female,sc_transcriptomics,1,2,1,2,0,2,67,29691
+NHLBI/LungMap,Male,sc_transcriptomics,1,7,1,7,0,7,77,109809
+SenNet,Male,sc_transcriptomics,0,2,1,2,2,2,20,43735

@@ -6,7 +6,7 @@ RAW_DIR="./raw-data"
 export PATH=./node_modules/.bin:${PATH}
 export NODE_OPTIONS="--max-old-space-size=64000"
 
-source input-data/v0.10.1/config.sh
+source input-data/v0.10.2/config.sh
 
 export VERSION
 

@@ -1,0 +1,1209 @@
+Run started on Tue Apr 23 01:54:41 PM EDT 2024...
+
+>> Running scripts/00-setup-environment.sh...
+
+real	0m0.020s
+user	0m0.003s
+sys	0m0.000s
+
+>> Running scripts/05-build-deprecated-cell-summaries.sh...
+
+if [ "${DEPRECATED_SPATIAL_CELL_SUMMARIES}" != "" ]; then
+  node ./src/gen-deprecated-cell-summaries-spatial.js $DEPRECATED_SPATIAL_CELL_SUMMARIES $DEPRECATED_SPATIAL_CELL_SUMMARY_DATASETS
+fi
+
+if [ "${DEPRECATED_BULK_CELL_SUMMARIES}" != "" ]; then
+  node ./src/gen-deprecated-cell-summaries-bulk.js $DEPRECATED_BULK_CELL_SUMMARIES $DEPRECATED_BULK_CELL_SUMMARY_DATASETS
+fi
+
+real	0m0.465s
+user	0m0.223s
+sys	0m0.019s
+
+>> Running scripts/05-build-deprecated-corridors.sh...
+
+if [ "${DEPRECATED_CORRIDORS}" ]; then
+  node ./src/gen-deprecated-corridors.js $DEPRECATED_CORRIDORS
+fi
+
+real	0m0.022s
+user	0m0.000s
+sys	0m0.002s
+
+>> Running scripts/05-build-deprecated-registrations.sh...
+
+if [ "${DEPRECATED_REGISTRATIONS}" ]; then
+  node ./src/gen-deprecated-registrations.js $DEPRECATED_REGISTRATIONS
+fi
+
+real	0m0.025s
+user	0m0.002s
+sys	0m0.000s
+
+>> Running scripts/10-process-registrations.sh...
+
+MERGED=$RAW_DIR/$VERSION/registrations-dataset-graph.jsonld
+COLLISIONS=$RAW_DIR/$VERSION/collisions.jsonld
+CORRIDORS=$RAW_DIR/$VERSION/corridors.jsonld
+DISTANCES=$RAW_DIR/$VERSION/euclidean-distances.ttl
+
+node ./src/concatenate-jsonld.js $REGISTRATIONS $MERGED
+node ./src/get-collisions.js $MERGED $COLLISIONS
+345 RUI locations had more than one collision
+362 RUI locations had one collision
+WARNING 104 RUI locations had zero collisions
+node ./src/get-corridors.js $MERGED $CORRIDORS
+http://purl.org/ccf/1.5/0aa9d4c4-550a-45a2-b7df-b3f00080ee53
+http://purl.org/ccf/1.5/4104aaa3-c9e7-44a2-acf6-58fbf19e4308
+http://purl.org/ccf/0.5/be6889d4-1522-4b19-9653-8b9c46919555
+http://purl.org/ccf/1.5/5591a63f-895a-4674-99e4-830eb567f071
+http://purl.org/ccf/0.5/53d6d6ff-03c4-4a14-bf70-5199b19f338e
+http://purl.org/ccf/0.5/2b48005e-ab71-4916-bcad-af8e151cbd72
+http://purl.org/ccf/1.5/d3416c86-078f-4c01-858c-f77892b237e1
+http://purl.org/ccf/1.5/f87cbf39-cfd2-4ebc-8729-1fba1cf52851
+http://purl.org/ccf/1.5/69eebfbd-b6e1-4b56-b299-4e493f9fd7c6
+http://purl.org/ccf/0.5/93b8c3e2-e7c7-40f5-b79d-19223806c217
+http://purl.org/ccf/1.5/9d989d45-433f-4a48-9179-33f05c57e601
+http://purl.org/ccf/0.5/cf9f92a4-8500-46ca-a627-345a36182476
+http://purl.org/ccf/0.5/08996af5-5655-4987-87c9-e48eae249db3
+http://purl.org/ccf/0.5/a7b9393b-675d-4c2e-a7db-fff8237e0831
+http://purl.org/ccf/0.5/dfe1f350-b009-4c02-884e-640d12fe42fb
+http://purl.org/ccf/0.5/3158731c-8066-49b2-903f-ba200e5fa3fd
+http://purl.org/ccf/0.5/e45c719b-49ee-4856-adab-789f34a10f40
+http://purl.org/ccf/0.5/d050cc00-a45e-43fd-bd2a-da45bfa76a14
+http://purl.org/ccf/0.5/3ffbef80-c3f6-441e-a074-9f726984e29d
+http://purl.org/ccf/0.5/43a81423-74d2-4803-a805-d745093c2376
+http://purl.org/ccf/0.5/43a81423-74d2-4803-a805-d745093c2376
+http://purl.org/ccf/0.5/43a81423-74d2-4803-a805-d745093c2376
+http://purl.org/ccf/1.5/10efba68-6ee5-41ca-99af-cd7a394e6ea1
+http://purl.org/ccf/1.5/eb9bd478-66b0-4599-8f9a-2775740f626b
+http://purl.org/ccf/1.5/40b85d35-1dc1-4e79-bd68-dc532c939a81
+http://purl.org/ccf/1.5/bf143baf-38d8-4976-98bf-b48bbcfe90dd
+http://purl.org/ccf/1.5/27853ce2-3031-4eb3-8aa6-8c7b4acce5e9
+http://purl.org/ccf/1.5/68a4dff7-262d-43c9-8e42-a0ee1a98a76d
+http://purl.org/ccf/0.5/ee690cbf-2671-4471-a922-14654d828d15
+http://purl.org/ccf/1.5/5b9d0226-45cb-4628-a337-e2dc5c4596fa
+http://purl.org/ccf/1.5/4a8c5ff8-62ab-477f-8a57-f2e2fc1ad805
+http://purl.org/ccf/0.5/f29ffb1f-90f7-48bf-86cb-09fc3cdb0506
+http://purl.org/ccf/1.5/16901d6c-21ff-4fb1-9cae-17379e028dfa
+http://purl.org/ccf/1.5/51081be6-f2b8-45f2-84bd-af6efa6543d8
+http://purl.org/ccf/1.5/45a045ed-4fba-4d58-bbc9-0308708b8684
+http://purl.org/ccf/0.5/df1c474e-aad4-4c34-a616-5a621a8a2bfa
+http://purl.org/ccf/1.5/7b2d11ed-710d-45ba-8262-080b94b5f71c
+http://purl.org/ccf/1.5/928b0a83-fd10-4d44-a369-e46023d91e0b
+http://purl.org/ccf/1.5/62726580-841b-4810-b89c-65a1d67fe349
+http://purl.org/ccf/0.5/ddca4946-3dda-445a-9b7d-367780669123
+http://purl.org/ccf/0.5/004c977d-dc98-472b-b02e-4209f8b41387
+http://purl.org/ccf/0.5/004c977d-dc98-472b-b02e-4209f8b41387
+http://purl.org/ccf/1.5/1994d754-ccc2-4853-94f8-cbd2cbe83fcb
+http://purl.org/ccf/1.5/385b4883-d021-48d1-b25e-187fe23adfda
+http://purl.org/ccf/1.5/eea5b2b2-d512-4dde-af24-4eaefedd320a
+http://purl.org/ccf/1.5/fe9455b6-aa74-40fe-a0ee-71e3e3682f3c
+http://purl.org/ccf/1.5/8835013d-ef68-40ae-80fb-c5f07f4cc4c6
+http://purl.org/ccf/1.5/f627a7e1-843e-487d-92ea-1bfa08e7c7cc
+http://purl.org/ccf/1.5/08cd7da7-0323-4560-940c-9237a6b3e7c5
+http://purl.org/ccf/0.5/812d2c8e-557a-48b9-8780-a5c1f53008cb
+http://purl.org/ccf/0.5/812d2c8e-557a-48b9-8780-a5c1f53008cb
+http://purl.org/ccf/1.5/d847d5df-16f5-42ab-810b-5238188394bf
+http://purl.org/ccf/0.5/a92ad611-c3c6-43d9-bfd6-00ff906fa541
+http://purl.org/ccf/0.5/a92ad611-c3c6-43d9-bfd6-00ff906fa541
+http://purl.org/ccf/1.5/263e60c1-366f-4c0c-9214-d6925c7c6f02
+http://purl.org/ccf/0.5/7f350668-6a99-433b-81e7-56f17c4cdb70
+http://purl.org/ccf/0.5/a92f535f-e679-47ed-ad8d-329b12554af7
+http://purl.org/ccf/1.5/793d2400-1ca3-4521-b595-dbb8738c29ba
+http://purl.org/ccf/0.5/6264c640-fadc-4852-b395-8a0bdc3d99bf
+http://purl.org/ccf/0.5/6264c640-fadc-4852-b395-8a0bdc3d99bf
+http://purl.org/ccf/0.5/6264c640-fadc-4852-b395-8a0bdc3d99bf
+http://purl.org/ccf/1.5/21e2e656-4071-4db2-9e13-aeabdfdded0f
+http://purl.org/ccf/1.5/6ade433a-7d52-4e1e-ab9d-9bf8c118114c
+http://purl.org/ccf/1.5/5b582f69-1a30-49f5-8e80-f6cefe4ea5be
+http://purl.org/ccf/1.5/84c769c9-6a7e-4ab2-8985-ae34173283a7
+http://purl.org/ccf/0.5/3022bdb2-5548-4d64-8c20-139999148d67
+http://purl.org/ccf/0.5/3022bdb2-5548-4d64-8c20-139999148d67
+http://purl.org/ccf/1.5/c37ca360-56dc-4f9d-8ead-11e2bc32d4e5
+http://purl.org/ccf/1.5/72a0f957-5a01-4d2b-8fa9-2dedff92c900
+http://purl.org/ccf/1.5/d85b77e1-02f1-4485-ba45-b4ec2e90620e
+http://purl.org/ccf/1.5/6dc0278e-f479-4bdb-94b9-8df95f5ae79f
+http://purl.org/ccf/0.5/89386c4b-280e-4656-86c8-9dfd6b7de99a
+http://purl.org/ccf/0.5/89386c4b-280e-4656-86c8-9dfd6b7de99a
+http://purl.org/ccf/0.5/ad6486c5-ee24-4c25-8c74-677ffb35a189
+http://purl.org/ccf/0.5/ad6486c5-ee24-4c25-8c74-677ffb35a189
+http://purl.org/ccf/0.5/ad6486c5-ee24-4c25-8c74-677ffb35a189
+http://purl.org/ccf/0.5/d49fc7d2-4dfa-4a4c-9d91-737cdaf2c4d7
+http://purl.org/ccf/0.5/d49fc7d2-4dfa-4a4c-9d91-737cdaf2c4d7
+http://purl.org/ccf/1.5/6ce58ee2-74b9-4137-9325-ced797dcd6ac
+http://purl.org/ccf/0.5/5d8e6e56-ce20-4550-9639-8d149c3d5838
+http://purl.org/ccf/0.5/5d8e6e56-ce20-4550-9639-8d149c3d5838
+http://purl.org/ccf/0.5/5d8e6e56-ce20-4550-9639-8d149c3d5838
+http://purl.org/ccf/1.5/21fb6e6f-6b95-4efb-976f-f0b656046c9d
+http://purl.org/ccf/0.5/b8a1b2bf-5cc2-49d3-810f-c2b7e06d2f8b
+http://purl.org/ccf/0.5/b8a1b2bf-5cc2-49d3-810f-c2b7e06d2f8b
+http://purl.org/ccf/0.5/28769c20-7852-48e9-8579-d06ce74bb2cd
+http://purl.org/ccf/0.5/24ce75c0-6272-4a15-82ff-ab5e023bb771
+http://purl.org/ccf/0.5/24ce75c0-6272-4a15-82ff-ab5e023bb771
+http://purl.org/ccf/0.5/24ce75c0-6272-4a15-82ff-ab5e023bb771
+http://purl.org/ccf/1.5/f3e1e325-c002-42bb-a61c-043a5ec1ca70
+http://purl.org/ccf/0.5/ddbe72b3-09e3-48dc-9a75-e5ed70e12a01
+http://purl.org/ccf/1.5/f1d552fe-cc92-478c-890c-cb95adc4b846
+http://purl.org/ccf/1.5/7613b768-85e7-4129-94d7-3913eb28eaa7
+http://purl.org/ccf/0.5/c62cd431-dd48-4c1b-9c7b-ca4a683fe084
+http://purl.org/ccf/1.5/7b4a1dd3-58b0-4822-9879-4d2494152148
+http://purl.org/ccf/1.5/37000e7b-f8a6-42c5-b086-1778ce47e2c7
+http://purl.org/ccf/0.5/2ee6c4a3-c11a-4395-a42b-bca1c6bfbb6b
+http://purl.org/ccf/0.5/2ee6c4a3-c11a-4395-a42b-bca1c6bfbb6b
+http://purl.org/ccf/0.5/a0c0a248-61eb-4b39-9340-358e725d235a
+http://purl.org/ccf/0.5/a0c0a248-61eb-4b39-9340-358e725d235a
+http://purl.org/ccf/1.5/c9d72a12-86d6-45f7-a58c-c8013a704725
+http://purl.org/ccf/1.5/2d79d824-969e-4d9b-88a0-f364626f8270
+http://purl.org/ccf/0.5/1a6f4e15-83cc-4505-a059-55038690c33d
+http://purl.org/ccf/0.5/47f89696-e96a-41cc-8a88-cf4c4b3b8967
+http://purl.org/ccf/0.5/47f89696-e96a-41cc-8a88-cf4c4b3b8967
+http://purl.org/ccf/1.5/825ec2b8-1291-4633-8a63-b35c7cd709bd
+http://purl.org/ccf/1.5/e6f29ac7-ec33-436c-b2ff-0a259f12dc0d
+http://purl.org/ccf/1.5/ab0a9d87-8479-41ef-85f2-e8bfea4a8bbd
+http://purl.org/ccf/0.5/422a9dca-943a-40f3-967b-c3971d0ec823
+http://purl.org/ccf/1.5/2f3cec3b-eb4f-4ca0-a7bf-b440e51e5a59
+http://purl.org/ccf/1.5/0b234d74-b8f9-449f-8416-ef10e33d2f7f
+http://purl.org/ccf/1.5/91f131f5-724b-455e-a2d7-cade7eae4be9
+http://purl.org/ccf/1.5/38d89d1c-002c-4bd3-a178-9af62b112834
+http://purl.org/ccf/1.5/c9e06f93-152f-4c72-aa69-4b1176833af7
+http://purl.org/ccf/1.5/e027458c-cc7f-43a9-9d62-5c7360e26adf
+http://purl.org/ccf/1.5/2cf1885a-9b6f-440c-9f60-443d5dd3c8ba
+http://purl.org/ccf/1.5/c80e8f79-2b12-470d-be3c-f195a3686943
+http://purl.org/ccf/1.5/3626fb05-6e59-4aa9-8d03-2b5e995b2522
+http://purl.org/ccf/1.5/3626fb05-6e59-4aa9-8d03-2b5e995b2522
+http://purl.org/ccf/1.5/7e05a1f1-fc08-4add-bd72-ffc11267c048
+http://purl.org/ccf/1.5/64c75c68-9566-45f8-8351-534ad00498e4
+http://purl.org/ccf/1.5/5665268f-2b39-4e60-a9ca-0fc0afb09bde
+http://purl.org/ccf/1.5/56746d60-91a7-4e38-84be-695de185dc83
+http://purl.org/ccf/1.5/030d776e-e5d5-44db-995f-4f032f48f0af
+http://purl.org/ccf/1.5/5665268f-2b39-4e60-a9ca-0fc0afb09bde
+http://purl.org/ccf/1.5/64c75c68-9566-45f8-8351-534ad00498e4
+http://purl.org/ccf/1.5/56746d60-91a7-4e38-84be-695de185dc83
+http://purl.org/ccf/1.5/64c75c68-9566-45f8-8351-534ad00498e4
+http://purl.org/ccf/1.5/56746d60-91a7-4e38-84be-695de185dc83
+http://purl.org/ccf/1.5/5665268f-2b39-4e60-a9ca-0fc0afb09bde
+http://purl.org/ccf/1.5/030d776e-e5d5-44db-995f-4f032f48f0af
+http://purl.org/ccf/1.5/56746d60-91a7-4e38-84be-695de185dc83
+http://purl.org/ccf/1.5/56746d60-91a7-4e38-84be-695de185dc83
+http://purl.org/ccf/1.5/64c75c68-9566-45f8-8351-534ad00498e4
+http://purl.org/ccf/1.5/56746d60-91a7-4e38-84be-695de185dc83
+http://purl.org/ccf/1.5/5665268f-2b39-4e60-a9ca-0fc0afb09bde
+http://purl.org/ccf/1.5/64c75c68-9566-45f8-8351-534ad00498e4
+http://purl.org/ccf/1.5/56746d60-91a7-4e38-84be-695de185dc83
+http://purl.org/ccf/1.5/030d776e-e5d5-44db-995f-4f032f48f0af
+http://purl.org/ccf/1.5/64c75c68-9566-45f8-8351-534ad00498e4
+http://purl.org/ccf/1.5/64c75c68-9566-45f8-8351-534ad00498e4
+http://purl.org/ccf/1.5/5496b6a1-8e0a-4592-b5c8-53cc77e7efa9
+http://purl.org/ccf/1.5/912d7c86-4844-459b-8b23-85e627acc2bc
+http://purl.org/ccf/1.5/e111e6d5-d39a-4e22-9632-61fdc6651955
+http://purl.org/ccf/1.5/1367793a-0321-42c2-9437-6e4eff3d3d1b
+http://purl.org/ccf/1.5/748100c1-36bc-4ffa-9ba0-6edbbb62845c
+http://purl.org/ccf/1.5/7cac826a-29e7-4543-b7e1-27c4d49910ef
+http://purl.org/ccf/1.5/e111e6d5-d39a-4e22-9632-61fdc6651955
+http://purl.org/ccf/1.5/1367793a-0321-42c2-9437-6e4eff3d3d1b
+http://purl.org/ccf/1.5/748100c1-36bc-4ffa-9ba0-6edbbb62845c
+http://purl.org/ccf/1.5/7cac826a-29e7-4543-b7e1-27c4d49910ef
+http://purl.org/ccf/1.5/495b3b01-4a22-4ebc-b0a6-7d009e8a744b
+http://purl.org/ccf/1.5/b9d5a47f-1107-41db-9a5d-8ff23801cc5e
+http://purl.org/ccf/1.5/5496b6a1-8e0a-4592-b5c8-53cc77e7efa9
+http://purl.org/ccf/1.5/912d7c86-4844-459b-8b23-85e627acc2bc
+http://purl.org/ccf/1.5/713656a8-6de4-4c9c-95a1-3b93d4bcb68a
+http://purl.org/ccf/1.5/ae578370-ba1b-4787-84e6-3d02f51925fd
+http://purl.org/ccf/1.5/f07f4f9f-a840-4cfc-b28f-73c79d54994f
+http://purl.org/ccf/1.5/65e670b9-0e19-4f99-ae53-a35b7905d3e9
+http://purl.org/ccf/1.5/aed87a98-9e42-49bc-8afc-4a5c3f24008d
+http://purl.org/ccf/1.5/8dfe6424-9e75-4aef-aa47-f56f9ebb45cf
+http://purl.org/ccf/1.5/aed87a98-9e42-49bc-8afc-4a5c3f24008d
+http://purl.org/ccf/1.5/8dfe6424-9e75-4aef-aa47-f56f9ebb45cf
+http://purl.org/ccf/1.5/a920acfd-0d42-458d-84f5-f942e5319e92
+http://purl.org/ccf/1.5/a920acfd-0d42-458d-84f5-f942e5319e92
+http://purl.org/ccf/1.5/a920acfd-0d42-458d-84f5-f942e5319e92
+http://purl.org/ccf/1.5/615aa60c-0a0a-4614-bae2-f85112479919
+http://purl.org/ccf/0.5/bd7a9bea-a726-427a-8360-8a017ef8178d
+http://purl.org/ccf/0.5/c7362760-04fd-4679-a694-b25592ef0291
+http://purl.org/ccf/0.5/59411967-28d2-4955-833e-7f8a8ab75d85
+http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b
+http://purl.org/ccf/1.5/aed760ae-295a-43fc-b6cd-abdf6f012975
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/474e6425-5e56-4f75-a08f-3e2d7846bde9
+http://purl.org/ccf/1.5/d4eb2628-b446-4597-bfb8-a53b5e69a649
+http://purl.org/ccf/1.5/615aa60c-0a0a-4614-bae2-f85112479919
+626 RUI locations had a corridor
+WARNING 185 RUI locations had no corridor
+node ./src/compute-extraction-site-distances.js $MERGED $DISTANCES
+
+real	0m22.478s
+user	0m3.390s
+sys	0m0.552s
+
+>> Running scripts/20-process-cell-summaries.sh...
+
+MERGED=$RAW_DIR/$VERSION/cell-summaries-no-metadata.jsonld
+node ./src/concatenate-jsonld.js $CELL_SUMMARIES $MERGED
+
+MERGED_DATASETS=$RAW_DIR/$VERSION/cell-summary-dataset-graph.jsonld
+node ./src/unflatten-dataset-graph.js $CELL_SUMMARY_DATASETS $MERGED_DATASETS
+
+real	0m7.910s
+user	0m8.873s
+sys	0m1.173s
+
+>> Running scripts/30-process-publications.sh...
+
+PUBS_GRAPH=$RAW_DIR/$VERSION/publications-dataset-graph.jsonld
+node ./src/unflatten-dataset-graph.js $PUBLICATIONS $PUBS_GRAPH
+
+real	0m0.976s
+user	0m0.187s
+sys	0m0.000s
+
+>> Running scripts/40-normalize-dataset-graph.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+node ./src/flatten-dataset-graph.js \
+  $DIR/registrations-dataset-graph.jsonld \
+  $DIR/publications-dataset-graph.jsonld \
+  $DIR/cell-summary-dataset-graph.jsonld \
+  $DIR/full-dataset-graph.csv
+
+node ./src/unflatten-dataset-graph.js $DIR/full-dataset-graph.csv $DIR/full-dataset-graph.jsonld
+node ./src/flatten-dataset-graph.js $DIR/full-dataset-graph.jsonld $DIR/full-dataset-graph.csv
+
+real	0m1.439s
+user	0m1.634s
+sys	0m0.127s
+
+>> Running scripts/42-add-metadata-to-dataset-cell-summaries.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+node ./src/add-metadata-to-dataset-cell-summaries.js \
+  $DIR/full-dataset-graph.csv \
+  $DIR/cell-summaries-no-metadata.jsonld \
+  $DIR/cell-summaries.jsonld
+
+real	0m6.462s
+user	0m6.100s
+sys	0m1.134s
+
+>> Running scripts/45-split-dataset-graph.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+# Make APPROVED_SOURCES visible to process.env in node.js
+export APPROVED_SOURCES
+
+node ./src/split-atlas-data.js \
+  $DIR/full-dataset-graph.csv \
+  $DIR/cell-summaries.jsonld \
+  $DIR/atlas-dataset-graph.csv \
+  $DIR/atlas-lq-dataset-graph.csv \
+  $DIR/test-dataset-graph.csv \
+  $DIR/non-atlas-dataset-graph.csv \
+  $DIR/all-dataset-graph.csv
+
+node ./src/unflatten-dataset-graph.js $DIR/atlas-dataset-graph.csv $DIR/atlas-dataset-graph.jsonld
+node ./src/unflatten-dataset-graph.js $DIR/test-dataset-graph.csv $DIR/test-dataset-graph.jsonld
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  node ./src/unflatten-dataset-graph.js $DIR/atlas-lq-dataset-graph.csv $DIR/atlas-lq-dataset-graph.jsonld
+fi
+
+real	0m4.759s
+user	0m4.953s
+sys	0m0.542s
+
+>> Running scripts/50-generate-as-cell-summaries.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+COLLISIONS=$DIR/collisions.jsonld
+SUMMARIES=$DIR/cell-summaries.jsonld
+
+node ./src/compute-as-cell-summaries.js \
+  $DIR/atlas-dataset-graph.csv \
+  $COLLISIONS \
+  $SUMMARIES \
+  $DIR/atlas-as-cell-summaries.jsonld
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  node ./src/compute-as-cell-summaries.js \
+    $DIR/atlas-lq-dataset-graph.csv \
+    $COLLISIONS \
+    $SUMMARIES \
+    $DIR/atlas-lq-as-cell-summaries.jsonld
+fi
+
+echo '{"@graph":[]}' > $DIR/test-as-cell-summaries.jsonld
+
+real	0m2.863s
+user	0m3.105s
+sys	0m0.331s
+
+>> Running scripts/55-generate-extraction-site-cell-summaries.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+COLLISIONS=$DIR/collisions.jsonld
+SUMMARIES=$DIR/cell-summaries.jsonld
+
+node ./src/compute-extraction-site-cell-summaries.js \
+  $DIR/atlas-dataset-graph.csv \
+  $SUMMARIES $DIR/atlas-extraction-site-cell-summaries.jsonld
+
+node ./src/compute-extraction-site-as-cell-summaries.js \
+  $DIR/atlas-dataset-graph.csv \
+  $COLLISIONS $DIR/atlas-as-cell-summaries.jsonld \
+  $DIR/atlas-extraction-site-as-cell-summaries.jsonld
+
+node ./src/compute-extraction-site-as-cell-summaries.js \
+  $DIR/test-dataset-graph.csv \
+  $COLLISIONS \
+  $DIR/atlas-as-cell-summaries.jsonld \
+  $DIR/test-atlas-extraction-site-as-cell-summaries.jsonld
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  node ./src/compute-extraction-site-cell-summaries.js \
+    $DIR/atlas-lq-dataset-graph.csv \
+    $SUMMARIES $DIR/atlas-lq-extraction-site-cell-summaries.jsonld
+
+  node ./src/compute-extraction-site-as-cell-summaries.js \
+    $DIR/atlas-lq-dataset-graph.csv \
+    $COLLISIONS \
+    $DIR/atlas-lq-as-cell-summaries.jsonld \
+    $DIR/atlas-lq-extraction-site-as-cell-summaries.jsonld
+
+  node ./src/compute-extraction-site-as-cell-summaries.js \
+    $DIR/test-dataset-graph.csv \
+    $COLLISIONS \
+    $DIR/atlas-lq-as-cell-summaries.jsonld \
+    $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld
+fi
+
+real	0m3.828s
+user	0m4.098s
+sys	0m0.452s
+
+>> Running scripts/58-compute-cell-summary-similarities.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+node ./src/compute-cell-summary-similarities.js $DIR/atlas-as-cell-summaries.jsonld \
+  $DIR/cell-summaries.jsonld $DIR/atlas-extraction-site-as-cell-summaries.jsonld \
+  $DIR/atlas-cell-summary-similarities.ttl
+minimum similarity 0.1
+sc_transcriptomics 10596
+sc_proteomics 176
+
+MIN_SIMILARITY=0 node ./src/compute-cell-summary-similarities.js $DIR/atlas-as-cell-summaries.jsonld \
+  $DIR/atlas-as-as-cell-summary-similarities.ttl
+minimum similarity 0
+sc_transcriptomics 128
+sc_proteomics 24
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  node ./src/compute-cell-summary-similarities.js $DIR/atlas-lq-as-cell-summaries.jsonld \
+    $DIR/cell-summaries.jsonld $DIR/atlas-lq-extraction-site-as-cell-summaries.jsonld \
+    $DIR/atlas-lq-cell-summary-similarities.ttl
+
+  MIN_SIMILARITY=0 node ./src/compute-cell-summary-similarities.js $DIR/atlas-lq-as-cell-summaries.jsonld \
+    $DIR/atlas-lq-as-as-cell-summary-similarities.ttl
+fi
+
+real	27m16.126s
+user	27m2.847s
+sys	1m0.801s
+
+>> Running scripts/60-enrich-dataset-graphs.sh...
+
+DIR=$RAW_DIR/$VERSION
+
+node ./src/enrich-dataset-graph.js \
+  $DIR/atlas-dataset-graph.jsonld \
+  $DIR/collisions.jsonld \
+  $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
+  $DIR/atlas-extraction-site-cell-summaries.jsonld \
+  $DIR/atlas-enriched-dataset-graph.jsonld
+
+node ./src/enrich-dataset-graph.js \
+  $DIR/test-dataset-graph.jsonld \
+  $DIR/collisions.jsonld \
+  $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
+  $DIR/test-atlas-extraction-site-as-cell-summaries.jsonld \
+  $DIR/test-atlas-enriched-dataset-graph.jsonld
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  node ./src/enrich-dataset-graph.js \
+    $DIR/atlas-lq-dataset-graph.jsonld \
+    $DIR/collisions.jsonld \
+    $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
+    $DIR/atlas-lq-extraction-site-cell-summaries.jsonld \
+    $DIR/atlas-lq-enriched-dataset-graph.jsonld
+
+  node ./src/enrich-dataset-graph.js \
+    $DIR/test-dataset-graph.jsonld \
+    $DIR/collisions.jsonld \
+    $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
+    $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld \
+    $DIR/test-atlas-lq-enriched-dataset-graph.jsonld
+fi
+
+real	0m12.667s
+user	0m7.817s
+sys	0m6.678s
+
+>> Running scripts/70-create-internal-blazegraph.sh...
+
+DIR=$RAW_DIR/$VERSION
+JNL=$DIR/blazegraph.jnl
+rm -f $JNL
+
+HRA_POP=https://purl.humanatlas.io/graph/hra-pop
+HRA_POP_LQ=https://purl.humanatlas.io/graph/hra-pop-lq
+HRA_POP_FULL=https://purl.humanatlas.io/ds-graph/hra-pop-full
+CCF=https://purl.humanatlas.io/graph/ccf
+CTANN_CROSSWALKS=https://purl.humanatlas.io/graph/ctann-crosswalks
+
+run_ndjsonld() {
+  QUADS=${1%.jsonld}.nq
+  ndjsonld canonize $1 $QUADS -c ccf-context.jsonld 
+  blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
+}
+
+run_jsonld() {
+  QUADS=${1%.jsonld}.nq
+  ./src/jsonld-to-nq.js $1 $QUADS
+  blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
+}
+
+# Atlas
+run_jsonld $DIR/atlas-enriched-dataset-graph.jsonld $HRA_POP
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:23:10 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1014449504
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:23:10:836[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/atlas-enriched-dataset-graph.nq[0m
+[36m[1m2024.04.23 14:23:21:054[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    1602599 stmts added in 8.885 secs, rate= 180371, commitLatency=1245ms, {failSet=0,goodSet=0}[0m
+run_jsonld $DIR/atlas-as-cell-summaries.jsonld $HRA_POP
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:23:21 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1014449448
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:23:22:474[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/atlas-as-cell-summaries.nq[0m
+[36m[1m2024.04.23 14:23:23:786[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    38712 stmts added in 0.973 secs, rate= 39786, commitLatency=255ms, {failSet=0,goodSet=0}[0m
+
+# Test Data
+run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:24:43 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1015408320
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:24:43:652[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/test-atlas-enriched-dataset-graph.nq[0m
+[36m[1m2024.04.23 14:25:40:823[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    9729103 stmts added in 55.964 secs, rate= 173845, commitLatency=1128ms, {failSet=0,goodSet=0}[0m
+
+# Full Dataset
+run_jsonld $DIR/full-dataset-graph.jsonld "${HRA_POP_FULL}"
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:25:42 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1015408320
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:25:43:307[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/full-dataset-graph.nq[0m
+[36m[1m2024.04.23 14:25:46:515[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    165018 stmts added in 2.548 secs, rate= 64763, commitLatency=573ms, {failSet=0,goodSet=0}[0m
+
+# Precomputed Atlas distances and similarities
+blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#distances" $DIR/euclidean-distances.ttl
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:25:47 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1015433376
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:25:47:757[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/euclidean-distances.ttl[0m
+[36m[1m2024.04.23 14:25:53:844[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    770040 stmts added in 5.228 secs, rate= 147291, commitLatency=760ms, {failSet=0,goodSet=0}[0m
+blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#similarities" $DIR/atlas-cell-summary-similarities.ttl
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:25:54 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1014449504
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:25:55:144[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/atlas-cell-summary-similarities.ttl[0m
+loading: 144205992 stmts added in 1166.358 secs, rate= 123637, commitLatency=0ms, {failSet=0,goodSet=0}
+[36m[1m2024.04.23 14:45:23:600[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    144205992 stmts added in 1166.358 secs, rate= 123637, commitLatency=1990ms, {failSet=0,goodSet=0}[0m
+blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#as-as-sims" $DIR/atlas-as-as-cell-summary-similarities.ttl
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:45:24 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1015417920
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:45:25:237[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/atlas-as-as-cell-summary-similarities.ttl[0m
+[36m[1m2024.04.23 14:45:27:060[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    48582 stmts added in 1.251 secs, rate= 38834, commitLatency=477ms, {failSet=0,goodSet=0}[0m
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  # Atlas LQ
+  run_jsonld $DIR/atlas-lq-enriched-dataset-graph.jsonld $HRA_POP_LQ
+  run_jsonld $DIR/atlas-lq-as-cell-summaries.jsonld $HRA_POP_LQ
+
+  # Test Data LQ
+  run_jsonld $DIR/test-atlas-lq-enriched-dataset-graph.jsonld "${HRA_POP_LQ}#test-data"
+
+  # Precomputed Atlas LQ distances and similarities
+  blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#distances" $DIR/euclidean-distances.ttl
+  blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#similarities" $DIR/atlas-lq-cell-summary-similarities.ttl
+  blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#as-as-sims" $DIR/atlas-lq-as-as-cell-summary-similarities.ttl
+fi
+
+# Import CCF.OWL
+curl -s $CCF -H "Accept: application/rdf+xml" > $DIR/ccf.owl
+blazegraph-runner load --journal=$JNL "--graph=${CCF}" $DIR/ccf.owl
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:45:29 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1015408320
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:45:30:080[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/ccf.owl[0m
+[36m[1m2024.04.23 14:45:38:590[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    557129 stmts added in 7.802 secs, rate= 71408, commitLatency=572ms, {failSet=0,goodSet=0}[0m
+
+# Import ctann-crosswalks
+curl -s $CTANN_CROSSWALKS -H "Accept: text/turtle" > $DIR/ctann-crosswalks.ttl
+blazegraph-runner load --journal=$JNL "--graph=${CTANN_CROSSWALKS}" $DIR/ctann-crosswalks.ttl
+log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ERROR: com.bigdata.util.config.LogUtil : Could not initialize Log4J logging utility.
+Set system property '-Dlog4j.configuration=file:bigdata/src/resources/logging/log4j.properties'
+  and / or 
+Set system property '-Dlog4j.primary.configuration=file:<installDir>/bigdata/src/resources/logging/log4j.properties'
+
+BlazeGraph(TM) Graph Engine
+
+                   Flexible
+                   Reliable
+                  Affordable
+      Web-Scale Computing for the Enterprise
+
+Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
+
+bl-sice-g7241f3.ads.iu.edu
+Tue Apr 23 14:45:39 EDT 2024
+Linux/5.15.146.1-microsoft-standard-WSL2 amd64
+11th Gen Intel(R) Core(TM) i9-11950H @ 2.60GHz Family 6 Model 141 Stepping 1, GenuineIntel #CPU=16
+Ubuntu 11.0.22
+freeMemory=1016463152
+buildVersion=2.1.4
+gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
+
+Dependency         License                                                                 
+ICU                http://source.icu-project.org/repos/icu/icu/trunk/license.html          
+bigdata-ganglia    http://www.apache.org/licenses/LICENSE-2.0.html                         
+blueprints-core    https://github.com/tinkerpop/blueprints/blob/master/LICENSE.txt         
+colt               http://acs.lbl.gov/software/colt/license.html                           
+commons-codec      http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-fileupload http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-io         http://www.apache.org/licenses/LICENSE-2.0.html                         
+commons-logging    http://www.apache.org/licenses/LICENSE-2.0.html                         
+dsiutils           http://www.gnu.org/licenses/lgpl-2.1.html                               
+fastutil           http://www.apache.org/licenses/LICENSE-2.0.html                         
+flot               http://www.opensource.org/licenses/mit-license.php                      
+high-scale-lib     http://creativecommons.org/licenses/publicdomain                        
+httpclient         http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpclient-cache   http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpcore           http://www.apache.org/licenses/LICENSE-2.0.html                         
+httpmime           http://www.apache.org/licenses/LICENSE-2.0.html                         
+jackson-core       http://www.apache.org/licenses/LICENSE-2.0.html                         
+jetty              http://www.apache.org/licenses/LICENSE-2.0.html                         
+jquery             https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt            
+jsonld             https://raw.githubusercontent.com/jsonld-java/jsonld-java/master/LICENCE
+log4j              http://www.apache.org/licenses/LICENSE-2.0.html                         
+lucene             http://www.apache.org/licenses/LICENSE-2.0.html                         
+nanohttp           http://elonen.iki.fi/code/nanohttpd/#license                            
+rexster-core       https://github.com/tinkerpop/rexster/blob/master/LICENSE.txt            
+river              http://www.apache.org/licenses/LICENSE-2.0.html                         
+semargl            https://github.com/levkhomich/semargl/blob/master/LICENSE               
+servlet-api        http://www.apache.org/licenses/LICENSE-2.0.html                         
+sesame             http://www.openrdf.org/download.jsp                                     
+slf4j              http://www.slf4j.org/license.html                                       
+zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
+
+[36m[1m2024.04.23 14:45:40:136[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+    Loading ./raw-data/v0.10.2/ctann-crosswalks.ttl[0m
+[36m[1m2024.04.23 14:45:41:409[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    15442 stmts added in 0.858 secs, rate= 17997, commitLatency=328ms, {failSet=0,goodSet=0}[0m
+
+real	22m39.679s
+user	120m58.426s
+sys	4m39.871s
+
+>> Running scripts/75-run-reports.sh...
+Creating report: as-ct-b
+Creating report: as-datasets-modality
+Creating report: consortium-breakdown
+Creating report: count-dataset-modality
+Creating report: counts-for-kidney-as
+Creating report: counts-for-tools-by-as
+Creating report: cxg-collections
+Creating report: datasets-ct-bm-data
+Creating report: datasets-with-adipocytes
+Creating report: extraction-site-stats
+Creating report: provider-breakdown
+Creating report: rui-registered-h5ad-datasets
+Creating report: unmapped-cell-ids
+Creating report: application-a1
+Creating report: application-a2p1
+Creating report: application-a2p2
+Creating report: application-a2p3
+Creating report: application-a2p4
+Creating report: cell-and-cell-type-count-by-modality
+Creating report: cell-and-cell-type-count
+Creating report: donor-info
+Creating report: figure-as-as-sim
+Creating report: figure-f4
+Creating report: table-1
+Creating report: table-s1
+Creating report: table-s2
+Creating report: table-s3
+Creating report: table-s4
+Creating report: table-s5
+Creating report: validation-v1
+Creating report: validation-v2p1
+Creating report: validation-v2p2-extra1
+Creating report: validation-v2p2-extra2
+Creating report: validation-v2p2-extra3
+Creating report: validation-v2p2
+Creating report: validation-v2p3
+Creating report: validation-v3.edges
+Creating report: validation-v3.nodes
+Creating report: validation-v4
+Creating report: validation-v5
+Creating report: validation-v6
+Creating report: as-cnt-per-organ
+Creating report: as-cnt
+Creating report: count-ct-per-tool
+Creating report: ct-per-organ-per-tool
+Creating report: named-graphs
+Creating report: consortium-breakdown
+Creating report: count-consortium-breakdown
+Creating report: count-consortium-datasets
+Creating report: count-dataset-samples
+Creating report: count-datasets
+Creating report: count-donors-portals
+Creating report: count-donors-samples
+Creating report: count-donors
+Creating report: count-extraction-sites-with-slice
+Creating report: count-extraction-sites
+Creating report: count-sample-description
+Creating report: count-samples
+Creating report: count-spatial-placements
+Creating report: cxg-collections
+Creating report: dataset-cell-count-check
+Creating report: dataset-info
+Creating report: dataset-publications
+Creating report: donor-info
+Creating report: donors-portals
+Creating report: extraction-site-slices
+Creating report: extraction-sites
+Creating report: heart-and-lung-datasets
+Creating report: kidney-and-lung-datasets
+Creating report: popv-cells
+Creating report: rui-registered-datasets
+Creating report: sample-info
+Creating report: spatial-and-bulk-datasets-breakdown
+Creating report: spatial-and-bulk-datasets
+Creating report: spatial-placements
+
+real	40m40.976s
+user	358m59.870s
+sys	19m9.632s
+
+>> Running scripts/80-publish-results.sh...
+
+DIR=$RAW_DIR/$VERSION
+OUT=$OUTPUT_DIR/$VERSION
+
+mkdir -p $OUT
+
+cp $DIR/atlas-enriched-dataset-graph.jsonld $OUT
+cp $DIR/atlas-as-cell-summaries.jsonld $OUT
+
+if [ "$COMPUTE_LQ" == "true" ]; then
+  cp $DIR/atlas-lq-enriched-dataset-graph.jsonld $OUT
+  cp $DIR/atlas-lq-as-cell-summaries.jsonld $OUT
+fi
+
+cp $DIR/non-atlas-dataset-graph.csv $OUT
+cp $DIR/all-dataset-graph.csv $OUT
+
+cp -r $DIR/reports $OUT
+cp -r $DIR/corridors $OUT
+
+node src/gen-report-markdown.js $OUT/REPORTS.md queries $OUT/reports
+
+for file in `find $OUT -name "*.*" -size +95M`; do
+  zip -j ${file}.zip $file
+  rm $file
+done
+
+CREATION_DATE=$(date)
+echo "$CREATION_DATE" > $OUT/CREATION_DATE
+
+node src/gen-readme.js $VERSION "$CREATION_DATE" $OUT/README.md
+
+real	0m2.561s
+user	0m2.972s
+sys	0m0.788s
+
+
+Run finished on Tue Apr 23 03:26:25 PM EDT 2024
