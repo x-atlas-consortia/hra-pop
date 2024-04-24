@@ -1,6 +1,7 @@
 Organ,H5AD,AS3D,AS,CT,Azimuth,CellTypist,popV,hasReferenceOrgan
 blood,2525,0,1,29,41,26,18,
 bone marrow,131,0,1,47,43,39,14,
+breast mammary gland,1,18,3,10,0,0,14,x
 eye,204,96,41,58,0,0,27,x
 heart,254,34,1190,68,25,49,6,x
 hippocampal gyrus (formation),4,0,4,45,0,20,0,
@@ -12,13 +13,12 @@ liver,71,46,859,43,25,35,12,x
 lung,531,141,949,208,78,71,36,x
 lymph node,0,16,35,46,0,28,22,x
 male reproductive system,0,18,1189,77,0,0,13,x
-mammary gland,1,18,3,10,0,0,14,x
 mesenteric lymph node,16,16,1,1,0,0,22,x
 palatine tonsil,0,4,98,22,81,0,0,x
 pancreas,14,11,26,30,11,9,14,x
 prostate,34,18,1187,77,0,0,13,x
 skeletal muscle tissue,0,0,1,0,0,18,0,
-skin of body,53,2,19,48,0,23,21,x
+skin,53,2,19,48,0,23,21,x
 small intestine,177,23,43,35,0,0,16,x
 spleen,39,12,88,71,0,32,22,x
 thoracic thymus,47,6,796,61,0,0,21,x

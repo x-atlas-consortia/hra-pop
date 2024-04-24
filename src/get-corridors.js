@@ -5,7 +5,7 @@ import { join } from 'path';
 const REGISTRATIONS = process.argv[2];
 const OUTPUT = process.argv[3];
 const VERSION = process.env.VERSION;
-const BASE_URI = `https://cdn.humanatlas.io/digital-objects/graph/hra-pop/${VERSION}/assets/`;
+const BASE_URI = `https://cdn.humanatlas.io/digital-objects/graph/hra-pop/${VERSION}/assets/corridors/`;
 const CORRIDOR_CACHE = 'raw-data/corridor-cache';
 const CORRIDOR_DIR = `raw-data/${VERSION}/corridors`;
 const donors = JSON.parse(readFileSync(REGISTRATIONS).toString());

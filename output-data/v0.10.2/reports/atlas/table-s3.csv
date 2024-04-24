@@ -1516,9 +1516,9 @@ VHFLung,Lateral segmental bronchus,Multiciliated (non-nasal),http://purl.obolibr
 VHFLung,Lateral segmental bronchus,Myofibroblasts,http://purl.obolibrary.org/obo/CL_0000186,83.33333333333333333333,1500
 VHFLung,Lateral segmental bronchus,NK cells,http://purl.obolibrary.org/obo/CL_0000623,57.2,858
 VHFLung,Lateral segmental bronchus,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,7.33333333333333333333,66
-VHFLung,Lateral segmental bronchus,Non-classical monocytes,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,467.83333333333333333333,8421
+VHFLung,Lateral segmental bronchus,Non-classical monocytes,http://purl.obolibrary.org/obo/CL_0000875,467.83333333333333333333,8421
 VHFLung,Lateral segmental bronchus,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,87.6,1314
-VHFLung,Lateral segmental bronchus,Pericytes,http://purl.obolibrary.org/obo/CL_0000669,138.66666666666666666667,2496
+VHFLung,Lateral segmental bronchus,Pericytes,http://purl.obolibrary.org/obo/CL_0009089,138.66666666666666666667,2496
 VHFLung,Lateral segmental bronchus,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,7.33333333333333333333,66
 VHFLung,Lateral segmental bronchus,Plasmacytoid DCs,http://purl.obolibrary.org/obo/CL_0000784,8,72
 VHFLung,Lateral segmental bronchus,SM activated stress response,http://purl.obolibrary.org/obo/CL_0000313,23,69
@@ -1604,9 +1604,9 @@ VHFLung,Right Lateral Bronchopulmonary Segment,Multiciliated (non-nasal),http://
 VHFLung,Right Lateral Bronchopulmonary Segment,Myofibroblasts,http://purl.obolibrary.org/obo/CL_0000186,83.33333333333333333333,1500
 VHFLung,Right Lateral Bronchopulmonary Segment,NK cells,http://purl.obolibrary.org/obo/CL_0000623,57.2,858
 VHFLung,Right Lateral Bronchopulmonary Segment,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,7.33333333333333333333,66
-VHFLung,Right Lateral Bronchopulmonary Segment,Non-classical monocytes,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,467.83333333333333333333,8421
+VHFLung,Right Lateral Bronchopulmonary Segment,Non-classical monocytes,http://purl.obolibrary.org/obo/CL_0000875,467.83333333333333333333,8421
 VHFLung,Right Lateral Bronchopulmonary Segment,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,87.6,1314
-VHFLung,Right Lateral Bronchopulmonary Segment,Pericytes,http://purl.obolibrary.org/obo/CL_0000669,138.66666666666666666667,2496
+VHFLung,Right Lateral Bronchopulmonary Segment,Pericytes,http://purl.obolibrary.org/obo/CL_0009089,138.66666666666666666667,2496
 VHFLung,Right Lateral Bronchopulmonary Segment,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,7.33333333333333333333,66
 VHFLung,Right Lateral Bronchopulmonary Segment,Plasmacytoid DCs,http://purl.obolibrary.org/obo/CL_0000784,8,72
 VHFLung,Right Lateral Bronchopulmonary Segment,SM activated stress response,http://purl.obolibrary.org/obo/CL_0000313,23,69
@@ -1692,9 +1692,9 @@ VHFLung,Right Medial Bronchopulmonary Segment,Multiciliated (non-nasal),http://p
 VHFLung,Right Medial Bronchopulmonary Segment,Myofibroblasts,http://purl.obolibrary.org/obo/CL_0000186,83.33333333333333333333,1500
 VHFLung,Right Medial Bronchopulmonary Segment,NK cells,http://purl.obolibrary.org/obo/CL_0000623,57.2,858
 VHFLung,Right Medial Bronchopulmonary Segment,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,7.33333333333333333333,66
-VHFLung,Right Medial Bronchopulmonary Segment,Non-classical monocytes,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,467.83333333333333333333,8421
+VHFLung,Right Medial Bronchopulmonary Segment,Non-classical monocytes,http://purl.obolibrary.org/obo/CL_0000875,467.83333333333333333333,8421
 VHFLung,Right Medial Bronchopulmonary Segment,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,87.6,1314
-VHFLung,Right Medial Bronchopulmonary Segment,Pericytes,http://purl.obolibrary.org/obo/CL_0000669,138.66666666666666666667,2496
+VHFLung,Right Medial Bronchopulmonary Segment,Pericytes,http://purl.obolibrary.org/obo/CL_0009089,138.66666666666666666667,2496
 VHFLung,Right Medial Bronchopulmonary Segment,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,7.33333333333333333333,66
 VHFLung,Right Medial Bronchopulmonary Segment,Plasmacytoid DCs,http://purl.obolibrary.org/obo/CL_0000784,8,72
 VHFLung,Right Medial Bronchopulmonary Segment,SM activated stress response,http://purl.obolibrary.org/obo/CL_0000313,23,69
@@ -4494,7 +4494,7 @@ VHMLung,Lateral segmental bronchus,Multiciliated (non-nasal),http://purl.obolibr
 VHMLung,Lateral segmental bronchus,Myofibroblasts,http://purl.obolibrary.org/obo/CL_0000186,68.83333333333333333333,4956
 VHMLung,Lateral segmental bronchus,NK cells,http://purl.obolibrary.org/obo/CL_0000623,41.77777777777777777778,2256
 VHMLung,Lateral segmental bronchus,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,10.6,318
-VHMLung,Lateral segmental bronchus,Non-classical monocytes,http://purl.obolibrary.org/obo/CL_0000875,239.75,17262
+VHMLung,Lateral segmental bronchus,Non-classical monocytes,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,239.75,17262
 VHMLung,Lateral segmental bronchus,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,142.77777777777777777778,7710
 VHMLung,Lateral segmental bronchus,Pericytes,http://purl.obolibrary.org/obo/CL_0000669,82,5904
 VHMLung,Lateral segmental bronchus,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,16.11111111111111111111,870
@@ -4680,7 +4680,7 @@ VHMLung,Right Lateral Bronchopulmonary Segment,Multiciliated (non-nasal),http://
 VHMLung,Right Lateral Bronchopulmonary Segment,Myofibroblasts,http://purl.obolibrary.org/obo/CL_0000186,83.31914893617021276596,7832
 VHMLung,Right Lateral Bronchopulmonary Segment,NK cells,http://purl.obolibrary.org/obo/CL_0000623,67.45945945945945945946,4992
 VHMLung,Right Lateral Bronchopulmonary Segment,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,172.68292682926829268293,7080
-VHMLung,Right Lateral Bronchopulmonary Segment,Non-classical monocytes,http://purl.obolibrary.org/obo/CL_0000875,522.5,49115
+VHMLung,Right Lateral Bronchopulmonary Segment,Non-classical monocytes,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,522.5,49115
 VHMLung,Right Lateral Bronchopulmonary Segment,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,149.98461538461538461538,9749
 VHMLung,Right Lateral Bronchopulmonary Segment,Pericytes,http://purl.obolibrary.org/obo/CL_0000669,269.07446808510638297872,25293
 VHMLung,Right Lateral Bronchopulmonary Segment,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,75.78947368421052631579,5760
@@ -4777,9 +4777,9 @@ VHMLung,Right Medial Bronchopulmonary Segment,Multiciliated (non-nasal),http://p
 VHMLung,Right Medial Bronchopulmonary Segment,Myofibroblasts,http://purl.obolibrary.org/obo/CL_0000186,141.24193548387096774194,8757
 VHMLung,Right Medial Bronchopulmonary Segment,NK cells,http://purl.obolibrary.org/obo/CL_0000623,124.12962962962962962963,6703
 VHMLung,Right Medial Bronchopulmonary Segment,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,388.54838709677419354839,12045
-VHMLung,Right Medial Bronchopulmonary Segment,Non-classical monocytes,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,966.24193548387096774194,59907
+VHMLung,Right Medial Bronchopulmonary Segment,Non-classical monocytes,http://purl.obolibrary.org/obo/CL_0000875,966.24193548387096774194,59907
 VHMLung,Right Medial Bronchopulmonary Segment,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,115.15151515151515151515,3800
-VHMLung,Right Medial Bronchopulmonary Segment,Pericytes,http://purl.obolibrary.org/obo/CL_0009089,666.69354838709677419355,41335
+VHMLung,Right Medial Bronchopulmonary Segment,Pericytes,http://purl.obolibrary.org/obo/CL_0000669,666.69354838709677419355,41335
 VHMLung,Right Medial Bronchopulmonary Segment,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,178.11290322580645161290,11043
 VHMLung,Right Medial Bronchopulmonary Segment,Plasmacytoid DCs,http://purl.obolibrary.org/obo/CL_0000784,24.16666666666666666667,1160
 VHMLung,Right Medial Bronchopulmonary Segment,SM activated stress response,http://purl.obolibrary.org/obo/CL_0000313,29.46428571428571428571,825
