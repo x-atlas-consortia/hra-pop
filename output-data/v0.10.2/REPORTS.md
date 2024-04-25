@@ -33,6 +33,7 @@
   * [Table S3 (table-s3)](#table-s3)
   * [Table S4 (table-s4)](#table-s4)
   * [Table S5 (table-s5)](#table-s5)
+  * [Validation of B mean expressions (validation-b-mean-expression)](#validation-b-mean-expression)
   * [Validation V1 (validation-v1)](#validation-v1)
   * [Validation V2P1 (validation-v2p1)](#validation-v2p1)
   * [Validation V2P2 (Extra 1) (validation-v2p2-extra1)](#validation-v2p2-extra1)
@@ -2808,6 +2809,77 @@ ORDER BY DESC(?total_collision_percentage)
 | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | VHFHeart | heart | Posteromedial head of posterior papillary muscle of left ventricle | http://purl.org/sig/ont/fma/fma7267 | 631.125 | 4401.498768462402 | 7425 | 8.562 |
 | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | VHFHeart | heart | heart left ventricle | http://purl.obolibrary.org/obo/UBERON_0002084 | 3549.1499999999996 | 229312.7801882646 | 7425 | 8.562 |
 | http://purl.org/ccf/1.5/fdb0d1f7-94d5-4628-b345-dbe4975966fd | VHMHeart | heart | heart left ventricle | http://purl.obolibrary.org/obo/UBERON_0002084 | 838.3499999999999 | 121604.2070274211 | 2430 | 8.463000000000001 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="validation-b-mean-expression"></a>Validation of B mean expressions (validation-b-mean-expression)
+
+Atlas Datasets and their cell types and biomarkers. There is one CT-BM expression per row.
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Validation of B mean expressions
+#+ description: Atlas Datasets and their cell types and biomarkers. There is one CT-BM expression per row.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT
+  ?tool
+  ?modality
+  ?organ_id
+  ?organ_label
+  ?dataset_id
+  ?cell_id
+  ?cell_label
+  ?gene_label
+  ?mean_gene_expression_value
+FROM HRApop:
+FROM CCF:
+WHERE {
+  ?dataset_id rdf:type ccf:Dataset ;
+    ccf:organ_id ?organ_iri ;
+    ccf:has_cell_summary [
+    ccf:cell_annotation_method ?tool ;
+    ccf:modality ?modality ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_iri ;
+      ccf:cell_label ?cell_label ;
+      ccf:gene_expr [
+        ccf:gene_label ?gene_label ;
+        ccf:mean_gene_expr_value ?mean_gene_expression_value ;
+      ]
+    ]
+  ] .
+
+  ?organ_iri rdfs:label ?organ_label .
+  BIND(REPLACE(REPLACE(STR(?organ_iri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?organ_id)
+  BIND(REPLACE(REPLACE(STR(?cell_iri), STR(CL:), 'CL:'), STR(ASCTB-TEMP:), 'ASCTB-TEMP:') as ?cell_id)
+}
+
+```
+
+([View Source](../../queries/atlas/validation-b-mean-expression.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/validation-b-mean-expression.csv))
+
+| tool | modality | organ_id | organ_label | dataset_id | cell_id | cell_label | gene_label | mean_gene_expression_value |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| azimuth | sc_transcriptomics | UBERON:0002113 | kidney | https://entity.api.hubmapconsortium.org/entities/a69367866979f878635b2b665a6a7e0c | CL:1000850 | Macula Densa | ERBB4 | 1.959468722343445 |
+| azimuth | sc_transcriptomics | UBERON:0002113 | kidney | https://entity.api.hubmapconsortium.org/entities/a69367866979f878635b2b665a6a7e0c | CL:1000850 | Macula Densa | ENOX1 | 0.2360677421092987 |
+| azimuth | sc_transcriptomics | UBERON:0002113 | kidney | https://entity.api.hubmapconsortium.org/entities/a69367866979f878635b2b665a6a7e0c | CL:1000850 | Macula Densa | PAPPA2 | 0.271940141916275 |
+| azimuth | sc_transcriptomics | UBERON:0002113 | kidney | https://entity.api.hubmapconsortium.org/entities/a69367866979f878635b2b665a6a7e0c | CL:1000850 | Macula Densa | NOS1 | 0.06609848141670227 |
+| azimuth | sc_transcriptomics | UBERON:0002113 | kidney | https://entity.api.hubmapconsortium.org/entities/a69367866979f878635b2b665a6a7e0c | CL:1000850 | Macula Densa | CALCR | 0.1171969622373581 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
