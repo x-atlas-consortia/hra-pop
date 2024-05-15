@@ -75,6 +75,7 @@
   * [Universe Extraction Sites with `slice_count`s Count (extraction-site-slices)](#extraction-site-slices)
   * [Universe Extraction Sites with `slice_count`s Count (extraction-sites)](#extraction-sites)
   * [Heart and Lung dataset info (heart-and-lung-datasets)](#heart-and-lung-datasets)
+  * [high-level-stats](#high-level-stats)
   * [Kidney and Lung dataset info (kidney-and-lung-datasets)](#kidney-and-lung-datasets)
   * [Popv cells information (popv-cells)](#popv-cells)
   * [RUI Registered H5AD Dataset and TB Count (rui-registered-datasets)](#rui-registered-datasets)
@@ -6087,6 +6088,65 @@ ORDER BY ?organ ?portal ?dataset
 | Female | https://api.cellxgene.cziscience.com/dp/v1/collections/3116d060-0a8e-4767-99bb-e866badea1ed#AH1$interventricular%20septum | Heart | 6 | false | true | false | true | false | CxG | Spatially resolved multiomics of human cardiac niches | https://doi.org/10.1038/s41586-023-06311-1 | Kazumasa Kanemaru |
 | Female | https://api.cellxgene.cziscience.com/dp/v1/collections/3116d060-0a8e-4767-99bb-e866badea1ed#AH1$sinoatrial%20node | Heart | 4 | false | true | false | true | false | CxG | Spatially resolved multiomics of human cardiac niches | https://doi.org/10.1038/s41586-023-06311-1 | Kazumasa Kanemaru |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="high-level-stats"></a>high-level-stats
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+SELECT ?label ?count
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+FROM <https://purl.humanatlas.io/graph/hra-pop#test-data>
+FROM <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+WHERE {
+  # hint:Query hint:analytic "true" .
+
+  {
+    SELECT ("nodes" as ?label) (COUNT(DISTINCT(?s)) as ?count)
+    WHERE {
+      {
+        ?s ?p1 [] .
+      }
+      UNION
+      {
+        [] ?p2 ?s .
+        FILTER(isIRI(?s)) 
+      }
+    }
+  }
+  UNION
+  {
+    SELECT ("edges" as ?label) (COUNT(*) as ?count)
+    WHERE {
+      ?s ?p ?o .
+    }
+  }
+  # UNION
+  # {
+  #   SELECT ("# Edge Types" as ?label) (COUNT(DISTINCT(?p)) as ?count)
+  #   WHERE {
+  #     ?s ?p ?o .
+  #   }
+  # }
+}
+ORDER BY DESC(?label)
+
+
+```
+
+([View Source](../../queries/universe-ad-hoc/high-level-stats.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/high-level-stats.csv))
+
+| label | count |
+| :--- | :--- |
+| nodes | 2212274 |
+| edges | 11410953 |
 
 
 ### <a id="kidney-and-lung-datasets"></a>Kidney and Lung dataset info (kidney-and-lung-datasets)
