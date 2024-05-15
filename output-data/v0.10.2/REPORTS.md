@@ -67,6 +67,7 @@
   * [Universe Sample Count (count-samples)](#count-samples)
   * [Universe Spatial Placement Count (count-spatial-placements)](#count-spatial-placements)
   * [Universe CxG collections (cxg-collections)](#cxg-collections)
+  * [data-provenance](#data-provenance)
   * [dataset-cell-count-check](#dataset-cell-count-check)
   * [Dataset information (dataset-info)](#dataset-info)
   * [Dataset Publications (dataset-publications)](#dataset-publications)
@@ -5603,6 +5604,100 @@ ORDER BY DESC(?dataset_count)
 | :--- | :--- |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72 | 82 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837 | 9 |
+
+
+### <a id="data-provenance"></a>data-provenance
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT ?label ?count
+FROM CCF:
+FROM HRApop:
+FROM HRApopFull:
+FROM HRApopTestData:
+WHERE {
+  {
+    SELECT ("HuBMAP datasets" as ?label) (COUNT(DISTINCT ?dataset) as ?count) (1 as ?order)
+    WHERE {
+      ?dataset a ccf:Dataset .
+      FILTER(STRSTARTS(STR(?dataset), "https://entity.api.hubmapconsortium.org/entities/"))
+    }
+  }
+  UNION
+  {
+    SELECT ("SenNet datasets" as ?label) (COUNT(DISTINCT ?dataset) as ?count) (2 as ?order)
+    WHERE {
+      ?dataset a ccf:Dataset .
+      FILTER(STRSTARTS(STR(?dataset), "https://entity.api.sennetconsortium.org/entities/"))
+    }
+  }
+  UNION
+  {
+    SELECT ("tissue donors" as ?label) (COUNT(DISTINCT ?donor) as ?count) (3 as ?order)
+    WHERE {
+      ?donor a ccf:Donor .
+    }
+  }
+  UNION
+  {
+    SELECT ("organs" as ?label) (COUNT(DISTINCT ?organ) as ?count) (4 as ?order)
+    WHERE {
+      ?as ccf:has_cell_summary [] .
+      [] ccf:representation_of ?as ;
+        ccf:has_reference_organ [
+          ccf:representation_of ?organ ;
+        ] .
+    }
+  }
+  UNION
+  {
+    SELECT ("anatomical structures" as ?label) (COUNT(DISTINCT ?as) as ?count) (5 as ?order)
+    WHERE {
+      ?as ccf:has_cell_summary [] .
+      [] ccf:representation_of ?as .
+    }
+  }
+  UNION
+  {
+    SELECT ("cells" as ?label) (SUM(?cell_count) as ?count) (6 as ?order)
+    WHERE {
+      [] a ccf:Dataset ;
+         ccf:has_cell_summary [
+            ccf:has_cell_summary_row [
+              ccf:cell_count ?cell_count ;
+            ] ;
+         ] .
+    }
+  }
+}
+ORDER BY ?order
+
+
+```
+
+([View Source](../../queries/universe-ad-hoc/data-provenance.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/data-provenance.csv))
+
+| label | count |
+| :--- | :--- |
+| HuBMAP datasets | 2472 |
+| SenNet datasets | 236 |
+| tissue donors | 5633 |
+| organs | 13 |
+| anatomical structures | 40 |
+| cells | 59315578 |
 
 
 ### <a id="dataset-cell-count-check"></a>dataset-cell-count-check
