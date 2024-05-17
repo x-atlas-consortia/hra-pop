@@ -3944,12 +3944,12 @@ outs:
         etag: 5a1477fe9f2d45c01ac5333d62723d9d
         version_id: 0Pz.dfHOsDr85Q.hdQVq41hYer47nDn6
   - relpath: reports/atlas/validation-v6.csv
-    md5: f41176fcecd47e23380b5689fb6e57ec
-    size: 1042868
+    md5: 59542515ef9e72500d9c72d09148276e
+    size: 1208158
     cloud:
       s3:
-        etag: f41176fcecd47e23380b5689fb6e57ec
-        version_id: rvIO33WFKSRp2DwCYtYeGZIRbs0vJxUh
+        etag: 59542515ef9e72500d9c72d09148276e
+        version_id: srrK3znhSRHC0E3VoVThWNo_hBTnz02L
   - relpath: reports/hra/as-cnt-per-organ.csv
     md5: b3c611f0d191446b3ba5f83d88d41198
     size: 1076
