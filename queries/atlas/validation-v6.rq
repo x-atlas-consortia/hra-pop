@@ -28,9 +28,12 @@ SELECT DISTINCT
   ?cell_count
   ?percentage
   ?asct_relation_in_asctb_table
+  ?indirect_asct_relation_in_asctb_table
 FROM HRApop:
 FROM CCF:
 WHERE {
+  hint:Query hint:analytic "true" .
+
   ?as3d_id
     ccf:has_reference_organ ?ref_organ ;
     ccf:representation_of ?as_iri .
@@ -56,7 +59,18 @@ WHERE {
   ?as_iri rdfs:label ?as .
   BIND(REPLACE(REPLACE(STR(?as_iri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?as_id)
 
-  BIND(EXISTS {
+  OPTIONAL {
+    ?as_iri ccf:has_cell_summary [] .
+    ?as_child_iri ccf:ccf_part_of* ?as_iri .
+    FILTER(?as_iri != ?as_child_iri)
+    hint:SubQuery hint:runOnce true .
+  }
+
+  BIND(EXISTS { 
     ?cell_iri ccf:ccf_located_in ?as_iri .
   } as ?asct_relation_in_asctb_table)
+
+  BIND(EXISTS {
+    ?cell_iri ccf:ccf_located_in ?as_child_iri .
+  } as ?indirect_asct_relation_in_asctb_table)
 }

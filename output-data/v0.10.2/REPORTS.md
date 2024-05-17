@@ -4289,9 +4289,12 @@ SELECT DISTINCT
   ?cell_count
   ?percentage
   ?asct_relation_in_asctb_table
+  ?indirect_asct_relation_in_asctb_table
 FROM HRApop:
 FROM CCF:
 WHERE {
+  hint:Query hint:analytic "true" .
+
   ?as3d_id
     ccf:has_reference_organ ?ref_organ ;
     ccf:representation_of ?as_iri .
@@ -4317,9 +4320,20 @@ WHERE {
   ?as_iri rdfs:label ?as .
   BIND(REPLACE(REPLACE(STR(?as_iri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?as_id)
 
-  BIND(EXISTS {
+  OPTIONAL {
+    ?as_iri ccf:has_cell_summary [] .
+    ?as_child_iri ccf:ccf_part_of* ?as_iri .
+    FILTER(?as_iri != ?as_child_iri)
+    hint:SubQuery hint:runOnce true .
+  }
+
+  BIND(EXISTS { 
     ?cell_iri ccf:ccf_located_in ?as_iri .
   } as ?asct_relation_in_asctb_table)
+
+  BIND(EXISTS {
+    ?cell_iri ccf:ccf_located_in ?as_child_iri .
+  } as ?indirect_asct_relation_in_asctb_table)
 }
 
 ```
@@ -4329,14 +4343,14 @@ WHERE {
 
 #### Results ([View CSV File](reports/atlas/validation-v6.csv))
 
-| sex | tool | modality | organ | organId | as | as_id | cell_id | cell_label | cell_count | percentage | asct_relation_in_asctb_table |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Male | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0009011 | transit amplifying cell of colon | 53.79000000000001 | 0.007974481658692186 | true |
-| Female | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0009011 | transit amplifying cell of colon | 62.937 | 0.02086911714187565 | true |
-| Male | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0000786 | plasma cell | 53.464 | 0.007926151466821322 | true |
-| Female | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0000786 | plasma cell | 80.031 | 0.02653727241497767 | true |
-| Male | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0000097 | mast cell | 6.194 | 9.182736455463727E-4 | true |
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| sex | tool | modality | organ | organId | as | as_id | cell_id | cell_label | cell_count | percentage | asct_relation_in_asctb_table | indirect_asct_relation_in_asctb_table |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Male | azimuth | sc_transcriptomics | right kidney | UBERON:0004539 | renal column | UBERON:0001284 | CL:1000452 | Parietal Epithelial | 6.816 | 4.795013186286263E-4 | false | true |
+| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | right cardiac atrium | UBERON:0002078 | CL:0000492 | CD4+T_Tfh | 1.87 | 1.320219156379959E-4 | false | true |
+| Male | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney capsule | UBERON:0002015 | CL:1000717 | Outer Medullary Collecting Duct Intercalated Type A | 10.062 | 0.007042253521126757 | false | true |
+| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0001050 | CD8+T_te | 3.315 | 9.569377990430622E-4 | false | true |
+| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0000625 | CD8+T_trans | 4.08 | 0.00117776959882223 | false | true |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="as-cnt-per-organ"></a>Count of Anatomical Structures by Organ (as-cnt-per-organ)
