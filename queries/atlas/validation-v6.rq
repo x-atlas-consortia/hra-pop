@@ -27,6 +27,7 @@ SELECT DISTINCT
   ?cell_label
   ?cell_count
   ?percentage
+  ?asct_relation_in_asctb_table
 FROM HRApop:
 FROM CCF:
 WHERE {
@@ -54,4 +55,8 @@ WHERE {
 
   ?as_iri rdfs:label ?as .
   BIND(REPLACE(REPLACE(STR(?as_iri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?as_id)
+
+  BIND(EXISTS {
+    ?cell_iri ccf:ccf_located_in ?as_iri .
+  } as ?asct_relation_in_asctb_table)
 }

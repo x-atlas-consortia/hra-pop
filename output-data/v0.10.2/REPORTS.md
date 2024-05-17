@@ -4288,6 +4288,7 @@ SELECT DISTINCT
   ?cell_label
   ?cell_count
   ?percentage
+  ?asct_relation_in_asctb_table
 FROM HRApop:
 FROM CCF:
 WHERE {
@@ -4315,6 +4316,10 @@ WHERE {
 
   ?as_iri rdfs:label ?as .
   BIND(REPLACE(REPLACE(STR(?as_iri), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?as_id)
+
+  BIND(EXISTS {
+    ?cell_iri ccf:ccf_located_in ?as_iri .
+  } as ?asct_relation_in_asctb_table)
 }
 
 ```
@@ -4324,14 +4329,14 @@ WHERE {
 
 #### Results ([View CSV File](reports/atlas/validation-v6.csv))
 
-| sex | tool | modality | organ | organId | as | as_id | cell_id | cell_label | cell_count | percentage |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | CL:4030013 | Descending Thin Limb Type 2 | 97485.26899999997 | 0.0496236259049234 |
-| Female | azimuth | sc_transcriptomics | right kidney | UBERON:0004539 | kidney pyramid | UBERON:0004200 | CL:1001109 | Cortical Thick Ascending Limb | 255534.4900000001 | 0.1300765548235334 |
-| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | CL:1001109 | Cortical Thick Ascending Limb | 255534.4900000001 | 0.1300765548235334 |
-| Female | azimuth | sc_transcriptomics | right kidney | UBERON:0004539 | kidney pyramid | UBERON:0004200 | CL:4030012 | Descending Thin Limb Type 1 | 149773.9129999999 | 0.07624048951466239 |
-| Female | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney pyramid | UBERON:0004200 | CL:4030012 | Descending Thin Limb Type 1 | 149773.9129999999 | 0.07624048951466239 |
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| sex | tool | modality | organ | organId | as | as_id | cell_id | cell_label | cell_count | percentage | asct_relation_in_asctb_table |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Male | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0009011 | transit amplifying cell of colon | 53.79000000000001 | 0.007974481658692186 | true |
+| Female | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0009011 | transit amplifying cell of colon | 62.937 | 0.02086911714187565 | true |
+| Male | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0000786 | plasma cell | 53.464 | 0.007926151466821322 | true |
+| Female | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0000786 | plasma cell | 80.031 | 0.02653727241497767 | true |
+| Male | popv | sc_transcriptomics | large intestine | UBERON:0000059 | ascending colon | UBERON:0001156 | CL:0000097 | mast cell | 6.194 | 9.182736455463727E-4 | true |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="as-cnt-per-organ"></a>Count of Anatomical Structures by Organ (as-cnt-per-organ)
