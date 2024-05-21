@@ -39,8 +39,8 @@ SELECT DISTINCT
   ?list_of_colliding_anatomical_structures_mesh
   ?list_of_colliding_anatomical_structures_bb_ids
   ?list_of_colliding_anatomical_structures_mesh_ids
-  (STRAFTER(STR(?dataset), '#') as ?dataset_id)
-  (STRAFTER(STR(?dataset), '#') as ?unique_dataset_id)
+  (STR(?dataset) as ?dataset_id)
+  (STR(?dataset) as ?unique_dataset_id)
   (?dataset_link as ?link_to_h5ad_file)
   (?dataset_modality as ?sc_transcriptomics_or_sc_proteomics)
   (?tool as ?cell_type_annotation_tool)
