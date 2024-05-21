@@ -81,6 +81,7 @@
   * [Popv cells information (popv-cells)](#popv-cells)
   * [RUI Registered H5AD Dataset and TB Count (rui-registered-datasets)](#rui-registered-datasets)
   * [Sample information (sample-info)](#sample-info)
+  * [All Datasets Sankey Data (sankey)](#sankey)
   * [Spatial and bulk dataset breakdown (spatial-and-bulk-datasets-breakdown)](#spatial-and-bulk-datasets-breakdown)
   * [Spatial and bulk dataset information (spatial-and-bulk-datasets)](#spatial-and-bulk-datasets)
   * [Universe Spatial Placements (spatial-placements)](#spatial-placements)
@@ -6673,6 +6674,240 @@ GROUP BY ?sample ?sample_type ?label ?description ?link ?extraction_site ?x_dime
 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$heart%20left%20ventricle_Block | Tissue Block | Registered 10/15/2021, Michela Noseda, Broad Institute | 15 x 14 x 14 millimeter, 14 millimeter | https://doi.org/10.1038/s41586-020-2797-4 | http://purl.org/ccf/1.5/2156f837-2ab2-4305-8e7f-8084249e91cd | 15 | 14 | 14 | Michela Noseda | Michela | Noseda |  | 0 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$heart%20left%20ventricle_Block | Tissue Block | Registered 10/15/2021, Michela Noseda, Broad Institute | 15 x 14 x 14 millimeter, 14 millimeter | https://doi.org/10.1038/s41586-020-2797-4 | http://purl.org/ccf/1.5/2156f837-2ab2-4305-8e7f-8084249e91cd | 15 | 14 | 14 | Michela Noseda | Michela | Noseda |  | 0 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="sankey"></a>All Datasets Sankey Data (sankey)
+
+Report of all datasets used in HRApop
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: All Datasets Sankey Data
+#+ description: Report of all datasets used in HRApop
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT
+  ?portal
+  ?study_paper
+  ?doi
+  ?lead_author
+  ?is_azimuth_reference
+  (STRAFTER(STR(?donor), '#') as ?donor_id)
+  ?donor_sex
+  ?donor_age
+  ?donor_development_stage
+  ?donor_race
+  ?donor_bmi
+  ?organ_name
+  ?organ_name_glb_file
+  (STRAFTER(STR(?block), '#') as ?tissue_block_id)
+  ?tissue_block_volume
+  ?collisions_bb
+  ?collisions_mesh
+  ?list_of_colliding_anatomical_structures_bb
+  ?list_of_colliding_anatomical_structures_mesh
+  ?list_of_colliding_anatomical_structures_bb_ids
+  ?list_of_colliding_anatomical_structures_mesh_ids
+  (STRAFTER(STR(?dataset), '#') as ?dataset_id)
+  (STRAFTER(STR(?dataset), '#') as ?unique_dataset_id)
+  (?dataset_link as ?link_to_h5ad_file)
+  (?dataset_modality as ?sc_transcriptomics_or_sc_proteomics)
+  (?tool as ?cell_type_annotation_tool)
+  ?omap_id
+  ?number_of_cells_total
+  ?number_of_unique_cell_types
+  ?hubmap_dataset_publication_status
+  (BOUND(?rui_location) as ?is_rui_registered)
+  ?is_atlas_dataset
+FROM HRApop:
+FROM HRApopFull:
+FROM HRApopTestData:
+FROM CCF:
+WHERE {
+
+  # Relationships 
+  {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?section .
+    ?section ccf:generates_dataset ?dataset .
+  }
+
+  BIND(EXISTS {
+    GRAPH HRApop: {
+      ?dataset a ccf:Dataset .
+    }
+  } as ?is_atlas_dataset)
+
+  # Data extracted from Donors
+  {
+    ?donor a ccf:Donor ;
+      ccf:consortium_name ?portal ;
+      ccf:tissue_provider_name ?tissue_provider .
+
+    OPTIONAL { ?donor ccf:development_stage ?donor_development_stage . } .
+    OPTIONAL { ?donor ccf:race ?donor_race . } .
+    OPTIONAL { ?donor ccf:age ?donor_age . } .
+    OPTIONAL { ?donor ccf:bmi ?donor_bmi . } .
+  }
+
+  # Data extracted from RUI Locations
+  OPTIONAL {
+    ?block ccf:has_registration_location ?rui_location .
+  
+    # RUI Location
+    {
+      ?rui_location a ccf:SpatialEntity ;
+        ccf:x_dimension ?rui_x ;
+        ccf:y_dimension ?rui_y ;
+        ccf:z_dimension ?rui_z .
+
+      BIND(?rui_x * ?rui_y * ?rui_z as ?tissue_block_volume)
+    }
+
+    # RUI Location Placement
+    {
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+    }
+
+    # Ref Organ Name
+    {
+      ?ref_organ ccf:representation_of ?organ_iri .
+      ?ref_organ ccf:organ_owner_sex ?ref_organ_sex .
+      ?organ_iri rdfs:label ?organ_name .
+    }
+
+    # Ref Organ GLB File
+    {
+      ?some_ref_organ a ?organ_iri ;
+        ccf:organ_owner_sex ?ref_organ_sex ;
+        ccf:has_object_reference [
+          ccf:file_name ?organ_name_glb_file
+        ] .
+    }
+
+    OPTIONAL {
+      SELECT ?rui_location
+        (COUNT(?as_id) as ?collisions_bb)
+        (GROUP_CONCAT(DISTINCT(?as_label); separator="; ") as ?list_of_colliding_anatomical_structures_bb)
+        (GROUP_CONCAT(DISTINCT(?as_id); separator="; ") as ?list_of_colliding_anatomical_structures_bb_ids)
+      WHERE {
+        ?rui_location ccf:collides_with ?as_iri .
+        ?as_iri rdfs:label ?as_label .
+
+        [] a ccf:SpatialPlacement ;
+          ccf:placement_for ?rui_location ;
+          ccf:placement_relative_to [
+            ccf:representation_of ?organ_iri ;
+          ] .
+
+        # Filter out obvious anatomical structures including body and the reference organ
+        FILTER (?as_label != 'body proper' && ?as_iri != ?organ_iri)
+
+        BIND(REPLACE(REPLACE(REPLACE(STR(?as_iri), 'http://purl.obolibrary.org/obo/', ''), '_', ':'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?as_id)
+      }
+      GROUP BY ?rui_location
+    }
+
+    # RUI Location Collision Summary
+    OPTIONAL {
+      SELECT ?rui_location
+        (COUNT(?as_id) as ?collisions_mesh)
+        (GROUP_CONCAT(DISTINCT(?as_label); separator="; ") as ?list_of_colliding_anatomical_structures_mesh)
+        (GROUP_CONCAT(DISTINCT(?as_id); separator="; ") as ?list_of_colliding_anatomical_structures_mesh_ids)
+      WHERE {
+        ?rui_location ccf:has_collision_summary [
+          ccf:has_collision_item [
+            ccf:as_label ?as_label ;
+            ccf:as_id ?as_iri
+          ]
+        ] .
+
+        BIND(REPLACE(REPLACE(REPLACE(STR(?as_iri), 'http://purl.obolibrary.org/obo/', ''), '_', ':'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?as_id)
+      }
+      GROUP BY ?rui_location
+    }
+  }
+  
+  # Data extracted from Dataset
+  {
+    ?dataset a ccf:Dataset ;
+      ccf:url ?dataset_link .
+  }
+
+  OPTIONAL { ?dataset ccf:publication_title ?study_paper . }
+  OPTIONAL { ?dataset ccf:publication ?doi . }
+  OPTIONAL { ?dataset ccf:publication_lead_author ?lead_author . }
+  OPTIONAL { ?dataset hra-pop:is_azimuth_reference ?is_azimuth_reference . }
+  OPTIONAL { ?dataset hra-pop:omap_id ?omap_id . }
+  OPTIONAL { ?dataset hra-pop:hubmap_dataset_publication_status ?hubmap_dataset_publication_status . }
+  OPTIONAL { ?dataset hra-pop:excluded_from_atlas_construction ?excluded_from_atlas_construction . }
+  OPTIONAL { ?dataset hra-pop:reason_for_exclusion ?reason_for_exclusion . }
+
+  # Dataset Cell Summary
+  OPTIONAL {
+    ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
+      ccf:sex ?donor_sex ;
+    ] .
+
+    {
+      SELECT ?dataset 
+        (SUM(?cell_count) as ?number_of_cells_total)
+        (COUNT(DISTINCT(?cell_id)) as ?number_of_unique_cell_types)
+      WHERE {
+        ?dataset ccf:has_cell_summary [
+          ccf:cell_annotation_method ?tool ;
+          ccf:modality ?modality ;
+          ccf:has_cell_summary_row [
+            ccf:cell_id ?cell_id ;
+            ccf:cell_count ?cell_count ;
+          ]
+        ] .
+      }
+      GROUP BY ?dataset
+    }
+  }
+}
+ORDER BY ?unique_dataset_id
+
+```
+
+([View Source](../../queries/universe-ad-hoc/sankey.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/sankey.csv))
+
+| portal | study_paper | doi | lead_author | is_azimuth_reference | donor_id | donor_sex | donor_age | donor_development_stage | donor_race | donor_bmi | organ_name | organ_name_glb_file | tissue_block_id | tissue_block_volume | collisions_bb | collisions_mesh | list_of_colliding_anatomical_structures_bb | list_of_colliding_anatomical_structures_mesh | list_of_colliding_anatomical_structures_bb_ids | list_of_colliding_anatomical_structures_mesh_ids | dataset_id | unique_dataset_id | link_to_h5ad_file | sc_transcriptomics_or_sc_proteomics | cell_type_annotation_tool | omap_id | number_of_cells_total | number_of_unique_cell_types | hubmap_dataset_publication_status | is_rui_registered | is_atlas_dataset |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| HuBMAP |  |  |  |  |  | Female | 25 |  | White | 33.5 | left kidney | VH_F_Kidney_L.glb |  | 8 | 2 | 6 | kidney pyramid; renal medulla | hilum of kidney; renal column; renal pyramid | UBERON:0004200; UBERON:0000362 | UBERON:0008716; UBERON:0001284; UBERON:0004200 |  |  | https://portal.hubmapconsortium.org/browse/dataset/4b5dc6d04aa30a6eb0b224a7ab7d03b3 |  | azimuth |  | 99907 | 43 |  | true | true |
+| HuBMAP |  |  |  |  |  | Female | 25 |  | White | 33.5 | left kidney | VH_F_Kidney_Left.glb |  | 8 | 2 | 6 | kidney pyramid; renal medulla | hilum of kidney; renal column; renal pyramid | UBERON:0004200; UBERON:0000362 | UBERON:0008716; UBERON:0001284; UBERON:0004200 |  |  | https://portal.hubmapconsortium.org/browse/dataset/4b5dc6d04aa30a6eb0b224a7ab7d03b3 |  | azimuth |  | 99907 | 43 |  | true | true |
+| HuBMAP |  |  |  |  |  | Female | 45 |  | White | 22.6 | left kidney | VH_F_Kidney_Left.glb |  | 72 | 7 | 6 | outer cortex of kidney; renal column; kidney pyramid; renal papilla; kidney capsule; renal medulla; cortex of kidney | renal pyramid; renal column; outer cortex of kidney | UBERON:0002189; UBERON:0001284; UBERON:0004200; UBERON:0001228; UBERON:0002015; UBERON:0000362; UBERON:0001225 | UBERON:0004200; UBERON:0001284; UBERON:0002189 |  |  | https://portal.hubmapconsortium.org/browse/dataset/aa93e53df10842c13348a334c8fe423f |  | azimuth |  | 100703 | 44 |  | true | true |
+| HuBMAP |  |  |  |  |  | Female | 45 |  | White | 22.6 | left kidney | VH_F_Kidney_L.glb |  | 72 | 7 | 6 | outer cortex of kidney; renal column; kidney pyramid; renal papilla; kidney capsule; renal medulla; cortex of kidney | renal pyramid; renal column; outer cortex of kidney | UBERON:0002189; UBERON:0001284; UBERON:0004200; UBERON:0001228; UBERON:0002015; UBERON:0000362; UBERON:0001225 | UBERON:0004200; UBERON:0001284; UBERON:0002189 |  |  | https://portal.hubmapconsortium.org/browse/dataset/aa93e53df10842c13348a334c8fe423f |  | azimuth |  | 100703 | 44 |  | true | true |
+| HuBMAP |  |  |  |  |  | Female | 45 |  | White | 22.6 | left kidney | VH_F_Kidney_Left.glb |  | 72 | 7 | 6 | outer cortex of kidney; renal column; kidney pyramid; renal papilla; kidney capsule; renal medulla; cortex of kidney | renal pyramid; renal column; outer cortex of kidney | UBERON:0002189; UBERON:0001284; UBERON:0004200; UBERON:0001228; UBERON:0002015; UBERON:0000362; UBERON:0001225 | UBERON:0004200; UBERON:0001284; UBERON:0002189 |  |  | https://portal.hubmapconsortium.org/browse/dataset/9b99c75de2347b9567e33065108488e8 |  | azimuth |  | 100703 | 44 |  | true | true |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="spatial-and-bulk-datasets-breakdown"></a>Spatial and bulk dataset breakdown (spatial-and-bulk-datasets-breakdown)

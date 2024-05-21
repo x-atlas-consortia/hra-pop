@@ -1,0 +1,208 @@
+#+ summary: All Datasets Sankey Data
+#+ description: Report of all datasets used in HRApop
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT
+  ?portal
+  ?study_paper
+  ?doi
+  ?lead_author
+  ?is_azimuth_reference
+  (STRAFTER(STR(?donor), '#') as ?donor_id)
+  ?donor_sex
+  ?donor_age
+  ?donor_development_stage
+  ?donor_race
+  ?donor_bmi
+  ?organ_name
+  ?organ_name_glb_file
+  (STRAFTER(STR(?block), '#') as ?tissue_block_id)
+  ?tissue_block_volume
+  ?collisions_bb
+  ?collisions_mesh
+  ?list_of_colliding_anatomical_structures_bb
+  ?list_of_colliding_anatomical_structures_mesh
+  ?list_of_colliding_anatomical_structures_bb_ids
+  ?list_of_colliding_anatomical_structures_mesh_ids
+  (STRAFTER(STR(?dataset), '#') as ?dataset_id)
+  (STRAFTER(STR(?dataset), '#') as ?unique_dataset_id)
+  (?dataset_link as ?link_to_h5ad_file)
+  (?dataset_modality as ?sc_transcriptomics_or_sc_proteomics)
+  (?tool as ?cell_type_annotation_tool)
+  ?omap_id
+  ?number_of_cells_total
+  ?number_of_unique_cell_types
+  ?hubmap_dataset_publication_status
+  (BOUND(?rui_location) as ?is_rui_registered)
+  ?is_atlas_dataset
+FROM HRApop:
+FROM HRApopFull:
+FROM HRApopTestData:
+FROM CCF:
+WHERE {
+
+  # Relationships 
+  {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?section .
+    ?section ccf:generates_dataset ?dataset .
+  }
+
+  BIND(EXISTS {
+    GRAPH HRApop: {
+      ?dataset a ccf:Dataset .
+    }
+  } as ?is_atlas_dataset)
+
+  # Data extracted from Donors
+  {
+    ?donor a ccf:Donor ;
+      ccf:consortium_name ?portal ;
+      ccf:tissue_provider_name ?tissue_provider .
+
+    OPTIONAL { ?donor ccf:development_stage ?donor_development_stage . } .
+    OPTIONAL { ?donor ccf:race ?donor_race . } .
+    OPTIONAL { ?donor ccf:age ?donor_age . } .
+    OPTIONAL { ?donor ccf:bmi ?donor_bmi . } .
+  }
+
+  # Data extracted from RUI Locations
+  OPTIONAL {
+    ?block ccf:has_registration_location ?rui_location .
+  
+    # RUI Location
+    {
+      ?rui_location a ccf:SpatialEntity ;
+        ccf:x_dimension ?rui_x ;
+        ccf:y_dimension ?rui_y ;
+        ccf:z_dimension ?rui_z .
+
+      BIND(?rui_x * ?rui_y * ?rui_z as ?tissue_block_volume)
+    }
+
+    # RUI Location Placement
+    {
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+    }
+
+    # Ref Organ Name
+    {
+      ?ref_organ ccf:representation_of ?organ_iri .
+      ?ref_organ ccf:organ_owner_sex ?ref_organ_sex .
+      ?organ_iri rdfs:label ?organ_name .
+    }
+
+    # Ref Organ GLB File
+    {
+      ?some_ref_organ a ?organ_iri ;
+        ccf:organ_owner_sex ?ref_organ_sex ;
+        ccf:has_object_reference [
+          ccf:file_name ?organ_name_glb_file
+        ] .
+    }
+
+    OPTIONAL {
+      SELECT ?rui_location
+        (COUNT(?as_id) as ?collisions_bb)
+        (GROUP_CONCAT(DISTINCT(?as_label); separator="; ") as ?list_of_colliding_anatomical_structures_bb)
+        (GROUP_CONCAT(DISTINCT(?as_id); separator="; ") as ?list_of_colliding_anatomical_structures_bb_ids)
+      WHERE {
+        ?rui_location ccf:collides_with ?as_iri .
+        ?as_iri rdfs:label ?as_label .
+
+        [] a ccf:SpatialPlacement ;
+          ccf:placement_for ?rui_location ;
+          ccf:placement_relative_to [
+            ccf:representation_of ?organ_iri ;
+          ] .
+
+        # Filter out obvious anatomical structures including body and the reference organ
+        FILTER (?as_label != 'body proper' && ?as_iri != ?organ_iri)
+
+        BIND(REPLACE(REPLACE(REPLACE(STR(?as_iri), 'http://purl.obolibrary.org/obo/', ''), '_', ':'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?as_id)
+      }
+      GROUP BY ?rui_location
+    }
+
+    # RUI Location Collision Summary
+    OPTIONAL {
+      SELECT ?rui_location
+        (COUNT(?as_id) as ?collisions_mesh)
+        (GROUP_CONCAT(DISTINCT(?as_label); separator="; ") as ?list_of_colliding_anatomical_structures_mesh)
+        (GROUP_CONCAT(DISTINCT(?as_id); separator="; ") as ?list_of_colliding_anatomical_structures_mesh_ids)
+      WHERE {
+        ?rui_location ccf:has_collision_summary [
+          ccf:has_collision_item [
+            ccf:as_label ?as_label ;
+            ccf:as_id ?as_iri
+          ]
+        ] .
+
+        BIND(REPLACE(REPLACE(REPLACE(STR(?as_iri), 'http://purl.obolibrary.org/obo/', ''), '_', ':'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?as_id)
+      }
+      GROUP BY ?rui_location
+    }
+  }
+  
+  # Data extracted from Dataset
+  {
+    ?dataset a ccf:Dataset ;
+      ccf:url ?dataset_link .
+  }
+
+  OPTIONAL { ?dataset ccf:publication_title ?study_paper . }
+  OPTIONAL { ?dataset ccf:publication ?doi . }
+  OPTIONAL { ?dataset ccf:publication_lead_author ?lead_author . }
+  OPTIONAL { ?dataset hra-pop:is_azimuth_reference ?is_azimuth_reference . }
+  OPTIONAL { ?dataset hra-pop:omap_id ?omap_id . }
+  OPTIONAL { ?dataset hra-pop:hubmap_dataset_publication_status ?hubmap_dataset_publication_status . }
+  OPTIONAL { ?dataset hra-pop:excluded_from_atlas_construction ?excluded_from_atlas_construction . }
+  OPTIONAL { ?dataset hra-pop:reason_for_exclusion ?reason_for_exclusion . }
+
+  # Dataset Cell Summary
+  OPTIONAL {
+    ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
+      ccf:sex ?donor_sex ;
+    ] .
+
+    {
+      SELECT ?dataset 
+        (SUM(?cell_count) as ?number_of_cells_total)
+        (COUNT(DISTINCT(?cell_id)) as ?number_of_unique_cell_types)
+      WHERE {
+        ?dataset ccf:has_cell_summary [
+          ccf:cell_annotation_method ?tool ;
+          ccf:modality ?modality ;
+          ccf:has_cell_summary_row [
+            ccf:cell_id ?cell_id ;
+            ccf:cell_count ?cell_count ;
+          ]
+        ] .
+      }
+      GROUP BY ?dataset
+    }
+  }
+}
+ORDER BY ?unique_dataset_id
