@@ -82,6 +82,7 @@ WHERE {
     OPTIONAL { ?donor ccf:race ?donor_race . } .
     OPTIONAL { ?donor ccf:age ?donor_age . } .
     OPTIONAL { ?donor ccf:bmi ?donor_bmi . } .
+    OPTIONAL { ?donor ccf:sex ?donor_sex . } .
   }
 
   # Data extracted from RUI Locations
