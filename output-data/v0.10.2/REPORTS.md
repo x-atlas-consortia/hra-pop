@@ -7,6 +7,7 @@
   * [Atlas dataset tool, modality, and AS info (as-datasets-modality)](#as-datasets-modality)
   * [Atlas consortium breakdown (consortium-breakdown)](#consortium-breakdown)
   * [Datasets by modality (count-dataset-modality)](#count-dataset-modality)
+  * [Kidney AS Cell Distributions (counts-for-heart-as)](#counts-for-heart-as)
   * [Kidney AS Cell Distributions (counts-for-kidney-as)](#counts-for-kidney-as)
   * [Bulk Tool-Organ-AS Cell Distributions (counts-for-tools-by-as)](#counts-for-tools-by-as)
   * [Atlas-level CxG collections (cxg-collections)](#cxg-collections)
@@ -355,6 +356,92 @@ GROUP BY ?sex ?modality
 | Male | 54 | sc_proteomics |
 | Female | 20 | sc_proteomics |
 | Female | 165 | sc_transcriptomics |
+
+
+### <a id="counts-for-heart-as"></a>Kidney AS Cell Distributions (counts-for-heart-as)
+
+Kidney anatomical structures with associated cell types and average/sum counts of cell types
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Kidney AS Cell Distributions
+#+ description: Kidney anatomical structures with associated cell types and average/sum counts of cell types
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT ?sex ?organ ?as_label ?cell_label
+	(COUNT(DISTINCT(?dataset)) as ?dataset_count)
+	(SAMPLE(?cell_id) as ?cell_id)
+	(AVG(?cell_count) as ?mean_cell_count)
+	(SUM(?cell_count) as ?cell_count)
+FROM HRApop:
+WHERE {
+	?dataset a ccf:Dataset .
+	?dataset ccf:has_cell_summary [
+		ccf:sex ?sex ;
+		ccf:cell_annotation_method ?tool ;
+		ccf:modality ?modality ;
+		ccf:has_cell_summary_row [
+			ccf:cell_id ?cell_id ;
+			ccf:cell_label ?cell_label	;
+			ccf:cell_count ?cell_count ;
+		] ;
+	] .
+
+	{
+		?sample ccf:has_registration_location ?rui_location .
+		?sample ccf:generates_dataset ?dataset .
+	} UNION {
+		?block ccf:subdivided_into_sections ?sample .
+		?block ccf:has_registration_location ?rui_location .
+		?sample ccf:generates_dataset ?dataset .
+	}
+
+	?rui_location a ccf:SpatialEntity .
+	?rui_location ccf:has_collision_summary [
+		ccf:has_collision_item [
+			ccf:as_id ?as_id ;
+			ccf:as_label ?as_label ;
+			ccf:as_volume ?as_volume ;
+			ccf:has_reference_organ ?ref_organ ;
+		]
+	]
+	BIND (REPLACE(REPLACE(REPLACE(STR(?ref_organ), "http://purl.org/ccf/latest/ccf.owl#", ""), "Colon", "LargeIntestine"), "V1.1", "") as ?organ)
+	#FILTER (?as_label='renal papilla' || ?as_label = 'renal pyramid')
+	FILTER(STRENDS(?organ, 'Heart'))
+}
+GROUP BY ?sex ?organ ?as_label ?cell_label
+ORDER BY ?sex ?organ ?as_label ?cell_label
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/counts-for-heart-as.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/counts-for-heart-as.csv))
+
+| sex | organ | as_label | cell_label | dataset_count | cell_id | mean_cell_count | cell_count |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | Adip1 | 4 | http://purl.obolibrary.org/obo/CL_0000136 | 33 | 792 |
+| Female | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | Adip2 | 2 | http://purl.obolibrary.org/obo/CL_0000136 | 20.5 | 246 |
+| Female | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | Adipocyte | 6 | http://purl.obolibrary.org/obo/CL_0000136 | 20.16666666666666666667 | 726 |
+| Female | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | Arterial Endothelial | 6 | http://purl.obolibrary.org/obo/CL_1000413 | 84.33333333333333333333 | 3036 |
+| Female | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | Atrial Cardiomyocyte | 3 | http://purl.obolibrary.org/obo/CL_0002129 | 4 | 72 |
+| ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="counts-for-kidney-as"></a>Kidney AS Cell Distributions (counts-for-kidney-as)
