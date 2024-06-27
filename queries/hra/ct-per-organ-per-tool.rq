@@ -3,6 +3,7 @@ PREFIX ccf: <http://purl.org/ccf/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
 
 SELECT ?Organ
@@ -107,12 +108,28 @@ WHERE {
       ?annotation a ccf:AnnotationItem ; ccf:organ_id ?organ_id .
 
       OPTIONAL {
-        GRAPH HRApopTestData: {
-          [] ccf:generates_dataset ?dataset .
-          ?dataset ccf:has_cell_summary [] ;
-            ccf:organ_id ?_organ_id .
-
-          BIND(IRI(?_organ_id) as ?organ_id)
+        {
+          GRAPH HRApopTestData: {
+            [] ccf:generates_dataset ?dataset .
+            ?dataset ccf:has_cell_summary [
+                ccf:modality ?modality ;
+              ] ;
+              ccf:organ_id ?_organ_id .
+            BIND(IRI(?_organ_id) as ?organ_id)
+            FILTER(?modality = 'sc_transcriptomics')
+          }
+        }
+        UNION
+        {
+          GRAPH HRApop: {
+            [] ccf:generates_dataset ?dataset .
+            ?dataset ccf:has_cell_summary [
+                ccf:modality ?modality ;
+              ] ;
+              ccf:organ_id ?_organ_id .
+            BIND(IRI(?_organ_id) as ?organ_id)
+            FILTER(?modality = 'sc_transcriptomics')
+          }
         }
       }
     }
