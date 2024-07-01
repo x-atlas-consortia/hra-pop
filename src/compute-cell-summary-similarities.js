@@ -18,6 +18,9 @@ for (const path of CELL_SUMMARIES) {
     const lookup = (summaryLookup[modality] = summaryLookup[modality] || {});
     const id = `${summary.cell_source}||||${tool}||||${sex}`;
     summary.cell_source = id;
+    if (summary.aggregated_summaries) {
+      summary.aggregated_summaries = summary.aggregated_summaries.map((summary) => `${summary}||||${tool}||||${sex}`);
+    }
     lookup[id] = summary;
   }
 }
