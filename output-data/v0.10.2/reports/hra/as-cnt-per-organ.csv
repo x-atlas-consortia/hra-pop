@@ -13,8 +13,8 @@ as_count,organ
 24,VHMRightEye
 23,VHMLiver
 23,VHFLiver
-17,VHFHeart
 17,VHMHeart
+17,VHFHeart
 14,VHMProstate
 13,VHMRightKnee
 13,VHMLeftKnee
@@ -33,9 +33,9 @@ as_count,organ
 9,VHFRightKidney
 9,VHFRightMammaryGland
 9,VHFLeftMammaryGland
-8,VHFLymphNode
 8,VHFPelvis
 8,VHMLymphNode
+8,VHFLymphNode
 8,VHMPelvis
 6,VHMPancreas
 6,VHFSpleen
@@ -43,14 +43,14 @@ as_count,organ
 6,VHFUrinaryBladder
 6,VHMUrinaryBladder
 6,VHFPlacenta
+5,VHFPancreas
 5,VHFMainBronchus
 5,VHFLeftFallopianTube
-5,VHFPancreas
 5,VHFRightFallopianTube
 5,VHMMainBronchus
-3,VHFTrachea
 3,VHFThymus
 3,VHMThymus
+3,VHFTrachea
 3,VHMTrachea
 1,VHFLeftUreter
 1,VHMLeftUreter
