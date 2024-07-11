@@ -18,7 +18,7 @@ PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
 # dataset_id | extraction site IRI | anatomical structure IRI 
-SELECT
+SELECT DISTINCT
   ?dataset
 	?rui_location
   ?as_label
