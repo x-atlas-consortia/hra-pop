@@ -1,0 +1,61 @@
+#+ summary: Atlas dataset, extraction site, and AS
+#+ description: Each atlas dataset's extraction site and AS collisions
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+# dataset_id | extraction site IRI | anatomical structure IRI 
+SELECT
+  ?dataset
+  ?as_label
+	?as_id
+  ?organId
+  ?organ_label
+  # ?refOrgan
+  # ?refOrganAs
+
+FROM HRApop:
+FROM CCF:
+WHERE {
+  {
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  ?dataset ccf:has_cell_summary [
+    ccf:sex ?sex ;
+    ccf:cell_annotation_method ?tool ;
+    ccf:modality ?modality ;
+  ] .
+	
+
+  ?rui_location ccf:has_collision_summary [
+      ccf:has_collision_item [
+          ccf:as_id ?refOrganAs ;
+          ccf:as_label ?as_label ;
+					ccf:as_id ?as_id;
+          ccf:has_reference_organ ?refOrgan
+      ]
+  ] .
+
+  ?refOrgan ccf:representation_of ?organId .
+  ?organId rdfs:label ?organ_label
+}
+# ORDER BY ?dataset
