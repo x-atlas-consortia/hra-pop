@@ -20,10 +20,11 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 # dataset_id | extraction site IRI | anatomical structure IRI 
 SELECT
   ?dataset
+	?rui_location
   ?as_label
 	?as_id
-  ?organId
-  ?organ_label
+  # ?organId
+  # ?organ_label
   # ?refOrgan
   # ?refOrganAs
 
@@ -44,7 +45,6 @@ WHERE {
     ccf:cell_annotation_method ?tool ;
     ccf:modality ?modality ;
   ] .
-	
 
   ?rui_location ccf:has_collision_summary [
       ccf:has_collision_item [
