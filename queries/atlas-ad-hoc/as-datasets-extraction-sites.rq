@@ -1,5 +1,5 @@
 #+ summary: Atlas dataset, extraction site, and AS
-#+ description: Each atlas dataset's extraction site and AS collisions
+#+ description: For each atlas dataset, get extraction site and AS collisions
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -17,16 +17,16 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-# dataset_id | extraction site IRI | anatomical structure IRI 
+# dataset_id | extraction site IRI | anatomical structure IRI | anatomical structure label
 SELECT DISTINCT
   ?dataset
 	?rui_location
   ?as_label
 	?as_id
-  # ?organId
-  # ?organ_label
-  # ?refOrgan
-  # ?refOrganAs
+  ?organId
+  ?organ_label
+  ?refOrgan
+  ?refOrganAs
 
 FROM HRApop:
 FROM CCF:
@@ -58,4 +58,4 @@ WHERE {
   ?refOrgan ccf:representation_of ?organId .
   ?organId rdfs:label ?organ_label
 }
-# ORDER BY ?dataset
+ORDER BY ?dataset
