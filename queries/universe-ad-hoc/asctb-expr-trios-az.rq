@@ -1,0 +1,42 @@
+#+ summary: AS, CT, BM, and mean Gene Expression from Azimuth in the HRA
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT DISTINCT ?as_label ?ct_label ?bm_label ?as ?ct ?bm ?bmType ?avg_mean_gene_expr
+WHERE {
+  {
+    SELECT ?as ?ct ?bm (AVG(?gene_expr) as ?avg_mean_gene_expr)
+      (SAMPLE(?ct_label) as ?ct_label)
+      (SAMPLE(?bm_label) as ?bm_label)
+    WHERE {
+      [ ] rdf:type ccf:Dataset ;
+          ccf:organ_id ?as_ ;
+          ccf:has_cell_summary [
+            ccf:cell_annotation_method ?tool ;
+            ccf:modality ?modality ;
+            ccf:has_cell_summary_row [
+              ccf:cell_id ?ct ;
+              ccf:cell_label ?ct_label ;
+              ccf:gene_expr [
+                ccf:gene_id ?bm ;
+                ccf:gene_label ?bm_label ;
+                ccf:mean_gene_expr_value ?gene_expr ;
+              ]
+            ]
+          ] .
+      BIND(IRI(STR(?as_)) as ?as)
+      FILTER(?tool = 'azimuth')
+    }
+    GROUP BY ?as ?ct ?bm
+  }
+
+  OPTIONAL { ?as ccf:ccf_pref_label ?as_label . }
+
+  BIND("gene" as ?bmType)
+}
+ORDER BY ?as_label
