@@ -1,0 +1,31 @@
+#+ summary: AS, CT, and BM in the HRA
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT DISTINCT ?as_label ?ct_label ?bm_label ?as ?ct ?bm ?bmType
+FROM HRA:
+WHERE {
+  ?ct ccf:ccf_located_in ?as . # Get cell types located in an anatomical structure
+
+  # Find all sets of biomarkers that characterize a cell type
+  ?ct rdfs:subClassOf [
+    owl:onProperty has_characterizing_biomarker_set: ;
+    owl:someValuesFrom [ owl:intersectionOf ?bmSetId ]] .
+  ?bmSetId rdf:rest*/rdf:first [
+    owl:onProperty ccf:has_marker_component ;
+    owl:someValuesFrom ?bm
+  ] .
+
+  # Get biomarker type
+  ?bm ccf:ccf_biomarker_type ?bmType .
+
+  ?as ccf:ccf_pref_label ?as_label .
+  ?ct ccf:ccf_pref_label ?ct_label .
+  ?bm ccf:ccf_pref_label ?bm_label .
+}
+ORDER BY ?as_label

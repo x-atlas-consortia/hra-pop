@@ -1,0 +1,16 @@
+#+ summary: Count of Anatomical Structures per `sceneNode`s
+#+ description: Count of `sceneNode`s in the 3D Reference Organs that have an ontology ID
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT (COUNT(?as3d) as ?as_count)
+FROM HRA:
+WHERE {
+  SELECT DISTINCT ?as3d WHERE {
+    ?as3d ccf:has_reference_organ ?y .
+    ?as3d ccf:representation_of ?z .
+    FILTER(!CONTAINS(STR(?y), '/united-'))
+    FILTER (str(?as3d) != str(?y))
+  }
+}
