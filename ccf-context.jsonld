@@ -43,8 +43,7 @@
       "@type": "@id"
     },
     "aggregated_summaries": {
-      "@id": "ccf:aggregates",
-      "@type": "@id"
+      "@id": "ccf:aggregates"
     },
     "annotation_method": {
       "@id": "ccf:cell_annotation_method"

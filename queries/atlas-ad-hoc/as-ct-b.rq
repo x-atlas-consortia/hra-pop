@@ -20,7 +20,10 @@ FROM HRApop:
 WHERE {
   ?as ccf:has_cell_summary [
       ccf:sex ?sex ;
-      ccf:aggregates ?dataset 
+      ccf:aggregates [
+        ccf:cell_source ?dataset ;
+        ccf:percentage_of_total ?percent ;
+      ] ;
     ] .
   ?as ccf:ccf_pref_label ?_as_label .
   ?dataset ccf:has_cell_summary [
@@ -36,7 +39,7 @@ WHERE {
       ]
     ]
   ] .
-  BIND (xsd:decimal(?count) AS ?_cell_count)
+  BIND (xsd:decimal(?count * ?percentage) AS ?_cell_count)
 
   FILTER(STRSTARTS(STR(?as), STR(UBERON:)) || STRSTARTS(STR(?as), STR(FMA:)))
 }

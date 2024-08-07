@@ -28,11 +28,11 @@ function handleCellSummaries(sex, id, summaries) {
       sex,
       annotation_method,
       aggregated_summary_count: 0,
-      aggregated_summaries: new Set(),
+      aggregated_summaries: {},
       modality,
       summary: [],
     });
-    summary.aggregated_summaries.add(dsSummary.cell_source);
+    summary.aggregated_summaries[dsSummary.cell_source] = 1;
 
     for (const cell of cellSummaryRows) {
       let summaryRow = summary.summary.find((s) => s.cell_id === cell.cell_id);
@@ -56,8 +56,11 @@ function finalizeCellSummaries() {
   return Object.values(ruiCellSummaries).map((summary) => {
     const cellCount = summary.summary.reduce((acc, s) => acc + s.count, 0);
     summary.summary.forEach((s) => (s.percentage = s.count / cellCount));
-    summary.aggregated_summary_count = summary.aggregated_summaries.size;
-    summary.aggregated_summaries = [...summary.aggregated_summaries];
+    summary.aggregated_summary_count = Object.keys(summary.aggregated_summaries).length;
+    summary.aggregated_summaries = Object.entries(summary.aggregated_summaries).map(([cell_source, percentage]) => ({
+      cell_source,
+      percentage,
+    }));
     return summary;
   });
 }

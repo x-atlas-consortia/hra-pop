@@ -40,12 +40,12 @@ function getCellCounts(summary) {
   return summary['summary'].reduce((acc, row) => ((acc[row['cell_id']] = row['count']), acc), {});
 }
 
-function getCellDistributionLeaveOneOut(summary, summaryToRemove) {
+function getCellDistributionLeaveOneOut(summary, summaryToRemove, percentage) {
   const cellsToRemove = getCellCounts(summaryToRemove);
   let totalCount = 0;
   const dist = {};
   for (const row of summary['summary']) {
-    const count = Math.max(0, row.count - (cellsToRemove[row.cell_id] ?? 0));
+    const count = Math.max(0, row.count - (cellsToRemove[row.cell_id] ?? 0) * percentage);
     dist[row.cell_id] = count;
     totalCount += count;
   }
@@ -58,8 +58,9 @@ function getCellDistributionLeaveOneOut(summary, summaryToRemove) {
 function getCellDistribution(summaryA, summaryB) {
   // If an aggregated summary contains the summary we're comparing against,
   //   remove the cells from the aggregated summary.
-  if (summaryA.aggregated_summaries?.includes(summaryB.cell_source)) {
-    return getCellDistributionLeaveOneOut(summaryA, summaryB);
+  if (summaryA.aggregated_summaries?.[summaryB.cell_source]) {
+    const percentage = summaryA.aggregated_summaries[summaryB.cell_source];
+    return getCellDistributionLeaveOneOut(summaryA, summaryB, percentage);
   } else {
     return getCellPercentages(summaryA);
   }
