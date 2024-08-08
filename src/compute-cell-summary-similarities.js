@@ -5,7 +5,7 @@ const CELL_SUMMARIES = process.argv.slice(2, -1);
 const OUTPUT = process.argv.slice(-1)[0];
 const MIN_SIMILARITY = process.env.hasOwnProperty('MIN_SIMILARITY') ? parseFloat(process.env['MIN_SIMILARITY']) : 0.1;
 
-console.log("minimum similarity", MIN_SIMILARITY)
+console.log('minimum similarity', MIN_SIMILARITY);
 
 const summaryLookup = {};
 for (const path of CELL_SUMMARIES) {
@@ -19,7 +19,12 @@ for (const path of CELL_SUMMARIES) {
     const id = `${summary.cell_source}||||${tool}||||${sex}`;
     summary.cell_source = id;
     if (summary.aggregated_summaries) {
-      summary.aggregated_summaries = summary.aggregated_summaries.map((summary) => `${summary}||||${tool}||||${sex}`);
+      summary.aggregated_summaries = Object.fromEntries(
+        summary.aggregated_summaries.map((summary) => [
+          `${summary.aggregated_cell_source}||||${tool}||||${sex}`,
+          summary.percentage,
+        ])
+      );
     }
     lookup[id] = summary;
   }

@@ -70,8 +70,8 @@ function finalizeAsCellSummaries() {
     const cellCount = summary.summary.reduce((acc, s) => acc + s.count, 0);
     summary.summary.forEach((s) => (s.percentage = s.count / cellCount));
     summary.aggregated_summary_count = Object.keys(summary.aggregated_summaries).length;
-    summary.aggregated_summaries = Object.entries(summary.aggregated_summaries).map(([cell_source, percentage]) => ({
-      cell_source,
+    summary.aggregated_summaries = Object.entries(summary.aggregated_summaries).map(([aggregated_cell_source, percentage]) => ({
+      aggregated_cell_source,
       percentage,
     }));
     return summary;
