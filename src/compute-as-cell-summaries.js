@@ -31,7 +31,9 @@ function handleCellSummaries(summaries, collisions) {
         const asLabel = collision.as_label;
         const modality = dsSummary.modality;
         const annotation_method = dsSummary.annotation_method;
-        const sex = collision.as_3d_id.startsWith('http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans') ? 'Male' : 'Female';
+        const sex = collision.as_3d_id.startsWith('http://purl.org/ccf/latest/ccf.owl#VHMaleOrgans')
+          ? 'Male'
+          : 'Female';
         const summaryKey = sex + asIri + modality + annotation_method;
         const weightedCellCount = cell.count * collision.percentage;
 
@@ -42,11 +44,11 @@ function handleCellSummaries(summaries, collisions) {
           cell_source_label: asLabel,
           annotation_method,
           aggregated_summary_count: 0,
-          aggregated_summaries: new Set(),
+          aggregated_summaries: {},
           modality,
           summary: [],
         });
-        summary.aggregated_summaries.add(dsSummary.cell_source);
+        summary.aggregated_summaries[dsSummary.cell_source] = collision.percentage;
 
         let summaryRow = summary.summary.find((s) => s.cell_id === cell.cell_id);
         if (summaryRow) {
@@ -70,8 +72,11 @@ function finalizeAsCellSummaries() {
   return Object.values(asCellSummaries).map((summary) => {
     const cellCount = summary.summary.reduce((acc, s) => acc + s.count, 0);
     summary.summary.forEach((s) => (s.percentage = s.count / cellCount));
-    summary.aggregated_summary_count = summary.aggregated_summaries.size;
-    summary.aggregated_summaries = [...summary.aggregated_summaries];
+    summary.aggregated_summary_count = Object.keys(summary.aggregated_summaries).length;
+    summary.aggregated_summaries = Object.entries(summary.aggregated_summaries).map(([aggregated_cell_source, percentage]) => ({
+      aggregated_cell_source,
+      percentage,
+    }));
     return summary;
   });
 }

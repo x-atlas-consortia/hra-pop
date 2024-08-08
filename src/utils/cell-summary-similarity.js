@@ -32,13 +32,43 @@ function getCellCountsSimilarity(cellsA, cellsB) {
   }
 }
 
-function getCellDistribution(summary) {
+function getCellPercentages(summary) {
   return summary['summary'].reduce((acc, row) => ((acc[row['cell_id']] = row['percentage']), acc), {});
 }
 
+function getCellCounts(summary) {
+  return summary['summary'].reduce((acc, row) => ((acc[row['cell_id']] = row['count']), acc), {});
+}
+
+function getCellDistributionLeaveOneOut(summary, summaryToRemove, percentage) {
+  const cellsToRemove = getCellCounts(summaryToRemove);
+  let totalCount = 0;
+  const dist = {};
+  for (const row of summary['summary']) {
+    const count = Math.max(0, row.count - (cellsToRemove[row.cell_id] ?? 0) * percentage);
+    dist[row.cell_id] = count;
+    totalCount += count;
+  }
+  for (const key in dist) {
+    dist[key] = dist[key] / totalCount;
+  }
+  return dist;
+}
+
+function getCellDistribution(summaryA, summaryB) {
+  // If an aggregated summary contains the summary we're comparing against,
+  //   remove the cells from the aggregated summary.
+  if (summaryA.aggregated_summaries?.[summaryB.cell_source]) {
+    const percentage = summaryA.aggregated_summaries[summaryB.cell_source];
+    return getCellDistributionLeaveOneOut(summaryA, summaryB, percentage);
+  } else {
+    return getCellPercentages(summaryA);
+  }
+}
+
 export function getCellSummarySimilarity(summaryA, summaryB) {
-  const cellsA = getCellDistribution(summaryA);
-  const cellsB = getCellDistribution(summaryB);
+  const cellsA = getCellDistribution(summaryA, summaryB);
+  const cellsB = getCellDistribution(summaryB, summaryA);
   return getCellCountsSimilarity(cellsA, cellsB);
 }
 
