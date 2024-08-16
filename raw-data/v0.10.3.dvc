@@ -1,0 +1,4309 @@
+outs:
+- hash: md5
+  path: v0.10.3
+  files:
+  - relpath: all-dataset-graph.csv
+    md5: 9059a465ac5bfb5ff40c2c0f7b037a86
+    size: 11996584
+    cloud:
+      s3:
+        etag: 9059a465ac5bfb5ff40c2c0f7b037a86
+        version_id: 4QWLKV.67g24v1w5GKjbWgCelm5QJaqA
+  - relpath: atlas-as-as-cell-summary-similarities.ttl
+    md5: 34b5ff0060d1d87cc42f7089b85daca6
+    size: 1232231
+    cloud:
+      s3:
+        etag: 34b5ff0060d1d87cc42f7089b85daca6
+        version_id: bxa99jpQK9kWJdZ_7rzXYCvMgGHPUDLO
+  - relpath: atlas-as-cell-summaries.jsonld
+    md5: 3d63e7fc49d4bf1c76db9cc033a55650
+    size: 1606902
+    cloud:
+      s3:
+        etag: 3d63e7fc49d4bf1c76db9cc033a55650
+        version_id: UKCT4AY5lovz8k_6_P8hqQlfWCq97gpv
+  - relpath: atlas-as-cell-summaries.nq
+    md5: 3e52f61c13905d0822cb553b6ab2c921
+    size: 3590937
+    cloud:
+      s3:
+        etag: 3e52f61c13905d0822cb553b6ab2c921
+        version_id: lsl603GOOgkbQaSJOVGyRafWsGqzkqCr
+  - relpath: atlas-cell-summary-similarities.ttl
+    md5: 9bc05f58a3a8da91586d762302b3e447
+    size: 5705947515
+    cloud:
+      s3:
+        etag: f59075819e5b9d8639c5b3576f696281-109
+        version_id: B_DPF2SNxCrpYQE7ZdR9czQSpXa5EWbc
+  - relpath: atlas-dataset-graph.csv
+    md5: de94397ce228e337f82bf0babbfe879e
+    size: 1282409
+    cloud:
+      s3:
+        etag: de94397ce228e337f82bf0babbfe879e
+        version_id: I4xwXUkAQQSoz3_sAdydMiugNhGQoxsg
+  - relpath: atlas-dataset-graph.jsonld
+    md5: b40df77022f105d9aab484fc8f5479ff
+    size: 1136199
+    cloud:
+      s3:
+        etag: b40df77022f105d9aab484fc8f5479ff
+        version_id: TB5QJdFFuMLAs60_9gvGd9za70vJZt8a
+  - relpath: atlas-enriched-dataset-graph.jsonld
+    md5: 706bf3e738d398de73bf9de5b5b4bf88
+    size: 39256858
+    cloud:
+      s3:
+        etag: 706bf3e738d398de73bf9de5b5b4bf88
+        version_id: dD93hhZoXkN1VYqpAhdMn3M.UvDTbHBe
+  - relpath: atlas-enriched-dataset-graph.nq
+    md5: cb44e2c2aa4d0358fd8f21ac23805c1a
+    size: 118448512
+    cloud:
+      s3:
+        etag: 4db5355979af2cc4d3ebe4fac3de218f-3
+        version_id: HuUkXM_e4VGqY.NIMHCvbeeHxVRQbxx0
+  - relpath: atlas-extraction-site-as-cell-summaries.jsonld
+    md5: 94b5383e4514a72402d99ca5414ecc2d
+    size: 4137018
+    cloud:
+      s3:
+        etag: 94b5383e4514a72402d99ca5414ecc2d
+        version_id: BfUSVB7.JPfTW2FcysQFDNTk6BZVTvSK
+  - relpath: atlas-extraction-site-cell-summaries.jsonld
+    md5: 6ac63d1a9054075997ee823253401df9
+    size: 3398675
+    cloud:
+      s3:
+        etag: 6ac63d1a9054075997ee823253401df9
+        version_id: Vfpgug.kzTACxPLzH7lOwI2HpI3fOXcF
+  - relpath: atlas-lq-dataset-graph.csv
+    md5: de94397ce228e337f82bf0babbfe879e
+    size: 1282409
+    cloud:
+      s3:
+        etag: de94397ce228e337f82bf0babbfe879e
+        version_id: popnLxqU_7wKJ96y_Dyr3ft53QL02b_u
+  - relpath: blazegraph.jnl
+    md5: f9cfe134b24ce31da43bd37aaf9ed800
+    size: 22343712768
+    cloud:
+      s3:
+        etag: 362aa418b0441e481ec1f1101377210f-427
+        version_id: 1W7.6vh8tyU9l_TVPLPW71lLwae8euCR
+  - relpath: ccf.owl
+    md5: 65b3b9c446b944b74895b94df4801e98
+    size: 49185500
+    cloud:
+      s3:
+        etag: 65b3b9c446b944b74895b94df4801e98
+        version_id: .PGEYPgriivtCy.w2iXqpMSxZTjg115o
+  - relpath: cell-summaries-no-metadata.jsonld
+    md5: 7ce3cb5ccf6896339daf9eb265c37cc9
+    size: 448964765
+    cloud:
+      s3:
+        etag: f31d435a35b8c7424f87df36cfa0b35e-9
+        version_id: GlJVRTc7J1OcIdwA_uJwVzODukWWFEY8
+  - relpath: cell-summaries.jsonld
+    md5: 06128475fd0d6f91838a290b682b2eac
+    size: 449189857
+    cloud:
+      s3:
+        etag: 44ed3e997b7193e4426f738e36b6da99-9
+        version_id: atYbYWdphbYBkREEXo_nE.dxvCdIY_SY
+  - relpath: cell-summary-dataset-graph.jsonld
+    md5: 571ee7339fc412dbada053199b331624
+    size: 9051450
+    cloud:
+      s3:
+        etag: 571ee7339fc412dbada053199b331624
+        version_id: vk1iNabGREQQ0wYUjkpo_1HFAnilWr4z
+  - relpath: collisions.jsonld
+    md5: 67b1412e2e9891269b915c2c2d614b03
+    size: 817852
+    cloud:
+      s3:
+        etag: 67b1412e2e9891269b915c2c2d614b03
+        version_id: 0q.sUdzOXYUgqqu82K_oJVV0NWREFzt9
+  - relpath: corridors.jsonld
+    md5: b91538feee924a7edab01770fd888f1c
+    size: 197924
+    cloud:
+      s3:
+        etag: b91538feee924a7edab01770fd888f1c
+        version_id: 8IpUDm0n0O.r.OIDzLE2OukesSNicKSg
+  - relpath: corridors/00087766-0287-467c-9060-b52773db3dce.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: AghQZReSd_p34q8NVtvTvpLk57n67tN6
+  - relpath: corridors/0016badc-9917-402c-b950-257d77c50b3d.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: qP8He6RE0gJUUTS1wGRtKmJraYPwmX7k
+  - relpath: corridors/007eb4d9-1694-4380-99e1-4aba832d9227.glb
+    md5: b3a67208082571d6dc5b52429c522931
+    size: 7512
+    cloud:
+      s3:
+        etag: b3a67208082571d6dc5b52429c522931
+        version_id: 4z3B3lCBYCAdd9_qhpvgesgTuOAqAvhg
+  - relpath: corridors/00f945be-8604-4382-834d-707a37498a9a.glb
+    md5: e75db2219da98c162243ceeb50004644
+    size: 1072
+    cloud:
+      s3:
+        etag: e75db2219da98c162243ceeb50004644
+        version_id: P8tfJ9_SSEYSAzhlfxfGY9.gK0LgXUXB
+  - relpath: corridors/016e1d91-9c07-46b7-8441-2975df328fb3.glb
+    md5: cfe060db74a18b74e39e2d7edef25504
+    size: 1072
+    cloud:
+      s3:
+        etag: cfe060db74a18b74e39e2d7edef25504
+        version_id: Ex2Z5Ew4lPuJzMTNmpT62N0RjtCST.H4
+  - relpath: corridors/026751c5-ef86-4f35-a810-5f8adc2887a5.glb
+    md5: 1e81f3bf305abbf72cd663cbd22f539c
+    size: 8568
+    cloud:
+      s3:
+        etag: 1e81f3bf305abbf72cd663cbd22f539c
+        version_id: DTvFZPiHkk1w8663dOYK9BIOpjUzS1yB
+  - relpath: corridors/02ae63f0-4a35-4ff5-858e-689242c26828.glb
+    md5: aafff898e52bf8fa70d4e4c35f296a6a
+    size: 10800
+    cloud:
+      s3:
+        etag: aafff898e52bf8fa70d4e4c35f296a6a
+        version_id: jQe9oIs2q8b7.51BjlezGW5b2oGz3Tez
+  - relpath: corridors/03290fc0-070f-4b46-830c-38eac27a64e9.glb
+    md5: d73d9ab91158ed73c5022242c18ff5d6
+    size: 6696
+    cloud:
+      s3:
+        etag: d73d9ab91158ed73c5022242c18ff5d6
+        version_id: SLMrm2mVU7rjEcQ5c3wl.4Ue6s0v2cL1
+  - relpath: corridors/04baf323-eda0-4f72-bea1-aa943aa70894.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: UyVM0x6IkRCAdevWmOXnkBnlOLhBuQ_I
+  - relpath: corridors/05c11830-1526-4472-bd12-ea24dbcfd3cc.glb
+    md5: 61fda346ca3ca5ea85bdd25397d29204
+    size: 1068
+    cloud:
+      s3:
+        etag: 61fda346ca3ca5ea85bdd25397d29204
+        version_id: a9sfyuEZGg8_To9Utva9pNFoKr7Fltk_
+  - relpath: corridors/065be8ca-f5d9-4a56-a70b-2213d06fcd4d.glb
+    md5: 2d8a10cf1bb9727f400ec3831ec5139b
+    size: 10248
+    cloud:
+      s3:
+        etag: 2d8a10cf1bb9727f400ec3831ec5139b
+        version_id: jlfUgkDC7jlVdEBMl7ZgZUUD0XjtzE_q
+  - relpath: corridors/06e12f74-7dd8-4a49-87dc-f54ac6edd4cc.glb
+    md5: 557491d98a97cccbf59d2e6a9568c03a
+    size: 5468
+    cloud:
+      s3:
+        etag: 557491d98a97cccbf59d2e6a9568c03a
+        version_id: OjNKHwGRRQkAvvlryz1TgMSgpJ5JBcMI
+  - relpath: corridors/070462af-f6ae-486e-9fbe-3a5895970151.glb
+    md5: ed935fb5b1cf68fb63b33173d51e637a
+    size: 15192
+    cloud:
+      s3:
+        etag: ed935fb5b1cf68fb63b33173d51e637a
+        version_id: 6UMBF8zKvnl.jg35yuN8ixP5XMC.DysV
+  - relpath: corridors/073ed584-7a76-4fb1-a7aa-8df8188a0605.glb
+    md5: 81841bc29bc9efce1dc228fe639e73da
+    size: 6152
+    cloud:
+      s3:
+        etag: 81841bc29bc9efce1dc228fe639e73da
+        version_id: oJzxcXdd7aMFdyK4D750UzgmID4JFxV4
+  - relpath: corridors/081854ac-f690-4c2d-9ca1-18bdeca20428.glb
+    md5: 629013dab3bd59fe35dab7c021cbbed3
+    size: 11916
+    cloud:
+      s3:
+        etag: 629013dab3bd59fe35dab7c021cbbed3
+        version_id: doxLDyYNlQZqfwS8XhpcDxLX0T6mT9FV
+  - relpath: corridors/089074be-1a45-47a6-805c-0edd5aeb62d6.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: dGapnZ6s0gEFzU8pE3QMoI62Pgauv4Mo
+  - relpath: corridors/09681d25-f08d-40ff-81cb-a731610aa84d.glb
+    md5: 8978d997aab57c42cdf8723fc8209d60
+    size: 168876
+    cloud:
+      s3:
+        etag: 8978d997aab57c42cdf8723fc8209d60
+        version_id: KbhLp68h66VVypEfXKLoKCM1ZQlsIZ_T
+  - relpath: corridors/0a2ed64b-2a70-4382-90c4-ac9fb6520419.glb
+    md5: 3b88963f2e66828fc570ac90567ec937
+    size: 5332
+    cloud:
+      s3:
+        etag: 3b88963f2e66828fc570ac90567ec937
+        version_id: snumYiczJl91k8Ky4q8LH6XJ8ptcOq1D
+  - relpath: corridors/0a6b2b12-08fc-426c-a29e-683a6770785f.glb
+    md5: 1b543df83b88027a54d95088f593abc4
+    size: 7812
+    cloud:
+      s3:
+        etag: 1b543df83b88027a54d95088f593abc4
+        version_id: w11srhy_R6z5NbUXBuUwXa_JcWQyfpSK
+  - relpath: corridors/0af1c686-f1a8-4513-917b-b28a0d659646.glb
+    md5: 9b695371ab4dd200b8cf83c6cc309018
+    size: 1068
+    cloud:
+      s3:
+        etag: 9b695371ab4dd200b8cf83c6cc309018
+        version_id: CAdizuREyPv8WAZMfssJWqcnyxSkR672
+  - relpath: corridors/0af69e70-3ec3-4d0b-a008-89a4186f4452.glb
+    md5: 0c3358cb96735ee4de85240e0644fb33
+    size: 1068
+    cloud:
+      s3:
+        etag: 0c3358cb96735ee4de85240e0644fb33
+        version_id: Kihmc96yP7bawr7y5mD2Sq_BpC8BOgjD
+  - relpath: corridors/0c0a1979-77be-40f2-b950-3725707e40c9.glb
+    md5: f70e1d7326172a428d4dce8c2355bdb0
+    size: 868188
+    cloud:
+      s3:
+        etag: f70e1d7326172a428d4dce8c2355bdb0
+        version_id: gbJIJPmLnn5nvyOlUfZzrpsc5d878biF
+  - relpath: corridors/0ced68fa-8bff-45d9-949f-3004c3b08d19.glb
+    md5: a25a6a02c1b4ec3bc9b9d0cf0e93a3f9
+    size: 1072
+    cloud:
+      s3:
+        etag: a25a6a02c1b4ec3bc9b9d0cf0e93a3f9
+        version_id: PoV4uMJD0wDLXPD2Jljg7N4V2km60EZt
+  - relpath: corridors/0d005e9f-bd67-403b-a7fa-66f173fee596.glb
+    md5: 3b88963f2e66828fc570ac90567ec937
+    size: 5332
+    cloud:
+      s3:
+        etag: 3b88963f2e66828fc570ac90567ec937
+        version_id: VRg_Ih2jB3gmR11NAKLefgFQXNGdouo.
+  - relpath: corridors/0e16c507-d647-4d75-993d-9754bbc74ffe.glb
+    md5: 288e0e61e93fa2d48cbcb4a3736ee648
+    size: 14568
+    cloud:
+      s3:
+        etag: 288e0e61e93fa2d48cbcb4a3736ee648
+        version_id: ABvZ4hwpNsRsBOgprDdcMTj7g3xj88su
+  - relpath: corridors/0e8b0f2f-d130-4edc-a00b-15db0110ffa9.glb
+    md5: 5fa1f84d7cdf8ebcb565a7b027d42202
+    size: 1068
+    cloud:
+      s3:
+        etag: 5fa1f84d7cdf8ebcb565a7b027d42202
+        version_id: StnvD8XOqHU0bfqkinKX4hox3E1DWKWE
+  - relpath: corridors/117273d2-9291-4665-9a8b-e7420eb1452e.glb
+    md5: c6d86bf62d6381cf55a751ba795e882f
+    size: 3668
+    cloud:
+      s3:
+        etag: c6d86bf62d6381cf55a751ba795e882f
+        version_id: pFAVOGQXszJi3HMqSsZpNskX3SkK_KJp
+  - relpath: corridors/118235b7-38a4-4fcf-8834-bad5765f5eeb.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: MmUVqU9xjML7e6dtYQGa9F11gV5heHa.
+  - relpath: corridors/13efe386-e11a-4d06-b83e-605e200bec41.glb
+    md5: f84888ad966f33011ab531f76be7c2c3
+    size: 1068
+    cloud:
+      s3:
+        etag: f84888ad966f33011ab531f76be7c2c3
+        version_id: QOnp7g.B3MOxt5u4hVlFByjTAlIU1aEM
+  - relpath: corridors/142410d0-2ace-4014-9340-8f2ee6067510.glb
+    md5: d6f1d7344468b06915b00d48e1df0c0f
+    size: 2144
+    cloud:
+      s3:
+        etag: d6f1d7344468b06915b00d48e1df0c0f
+        version_id: afdI.HXRpPCmz1pIkujan08whFMTWeFo
+  - relpath: corridors/168abaaf-f115-4606-a655-8821b294d8bb.glb
+    md5: d5371c037ca57b3f60c5ea9087121a7a
+    size: 44752
+    cloud:
+      s3:
+        etag: d5371c037ca57b3f60c5ea9087121a7a
+        version_id: 0oJIf0tkfNHWY6C3uM8hi2IbJBwRHzEu
+  - relpath: corridors/16e98d8c-8983-48c2-bb41-7b1cfbbf2e4a.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: 04IROVjxp.Tp.vcTE_L5w4BD66jLDhbz
+  - relpath: corridors/18a43fde-687e-4074-afe7-5af1accd9909.glb
+    md5: bef44bd88129438177ed70ba1c6c6fcb
+    size: 1068
+    cloud:
+      s3:
+        etag: bef44bd88129438177ed70ba1c6c6fcb
+        version_id: C7m0klebuzTNXVNZgZ22S2W5GKjv7f06
+  - relpath: corridors/18ecb01e-dad1-4de3-8028-bb75e3e8f26e.glb
+    md5: 1ef58f14556336e353a1f8108835387b
+    size: 1068
+    cloud:
+      s3:
+        etag: 1ef58f14556336e353a1f8108835387b
+        version_id: 0v7nPbbXKTVu.I0e7MAG4Eid9g2.O33r
+  - relpath: corridors/191bc7fa-9da3-4e4b-8958-bc96c4b12fa7.glb
+    md5: 629013dab3bd59fe35dab7c021cbbed3
+    size: 11916
+    cloud:
+      s3:
+        etag: 629013dab3bd59fe35dab7c021cbbed3
+        version_id: Sju9tmMOFQBb8Q.4sAYWYbnyW7IYqCRX
+  - relpath: corridors/1995aefd-5289-4652-a7e0-cc66c495649f.glb
+    md5: 85fad9a0a86e1b6e24e5522672664ce8
+    size: 3764
+    cloud:
+      s3:
+        etag: 85fad9a0a86e1b6e24e5522672664ce8
+        version_id: 8cu5T08gqxd0r59P1OrB5Bx18lT.iG3p
+  - relpath: corridors/19a9f5af-c334-4e5d-a5f8-4ac2128d0eb5.glb
+    md5: 6925fd8ce254df5a7f0cac65a2732615
+    size: 1068
+    cloud:
+      s3:
+        etag: 6925fd8ce254df5a7f0cac65a2732615
+        version_id: mftcgEVy44rh7b2UcGKoeQp_NB1xeDLx
+  - relpath: corridors/19fee435-ebad-476c-bc9a-e11d2cee035e.glb
+    md5: 0c5deef7877089b6d6d6bd6733af1c4c
+    size: 234864
+    cloud:
+      s3:
+        etag: 0c5deef7877089b6d6d6bd6733af1c4c
+        version_id: 6.gHQadpASyVhPxuA8L2Uv9tELqwTSRp
+  - relpath: corridors/1a3fb7c9-f6ca-45fc-aa1a-d1b9e1a53da0.glb
+    md5: 4a49cfc5ee2bf38b71c4bd3614b817c6
+    size: 1072
+    cloud:
+      s3:
+        etag: 4a49cfc5ee2bf38b71c4bd3614b817c6
+        version_id: dD8DKaGcaEKHNNsRXM3knRK7qQRabthS
+  - relpath: corridors/1ac64de5-0f15-4d54-add8-e8817a3aa538.glb
+    md5: e5cf4eb7bc716eaea68f096e1bf7ac36
+    size: 364000
+    cloud:
+      s3:
+        etag: e5cf4eb7bc716eaea68f096e1bf7ac36
+        version_id: IdNwQFWFVN5.CyaWLh4e3.7_.uCvi9AY
+  - relpath: corridors/1c157889-cdec-4830-91b9-d52e209a845b.glb
+    md5: 3c5634f8b05fc274f54c23c3a5106eb2
+    size: 359060
+    cloud:
+      s3:
+        etag: 3c5634f8b05fc274f54c23c3a5106eb2
+        version_id: Uh2_YjcZq9IYGr4f3bYNXU6N8FZCAtyW
+  - relpath: corridors/1c7f8f09-2f17-48ca-8922-c03adf82b66f.glb
+    md5: e951e9799467134afa0bbe4ed6f6f8bc
+    size: 1072
+    cloud:
+      s3:
+        etag: e951e9799467134afa0bbe4ed6f6f8bc
+        version_id: ezc1B.ggXmsOSkImPw_MDpc.VqxRSLEm
+  - relpath: corridors/1d5792e9-ce7b-4f10-bc84-8048fc3b0a6f.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: 3YwPLK7_QyIR4XkOCmuZ63fhrtnPyVG6
+  - relpath: corridors/1d965182-bf13-4738-af05-72b817121959.glb
+    md5: f55f1db169ee1f3eaf134dd66e9fcc5f
+    size: 4860
+    cloud:
+      s3:
+        etag: f55f1db169ee1f3eaf134dd66e9fcc5f
+        version_id: Gt3ahLRfHdQOyQBvya2X7LtB12vyDH.1
+  - relpath: corridors/1f414fc5-cb93-45b7-a1b8-0cd21dfa9f7d.glb
+    md5: 0c5deef7877089b6d6d6bd6733af1c4c
+    size: 234864
+    cloud:
+      s3:
+        etag: 0c5deef7877089b6d6d6bd6733af1c4c
+        version_id: FnCO2OhHSDYTNk6B2AQsv5v2htxfRDCN
+  - relpath: corridors/1f53fe4d-d77b-4508-ba36-22b6b3ac0e53.glb
+    md5: 988088c7388513002d40a74dcc76a7f4
+    size: 14496
+    cloud:
+      s3:
+        etag: 988088c7388513002d40a74dcc76a7f4
+        version_id: KChBKYIN8Su2OlVWZ8wZfHKKRyGQdsCs
+  - relpath: corridors/1f7d903f-4eca-45eb-ba18-00a855bff926.glb
+    md5: df469eb64d948afa4baf81bc23478b75
+    size: 6368
+    cloud:
+      s3:
+        etag: df469eb64d948afa4baf81bc23478b75
+        version_id: nfag4AagVgMddpnhe8vqL.PMhbuNSO6R
+  - relpath: corridors/1f959974-4f3c-4023-a1af-6e5172d89f2c.glb
+    md5: 8978d997aab57c42cdf8723fc8209d60
+    size: 168876
+    cloud:
+      s3:
+        etag: 8978d997aab57c42cdf8723fc8209d60
+        version_id: e6OrDV_p.90owMitq.BJcRD4TjbJ2hSZ
+  - relpath: corridors/1fe61622-ba53-47c9-967e-e764c21b8189.glb
+    md5: 32639c7ca7df702de77b2be6dedd4a3d
+    size: 314088
+    cloud:
+      s3:
+        etag: 32639c7ca7df702de77b2be6dedd4a3d
+        version_id: BKgdnbhBZ0r94D1VDENShBIeBMJV5_Pp
+  - relpath: corridors/20a0c365-6a97-4224-ae14-16fba10c13f8.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: xni3geMiOo8FqfutP1uW2VtfsKYB.hSb
+  - relpath: corridors/20dd6d0c-0b29-40c6-9d0a-b5af3cc58da1.glb
+    md5: 6aa6a3124fd4a62561c1915ae5852b99
+    size: 1072
+    cloud:
+      s3:
+        etag: 6aa6a3124fd4a62561c1915ae5852b99
+        version_id: FmGZlH7yxQikZJ.CdBM_ddtyQttorCKb
+  - relpath: corridors/2156f837-2ab2-4305-8e7f-8084249e91cd.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: P2bdYyplCMFd2n2G8bkZWRx5yK70B98j
+  - relpath: corridors/216564f1-8011-419b-a96c-2ea47a340ed1.glb
+    md5: 67c200accc5fb2194f8cbc828211490f
+    size: 6584
+    cloud:
+      s3:
+        etag: 67c200accc5fb2194f8cbc828211490f
+        version_id: jkE0QTD7yBwB8c0eCgzQJQO5MhoUc.4j
+  - relpath: corridors/217d9d39-eeee-4499-8487-bd455f6e43c7.glb
+    md5: b6c23cdd69c72cc094ab57cfb250407d
+    size: 18004
+    cloud:
+      s3:
+        etag: b6c23cdd69c72cc094ab57cfb250407d
+        version_id: 1JMtdFwAg.qhK5aQk1fduD32eyxz7.eW
+  - relpath: corridors/2185217b-77ed-4043-b79b-1c2d33b6d524.glb
+    md5: 69720ebf985f342f767b63c1c8643e8b
+    size: 6888400
+    cloud:
+      s3:
+        etag: 69720ebf985f342f767b63c1c8643e8b
+        version_id: fEzRqWd5lWJjvEpVQmWLph4dKtdk4rIa
+  - relpath: corridors/220036fa-2932-4f00-aad6-3f70c516c1c4.glb
+    md5: d23112518e818d8d6c9e257bf8521b93
+    size: 10444
+    cloud:
+      s3:
+        etag: d23112518e818d8d6c9e257bf8521b93
+        version_id: 2PbgigcucpmLMSoStG_nvnG6XL8q2hBc
+  - relpath: corridors/232b6561-19ed-4da3-a61e-286245f42f25.glb
+    md5: 02855616150ef29f21ce0ed21189050c
+    size: 71144
+    cloud:
+      s3:
+        etag: 02855616150ef29f21ce0ed21189050c
+        version_id: ZWF9Mmx6MZl4h0A1xsbL6B6W4iE0kOJC
+  - relpath: corridors/23e9d58a-c93f-414b-baf9-3692ea20fd1c.glb
+    md5: c0dbc7b8921dd7e175be8aed4e4c7847
+    size: 66016
+    cloud:
+      s3:
+        etag: c0dbc7b8921dd7e175be8aed4e4c7847
+        version_id: VH.E1Efw7c6FkOh.jbk1xKdwjZPQxpDp
+  - relpath: corridors/2463da02-6c78-4280-a399-df99f4463aa3.glb
+    md5: 4f956bdd9aa57bfa3171af5c4355c268
+    size: 29196
+    cloud:
+      s3:
+        etag: 4f956bdd9aa57bfa3171af5c4355c268
+        version_id: GyQuT6zEbx4kdCCKUCDfgPKQwvswr_R0
+  - relpath: corridors/2468f1c4-6182-4c0a-8dda-81287da09673.glb
+    md5: ad5e6344ca53d664564a279dc6aef0af
+    size: 10128
+    cloud:
+      s3:
+        etag: ad5e6344ca53d664564a279dc6aef0af
+        version_id: 3XFgC0rxADlfLsEl51Jj7bq0Bkh7JGji
+  - relpath: corridors/24b08d7f-72e8-4980-8203-27664b892ed3.glb
+    md5: c6e5d365cdb1bda57ba40628dfa0ccb8
+    size: 1072
+    cloud:
+      s3:
+        etag: c6e5d365cdb1bda57ba40628dfa0ccb8
+        version_id: NLnUrbPyZCUMT3zoGNwKUYjH8nl6nPmw
+  - relpath: corridors/26edd761-8b50-453c-9b03-2337806c9e3a.glb
+    md5: fa73593ee4c1a708f2a0e23e2c8deeca
+    size: 8780
+    cloud:
+      s3:
+        etag: fa73593ee4c1a708f2a0e23e2c8deeca
+        version_id: 4emNsuvxWRmo2shH0huzRym4ygPOWccT
+  - relpath: corridors/2700942e-cfbc-4f40-8567-cd7607014422.glb
+    md5: 6a5f480b7467a7f5fda1786c7c1ecd61
+    size: 5968
+    cloud:
+      s3:
+        etag: 6a5f480b7467a7f5fda1786c7c1ecd61
+        version_id: cWO8rwnPUFJAPEmks0M1CgiM2er0UNlc
+  - relpath: corridors/273dd4c3-5442-4c31-8ffb-163cbc0f303d.glb
+    md5: bd75e884d0a70c4ee31712949d4900fb
+    size: 5868
+    cloud:
+      s3:
+        etag: bd75e884d0a70c4ee31712949d4900fb
+        version_id: fL4Djtfwl9Go7JCY960U4pVQAUWCOKrC
+  - relpath: corridors/27c90961-5430-4217-ad97-4feaa91cede7.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: cvC42LQ31kIIv1NgC71YlV62msEfL4_T
+  - relpath: corridors/27e6dbf5-9391-4482-845f-1aabe39cb1a7.glb
+    md5: 30a358ade1aa86111db9eecc3e7ffdaa
+    size: 10596
+    cloud:
+      s3:
+        etag: 30a358ade1aa86111db9eecc3e7ffdaa
+        version_id: bBHTS38heZIJZWykI9WLMyL8fSNB5KgM
+  - relpath: corridors/2816c343-c908-45bf-8964-974b1c54a5b9.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: bHYAGtLYtnQdnjk9bBhta0HU9dlXlmC8
+  - relpath: corridors/28982f44-8ff5-4734-89a5-caa5d113e424.glb
+    md5: 6740aee0c88914eb94879beb11014c1e
+    size: 2804
+    cloud:
+      s3:
+        etag: 6740aee0c88914eb94879beb11014c1e
+        version_id: _RBlAQHgl05dd9t3PYwEVzDKWazxTzof
+  - relpath: corridors/28c5313f-2a4e-47f8-b5bd-9e4686faf24d.glb
+    md5: 9b695371ab4dd200b8cf83c6cc309018
+    size: 1068
+    cloud:
+      s3:
+        etag: 9b695371ab4dd200b8cf83c6cc309018
+        version_id: hJj2wc0XjCvgBtV8mvaepeJYPC9di8qc
+  - relpath: corridors/296f4f10-2d50-4b28-932a-69a6658171c1.glb
+    md5: feeaff15fbaa5ac8aa23a41d57db50bf
+    size: 96436
+    cloud:
+      s3:
+        etag: feeaff15fbaa5ac8aa23a41d57db50bf
+        version_id: gy4Y5W4eVAMlc8JYEvFpU2.txu7LibD9
+  - relpath: corridors/2990ecc8-1854-4794-8f11-1b31c5c94e5f.glb
+    md5: 6f206840f15779bbb980f57d569bc873
+    size: 295088
+    cloud:
+      s3:
+        etag: 6f206840f15779bbb980f57d569bc873
+        version_id: 8n8ho3AzgE80_5kFmxDHr8d28QBExgzG
+  - relpath: corridors/29d84500-0669-4a9f-851b-58c8232c9ee2.glb
+    md5: 467de46096672712a4945931ffaaa13a
+    size: 12540
+    cloud:
+      s3:
+        etag: 467de46096672712a4945931ffaaa13a
+        version_id: ntr3brwu_4_zmDHbjkVuSPrrnvmdZcJ1
+  - relpath: corridors/29e439fb-cfec-4c2d-a14e-3bc60eb8e255.glb
+    md5: ddc65f99960abc936af43c3e21a5b2be
+    size: 13284
+    cloud:
+      s3:
+        etag: ddc65f99960abc936af43c3e21a5b2be
+        version_id: MpeRh8J4yRWR8vvduGrTAkRHmlCxboSs
+  - relpath: corridors/2a823e94-6653-4c8c-b270-0c75bd1a58e8.glb
+    md5: 262312c4ca56585c5d7bad3c7a60fd65
+    size: 7416
+    cloud:
+      s3:
+        etag: 262312c4ca56585c5d7bad3c7a60fd65
+        version_id: sJPPFp7fJsFYc8ahAxiWT6apKshPt5c4
+  - relpath: corridors/2a95091d-db1f-4c0d-bf4a-dc6984daacde.glb
+    md5: 4ba4ba188382bb319c7f340e0b43fabc
+    size: 9456
+    cloud:
+      s3:
+        etag: 4ba4ba188382bb319c7f340e0b43fabc
+        version_id: H4GhxUyzB_m1io0iAmpcU0VhdPipkSER
+  - relpath: corridors/2a9e525a-4ad9-4085-bca9-31a2d0512008.glb
+    md5: 8118a21fb7a21e29e439eac1f816b60f
+    size: 11448
+    cloud:
+      s3:
+        etag: 8118a21fb7a21e29e439eac1f816b60f
+        version_id: 43BJve3.vNj1gs8ffkNYbHhf0nBlnHY5
+  - relpath: corridors/2ae3cef9-6621-46da-b056-da7bfbadc13b.glb
+    md5: 3b88963f2e66828fc570ac90567ec937
+    size: 5332
+    cloud:
+      s3:
+        etag: 3b88963f2e66828fc570ac90567ec937
+        version_id: PDYDxZwRzcb1VrI6o9bFptgcQeOgdnG8
+  - relpath: corridors/2ae9757b-688c-4927-ab5e-b95a6bc9cad6.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: scSisceciQTIpFuJ70g9t1mIPU4ZzndT
+  - relpath: corridors/2b38ef86-7e4d-4e27-b9c6-d2015ec49692.glb
+    md5: 988088c7388513002d40a74dcc76a7f4
+    size: 14496
+    cloud:
+      s3:
+        etag: 988088c7388513002d40a74dcc76a7f4
+        version_id: oHqYfbVlyhVGP2y.IOi2iurW5IoB2Wcj
+  - relpath: corridors/2c92be72-25c2-438c-bd40-b85cc7190211.glb
+    md5: 9beff63609b85254fc1d9a55c02704d5
+    size: 1068
+    cloud:
+      s3:
+        etag: 9beff63609b85254fc1d9a55c02704d5
+        version_id: HT.Q5JsODsNOWm9d8gFGYqklX01efS_W
+  - relpath: corridors/2d293c0a-b148-4243-a5d9-32dbc7d1460f.glb
+    md5: e038faf5ca823e443494e24ff61c2f94
+    size: 7744
+    cloud:
+      s3:
+        etag: e038faf5ca823e443494e24ff61c2f94
+        version_id: 8vUp0zGIf2K1SvVu4pBrArbH.BdvXvt7
+  - relpath: corridors/2d7b421b-cd7a-4b31-8f36-157067599c24.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: ajGYLEyGgggMBprHTqZ1W8C8K8ZHOZbl
+  - relpath: corridors/2ea2d4c8-0763-41d0-8c66-33e4958e8a36.glb
+    md5: 378f06c86cd246258548103156d3f992
+    size: 15388
+    cloud:
+      s3:
+        etag: 378f06c86cd246258548103156d3f992
+        version_id: BefB..KyJNvOFYFrzxX60iaRk7gOWoq7
+  - relpath: corridors/2f0bc1c1-551b-46d8-bd70-c77ac180ab7c.glb
+    md5: feeaff15fbaa5ac8aa23a41d57db50bf
+    size: 96436
+    cloud:
+      s3:
+        etag: feeaff15fbaa5ac8aa23a41d57db50bf
+        version_id: 5syl8MW39fYzQgxf6t3dX7OPnUPNYbC5
+  - relpath: corridors/314450f7-0477-4152-b4d6-cb474cbc0cd7.glb
+    md5: 3d209171a8a51586a54d124f9ae21e19
+    size: 3336528
+    cloud:
+      s3:
+        etag: 3d209171a8a51586a54d124f9ae21e19
+        version_id: 5OZjbGVwwajp85ccyRGrrcK5aOcwwzJo
+  - relpath: corridors/3156203b-0238-447d-9aae-c4341f2da943.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: CF_f5ngjke.oVM.cvnLNPgyoOdWRVLnF
+  - relpath: corridors/3158500f-9623-4a32-bf4d-0d54c602729c.glb
+    md5: c88b3ef2ab6d0c579932492525b1dc87
+    size: 1072
+    cloud:
+      s3:
+        etag: c88b3ef2ab6d0c579932492525b1dc87
+        version_id: xz3Oc2uOrnxzu2dtV5167p3MjppfFUe9
+  - relpath: corridors/3177d8d7-3b26-4aa3-9984-3c112d461446.glb
+    md5: 6f78b1dc4b6f102d10f15b3b512e30de
+    size: 7400
+    cloud:
+      s3:
+        etag: 6f78b1dc4b6f102d10f15b3b512e30de
+        version_id: gDqU566W11TS1ej0FIFxg6js8S0Lklgz
+  - relpath: corridors/31a07009-45de-4d5a-ad5a-abc9fde8a5b5.glb
+    md5: 288e0e61e93fa2d48cbcb4a3736ee648
+    size: 14568
+    cloud:
+      s3:
+        etag: 288e0e61e93fa2d48cbcb4a3736ee648
+        version_id: dsfXGJpvdC9mbDS.XlPLoqmWF747uAYa
+  - relpath: corridors/32214c14-bf21-4bf6-aea9-58ab721128ab.glb
+    md5: ef9d9e046e42420fce95a6304d82846e
+    size: 95396
+    cloud:
+      s3:
+        etag: ef9d9e046e42420fce95a6304d82846e
+        version_id: tBYN8bcF2NT7bz9VG1Btw2Yxl4_T4kFs
+  - relpath: corridors/337750bc-d307-4761-8016-c6adacdcd081.glb
+    md5: ef0e776e8fffa63af470e45177bdead6
+    size: 9720
+    cloud:
+      s3:
+        etag: ef0e776e8fffa63af470e45177bdead6
+        version_id: yiJlVD4e6NfT3GTjxqg8juFQnupI3lkU
+  - relpath: corridors/3425fa0c-c5cb-4493-b6ba-41520334b13e.glb
+    md5: e038faf5ca823e443494e24ff61c2f94
+    size: 7744
+    cloud:
+      s3:
+        etag: e038faf5ca823e443494e24ff61c2f94
+        version_id: OCsqRrXAWG6qInv4lZCtE1ichA6qS7h6
+  - relpath: corridors/344a20b6-07dc-4811-b7ee-18bcf27b2bcc.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: qV5ivbeBj6JjAH6CVMFMcGnD3wUDrD6i
+  - relpath: corridors/347c08fb-d7f6-4357-8dd9-983761888dc2.glb
+    md5: 288e0e61e93fa2d48cbcb4a3736ee648
+    size: 14568
+    cloud:
+      s3:
+        etag: 288e0e61e93fa2d48cbcb4a3736ee648
+        version_id: YV_jmX8hKA0rvI2c1DFxF0txKpk3.hwD
+  - relpath: corridors/35247281-a3a5-4e0e-b4d5-5dda314c25f2.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: HXlTHzcPQrVl0auju3bo61Nt_kdCXZQj
+  - relpath: corridors/36d378f4-d4b5-456f-a32c-12a4c60d8159.glb
+    md5: d5d1eb2815e6a66363725a4bc0552f31
+    size: 6192
+    cloud:
+      s3:
+        etag: d5d1eb2815e6a66363725a4bc0552f31
+        version_id: 4O27R9WthnWXadwvls3FgFlwJl3WiMXp
+  - relpath: corridors/37248725-6ed5-4589-ac5a-9951d1a783e7.glb
+    md5: ad5e6344ca53d664564a279dc6aef0af
+    size: 10128
+    cloud:
+      s3:
+        etag: ad5e6344ca53d664564a279dc6aef0af
+        version_id: hlGtnFr6J8uL1WrbiLJgIR8bWxinI0P8
+  - relpath: corridors/37283102-d963-4639-8834-4813fbb3c247.glb
+    md5: 3be832229753ef3bb4ae61bc1b3f9bc3
+    size: 44500
+    cloud:
+      s3:
+        etag: 3be832229753ef3bb4ae61bc1b3f9bc3
+        version_id: VRpdoP0DjxSyrqpnlJJ7BBtEK8_nlr4B
+  - relpath: corridors/373c77e0-1d77-4c28-b547-0eb9420f30bc.glb
+    md5: f2a0901f2337883fa7daeaac37e410ca
+    size: 6804
+    cloud:
+      s3:
+        etag: f2a0901f2337883fa7daeaac37e410ca
+        version_id: _1pY9tJuDtUtXSDKpzF2BaFhDmRjXUE1
+  - relpath: corridors/383d2c1a-4c8c-4aa3-b154-1ceacd3fa871.glb
+    md5: 8978d997aab57c42cdf8723fc8209d60
+    size: 168876
+    cloud:
+      s3:
+        etag: 8978d997aab57c42cdf8723fc8209d60
+        version_id: CalovY9TYCechQbM94nZhO4zoefbmQlb
+  - relpath: corridors/38b5dd93-c9f1-4d46-af95-ff3ee32a1289.glb
+    md5: 9d40a1c9f9cc39c8933140fced039bc4
+    size: 5648
+    cloud:
+      s3:
+        etag: 9d40a1c9f9cc39c8933140fced039bc4
+        version_id: UQWb8ZaYev1TojT4UoBNy1Hfw1jvU0o8
+  - relpath: corridors/38ed99d5-8763-449a-b188-d20f8a7db31a.glb
+    md5: 3e0e95406d7d40303be4d9060089be88
+    size: 1068
+    cloud:
+      s3:
+        etag: 3e0e95406d7d40303be4d9060089be88
+        version_id: HOlQikieDVR1icYWj3XAYGvbqvnnxQgb
+  - relpath: corridors/3954b1b5-4c5d-4727-9acc-6b1c93391a75.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: yici0WEFmi4k_1n6O_86L4I4rvvJLTQ_
+  - relpath: corridors/39e72b20-77e5-45a5-bb0e-f374ea5894ad.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: WclAolIOP7TtdflGaRbCvQnU9lYsWOmp
+  - relpath: corridors/3a25960a-8e7a-4020-8dfb-8ce6c3423e35.glb
+    md5: 0c5deef7877089b6d6d6bd6733af1c4c
+    size: 234864
+    cloud:
+      s3:
+        etag: 0c5deef7877089b6d6d6bd6733af1c4c
+        version_id: Dwmp_r7cWG_U_sGHjUok7ZdYm.NKEqHC
+  - relpath: corridors/3b2cb9ee-2a6f-4fb3-bc1b-dbd192d3163c.glb
+    md5: ad5e6344ca53d664564a279dc6aef0af
+    size: 10128
+    cloud:
+      s3:
+        etag: ad5e6344ca53d664564a279dc6aef0af
+        version_id: _tWMjpD0sM5NCzQfK49Q8Q8BL52L8O2D
+  - relpath: corridors/3b51e8f3-f98f-4f27-9eb3-5bc68afa332f.glb
+    md5: 7194e570b3df7a062c7fe29d31b395e8
+    size: 1068
+    cloud:
+      s3:
+        etag: 7194e570b3df7a062c7fe29d31b395e8
+        version_id: bdK4ClVcjAR9ph30n1vPsPXhPT2rDRZX
+  - relpath: corridors/3b5d2036-3c56-4cf8-808f-462c9e3681e5.glb
+    md5: b879dd30a537b7120855660fd401d8b8
+    size: 9248
+    cloud:
+      s3:
+        etag: b879dd30a537b7120855660fd401d8b8
+        version_id: afR9hyRW6uLt5eH3gU3t0uJ87vHkECTE
+  - relpath: corridors/3baf4809-eff0-4a0e-8ccb-0d7e6d83f371.glb
+    md5: 8978d997aab57c42cdf8723fc8209d60
+    size: 168876
+    cloud:
+      s3:
+        etag: 8978d997aab57c42cdf8723fc8209d60
+        version_id: ShXDK3x6q5hNDL16QoF8MnIZMtE1ub3y
+  - relpath: corridors/3bcbcc3c-ad26-411d-b4c1-5d5a37971000.glb
+    md5: 91ed348038cf2eaf48f6eb59d7aa505c
+    size: 8068
+    cloud:
+      s3:
+        etag: 91ed348038cf2eaf48f6eb59d7aa505c
+        version_id: 7XBVtDXvo0D.D_IBCKpVFe8NnuAy2d3S
+  - relpath: corridors/3bf6e5a0-a04d-498e-89b1-b2c2562e4483.glb
+    md5: f70e1d7326172a428d4dce8c2355bdb0
+    size: 868188
+    cloud:
+      s3:
+        etag: f70e1d7326172a428d4dce8c2355bdb0
+        version_id: y2yo7DDRA8TYBCgKjQfNLtiUxz2DPdvC
+  - relpath: corridors/3c25705a-5769-425a-a481-d1f6d5a95cab.glb
+    md5: 7375f6c81e7af522932c0d157ad140fc
+    size: 5396
+    cloud:
+      s3:
+        etag: 7375f6c81e7af522932c0d157ad140fc
+        version_id: X0.bvMSwHpN32H4.BAkH.qkQkP6nPTf.
+  - relpath: corridors/3c695f26-b7ed-44ad-8e11-894932defa86.glb
+    md5: ad5e6344ca53d664564a279dc6aef0af
+    size: 10128
+    cloud:
+      s3:
+        etag: ad5e6344ca53d664564a279dc6aef0af
+        version_id: LS1d5YiwKAFzSqI2YC8jkeMLQMteptFi
+  - relpath: corridors/3c6f0725-dbe0-4245-82c4-1f11f2b72ba0.glb
+    md5: c0dbc7b8921dd7e175be8aed4e4c7847
+    size: 66016
+    cloud:
+      s3:
+        etag: c0dbc7b8921dd7e175be8aed4e4c7847
+        version_id: p.4hEgyMvR10.CTferz16od.h8LA.zS8
+  - relpath: corridors/3db0b097-7f87-4252-bdee-286865bce471.glb
+    md5: 3b06e4ef25c9182febde206d82a3c2ba
+    size: 7560
+    cloud:
+      s3:
+        etag: 3b06e4ef25c9182febde206d82a3c2ba
+        version_id: MG1sFvFl5YECzWaytyhc4UpyHJ4FNmQc
+  - relpath: corridors/3db43e49-5b7f-4806-a772-07a1ccfd49a8.glb
+    md5: 41a47283c04e8e9f2041eb9c1cf4f135
+    size: 611808
+    cloud:
+      s3:
+        etag: 41a47283c04e8e9f2041eb9c1cf4f135
+        version_id: baZiBvYLDbbFOCjGC9LnWIhyY.gr5Elf
+  - relpath: corridors/3e28baf3-1c48-4345-a588-7ac59122e8aa.glb
+    md5: f4025d6491cfacd0e7c1bb12d2923611
+    size: 8856
+    cloud:
+      s3:
+        etag: f4025d6491cfacd0e7c1bb12d2923611
+        version_id: WUH3OYgnaJYjXxQsYP9ficoxXxyJN9bJ
+  - relpath: corridors/3e6555b4-d08d-40b1-a5cc-a2b72ce421e5.glb
+    md5: 6f78b1dc4b6f102d10f15b3b512e30de
+    size: 7400
+    cloud:
+      s3:
+        etag: 6f78b1dc4b6f102d10f15b3b512e30de
+        version_id: MQfs9cHQisKpY9OHZsUoqys8rftKZSLT
+  - relpath: corridors/3eeec08e-33bf-470c-a12d-ceeb2e282134.glb
+    md5: 557491d98a97cccbf59d2e6a9568c03a
+    size: 5468
+    cloud:
+      s3:
+        etag: 557491d98a97cccbf59d2e6a9568c03a
+        version_id: qyedcyADMPmQsXM3A5ecspHlD0KGKaK_
+  - relpath: corridors/3f32d551-2459-4ea4-96ca-972c74916ceb.glb
+    md5: 670718efec152f62e76ae4436122812c
+    size: 15964
+    cloud:
+      s3:
+        etag: 670718efec152f62e76ae4436122812c
+        version_id: 7fiCw0lsYJOnO8C83.fm9i6_vmxfKfsk
+  - relpath: corridors/401a320b-358c-4091-acac-ef7afb2d8603.glb
+    md5: 931563da905b721b8ffc7d10277abb9f
+    size: 7380
+    cloud:
+      s3:
+        etag: 931563da905b721b8ffc7d10277abb9f
+        version_id: z2v2vitRuVBPQycVAyVyIVQfEfBzgV.K
+  - relpath: corridors/416ed966-ee69-40c1-ac36-e44c34164f7d.glb
+    md5: c319408e31c30077534ec2ca5ebc5612
+    size: 1072
+    cloud:
+      s3:
+        etag: c319408e31c30077534ec2ca5ebc5612
+        version_id: ybx37xcE8Fq699msTQ8YGk7k1ZENUViP
+  - relpath: corridors/423a19ae-e696-4d07-a125-0abf94e77aec.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: BIRie3D1ohVfBvXnTI.yxpEMJqeknkO.
+  - relpath: corridors/42b97dcb-2033-40ea-82a2-319a1e30dca2.glb
+    md5: 6f78b1dc4b6f102d10f15b3b512e30de
+    size: 7400
+    cloud:
+      s3:
+        etag: 6f78b1dc4b6f102d10f15b3b512e30de
+        version_id: 984aBcL8gOYBIRwuQqwbKfJkRisS.2uW
+  - relpath: corridors/439011bd-9273-4e02-a3cd-e754bf9a1879.glb
+    md5: 3b06e4ef25c9182febde206d82a3c2ba
+    size: 7560
+    cloud:
+      s3:
+        etag: 3b06e4ef25c9182febde206d82a3c2ba
+        version_id: uBk6_JPT9a2HIwt54fHf13NMS8gb.ilp
+  - relpath: corridors/43e195fb-0f50-4b67-bff1-b74f68290fc6.glb
+    md5: feeaff15fbaa5ac8aa23a41d57db50bf
+    size: 96436
+    cloud:
+      s3:
+        etag: feeaff15fbaa5ac8aa23a41d57db50bf
+        version_id: ODQST8XViylBstDyS.77zRIgCAZBA4XR
+  - relpath: corridors/44bacb5a-0cd8-4a88-9c93-490255a6b6f2.glb
+    md5: bffc540cf8e301c340391d0d399c828c
+    size: 9068
+    cloud:
+      s3:
+        etag: bffc540cf8e301c340391d0d399c828c
+        version_id: YjPRDaRCejGJxhzmQ6Kl5qR7GdGWj7fZ
+  - relpath: corridors/44fce3b8-a070-483f-ab6d-68f4ac966e68.glb
+    md5: b6c23cdd69c72cc094ab57cfb250407d
+    size: 18004
+    cloud:
+      s3:
+        etag: b6c23cdd69c72cc094ab57cfb250407d
+        version_id: HE3Zj5m5U6Ny3XU.SqIr8sVqPWY2gku_
+  - relpath: corridors/455397a4-3d28-4e0b-9a88-c40cd796d3ec.glb
+    md5: 0757b2d7e9343ae0f68e1e0cd4f54ee0
+    size: 4532
+    cloud:
+      s3:
+        etag: 0757b2d7e9343ae0f68e1e0cd4f54ee0
+        version_id: skoTzCuikI1KkDGCBbvd8OysVSKyGKb2
+  - relpath: corridors/463d2148-5b77-47cb-b2d1-94f05769b73d.glb
+    md5: 80b8afa999bed8d003036d659e987922
+    size: 1072
+    cloud:
+      s3:
+        etag: 80b8afa999bed8d003036d659e987922
+        version_id: OWZ.jHT9sSYr2O3UHZC7MIk7BaUoVjlM
+  - relpath: corridors/47002338-55a4-4e87-8e57-db37edbedf71.glb
+    md5: 670718efec152f62e76ae4436122812c
+    size: 15964
+    cloud:
+      s3:
+        etag: 670718efec152f62e76ae4436122812c
+        version_id: WoexuC5oPJWXNODdQRetHnu3XufSCBdX
+  - relpath: corridors/470a6b74-a31b-4a50-bfff-da1b475c945b.glb
+    md5: 988088c7388513002d40a74dcc76a7f4
+    size: 14496
+    cloud:
+      s3:
+        etag: 988088c7388513002d40a74dcc76a7f4
+        version_id: ON.UQcMZJsx78e0wL0xwv9pmKm7wjPBG
+  - relpath: corridors/47919ed1-5339-4f91-a036-4e62f149d92a.glb
+    md5: 5ae4e3032d3ae1fb4042a2f81f2d8f0f
+    size: 7980
+    cloud:
+      s3:
+        etag: 5ae4e3032d3ae1fb4042a2f81f2d8f0f
+        version_id: LLonppXXpFlOqKTJojDOj9GgSOgCGynd
+  - relpath: corridors/47f52d3a-21fd-464c-bfe7-dce1df5662be.glb
+    md5: 198db95ad5ee20741634aacc1ca7446e
+    size: 9852
+    cloud:
+      s3:
+        etag: 198db95ad5ee20741634aacc1ca7446e
+        version_id: Ars0cGWq_N.S6DZgrCwiUBX7KpLpfq9m
+  - relpath: corridors/48f6aab3-8d58-4675-806c-3fd7d5b7336f.glb
+    md5: e038faf5ca823e443494e24ff61c2f94
+    size: 7744
+    cloud:
+      s3:
+        etag: e038faf5ca823e443494e24ff61c2f94
+        version_id: 772z1f_ttrjh62cYFuOs5bwxKfacIXfS
+  - relpath: corridors/4ae53bc8-b6da-4ba9-9030-a93ae44389b9.glb
+    md5: 996d63bf22d3a9402e7589244d325302
+    size: 447996
+    cloud:
+      s3:
+        etag: 996d63bf22d3a9402e7589244d325302
+        version_id: Q8R95CRZdbCtcjLap6qC36fbYl.maRz1
+  - relpath: corridors/4af4b1bd-c71d-4ade-a9f6-47b2ccc9f5bb.glb
+    md5: 6740aee0c88914eb94879beb11014c1e
+    size: 2804
+    cloud:
+      s3:
+        etag: 6740aee0c88914eb94879beb11014c1e
+        version_id: xvA2bueXfGEAZz8a1uUpb67swmFpJ31B
+  - relpath: corridors/4b81bf86-4c5b-4422-9edb-c0f4ec525d8e.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: iOSgTnYy3cXcBQHnBl5GvSfnrmKfE8dN
+  - relpath: corridors/4c56d310-5e6e-46ec-99ff-ca40d788b931.glb
+    md5: 4f956bdd9aa57bfa3171af5c4355c268
+    size: 29196
+    cloud:
+      s3:
+        etag: 4f956bdd9aa57bfa3171af5c4355c268
+        version_id: dEXuckTKLb3HYIUyTYAhWKS7U17xV7tt
+  - relpath: corridors/4d15f105-cd2b-4069-9197-8035d0e07d8e.glb
+    md5: a53ed9a10fd10c15f1fb590155b81773
+    size: 8496
+    cloud:
+      s3:
+        etag: a53ed9a10fd10c15f1fb590155b81773
+        version_id: qLN0ZRIwxC.vCnh.Y0kmVa8dNsX9S2vk
+  - relpath: corridors/4d483843-3032-4e1d-8edb-b75d2e2377dd.glb
+    md5: df3050850b51812cbe578c9fedb2df55
+    size: 1072
+    cloud:
+      s3:
+        etag: df3050850b51812cbe578c9fedb2df55
+        version_id: VTT_hDSocTO.vIFKTjszZg6scAmBiPJX
+  - relpath: corridors/4e24cfc4-bfea-4233-8fa0-d9967e3bdf7d.glb
+    md5: f931176b165d3b2857a90fb1a131bb99
+    size: 1068
+    cloud:
+      s3:
+        etag: f931176b165d3b2857a90fb1a131bb99
+        version_id: QYXSbGsusv5RMhYv.r.VUDQn90__SNmi
+  - relpath: corridors/4e2e6f98-ec16-4627-a06a-d3cdc282ee1c.glb
+    md5: 996d63bf22d3a9402e7589244d325302
+    size: 447996
+    cloud:
+      s3:
+        etag: 996d63bf22d3a9402e7589244d325302
+        version_id: VDFtJ0RdcqkyQjvyVs1jZGALUy40XNkT
+  - relpath: corridors/4e5190dc-9290-4d8d-a521-18d8f64c098e.glb
+    md5: 56e3386bb640b880e9e4687c9738ee6e
+    size: 9084
+    cloud:
+      s3:
+        etag: 56e3386bb640b880e9e4687c9738ee6e
+        version_id: 2nSKYDyFtIV1GPTfa0cK9HneTgPP1T26
+  - relpath: corridors/4ec452bd-a385-4f7e-9910-79955ea29037.glb
+    md5: d0b6a6dbb7e1b60d804a5b7e80271faf
+    size: 9896
+    cloud:
+      s3:
+        etag: d0b6a6dbb7e1b60d804a5b7e80271faf
+        version_id: MR7EEJE8gusE6fZXzs6v5s0XhHy02LWf
+  - relpath: corridors/4ecffbfc-dc50-4140-95e8-4f97d5804f4f.glb
+    md5: 931563da905b721b8ffc7d10277abb9f
+    size: 7380
+    cloud:
+      s3:
+        etag: 931563da905b721b8ffc7d10277abb9f
+        version_id: 1Er6omSyPfMhsP.EAYWcqX5MKafhumGX
+  - relpath: corridors/4f09d961-9247-4287-b09f-3d3def84c36d.glb
+    md5: 9fa69dfe222e2746aad4355594d0047a
+    size: 16944
+    cloud:
+      s3:
+        etag: 9fa69dfe222e2746aad4355594d0047a
+        version_id: s2Ho1GlTP8MRRIypyo.2cDcagz1cctvN
+  - relpath: corridors/502166ab-e841-4b65-9045-7c386166a9e8.glb
+    md5: 5a31c4ac62b90fbd295dceaf5d1daee7
+    size: 190944
+    cloud:
+      s3:
+        etag: 5a31c4ac62b90fbd295dceaf5d1daee7
+        version_id: _vP3m_CDzoC8uoGfb4tHuHvLxJv4jAOX
+  - relpath: corridors/502f175c-9d55-4341-b6ff-0f04d76522d5.glb
+    md5: 3c5634f8b05fc274f54c23c3a5106eb2
+    size: 359060
+    cloud:
+      s3:
+        etag: 3c5634f8b05fc274f54c23c3a5106eb2
+        version_id: _YYilPP74L.lrE7GRjdXRdsv_RmE..yI
+  - relpath: corridors/50ee1b49-9d08-46f3-87cb-a3faafb1f555.glb
+    md5: 32639c7ca7df702de77b2be6dedd4a3d
+    size: 314088
+    cloud:
+      s3:
+        etag: 32639c7ca7df702de77b2be6dedd4a3d
+        version_id: ivY2QT3VMSHZIx_Zclhz_XUIkobhNqfS
+  - relpath: corridors/5166a7a1-bd21-4aa3-ba20-23453cb4c431.glb
+    md5: 6f206840f15779bbb980f57d569bc873
+    size: 295088
+    cloud:
+      s3:
+        etag: 6f206840f15779bbb980f57d569bc873
+        version_id: yPHJA4JlTFhEeSxfRBbWyAvQzKJ_G3ub
+  - relpath: corridors/521967fe-9c54-4b71-a9aa-398950ed47ae.glb
+    md5: 79f659b34b27048868ff7f5b9784b352
+    size: 14228
+    cloud:
+      s3:
+        etag: 79f659b34b27048868ff7f5b9784b352
+        version_id: r11wyUpZUTyJOTorm9PK5nBRISKoEHAn
+  - relpath: corridors/52c4948d-bdc2-4201-a991-61a2c0a565c0.glb
+    md5: 535f1d7505fd72afd51a08d773611358
+    size: 14184
+    cloud:
+      s3:
+        etag: 535f1d7505fd72afd51a08d773611358
+        version_id: JqpzE_eAZg61FnXOWXg025RGp8_4c1cP
+  - relpath: corridors/52d43c04-e182-4457-8aae-8c98776ec5be.glb
+    md5: 67c200accc5fb2194f8cbc828211490f
+    size: 6584
+    cloud:
+      s3:
+        etag: 67c200accc5fb2194f8cbc828211490f
+        version_id: dLk_fiHvq4snCB3m6pIAD1DC7COxN2p0
+  - relpath: corridors/52e93c46-3819-4e09-a721-250148b13b13.glb
+    md5: 3cfd66b44f1d21d351b81ac126975781
+    size: 1072
+    cloud:
+      s3:
+        etag: 3cfd66b44f1d21d351b81ac126975781
+        version_id: HnbOkFN3yPSZdUGnJGj7gymQLczaBR9E
+  - relpath: corridors/53698889-080e-4f1c-b6c1-cb4dd2d488f6.glb
+    md5: fa99d4db85bb4faddad55626da1e53c3
+    size: 1064
+    cloud:
+      s3:
+        etag: fa99d4db85bb4faddad55626da1e53c3
+        version_id: cgC4qGPCFl6UjA38CG1_eGR4PA56BHL_
+  - relpath: corridors/53797407-9641-4e69-966b-e7aecf6a0ecc.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: i1dri2DuFgiSSxd.q51I76twxfWBCQeM
+  - relpath: corridors/53a6bbda-8263-419d-96e8-ba4561899d87.glb
+    md5: e038faf5ca823e443494e24ff61c2f94
+    size: 7744
+    cloud:
+      s3:
+        etag: e038faf5ca823e443494e24ff61c2f94
+        version_id: 9EAtM6HSDRE_R1LOLqQriZX4csdWMQ5k
+  - relpath: corridors/54299692-7ff8-468b-9c0a-c04a32f6fbe1.glb
+    md5: f7c8e34efedcd1e48fe514ad9a48b3cb
+    size: 58280
+    cloud:
+      s3:
+        etag: f7c8e34efedcd1e48fe514ad9a48b3cb
+        version_id: tSrSW8OI3u3eebe9w8i6xJIe3tckQtAD
+  - relpath: corridors/543543a9-cc5a-4f99-863a-78ca573120d7.glb
+    md5: 1ef58f14556336e353a1f8108835387b
+    size: 1068
+    cloud:
+      s3:
+        etag: 1ef58f14556336e353a1f8108835387b
+        version_id: hdPIePtpzYyDQvDQfz9Df.EdDCL3jtcv
+  - relpath: corridors/5475ae38-db50-4868-92ba-8718bf136c7b.glb
+    md5: af8794c74c84d5dc57b85e11e79f2113
+    size: 1076
+    cloud:
+      s3:
+        etag: af8794c74c84d5dc57b85e11e79f2113
+        version_id: t2dnJI8lF5q908k0ZOnvisFv_iUzGRXg
+  - relpath: corridors/5596c468-098a-45c6-805e-fb47c038aa2e.glb
+    md5: 4d5027b212f6e94471dfd1ccee1a71c0
+    size: 1072
+    cloud:
+      s3:
+        etag: 4d5027b212f6e94471dfd1ccee1a71c0
+        version_id: wsbUA.jQglsy5bFBD.U1uki37qcrWKZZ
+  - relpath: corridors/56d63930-60f2-49f5-a3bb-afc8d865c152.glb
+    md5: 3d209171a8a51586a54d124f9ae21e19
+    size: 3336528
+    cloud:
+      s3:
+        etag: 3d209171a8a51586a54d124f9ae21e19
+        version_id: l07t5N4Y5cXDjJzPD9.AusA_UW85_lP1
+  - relpath: corridors/56e68f3c-b720-444b-b892-0ae2698323b0.glb
+    md5: 26bad9467cfad5efa1031ff185df6753
+    size: 5436
+    cloud:
+      s3:
+        etag: 26bad9467cfad5efa1031ff185df6753
+        version_id: D.J5VWhQ4CeCv60tUsQDtoX0HBlDIqYL
+  - relpath: corridors/5764d42e-95e4-4e5a-b36e-ca498354906d.glb
+    md5: 0cf0c4f892cb5fa591ca7e85528c2f0f
+    size: 269864
+    cloud:
+      s3:
+        etag: 0cf0c4f892cb5fa591ca7e85528c2f0f
+        version_id: FXVpm0gBkz5bPzGDRbzugqANZkJaF3zC
+  - relpath: corridors/57bab703-98bd-4106-9160-af951a74e4df.glb
+    md5: 88abb022ca82dad2d5bf8150e4853519
+    size: 13848
+    cloud:
+      s3:
+        etag: 88abb022ca82dad2d5bf8150e4853519
+        version_id: 97wVC0g2E9Q2CInzeSqkPp3r2bvOkHM6
+  - relpath: corridors/58780898-97b3-4954-aae2-3f2ef497ed41.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: uV7n9yUOyPx3XqbJfL7rF500Ag9Qj25d
+  - relpath: corridors/588e9072-9de6-45d0-a134-27c725a68b14.glb
+    md5: 9b695371ab4dd200b8cf83c6cc309018
+    size: 1068
+    cloud:
+      s3:
+        etag: 9b695371ab4dd200b8cf83c6cc309018
+        version_id: mYa.VyX6dD64TJj3zdHqJA5RC4rcvwNC
+  - relpath: corridors/594902fb-c4c1-47c3-b98e-3101b93a73e4.glb
+    md5: c66896bd4106645c3fe9f5e4e6ba11b9
+    size: 7344
+    cloud:
+      s3:
+        etag: c66896bd4106645c3fe9f5e4e6ba11b9
+        version_id: rOBlvq7rJ16ka7A4YEsySBkEbI7hNfv5
+  - relpath: corridors/597935ff-e86d-4a23-a3d6-bd88ede49a3f.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: JdT2csejmaxpc4IZhxo54I3jBsiaksLd
+  - relpath: corridors/59b4fb10-8a7b-43f1-bd0c-d487cf8fca43.glb
+    md5: 5242fe2d26f4defbac1c15c819541da2
+    size: 6588
+    cloud:
+      s3:
+        etag: 5242fe2d26f4defbac1c15c819541da2
+        version_id: v2qGcbegE1RebQGLdo552ueGRWjxVIri
+  - relpath: corridors/5b8ac863-a3ac-4f61-b856-0243634ca18b.glb
+    md5: 775347fec70bb0a735014eabb16865a4
+    size: 5720
+    cloud:
+      s3:
+        etag: 775347fec70bb0a735014eabb16865a4
+        version_id: UUueNBHiFH9qEYn3jEn12gq9t3F5vBlU
+  - relpath: corridors/5c78be2e-d36c-4994-ae42-a94ccf935988.glb
+    md5: 9a38960ad6c8eeb1f142acbead66a1cf
+    size: 4820
+    cloud:
+      s3:
+        etag: 9a38960ad6c8eeb1f142acbead66a1cf
+        version_id: Ba0TAVKkSoPu8dppFVLSHkox2KYVPFEE
+  - relpath: corridors/5c7d77e3-e7e4-4f6c-bf86-01e78c3de7ad.glb
+    md5: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+    size: 288744
+    cloud:
+      s3:
+        etag: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+        version_id: 214c90L9qfStmTMUxZMW.NGeIspj8rdu
+  - relpath: corridors/5cb72454-f0fb-41d5-9cad-5797e1b447ae.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: .cVAaAYTz5kKXCOmmJWJIdjtwxSqSt40
+  - relpath: corridors/5d1aa5f0-f399-4bc2-96fd-e999a2326626.glb
+    md5: d02c8827a0d443b1a429ad34d0414c22
+    size: 10668
+    cloud:
+      s3:
+        etag: d02c8827a0d443b1a429ad34d0414c22
+        version_id: syHp8Ly_KSOWRQGqg0MHKQY282NYVJ.K
+  - relpath: corridors/5d35eae0-82df-40c7-952c-6fbab03034b2.glb
+    md5: 988088c7388513002d40a74dcc76a7f4
+    size: 14496
+    cloud:
+      s3:
+        etag: 988088c7388513002d40a74dcc76a7f4
+        version_id: gf_.ludwlZJkH_Qa4WLPBHeUfIpt7tvz
+  - relpath: corridors/5df04f61-5fcc-4035-92c3-631f772a6ce0.glb
+    md5: ad5e6344ca53d664564a279dc6aef0af
+    size: 10128
+    cloud:
+      s3:
+        etag: ad5e6344ca53d664564a279dc6aef0af
+        version_id: 2YIT8FDWsEVj1Ap0mM9UF63qCK7M8YuB
+  - relpath: corridors/5eff99f7-705e-4dee-aed7-e478b8dbf64a.glb
+    md5: 709c47bc71abecc59da409888afd0f6b
+    size: 123560
+    cloud:
+      s3:
+        etag: 709c47bc71abecc59da409888afd0f6b
+        version_id: YYXd9.U2t6U03yba0.ndrVpGFGP0iNFW
+  - relpath: corridors/5f2d29d1-9989-435c-9311-59799db1e8d7.glb
+    md5: 29626d6f5486f41c9224040c131f1fef
+    size: 1068
+    cloud:
+      s3:
+        etag: 29626d6f5486f41c9224040c131f1fef
+        version_id: BettI0TAwb.eAWGPdue7xuoWblanariO
+  - relpath: corridors/5fa952b1-a5a7-4089-bdc2-7208f71f45be.glb
+    md5: 1b543df83b88027a54d95088f593abc4
+    size: 7812
+    cloud:
+      s3:
+        etag: 1b543df83b88027a54d95088f593abc4
+        version_id: 7A_zx_tKlaCof4gZfee8SMTRwDhIK1w8
+  - relpath: corridors/60d98bd4-122b-485f-b55e-444065091e23.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: F7bI0bquKnQcGTjHIXw6R2qRpgjten3a
+  - relpath: corridors/61628a43-1357-4a2c-89f4-28f601ddf5bd.glb
+    md5: 6740aee0c88914eb94879beb11014c1e
+    size: 2804
+    cloud:
+      s3:
+        etag: 6740aee0c88914eb94879beb11014c1e
+        version_id: xSjG8c9J_lbP3eR4UEP0yN9hyjpsFdQY
+  - relpath: corridors/61a65c4b-60b9-4024-8525-ea879d8ca19a.glb
+    md5: 343bbd90f30f4a216927ff3995111b5a
+    size: 39460
+    cloud:
+      s3:
+        etag: 343bbd90f30f4a216927ff3995111b5a
+        version_id: lnaCzVaJ8E7_GaCWvLeWVyfmSRbb56xy
+  - relpath: corridors/61c613a2-0030-48bf-8b6e-be631f24ce8e.glb
+    md5: 97b1b27473a3b93b0e69be9ecea04ddd
+    size: 6380
+    cloud:
+      s3:
+        etag: 97b1b27473a3b93b0e69be9ecea04ddd
+        version_id: JUR.EJfkmRWzSFlrLVyyohDisdA6fn07
+  - relpath: corridors/61d8f7d6-9097-4de0-9d46-4e41de2f2f4f.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: vdBuSCCjy6mS3.YCjvkCzSUxNan0Vt4N
+  - relpath: corridors/61d9f366-c050-4c28-995f-32ab920a7ca8.glb
+    md5: 5f7d2b6dad9c849a82e58908afb2b4b8
+    size: 51412
+    cloud:
+      s3:
+        etag: 5f7d2b6dad9c849a82e58908afb2b4b8
+        version_id: lM5jUMDfB4oN_.mZfiH011R7gYZd0xpg
+  - relpath: corridors/62381536-7923-43da-8703-c744e4de0b25.glb
+    md5: 1cafba4591ea94ff4df24ed0504af074
+    size: 4604
+    cloud:
+      s3:
+        etag: 1cafba4591ea94ff4df24ed0504af074
+        version_id: AIOBELHycvS8CB5jZXLDwUaaDGnkgdJ8
+  - relpath: corridors/63b2f5a9-5914-4c45-9239-139948a93498.glb
+    md5: 988088c7388513002d40a74dcc76a7f4
+    size: 14496
+    cloud:
+      s3:
+        etag: 988088c7388513002d40a74dcc76a7f4
+        version_id: RvGqwAs957Ffm5qlNRXa0w_2oWM4vhIZ
+  - relpath: corridors/63cdba99-d414-44a3-aa41-c57e469289be.glb
+    md5: 0226b01390d8c3b81f84b3df66d75cb8
+    size: 8816
+    cloud:
+      s3:
+        etag: 0226b01390d8c3b81f84b3df66d75cb8
+        version_id: 14BQOGnGGHpMz2HpQkHc4ErgWcQj8q4z
+  - relpath: corridors/6435e1d0-eb5f-41bb-94fc-e1aeeb2aa70b.glb
+    md5: 635ef9ab4b43c43b81f8f3682e87a41f
+    size: 1068
+    cloud:
+      s3:
+        etag: 635ef9ab4b43c43b81f8f3682e87a41f
+        version_id: 4So0ZQsCFQb6lTdAP0nS6o4l0gWJYAZP
+  - relpath: corridors/64c5c92d-dc07-40c4-a702-cbef17753fa6.glb
+    md5: ac62783e2f8cc366036afe9f64b5503e
+    size: 8784
+    cloud:
+      s3:
+        etag: ac62783e2f8cc366036afe9f64b5503e
+        version_id: NTU.F3tmrxtHcGxbISFrJ9KlZoWsqDLr
+  - relpath: corridors/64db1d83-64ca-467d-a6ca-6e67b4225614.glb
+    md5: b38d95ea3f183cd8fb46197baa4a2620
+    size: 6156
+    cloud:
+      s3:
+        etag: b38d95ea3f183cd8fb46197baa4a2620
+        version_id: au9xw2CEYGb3VwGROJHW1zt3gLwf_iC8
+  - relpath: corridors/64ebd98a-c6d1-4317-8596-dd73551da0cf.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: ABZfDtISBuUdQ9JGLsXvCFN5hTOJli0J
+  - relpath: corridors/65156c43-26ef-4898-83f5-316794b12e72.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: NHnoIkHS_t9MHQQgaVfzXo7vjzXgT9KI
+  - relpath: corridors/65bf9340-50c8-4e50-b1d0-72b58bf5505a.glb
+    md5: 5b12406fd1323c333f5b881c77b63c7b
+    size: 3148
+    cloud:
+      s3:
+        etag: 5b12406fd1323c333f5b881c77b63c7b
+        version_id: NP9PFmqC__j2TC4.2dX4YL0vU_F_.l.3
+  - relpath: corridors/65f3b03b-1eb1-487d-8c02-c4d107cc9400.glb
+    md5: 1b543df83b88027a54d95088f593abc4
+    size: 7812
+    cloud:
+      s3:
+        etag: 1b543df83b88027a54d95088f593abc4
+        version_id: bmMGJikzhbPLC_Gr_sFMu0I4joaCYzET
+  - relpath: corridors/676e549a-6234-48ee-b7cb-82258c17054b.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: eUiASeKEdvLJCY_2agH.Qvbtv46nZCSc
+  - relpath: corridors/67aecf90-24ce-4dfa-91db-8d7a081aa684.glb
+    md5: 9d13a07998423ff06ab069f5a48738e0
+    size: 1068
+    cloud:
+      s3:
+        etag: 9d13a07998423ff06ab069f5a48738e0
+        version_id: m6.gEQZzdl0Q5v.oVL1DuUP1f6BI9Jk3
+  - relpath: corridors/67e5f7e1-7b82-4aff-890e-9f8fc1f5c89b.glb
+    md5: 9e9ae06d5629d08d18c53bad44cb3c55
+    size: 1068
+    cloud:
+      s3:
+        etag: 9e9ae06d5629d08d18c53bad44cb3c55
+        version_id: duhmwUMb86aaLVhWJcrMo7jo_.f7aqmk
+  - relpath: corridors/6904a86d-aadb-4959-9aac-54afa7e2bf2b.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: uRIFtqq66vTeTZ1VIDoR75jH.XAPwiln
+  - relpath: corridors/69658d04-5cec-4b57-92d0-20f69927840c.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: BT.93Xe.Mn2dm1PxrVSbIh0cUv9rXzIC
+  - relpath: corridors/69ac0df4-f442-4d62-90dc-86fcbc38eb23.glb
+    md5: 04bc82aa032ea3fc30873a42a2a3bd53
+    size: 93212
+    cloud:
+      s3:
+        etag: 04bc82aa032ea3fc30873a42a2a3bd53
+        version_id: 3Zs0ToqyxB1Jk3d7S5jHmtm4T6peQLrd
+  - relpath: corridors/69d8165e-dce4-4144-9985-8a8f8ae21b4c.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: B.c0akiiOWEe10oSRmhPlldW5jopfVoY
+  - relpath: corridors/6a6392a9-8ac1-4666-a684-83d310ca055f.glb
+    md5: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+    size: 288744
+    cloud:
+      s3:
+        etag: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+        version_id: rMTjinQcGZF7MqLt3z8sEng9keR9no.e
+  - relpath: corridors/6ac1278c-a82d-4f1d-aa17-5c52d9f31dc2.glb
+    md5: f39c0881e2f8f1864d928759bc6fa767
+    size: 7812
+    cloud:
+      s3:
+        etag: f39c0881e2f8f1864d928759bc6fa767
+        version_id: QggOOuhMsP7YfGA2IW5MyhH72ADkWqsr
+  - relpath: corridors/6acd66b8-2659-4626-bef9-a80f135489ad.glb
+    md5: 906e253be8cd1f1b66cf67d81bff0d54
+    size: 1068
+    cloud:
+      s3:
+        etag: 906e253be8cd1f1b66cf67d81bff0d54
+        version_id: maHI8SxERBwXklno2QwM4wa8whS7TzzK
+  - relpath: corridors/6add732b-a31a-4c4e-9107-5125558e3374.glb
+    md5: 25981b8ef919ec9183934f1b69ea18a2
+    size: 1072
+    cloud:
+      s3:
+        etag: 25981b8ef919ec9183934f1b69ea18a2
+        version_id: j4TLxRrFb8YcqucNkj5ADQZoF1vgSSZi
+  - relpath: corridors/6af30778-5444-4431-8617-2419778ad873.glb
+    md5: 4f956bdd9aa57bfa3171af5c4355c268
+    size: 29196
+    cloud:
+      s3:
+        etag: 4f956bdd9aa57bfa3171af5c4355c268
+        version_id: IRMrZ8YDNZVMNrof1OD1ykimLBzcxrIX
+  - relpath: corridors/6b1abbb7-64d0-4e9d-8f7e-0f8a0221ba91.glb
+    md5: 3baa983b5ce53f18bce025cb040333fe
+    size: 15480
+    cloud:
+      s3:
+        etag: 3baa983b5ce53f18bce025cb040333fe
+        version_id: 5kGaheIb8PLRchVFJL6stRQs4l4hzLIx
+  - relpath: corridors/6b9d38e2-02db-4cd0-b2b3-455830438f45.glb
+    md5: f2a0901f2337883fa7daeaac37e410ca
+    size: 6804
+    cloud:
+      s3:
+        etag: f2a0901f2337883fa7daeaac37e410ca
+        version_id: 2xdzW0G7c3j.XjfuOtUsaDI0mBeUIYMk
+  - relpath: corridors/6bbdd96b-5fae-406c-a0a5-8e20e1bd0d8e.glb
+    md5: c0dbc7b8921dd7e175be8aed4e4c7847
+    size: 66016
+    cloud:
+      s3:
+        etag: c0dbc7b8921dd7e175be8aed4e4c7847
+        version_id: RrohhBEJ6EvaVFrhGwjasNpMr5tHua0F
+  - relpath: corridors/6cc00882-7403-4eca-8f50-03eebfc8c873.glb
+    md5: ef9d9e046e42420fce95a6304d82846e
+    size: 95396
+    cloud:
+      s3:
+        etag: ef9d9e046e42420fce95a6304d82846e
+        version_id: RzyQCq3a9Y_O7FjZTivsWOiYi422QGFE
+  - relpath: corridors/6d7cca9f-1fe3-442d-8ac9-43896f194326.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: Ni6KRidiX2uB1pi6tABI4cOvSE.DBmhE
+  - relpath: corridors/6e0b9e06-b5a5-4f05-ab2c-6146c5d930b3.glb
+    md5: 343d30f5ba3cf01a8303b351899007b8
+    size: 4532
+    cloud:
+      s3:
+        etag: 343d30f5ba3cf01a8303b351899007b8
+        version_id: mJ4c2is6EIfvO7aiBoTWAvVSlZ59Ner9
+  - relpath: corridors/6ee43559-da2f-411b-81a2-a0d0f59fac67.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: .bp9L5PYMOLzZsqv4FXAU2Fr4r1iqw.H
+  - relpath: corridors/6f04ffad-3b9d-4c1c-afc0-fd203b02e5a3.glb
+    md5: 69720ebf985f342f767b63c1c8643e8b
+    size: 6888400
+    cloud:
+      s3:
+        etag: 69720ebf985f342f767b63c1c8643e8b
+        version_id: 4xs8t0mpgdeZjvq7.M_b4VTavOSG6LX2
+  - relpath: corridors/6f055461-adb2-41fe-86c1-50d3afdf9360.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: GbA1fqGVrGoJY672DQF7.avJjhLtY28g
+  - relpath: corridors/6f16b6f5-e1d7-486d-b4fa-d5378d80612b.glb
+    md5: 57815c6fd1fc11beadadd9db53a5cbca
+    size: 1068
+    cloud:
+      s3:
+        etag: 57815c6fd1fc11beadadd9db53a5cbca
+        version_id: UiNzPiyU7q5LqpXbz_ufdTeuVcGaQujC
+  - relpath: corridors/6f74a57b-41ce-4581-a206-2e84b58c1c98.glb
+    md5: 4750c26811454e956c774cd3674f7fc1
+    size: 31432
+    cloud:
+      s3:
+        etag: 4750c26811454e956c774cd3674f7fc1
+        version_id: 74UClBA68uRChbBwxjD2J4hXm6kxTgzZ
+  - relpath: corridors/6f89860a-30df-4b79-8e6d-dd209c959374.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: 0XP_Ao2GAqWdMyjmNu6yM_i5DPesC8AX
+  - relpath: corridors/6fe91946-48bb-485f-9ad0-5f0550d1f2b3.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: l83Td3HyDedSjds46R4Aqw8KFYMfosda
+  - relpath: corridors/6febbcea-502d-466e-bb26-6e3eb8240902.glb
+    md5: 80bba3e46d770a53253d7387e8588bc0
+    size: 6044
+    cloud:
+      s3:
+        etag: 80bba3e46d770a53253d7387e8588bc0
+        version_id: Ox8Vwgn.TAroYNdyclSG60NFF7vExu4L
+  - relpath: corridors/70ab3d83-1db9-4b2c-a315-b156c8969b65.glb
+    md5: e46cf3ea777904d76763d238e7f97eba
+    size: 9888
+    cloud:
+      s3:
+        etag: e46cf3ea777904d76763d238e7f97eba
+        version_id: yXwYgU0SBvBB0udktcq8YQy9YZcVuox_
+  - relpath: corridors/70ad7ae6-c9af-4975-98e2-98c249e36ddd.glb
+    md5: bd62066d8bc40c2e288e1bf1e0df177b
+    size: 5364
+    cloud:
+      s3:
+        etag: bd62066d8bc40c2e288e1bf1e0df177b
+        version_id: 7TrlJ8V6oREsq2MHgwnHwOn4Cc3N3K.S
+  - relpath: corridors/70c2341b-2506-4b86-99bb-8e65f5015137.glb
+    md5: 5fcd7c982fb275e38ac0ec3fd57fb2b5
+    size: 1072
+    cloud:
+      s3:
+        etag: 5fcd7c982fb275e38ac0ec3fd57fb2b5
+        version_id: YoruyE.IWUA2IJ.rExsQ.FRvJ5WBgZLz
+  - relpath: corridors/712077d9-b671-4b36-a6d3-2f9af7596239.glb
+    md5: 9d40a1c9f9cc39c8933140fced039bc4
+    size: 5648
+    cloud:
+      s3:
+        etag: 9d40a1c9f9cc39c8933140fced039bc4
+        version_id: vrn2rQ2VNZZa9h60tOpu8JVZbQBDLN2b
+  - relpath: corridors/717feefc-95f4-42b4-8255-96ddf65921be.glb
+    md5: c8ad102c7fae57319051bcdbb330bd2d
+    size: 5652
+    cloud:
+      s3:
+        etag: c8ad102c7fae57319051bcdbb330bd2d
+        version_id: yXtdJu97byUW7XyRmr5D5zzGlHd0VjXp
+  - relpath: corridors/71888798-9acb-4589-9b39-59a987d048ad.glb
+    md5: 69720ebf985f342f767b63c1c8643e8b
+    size: 6888400
+    cloud:
+      s3:
+        etag: 69720ebf985f342f767b63c1c8643e8b
+        version_id: EQHpTLmRRdNyq8gVxB_SYhi0obI7Dc.R
+  - relpath: corridors/72ea5aad-4be7-4478-afc0-7736bc0d90e3.glb
+    md5: 0cb798f6fdc504e9a416f5254a48f69a
+    size: 12376
+    cloud:
+      s3:
+        etag: 0cb798f6fdc504e9a416f5254a48f69a
+        version_id: M6G2LRewbqmAVwQZ.wUj.7DkI5Cj9X.c
+  - relpath: corridors/731ade72-cdb7-4262-8be1-859396820dfd.glb
+    md5: 086943f4bffffdc8a8d003ec1222ea10
+    size: 32728
+    cloud:
+      s3:
+        etag: 086943f4bffffdc8a8d003ec1222ea10
+        version_id: V.BBBofsRML2bFGNGVsCK.8mC7SoSamF
+  - relpath: corridors/740eebf8-3de5-48d9-b63a-09eb75dd8f9b.glb
+    md5: 40ca998fbbe3cd2736406daf280d50fc
+    size: 1072
+    cloud:
+      s3:
+        etag: 40ca998fbbe3cd2736406daf280d50fc
+        version_id: fscbCFqTqeYV9K3AJehUxko7rOdwuQpf
+  - relpath: corridors/74370757-0cd2-44e5-83d8-47eb550c441a.glb
+    md5: 21bb34d6da2d9681816d42e2e6072bf8
+    size: 7200
+    cloud:
+      s3:
+        etag: 21bb34d6da2d9681816d42e2e6072bf8
+        version_id: zA7ogGHf7cg12vrUfG6309DSvaRg7Qqe
+  - relpath: corridors/74c8746d-be53-493d-9a2a-1edbe24f0d16.glb
+    md5: 931563da905b721b8ffc7d10277abb9f
+    size: 7380
+    cloud:
+      s3:
+        etag: 931563da905b721b8ffc7d10277abb9f
+        version_id: .Dm1R2L7zgYQl993a2oXZmBzusnYfCGL
+  - relpath: corridors/751807ff-0130-4789-814a-28bdeec62910.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: JZsvPJWT2CocsJbEpbpymk_vKJIEST59
+  - relpath: corridors/75ff443d-c177-4dab-a866-89e9141b73a4.glb
+    md5: 6f78b1dc4b6f102d10f15b3b512e30de
+    size: 7400
+    cloud:
+      s3:
+        etag: 6f78b1dc4b6f102d10f15b3b512e30de
+        version_id: FVwvUmQ9RnI_ASRNCMzocm6HFuVj_wyB
+  - relpath: corridors/760368bf-6b4c-4d92-aa2b-24e17fd947d3.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: riw186.4hKGAUXIQ0Oog_x9f1OrEATOh
+  - relpath: corridors/762b6f55-e762-4e77-a676-61ca85ff209b.glb
+    md5: bb566a963ddfe7e4f0254be4adb28849
+    size: 26100
+    cloud:
+      s3:
+        etag: bb566a963ddfe7e4f0254be4adb28849
+        version_id: q4hNokd0yOIywu_ucRphubhsaf5Jwd3v
+  - relpath: corridors/769ca7e9-ead0-4882-966c-d6f5c273c2ee.glb
+    md5: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+    size: 288744
+    cloud:
+      s3:
+        etag: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+        version_id: aLTWNlsI4obVORZvTp5F4exZBfBslvTE
+  - relpath: corridors/76a8931b-1c06-4646-8a17-ac7828b6e879.glb
+    md5: c0dbc7b8921dd7e175be8aed4e4c7847
+    size: 66016
+    cloud:
+      s3:
+        etag: c0dbc7b8921dd7e175be8aed4e4c7847
+        version_id: TCl9HF9butLt27Nei9oLKxNTQiWP50N7
+  - relpath: corridors/76ac786b-8bde-4fcc-a96d-3c68b8d852b8.glb
+    md5: d93a517dd8e74707c0b0aa3ab186408d
+    size: 5908
+    cloud:
+      s3:
+        etag: d93a517dd8e74707c0b0aa3ab186408d
+        version_id: MHHF7IggwKX3YCt3e.g.IH.O9C_HdDZy
+  - relpath: corridors/7739f00f-62bc-4852-8d2b-518ae26a9b4a.glb
+    md5: 003a9ab5211364d9d8ea5e05ad2d4211
+    size: 1072
+    cloud:
+      s3:
+        etag: 003a9ab5211364d9d8ea5e05ad2d4211
+        version_id: fmRTjOD4CJKtzxxQw_iEgcFpMifUsSCW
+  - relpath: corridors/7751603d-80fa-4bc7-b8b0-9e7176bed3e6.glb
+    md5: 1726164032fc5c2021219051c1bd89ec
+    size: 1068
+    cloud:
+      s3:
+        etag: 1726164032fc5c2021219051c1bd89ec
+        version_id: Qt6NZgUVoO_KjoYn4oPLdaIpQCjWaXOh
+  - relpath: corridors/780c320b-112f-4da0-a7d4-fde277e112c9.glb
+    md5: cfc18359c59910ffaac4867f6b0fd00e
+    size: 1068
+    cloud:
+      s3:
+        etag: cfc18359c59910ffaac4867f6b0fd00e
+        version_id: DthtOzQBiW4lYpILcwgFBeC88JjOf9cn
+  - relpath: corridors/78ee24bb-4ae4-49e9-bad2-d6f13166b89e.glb
+    md5: 6f78b1dc4b6f102d10f15b3b512e30de
+    size: 7400
+    cloud:
+      s3:
+        etag: 6f78b1dc4b6f102d10f15b3b512e30de
+        version_id: M9UeQb8D2ZViwzYYDLsW3bDJDlCZiUPN
+  - relpath: corridors/794bdabf-3a8f-4fe3-8bd4-8e0e7182ea4d.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: ac5aC_1kGbynmd.mB8IvWlq6gSG3WDJ4
+  - relpath: corridors/79a10f00-84e0-4b8e-8622-485973df3773.glb
+    md5: 3c5634f8b05fc274f54c23c3a5106eb2
+    size: 359060
+    cloud:
+      s3:
+        etag: 3c5634f8b05fc274f54c23c3a5106eb2
+        version_id: E_ENFD6cMe1_yRfNqNeqQXVmR5XsH3YF
+  - relpath: corridors/79d034be-8194-485f-96c8-6f0143778e8f.glb
+    md5: 9034de85291ce6525d17daf4d4be9bdd
+    size: 5040
+    cloud:
+      s3:
+        etag: 9034de85291ce6525d17daf4d4be9bdd
+        version_id: LDJYdyRv35p32UzTQjuKD_mxp4Q2I81H
+  - relpath: corridors/7a3454d4-89f6-40f5-af48-1ad1f46b49fc.glb
+    md5: cd4b944d9da7b283ce098d4c1eb5d293
+    size: 1068
+    cloud:
+      s3:
+        etag: cd4b944d9da7b283ce098d4c1eb5d293
+        version_id: jpfrapFKVTmt0ij5LM4Oqx_0a5h4Rt5V
+  - relpath: corridors/7a70f580-69bd-4766-a2bf-e25d14a3f6d3.glb
+    md5: 4f956bdd9aa57bfa3171af5c4355c268
+    size: 29196
+    cloud:
+      s3:
+        etag: 4f956bdd9aa57bfa3171af5c4355c268
+        version_id: 3gQ4s51f9NezjVdwx_tVPyso6uGXIXmQ
+  - relpath: corridors/7af72c8f-7fa1-4083-be74-613f92ef020a.glb
+    md5: ff9e5e0207129864207dd9398c6d34ad
+    size: 7408
+    cloud:
+      s3:
+        etag: ff9e5e0207129864207dd9398c6d34ad
+        version_id: 8qJHj.NmPM8X5X939Lkz03Nvogb2EB.g
+  - relpath: corridors/7b057b21-f6cd-4b4e-8824-b551bf5daee2.glb
+    md5: 2beac1220373faf728b3aeb40481c304
+    size: 12180
+    cloud:
+      s3:
+        etag: 2beac1220373faf728b3aeb40481c304
+        version_id: 1ocmw6k8EVgHdH7lsfk5Tcrci5CoHOZZ
+  - relpath: corridors/7eccd441-ce5a-4fcd-af0c-776916848c67.glb
+    md5: 10b6ad80635902fec23cde4dc7e525a9
+    size: 20052
+    cloud:
+      s3:
+        etag: 10b6ad80635902fec23cde4dc7e525a9
+        version_id: z.f6dd.RsbUBS9CW6zJfdK1SwPv2ATBx
+  - relpath: corridors/7f0bfe51-5458-4ef8-8641-c3d9a5fbd538.glb
+    md5: 8978d997aab57c42cdf8723fc8209d60
+    size: 168876
+    cloud:
+      s3:
+        etag: 8978d997aab57c42cdf8723fc8209d60
+        version_id: IwskEIynGow_P2M2CkwCYs1jhwsnzMNe
+  - relpath: corridors/7f475c89-1b7e-4238-819f-6a8b216d3322.glb
+    md5: 731818ea9c9cd47cd37b819ea7d11ddf
+    size: 1072
+    cloud:
+      s3:
+        etag: 731818ea9c9cd47cd37b819ea7d11ddf
+        version_id: HeSJTyaNnFAEReq5_ooWICBh_FQFcgjY
+  - relpath: corridors/7f4ad752-8a2d-4088-b91e-4e0d1a724d98.glb
+    md5: 6740aee0c88914eb94879beb11014c1e
+    size: 2804
+    cloud:
+      s3:
+        etag: 6740aee0c88914eb94879beb11014c1e
+        version_id: _CwlYH.JvRm_S5Ba3CVelb7S6MBz2IVa
+  - relpath: corridors/7f7fe1b0-d9f6-48c2-a304-2ea5874c7392.glb
+    md5: 09a4d7dfb153cd43bc76569073c939e3
+    size: 6624
+    cloud:
+      s3:
+        etag: 09a4d7dfb153cd43bc76569073c939e3
+        version_id: dlLc9zlaPe.wjZK4rCAnfuDtwvL1ZCjW
+  - relpath: corridors/8023d0ab-338a-43c4-9f9b-d637220f1b8e.glb
+    md5: 3c5634f8b05fc274f54c23c3a5106eb2
+    size: 359060
+    cloud:
+      s3:
+        etag: 3c5634f8b05fc274f54c23c3a5106eb2
+        version_id: NQrF2kJ_N1fmEqNSoVv2ItAuGoRBJhne
+  - relpath: corridors/80b28f07-c971-40f2-afc1-f7654359e5d9.glb
+    md5: d0a7a50776cccdef989e261b309527ac
+    size: 1068
+    cloud:
+      s3:
+        etag: d0a7a50776cccdef989e261b309527ac
+        version_id: 7geiz.YEPIFMrIN9kdAfbGJoEypf0tAC
+  - relpath: corridors/817b4f43-5cb7-47c7-8e5d-db6e2d52fa68.glb
+    md5: 5a31c4ac62b90fbd295dceaf5d1daee7
+    size: 190944
+    cloud:
+      s3:
+        etag: 5a31c4ac62b90fbd295dceaf5d1daee7
+        version_id: GId0B8P4h2HF.DeU_tdwi.6tkyh2bJxX
+  - relpath: corridors/82566926-7a8f-43a7-9f6a-ae0c463d7a1d.glb
+    md5: 8978d997aab57c42cdf8723fc8209d60
+    size: 168876
+    cloud:
+      s3:
+        etag: 8978d997aab57c42cdf8723fc8209d60
+        version_id: iF4tNdeNWR2TtHIybNPiaf2bhcRv2O7w
+  - relpath: corridors/82d414d4-59a7-4a61-9d86-278cb73a3ddd.glb
+    md5: c0dbc7b8921dd7e175be8aed4e4c7847
+    size: 66016
+    cloud:
+      s3:
+        etag: c0dbc7b8921dd7e175be8aed4e4c7847
+        version_id: Dhxux7i9xXy_Yi3k6hfcdjXzZAqVEGl8
+  - relpath: corridors/82e800f8-4771-43df-999e-85dfb7be684c.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: 8dZF.lyHdARsQWRvf0AxLpkuoLP2PzZm
+  - relpath: corridors/84c18d99-3bcd-4cba-a70c-2e70bc24d88f.glb
+    md5: 1885941ca22bfef4232945ed0cf66fad
+    size: 8064
+    cloud:
+      s3:
+        etag: 1885941ca22bfef4232945ed0cf66fad
+        version_id: LRBh89yh2RvZg94NbJXhvh657atv4w2X
+  - relpath: corridors/84f689bc-1b04-4464-a5fa-0af5880203e9.glb
+    md5: 1b543df83b88027a54d95088f593abc4
+    size: 7812
+    cloud:
+      s3:
+        etag: 1b543df83b88027a54d95088f593abc4
+        version_id: FLL0kjXhUGx91E1.YjT5P5LAIfZcRsGv
+  - relpath: corridors/85765dd5-2197-4361-b4c6-c9d30186044a.glb
+    md5: 988088c7388513002d40a74dcc76a7f4
+    size: 14496
+    cloud:
+      s3:
+        etag: 988088c7388513002d40a74dcc76a7f4
+        version_id: 8jOBrleiVb6Qb4L7.nvUVsrhnhgstF1_
+  - relpath: corridors/85ad9566-c363-4b61-a522-6576b253d9af.glb
+    md5: 8959d4bb006baef07408d3c0b790803b
+    size: 42304
+    cloud:
+      s3:
+        etag: 8959d4bb006baef07408d3c0b790803b
+        version_id: qJ0cEU3v71tuEX22hQRbLpewbthHxaOP
+  - relpath: corridors/87be07c9-cf37-4001-a589-e2c048b5d3f3.glb
+    md5: 6f206840f15779bbb980f57d569bc873
+    size: 295088
+    cloud:
+      s3:
+        etag: 6f206840f15779bbb980f57d569bc873
+        version_id: cmPlcvUUpGfMTepHcKEfBzpnsMdfjT3D
+  - relpath: corridors/87df967f-1311-43ac-a306-04e47d2f4a60.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: u9VqW4K8TY7xItytEX0z4YNzp6YDlomQ
+  - relpath: corridors/886e391d-0151-46d3-8a51-084bf6a06910.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: 2QcU9wx_q_4mRcNuIM5aytgHo6WTcN92
+  - relpath: corridors/891363dd-7c97-421c-b321-6a27b3b55dae.glb
+    md5: 425274bc907c5f7617e2ae83b79f68df
+    size: 4500
+    cloud:
+      s3:
+        etag: 425274bc907c5f7617e2ae83b79f68df
+        version_id: v45I5w.o2qzsYrTFtkauFnFR33NEEBHh
+  - relpath: corridors/8959318d-4815-4b51-96f2-5a1096de49f3.glb
+    md5: 709c47bc71abecc59da409888afd0f6b
+    size: 123560
+    cloud:
+      s3:
+        etag: 709c47bc71abecc59da409888afd0f6b
+        version_id: I.EmCcGhGh.LgUDof72IIotmvmIC1bbf
+  - relpath: corridors/89ff4ab2-c958-4bdc-b1e4-fd45b485cb85.glb
+    md5: 1885941ca22bfef4232945ed0cf66fad
+    size: 8064
+    cloud:
+      s3:
+        etag: 1885941ca22bfef4232945ed0cf66fad
+        version_id: qSzD8L_ySLuIDYdOGGDyMZ.mCxEdWoXl
+  - relpath: corridors/8ac5f392-021e-452a-845b-a2a5e9e807fb.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: RBgKWlcsjz3lfSRlXJUiS_AwPIy2ei.C
+  - relpath: corridors/8ae7c9f9-b138-4b44-8aaf-944b7544ff8a.glb
+    md5: ed43a2d51ae580539156534d697a6316
+    size: 1068
+    cloud:
+      s3:
+        etag: ed43a2d51ae580539156534d697a6316
+        version_id: kkfFa57rPHhkDPTa_tCBOJHT1KNgkAkC
+  - relpath: corridors/8b652088-8c73-466d-b59c-3fbb8c01e399.glb
+    md5: f7c8e34efedcd1e48fe514ad9a48b3cb
+    size: 58280
+    cloud:
+      s3:
+        etag: f7c8e34efedcd1e48fe514ad9a48b3cb
+        version_id: c2vFTHZ3Df5qgh9oKEWXkfjrjOsM1z2B
+  - relpath: corridors/8d126897-60f6-433e-a56b-cbe730475742.glb
+    md5: dafce4f7bc7357a3defb63af980bb136
+    size: 249092
+    cloud:
+      s3:
+        etag: dafce4f7bc7357a3defb63af980bb136
+        version_id: gSbY3LL5N9X_x7DhDQ0kOL58giBui.Q2
+  - relpath: corridors/8d3c5c93-9ec3-42c6-8d21-47c694ac5f23.glb
+    md5: 343bbd90f30f4a216927ff3995111b5a
+    size: 39460
+    cloud:
+      s3:
+        etag: 343bbd90f30f4a216927ff3995111b5a
+        version_id: P4ARCh_KzsBVfMAOLbO0hU6naAD2SecC
+  - relpath: corridors/8e1640fb-1eb1-4bfc-a6b4-840b4772543b.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: mJcIP2xrTYqxDKrN_N4Dd0venLMJ8s_l
+  - relpath: corridors/8e476601-a5e6-4d15-86a4-e6d3da9abb7e.glb
+    md5: feeaff15fbaa5ac8aa23a41d57db50bf
+    size: 96436
+    cloud:
+      s3:
+        etag: feeaff15fbaa5ac8aa23a41d57db50bf
+        version_id: cqQvAsfQtAEg7iRogBHKe_fkddcuu3pc
+  - relpath: corridors/8e8d9121-3a47-4c89-9e63-aec6659075d2.glb
+    md5: ad5e6344ca53d664564a279dc6aef0af
+    size: 10128
+    cloud:
+      s3:
+        etag: ad5e6344ca53d664564a279dc6aef0af
+        version_id: AlfeB0g2Sbb8Vfs9gDu4xTqpVMJBvk9Y
+  - relpath: corridors/8eea8795-2c2f-4811-bf19-ceff62be1128.glb
+    md5: 9e9ae06d5629d08d18c53bad44cb3c55
+    size: 1068
+    cloud:
+      s3:
+        etag: 9e9ae06d5629d08d18c53bad44cb3c55
+        version_id: mGlDbV6csOCtVqtND325TaPFb8.olzeB
+  - relpath: corridors/8f99a469-7d51-46dc-919d-2e002eeae868.glb
+    md5: 09eab7f94b3fa482783794d9027d5d6c
+    size: 19476
+    cloud:
+      s3:
+        etag: 09eab7f94b3fa482783794d9027d5d6c
+        version_id: qAbn0SvgdfsAsoruddpAuR.e6evRW4xW
+  - relpath: corridors/8fe1d7d0-227f-408c-85c5-1a808e60abbb.glb
+    md5: 343bbd90f30f4a216927ff3995111b5a
+    size: 39460
+    cloud:
+      s3:
+        etag: 343bbd90f30f4a216927ff3995111b5a
+        version_id: q9zKCVFHuQNYVgqsoWk6FqKeIIekQQim
+  - relpath: corridors/9087b9fe-ec1b-4d99-8be3-c9be48e15547.glb
+    md5: 709c47bc71abecc59da409888afd0f6b
+    size: 123560
+    cloud:
+      s3:
+        etag: 709c47bc71abecc59da409888afd0f6b
+        version_id: XtaOAkH0iMKYN6FIGAzK3Fwh_5iZPXz3
+  - relpath: corridors/91009a1d-ddea-4489-af88-3e32ca47cde7.glb
+    md5: ad5e6344ca53d664564a279dc6aef0af
+    size: 10128
+    cloud:
+      s3:
+        etag: ad5e6344ca53d664564a279dc6aef0af
+        version_id: Keq8wpyH.M_x93Ab2.1eMZPxC3RR0jW8
+  - relpath: corridors/92c7d973-67c3-4548-b386-51591184367e.glb
+    md5: 3489723b563a9346a927f30a5dca6816
+    size: 10512
+    cloud:
+      s3:
+        etag: 3489723b563a9346a927f30a5dca6816
+        version_id: NRKgX3vvcPx1qJxmp90v43h7wBo4njZI
+  - relpath: corridors/93286ce3-669a-4f3f-a85a-7eaaedc15c59.glb
+    md5: f7c8e34efedcd1e48fe514ad9a48b3cb
+    size: 58280
+    cloud:
+      s3:
+        etag: f7c8e34efedcd1e48fe514ad9a48b3cb
+        version_id: Sh0wvVFhHhoHziHHzbDyyyI4A6eHGju3
+  - relpath: corridors/93e9550c-4fda-4ed0-9702-64168dba6475.glb
+    md5: 3b06e4ef25c9182febde206d82a3c2ba
+    size: 7560
+    cloud:
+      s3:
+        etag: 3b06e4ef25c9182febde206d82a3c2ba
+        version_id: Khxyy4P21.y9uMGsbqMFmwVAN0ToKvi4
+  - relpath: corridors/947065d0-1c18-4065-b094-84dc09bd21bb.glb
+    md5: 6740aee0c88914eb94879beb11014c1e
+    size: 2804
+    cloud:
+      s3:
+        etag: 6740aee0c88914eb94879beb11014c1e
+        version_id: .jE38ak00VX4GXkUplDzGCIAGQPiEOW0
+  - relpath: corridors/95190b47-b491-448a-8e9b-06d804bf2aa1.glb
+    md5: 8d23f1a943420efd34d3adb7ec18a81e
+    size: 29560
+    cloud:
+      s3:
+        etag: 8d23f1a943420efd34d3adb7ec18a81e
+        version_id: XllwT5o2nFq7XZWu60nWSIUGyDU1uLBh
+  - relpath: corridors/952347f5-d5fc-4fa8-9bdf-5488ec52a511.glb
+    md5: 0a6937a7fcd81519db2bb733df730b13
+    size: 10908
+    cloud:
+      s3:
+        etag: 0a6937a7fcd81519db2bb733df730b13
+        version_id: 12tEU9dY0j.b_06ro_M7x4q1eHtHEHNg
+  - relpath: corridors/955f24c1-d650-4dea-89f3-17f1feca4540.glb
+    md5: ab53c4d2d5db0216b1f9c479af320474
+    size: 1072
+    cloud:
+      s3:
+        etag: ab53c4d2d5db0216b1f9c479af320474
+        version_id: hKeh35C9XIt_v6JjYJaWUhwhN2arePWr
+  - relpath: corridors/971457a7-dc03-4230-bb71-cc9b529f5baf.glb
+    md5: 11ec98a2fe3aac29d743933de4879f7d
+    size: 10992
+    cloud:
+      s3:
+        etag: 11ec98a2fe3aac29d743933de4879f7d
+        version_id: gcqiWkBM_zj1FH46j4uSRoHmmJ8bBecX
+  - relpath: corridors/977bfe5b-6761-4145-a554-1e89fd2bf209.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: .GdTGBrf4nRxtqAIPvoOsFFWM13i7GDd
+  - relpath: corridors/9815616b-4e3f-4c2a-bf64-14dc26f484a4.glb
+    md5: 56efa33994d54dbe4ebf770c67d7472b
+    size: 7956
+    cloud:
+      s3:
+        etag: 56efa33994d54dbe4ebf770c67d7472b
+        version_id: p86d9i38mP8xUqb9b3VsgiqNEkWIJWnj
+  - relpath: corridors/9850edfd-89f1-4a67-8c09-307192086c31.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: lboIODS_YbahSkESIj6OPmnp9SNG19ds
+  - relpath: corridors/9a6cb9d5-afdd-429d-98ba-f157a42c7937.glb
+    md5: c0dbc7b8921dd7e175be8aed4e4c7847
+    size: 66016
+    cloud:
+      s3:
+        etag: c0dbc7b8921dd7e175be8aed4e4c7847
+        version_id: kuSdjUN.pOZW8tqa_rQjprtVAWPSLOff
+  - relpath: corridors/9abfed4e-2fde-4d80-a8aa-7439a106d895.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: pi48Efeg27XGhaLeAkeFuvFjuupafcqY
+  - relpath: corridors/9bd653dd-2309-4ecc-b4c8-e9f3de4bf8ca.glb
+    md5: 41a47283c04e8e9f2041eb9c1cf4f135
+    size: 611808
+    cloud:
+      s3:
+        etag: 41a47283c04e8e9f2041eb9c1cf4f135
+        version_id: yaoE4o2nIMaiqIien7bd.nYDTVIYaAsg
+  - relpath: corridors/9c7fd6bb-6ea4-411d-8ad3-d2277ef18b05.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: 89lPgqLVIXSyP62ZGvqd9Pu_Zsd1PE.A
+  - relpath: corridors/9d66ed32-46ad-4848-af78-a3178e19ca87.glb
+    md5: d4cf74982e22372b348c7211ead61628
+    size: 5096
+    cloud:
+      s3:
+        etag: d4cf74982e22372b348c7211ead61628
+        version_id: vuRNfaSW8DpP08CFKNpEUR8aSzWSrKHL
+  - relpath: corridors/9d795171-ba1f-4ae2-9b98-9a285280ebf6.glb
+    md5: 931563da905b721b8ffc7d10277abb9f
+    size: 7380
+    cloud:
+      s3:
+        etag: 931563da905b721b8ffc7d10277abb9f
+        version_id: 9olpW2OUFoenMsyuwYZ2OC_fwJY99HkH
+  - relpath: corridors/9e77a7b5-e7e8-48e1-a30e-01eeaa300ed8.glb
+    md5: 69720ebf985f342f767b63c1c8643e8b
+    size: 6888400
+    cloud:
+      s3:
+        etag: 69720ebf985f342f767b63c1c8643e8b
+        version_id: gFPMH5W88qdFu8TxmwRyI7GvcQMaK03k
+  - relpath: corridors/9f1071b5-f642-4f8b-bb20-b7b648a37850.glb
+    md5: 11ec98a2fe3aac29d743933de4879f7d
+    size: 10992
+    cloud:
+      s3:
+        etag: 11ec98a2fe3aac29d743933de4879f7d
+        version_id: WLGwzf7ZNsriLVWFErWYuRPsrmAOv7IJ
+  - relpath: corridors/a04e60c6-693a-4c25-a069-62521783fd15.glb
+    md5: a58de74dcba1ae8564093768b7ea5641
+    size: 169428
+    cloud:
+      s3:
+        etag: a58de74dcba1ae8564093768b7ea5641
+        version_id: opz4af51axjJAe7qrNLHPHMAJyafLBi3
+  - relpath: corridors/a07c1de5-7229-4161-9c49-defd3ab029f7.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: erI_1a5oKQNT7zY06Zk4Fxd8MfbVCu3i
+  - relpath: corridors/a0ff0780-d666-42fe-8068-a3b41b1c6aa0.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: 237429.q3U_st1XHjEnE8PIDKu5UXIY6
+  - relpath: corridors/a1fc9d45-5af9-4fc4-b2be-340ef0716e09.glb
+    md5: 6f78b1dc4b6f102d10f15b3b512e30de
+    size: 7400
+    cloud:
+      s3:
+        etag: 6f78b1dc4b6f102d10f15b3b512e30de
+        version_id: I31.AQPu2k_bjjmgf9mtzKu6L8gTIrey
+  - relpath: corridors/a2d58db6-2ca6-45ee-a0da-3c11e2f436cf.glb
+    md5: eafb733215b4028c1012a0e3fd85ed25
+    size: 1072
+    cloud:
+      s3:
+        etag: eafb733215b4028c1012a0e3fd85ed25
+        version_id: bi.MQ3lhYl7SCN87SOCFujxJ9UEe74Q4
+  - relpath: corridors/a315cf4f-12d6-4e6c-9ee9-c6a06838716a.glb
+    md5: 931563da905b721b8ffc7d10277abb9f
+    size: 7380
+    cloud:
+      s3:
+        etag: 931563da905b721b8ffc7d10277abb9f
+        version_id: 8f_r5ghk6As6PRH.36yrPsZI23fVmHFD
+  - relpath: corridors/a388eebd-02f8-4a5c-ab8e-62405ce34e99.glb
+    md5: 5295b5bf301bcda00edd16f1deb475ed
+    size: 5216
+    cloud:
+      s3:
+        etag: 5295b5bf301bcda00edd16f1deb475ed
+        version_id: 9q8XcS0VF0cUWy73ilVqcs3apcIapIim
+  - relpath: corridors/a3e6d018-4e28-41b8-9ea7-6a3f8dc33f6c.glb
+    md5: bf6c0b660bcfe8b228d742119b434aae
+    size: 13044
+    cloud:
+      s3:
+        etag: bf6c0b660bcfe8b228d742119b434aae
+        version_id: FYBOQNp3RXLk86zOs_xPdMWqW44YoooF
+  - relpath: corridors/a4137bf0-6e8f-4dfd-b341-e3ac3ee51772.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: Lw29XhpN95sTuFq.upkRnSDkXJiYeFna
+  - relpath: corridors/a441638e-859b-4695-87fc-26c76e79da0e.glb
+    md5: 0cf0c4f892cb5fa591ca7e85528c2f0f
+    size: 269864
+    cloud:
+      s3:
+        etag: 0cf0c4f892cb5fa591ca7e85528c2f0f
+        version_id: eWrM_p4TX2cq95IdEngFWVcnTIvH4KfI
+  - relpath: corridors/a619c5f7-b1b1-427d-b76d-846caab056d0.glb
+    md5: 9be6bc68849d620e1b7fc187a7e37b97
+    size: 10264
+    cloud:
+      s3:
+        etag: 9be6bc68849d620e1b7fc187a7e37b97
+        version_id: Eve5EOFQSAyIzrIh7sRrPx04UGSbnTT3
+  - relpath: corridors/a78ee410-8f95-40a6-9a8c-fd400773fb0b.glb
+    md5: c6e2e9de0f8f06a63bd1bee7ba6244e8
+    size: 15480
+    cloud:
+      s3:
+        etag: c6e2e9de0f8f06a63bd1bee7ba6244e8
+        version_id: TKiZt.o_lZkzpkNZ.NGa7gwXH2rG3Jzd
+  - relpath: corridors/a8339ba3-15b1-456c-8eec-455e31f19686.glb
+    md5: 626c071867a2be0cead4a4e809b1283b
+    size: 1068
+    cloud:
+      s3:
+        etag: 626c071867a2be0cead4a4e809b1283b
+        version_id: _Mlh5nWts3Fd7hk3bUSZ88FTr4IVRvnE
+  - relpath: corridors/a99b891d-44ce-47ab-91d9-e7dc5743ea46.glb
+    md5: 7082f282b93637fd77b5254bddc4a9d5
+    size: 1068
+    cloud:
+      s3:
+        etag: 7082f282b93637fd77b5254bddc4a9d5
+        version_id: FGhnm8vKSi1jsJpnXGuNCjPHDxR3.Kqm
+  - relpath: corridors/aab5a316-7fbc-4a57-8b3a-3fc1958c5292.glb
+    md5: ef9d9e046e42420fce95a6304d82846e
+    size: 95396
+    cloud:
+      s3:
+        etag: ef9d9e046e42420fce95a6304d82846e
+        version_id: f0odlvj_XMONNba7zrQeyKuSENQjsh3E
+  - relpath: corridors/aad49d10-9476-4c72-a8bf-adddaf416e16.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: EADGsDwDuGD.YeHhvUBa0WRgbcANz.hU
+  - relpath: corridors/aae4b64f-ffda-4c18-9db1-e5aa350b0d3b.glb
+    md5: e0c9785f8c04bb641cb8f09ed047b166
+    size: 1072
+    cloud:
+      s3:
+        etag: e0c9785f8c04bb641cb8f09ed047b166
+        version_id: LL.PKG2pOHaJh5dxvOdC4ZrZhHehscOa
+  - relpath: corridors/ab2e49b2-1959-44af-8e83-ac16878f6c12.glb
+    md5: ef1340c1c84827bb880a688d4f066d02
+    size: 13032
+    cloud:
+      s3:
+        etag: ef1340c1c84827bb880a688d4f066d02
+        version_id: QCnC6GIQMGQBD1VY1q195Ng644Pex_v9
+  - relpath: corridors/ab9cafec-3eff-49ac-b2a9-ba96c22d80f9.glb
+    md5: 4bf70fa8c2028df7c8318ac41c464af3
+    size: 8528
+    cloud:
+      s3:
+        etag: 4bf70fa8c2028df7c8318ac41c464af3
+        version_id: Q9OREqNYfr2bjHujj4RIHr1E9PEYhs0C
+  - relpath: corridors/aba1ebe3-af18-40cc-b536-b89843049ca5.glb
+    md5: bc326f3d407c0d560908b36295bb10a5
+    size: 22392
+    cloud:
+      s3:
+        etag: bc326f3d407c0d560908b36295bb10a5
+        version_id: CgXiRtlKisVEFlLRlLpazO3cWpR.4FNM
+  - relpath: corridors/abab52f8-6fd4-4e3f-8f9c-bb9f5f62785f.glb
+    md5: 3b88963f2e66828fc570ac90567ec937
+    size: 5332
+    cloud:
+      s3:
+        etag: 3b88963f2e66828fc570ac90567ec937
+        version_id: obX9Q9cduEQvWbQWoYnr2fB_j9s.k6SE
+  - relpath: corridors/ac57c357-d8c9-4732-835e-12b5589cd97e.glb
+    md5: 288e0e61e93fa2d48cbcb4a3736ee648
+    size: 14568
+    cloud:
+      s3:
+        etag: 288e0e61e93fa2d48cbcb4a3736ee648
+        version_id: 8b4EmKLXQZMk2vWPnCxDV464YUac9KSr
+  - relpath: corridors/ad4b166a-7f04-4324-b2e2-429d66087131.glb
+    md5: e5cf4eb7bc716eaea68f096e1bf7ac36
+    size: 364000
+    cloud:
+      s3:
+        etag: e5cf4eb7bc716eaea68f096e1bf7ac36
+        version_id: sVYp00DbDCmJbwFQ1RcsXxeN5r2dKfkc
+  - relpath: corridors/ae63de43-3ab8-42c0-a6cd-81ca5de26e81.glb
+    md5: 1145fbe201ab8de332dbcaf6121eed5a
+    size: 1068
+    cloud:
+      s3:
+        etag: 1145fbe201ab8de332dbcaf6121eed5a
+        version_id: H9gGr5vfmxN55_90W30FIS89qEYPer7z
+  - relpath: corridors/aed98c7b-1c80-4630-986e-9bde1ff96f6a.glb
+    md5: 635ef9ab4b43c43b81f8f3682e87a41f
+    size: 1068
+    cloud:
+      s3:
+        etag: 635ef9ab4b43c43b81f8f3682e87a41f
+        version_id: GnZGigsKPkjvAsoy_SBSVlcuB.AClQ9.
+  - relpath: corridors/aefa004c-92c0-4454-a5b7-cc48785f4283.glb
+    md5: 4ba4ba188382bb319c7f340e0b43fabc
+    size: 9456
+    cloud:
+      s3:
+        etag: 4ba4ba188382bb319c7f340e0b43fabc
+        version_id: Z3lHH4fVNWyrDDnwizp5XNv7eUE4iDPF
+  - relpath: corridors/aefbf9c4-7f7f-494d-bdad-708aa232d02b.glb
+    md5: 32639c7ca7df702de77b2be6dedd4a3d
+    size: 314088
+    cloud:
+      s3:
+        etag: 32639c7ca7df702de77b2be6dedd4a3d
+        version_id: dlA8x6tfBwaSOlBMAPcq5yNWSeqS1Jsc
+  - relpath: corridors/af66f9bb-fcd3-4ed0-9614-a877675d9465.glb
+    md5: 5fef5ef7439dc4521a6e430b03e76773
+    size: 51664
+    cloud:
+      s3:
+        etag: 5fef5ef7439dc4521a6e430b03e76773
+        version_id: W5Fh8SfozV7IGsUUMiqTYs5hn0fL3ncQ
+  - relpath: corridors/b077aef9-808e-48b1-8d2d-15aab54d0a86.glb
+    md5: 931563da905b721b8ffc7d10277abb9f
+    size: 7380
+    cloud:
+      s3:
+        etag: 931563da905b721b8ffc7d10277abb9f
+        version_id: cKxM2hM706YiroaPIl7Tf.vZyLqr.Wnz
+  - relpath: corridors/b09f5826-e6fa-4bec-8054-2fb6e6f202ae.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: XM4573UQuWTkd577rtGk5XMVjxLdh.HK
+  - relpath: corridors/b2273bd7-4a53-4864-94d3-ae36ec0e8769.glb
+    md5: f5d1e3ef83ae834ebc773d1661fa5b3e
+    size: 5972
+    cloud:
+      s3:
+        etag: f5d1e3ef83ae834ebc773d1661fa5b3e
+        version_id: sgR5vWBj7UmKxJJ.NftaNVR4OYY9kp4X
+  - relpath: corridors/b2aca02c-9559-4869-b551-4bfb59bf84b3.glb
+    md5: 5bc8547e72eeccceaa77785ea1a6fd90
+    size: 132852
+    cloud:
+      s3:
+        etag: 5bc8547e72eeccceaa77785ea1a6fd90
+        version_id: M__W9il_5jON9QerWMJ_B5vcbumSJXhd
+  - relpath: corridors/b3ab8a95-594f-48e8-95d9-1227f0c7e5dc.glb
+    md5: 2d8a10cf1bb9727f400ec3831ec5139b
+    size: 10248
+    cloud:
+      s3:
+        etag: 2d8a10cf1bb9727f400ec3831ec5139b
+        version_id: TAMJ16iUW16QZGup8L3nG8NZz1s5JgHg
+  - relpath: corridors/b49d14ff-5d72-431d-8c03-24e662795ddb.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: w1b6I1RYRQeeQlv.N7BDR4Ja9RP9LEa4
+  - relpath: corridors/b5ba9c77-bf58-49bd-b686-7868f9a5c05a.glb
+    md5: e66ea3854994f7a0b27105216692d883
+    size: 1068
+    cloud:
+      s3:
+        etag: e66ea3854994f7a0b27105216692d883
+        version_id: jF9G_hQ5YwI2.O1OoDSQykQtkyfncOVE
+  - relpath: corridors/b5e4934d-001b-4e3e-b75f-4704f8e1406b.glb
+    md5: 399a63b8798a227ff125d92bc1684929
+    size: 11928
+    cloud:
+      s3:
+        etag: 399a63b8798a227ff125d92bc1684929
+        version_id: 3Gaqn_qOfQNekO0XB2fgv_PJl5G4oksA
+  - relpath: corridors/b5efb4f3-6dee-4a3c-b55f-91e6c40c6003.glb
+    md5: 557491d98a97cccbf59d2e6a9568c03a
+    size: 5468
+    cloud:
+      s3:
+        etag: 557491d98a97cccbf59d2e6a9568c03a
+        version_id: kX1OjL1PYVGRNfb5GUrDdHVO8VR5LxlY
+  - relpath: corridors/b66043e8-9a0c-4883-93e2-017026659575.glb
+    md5: ff9bf4dce59a14da86772501abe6ece7
+    size: 5756
+    cloud:
+      s3:
+        etag: ff9bf4dce59a14da86772501abe6ece7
+        version_id: KTvugaM73yn61uUXR_qa1lI1iUdkCqDE
+  - relpath: corridors/b6d2c18b-2e33-4156-b652-b4d5f9c2a9e1.glb
+    md5: 7d29607b2495ceaec49f3bb8f2a7d2cf
+    size: 11472
+    cloud:
+      s3:
+        etag: 7d29607b2495ceaec49f3bb8f2a7d2cf
+        version_id: wrrxKJkWHVAW07UYrqeiVkLni8tn9p9i
+  - relpath: corridors/b70e5ec6-4604-49ba-8a69-1f6c0c1aaf33.glb
+    md5: 4f956bdd9aa57bfa3171af5c4355c268
+    size: 29196
+    cloud:
+      s3:
+        etag: 4f956bdd9aa57bfa3171af5c4355c268
+        version_id: iY8nUBReVa4QNMmnB87mPTlA8kLMQt4e
+  - relpath: corridors/b730bf41-6de9-423a-bfe6-6da81191d821.glb
+    md5: c6bbd2b1f64036c9b164b6ee39e13783
+    size: 7124
+    cloud:
+      s3:
+        etag: c6bbd2b1f64036c9b164b6ee39e13783
+        version_id: BphvsqvMgegZOOladgWzm_IZvxJECZ0B
+  - relpath: corridors/b7ad0f82-7460-4fc5-8c91-cc46666ee4f2.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: eaD1Zo6WSvoePSL1GKmMk8hSjX3ch5r6
+  - relpath: corridors/b871beb6-4f8a-447a-91dc-99f1b4696a8e.glb
+    md5: 60856c8c3dbf85ae782dccb6b198236f
+    size: 41908
+    cloud:
+      s3:
+        etag: 60856c8c3dbf85ae782dccb6b198236f
+        version_id: ieEF0z8xxWdER1YFPKchgEmGbeV8utbk
+  - relpath: corridors/ba018414-bb8f-4ddb-9586-9d955939f17e.glb
+    md5: f587bb3fc26687b6883324ba35c6edcf
+    size: 1072
+    cloud:
+      s3:
+        etag: f587bb3fc26687b6883324ba35c6edcf
+        version_id: 5fKEDl2LxYzx0bTM.E8aORyn1svNytUj
+  - relpath: corridors/ba54628b-f2ab-4ce0-a767-32123813092f.glb
+    md5: b691d627ba02a76e9e9bcc838356bfbc
+    size: 1072
+    cloud:
+      s3:
+        etag: b691d627ba02a76e9e9bcc838356bfbc
+        version_id: I1UGkh8btoW1UtE10WzhOwdPEcqMmvoM
+  - relpath: corridors/ba9d007b-c5c7-4231-80f9-42403a98a6df.glb
+    md5: c0dbc7b8921dd7e175be8aed4e4c7847
+    size: 66016
+    cloud:
+      s3:
+        etag: c0dbc7b8921dd7e175be8aed4e4c7847
+        version_id: qVWRSYl2SGFtt6xe6Yif0qdBVV4wEWWH
+  - relpath: corridors/bac1d39e-5309-4b50-8a19-4656d3f35641.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: SmtI_UCIlrsszLoOIOzrGuUopIVSDN3r
+  - relpath: corridors/bc516774-fcd9-4022-bc5b-6afd4369dd24.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: 8_9q07wcBJCYqJkr53r21i4.srm5crsF
+  - relpath: corridors/bc7cbfcd-cc52-4e82-a079-e353feb729a1.glb
+    md5: 69720ebf985f342f767b63c1c8643e8b
+    size: 6888400
+    cloud:
+      s3:
+        etag: 69720ebf985f342f767b63c1c8643e8b
+        version_id: k0WogdMpA99UFJbcbpEUjoAEfJyn.DVd
+  - relpath: corridors/bceacee1-bc17-49ba-ab6f-833a9ccde436.glb
+    md5: 8978d997aab57c42cdf8723fc8209d60
+    size: 168876
+    cloud:
+      s3:
+        etag: 8978d997aab57c42cdf8723fc8209d60
+        version_id: 4bSkZpO3lFaWRGM8BZtkgoYI8Ux1QVvt
+  - relpath: corridors/bd004aeb-6e60-4d5b-8d40-cfdd55b8b6fe.glb
+    md5: 702c9d39e7e73d2053cdf91f2ff63a91
+    size: 6212
+    cloud:
+      s3:
+        etag: 702c9d39e7e73d2053cdf91f2ff63a91
+        version_id: w99pVyf87cI8VHBlrdYF2zWViznD9V1l
+  - relpath: corridors/bd2df259-b64d-4f5a-b2e4-84be6031c5ef.glb
+    md5: b9ce2ea632718b7719bb83bf2b31ee66
+    size: 4364
+    cloud:
+      s3:
+        etag: b9ce2ea632718b7719bb83bf2b31ee66
+        version_id: G4vlLhGTy4kD772XD98Akdbe16ZDGJFJ
+  - relpath: corridors/bddd9066-3f8c-4330-8e33-23be89ee8a0b.glb
+    md5: 3c5634f8b05fc274f54c23c3a5106eb2
+    size: 359060
+    cloud:
+      s3:
+        etag: 3c5634f8b05fc274f54c23c3a5106eb2
+        version_id: iDxz7gfudZ_lJvm0sJ1YvFWmKW7pB3E1
+  - relpath: corridors/be17eeb2-fc0b-45ad-8b5e-3585efa9e69a.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: 2ufWlpaXAXejThLIxQtgNt5aG2xjuty_
+  - relpath: corridors/beeb4886-8942-4e7f-8698-12bded4abdab.glb
+    md5: ad40b3f9f678e9e83ef4908412ff8f2d
+    size: 14784
+    cloud:
+      s3:
+        etag: ad40b3f9f678e9e83ef4908412ff8f2d
+        version_id: n8GCoCSFa6rNVz6nkDgOdzZExebOTzju
+  - relpath: corridors/bf36d893-81ff-4f38-a6ba-97c9d870c841.glb
+    md5: 8ca32fefd5c124435c5b84bdae63d747
+    size: 1064
+    cloud:
+      s3:
+        etag: 8ca32fefd5c124435c5b84bdae63d747
+        version_id: wXg8zLHi6LGKEsmEyDbnXvGMohx.J2_X
+  - relpath: corridors/bf90f073-8385-48d9-bcde-fae7fffa0647.glb
+    md5: 82654f3056678ed4b3c4e196f8c57b54
+    size: 1072
+    cloud:
+      s3:
+        etag: 82654f3056678ed4b3c4e196f8c57b54
+        version_id: 6L6LMlkhyELllX4MuTV1Ddv6tq6GcMkk
+  - relpath: corridors/c07ec91d-9dbe-4132-a93c-b960895b009d.glb
+    md5: 2f163034621f4a55cbece314006c2b80
+    size: 9036
+    cloud:
+      s3:
+        etag: 2f163034621f4a55cbece314006c2b80
+        version_id: scjoauTMLJQWNnt7VJ.oTI3CpeQo3U.j
+  - relpath: corridors/c127016f-4de6-41ce-a314-56ad21390e0b.glb
+    md5: 2f1ef0e8ae2fa3aa308f60a23d0710a8
+    size: 497448
+    cloud:
+      s3:
+        etag: 2f1ef0e8ae2fa3aa308f60a23d0710a8
+        version_id: aFjduwKU7Mq8DiZ6jc1S8Sdymx_9XvrI
+  - relpath: corridors/c207b7e4-7788-4125-a961-9f5f20f6bfbf.glb
+    md5: 35b69c2f5fcdcffc41ff5ec264fd45bd
+    size: 10840
+    cloud:
+      s3:
+        etag: 35b69c2f5fcdcffc41ff5ec264fd45bd
+        version_id: iYUNTIMaBeEVuwfhxYV2VShA0fHeJBSh
+  - relpath: corridors/c279548e-24db-4cb5-90c9-379e032d604b.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: .jWoY69G5LmeGL4qcc3Wl6lUp8bghqgj
+  - relpath: corridors/c40d5540-f400-484c-b8d1-fbcb44194af7.glb
+    md5: 6f206840f15779bbb980f57d569bc873
+    size: 295088
+    cloud:
+      s3:
+        etag: 6f206840f15779bbb980f57d569bc873
+        version_id: 7iGhPMFszqd2BOrAfsEt_yzbLN_OCIfp
+  - relpath: corridors/c5445f44-4f9d-47e4-9509-a96470f2ec26.glb
+    md5: 931563da905b721b8ffc7d10277abb9f
+    size: 7380
+    cloud:
+      s3:
+        etag: 931563da905b721b8ffc7d10277abb9f
+        version_id: HTPk_the4OBlodwaSigq00L7QpMhW0_n
+  - relpath: corridors/c5e652ed-7e40-41de-bfc0-a73f05a0c66a.glb
+    md5: 0cf0c4f892cb5fa591ca7e85528c2f0f
+    size: 269864
+    cloud:
+      s3:
+        etag: 0cf0c4f892cb5fa591ca7e85528c2f0f
+        version_id: o499vooUxw_FD3BeoPKfeIQGAqsrUv2b
+  - relpath: corridors/c6e61cc5-4f06-48a9-acce-f8a0e96f54ed.glb
+    md5: b4602a59f00bef11ba661d0caad06df9
+    size: 4848
+    cloud:
+      s3:
+        etag: b4602a59f00bef11ba661d0caad06df9
+        version_id: LPYuLJzVVZNPNnzrXn_NE8TgT.e4FiiY
+  - relpath: corridors/c6f20ca6-da69-4382-9e98-bacd641c551e.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: u7jeEvxbHrXPDhwVtvC6oPuwAa.jIeh6
+  - relpath: corridors/c7265539-ebc3-4a1e-8930-c6347344e707.glb
+    md5: 709c47bc71abecc59da409888afd0f6b
+    size: 123560
+    cloud:
+      s3:
+        etag: 709c47bc71abecc59da409888afd0f6b
+        version_id: nhZJX3HiY1jgdNfmHPobriYD3sn5GUax
+  - relpath: corridors/c7ed4142-ddad-4cf5-b83b-dd431927bad5.glb
+    md5: e038faf5ca823e443494e24ff61c2f94
+    size: 7744
+    cloud:
+      s3:
+        etag: e038faf5ca823e443494e24ff61c2f94
+        version_id: QyfXoFchCHE4LKTBmOzsnm1_kLBuZT9b
+  - relpath: corridors/c89a4a3c-52d7-4508-86fb-b7e5610cb1e0.glb
+    md5: 8978d997aab57c42cdf8723fc8209d60
+    size: 168876
+    cloud:
+      s3:
+        etag: 8978d997aab57c42cdf8723fc8209d60
+        version_id: Y6oIHxBlx_8utY8A92zGfgXXnZiWG6B0
+  - relpath: corridors/c8ce1bee-a81d-4d16-bd9d-20f84718a6b4.glb
+    md5: bcbcbbbd06064d9a5127a7796520ac9b
+    size: 1068
+    cloud:
+      s3:
+        etag: bcbcbbbd06064d9a5127a7796520ac9b
+        version_id: tNshs5d6Y0BvvojHxfbGicFRa_ax2COC
+  - relpath: corridors/c951bee1-57cf-4eeb-98da-cdbf46517199.glb
+    md5: 931563da905b721b8ffc7d10277abb9f
+    size: 7380
+    cloud:
+      s3:
+        etag: 931563da905b721b8ffc7d10277abb9f
+        version_id: QALOdU6alFNhAt12cR5bDVSjR.ip6v1o
+  - relpath: corridors/ca285e1d-d2b4-4089-9059-11c95d788154.glb
+    md5: e5cf4eb7bc716eaea68f096e1bf7ac36
+    size: 364000
+    cloud:
+      s3:
+        etag: e5cf4eb7bc716eaea68f096e1bf7ac36
+        version_id: B.ISVV10rhPKopnpsR8cNlGinMrm.REk
+  - relpath: corridors/ca476545-5b98-476c-b2fd-1b8e1708faed.glb
+    md5: a58de74dcba1ae8564093768b7ea5641
+    size: 169428
+    cloud:
+      s3:
+        etag: a58de74dcba1ae8564093768b7ea5641
+        version_id: Apqm0vSY0fgZZi1vYR2gvlRkZSlHuWx3
+  - relpath: corridors/ca50137f-3922-43d0-a328-3f9436271fcf.glb
+    md5: 343bbd90f30f4a216927ff3995111b5a
+    size: 39460
+    cloud:
+      s3:
+        etag: 343bbd90f30f4a216927ff3995111b5a
+        version_id: jq97WsFzF_XiOvZfXaNof_lYD1K2UKWz
+  - relpath: corridors/ca927538-22f5-47bf-82dd-2c4ec127f296.glb
+    md5: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+    size: 1068
+    cloud:
+      s3:
+        etag: 75f3e7a7a7e6e2304c7d96cf94d77bb5
+        version_id: htXIVArglOAhHIfZVOn5tSEMmpML_eO2
+  - relpath: corridors/ca976270-c7b0-4ae4-b189-09ffa8362c38.glb
+    md5: ee85e790b0e96b247d167775749ca35c
+    size: 1072
+    cloud:
+      s3:
+        etag: ee85e790b0e96b247d167775749ca35c
+        version_id: Qkjh5L0OZEykXFYarfw3SewTZdrVo40A
+  - relpath: corridors/caa21c78-6f7f-4752-9f03-04914f1ca2b7.glb
+    md5: f84888ad966f33011ab531f76be7c2c3
+    size: 1068
+    cloud:
+      s3:
+        etag: f84888ad966f33011ab531f76be7c2c3
+        version_id: LGIbOUeZC3Z5bdjzYJPW96SlZka1PN8U
+  - relpath: corridors/cb68d9a5-9884-4eef-afe8-e087cac7bf54.glb
+    md5: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+    size: 288744
+    cloud:
+      s3:
+        etag: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+        version_id: ebfNcRUuvmaoQm7zPHpudJfeAX2b6mbT
+  - relpath: corridors/cc1251a4-d367-4bb1-b2d9-05ae33209f0d.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: EXKvRaQigDrqJ_xwxkL8Piq8GfDrKKOl
+  - relpath: corridors/cce37703-e4e8-454c-a0c4-4ff58652ab8f.glb
+    md5: 3d209171a8a51586a54d124f9ae21e19
+    size: 3336528
+    cloud:
+      s3:
+        etag: 3d209171a8a51586a54d124f9ae21e19
+        version_id: 2GRN7BveO.GfmebueAXksXiW8pCR8J2H
+  - relpath: corridors/cd2f7613-97dc-4fd1-a10e-2343295d76a7.glb
+    md5: 99c99145b3ecc36ddb1c60ee7f1be539
+    size: 3808
+    cloud:
+      s3:
+        etag: 99c99145b3ecc36ddb1c60ee7f1be539
+        version_id: Q.WMYZ8cNMJxy5JSUUv.ERav2bXqMMcj
+  - relpath: corridors/cd304e60-3de4-4dd9-b289-ce1a0efae4d7.glb
+    md5: f7c8e34efedcd1e48fe514ad9a48b3cb
+    size: 58280
+    cloud:
+      s3:
+        etag: f7c8e34efedcd1e48fe514ad9a48b3cb
+        version_id: 9tYmqqJkW49vgeqpdSIn3gthJbWk4CcJ
+  - relpath: corridors/cdff48b1-06ae-4732-9777-358e9486546d.glb
+    md5: 629013dab3bd59fe35dab7c021cbbed3
+    size: 11916
+    cloud:
+      s3:
+        etag: 629013dab3bd59fe35dab7c021cbbed3
+        version_id: VB6Akc4SNIv7mUrqRTsXJ9zfFdfAhDcq
+  - relpath: corridors/ce5f3bd0-f091-49fe-8fe5-67004848078b.glb
+    md5: 2f1ef0e8ae2fa3aa308f60a23d0710a8
+    size: 497448
+    cloud:
+      s3:
+        etag: 2f1ef0e8ae2fa3aa308f60a23d0710a8
+        version_id: bPf6EiE8J6Yt3ivE5o4FBPIyhUUtkO6x
+  - relpath: corridors/ce670498-25c5-4182-9e3d-5048aa73799c.glb
+    md5: 30a358ade1aa86111db9eecc3e7ffdaa
+    size: 10596
+    cloud:
+      s3:
+        etag: 30a358ade1aa86111db9eecc3e7ffdaa
+        version_id: KnXbYDxhvx4gFa0SztdWNuv8qvYmkyQq
+  - relpath: corridors/ced621c0-d58c-47e2-9179-6bc89d94964e.glb
+    md5: 9d40a1c9f9cc39c8933140fced039bc4
+    size: 5648
+    cloud:
+      s3:
+        etag: 9d40a1c9f9cc39c8933140fced039bc4
+        version_id: vwO7cQnzSk0mPl3ls8jSY4VRUmjQ6LDW
+  - relpath: corridors/cef949fe-5100-4175-b87b-0172df815a6a.glb
+    md5: e5cf4eb7bc716eaea68f096e1bf7ac36
+    size: 364000
+    cloud:
+      s3:
+        etag: e5cf4eb7bc716eaea68f096e1bf7ac36
+        version_id: _BfreWuuw6Q3euNgpFh3TF.ixHl6lSvE
+  - relpath: corridors/cf097162-7c4b-4118-a19a-cc9805b8f467.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: l_gDdEfxHaony52GA3TtryFImuUXSF5M
+  - relpath: corridors/cf4ba102-edf7-4fe4-bb1d-860cdf57609d.glb
+    md5: d7b73a41237ceae0f2ca12b2b2a8002b
+    size: 1068
+    cloud:
+      s3:
+        etag: d7b73a41237ceae0f2ca12b2b2a8002b
+        version_id: B.X_n3bIYlhW04F1jU9c83yhSmRDXvTU
+  - relpath: corridors/cfb26f63-0394-4615-82c4-68b9512c6e29.glb
+    md5: 629013dab3bd59fe35dab7c021cbbed3
+    size: 11916
+    cloud:
+      s3:
+        etag: 629013dab3bd59fe35dab7c021cbbed3
+        version_id: 66hYKEkxw26uMcemt0E6XmMTUVlFvA_h
+  - relpath: corridors/d007fc5d-392e-481a-a9e8-b40c33ef3301.glb
+    md5: fc55e6348e69c28d9b3ff20df97bc114
+    size: 1072
+    cloud:
+      s3:
+        etag: fc55e6348e69c28d9b3ff20df97bc114
+        version_id: x7HePEbSluTbqY5TV1NC2MZWgfPcKDdj
+  - relpath: corridors/d048e649-a425-4d9a-9e07-a529f9ac273f.glb
+    md5: 3b06e4ef25c9182febde206d82a3c2ba
+    size: 7560
+    cloud:
+      s3:
+        etag: 3b06e4ef25c9182febde206d82a3c2ba
+        version_id: RCI.SNdpPzNrhv0ofWGEKrvUrmo.ypOG
+  - relpath: corridors/d1085194-4902-4252-95fd-faf03afd9288.glb
+    md5: 1b543df83b88027a54d95088f593abc4
+    size: 7812
+    cloud:
+      s3:
+        etag: 1b543df83b88027a54d95088f593abc4
+        version_id: k3z_xkn9B7ntWHHVUfm3WSwPl5QAsNmJ
+  - relpath: corridors/d14c269b-7528-4830-9b9e-90d4949ee20b.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: G40Eo3MUza3ad6zCPzRybfXjRXgB0oBl
+  - relpath: corridors/d16014ad-8b92-487b-bca7-044d3d745dba.glb
+    md5: 3d209171a8a51586a54d124f9ae21e19
+    size: 3336528
+    cloud:
+      s3:
+        etag: 3d209171a8a51586a54d124f9ae21e19
+        version_id: 8cJyqFSKK6wNbzXjS3uQNfIMqGK1_T1C
+  - relpath: corridors/d194f593-af76-4ee7-84a6-00f7531d47cf.glb
+    md5: efbcb1fbd2b3ed91e9cc325a5092d4d1
+    size: 208368
+    cloud:
+      s3:
+        etag: efbcb1fbd2b3ed91e9cc325a5092d4d1
+        version_id: 2Hc8v5HqksJfHINx1_S23XtVsZ8k.9J4
+  - relpath: corridors/d2020599-6597-47d5-a46f-f31b9ac0abd6.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: o30JzQypUTS0F_xFGg6rPN2tGGX75Lw3
+  - relpath: corridors/d237fd29-749e-4734-a925-d36e5d1db31d.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: uwZnrOdbG_GrdzCcx6mkEwVEqbysu3Sg
+  - relpath: corridors/d386cdea-8d3c-46a2-9900-fbd5237cba80.glb
+    md5: 7681fc5327f0b36a2e54cad7a5515110
+    size: 115460
+    cloud:
+      s3:
+        etag: 7681fc5327f0b36a2e54cad7a5515110
+        version_id: vqK3tWH1rEt.V.UUYhiMfnrf0a9C.nOK
+  - relpath: corridors/d3b5feb6-910f-4309-a6a8-42c0477227c9.glb
+    md5: 3b88963f2e66828fc570ac90567ec937
+    size: 5332
+    cloud:
+      s3:
+        etag: 3b88963f2e66828fc570ac90567ec937
+        version_id: KSNidPGEwf682ls.rCJPGlV5xMalPS3f
+  - relpath: corridors/d51b9d67-837f-4451-a6c6-0b63c7879736.glb
+    md5: 8d23f1a943420efd34d3adb7ec18a81e
+    size: 29560
+    cloud:
+      s3:
+        etag: 8d23f1a943420efd34d3adb7ec18a81e
+        version_id: SiVJEJ7fBSg6KfZ2Zp0miATowuDpqzBq
+  - relpath: corridors/d5691ad3-7e64-45ce-864d-ce66eb0e1e82.glb
+    md5: f84888ad966f33011ab531f76be7c2c3
+    size: 1068
+    cloud:
+      s3:
+        etag: f84888ad966f33011ab531f76be7c2c3
+        version_id: l4fK.K5O8Svcy5NhH9si93VoDUJ7b3Bi
+  - relpath: corridors/d662fd53-e925-4921-8d8b-bc91eed1519b.glb
+    md5: 8d23f1a943420efd34d3adb7ec18a81e
+    size: 29560
+    cloud:
+      s3:
+        etag: 8d23f1a943420efd34d3adb7ec18a81e
+        version_id: A3Y5OopPegIHyo0e40wMGYgjJ27YUwD2
+  - relpath: corridors/d80f7686-3fb4-435b-a453-bfc21d0a90ab.glb
+    md5: d73d9ab91158ed73c5022242c18ff5d6
+    size: 6696
+    cloud:
+      s3:
+        etag: d73d9ab91158ed73c5022242c18ff5d6
+        version_id: m5CbFOS4GISyWGyfP8DUVm3pZiRuxMhx
+  - relpath: corridors/d8490f13-1bb3-41bb-acea-82678406ad96.glb
+    md5: 14643d7a3d2cd3506f46fd7eadeee8b0
+    size: 1072
+    cloud:
+      s3:
+        etag: 14643d7a3d2cd3506f46fd7eadeee8b0
+        version_id: LvdqR.qi_cfYHzzQ5C34ewVMjlDDjr6h
+  - relpath: corridors/d8c8faa2-7e2a-4b74-9531-cd08be659c10.glb
+    md5: 6740aee0c88914eb94879beb11014c1e
+    size: 2804
+    cloud:
+      s3:
+        etag: 6740aee0c88914eb94879beb11014c1e
+        version_id: koQm.MESY3XIRiURCytLEDGNFhZJvGnh
+  - relpath: corridors/d93b856f-7df7-4534-8af7-22585dd93f16.glb
+    md5: c1c0981ae96826b17e819879769a3f65
+    size: 6900
+    cloud:
+      s3:
+        etag: c1c0981ae96826b17e819879769a3f65
+        version_id: nlbTEe9dffCbZZlZCjazOOSADJWLqJYz
+  - relpath: corridors/d9722c2f-1591-4e93-a214-377a5646e6d8.glb
+    md5: 16e425f8d5f47e8d7b79884defc8b238
+    size: 1068
+    cloud:
+      s3:
+        etag: 16e425f8d5f47e8d7b79884defc8b238
+        version_id: ozVB4PjRHlsEV7SWUSMH_qa0fzbDMCTh
+  - relpath: corridors/d9aed544-4c6e-42c2-a137-9a9381d8f8c8.glb
+    md5: 6f78b1dc4b6f102d10f15b3b512e30de
+    size: 7400
+    cloud:
+      s3:
+        etag: 6f78b1dc4b6f102d10f15b3b512e30de
+        version_id: MGo88z184BPDVZKGX5c.R4dL4fnsBCtg
+  - relpath: corridors/da28394d-789a-4fba-842a-f8ba5046b221.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: 6iD1kuJ7gD7telXWEPp9cofoybbhOx6D
+  - relpath: corridors/da2df5a7-f0d6-4bee-85e4-29c7369e8aff.glb
+    md5: ed935fb5b1cf68fb63b33173d51e637a
+    size: 15192
+    cloud:
+      s3:
+        etag: ed935fb5b1cf68fb63b33173d51e637a
+        version_id: AXQ8z5TGamAQzrbe.fLRd6wFB1OUOv4g
+  - relpath: corridors/da60f474-614a-4e0a-adbe-521ba44c7bf0.glb
+    md5: 9501d919e1d17a1250c667b00b743889
+    size: 10656
+    cloud:
+      s3:
+        etag: 9501d919e1d17a1250c667b00b743889
+        version_id: H_BrbXA.lqa.Azbir3nt6QYtKQF29FE9
+  - relpath: corridors/da9a6669-973c-4bee-97e1-7430d21796f8.glb
+    md5: db28415973e76a4446e049e4512c433b
+    size: 1068
+    cloud:
+      s3:
+        etag: db28415973e76a4446e049e4512c433b
+        version_id: IzYRfS5rItmrvmFU7.32DKQtkiPmZDeR
+  - relpath: corridors/db35f27d-313f-4dd6-819b-375cf106aac1.glb
+    md5: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+    size: 288744
+    cloud:
+      s3:
+        etag: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+        version_id: c.T6x_8En4c.m3jXK6OdjkfnR0rPMLiO
+  - relpath: corridors/db3e256b-1e77-4cc6-b926-21684c9f8ba4.glb
+    md5: fa99d4db85bb4faddad55626da1e53c3
+    size: 1064
+    cloud:
+      s3:
+        etag: fa99d4db85bb4faddad55626da1e53c3
+        version_id: HD6WtMnWa_dTRZJtqD5Qe1euN64WR_T9
+  - relpath: corridors/db4f3eca-e9f8-4f9c-88a1-795a20dd0f84.glb
+    md5: feeaff15fbaa5ac8aa23a41d57db50bf
+    size: 96436
+    cloud:
+      s3:
+        etag: feeaff15fbaa5ac8aa23a41d57db50bf
+        version_id: j_OP2sNdAD0VQuW.6kS_lumyja_0Ycez
+  - relpath: corridors/dc29aac6-af08-4fa4-9d58-5cb1d93ee8dc.glb
+    md5: f2a0901f2337883fa7daeaac37e410ca
+    size: 6804
+    cloud:
+      s3:
+        etag: f2a0901f2337883fa7daeaac37e410ca
+        version_id: FxsOcP5Rko2e4OMbgUbZDozCooBPPVwo
+  - relpath: corridors/dd10edda-787b-47f2-85af-f22e5b85f4d5.glb
+    md5: 7194e570b3df7a062c7fe29d31b395e8
+    size: 1068
+    cloud:
+      s3:
+        etag: 7194e570b3df7a062c7fe29d31b395e8
+        version_id: XP3Ho3rGA.ZugX5NV.v.TlRUG3gHrP9G
+  - relpath: corridors/dddd9215-b7d9-49d3-9546-ff2582be5f56.glb
+    md5: 2f1ef0e8ae2fa3aa308f60a23d0710a8
+    size: 497448
+    cloud:
+      s3:
+        etag: 2f1ef0e8ae2fa3aa308f60a23d0710a8
+        version_id: LIy9gz2MpbG56OAKs2GI3MXHXU0wcb_H
+  - relpath: corridors/de8bd0bf-7765-44c4-9d22-5ff5c0586816.glb
+    md5: 24b44a910f0e12605536df3feaed27b1
+    size: 169172
+    cloud:
+      s3:
+        etag: 24b44a910f0e12605536df3feaed27b1
+        version_id: Ufvvk2DkvUZobESnXPJ_UodPX4xFFWbL
+  - relpath: corridors/decfd5b4-07de-4894-bc83-6698cfb1ef8c.glb
+    md5: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+    size: 288744
+    cloud:
+      s3:
+        etag: b76a9c6b94e89d7bf6f4fc5acf04f7dc
+        version_id: w_SbZWaNWKRO4j3RS9oI4bTFy1dUmwli
+  - relpath: corridors/df0b33f7-371a-47a4-a636-a27db19bdbc9.glb
+    md5: 979c83cea91836bc16898e09d16e7d6d
+    size: 9328
+    cloud:
+      s3:
+        etag: 979c83cea91836bc16898e09d16e7d6d
+        version_id: eRza0ET6wPE7ux4vCDckkTfnf4GxGrPp
+  - relpath: corridors/df58ff32-e4db-41fe-9a25-47dbde90c694.glb
+    md5: 3b88963f2e66828fc570ac90567ec937
+    size: 5332
+    cloud:
+      s3:
+        etag: 3b88963f2e66828fc570ac90567ec937
+        version_id: 67OiqNNnWjvTZlPMZhU8f32_S9apTW_z
+  - relpath: corridors/dfb35d10-65a1-48f9-94a0-baf36ce8a78b.glb
+    md5: 3b88963f2e66828fc570ac90567ec937
+    size: 5332
+    cloud:
+      s3:
+        etag: 3b88963f2e66828fc570ac90567ec937
+        version_id: WdTNZS647uQ0a3Ytg.x4vioAYUSREqd1
+  - relpath: corridors/e137f366-a936-4357-945a-929d1d682890.glb
+    md5: f40cdf0a60dc8beb825fa5b328db650d
+    size: 8496
+    cloud:
+      s3:
+        etag: f40cdf0a60dc8beb825fa5b328db650d
+        version_id: HqZRptQEB_mwSiNO51dHTHWHV8B_I51k
+  - relpath: corridors/e13cd910-c2df-4b83-ad68-2e7409089fa4.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: FjLYPbepvxEXtJbGCJRvqomnxBc5cyzA
+  - relpath: corridors/e1a870bc-d965-4324-b691-55ebac9f2f89.glb
+    md5: 4a9369c37167c46708eb29de7346d53f
+    size: 177668
+    cloud:
+      s3:
+        etag: 4a9369c37167c46708eb29de7346d53f
+        version_id: CxDk.DwlECGc_AHd2JMMEgwnbs4rOFaw
+  - relpath: corridors/e1db1f93-161c-44c2-a96e-9bfa26ddb873.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: Tq7h7KIaEOZjIsgGtW9gptV7JZ2lLOAy
+  - relpath: corridors/e21afc3c-3a7c-4717-90d5-e5739fd8432c.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: LppxlpGXcKF9A4zaJXysJYLAl_bofkJA
+  - relpath: corridors/e240c0a4-5e53-4464-8320-ad775f2c4bf7.glb
+    md5: efbcb1fbd2b3ed91e9cc325a5092d4d1
+    size: 208368
+    cloud:
+      s3:
+        etag: efbcb1fbd2b3ed91e9cc325a5092d4d1
+        version_id: SKOmpnk0Ai3_eX90qI3AZ03bnNPjPfL8
+  - relpath: corridors/e2bb4165-7965-4c87-bf44-6fb9dfbd950d.glb
+    md5: 988088c7388513002d40a74dcc76a7f4
+    size: 14496
+    cloud:
+      s3:
+        etag: 988088c7388513002d40a74dcc76a7f4
+        version_id: 2eZnYrIyA9wIsryJCGNDNfAnEcyUlLlz
+  - relpath: corridors/e2cccfa3-5834-42aa-b202-59eaac6473f3.glb
+    md5: fa749f5a861e6bb7f335d54b43ba5a66
+    size: 9284
+    cloud:
+      s3:
+        etag: fa749f5a861e6bb7f335d54b43ba5a66
+        version_id: PQPB2W1.9sRYckswOfaDDCvCWAxW_B0.
+  - relpath: corridors/e306f975-0649-40fe-96f8-43ac7a3a9a1d.glb
+    md5: a58de74dcba1ae8564093768b7ea5641
+    size: 169428
+    cloud:
+      s3:
+        etag: a58de74dcba1ae8564093768b7ea5641
+        version_id: 0RrQa_HdkWNzktqsDinsN1V6owqBAVnT
+  - relpath: corridors/e4853294-071d-4bef-bff3-2fd52a5c6af0.glb
+    md5: cbd3b50fe018508bb548d6e3201855da
+    size: 249708
+    cloud:
+      s3:
+        etag: cbd3b50fe018508bb548d6e3201855da
+        version_id: _bjCnaRDWFKUCNUPbTOpcApUIpfUp.3V
+  - relpath: corridors/e4a44b76-53fd-4c88-9ccf-ba095fcb9673.glb
+    md5: 92e404a83c4434af435d07a13f35a1fa
+    size: 35392
+    cloud:
+      s3:
+        etag: 92e404a83c4434af435d07a13f35a1fa
+        version_id: edK3f8wLsj4zvvkbR_KQjFfWQXURiYk.
+  - relpath: corridors/e4d28a22-b26e-4486-a146-cb21d74a9a41.glb
+    md5: 1b543df83b88027a54d95088f593abc4
+    size: 7812
+    cloud:
+      s3:
+        etag: 1b543df83b88027a54d95088f593abc4
+        version_id: 3lSiNJWWsc023MiRzbvA.1frASH.DMPY
+  - relpath: corridors/e6c247f7-694a-4477-8ba7-84d04bc9c3bd.glb
+    md5: bfe8452a41b1a11183af133e45cceb37
+    size: 1068
+    cloud:
+      s3:
+        etag: bfe8452a41b1a11183af133e45cceb37
+        version_id: ePr7t4iFt8GAQIH9LD3wyt_i93WovR5m
+  - relpath: corridors/e6fcabe9-b5a0-4188-b381-ef0d1751f073.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: 66YOtU7up5HdwEFXLdIssqt7NdRBg86X
+  - relpath: corridors/e7d386a6-d4fb-43b2-9737-fdc6f7508d79.glb
+    md5: 3b88963f2e66828fc570ac90567ec937
+    size: 5332
+    cloud:
+      s3:
+        etag: 3b88963f2e66828fc570ac90567ec937
+        version_id: kzgxmGAmakbfPSm_xzA4gXbfjgj94qoB
+  - relpath: corridors/e88dfa31-cb6b-4eaa-b16c-e5c97de2701e.glb
+    md5: dafce4f7bc7357a3defb63af980bb136
+    size: 249092
+    cloud:
+      s3:
+        etag: dafce4f7bc7357a3defb63af980bb136
+        version_id: TbRdyo5JQb.c7jJHViL.YITlO2tGSzG0
+  - relpath: corridors/e8f57e46-0e7a-4d2b-b174-749b41a73320.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: N7LuzJA6faoHC43fK8mYQk09LxP9Mapt
+  - relpath: corridors/e923ab7e-1e9f-4854-958f-ec57a4e1375d.glb
+    md5: 3b06e4ef25c9182febde206d82a3c2ba
+    size: 7560
+    cloud:
+      s3:
+        etag: 3b06e4ef25c9182febde206d82a3c2ba
+        version_id: 2DgfXsR6av03Ysva_yzEPHNItqv4N9QQ
+  - relpath: corridors/e9f99b37-6332-4b4b-8889-af3cc495b90e.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: k6Se.Nn8Oeb.DZZaXdYcC9Mg3bMNUp5d
+  - relpath: corridors/ea1d468d-e988-42cd-8e34-71701e568878.glb
+    md5: 3c5634f8b05fc274f54c23c3a5106eb2
+    size: 359060
+    cloud:
+      s3:
+        etag: 3c5634f8b05fc274f54c23c3a5106eb2
+        version_id: WxJUxig_oqrmq_QFJ2qkyz4zJmbWL1C4
+  - relpath: corridors/eb92e0e2-838b-4689-b13c-07c3ce31eaf0.glb
+    md5: 69720ebf985f342f767b63c1c8643e8b
+    size: 6888400
+    cloud:
+      s3:
+        etag: 69720ebf985f342f767b63c1c8643e8b
+        version_id: WtL8YOL6aZ4r_TzB4LzsTNMeoUUGcW3o
+  - relpath: corridors/ec1cc18d-9a48-4c09-a720-2b54c3f83bd9.glb
+    md5: 8c34e14f9b9c5979403213c9d0b974cb
+    size: 43928
+    cloud:
+      s3:
+        etag: 8c34e14f9b9c5979403213c9d0b974cb
+        version_id: 9s79BDJQN6oQZB4vSEBy0_KRU.GaercM
+  - relpath: corridors/ec1f3aac-67e0-4682-b478-ccfedd93536c.glb
+    md5: 5fef5ef7439dc4521a6e430b03e76773
+    size: 51664
+    cloud:
+      s3:
+        etag: 5fef5ef7439dc4521a6e430b03e76773
+        version_id: b6wmds44RtTDhufcIX1vdka3m3ugjwuK
+  - relpath: corridors/ec2488fb-6ff5-4f43-82b5-9704a650d00a.glb
+    md5: 7099ef7e198c723a34aaa576979a349c
+    size: 4892
+    cloud:
+      s3:
+        etag: 7099ef7e198c723a34aaa576979a349c
+        version_id: Y1fpZvxsk.nsUCCLCrtWofZ1wVFpmaoL
+  - relpath: corridors/ec266141-f52d-4089-ab1c-456ec1b97441.glb
+    md5: 1885941ca22bfef4232945ed0cf66fad
+    size: 8064
+    cloud:
+      s3:
+        etag: 1885941ca22bfef4232945ed0cf66fad
+        version_id: pypeM3prjty2VeNUC8ot7.ebdk5fnhri
+  - relpath: corridors/ecc25c9b-4d98-4aad-8774-d5308e44125b.glb
+    md5: 709c47bc71abecc59da409888afd0f6b
+    size: 123560
+    cloud:
+      s3:
+        etag: 709c47bc71abecc59da409888afd0f6b
+        version_id: Lulmw_ebGMNV0b5oE9fIlZhOnQcRsSm5
+  - relpath: corridors/ece78b3e-635e-45d1-8217-35fd50392cce.glb
+    md5: 3d209171a8a51586a54d124f9ae21e19
+    size: 3336528
+    cloud:
+      s3:
+        etag: 3d209171a8a51586a54d124f9ae21e19
+        version_id: 7ahtNpHxbVNycwxKKgYCkONAPBuTCPyi
+  - relpath: corridors/ed8525a0-a2c5-4818-ad53-5a0cf430966a.glb
+    md5: 455b8cda7b2c702b8fdc6ecf8f178459
+    size: 6008
+    cloud:
+      s3:
+        etag: 455b8cda7b2c702b8fdc6ecf8f178459
+        version_id: GBog2u1WQbWizbeGPLb_VF.FDStC8Axb
+  - relpath: corridors/ed9bc73e-ab9c-4bb1-8b96-4ecd1f12c7a7.glb
+    md5: 309f7e06a6344d2bf864cb53e97e7930
+    size: 5216
+    cloud:
+      s3:
+        etag: 309f7e06a6344d2bf864cb53e97e7930
+        version_id: yr_idD7BTajkGVGsalwv9Ar9m3dPjkFJ
+  - relpath: corridors/ee4110ca-9ea3-4580-a79c-30471359f11c.glb
+    md5: 6e2b9f9c6d5e93565ec305d9951d2735
+    size: 5552
+    cloud:
+      s3:
+        etag: 6e2b9f9c6d5e93565ec305d9951d2735
+        version_id: omk.JFF1b0yaR2YFEsoO6AioNrlGACI6
+  - relpath: corridors/ee7b09db-e6f5-4114-a8f8-5a19bb3a07c2.glb
+    md5: 69720ebf985f342f767b63c1c8643e8b
+    size: 6888400
+    cloud:
+      s3:
+        etag: 69720ebf985f342f767b63c1c8643e8b
+        version_id: A3BR414nVbZbMDgjl_.lzFCL017xQLXF
+  - relpath: corridors/f0929253-c143-486e-a1dd-d2d8aa14eadd.glb
+    md5: 10b6ad80635902fec23cde4dc7e525a9
+    size: 20052
+    cloud:
+      s3:
+        etag: 10b6ad80635902fec23cde4dc7e525a9
+        version_id: m55vLoQM08cA8LX9sSdZUneiVz2gaYDR
+  - relpath: corridors/f0df97c7-d936-4f04-93b2-4a4f98420202.glb
+    md5: 629013dab3bd59fe35dab7c021cbbed3
+    size: 11916
+    cloud:
+      s3:
+        etag: 629013dab3bd59fe35dab7c021cbbed3
+        version_id: IYSbZO5YOUh03FGEiag.FXKbSTjlrez9
+  - relpath: corridors/f1284ff8-0e59-4a8f-8449-0fe9c952ceb8.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: HxYIhpERb.dZ2qHNkxjnXnsrrcbGVFBN
+  - relpath: corridors/f15f5400-2ef9-45fc-bf0f-72f14d6f8f9e.glb
+    md5: 8d23f1a943420efd34d3adb7ec18a81e
+    size: 29560
+    cloud:
+      s3:
+        etag: 8d23f1a943420efd34d3adb7ec18a81e
+        version_id: SfZ2Hv0GBrRPHmys4MPg7GDXBG0GtlOm
+  - relpath: corridors/f1790d4b-bbc0-434c-b8ed-f21e8b8be903.glb
+    md5: 2f1ef0e8ae2fa3aa308f60a23d0710a8
+    size: 497448
+    cloud:
+      s3:
+        etag: 2f1ef0e8ae2fa3aa308f60a23d0710a8
+        version_id: U8W.WcHrftoCm_VlTzkSWXwi03dP91RK
+  - relpath: corridors/f2a0eb6b-7729-40ac-baad-a9f3f0b64e91.glb
+    md5: 343bbd90f30f4a216927ff3995111b5a
+    size: 39460
+    cloud:
+      s3:
+        etag: 343bbd90f30f4a216927ff3995111b5a
+        version_id: 3gtf.zrGI2irRdO_.9Z_mNOxY2mpm2Za
+  - relpath: corridors/f31c1726-c693-4734-8c1c-4f1d64bbe034.glb
+    md5: 47cd22cad88952899ec852a0ab8d1071
+    size: 10908
+    cloud:
+      s3:
+        etag: 47cd22cad88952899ec852a0ab8d1071
+        version_id: F_ukaWaa7B4.riIDJfZOXKuGadqWjJfb
+  - relpath: corridors/f347d8fc-2552-4b8d-8012-1c06347a6e74.glb
+    md5: 4f956bdd9aa57bfa3171af5c4355c268
+    size: 29196
+    cloud:
+      s3:
+        etag: 4f956bdd9aa57bfa3171af5c4355c268
+        version_id: xFZxNjjP25hgrmQhdSZ_Y3K9weTeM78Y
+  - relpath: corridors/f3a81447-18d4-4b3e-b434-3b5a00a3bd38.glb
+    md5: af625457ae94f0ffd7fe37aa2409266a
+    size: 1072
+    cloud:
+      s3:
+        etag: af625457ae94f0ffd7fe37aa2409266a
+        version_id: NBz5jmtqB2r.Z2kPUZSyhbbVFJQ2M2ay
+  - relpath: corridors/f3f2fabb-6802-4fd4-920e-1914293db252.glb
+    md5: e73a7a93640247a8bb93aa998cc92574
+    size: 7056
+    cloud:
+      s3:
+        etag: e73a7a93640247a8bb93aa998cc92574
+        version_id: qibFyfLeyLDwmpH3gFjpm1zTmPE1y9g_
+  - relpath: corridors/f40b7c95-3be4-4091-82a1-5a482e5a064e.glb
+    md5: 68b80138ba3a522e93858b25c8d68c65
+    size: 225728
+    cloud:
+      s3:
+        etag: 68b80138ba3a522e93858b25c8d68c65
+        version_id: u1wZF8KIele79hsY7uqmPxCaz6ls6vmj
+  - relpath: corridors/f50553aa-d022-4115-aab5-58f588244820.glb
+    md5: 6740aee0c88914eb94879beb11014c1e
+    size: 2804
+    cloud:
+      s3:
+        etag: 6740aee0c88914eb94879beb11014c1e
+        version_id: gkv8re_FCBREZQz14yXY9EhHPlmdoaRU
+  - relpath: corridors/f5397333-dfd4-4904-a657-ba4f0ca02c71.glb
+    md5: dc5e261658939810280f8223af05a2dd
+    size: 1068
+    cloud:
+      s3:
+        etag: dc5e261658939810280f8223af05a2dd
+        version_id: N00m3FtpMGJ58Samk4FT_KNhkAAeG8ea
+  - relpath: corridors/f6203770-64ee-40cc-b7b2-339f1ae491cc.glb
+    md5: f6099c5f287bdbb0364920133dfd1c41
+    size: 10440
+    cloud:
+      s3:
+        etag: f6099c5f287bdbb0364920133dfd1c41
+        version_id: x11F7qr9tuqHrMr6W_cCy4QIFCTs8XOi
+  - relpath: corridors/f6512db4-2809-4ffe-864d-ace61789dff6.glb
+    md5: f70e1d7326172a428d4dce8c2355bdb0
+    size: 868188
+    cloud:
+      s3:
+        etag: f70e1d7326172a428d4dce8c2355bdb0
+        version_id: hdTJT1IQzUMQ4EH.WD30Q9OBlTV0JmK4
+  - relpath: corridors/f66f91f9-c6c5-414d-b784-2faec33e0505.glb
+    md5: fc2bfc3f1595376b3d16fc4b9199cbbb
+    size: 6696
+    cloud:
+      s3:
+        etag: fc2bfc3f1595376b3d16fc4b9199cbbb
+        version_id: 5Gr8GkhgK2NFmc2cxLBgH0M0bu0R7LhN
+  - relpath: corridors/f69c353e-2157-479e-bd95-19e03765243e.glb
+    md5: 629013dab3bd59fe35dab7c021cbbed3
+    size: 11916
+    cloud:
+      s3:
+        etag: 629013dab3bd59fe35dab7c021cbbed3
+        version_id: Qe.sITyxpR2n1lmgZtffbdTNEEcKJIZS
+  - relpath: corridors/f7500931-e3b6-4aab-bed8-735619fe645e.glb
+    md5: ac4874b899df9f99347810cda4a05a74
+    size: 4680
+    cloud:
+      s3:
+        etag: ac4874b899df9f99347810cda4a05a74
+        version_id: T3fhZRANqns_boT1Kv88P0Kv0rPlVgOa
+  - relpath: corridors/f9e28182-3ed3-4a3f-bd45-66ebce1efafb.glb
+    md5: ef9d9e046e42420fce95a6304d82846e
+    size: 95396
+    cloud:
+      s3:
+        etag: ef9d9e046e42420fce95a6304d82846e
+        version_id: HGcwsMmBUB3haSgdUN8F5oCp0g8JmQbs
+  - relpath: corridors/fa9ecb7f-16d5-4733-bc89-46496a9e886e.glb
+    md5: 81841bc29bc9efce1dc228fe639e73da
+    size: 6152
+    cloud:
+      s3:
+        etag: 81841bc29bc9efce1dc228fe639e73da
+        version_id: GKbPPieS_GmxRhsiGRbfzlqfVwazlNTV
+  - relpath: corridors/faefd608-8fd3-4b87-aef5-9dbd8d693f4a.glb
+    md5: 3baa983b5ce53f18bce025cb040333fe
+    size: 15480
+    cloud:
+      s3:
+        etag: 3baa983b5ce53f18bce025cb040333fe
+        version_id: XVoBB9bAUFGCbNJ0aEb6RwWCuWXQX4F_
+  - relpath: corridors/fb4cec06-b147-4277-a6cf-8aa21e294183.glb
+    md5: c0dbc7b8921dd7e175be8aed4e4c7847
+    size: 66016
+    cloud:
+      s3:
+        etag: c0dbc7b8921dd7e175be8aed4e4c7847
+        version_id: eM2lkGzCN4o.evxSqQqh9WUmoKvcmX1G
+  - relpath: corridors/fc556dba-cfb0-490d-913b-d76717762142.glb
+    md5: ad5e6344ca53d664564a279dc6aef0af
+    size: 10128
+    cloud:
+      s3:
+        etag: ad5e6344ca53d664564a279dc6aef0af
+        version_id: bPU8Yl1Ks082FEVof7IFzxBav00tm_Hx
+  - relpath: corridors/fcfcc65b-f91f-4447-a29b-c9836104570c.glb
+    md5: 3d209171a8a51586a54d124f9ae21e19
+    size: 3336528
+    cloud:
+      s3:
+        etag: 3d209171a8a51586a54d124f9ae21e19
+        version_id: vwArHe7VtuJSyjqtROkORcFfCji_7AYc
+  - relpath: corridors/fd380a0c-2915-4d73-b3f4-d161badbaccb.glb
+    md5: aaabbceeae08b152e7e9db18c3075a7b
+    size: 5804
+    cloud:
+      s3:
+        etag: aaabbceeae08b152e7e9db18c3075a7b
+        version_id: AktBtY_965bai39I43GKY9CkuTG.5BnI
+  - relpath: corridors/fd40a0fd-ba22-4f0a-ad42-ce3ed86d0764.glb
+    md5: 2d8a10cf1bb9727f400ec3831ec5139b
+    size: 10248
+    cloud:
+      s3:
+        etag: 2d8a10cf1bb9727f400ec3831ec5139b
+        version_id: zM2gW8Cjb_j5peoDoUpl81FCBLpYA_X1
+  - relpath: corridors/fd4fcec2-93c3-428f-ad3a-6c7ac4196da0.glb
+    md5: 8fba7540259ed609d6bc23cc48db65ee
+    size: 6512
+    cloud:
+      s3:
+        etag: 8fba7540259ed609d6bc23cc48db65ee
+        version_id: FwD34LR9lcPnknabkm0mJTHdXzyCG0Np
+  - relpath: corridors/fd7270d4-105a-4058-aece-2d2bb0668da2.glb
+    md5: 20a210df79e4c0d737cb400cdebb5628
+    size: 70484
+    cloud:
+      s3:
+        etag: 20a210df79e4c0d737cb400cdebb5628
+        version_id: 1N.N8XohEe1KONQi0ywj9viMT8hCahWF
+  - relpath: corridors/fd76b9bb-85b0-4dd0-8e60-7c6ec7c95d73.glb
+    md5: 3c5634f8b05fc274f54c23c3a5106eb2
+    size: 359060
+    cloud:
+      s3:
+        etag: 3c5634f8b05fc274f54c23c3a5106eb2
+        version_id: L62DU4nbfCjDz_G33zLtnTDZyrPZRSuV
+  - relpath: corridors/fdb0d1f7-94d5-4628-b345-dbe4975966fd.glb
+    md5: b0ed4fe97749cdc431b6e6ddc7998f18
+    size: 7088
+    cloud:
+      s3:
+        etag: b0ed4fe97749cdc431b6e6ddc7998f18
+        version_id: egQ8TANdG5sk4ViyrVqFfdV4FpwwC.Z7
+  - relpath: corridors/fe26f171-fdd4-4293-bfe0-2a8c1e84c7fa.glb
+    md5: 21109b64474510513240ac67f21a2e42
+    size: 31828
+    cloud:
+      s3:
+        etag: 21109b64474510513240ac67f21a2e42
+        version_id: WOjmoSMsqIrwiAO5ke078PZwT6.8uRDb
+  - relpath: corridors/fe276ee5-752a-456e-bb25-4e5da071c6ed.glb
+    md5: feeaff15fbaa5ac8aa23a41d57db50bf
+    size: 96436
+    cloud:
+      s3:
+        etag: feeaff15fbaa5ac8aa23a41d57db50bf
+        version_id: MANc_2bKTtXlMJiRj.u4CFzxChkofQtz
+  - relpath: corridors/ff034c0c-a625-48b8-891c-857e556db1c4.glb
+    md5: 3d209171a8a51586a54d124f9ae21e19
+    size: 3336528
+    cloud:
+      s3:
+        etag: 3d209171a8a51586a54d124f9ae21e19
+        version_id: RouFfwNQzq0XDUitYvWxrzIlC.PoV8vY
+  - relpath: ctann-crosswalks.ttl
+    md5: 1efe47db2fcb9c9f57980a1a7235840a
+    size: 650566
+    cloud:
+      s3:
+        etag: 1efe47db2fcb9c9f57980a1a7235840a
+        version_id: FEh7g2hq_iKbrAfGaDDkgNg3vZNowdWQ
+  - relpath: euclidean-distances.ttl
+    md5: 9139111fc6371646739e6b2d8333d421
+    size: 39728777
+    cloud:
+      s3:
+        etag: 9139111fc6371646739e6b2d8333d421
+        version_id: gwGiNJ.cQzPI64SlTRzi9B9.4K6nsqTd
+  - relpath: full-dataset-graph.csv
+    md5: 19b8d360065b5f16aad568074e408501
+    size: 11432344
+    cloud:
+      s3:
+        etag: 19b8d360065b5f16aad568074e408501
+        version_id: 5T8ATSdP.lZG8UMj7JS3BBev8vnPSAMt
+  - relpath: full-dataset-graph.jsonld
+    md5: c45726406d7abb359fcff20b26d1a9cd
+    size: 12004355
+    cloud:
+      s3:
+        etag: c45726406d7abb359fcff20b26d1a9cd
+        version_id: gZFfAx0pdvG7wHMHqmAPxGe1OBo1pctG
+  - relpath: full-dataset-graph.nq
+    md5: 0335cb8b9a05fcfb442fc3c1d3b3faa0
+    size: 29459897
+    cloud:
+      s3:
+        etag: 0335cb8b9a05fcfb442fc3c1d3b3faa0
+        version_id: _giYGFCSkLAnNBWbKvgiKgmWAHNalLDx
+  - relpath: hra.owl
+    md5: b5d61962d1b1ad79ef2de63449ed55d9
+    size: 69042813
+    cloud:
+      s3:
+        etag: b5d61962d1b1ad79ef2de63449ed55d9
+        version_id: OLPjXdVcAdx_dBZ2GrLRM8dCgRQ.TAyg
+  - relpath: non-atlas-dataset-graph.csv
+    md5: d76fdb2bca12d36272403b4e21fbb41b
+    size: 11389364
+    cloud:
+      s3:
+        etag: d76fdb2bca12d36272403b4e21fbb41b
+        version_id: ZiHevy_8yRuoE0Qf0W3YOtYqZeckh6.i
+  - relpath: publications-dataset-graph.jsonld
+    md5: 473ef8896c749c4430623c8e9dcfb07f
+    size: 372402
+    cloud:
+      s3:
+        etag: 473ef8896c749c4430623c8e9dcfb07f
+        version_id: zmLAX_m2YXelTpFaU7DkoUj3Zevruhgz
+  - relpath: registrations-dataset-graph.jsonld
+    md5: 56f03b4f1c07e910a160fa19c3ac8390
+    size: 4737359
+    cloud:
+      s3:
+        etag: 56f03b4f1c07e910a160fa19c3ac8390
+        version_id: 7DBbsCZv1kXtuq3RvooASgSpE_xcpDo.
+  - relpath: reports/atlas-ad-hoc/as-ct-b.csv
+    md5: 1e1d387a675849d49233cec65bddb084
+    size: 77
+    cloud:
+      s3:
+        etag: 1e1d387a675849d49233cec65bddb084
+        version_id: YqulW8uSdunK3rx2lfQaJkRqfCnGxIsm
+  - relpath: reports/atlas-ad-hoc/as-datasets-extraction-sites.csv
+    md5: 3d3f6cde7e9b6d4c43d048ccdd223e7f
+    size: 252949
+    cloud:
+      s3:
+        etag: 3d3f6cde7e9b6d4c43d048ccdd223e7f
+        version_id: ep_eEWNGBK.WaKGIcWAgP9wSgdi0Yc_9
+  - relpath: reports/atlas-ad-hoc/as-datasets-modality.csv
+    md5: 6c46780c99a12292035229adbcc13bb7
+    size: 1089598
+    cloud:
+      s3:
+        etag: 6c46780c99a12292035229adbcc13bb7
+        version_id: 0Jt6kQXU.QThai11MIj12ANzAALZEZh9
+  - relpath: reports/atlas-ad-hoc/consortium-breakdown.csv
+    md5: f0664c9dec45a004495ff9bdbe6eff3f
+    size: 503
+    cloud:
+      s3:
+        etag: f0664c9dec45a004495ff9bdbe6eff3f
+        version_id: i6QBq6V_FHLDUswba2UoG3gbgxcJeXGd
+  - relpath: reports/atlas-ad-hoc/count-dataset-modality.csv
+    md5: 12ede265b86b0c0fc40914925e34c80a
+    size: 128
+    cloud:
+      s3:
+        etag: 12ede265b86b0c0fc40914925e34c80a
+        version_id: dP6j6qgnlP_pK4uRF74Mo6nfd_9RQfJT
+  - relpath: reports/atlas-ad-hoc/counts-for-heart-as.csv
+    md5: 2df76d41f0b52193fd46e697128d8d2e
+    size: 123912
+    cloud:
+      s3:
+        etag: 2df76d41f0b52193fd46e697128d8d2e
+        version_id: 3.Oi7fUZ0SMlzfN3aWjjmynvqZJPmvia
+  - relpath: reports/atlas-ad-hoc/counts-for-kidney-as.csv
+    md5: 57fd9e2236bcbbbd283902cd8fb3db8f
+    size: 36630
+    cloud:
+      s3:
+        etag: 57fd9e2236bcbbbd283902cd8fb3db8f
+        version_id: B1x9Cc59qLJdGaCkcca3cg3_hKIrY5YW
+  - relpath: reports/atlas-ad-hoc/counts-for-tools-by-as.csv
+    md5: 23990e3deb7a8744a6f9aeda00d0a8b2
+    size: 853445
+    cloud:
+      s3:
+        etag: 23990e3deb7a8744a6f9aeda00d0a8b2
+        version_id: uJhyaLiDBia02cNJDaWm6gRKKLhwGPvG
+  - relpath: reports/atlas-ad-hoc/cxg-collections.csv
+    md5: 82cd6ac20f4f7ae39a8222faa69a4fa3
+    size: 214
+    cloud:
+      s3:
+        etag: 82cd6ac20f4f7ae39a8222faa69a4fa3
+        version_id: m9OCkpHOBu3Y4UIKF7EkbuxyHbct_eYg
+  - relpath: reports/atlas-ad-hoc/datasets-ct-bm-data.csv
+    md5: cd74aeff725333817467b0dac6df6c88
+    size: 53862164
+    cloud:
+      s3:
+        etag: cd74aeff725333817467b0dac6df6c88
+        version_id: 2XPFiAlitA0jSBHpAwEm_vMzJGMBeLhV
+  - relpath: reports/atlas-ad-hoc/datasets-with-adipocytes.csv
+    md5: 5d3bd91545924bb74ef252fbfa965fd2
+    size: 719936
+    cloud:
+      s3:
+        etag: 5d3bd91545924bb74ef252fbfa965fd2
+        version_id: 9kg56IIYtDDWWBwxwTGXhzJDrWjR3JWX
+  - relpath: reports/atlas-ad-hoc/extraction-site-stats.csv
+    md5: de3fc6bc16d119285a4b345632a48dff
+    size: 100
+    cloud:
+      s3:
+        etag: de3fc6bc16d119285a4b345632a48dff
+        version_id: 107VrX_c.OH3ERrlyJTuDjUwcMWvFwvD
+  - relpath: reports/atlas-ad-hoc/provider-breakdown.csv
+    md5: 1d477e4138bc67255b0f8484884fdfee
+    size: 530
+    cloud:
+      s3:
+        etag: 1d477e4138bc67255b0f8484884fdfee
+        version_id: 4P2lMxBl9KdgtJhYemPOHNZ2FiLoOeA1
+  - relpath: reports/atlas-ad-hoc/rui-registered-h5ad-datasets.csv
+    md5: 983639151c956e99077c89b36fc3d059
+    size: 71
+    cloud:
+      s3:
+        etag: 983639151c956e99077c89b36fc3d059
+        version_id: O5wJhbMHDycTufmKfKIOWvIMFsrq8GVk
+  - relpath: reports/atlas-ad-hoc/unmapped-cell-ids.csv
+    md5: 47a075e541fd44832733d2273fea1a8e
+    size: 10076
+    cloud:
+      s3:
+        etag: 47a075e541fd44832733d2273fea1a8e
+        version_id: qJHm1LWCIyAEov8qy881yPI288QzejWB
+  - relpath: reports/atlas/application-a1.csv
+    md5: de16e94e8ca3e8e495e466f0d9439ee7
+    size: 6908479
+    cloud:
+      s3:
+        etag: de16e94e8ca3e8e495e466f0d9439ee7
+        version_id: Bl5RyhxBjbz1kfcoav2pthGwE5CyYSJc
+  - relpath: reports/atlas/application-a2p1.csv
+    md5: 72b7ce5299293fd7d46a8881aba11450
+    size: 12510305
+    cloud:
+      s3:
+        etag: 72b7ce5299293fd7d46a8881aba11450
+        version_id: f3WZ8T4yAS579nw2irGVPoFnpTK_0fv_
+  - relpath: reports/atlas/application-a2p2.csv
+    md5: 81272abb3b4444c2999a6bdfa433f6c4
+    size: 32808526
+    cloud:
+      s3:
+        etag: 81272abb3b4444c2999a6bdfa433f6c4
+        version_id: W1HYHy0k.cxsDznCrd9gnO_JxOedfYCF
+  - relpath: reports/atlas/application-a2p3.csv
+    md5: b74effeed6c32b411a0f3d78412e6e1e
+    size: 27092108
+    cloud:
+      s3:
+        etag: b74effeed6c32b411a0f3d78412e6e1e
+        version_id: yXKDmkAMivN00GY4ZrcQI3B.1VqD94Sk
+  - relpath: reports/atlas/application-a2p4.csv
+    md5: c7004207affa68228aab17c367ad9134
+    size: 92904730
+    cloud:
+      s3:
+        etag: c7004207affa68228aab17c367ad9134
+        version_id: l_ic7M4x_25vKGpod1YDi26DpxOQ_eeC
+  - relpath: reports/atlas/cell-and-cell-type-count-by-modality.csv
+    md5: 7772b9bd3d7d8538aca827e23d7e1270
+    size: 183
+    cloud:
+      s3:
+        etag: 7772b9bd3d7d8538aca827e23d7e1270
+        version_id: nRBmI1WFioEnStANQM1Anp53g1Ww8bNx
+  - relpath: reports/atlas/cell-and-cell-type-count.csv
+    md5: 2c96da53a5e34b8d4273183e64159223
+    size: 75
+    cloud:
+      s3:
+        etag: 2c96da53a5e34b8d4273183e64159223
+        version_id: WIFon0hxSD9aRubQUBGl3RO1xK4y6og3
+  - relpath: reports/atlas/donor-info.csv
+    md5: c722821350829cdfc397aafe216db933
+    size: 13007
+    cloud:
+      s3:
+        etag: c722821350829cdfc397aafe216db933
+        version_id: JnR.2jiIPeu7uVZW4ZpMLbcq2zInchgF
+  - relpath: reports/atlas/figure-as-as-sim.csv
+    md5: c34de6e4f65c103db2fc76ce3c258d74
+    size: 22488
+    cloud:
+      s3:
+        etag: c34de6e4f65c103db2fc76ce3c258d74
+        version_id: TKw0iLir0h5qR8HBDwlQCEQK.zUN8E35
+  - relpath: reports/atlas/figure-f4.csv
+    md5: afb63460526dd9907bfaea68a9f39dad
+    size: 3271
+    cloud:
+      s3:
+        etag: afb63460526dd9907bfaea68a9f39dad
+        version_id: mw_1zZ_j61ptdjOWufaHAGhIVrK4uK2c
+  - relpath: reports/atlas/table-1.csv
+    md5: cb368fed56a26f6ebc6741dc58da8f58
+    size: 713
+    cloud:
+      s3:
+        etag: cb368fed56a26f6ebc6741dc58da8f58
+        version_id: NFxlIy9Dr79XBMIl9pK_UgRKowiYVWQe
+  - relpath: reports/atlas/table-s1.csv
+    md5: fd7e6b94d5ccd148564c08e3e74f0d69
+    size: 550907
+    cloud:
+      s3:
+        etag: fd7e6b94d5ccd148564c08e3e74f0d69
+        version_id: Ee39dNDpic.c5pgHjUXXOn.KUpVUn2k5
+  - relpath: reports/atlas/table-s2.csv
+    md5: 32857fa9206576034df4f518337cc332
+    size: 114691
+    cloud:
+      s3:
+        etag: 32857fa9206576034df4f518337cc332
+        version_id: djzGuwszBrg7GBN3LMM9vOl1YENHnho2
+  - relpath: reports/atlas/table-s3.csv
+    md5: cfeb7b541ef635c6b7b3bd4f48432bd0
+    size: 649889
+    cloud:
+      s3:
+        etag: cfeb7b541ef635c6b7b3bd4f48432bd0
+        version_id: QlE7P6CXAAP6uE0DQtzQRUWJwoDqlrWl
+  - relpath: reports/atlas/table-s4.csv
+    md5: 0b022e8d65d74f340f41afbf33381ac3
+    size: 57732
+    cloud:
+      s3:
+        etag: 0b022e8d65d74f340f41afbf33381ac3
+        version_id: jUen6obfsLYXPGQG4Hpw1MCd3envmAzd
+  - relpath: reports/atlas/table-s5.csv
+    md5: 47ab27a158cce891dff1ed88817a2f54
+    size: 47546
+    cloud:
+      s3:
+        etag: 47ab27a158cce891dff1ed88817a2f54
+        version_id: O2M4ygLiBU2rlpYb6Q5Dh2x30Uf5bucI
+  - relpath: reports/atlas/validation-b-mean-expression.csv
+    md5: 97381b7d4ebce54fdb8f9329832a8e7a
+    size: 50210765
+    cloud:
+      s3:
+        etag: 97381b7d4ebce54fdb8f9329832a8e7a
+        version_id: r0n2X4c7Xtj663JnxGXCeo7M4VNQ1_s5
+  - relpath: reports/atlas/validation-v1.csv
+    md5: 8e1856c65cf044dd36e8ab8f10c95879
+    size: 691309
+    cloud:
+      s3:
+        etag: 8e1856c65cf044dd36e8ab8f10c95879
+        version_id: f8oJuxcDjSs7hiYc9B53SaFaMzVviNOb
+  - relpath: reports/atlas/validation-v2p1.csv
+    md5: 4fe5d61a716dba038458091f5c014aa2
+    size: 2674967
+    cloud:
+      s3:
+        etag: 4fe5d61a716dba038458091f5c014aa2
+        version_id: ReKMEzXgvmRrLnwKc0m6SGCvF8N4hZCa
+  - relpath: reports/atlas/validation-v2p2-extra1.csv
+    md5: bbf194b8df23cadf4c712f20d05a6167
+    size: 10080
+    cloud:
+      s3:
+        etag: bbf194b8df23cadf4c712f20d05a6167
+        version_id: uRf07uT_VA_gmG7dFGGJQg.mGJf7Y2jq
+  - relpath: reports/atlas/validation-v2p2-extra2.csv
+    md5: 7ea066f1afb248d6ff36755b4a60bf84
+    size: 3918617
+    cloud:
+      s3:
+        etag: 7ea066f1afb248d6ff36755b4a60bf84
+        version_id: ATVlnLaTXrQVdJGZ0gOtXHzwHitKjws7
+  - relpath: reports/atlas/validation-v2p2-extra3.csv
+    md5: c74bf7fc7ee590c2be2fd7c17184570d
+    size: 3826501
+    cloud:
+      s3:
+        etag: c74bf7fc7ee590c2be2fd7c17184570d
+        version_id: eM7g8KnDUnFJDdRdMRr1ZmyuMgli81Fu
+  - relpath: reports/atlas/validation-v2p2.csv
+    md5: 45bdfb6bea41334b92382e93bd49178e
+    size: 5616503
+    cloud:
+      s3:
+        etag: 45bdfb6bea41334b92382e93bd49178e
+        version_id: 4muRIpFlXBNOqtvoSrgC.p5EL0sPO49E
+  - relpath: reports/atlas/validation-v2p3.csv
+    md5: 8379b39cd9dee4c40c921fb771e93375
+    size: 24791893
+    cloud:
+      s3:
+        etag: 8379b39cd9dee4c40c921fb771e93375
+        version_id: 78dDLqVan9zin8KK_tULRfKUQ6CbIsjM
+  - relpath: reports/atlas/validation-v3.edges.csv
+    md5: 2bf5d4b98449cfd94327f0a00fd37efc
+    size: 7274670
+    cloud:
+      s3:
+        etag: 2bf5d4b98449cfd94327f0a00fd37efc
+        version_id: N2lp0nQIdJovNqI_9SVltivq9dyitnK0
+  - relpath: reports/atlas/validation-v3.nodes.csv
+    md5: 9e19570b95bc957b0f0bac17f819c9ce
+    size: 160395
+    cloud:
+      s3:
+        etag: 9e19570b95bc957b0f0bac17f819c9ce
+        version_id: AAZVJSPpmsnqoqLWHIxL8TqRLJEZ7Sw.
+  - relpath: reports/atlas/validation-v4.csv
+    md5: 2944cfae15097a296817dda7f04c35c9
+    size: 486
+    cloud:
+      s3:
+        etag: 2944cfae15097a296817dda7f04c35c9
+        version_id: FKzY9J8dD.TQzYsKJkfrRSt8RWEdIcwW
+  - relpath: reports/atlas/validation-v5.csv
+    md5: 4cd6a240021837cb38b9f6345996130e
+    size: 7710739
+    cloud:
+      s3:
+        etag: 4cd6a240021837cb38b9f6345996130e
+        version_id: BzofY9yAmuLRHmhi2eeyiMv.g2PBn8BL
+  - relpath: reports/atlas/validation-v6.csv
+    md5: f3a672c8f083962af9fe0a2bdd0c1c5a
+    size: 1208194
+    cloud:
+      s3:
+        etag: f3a672c8f083962af9fe0a2bdd0c1c5a
+        version_id: g3TIzUGYTjdXNOh9ySYbJFjroEwfR1ij
+  - relpath: reports/atlas/validation-v7-ctann-rui.csv
+    md5: ab2b5fb009bd3e28351f9a4d0996d2fe
+    size: 354763
+    cloud:
+      s3:
+        etag: ab2b5fb009bd3e28351f9a4d0996d2fe
+        version_id: SMY.QLByqsdbM.QYN4Vh2FEDSeES.z9Y
+  - relpath: reports/atlas/validation-v7-x-axis.csv
+    md5: b624852554d24e0e63be8bffa206319d
+    size: 296060
+    cloud:
+      s3:
+        etag: b624852554d24e0e63be8bffa206319d
+        version_id: u8qSJk4INHHxddwW.ztXIWz3r1GL2fNL
+  - relpath: reports/atlas/validation-v7-y-axis.csv
+    md5: cd82986e034b46e71eb95a7e37abb97c
+    size: 230976
+    cloud:
+      s3:
+        etag: cd82986e034b46e71eb95a7e37abb97c
+        version_id: YuoTZpH9k0AeKCp99vXF_PlsI.CHLUz6
+  - relpath: reports/hra/as-cnt-per-organ.csv
+    md5: af7ef46eb48700229b6647cebf85c822
+    size: 1076
+    cloud:
+      s3:
+        etag: af7ef46eb48700229b6647cebf85c822
+        version_id: v.3lJPhvg5Wnpq3iBpjbWlyAINI6wwFt
+  - relpath: reports/hra/as-cnt.csv
+    md5: 56d609937227c2e0629c766a9dab5fe2
+    size: 11
+    cloud:
+      s3:
+        etag: 56d609937227c2e0629c766a9dab5fe2
+        version_id: BLkL.UUiq5Fwi4vOZmVMlbC2o6HRjsQL
+  - relpath: reports/hra/as3d-with-id-count.csv
+    md5: c54167dac49e9327def8ebbb09a17bc3
+    size: 14
+    cloud:
+      s3:
+        etag: c54167dac49e9327def8ebbb09a17bc3
+        version_id: cT_1TKliImdhfHfWs9SvemLCKDeRgyr.
+  - relpath: reports/hra/asctb-trios-by-ftu.csv
+    md5: 5e95270e99a52d027a633461a9d6e6f8
+    size: 41708933
+    cloud:
+      s3:
+        etag: 5e95270e99a52d027a633461a9d6e6f8
+        version_id: ankf4_6S5MazVXTU_CsVRiTvbrQRObsp
+  - relpath: reports/hra/asctb-trios.csv
+    md5: b1f3880e4e423053b9d9ad3eac3fe242
+    size: 325943208
+    cloud:
+      s3:
+        etag: d3fcd751e39adb92be2750470a440adb-7
+        version_id: zXcHphl6HMKf_GLBkop95CzFrgZWqVPj
+  - relpath: reports/hra/count-ct-per-tool.csv
+    md5: de72a156221a1795b5dd05d2b3a9f8ff
+    size: 77
+    cloud:
+      s3:
+        etag: de72a156221a1795b5dd05d2b3a9f8ff
+        version_id: 17ibnX5KK5dyk5hIfKMquhcbRNfJbrea
+  - relpath: reports/hra/ct-per-organ-per-tool.csv
+    md5: 59afefe1a2b3064fddef1e59e05eae47
+    size: 1002
+    cloud:
+      s3:
+        etag: 59afefe1a2b3064fddef1e59e05eae47
+        version_id: AQehtKRwBSRvr8cQTKgWLEYF8rfbWbMq
+  - relpath: reports/hra/named-graphs.csv
+    md5: cadff3b3e695887ec355dc28b0b1dfe1
+    size: 507
+    cloud:
+      s3:
+        etag: cadff3b3e695887ec355dc28b0b1dfe1
+        version_id: 84lnj8p2PuscjqZNgBg4zaF9ottalBCl
+  - relpath: reports/universe-ad-hoc/asctb-expr-trios-az.csv
+    md5: 1895d0fa82abed2aeb550479c8d1d0a0
+    size: 18979705
+    cloud:
+      s3:
+        etag: 1895d0fa82abed2aeb550479c8d1d0a0
+        version_id: 2hsfT1x59HkapMDnVAiy8UBuofYRDxxw
+  - relpath: reports/universe-ad-hoc/consortium-breakdown.csv
+    md5: c7672a107b538a7fb7b1aca51a5b4ce0
+    size: 1116
+    cloud:
+      s3:
+        etag: c7672a107b538a7fb7b1aca51a5b4ce0
+        version_id: hQ5H7q_4hw0fokV3wEldQpUPPcd9de.h
+  - relpath: reports/universe-ad-hoc/count-consortium-breakdown.csv
+    md5: 59ca27c89ac0b4ddf38639abaf06bd25
+    size: 1484
+    cloud:
+      s3:
+        etag: 59ca27c89ac0b4ddf38639abaf06bd25
+        version_id: 6nSeWRSmZuzrtzhJjdy5hLheytdoGW5H
+  - relpath: reports/universe-ad-hoc/count-consortium-datasets.csv
+    md5: d64bb88d303d6fac2204ae9d988c8abe
+    size: 524
+    cloud:
+      s3:
+        etag: d64bb88d303d6fac2204ae9d988c8abe
+        version_id: TcuLf0k1vpEfZW99Elb725TqJ2mF2Uuk
+  - relpath: reports/universe-ad-hoc/count-dataset-samples.csv
+    md5: 14d5a02dcec66a1b7f3d69ea87f2b7da
+    size: 37
+    cloud:
+      s3:
+        etag: 14d5a02dcec66a1b7f3d69ea87f2b7da
+        version_id: DbXjcN36z0IcChTUPH6B7suAGFxqVobl
+  - relpath: reports/universe-ad-hoc/count-datasets.csv
+    md5: 7dd8d6a88e6a2f0c46d649ac623e28ae
+    size: 19
+    cloud:
+      s3:
+        etag: 7dd8d6a88e6a2f0c46d649ac623e28ae
+        version_id: CScZUIQ4vQ6Wm.H6ymOEuFs2.I.1Ovwh
+  - relpath: reports/universe-ad-hoc/count-donors-portals.csv
+    md5: 69003e9d8f06073061ba7c6327a6868e
+    size: 71
+    cloud:
+      s3:
+        etag: 69003e9d8f06073061ba7c6327a6868e
+        version_id: bZrzBMFxvwpYoNBsI0UKNl2aiD08khjv
+  - relpath: reports/universe-ad-hoc/count-donors-samples.csv
+    md5: 6409d1eedf4951e01c2eb9c797484d10
+    size: 77
+    cloud:
+      s3:
+        etag: 6409d1eedf4951e01c2eb9c797484d10
+        version_id: jZM62gcIgfvCnWnk.oTe7A1mQ._iaTIh
+  - relpath: reports/universe-ad-hoc/count-donors.csv
+    md5: 7811fe33946a3e6145e3c1d865c58909
+    size: 26
+    cloud:
+      s3:
+        etag: 7811fe33946a3e6145e3c1d865c58909
+        version_id: YtLSTAHRmnhFYbQmHgqklvfF6q4sS3LZ
+  - relpath: reports/universe-ad-hoc/count-extraction-sites-with-slice.csv
+    md5: b41848ce1bf52d6dbdc509720917a121
+    size: 25
+    cloud:
+      s3:
+        etag: b41848ce1bf52d6dbdc509720917a121
+        version_id: BO7xcJrdhYU.wryydftKDxRnVvjOCyQQ
+  - relpath: reports/universe-ad-hoc/count-extraction-sites.csv
+    md5: 42ab3e8df34257e564741e432532318d
+    size: 26
+    cloud:
+      s3:
+        etag: 42ab3e8df34257e564741e432532318d
+        version_id: ncX3QUkrio8YCMNiLZ2Km_YnGgyRYkZv
+  - relpath: reports/universe-ad-hoc/count-sample-description.csv
+    md5: f7047cb4d3c64b1c522632941739cd53
+    size: 40
+    cloud:
+      s3:
+        etag: f7047cb4d3c64b1c522632941739cd53
+        version_id: _s8ElZsqs2BRwn9upGe762Vg5QoeLR1W
+  - relpath: reports/universe-ad-hoc/count-samples.csv
+    md5: 8a51c67554e8f49c4d182bd97ac4af8e
+    size: 18
+    cloud:
+      s3:
+        etag: 8a51c67554e8f49c4d182bd97ac4af8e
+        version_id: Y42faWZNBVH48RszVl5AFVHzqC7IgPf6
+  - relpath: reports/universe-ad-hoc/count-spatial-placements.csv
+    md5: 95908cb0af910e2b236af225bcbd0ce9
+    size: 28
+    cloud:
+      s3:
+        etag: 95908cb0af910e2b236af225bcbd0ce9
+        version_id: eJHeKKF4D2dcHq9wUy2hhCpIntptbrDP
+  - relpath: reports/universe-ad-hoc/cxg-collections.csv
+    md5: 9ffa786e79309b8cdcc6454581388ea4
+    size: 13674
+    cloud:
+      s3:
+        etag: 9ffa786e79309b8cdcc6454581388ea4
+        version_id: R4RP7YIdXiX_jvNsRyWAMxOZtbiAq31V
+  - relpath: reports/universe-ad-hoc/data-provenance.csv
+    md5: bbc4df1957e55aee6b21c20203fc03d5
+    size: 120
+    cloud:
+      s3:
+        etag: bbc4df1957e55aee6b21c20203fc03d5
+        version_id: O57T4.CuBoM.NKWFxDo0i3jQ2gB7jMVB
+  - relpath: reports/universe-ad-hoc/dataset-cell-count-check.csv
+    md5: a46b47609e91974d0d9531773723d128
+    size: 1315600
+    cloud:
+      s3:
+        etag: a46b47609e91974d0d9531773723d128
+        version_id: L0ruzY5Nt5NzBCm50AL2VPTzIYYbYFtD
+  - relpath: reports/universe-ad-hoc/dataset-info.csv
+    md5: d2c7396d980edf0b28b1b9243cfc97b6
+    size: 1222470
+    cloud:
+      s3:
+        etag: d2c7396d980edf0b28b1b9243cfc97b6
+        version_id: fogBeR3P4acZBlmv8YdE.aWMtIp2eXyZ
+  - relpath: reports/universe-ad-hoc/dataset-publications.csv
+    md5: 7912cc92b48e730522cfb03a17f938f9
+    size: 1871077
+    cloud:
+      s3:
+        etag: 7912cc92b48e730522cfb03a17f938f9
+        version_id: dsVUfwmZ9Q0PZua6BMziwGQAPrvtsTUI
+  - relpath: reports/universe-ad-hoc/donor-info.csv
+    md5: 595de1b8613bc0829c5494a8691cfc17
+    size: 709475
+    cloud:
+      s3:
+        etag: 595de1b8613bc0829c5494a8691cfc17
+        version_id: 1sKxxNAFUcmrIpyXbqlsI9RmmcPm_QVB
+  - relpath: reports/universe-ad-hoc/donors-portals.csv
+    md5: 0ed01fa4da00fd8d51a55e00eeb835c8
+    size: 614817
+    cloud:
+      s3:
+        etag: 0ed01fa4da00fd8d51a55e00eeb835c8
+        version_id: v9Kh_ES5jPFP94hCzBI4CawUQ_nPCGsY
+  - relpath: reports/universe-ad-hoc/extraction-site-slices.csv
+    md5: 40797b92bc45182f85d84af0cd41057d
+    size: 2358
+    cloud:
+      s3:
+        etag: 40797b92bc45182f85d84af0cd41057d
+        version_id: u7UTActtixeOGFZ.4OTdZveF4QVmhiHo
+  - relpath: reports/universe-ad-hoc/extraction-sites.csv
+    md5: 4a04d1cd3ca26dd363cf86c4b3f2e105
+    size: 31065
+    cloud:
+      s3:
+        etag: 4a04d1cd3ca26dd363cf86c4b3f2e105
+        version_id: Rmmw9Dht1wRvKFV.hVi.UqYr1vkgTv03
+  - relpath: reports/universe-ad-hoc/heart-and-lung-datasets.csv
+    md5: dbbd9ad4ee805853fddec4b77761f350
+    size: 389486
+    cloud:
+      s3:
+        etag: dbbd9ad4ee805853fddec4b77761f350
+        version_id: gXimeNhm4iS_XPEcKInp4YaFj9dpYuw0
+  - relpath: reports/universe-ad-hoc/high-level-stats.csv
+    md5: bd4a74bcfbe5f0de32e36ea8b15fd095
+    size: 41
+    cloud:
+      s3:
+        etag: bd4a74bcfbe5f0de32e36ea8b15fd095
+        version_id: .AVlRbWXKnQ2n8oz4Q7NQByuun46tQEk
+  - relpath: reports/universe-ad-hoc/kidney-and-lung-datasets.csv
+    md5: a9214bcef608a9607eabaddf59d03b3b
+    size: 481361
+    cloud:
+      s3:
+        etag: a9214bcef608a9607eabaddf59d03b3b
+        version_id: zuGrVdW5e6X.2RdUbK.fphEcjku9qZ_0
+  - relpath: reports/universe-ad-hoc/popv-cells.csv
+    md5: 72a1a46934882821bbeda4715e199552
+    size: 36027
+    cloud:
+      s3:
+        etag: 72a1a46934882821bbeda4715e199552
+        version_id: ZGILFGok8naO6d6izRlqz.IjW.hXD.c6
+  - relpath: reports/universe-ad-hoc/rui-registered-datasets.csv
+    md5: 5ad3e79bcbca2c31a6f2a1bc053d3ef2
+    size: 62
+    cloud:
+      s3:
+        etag: 5ad3e79bcbca2c31a6f2a1bc053d3ef2
+        version_id: Vf_JmBMiBVso4trw82LPk1q2CCnbxvY.
+  - relpath: reports/universe-ad-hoc/sample-info.csv
+    md5: 2533a955abde67aaa9e0de277639adf0
+    size: 246831
+    cloud:
+      s3:
+        etag: 2533a955abde67aaa9e0de277639adf0
+        version_id: 3f0v7yjf19pbVG0m.nx6OA9G4dSWhvaM
+  - relpath: reports/universe-ad-hoc/sankey.csv
+    md5: e8dffca24795608d83ff4dd1e51a5f2a
+    size: 8383578
+    cloud:
+      s3:
+        etag: e8dffca24795608d83ff4dd1e51a5f2a
+        version_id: 3u.BmgoY.MMKhnx61ASuyGOma.K8ovIQ
+  - relpath: reports/universe-ad-hoc/spatial-and-bulk-datasets-breakdown.csv
+    md5: 0eeda6a34a688c6e012c3f77c8759830
+    size: 3966
+    cloud:
+      s3:
+        etag: 0eeda6a34a688c6e012c3f77c8759830
+        version_id: Q7AIy7ULc7TYEfyi.5KxTz4EjmjxBote
+  - relpath: reports/universe-ad-hoc/spatial-and-bulk-datasets.csv
+    md5: 849de0483e8e9dcc2ab23eb62479d8c7
+    size: 2384493
+    cloud:
+      s3:
+        etag: 849de0483e8e9dcc2ab23eb62479d8c7
+        version_id: Zd7kAkP1hadKcUhoAqLjyaZYpYfkVg4z
+  - relpath: reports/universe-ad-hoc/spatial-placements.csv
+    md5: 9b2243b42903b88b4e977ea78acfd82f
+    size: 36157
+    cloud:
+      s3:
+        etag: 9b2243b42903b88b4e977ea78acfd82f
+        version_id: 87Caiw8..JVT.QzlSbJgkMAEhznq9Mxz
+  - relpath: test-as-cell-summaries.jsonld
+    md5: 9298fef328970d9a245b1940e4051c1f
+    size: 14
+    cloud:
+      s3:
+        etag: 9298fef328970d9a245b1940e4051c1f
+        version_id: 6EVZM48F_fQPt56SuFrePLZ21vUZ_3.S
+  - relpath: test-atlas-enriched-dataset-graph.jsonld
+    md5: dcb03ee01b6914ba1cfc209a14cf7985
+    size: 229959796
+    cloud:
+      s3:
+        etag: c79760a02a527806b280dc38c0e1f1bd-5
+        version_id: t3fFkce38gm75oY1AG4kVzxoSP8.hMFW
+  - relpath: test-atlas-enriched-dataset-graph.nq
+    md5: 0b0eb025f304557be516f6a78bb88e38
+    size: 710177982
+    cloud:
+      s3:
+        etag: cea875a1da3a23a03309a8b26147b97e-14
+        version_id: EwbXfnybjj6pVAgbl94fhPyYOiQu_mx5
+  - relpath: test-atlas-extraction-site-as-cell-summaries.jsonld
+    md5: 1726c4b4d4e45771482ca0e48e579400
+    size: 5773296
+    cloud:
+      s3:
+        etag: 1726c4b4d4e45771482ca0e48e579400
+        version_id: 2D6aq.mMcHlL7LnduhNgtgVHujfoyJSU
+  - relpath: test-dataset-graph.csv
+    md5: 4ef956eb2c69f4f832b213d607fbf18a
+    size: 8864424
+    cloud:
+      s3:
+        etag: 4ef956eb2c69f4f832b213d607fbf18a
+        version_id: 9.hFj5IMviOp8KonWaEUhKeD44tjDl4G
+  - relpath: test-dataset-graph.jsonld
+    md5: f2ba286da7ca221af0882552a55f2b14
+    size: 8873758
+    cloud:
+      s3:
+        etag: f2ba286da7ca221af0882552a55f2b14
+        version_id: XQCzklajaKvg6w6C1tPuX5MecH96gOhU
