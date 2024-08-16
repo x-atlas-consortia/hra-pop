@@ -48,6 +48,9 @@
   * [Validation V4 (validation-v4)](#validation-v4)
   * [Validation V5 (validation-v5)](#validation-v5)
   * [Validation V6 (validation-v6)](#validation-v6)
+  * [Validation V7 (5 variables) (validation-v7-ctann-rui)](#validation-v7-ctann-rui)
+  * [Validation V7 (x-axis) (validation-v7-x-axis)](#validation-v7-x-axis)
+  * [Validation V7 (y-axis) (validation-v7-y-axis)](#validation-v7-y-axis)
 * hra
   * [Count of Anatomical Structures by Organ (as-cnt-per-organ)](#as-cnt-per-organ)
   * [Count of Anatomical Structures (as-cnt)](#as-cnt)
@@ -4515,6 +4518,480 @@ WHERE {
 | Male | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | kidney capsule | UBERON:0002015 | CL:1000717 | Outer Medullary Collecting Duct Intercalated Type A | 10.062 | 0.007042253521126757 | false | true |
 | Female | celltypist | sc_transcriptomics | respiratory system | UBERON:0001004 | Medial bronchopulmonary segment | FMA:7360 | CL:0000158 | Club (nasal) | 233 | 0.01474683544303797 | false | true |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="validation-v7-ctann-rui"></a>Validation V7 (5 variables) (validation-v7-ctann-rui)
+
+Various top similarity variables
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Validation V7 (5 variables)
+#+ description: Various top similarity variables
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?sex ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId
+  ?datasetVsRuiSim
+  ?datasetVsTopPredictedRuiSim ?ruiVsTopPredictedRuiSim 
+  ?datasetVsTopPredictedDatasetSim ?ruiVsTopPredictedDatasetSim
+
+WITH {
+  SELECT ?sex ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId
+  WHERE {
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?dataset ccf:has_cell_summary [
+        ccf:sex ?sex ;
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+      ] .
+
+      [] a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?refOrgan .
+    }
+
+    GRAPH CCF: {
+      ?refOrgan ccf:representation_of ?organIri .
+      ?organIri rdfs:label ?organ .
+
+      BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+    }
+  }
+} AS %data
+
+WITH {
+  SELECT ?sex ?dataset ?tool (MAX(?similarity) as ?datasetVsTopPredictedRuiSim)
+  WHERE {
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+      [] ccf:has_registration_location ?predicted_rui .
+      FILTER (?rui_location != ?predicted_rui)
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?dataset ;
+            ccf:cell_source_b ?predicted_rui ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?predicted_rui ;
+            ccf:cell_source_b ?dataset ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?dataset ?tool
+} AS %sims1
+
+WITH {
+  SELECT ?sex ?rui_location ?tool (MAX(?similarity) as ?ruiVsTopPredictedRuiSim)
+  WHERE {
+    GRAPH HRApop: {
+      [] ccf:has_registration_location ?predicted_rui .
+      [] ccf:has_registration_location ?rui_location .
+      FILTER (?rui_location != ?predicted_rui)
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?rui_location ;
+            ccf:cell_source_b ?predicted_rui ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?predicted_rui ;
+            ccf:cell_source_b ?rui_location ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?rui_location ?tool
+} AS %sims2
+
+WITH {
+  SELECT ?sex ?dataset ?tool (MAX(?similarity) as ?datasetVsTopPredictedDatasetSim)
+  WHERE {
+    GRAPH HRApop: {
+      ?dataset a ccf:Dataset .
+      ?similar_dataset a ccf:Dataset .
+      FILTER (?dataset != ?similar_dataset)
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?dataset ;
+            ccf:cell_source_b ?similar_dataset ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?similar_dataset ;
+            ccf:cell_source_b ?dataset ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?dataset ?tool
+} AS %sims3
+
+WITH {
+  SELECT ?sex ?rui_location ?tool (MAX(?similarity) as ?ruiVsTopPredictedDatasetSim)
+  WHERE {
+
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+      ?similar_dataset a ccf:Dataset .
+      FILTER (?dataset != ?similar_dataset)
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?rui_location ;
+            ccf:cell_source_b ?similar_dataset ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?similar_dataset ;
+            ccf:cell_source_b ?rui_location ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?rui_location ?tool
+} AS %sims4
+
+WITH {
+  SELECT ?sex ?dataset ?tool (MAX(?similarity) as ?datasetVsRuiSim)
+  WHERE {
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?dataset ;
+            ccf:cell_source_b ?rui_location ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?rui_location ;
+            ccf:cell_source_b ?dataset ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?dataset ?tool
+} AS %sims5
+
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  INCLUDE %data
+  INCLUDE %sims1
+  INCLUDE %sims2
+  INCLUDE %sims3
+  INCLUDE %sims4
+  INCLUDE %sims5
+}
+ORDER BY ?sex ?organ ?dataset ?tool
+
+```
+
+([View Source](../../queries/atlas/validation-v7-ctann-rui.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/validation-v7-ctann-rui.csv))
+
+| sex | sample | rui_location | dataset | tool | modality | organ | organId | datasetVsRuiSim | datasetVsTopPredictedRuiSim | ruiVsTopPredictedRuiSim | datasetVsTopPredictedDatasetSim | ruiVsTopPredictedDatasetSim |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | http://purl.org/ccf/1.5/9abfed4e-2fde-4d80-a8aa-7439a106d895 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | azimuth | sc_transcriptomics | heart | UBERON:0000948 | 0.9113558328837101 | 0.9176359726324337 | 1 | 0.9898028150742787 | 0.9835282610105761 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | http://purl.org/ccf/1.5/9abfed4e-2fde-4d80-a8aa-7439a106d895 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | celltypist | sc_transcriptomics | heart | UBERON:0000948 | 0.7019523749094924 | 0.9250331937030376 | 1.0000000000000002 | 0.9921519884110817 | 0.981170226730156 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | http://purl.org/ccf/1.5/9abfed4e-2fde-4d80-a8aa-7439a106d895 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | popv | sc_transcriptomics | heart | UBERON:0000948 | 0.941553877116979 | 0.9716886179507404 | 1.0000000000000002 | 0.9860405917719012 | 0.9888234547070938 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20left%20ventricle_Block | http://purl.org/ccf/1.5/2156f837-2ab2-4305-8e7f-8084249e91cd | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20left%20ventricle | azimuth | sc_transcriptomics | heart | UBERON:0000948 | 0.9339214911298956 | 0.9786461448135039 | 1 | 0.9970482620443103 | 0.9835282610105761 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20left%20ventricle_Block | http://purl.org/ccf/1.5/2156f837-2ab2-4305-8e7f-8084249e91cd | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20left%20ventricle | celltypist | sc_transcriptomics | heart | UBERON:0000948 | 0.4743653503095747 | 0.9167029707563967 | 1 | 0.997618207205417 | 0.9811702267301559 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="validation-v7-x-axis"></a>Validation V7 (x-axis) (validation-v7-x-axis)
+
+x-axis compares input dataset vs input rui cell summaries
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Validation V7 (x-axis)
+#+ description: x-axis compares input dataset vs input rui cell summaries
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?sex ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId ?datasetVsRuiSim
+
+WITH {
+  SELECT ?sex ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId
+  WHERE {
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?dataset ccf:has_cell_summary [
+        ccf:sex ?sex ;
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+      ] .
+
+      [] a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?refOrgan .
+    }
+
+    GRAPH CCF: {
+      ?refOrgan ccf:representation_of ?organIri .
+      ?organIri rdfs:label ?organ .
+
+      BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+    }
+  }
+} AS %data
+
+WITH {
+  SELECT ?sex ?dataset ?tool (MAX(?similarity) as ?datasetVsRuiSim)
+  WHERE {
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?dataset ;
+            ccf:cell_source_b ?rui_location ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?rui_location ;
+            ccf:cell_source_b ?dataset ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?dataset ?tool
+} AS %sims
+
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  INCLUDE %data
+  INCLUDE %sims
+}
+ORDER BY ?sex ?organ ?dataset ?tool
+
+```
+
+([View Source](../../queries/atlas/validation-v7-x-axis.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/validation-v7-x-axis.csv))
+
+| sex | sample | rui_location | dataset | tool | modality | organ | organId | datasetVsRuiSim |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | https://doi.org/10.1126/science.abl4290#GTEX-1CAMS-5015-SM-HPJ3C_TissueBlock | http://purl.org/ccf/1.5/3b5d2036-3c56-4cf8-808f-462c9e3681e5 | https://doi.org/10.1126/science.abl4290#GTEX-1CAMS-5015-SM-HPJ3C | popv | sc_transcriptomics | Set of lactiferous glands in right breast | FMA:57987 | 0.9500789120717749 |
+| Female | https://doi.org/10.1126/science.abl4290#GTEX-1MCC2-5013-SM-HPJ3D_TissueBlock | http://purl.org/ccf/1.5/3b5d2036-3c56-4cf8-808f-462c9e3681e5 | https://doi.org/10.1126/science.abl4290#GTEX-1MCC2-5013-SM-HPJ3D | popv | sc_transcriptomics | Set of lactiferous glands in right breast | FMA:57987 | 0.9446144988797605 |
+| Female | https://doi.org/10.1126/science.abl4290#GTEX-1R9PN-5002-SM-HD2MC_TissueBlock | http://purl.org/ccf/1.5/3b5d2036-3c56-4cf8-808f-462c9e3681e5 | https://doi.org/10.1126/science.abl4290#GTEX-1R9PN-5002-SM-HD2MC | popv | sc_transcriptomics | Set of lactiferous glands in right breast | FMA:57987 | 0.9349298454772563 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | http://purl.org/ccf/1.5/9abfed4e-2fde-4d80-a8aa-7439a106d895 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | azimuth | sc_transcriptomics | heart | UBERON:0000948 | 0.9113558328837101 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | http://purl.org/ccf/1.5/9abfed4e-2fde-4d80-a8aa-7439a106d895 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | celltypist | sc_transcriptomics | heart | UBERON:0000948 | 0.7019523749094924 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="validation-v7-y-axis"></a>Validation V7 (y-axis) (validation-v7-y-axis)
+
+y-axis compares input rui vs top predicted rui cell summaries
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Validation V7 (y-axis)
+#+ description: y-axis compares input rui vs top predicted rui cell summaries
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT ?sex ?rui_location ?dataset ?tool ?predicted_rui ?similarity
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH HRApop: {
+    {
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+    [] ccf:has_registration_location ?predicted_rui .
+    FILTER (?rui_location != ?predicted_rui)
+  }
+  
+  GRAPH hra-pop:similarities {
+    {
+      []  ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ;
+          ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_b_tool ?tool ;
+          ccf:cell_source_a ?dataset ;
+          ccf:cell_source_b ?predicted_rui ;
+          ccf:similarity ?similarity .
+    } UNION {
+      []  ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ;
+          ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_b_tool ?tool ;
+          ccf:cell_source_a ?predicted_rui ;
+          ccf:cell_source_b ?dataset ;
+          ccf:similarity ?similarity .
+    }
+  }
+}
+ORDER BY ?sex ?rui_location ?dataset ?tool DESC(?similarity)
+
+```
+
+([View Source](../../queries/atlas/validation-v7-y-axis.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/validation-v7-y-axis.csv))
+
+| sex | rui_location | dataset | tool | predicted_rui | similarity |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | http://purl.org/ccf/1.5/2156f837-2ab2-4305-8e7f-8084249e91cd | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$heart%20left%20ventricle | celltypist | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | 0.44181497482835164 |
+| Female | http://purl.org/ccf/1.5/8f99a469-7d51-46dc-919d-2e002eeae868 | https://entity.api.hubmapconsortium.org/entities/206d669d243f6dab04cc126a52cdab8d | azimuth | http://purl.org/ccf/1.5/731ade72-cdb7-4262-8be1-859396820dfd | 0.7922171858370616 |
+| Female | http://purl.org/ccf/1.5/f6512db4-2809-4ffe-864d-ace61789dff6 | https://doi.org/10.1126/science.abl4290#GTEX-13N11-5002-SM-H5JDV | popv | http://purl.org/ccf/1.5/ca476545-5b98-476c-b2fd-1b8e1708faed | 0.951882818372884 |
+| Male | http://purl.org/ccf/1.5/886e391d-0151-46d3-8a51-084bf6a06910 | https://entity.api.hubmapconsortium.org/entities/c6bb00096b0cf40751f9d6003fb730c7 | popv | http://purl.org/ccf/1.5/f6512db4-2809-4ffe-864d-ace61789dff6 | 0.9578614471400932 |
+| Male | http://purl.org/ccf/1.5/da28394d-789a-4fba-842a-f8ba5046b221 | https://entity.api.hubmapconsortium.org/entities/21043afd6be7ec258f8a9fa1577c41b5 | popv | http://purl.org/ccf/1.5/f6512db4-2809-4ffe-864d-ace61789dff6 | 0.9458472275246893 |
+| ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="as-cnt-per-organ"></a>Count of Anatomical Structures by Organ (as-cnt-per-organ)
