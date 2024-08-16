@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { globSync } from 'glob';
 import { basename, dirname, join } from 'path';
 import sh from 'shelljs';
@@ -37,13 +37,19 @@ async function runQueries(graphName, dirName) {
       const csvString = await selectCsvRemote(query, SPARQL_ENDPOINT);
       writeFileSync(reportCsv, csvString);
     }
+
+    // If a post-processing SQL file is provided, run it to update the report
+    if (existsSync(queryFile.replace('.rq', '.sql'))) {
+      const sqlFile = queryFile.replace('.rq', '.sql');
+      sh.exec(`./src/sql-select.sh ${sqlFile} ${reportCsv} ${reportCsv}`);
+    }
   }
 }
 
 const runs = [runQueries('hra-pop', '.')];
 
 if (COMPUTE_LQ) {
-  runs.push(runQueries('hra-pop-lq', 'lq'))
+  runs.push(runQueries('hra-pop-lq', 'lq'));
 }
 
 await Promise.all(runs);

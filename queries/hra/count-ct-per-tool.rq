@@ -1,7 +1,6 @@
 #+ summary: Cell types per annotation tool
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
 PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
 
 SELECT ?tool (COUNT(DISTINCT(?organ_id)) as ?organ_count) (COUNT(DISTINCT(?cell_id)) as ?cell_type_count)
