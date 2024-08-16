@@ -1,5 +1,5 @@
-#+ summary: Application A2P1
-#+ description:
+#+ summary: Validation V7 (y-axis)
+#+ description: y-axis compares input rui vs top predicted rui cell summaries
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -14,47 +14,41 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT ?dataset ?reported_organ ?sex ?tool ?modality ?as ?as_tool ?similarity
+SELECT ?sex ?rui_location ?dataset ?tool ?predicted_rui ?similarity
 WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH HRApop: {
+    {
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+    [] ccf:has_registration_location ?predicted_rui .
+    FILTER (?rui_location != ?predicted_rui)
+  }
+  
   GRAPH hra-pop:similarities {
     {
-      [] ccf:modality ?modality ;
-          ccf:cell_source_a_sex ?sex ;
+      []  ccf:cell_source_a_sex ?sex ;
           ccf:cell_source_b_sex ?sex ;
           ccf:cell_source_a_tool ?tool ;
-          ccf:cell_source_b_tool ?as_tool ;
-          ccf:cell_source_a ?dataset ;
-          ccf:cell_source_b ?as ;
-          ccf:similarity ?similarity .
-    }
-    UNION 
-    {
-      [] ccf:modality ?modality ;
-          ccf:cell_source_a_sex ?sex ;
-          ccf:cell_source_b_sex ?sex ;
-          ccf:cell_source_a_tool ?as_tool ;
           ccf:cell_source_b_tool ?tool ;
-          ccf:cell_source_a ?as ;
+          ccf:cell_source_a ?dataset ;
+          ccf:cell_source_b ?predicted_rui ;
+          ccf:similarity ?similarity .
+    } UNION {
+      []  ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ;
+          ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_b_tool ?tool ;
+          ccf:cell_source_a ?predicted_rui ;
           ccf:cell_source_b ?dataset ;
           ccf:similarity ?similarity .
     }
-
-    FILTER (
-      STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
-      STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
-    )
-
-    FILTER EXISTS  {
-      GRAPH hra-pop:test-data {
-        ?dataset a ccf:Dataset ;
-          ccf:has_cell_summary [];
-      }
-    }
-  }
-
-  OPTIONAL {
-    GRAPH hra-pop:test-data {
-      ?dataset ccf:organ_id ?reported_organ .
-    }
   }
 }
+ORDER BY ?sex ?rui_location ?dataset ?tool DESC(?similarity)

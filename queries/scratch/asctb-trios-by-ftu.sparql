@@ -1,0 +1,71 @@
+#+ summary: Each FTU's AS, CT, and BM in the HRA
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT DISTINCT ?ftu ?table ?ftu_label ?as_label ?ct_label ?bm_label ?ftu_as ?as ?ct ?bm ?bmType
+WHERE {
+  hint:Query hint:optimizer "Runtime" .
+
+  # Find all FTU Illustrations, their ftu ID, and the associated organ ID
+  {
+    SELECT DISTINCT ?ftu ?ftu_label ?ftu_as ?organ
+    WHERE {
+      GRAPH HRA: {
+        ?ftuNode a ccf:FtuIllustration ;
+            a ?ftu_as ;
+            rdfs:label ?ftu_label_str ;
+            ccf:ccf_located_in ?organId .
+        BIND(URI(REPLACE(STR(?organId), 'UBERON:', STR(UBERON:))) as ?organ)
+        BIND(URI(REPLACE(STR(?ftuNode), '#primary', '')) as ?ftu)
+        BIND(REPLACE(STR(?ftu_label_str), 'An illustration of ', '') as ?ftu_label)
+
+        FILTER(STRSTARTS(STR(?ftu_as), STR(UBERON:)) || STRSTARTS(STR(?ftu_as), STR(FMA:)))
+      }
+    }
+  }
+
+  # Find all ASCT+B Tables and associated organ ID
+  {
+    SELECT DISTINCT ?table ?organ
+    WHERE {
+      GRAPH ?table {
+        ?organ ccf:ccf_part_of UBERON:0013702 .
+      }
+      FILTER(STRSTARTS(STR(?table), 'https://purl.humanatlas.io/asct-b'))
+    }
+  }
+
+  # Find all as, ct, and b for an FTU's AS and it's child AS
+  OPTIONAL {
+    GRAPH ?table {
+      # Get all of an FTU's anatomical structures
+      ?ftu_as ^ccf:ccf_part_of ?as .
+      ?ct ccf:ccf_located_in ?as . # Get cell types located in an anatomical structure
+
+      # Find all sets of biomarkers that characterize a cell type
+      ?ct rdfs:subClassOf [
+        owl:onProperty has_characterizing_biomarker_set: ;
+        owl:someValuesFrom [ owl:intersectionOf ?bmSetId ]] .
+      ?bmSetId rdf:rest*/rdf:first [
+        owl:onProperty ccf:has_marker_component ;
+        owl:someValuesFrom ?bm
+      ] .
+
+      # Get biomarker type
+      ?bm ccf:ccf_biomarker_type ?bmType .
+
+      ?as ccf:ccf_pref_label ?as_label .
+      ?ct ccf:ccf_pref_label ?ct_label .
+      ?bm ccf:ccf_pref_label ?bm_label .
+    }
+    FILTER(STRSTARTS(STR(?table), 'https://purl.humanatlas.io/asct-b'))
+  }
+}
+ORDER BY ?ftu ?as_label

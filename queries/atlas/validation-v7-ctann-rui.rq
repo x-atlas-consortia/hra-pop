@@ -1,0 +1,246 @@
+#+ summary: Validation V7 (5 variables)
+#+ description: Various top similarity variables
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?sex ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId
+  ?datasetVsRuiSim
+  ?datasetVsTopPredictedRuiSim ?ruiVsTopPredictedRuiSim 
+  ?datasetVsTopPredictedDatasetSim ?ruiVsTopPredictedDatasetSim
+
+WITH {
+  SELECT ?sex ?sample ?rui_location ?dataset ?tool ?modality ?organ ?organId
+  WHERE {
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?dataset ccf:has_cell_summary [
+        ccf:sex ?sex ;
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+      ] .
+
+      [] a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?refOrgan .
+    }
+
+    GRAPH CCF: {
+      ?refOrgan ccf:representation_of ?organIri .
+      ?organIri rdfs:label ?organ .
+
+      BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
+    }
+  }
+} AS %data
+
+WITH {
+  SELECT ?sex ?dataset ?tool (MAX(?similarity) as ?datasetVsTopPredictedRuiSim)
+  WHERE {
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+      [] ccf:has_registration_location ?predicted_rui .
+      FILTER (?rui_location != ?predicted_rui)
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?dataset ;
+            ccf:cell_source_b ?predicted_rui ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?predicted_rui ;
+            ccf:cell_source_b ?dataset ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?dataset ?tool
+} AS %sims1
+
+WITH {
+  SELECT ?sex ?rui_location ?tool (MAX(?similarity) as ?ruiVsTopPredictedRuiSim)
+  WHERE {
+    GRAPH HRApop: {
+      [] ccf:has_registration_location ?predicted_rui .
+      [] ccf:has_registration_location ?rui_location .
+      FILTER (?rui_location != ?predicted_rui)
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?rui_location ;
+            ccf:cell_source_b ?predicted_rui ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?predicted_rui ;
+            ccf:cell_source_b ?rui_location ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?rui_location ?tool
+} AS %sims2
+
+WITH {
+  SELECT ?sex ?dataset ?tool (MAX(?similarity) as ?datasetVsTopPredictedDatasetSim)
+  WHERE {
+    GRAPH HRApop: {
+      ?dataset a ccf:Dataset .
+      ?similar_dataset a ccf:Dataset .
+      FILTER (?dataset != ?similar_dataset)
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?dataset ;
+            ccf:cell_source_b ?similar_dataset ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?similar_dataset ;
+            ccf:cell_source_b ?dataset ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?dataset ?tool
+} AS %sims3
+
+WITH {
+  SELECT ?sex ?rui_location ?tool (MAX(?similarity) as ?ruiVsTopPredictedDatasetSim)
+  WHERE {
+
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+      ?similar_dataset a ccf:Dataset .
+      FILTER (?dataset != ?similar_dataset)
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?rui_location ;
+            ccf:cell_source_b ?similar_dataset ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?similar_dataset ;
+            ccf:cell_source_b ?rui_location ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?rui_location ?tool
+} AS %sims4
+
+WITH {
+  SELECT ?sex ?dataset ?tool (MAX(?similarity) as ?datasetVsRuiSim)
+  WHERE {
+    GRAPH HRApop: {
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+    }
+    
+    GRAPH hra-pop:similarities {
+      {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?dataset ;
+            ccf:cell_source_b ?rui_location ;
+            ccf:similarity ?similarity .
+      } UNION {
+        []  ccf:cell_source_a_sex ?sex ;
+            ccf:cell_source_b_sex ?sex ;
+            ccf:cell_source_a_tool ?tool ;
+            ccf:cell_source_b_tool ?tool ;
+            ccf:cell_source_a ?rui_location ;
+            ccf:cell_source_b ?dataset ;
+            ccf:similarity ?similarity .
+      }
+    }
+  }
+  GROUP BY ?sex ?dataset ?tool
+} AS %sims5
+
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  INCLUDE %data
+  INCLUDE %sims1
+  INCLUDE %sims2
+  INCLUDE %sims3
+  INCLUDE %sims4
+  INCLUDE %sims5
+}
+ORDER BY ?sex ?organ ?dataset ?tool

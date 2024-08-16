@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { globSync } from 'glob';
 import { basename, dirname, join } from 'path';
 import sh from 'shelljs';
@@ -29,20 +29,29 @@ async function runQueries(graphName, dirName) {
       .toString()
       .replaceAll('<https://purl.humanatlas.io/graph/hra-pop', `<https://purl.humanatlas.io/graph/${graphName}`);
     writeFileSync(`${reportCsv}.rq`, query);
-  
-    const result = sh.exec(`blazegraph-runner --journal=${JOURNAL} select --outformat=json ${reportCsv}.rq ${reportCsv}.json`, {silent: true});
+
+    const result = sh.exec(
+      `blazegraph-runner --journal=${JOURNAL} select --outformat=json ${reportCsv}.rq ${reportCsv}.json`,
+      { silent: true }
+    );
     if (result.code) {
       console.log('[ERROR]', result.stderr);
     }
     sh.exec(`./src/sparql-json2csv.js ${reportCsv}.json ${reportCsv}`);
     sh.exec(`rm -f ${reportCsv}.json  ${reportCsv}.rq`);
+
+    // If a post-processing SQL file is provided, run it to update the report
+    if (existsSync(queryFile.replace('.rq', '.sql'))) {
+      const sqlFile = queryFile.replace('.rq', '.sql');
+      sh.exec(`./src/sql-select.sh ${sqlFile} ${reportCsv} ${reportCsv}`);
+    }
   }
 }
 
 const runs = [runQueries('hra-pop', '.')];
 
 if (COMPUTE_LQ) {
-  runs.push(runQueries('hra-pop-lq', 'lq'))
+  runs.push(runQueries('hra-pop-lq', 'lq'));
 }
 
 await Promise.all(runs);
