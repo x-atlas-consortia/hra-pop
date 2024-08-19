@@ -85,7 +85,7 @@
   * [Universe Extraction Sites with `slice_count`s Count (extraction-sites)](#extraction-sites)
   * [Heart and Lung dataset info (heart-and-lung-datasets)](#heart-and-lung-datasets)
   * [high-level-stats](#high-level-stats)
-  * [Heart and Lung dataset info (htan-datasets)](#htan-datasets)
+  * [HTAN dataset info (htan-datasets)](#htan-datasets)
   * [Kidney and Lung dataset info (kidney-and-lung-datasets)](#kidney-and-lung-datasets)
   * [Popv cells information (popv-cells)](#popv-cells)
   * [RUI Registered H5AD Dataset and TB Count (rui-registered-datasets)](#rui-registered-datasets)
@@ -7080,16 +7080,16 @@ ORDER BY DESC(?label)
 | edges | 11415611 |
 
 
-### <a id="htan-datasets"></a>Heart and Lung dataset info (htan-datasets)
+### <a id="htan-datasets"></a>HTAN dataset info (htan-datasets)
 
-Heart and lung datasets considered or used in HRApop
+HTAN datasets considered or used in HRApop
 
 <details>
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: Heart and Lung dataset info
-#+ description: Heart and lung datasets considered or used in HRApop
+#+ summary: HTAN dataset info
+#+ description: HTAN datasets considered or used in HRApop
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
