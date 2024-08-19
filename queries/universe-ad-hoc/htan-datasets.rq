@@ -1,0 +1,133 @@
+#+ summary: Heart and Lung dataset info
+#+ description: Heart and lung datasets considered or used in HRApop
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?sex ?dataset ?organ ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?provider ?study_paper ?doi ?lead_author
+FROM HRApopFull:
+FROM CCF:
+WHERE {
+  [] ccf:generates_dataset ?dataset .
+
+  OPTIONAL { ?dataset ccf:publication ?doi . }
+  OPTIONAL { ?dataset ccf:publication_title ?study_paper . }
+  OPTIONAL { ?dataset ccf:publication_lead_author ?lead_author . }
+
+  OPTIONAL {
+    {
+      ?sample ccf:comes_from ?donor .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:comes_from ?donor .
+      ?block ccf:subdivided_into_sections ?sample .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+
+    ?donor ccf:consortium_name ?portal ;
+      ccf:tissue_provider_name ?provider ;
+      ccf:sex ?sex .
+  }
+
+  {
+    SELECT ?dataset ?rui_location ?ruiOrganIri
+    WHERE {
+      {
+        ?sample ccf:comes_from ?donor .
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:comes_from ?donor .
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+
+      ?ref_organ ccf:representation_of ?refOrganIri .
+      ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
+    }
+  }
+  UNION
+  {
+    ?dataset ccf:organ_id ?reportedOrganIri .
+  }
+
+  OPTIONAL {
+    SELECT ?dataset (SAMPLE(?cell_count_by_tool) as ?cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?tool (COUNT(?count) as ?cell_count_by_tool)
+        WHERE {
+          {
+            GRAPH HRApop: {
+              ?dataset ccf:has_cell_summary [
+                ccf:cell_annotation_method ?tool ;
+                ccf:has_cell_summary_row [
+                  ccf:cell_count ?count ;
+                ]
+              ];
+            }
+          }
+          UNION
+          {
+            GRAPH hra-pop:test-data {
+              ?dataset ccf:has_cell_summary [
+                ccf:cell_annotation_method ?tool ;
+                ccf:has_cell_summary_row [
+                  ccf:cell_count ?count ;
+                ]
+              ];
+            }
+          }
+        }
+        GROUP BY ?dataset ?tool
+      }
+    }
+    GROUP BY ?dataset
+  }
+
+  BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
+    IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
+
+  BIND (BOUND(?portal) && (?portal = 'HuBMAP' || ?portal = 'SenNet' || ?portal = 'GTEx') as ?in_high_quality_portal)
+
+  BIND (EXISTS {
+    GRAPH HRApop: {
+      ?dataset ccf:has_cell_summary [];
+    }
+  } as ?in_atlas)
+  BIND (BOUND(?rui_location) as ?has_extraction_site)
+  BIND (EXISTS {
+    {
+      GRAPH HRApop: {
+        ?dataset ccf:has_cell_summary [];
+      }
+    }
+    UNION
+    {
+      GRAPH hra-pop:test-data {
+        ?dataset ccf:has_cell_summary [];
+      }
+    }
+  } as ?has_cell_summary)
+  BIND (BOUND(?doi) as ?has_publication)
+
+  FILTER(CONTAINS(STR(?study_paper), 'HTAN') || CONTAINS(STR(?provider), 'HTAN'))
+}
+ORDER BY ?doi DESC(?cell_count)

@@ -85,6 +85,7 @@
   * [Universe Extraction Sites with `slice_count`s Count (extraction-sites)](#extraction-sites)
   * [Heart and Lung dataset info (heart-and-lung-datasets)](#heart-and-lung-datasets)
   * [high-level-stats](#high-level-stats)
+  * [Heart and Lung dataset info (htan-datasets)](#htan-datasets)
   * [Kidney and Lung dataset info (kidney-and-lung-datasets)](#kidney-and-lung-datasets)
   * [Popv cells information (popv-cells)](#popv-cells)
   * [RUI Registered H5AD Dataset and TB Count (rui-registered-datasets)](#rui-registered-datasets)
@@ -5157,11 +5158,11 @@ ORDER BY ?as_label
 
 | as_label | ct_label | bm_label | as | ct | bm | bmType |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Accessory pancreatic duct (Duct of Santorini) | smooth muscle | Alpha smooth muscle actin | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
-| Accessory pancreatic duct (Duct of Santorini) | Smooth muscle cell | Alpha smooth muscle actin | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
-| Accessory pancreatic duct (Duct of Santorini) | Splenic Smooth Muscle Cell | Alpha smooth muscle actin | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
 | Accessory pancreatic duct (Duct of Santorini) | smooth muscle | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | gene |
 | Accessory pancreatic duct (Duct of Santorini) | Smooth muscle cell | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | gene |
+| Accessory pancreatic duct (Duct of Santorini) | Splenic Smooth Muscle Cell | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | gene |
+| Accessory pancreatic duct (Duct of Santorini) | smooth muscle | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
+| Accessory pancreatic duct (Duct of Santorini) | Smooth muscle cell | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
 | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -7077,6 +7078,165 @@ ORDER BY DESC(?label)
 | :--- | :--- |
 | nodes | 2216373 |
 | edges | 11415611 |
+
+
+### <a id="htan-datasets"></a>Heart and Lung dataset info (htan-datasets)
+
+Heart and lung datasets considered or used in HRApop
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Heart and Lung dataset info
+#+ description: Heart and lung datasets considered or used in HRApop
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?sex ?dataset ?organ ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?provider ?study_paper ?doi ?lead_author
+FROM HRApopFull:
+FROM CCF:
+WHERE {
+  [] ccf:generates_dataset ?dataset .
+
+  OPTIONAL { ?dataset ccf:publication ?doi . }
+  OPTIONAL { ?dataset ccf:publication_title ?study_paper . }
+  OPTIONAL { ?dataset ccf:publication_lead_author ?lead_author . }
+
+  OPTIONAL {
+    {
+      ?sample ccf:comes_from ?donor .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:comes_from ?donor .
+      ?block ccf:subdivided_into_sections ?sample .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+
+    ?donor ccf:consortium_name ?portal ;
+      ccf:tissue_provider_name ?provider ;
+      ccf:sex ?sex .
+  }
+
+  {
+    SELECT ?dataset ?rui_location ?ruiOrganIri
+    WHERE {
+      {
+        ?sample ccf:comes_from ?donor .
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:comes_from ?donor .
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+
+      ?ref_organ ccf:representation_of ?refOrganIri .
+      ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
+    }
+  }
+  UNION
+  {
+    ?dataset ccf:organ_id ?reportedOrganIri .
+  }
+
+  OPTIONAL {
+    SELECT ?dataset (SAMPLE(?cell_count_by_tool) as ?cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?tool (COUNT(?count) as ?cell_count_by_tool)
+        WHERE {
+          {
+            GRAPH HRApop: {
+              ?dataset ccf:has_cell_summary [
+                ccf:cell_annotation_method ?tool ;
+                ccf:has_cell_summary_row [
+                  ccf:cell_count ?count ;
+                ]
+              ];
+            }
+          }
+          UNION
+          {
+            GRAPH hra-pop:test-data {
+              ?dataset ccf:has_cell_summary [
+                ccf:cell_annotation_method ?tool ;
+                ccf:has_cell_summary_row [
+                  ccf:cell_count ?count ;
+                ]
+              ];
+            }
+          }
+        }
+        GROUP BY ?dataset ?tool
+      }
+    }
+    GROUP BY ?dataset
+  }
+
+  BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
+    IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
+
+  BIND (BOUND(?portal) && (?portal = 'HuBMAP' || ?portal = 'SenNet' || ?portal = 'GTEx') as ?in_high_quality_portal)
+
+  BIND (EXISTS {
+    GRAPH HRApop: {
+      ?dataset ccf:has_cell_summary [];
+    }
+  } as ?in_atlas)
+  BIND (BOUND(?rui_location) as ?has_extraction_site)
+  BIND (EXISTS {
+    {
+      GRAPH HRApop: {
+        ?dataset ccf:has_cell_summary [];
+      }
+    }
+    UNION
+    {
+      GRAPH hra-pop:test-data {
+        ?dataset ccf:has_cell_summary [];
+      }
+    }
+  } as ?has_cell_summary)
+  BIND (BOUND(?doi) as ?has_publication)
+
+  FILTER(CONTAINS(STR(?study_paper), 'HTAN') || CONTAINS(STR(?provider), 'HTAN'))
+}
+ORDER BY ?doi DESC(?cell_count)
+
+```
+
+([View Source](../../queries/universe-ad-hoc/htan-datasets.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/htan-datasets.csv))
+
+| sex | dataset | organ | cell_count | in_atlas | has_cell_summary | has_extraction_site | has_publication | in_high_quality_portal | portal | provider | study_paper | doi | lead_author |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1262$lung |  | 42 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU675$lung |  | 40 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1128$lung |  | 35 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| Male | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1134$lung |  | 34 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU426$lung |  | 34 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="kidney-and-lung-datasets"></a>Kidney and Lung dataset info (kidney-and-lung-datasets)
