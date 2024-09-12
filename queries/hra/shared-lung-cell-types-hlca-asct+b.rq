@@ -1,0 +1,20 @@
+#+ summary: Get shared cell types between HL:CA data and ASCT+B table for lung
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+SELECT DISTINCT ?cell_id ?label
+FROM <https://purl.humanatlas.io/asct-b/lung>
+WHERE {
+  # Commands to reproduce the cells list
+  # curl https://api.cellxgene.cziscience.com/dp/v1/collections/6f6d381a-7701-4781-935c-db10d30de293 -o hlca.json
+  # jq '.datasets[0] | .cell_id ' celltypes.json | perl -pe 's/\"//g' | perl -pe 's/^/\(/g;s/\n/\) /g'
+  VALUES (?cell_id) {
+    (CL:0000037) (CL:0000057) (CL:0000077) (CL:0000084) (CL:0000097) (CL:0000158) (CL:0000186) (CL:0000192) (CL:0000236) (CL:0000313) (CL:0000319) (CL:0000451) (CL:0000499) (CL:0000583) (CL:0000622) (CL:0000623) (CL:0000624) (CL:0000625) (CL:0000784) (CL:0000786) (CL:0000860) (CL:0000861) (CL:0000875) (CL:0000990) (CL:0002062) (CL:0002063) (CL:0002075) (CL:0002138) (CL:0002144) (CL:0002145) (CL:0002399) (CL:0002480) (CL:0002543) (CL:0002632) (CL:0002633) (CL:0005006) (CL:0005012) (CL:0009089) (CL:0010003) (CL:0019001) (CL:0019003) (CL:0019019) (CL:1000223) (CL:1000312) (CL:1001568) (CL:1001603) (CL:2000093) (CL:4028004) (CL:4028006) (CL:4030023)
+  }
+  ?cell_id ccf:ccf_asctb_type ?type .
+  ?cell_id ccf:ccf_pref_label ?label
+  FILTER (?type = 'CT')
+}
+ORDER BY ?cell_id
