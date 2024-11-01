@@ -46814,5 +46814,1605 @@
       "representation_of": "http://purl.obolibrary.org/obo/UBERON_0000998",
       "tissue_volume": 12375
     }
+  ],
+  "http://purl.org/ccf/1.5/21f2dbfa-f964-4526-bb4b-6b13302b4963": [],
+  "http://purl.org/ccf/1.5/8d8bb4f2-5f5f-4dd2-9b29-70bff427b564": [
+    {
+      "AS_volume": 6364.122757449664,
+      "id": "https://purl.humanatlas.io/ref-organ/ureter-male-right/v1.2#primary",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "Right ureter",
+      "node_name": "VH_M_ureter_R",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_ureter-male-right_v1.2_assets_3d-vh-m-ureter-r",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001222",
+      "tissue_volume": 8
+    }
+  ],
+  "http://purl.org/ccf/1.5/6537f5fc-c6fa-43b0-93e1-85040fdb89be": [],
+  "http://purl.org/ccf/1.5/ca23f77c-a3cd-453f-bbe9-2d8d1514fc8e": [
+    {
+      "AS_volume": 6364.122757449664,
+      "id": "https://purl.humanatlas.io/ref-organ/ureter-male-right/v1.2#primary",
+      "intersection_volume": 0.136,
+      "is_closed": true,
+      "label": "Right ureter",
+      "node_name": "VH_M_ureter_R",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_ureter-male-right_v1.2_assets_3d-vh-m-ureter-r",
+      "percentage_of_AS": 0.000021369795207171675,
+      "percentage_of_tissue_block": 0.017,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001222",
+      "tissue_volume": 8
+    }
+  ],
+  "http://purl.org/ccf/1.5/e43280c9-840b-481f-a8a6-90114c2c5cc9": [
+    {
+      "AS_volume": 77133.3654073963,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_fundus_of_urinary_bladder_base1",
+      "intersection_volume": 40.875,
+      "is_closed": true,
+      "label": "fundus of urinary bladder",
+      "node_name": "VH_M_fundus_of_urinary_bladder_base1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.0005299263137827577,
+      "percentage_of_tissue_block": 0.327,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0006082",
+      "tissue_volume": 125
+    }
+  ],
+  "http://purl.org/ccf/1.5/b195f78a-28c0-48d3-8b23-a92d38131d55": [
+    {
+      "AS_volume": 219923.15463438525,
+      "id": "https://purl.humanatlas.io/ref-organ/small-intestine-female/v1.2#VH_F_jejenum",
+      "intersection_volume": 139.04999999999998,
+      "is_closed": true,
+      "label": "jejunum",
+      "node_name": "VH_F_jejenum",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_small-intestine-female_v1.2_assets_3d-vh-f-small-intestine",
+      "percentage_of_AS": 0.0006322663033420281,
+      "percentage_of_tissue_block": 0.103,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002115",
+      "tissue_volume": 1350
+    }
+  ],
+  "http://purl.org/ccf/1.5/76c494e3-ed44-4cd6-a634-e83b02bcd767": [
+    {
+      "AS_volume": 6392.001698846742,
+      "id": "https://purl.humanatlas.io/ref-organ/ureter-male-left/v1.2#primary",
+      "intersection_volume": 0.048,
+      "is_closed": true,
+      "label": "Left ureter",
+      "node_name": "VH_M_ureter_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_ureter-male-left_v1.2_assets_3d-vh-m-ureter-l",
+      "percentage_of_AS": 0.000007509384737594838,
+      "percentage_of_tissue_block": 0.006,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001223",
+      "tissue_volume": 8
+    }
+  ],
+  "http://purl.org/ccf/1.5/f85d8a3d-8e92-487d-bc76-5ee350f26739": [],
+  "http://purl.org/ccf/1.5/0060612c-6d95-47d8-a8d0-0443fff344e9": [
+    {
+      "AS_volume": 1254.9799732924232,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_trigone_of_urinary_bladder",
+      "intersection_volume": 10.80768,
+      "is_closed": true,
+      "label": "trigone of urinary bladder",
+      "node_name": "VH_M_trigone_of_urinary_bladder",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.008611834634815881,
+      "percentage_of_tissue_block": 0.433,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001257",
+      "tissue_volume": 24.96
+    },
+    {
+      "AS_volume": 77133.3654073963,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_fundus_of_urinary_bladder_base1",
+      "intersection_volume": 24.96,
+      "is_closed": true,
+      "label": "fundus of urinary bladder",
+      "node_name": "VH_M_fundus_of_urinary_bladder_base1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.0003235953710585354,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0006082",
+      "tissue_volume": 24.96
+    }
+  ],
+  "http://purl.org/ccf/1.5/d77fd4d3-c410-42ea-ad28-7383b3338323": [
+    {
+      "AS_volume": 830.5371242646407,
+      "id": "https://purl.humanatlas.io/ref-organ/ureter-female-right/v1.2#primary",
+      "intersection_volume": 6.168,
+      "is_closed": true,
+      "label": "Right ureter",
+      "node_name": "VH_F_right_ureter",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_ureter-female-right_v1.2_assets_3d-vh-f-ureter-r",
+      "percentage_of_AS": 0.007426519320808398,
+      "percentage_of_tissue_block": 0.771,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001222",
+      "tissue_volume": 8
+    }
+  ],
+  "http://purl.org/ccf/1.5/8cde177e-fbbd-434f-b04d-271dd38f286a": [
+    {
+      "AS_volume": 2109804.44224585,
+      "id": "https://purl.humanatlas.io/ref-organ/skin-male/v1.3#primary",
+      "intersection_volume": 4222.44,
+      "is_closed": true,
+      "label": "skin",
+      "node_name": "VH_M_skin",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_skin-male_v1.3_assets_3d-vh-m-skin",
+      "percentage_of_AS": 0.0020013418852722134,
+      "percentage_of_tissue_block": 0.951,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002097",
+      "tissue_volume": 4440
+    }
+  ],
+  "http://purl.org/ccf/1.5/fb6bb0ea-5ba7-44e2-90a6-f972a70da51a": [
+    {
+      "AS_volume": 52023.79721734255,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_fundus_of_urinary_bladder_dome",
+      "intersection_volume": 0.125,
+      "is_closed": true,
+      "label": "fundus of urinary bladder",
+      "node_name": "VH_M_fundus_of_urinary_bladder_dome",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.0000024027465638038863,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0006082",
+      "tissue_volume": 125
+    },
+    {
+      "AS_volume": 77133.3654073963,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_fundus_of_urinary_bladder_base1",
+      "intersection_volume": 73.875,
+      "is_closed": true,
+      "label": "fundus of urinary bladder",
+      "node_name": "VH_M_fundus_of_urinary_bladder_base1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.0009577567322495713,
+      "percentage_of_tissue_block": 0.591,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0006082",
+      "tissue_volume": 125
+    }
+  ],
+  "http://purl.org/ccf/1.5/1fa8bd4e-49af-4121-a1b4-618af0b79d4c": [
+    {
+      "AS_volume": 1254.9799732924232,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_trigone_of_urinary_bladder",
+      "intersection_volume": 223.56,
+      "is_closed": true,
+      "label": "trigone of urinary bladder",
+      "node_name": "VH_M_trigone_of_urinary_bladder",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.17813830081566429,
+      "percentage_of_tissue_block": 0.621,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001257",
+      "tissue_volume": 360
+    },
+    {
+      "AS_volume": 77133.3654073963,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_fundus_of_urinary_bladder_base1",
+      "intersection_volume": 360,
+      "is_closed": true,
+      "label": "fundus of urinary bladder",
+      "node_name": "VH_M_fundus_of_urinary_bladder_base1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.0046672409287288755,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0006082",
+      "tissue_volume": 360
+    }
+  ],
+  "http://purl.org/ccf/1.5/c0d63695-e48e-44c1-a1a3-db138d1f80d1": [
+    {
+      "AS_volume": 1254.9799732924232,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_trigone_of_urinary_bladder",
+      "intersection_volume": 4.579199999999999,
+      "is_closed": true,
+      "label": "trigone of urinary bladder",
+      "node_name": "VH_M_trigone_of_urinary_bladder",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.00364882316646578,
+      "percentage_of_tissue_block": 0.212,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001257",
+      "tissue_volume": 21.599999999999998
+    },
+    {
+      "AS_volume": 77133.3654073963,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_fundus_of_urinary_bladder_base1",
+      "intersection_volume": 21.599999999999998,
+      "is_closed": true,
+      "label": "fundus of urinary bladder",
+      "node_name": "VH_M_fundus_of_urinary_bladder_base1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.0002800344557237325,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0006082",
+      "tissue_volume": 21.599999999999998
+    }
+  ],
+  "http://purl.org/ccf/1.5/6130c1eb-9a5a-44b2-8a3e-ebae47cc419d": [],
+  "http://purl.org/ccf/1.5/cc08d64c-5d75-4995-b3b0-00239a742184": [
+    {
+      "AS_volume": 77133.3654073963,
+      "id": "https://purl.humanatlas.io/ref-organ/urinary-bladder-male/v1.2#VH_M_fundus_of_urinary_bladder_base1",
+      "intersection_volume": 63,
+      "is_closed": true,
+      "label": "fundus of urinary bladder",
+      "node_name": "VH_M_fundus_of_urinary_bladder_base1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_urinary-bladder-male_v1.2_assets_3d-vh-m-urinary-bladder",
+      "percentage_of_AS": 0.0008167671625275532,
+      "percentage_of_tissue_block": 0.504,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0006082",
+      "tissue_volume": 125
+    }
+  ],
+  "http://purl.org/ccf/1.5/c8f471f9-e052-4a00-b145-b299b97ed960": [
+    {
+      "AS_volume": 2109804.44224585,
+      "id": "https://purl.humanatlas.io/ref-organ/skin-male/v1.3#primary",
+      "intersection_volume": 5662.24,
+      "is_closed": true,
+      "label": "skin",
+      "node_name": "VH_M_skin",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_skin-male_v1.3_assets_3d-vh-m-skin",
+      "percentage_of_AS": 0.0026837748023568688,
+      "percentage_of_tissue_block": 0.823,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002097",
+      "tissue_volume": 6880
+    }
+  ],
+  "http://purl.org/ccf/1.5/74a3fc30-9e4b-44d5-b70e-43b56550aac0": [
+    {
+      "AS_volume": 1000.7896602477584,
+      "id": "https://purl.humanatlas.io/ref-organ/ovary-female-left/v1.2#primary",
+      "intersection_volume": 12.209999999999999,
+      "is_closed": true,
+      "label": "Left ovary",
+      "node_name": "VH_F_left_ovary",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_ovary-female-left_v1.2_assets_3d-vh-f-ovary-l",
+      "percentage_of_AS": 0.012200365856075347,
+      "percentage_of_tissue_block": 0.814,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7214",
+      "tissue_volume": 15
+    }
+  ],
+  "http://purl.org/ccf/1.5/4d32d129-913b-4932-be4d-12cf56607095": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 945,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0077711130803976335,
+      "percentage_of_tissue_block": 0.945,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/2ccfead3-83c8-40f1-b900-4b1dc9ea6743": [
+    {
+      "AS_volume": 815.4515173811651,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_papillary_muscle_of_heart_anterior",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "Anterior papillary muscle of left ventricle",
+      "node_name": "VH_M_papillary_muscle_of_heart_anterior",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7264",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 73988.23445308174,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 81,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0010947686561079471,
+      "percentage_of_tissue_block": 0.081,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/a4507d42-a698-4645-92fb-92a4de2677b5": [],
+  "http://purl.org/ccf/1.5/28d2ea0d-4010-4211-8776-b9eb5fb03485": [],
+  "http://purl.org/ccf/1.5/0f52a0ec-aa46-466c-a80b-da9565308e14": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 522,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.004292614844410121,
+      "percentage_of_tissue_block": 0.522,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/72bf1a62-eccf-4fdd-9ba4-270410e9a359": [
+    {
+      "AS_volume": 1527.7751034523471,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_left_posterior_basal_bronchus",
+      "intersection_volume": 83,
+      "is_closed": true,
+      "label": "Left posterior basal segmental bronchus",
+      "node_name": "VH_F_left_posterior_basal_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.054327367825567435,
+      "percentage_of_tissue_block": 0.083,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7508",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 132432.62973078786,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_left_posterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 1000,
+      "is_closed": true,
+      "label": "Left posterior basal bronchopulmonary segment",
+      "node_name": "VH_F_left_posterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.007551009158640309,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7380",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 1226.0125472024076,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_cartilage_of_tertiary_bronchus_L",
+      "intersection_volume": 15,
+      "is_closed": true,
+      "label": "Cartilage of segmental bronchus",
+      "node_name": "VH_F_cartilage_of_tertiary_bronchus_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.012234785063356768,
+      "percentage_of_tissue_block": 0.015,
+      "representation_of": "http://purl.org/sig/ont/fma/fma62662",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/049f27a1-1e84-4f8a-a47e-48a0879b8652": [
+    {
+      "AS_volume": 177963.69435657057,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "intersection_volume": 1000,
+      "is_closed": true,
+      "label": "Left posterior basal segmental bronchus",
+      "node_name": "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.005619123628645211,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7508",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/f876a7c0-7fcb-4cd4-97d7-639194f5a1af": [
+    {
+      "AS_volume": 177963.69435657057,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "intersection_volume": 637,
+      "is_closed": true,
+      "label": "Left posterior basal segmental bronchus",
+      "node_name": "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.003579381751446999,
+      "percentage_of_tissue_block": 0.637,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7508",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/6f7f3ddd-9889-4bad-8bfc-8340c7b6af8b": [
+    {
+      "AS_volume": 186176.82247966382,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 1000,
+      "is_closed": true,
+      "label": "Right Posterior Basal Bronchopulmonary Segment",
+      "node_name": "VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.005371237873120487,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7362",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/f2701d2c-323c-4bda-91af-7bc1db5622f0": [
+    {
+      "AS_volume": 1631.2289864519244,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_lateral_basal_bronchus",
+      "intersection_volume": 169,
+      "is_closed": true,
+      "label": "Left lateral basal segmental bronchus",
+      "node_name": "VH_M_left_lateral_basal_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.10360286716556626,
+      "percentage_of_tissue_block": 0.169,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7507",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 55232.19222031879,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_lateral_basal_bronchopulmonary_segment",
+      "intersection_volume": 194,
+      "is_closed": true,
+      "label": "left Lateral Basal Bronchopulmonary Segment",
+      "node_name": "VH_M_left_lateral_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.003512444322798967,
+      "percentage_of_tissue_block": 0.194,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7379",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/abcaccdb-7b98-4ea5-ad76-bc2e694cc818": [
+    {
+      "AS_volume": 109478.9352094898,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_apical_bronchopulmonary_segment",
+      "intersection_volume": 85,
+      "is_closed": true,
+      "label": "Left apical bronchopulmonary segment",
+      "node_name": "VH_M_left_apical_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0007764050667587427,
+      "percentage_of_tissue_block": 0.085,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7385",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/721c52bf-b83c-43be-b42e-44df15f44805": [
+    {
+      "AS_volume": 320776.58869686566,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 1000,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0031174344862960105,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/089b80ab-9952-4e68-b946-5cbb3c5a8fc2": [
+    {
+      "AS_volume": 11335.029753169933,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_medial_basal_bronchopulmonary_segment",
+      "intersection_volume": 461,
+      "is_closed": true,
+      "label": "Left Medial Basal Bronchopulmonary Segment",
+      "node_name": "VH_M_left_medial_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.04067038287844614,
+      "percentage_of_tissue_block": 0.461,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7377",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 81311.55093910414,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_lingula_inferior_bronchopulmonary_segment",
+      "intersection_volume": 461,
+      "is_closed": true,
+      "label": "Inferior lingular bronchopulmonary segment",
+      "node_name": "VH_M_left_lingula_inferior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.005669551185233844,
+      "percentage_of_tissue_block": 0.461,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7375",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/fefd0029-561f-45dd-b35e-5823dd3c7334": [
+    {
+      "AS_volume": 73988.23445308174,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 97.5,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0013177770860558623,
+      "percentage_of_tissue_block": 0.78,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 125
+    }
+  ],
+  "http://purl.org/ccf/1.5/48d5a53a-8ff5-4820-8c71-dbeb23401c1b": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 125,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0010279250106346076,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 125
+    }
+  ],
+  "http://purl.org/ccf/1.5/4cd16de1-5b60-4cd0-9e44-f3fbf5311c71": [
+    {
+      "AS_volume": 27714.76682308308,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_right_cardiac_atrium",
+      "intersection_volume": 44,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_M_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.00158760130586245,
+      "percentage_of_tissue_block": 0.352,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 125
+    }
+  ],
+  "http://purl.org/ccf/1.5/c6ce02e4-16da-4910-8b5d-e40474cd2f4b": [
+    {
+      "AS_volume": 186176.82247966382,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 787,
+      "is_closed": true,
+      "label": "Right Posterior Basal Bronchopulmonary Segment",
+      "node_name": "VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.004227164206145823,
+      "percentage_of_tissue_block": 0.787,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7362",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/a05fdae6-1223-48ce-a89b-2ac95805dfae": [
+    {
+      "AS_volume": 836.8110704139309,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_posterior_basal_bronchus",
+      "intersection_volume": 106,
+      "is_closed": true,
+      "label": "Right posterior basal segmental bronchus",
+      "node_name": "VH_F_right_posterior_basal_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.12667136435894283,
+      "percentage_of_tissue_block": 0.106,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7420",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 186176.82247966382,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 995,
+      "is_closed": true,
+      "label": "Right Posterior Basal Bronchopulmonary Segment",
+      "node_name": "VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.005344381683754885,
+      "percentage_of_tissue_block": 0.995,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7362",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 1300.2572126370394,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_cartilage_of_tertiary_bronchus_R",
+      "intersection_volume": 7,
+      "is_closed": true,
+      "label": "Cartilage of segmental bronchus",
+      "node_name": "VH_F_cartilage_of_tertiary_bronchus_R",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.005383550217578387,
+      "percentage_of_tissue_block": 0.007,
+      "representation_of": "http://purl.org/sig/ont/fma/fma62662",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/3ce40ad1-3586-44f3-a8c5-0e4f7af4c094": [
+    {
+      "AS_volume": 31345.343732677004,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_left_cardiac_atrium",
+      "intersection_volume": 124.875,
+      "is_closed": true,
+      "label": "left cardiac atrium",
+      "node_name": "VH_M_left_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.003983845290227903,
+      "percentage_of_tissue_block": 0.999,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002079",
+      "tissue_volume": 125
+    }
+  ],
+  "http://purl.org/ccf/1.5/f6ac9796-8fad-4c9c-ad86-855c2b1cb72e": [],
+  "http://purl.org/ccf/1.5/e2602a5c-2b7b-48ff-b4ec-fa00ad6b2d96": [
+    {
+      "AS_volume": 31345.343732677004,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_left_cardiac_atrium",
+      "intersection_volume": 614,
+      "is_closed": true,
+      "label": "left cardiac atrium",
+      "node_name": "VH_M_left_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.01958823630190136,
+      "percentage_of_tissue_block": 0.614,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002079",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/cfb6dbd4-ada8-42af-9d10-8270bceed6d9": [],
+  "http://purl.org/ccf/1.5/09cb59f6-3297-40f1-afb1-33a7e56ec4de": [
+    {
+      "AS_volume": 208294.03565949443,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_medial_bronchopulmonary_segment",
+      "intersection_volume": 724,
+      "is_closed": true,
+      "label": "Right Medial Bronchopulmonary Segment",
+      "node_name": "VH_M_right_medial_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0034758556465992537,
+      "percentage_of_tissue_block": 0.724,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7360",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/434b84cb-b3f4-4f13-ae0a-0ee8f851d9bb": [
+    {
+      "AS_volume": 647.023528433239,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchus",
+      "intersection_volume": 29,
+      "is_closed": true,
+      "label": "Lateral segmental bronchus",
+      "node_name": "VH_M_right_lateral_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.04482062664741607,
+      "percentage_of_tissue_block": 0.029,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7402",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 133768.08382366848,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchopulmonary_segment",
+      "intersection_volume": 1000,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.007475624763513756,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/f4d7d464-b8af-4044-8218-39f308432c86": [
+    {
+      "AS_volume": 73356.78027282198,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "Right anterior basal bronchopulmonary segment",
+      "node_name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7364",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 133768.08382366848,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchopulmonary_segment",
+      "intersection_volume": 1000,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.007475624763513756,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/1dd7fdd2-b206-42c1-b14c-d447d1673af8": [
+    {
+      "AS_volume": 16060.578109648553,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_anterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 221,
+      "is_closed": true,
+      "label": "left anterior basal bronchopulmonary segment",
+      "node_name": "VH_M_left_anterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.013760401306303665,
+      "percentage_of_tissue_block": 0.221,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7378",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/7443bd10-f3aa-4b77-842d-df5e20c8a928": [
+    {
+      "AS_volume": 4204.334545354896,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_anterior_bronchus",
+      "intersection_volume": 1,
+      "is_closed": true,
+      "label": "Left anterior segmental bronchus",
+      "node_name": "VH_M_left_anterior_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00023784976890215285,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7428",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/ff17f643-7838-4585-bad9-3c5fc100b340": [
+    {
+      "AS_volume": 815.4515173811651,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_papillary_muscle_of_heart_anterior",
+      "intersection_volume": 2,
+      "is_closed": true,
+      "label": "Anterior papillary muscle of left ventricle",
+      "node_name": "VH_M_papillary_muscle_of_heart_anterior",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0024526289514096807,
+      "percentage_of_tissue_block": 0.002,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7264",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 73988.23445308174,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 40,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0005406264968434307,
+      "percentage_of_tissue_block": 0.04,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/c9e2cac1-9b52-4c66-b864-2ce1e49a9b1b": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 739,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0060770926628718,
+      "percentage_of_tissue_block": 0.739,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 28091.745423081582,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_interventricular_septum",
+      "intersection_volume": 104,
+      "is_closed": true,
+      "label": "interventricular septum",
+      "node_name": "VH_M_interventricular_septum",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.003702155150336383,
+      "percentage_of_tissue_block": 0.104,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002094",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/b13c4094-7617-4a40-af56-5d5ac2e4d899": [
+    {
+      "AS_volume": 31345.343732677004,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_left_cardiac_atrium",
+      "intersection_volume": 319,
+      "is_closed": true,
+      "label": "left cardiac atrium",
+      "node_name": "VH_M_left_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.010176950130792402,
+      "percentage_of_tissue_block": 0.319,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002079",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/a98e73b9-1981-49e7-9421-839579d1a40c": [
+    {
+      "AS_volume": 27714.76682308308,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_right_cardiac_atrium",
+      "intersection_volume": 73,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_M_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0026339748938172466,
+      "percentage_of_tissue_block": 0.073,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/af7c6cf6-517e-4a7f-ba28-d9dac52ce35c": [
+    {
+      "AS_volume": 73356.78027282198,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 439,
+      "is_closed": true,
+      "label": "Right anterior basal bronchopulmonary segment",
+      "node_name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.005984450222151387,
+      "percentage_of_tissue_block": 0.439,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7364",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 133768.08382366848,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchopulmonary_segment",
+      "intersection_volume": 619,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.004627411728615015,
+      "percentage_of_tissue_block": 0.619,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/c682cd6e-d138-4a31-9aa4-fa3bbaca8f99": [
+    {
+      "AS_volume": 73356.78027282198,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 591,
+      "is_closed": true,
+      "label": "Right anterior basal bronchopulmonary segment",
+      "node_name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.008056514991552324,
+      "percentage_of_tissue_block": 0.591,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7364",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 133768.08382366848,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchopulmonary_segment",
+      "intersection_volume": 405,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.003027628029223071,
+      "percentage_of_tissue_block": 0.405,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/826d8e70-b08e-4d0f-9a61-fb076acd23ce": [
+    {
+      "AS_volume": 1803.0222064384043,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_basal_bronchus",
+      "intersection_volume": 355,
+      "is_closed": true,
+      "label": "Right lateral basal segmental bronchus",
+      "node_name": "VH_M_right_lateral_basal_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.19689164045364058,
+      "percentage_of_tissue_block": 0.355,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7419",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/df121dfb-0618-4f19-865d-0ceedaa5e12c": [],
+  "http://purl.org/ccf/1.5/9f5d0615-130a-479f-8b87-1104d931a407": [
+    {
+      "AS_volume": 256703.81977574018,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_bronchopulmonary_segment",
+      "intersection_volume": 999,
+      "is_closed": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_right_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0038916444674362053,
+      "percentage_of_tissue_block": 0.999,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7359",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 291458.4229005465,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_posterior_bronchopulmonary_segment",
+      "intersection_volume": 12,
+      "is_closed": true,
+      "label": "Right Posterior Bronchopulmonary Segment",
+      "node_name": "VH_M_right_posterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00004117225325169183,
+      "percentage_of_tissue_block": 0.012,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7339",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/951c41d4-67bc-493f-8a40-cbbe29f164a5": [
+    {
+      "AS_volume": 73356.78027282198,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 108,
+      "is_closed": true,
+      "label": "Right anterior basal bronchopulmonary segment",
+      "node_name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0014722565466796123,
+      "percentage_of_tissue_block": 0.108,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7364",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/51b451a8-5624-4d50-8cb3-8d12707284a7": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 874,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.007187251674357176,
+      "percentage_of_tissue_block": 0.874,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 28091.745423081582,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_interventricular_septum",
+      "intersection_volume": 895,
+      "is_closed": true,
+      "label": "interventricular septum",
+      "node_name": "VH_M_interventricular_septum",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.03185989288029868,
+      "percentage_of_tissue_block": 0.895,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002094",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 73988.23445308174,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 130,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0017570361147411495,
+      "percentage_of_tissue_block": 0.13,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/7a63145e-6f82-4cac-ae8d-10d8b97e7e1d": [
+    {
+      "AS_volume": 27714.76682308308,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_right_cardiac_atrium",
+      "intersection_volume": 212,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_M_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.007649351746428168,
+      "percentage_of_tissue_block": 0.212,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/67c8d66a-2c8f-410f-bd3b-4a9158b02b8f": [
+    {
+      "AS_volume": 73988.23445308174,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 549,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.007420098669176086,
+      "percentage_of_tissue_block": 0.549,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/820178e8-1c88-4edc-85b5-132396882753": [],
+  "http://purl.org/ccf/1.5/46af77dc-bc99-4c65-bedf-8b9b9d09d496": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 1127.471591624297,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_papillary_muscle_of_heart_anterolateral",
+      "intersection_volume": 269,
+      "is_closed": true,
+      "label": "Anterolateral head of lateral papillary muscle of left ventricle",
+      "node_name": "VH_M_papillary_muscle_of_heart_anterolateral",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.23858694267627972,
+      "percentage_of_tissue_block": 0.269,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7265",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 1194.1504319406804,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_papillary_muscle_of_heart_posteromedial",
+      "intersection_volume": 6,
+      "is_closed": true,
+      "label": "Posteromedial head of posterior papillary muscle of left ventricle",
+      "node_name": "VH_M_papillary_muscle_of_heart_posteromedial",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.005024492592821045,
+      "percentage_of_tissue_block": 0.006,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7267",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/10d766c7-1af6-442b-bc41-b1f338b3027f": [
+    {
+      "AS_volume": 3269.435035956554,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_posterior_basal_bronchus",
+      "intersection_volume": 14,
+      "is_closed": true,
+      "label": "Left posterior basal segmental bronchus",
+      "node_name": "VH_M_left_posterior_basal_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.004282085389686892,
+      "percentage_of_tissue_block": 0.014,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7508",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 177963.69435657057,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "intersection_volume": 17,
+      "is_closed": true,
+      "label": "Left posterior basal segmental bronchus",
+      "node_name": "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00009552510168696858,
+      "percentage_of_tissue_block": 0.017,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7508",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/f1e846cc-8f0f-4ffa-b36a-75eca8150cef": [
+    {
+      "AS_volume": 130194.32503240457,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_posterior_bronchopulmonary_segment",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "Left posterior bronchopulmonary segment",
+      "node_name": "VH_M_left_posterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7386",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/2ebc64c8-cc48-435a-a8e0-24bc79f52c23": [],
+  "http://purl.org/ccf/1.5/e2003eec-a278-4d67-92bd-3e205b9f03f9": [
+    {
+      "AS_volume": 28091.745423081582,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_interventricular_septum",
+      "intersection_volume": 1,
+      "is_closed": true,
+      "label": "interventricular septum",
+      "node_name": "VH_M_interventricular_septum",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.00003559764567631138,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002094",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 73988.23445308174,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 99,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0013380505796874909,
+      "percentage_of_tissue_block": 0.099,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/b532d96a-3aad-4ef9-8546-4e92dd1bfc08": [],
+  "http://purl.org/ccf/1.5/421e66cc-f31c-4508-b99d-04a2e725c15e": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 804,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.006611613668401796,
+      "percentage_of_tissue_block": 0.804,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/3021875d-e5ab-47a5-ab40-e34f4690c5be": [],
+  "http://purl.org/ccf/1.5/0540395a-814e-4f47-8d16-dc3cb0004f78": [
+    {
+      "AS_volume": 1325.380071131675,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_basal_bronchus",
+      "intersection_volume": 2,
+      "is_closed": true,
+      "label": "Right posterior segmental bronchus",
+      "node_name": "VH_M_right_anterior_basal_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0015090011111245252,
+      "percentage_of_tissue_block": 0.002,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7399",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 73356.78027282198,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 153,
+      "is_closed": true,
+      "label": "Right anterior basal bronchopulmonary segment",
+      "node_name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.002085696774462784,
+      "percentage_of_tissue_block": 0.153,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7364",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 133768.08382366848,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchopulmonary_segment",
+      "intersection_volume": 722,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.005397401079256932,
+      "percentage_of_tissue_block": 0.722,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/060270d8-d718-48c6-9071-0f16715fd0e3": [],
+  "http://purl.org/ccf/1.5/7d2562bc-362d-448b-aa14-94f670451d43": [
+    {
+      "AS_volume": 73356.78027282198,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 111,
+      "is_closed": true,
+      "label": "Right anterior basal bronchopulmonary segment",
+      "node_name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.001513152561865157,
+      "percentage_of_tissue_block": 0.111,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7364",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 133768.08382366848,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchopulmonary_segment",
+      "intersection_volume": 921,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.006885050407196169,
+      "percentage_of_tissue_block": 0.921,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/7812d402-7736-4e6a-a811-a2f60209f215": [
+    {
+      "AS_volume": 27714.76682308308,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_right_cardiac_atrium",
+      "intersection_volume": 118,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_M_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.004257658047540207,
+      "percentage_of_tissue_block": 0.118,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/eff29ae4-648f-471d-a755-f64f9b55ec2d": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 497,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0040870298422832,
+      "percentage_of_tissue_block": 0.497,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/e8a1613e-89d7-4af0-9f02-039faec60798": [
+    {
+      "AS_volume": 815.4515173811651,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_papillary_muscle_of_heart_anterior",
+      "intersection_volume": 235,
+      "is_closed": true,
+      "label": "Anterior papillary muscle of left ventricle",
+      "node_name": "VH_M_papillary_muscle_of_heart_anterior",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.28818390179063746,
+      "percentage_of_tissue_block": 0.235,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7264",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/1cb9cb2e-48f3-4989-b999-16d3fcf03af1": [],
+  "http://purl.org/ccf/1.5/30f1dbe1-8aa4-48b8-af58-1222848fa9e7": [
+    {
+      "AS_volume": 73988.23445308174,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 28,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.00037843854779040146,
+      "percentage_of_tissue_block": 0.028,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/0835cdfb-0f85-4a9d-9370-56b8c0658c41": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 959,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.00788624068158871,
+      "percentage_of_tissue_block": 0.959,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/ada28a11-3bf1-460d-88cb-9c639a436271": [
+    {
+      "AS_volume": 121604.20138316223,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 956,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.007861570481333478,
+      "percentage_of_tissue_block": 0.956,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/5c5a04f6-28a5-4d27-8244-f1457b6f6e7e": [
+    {
+      "AS_volume": 31345.343732677004,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_left_cardiac_atrium",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "left cardiac atrium",
+      "node_name": "VH_M_left_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002079",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/45c73f10-d277-49fa-9c6c-93408c47cf1b": [],
+  "http://purl.org/ccf/1.5/b7b4a84b-d8ef-46fb-80ad-5aad5b94e33d": [
+    {
+      "AS_volume": 815.4515173811651,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_papillary_muscle_of_heart_anterior",
+      "intersection_volume": 123,
+      "is_closed": true,
+      "label": "Anterior papillary muscle of left ventricle",
+      "node_name": "VH_M_papillary_muscle_of_heart_anterior",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.15083668051169535,
+      "percentage_of_tissue_block": 0.123,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7264",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 73988.23445308174,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 9,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.0001216409617897719,
+      "percentage_of_tissue_block": 0.009,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/80e52433-fc23-459c-be91-c02b4a466135": [
+    {
+      "AS_volume": 2109804.44224585,
+      "id": "https://purl.humanatlas.io/ref-organ/skin-male/v1.3#primary",
+      "intersection_volume": 22007.471999999998,
+      "is_closed": true,
+      "label": "skin",
+      "node_name": "VH_M_skin",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_skin-male_v1.3_assets_3d-vh-m-skin",
+      "percentage_of_AS": 0.010431048280746546,
+      "percentage_of_tissue_block": 0.818,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002097",
+      "tissue_volume": 26904
+    }
+  ],
+  "http://purl.org/ccf/1.5/6eb4b90c-1e6f-4569-9d7c-39597ac473fa": [
+    {
+      "AS_volume": 33225.89437462366,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_cardiac_atrium",
+      "intersection_volume": 353,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_F_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.010624243730504494,
+      "percentage_of_tissue_block": 0.706,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/ca1a3a63-73a4-43f5-9f50-7ead87e794e6": [
+    {
+      "AS_volume": 33225.89437462366,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_cardiac_atrium",
+      "intersection_volume": 288,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_F_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.00866793822772038,
+      "percentage_of_tissue_block": 0.384,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 750
+    },
+    {
+      "AS_volume": 126833.33289241862,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_left_cardiac_atrium",
+      "intersection_volume": 3.75,
+      "is_closed": true,
+      "label": "left cardiac atrium",
+      "node_name": "VH_F_left_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.000029566360155344886,
+      "percentage_of_tissue_block": 0.005,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002079",
+      "tissue_volume": 750
+    }
+  ],
+  "http://purl.org/ccf/1.5/b7dfa61c-6913-40a7-86b2-9dda7d70da66": [
+    {
+      "AS_volume": 33225.89437462366,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_cardiac_atrium",
+      "intersection_volume": 424,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_F_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.01276113127969945,
+      "percentage_of_tissue_block": 0.848,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/cbab45d3-6a15-49b4-a908-2fb15c19fee8": [
+    {
+      "AS_volume": 33225.89437462366,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_cardiac_atrium",
+      "intersection_volume": 219.5,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_F_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.006606293197863276,
+      "percentage_of_tissue_block": 0.439,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/ea8c359b-30d5-45ae-ba52-361c509cdf4d": [
+    {
+      "AS_volume": 33225.89437462366,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_cardiac_atrium",
+      "intersection_volume": 219.5,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_F_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.006606293197863276,
+      "percentage_of_tissue_block": 0.439,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 229312.78018826462,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_left_ventricle",
+      "intersection_volume": 182,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_F_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.000793675781395956,
+      "percentage_of_tissue_block": 0.364,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 126833.33289241862,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_left_cardiac_atrium",
+      "intersection_volume": 20,
+      "is_closed": true,
+      "label": "left cardiac atrium",
+      "node_name": "VH_F_left_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.00015768725416183938,
+      "percentage_of_tissue_block": 0.04,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002079",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/727ef0bb-6a39-441c-bca1-a295eb9dddd8": [
+    {
+      "AS_volume": 33225.89437462366,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_cardiac_atrium",
+      "intersection_volume": 144,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_F_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.00433396911386019,
+      "percentage_of_tissue_block": 0.288,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/e66ea49c-d918-404b-bad3-f145027203fe": [
+    {
+      "AS_volume": 126833.33289241862,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_left_cardiac_atrium",
+      "intersection_volume": 45.5,
+      "is_closed": true,
+      "label": "left cardiac atrium",
+      "node_name": "VH_F_left_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.0003587385032181846,
+      "percentage_of_tissue_block": 0.091,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002079",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/1ece4b6a-05d0-4f85-a620-d60eea9b7880": [
+    {
+      "AS_volume": 126833.33289241862,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_left_cardiac_atrium",
+      "intersection_volume": 402.5,
+      "is_closed": true,
+      "label": "left cardiac atrium",
+      "node_name": "VH_F_left_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.0031734559900070177,
+      "percentage_of_tissue_block": 0.805,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002079",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/5e6f98f7-50ae-4dae-9ded-035826213f52": [
+    {
+      "AS_volume": 4401.498768462402,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_papillary_muscle_of_heart_posmed",
+      "intersection_volume": 867,
+      "is_closed": true,
+      "label": "Posteromedial head of posterior papillary muscle of left ventricle",
+      "node_name": "VH_F_papillary_muscle_of_heart_posmed",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.19697835796575117,
+      "percentage_of_tissue_block": 0.867,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7267",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 65894.51634256751,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_interventricular_septum",
+      "intersection_volume": 12,
+      "is_closed": true,
+      "label": "interventricular septum",
+      "node_name": "VH_F_interventricular_septum",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.00018210923557910786,
+      "percentage_of_tissue_block": 0.012,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002094",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/554338ef-c514-41c6-b696-a6d11e00cd3e": [
+    {
+      "AS_volume": 78646.79879643944,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_ventricle",
+      "intersection_volume": 447,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_F_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.005683638836425684,
+      "percentage_of_tissue_block": 0.894,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/aa38865a-54c3-4523-9e56-65b5be52f5a4": [
+    {
+      "AS_volume": 229312.78018826462,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_left_ventricle",
+      "intersection_volume": 394,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_F_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.0017181772410439925,
+      "percentage_of_tissue_block": 0.394,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/726422c3-7f56-4d16-8c3e-d761dc83d614": [
+    {
+      "AS_volume": 33225.89437462366,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_cardiac_atrium",
+      "intersection_volume": 121,
+      "is_closed": true,
+      "label": "right cardiac atrium",
+      "node_name": "VH_F_right_cardiac_atrium",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.0036417379359519656,
+      "percentage_of_tissue_block": 0.242,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002078",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 229312.78018826462,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_left_ventricle",
+      "intersection_volume": 67.5,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_F_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.00029435777606718147,
+      "percentage_of_tissue_block": 0.135,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 500
+    }
   ]
 }
