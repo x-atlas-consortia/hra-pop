@@ -27,23 +27,21 @@ async function getCorridor(ruiLocation) {
     return glbFile;
   } else {
     console.log(id);
-    if (id === 'TODO: Call API when it has been deployed to production') {
-      return fetch(API, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(ruiLocation),
+    return fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(ruiLocation),
+    })
+      .then((r) => r.arrayBuffer())
+      .then((r) => {
+        writeFileSync(join(CORRIDOR_CACHE, glbFile), Buffer.from(r));
+        cpSync(join(CORRIDOR_CACHE, glbFile), join(CORRIDOR_DIR, glbFile))
+        return glbFile;
       })
-        .then((r) => r.arrayBuffer())
-        .then((r) => {
-          writeFileSync(join(CORRIDOR_CACHE, glbFile), Buffer.from(r));
-          cpSync(join(CORRIDOR_CACHE, glbFile), join(CORRIDOR_DIR, glbFile))
-          return glbFile;
-        })
-        .catch((e) => {
-          console.log(e, ruiLocation);
-          return undefined;
-        });
-    }
+      .catch((e) => {
+        console.log(e, ruiLocation);
+        return undefined;
+      });
   }
 }
 
