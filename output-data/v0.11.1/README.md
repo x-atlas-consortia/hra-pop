@@ -1,6 +1,6 @@
 # HRApop v0.11.1
 
-HRApop is part of the Human Reference Atlas (HRA) <https://humanatlas.io> and published in the HRA Knowledge Graph (HRA-KG). HRApop v0.11.1 was generated on Thu Oct 31 19:04:52 EDT 2024. Users should use the data published to the HRA-KG at <https://lod.humanatlas.io/graph/hra-pop/v0.11.1/>. The full dataset graph of all datasets considered for HRApop v0.11.1 without enrichment is also available at <https://lod.humanatlas.io/ds-graph/hra-pop-full/v0.11.1/>.
+HRApop is part of the Human Reference Atlas (HRA) <https://humanatlas.io> and published in the HRA Knowledge Graph (HRA-KG). HRApop v0.11.1 was generated on Fri Nov  1 06:15:52 PM EDT 2024. Users should use the data published to the HRA-KG at <https://lod.humanatlas.io/graph/hra-pop/v0.11.1/>. The full dataset graph of all datasets considered for HRApop v0.11.1 without enrichment is also available at <https://lod.humanatlas.io/ds-graph/hra-pop-full/v0.11.1/>.
 
 Primary outputs which make up the official HRApop:
 

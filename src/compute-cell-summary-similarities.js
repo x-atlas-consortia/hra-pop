@@ -55,7 +55,7 @@ for (const modality of Object.keys(summaryLookup)) {
     const [a, toolA, sexA] = result.cell_source_a.split('||||');
     const [b, toolB, sexB] = result.cell_source_b.split('||||');
     const sim = result.similarity;
-    if (a !== b) {
+    if (a && a !== b) {
       const line = `[] a Edge:; mod: "${modality}"; toolA: "${toolA}"; toolB: "${toolB}"; sexA: "${sexA}"; sexB: "${sexB}"; a: <${a}>; b: <${b}>; sim: ${sim} .\n`;
 
       if (!results.write(line)) {

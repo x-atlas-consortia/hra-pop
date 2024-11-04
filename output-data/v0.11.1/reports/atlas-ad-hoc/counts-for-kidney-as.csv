@@ -1,4 +1,34 @@
 sex,organ,as_label,cell_label,cell_id,mean_cell_count,cell_count
+Female,VHFLeftKidney,renal papilla,Afferent / Efferent Arteriole Endothelial,http://purl.obolibrary.org/obo/CL_1000412,1,2
+Female,VHFLeftKidney,renal papilla,Ascending Thin Limb,http://purl.obolibrary.org/obo/CL_1001107,442.75,1771
+Female,VHFLeftKidney,renal papilla,Ascending Vasa Recta Endothelial,http://purl.obolibrary.org/obo/CL_1001131,201.25,805
+Female,VHFLeftKidney,renal papilla,Connecting Tubule,http://purl.obolibrary.org/obo/CL_1000768,1008.75,4035
+Female,VHFLeftKidney,renal papilla,Cortical Collecting Duct Principal,http://purl.obolibrary.org/obo/CL_1000714,140.75,563
+Female,VHFLeftKidney,renal papilla,Cortical Thick Ascending Limb,http://purl.obolibrary.org/obo/CL_1001109,1,1
+Female,VHFLeftKidney,renal papilla,Descending Thin Limb Type 1,http://purl.obolibrary.org/obo/CL_4030012,312.75,1251
+Female,VHFLeftKidney,renal papilla,Descending Thin Limb Type 2,http://purl.obolibrary.org/obo/CL_4030013,9.66666666666666666667,29
+Female,VHFLeftKidney,renal papilla,Descending Thin Limb Type 3,http://purl.obolibrary.org/obo/CL_4030014,318.5,1274
+Female,VHFLeftKidney,renal papilla,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,38,152
+Female,VHFLeftKidney,renal papilla,Distal Convoluted Tubule Type 1,http://purl.obolibrary.org/obo/CL_4030016,69,138
+Female,VHFLeftKidney,renal papilla,Fibroblast,http://purl.obolibrary.org/obo/CL_1000692,1.33333333333333333333,4
+Female,VHFLeftKidney,renal papilla,Inner Medullary Collecting Duct,http://purl.obolibrary.org/obo/CL_1000718,2025.75,8103
+Female,VHFLeftKidney,renal papilla,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,3,6
+Female,VHFLeftKidney,renal papilla,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,47.25,189
+Female,VHFLeftKidney,renal papilla,Macula Densa,http://purl.obolibrary.org/obo/CL_1000850,27,108
+Female,VHFLeftKidney,renal papilla,Mast,http://purl.obolibrary.org/obo/CL_0000097,20,40
+Female,VHFLeftKidney,renal papilla,Medullary Fibroblast,http://purl.obolibrary.org/obo/CL_4030022,348,1392
+Female,VHFLeftKidney,renal papilla,Medullary Thick Ascending Limb,http://purl.obolibrary.org/obo/CL_1001108,15,30
+Female,VHFLeftKidney,renal papilla,Monocyte-derived,http://purl.obolibrary.org/obo/CL_0011031,11,44
+Female,VHFLeftKidney,renal papilla,Natural Killer T,http://purl.obolibrary.org/obo/CL_0000814,2.5,5
+Female,VHFLeftKidney,renal papilla,Outer Medullary Collecting Duct Intercalated Type A,http://purl.obolibrary.org/obo/CL_1000717,2,2
+Female,VHFLeftKidney,renal papilla,Outer Medullary Collecting Duct Principal,http://purl.obolibrary.org/obo/CL_1000716,6.75,27
+Female,VHFLeftKidney,renal papilla,Papillary Tip Epithelial,http://purl.obolibrary.org/obo/CL_1000597,359,1436
+Female,VHFLeftKidney,renal papilla,Parietal Epithelial,http://purl.obolibrary.org/obo/CL_1000452,6,12
+Female,VHFLeftKidney,renal papilla,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,16,32
+Female,VHFLeftKidney,renal papilla,Plasmacytoid Dendritic,http://purl.obolibrary.org/obo/CL_0001058,1,2
+Female,VHFLeftKidney,renal papilla,Proximal Tubule Epithelial Segment 1,http://purl.obolibrary.org/obo/CL_4030009,1,2
+Female,VHFLeftKidney,renal papilla,T,http://purl.obolibrary.org/obo/CL_0000084,29.5,118
+Female,VHFLeftKidney,renal papilla,Vascular Smooth Muscle / Pericyte,http://purl.obolibrary.org/obo/CL_1001318,20.25,81
 Female,VHFLeftKidney,renal pyramid,Afferent / Efferent Arteriole Endothelial,http://purl.obolibrary.org/obo/CL_1000412,69.42424242424242424242,2291
 Female,VHFLeftKidney,renal pyramid,Ascending Thin Limb,http://purl.obolibrary.org/obo/CL_1001107,1128.13888888888888888889,40613
 Female,VHFLeftKidney,renal pyramid,Ascending Vasa Recta Endothelial,http://purl.obolibrary.org/obo/CL_1001131,283.5,9639
@@ -48,6 +78,42 @@ Female,VHFLeftKidney,renal pyramid,Renin-positive Juxtaglomerular Granular,http:
 Female,VHFLeftKidney,renal pyramid,Schwann / Neural,http://purl.obolibrary.org/obo/CL_0002573,13.6,272
 Female,VHFLeftKidney,renal pyramid,T,http://purl.obolibrary.org/obo/CL_0000084,93.52777777777777777778,3367
 Female,VHFLeftKidney,renal pyramid,Vascular Smooth Muscle / Pericyte,http://purl.obolibrary.org/obo/CL_1001318,334.22580645161290322581,10361
+Female,VHFRightKidney,renal papilla,Ascending Thin Limb,http://purl.obolibrary.org/obo/CL_1001107,760.5,1521
+Female,VHFRightKidney,renal papilla,Ascending Vasa Recta Endothelial,http://purl.obolibrary.org/obo/CL_1001131,508.5,1017
+Female,VHFRightKidney,renal papilla,Connecting Tubule,http://purl.obolibrary.org/obo/CL_1000768,790,1580
+Female,VHFRightKidney,renal papilla,Connecting Tubule Intercalated Type A,http://purl.obolibrary.org/obo/CL_4030020,1,2
+Female,VHFRightKidney,renal papilla,Connecting Tubule Principal,http://purl.obolibrary.org/obo/CL_4030018,60,60
+Female,VHFRightKidney,renal papilla,Cortical Collecting Duct Principal,http://purl.obolibrary.org/obo/CL_1000714,360,720
+Female,VHFRightKidney,renal papilla,Cortical Thick Ascending Limb,http://purl.obolibrary.org/obo/CL_1001109,33,66
+Female,VHFRightKidney,renal papilla,Descending Thin Limb Type 1,http://purl.obolibrary.org/obo/CL_4030012,337,674
+Female,VHFRightKidney,renal papilla,Descending Thin Limb Type 2,http://purl.obolibrary.org/obo/CL_4030013,37,74
+Female,VHFRightKidney,renal papilla,Descending Thin Limb Type 3,http://purl.obolibrary.org/obo/CL_4030014,478.5,957
+Female,VHFRightKidney,renal papilla,"Descending Vasa Recta Endothelial ",https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,563,1126
+Female,VHFRightKidney,renal papilla,Distal Convoluted Tubule Type 1,http://purl.obolibrary.org/obo/CL_4030016,1,1
+Female,VHFRightKidney,renal papilla,Fibroblast,http://purl.obolibrary.org/obo/CL_1000692,78.5,157
+Female,VHFRightKidney,renal papilla,Glomerular Capillary Endothelial,http://purl.obolibrary.org/obo/CL_1001005,20,20
+Female,VHFRightKidney,renal papilla,Inner Medullary Collecting Duct,http://purl.obolibrary.org/obo/CL_1000718,2454,4908
+Female,VHFRightKidney,renal papilla,Intercalated Type B,http://purl.obolibrary.org/obo/CL_0002201,1,1
+Female,VHFRightKidney,renal papilla,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,1,2
+Female,VHFRightKidney,renal papilla,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,114.5,229
+Female,VHFRightKidney,renal papilla,Macula Densa,http://purl.obolibrary.org/obo/CL_1000850,7,14
+Female,VHFRightKidney,renal papilla,Mast,http://purl.obolibrary.org/obo/CL_0000097,4.5,9
+Female,VHFRightKidney,renal papilla,Medullary Fibroblast,http://purl.obolibrary.org/obo/CL_4030022,2029,4058
+Female,VHFRightKidney,renal papilla,Medullary Thick Ascending Limb,http://purl.obolibrary.org/obo/CL_1001108,477,954
+Female,VHFRightKidney,renal papilla,Mesangial,http://purl.obolibrary.org/obo/CL_0000650,22.5,45
+Female,VHFRightKidney,renal papilla,Monocyte-derived,http://purl.obolibrary.org/obo/CL_0011031,6,12
+Female,VHFRightKidney,renal papilla,Non-classical monocyte,http://purl.obolibrary.org/obo/CL_0000875,1,2
+Female,VHFRightKidney,renal papilla,Outer Medullary Collecting Duct Intercalated Type A,http://purl.obolibrary.org/obo/CL_1000717,110,220
+Female,VHFRightKidney,renal papilla,Outer Medullary Collecting Duct Principal,http://purl.obolibrary.org/obo/CL_1000716,187.5,375
+Female,VHFRightKidney,renal papilla,Papillary Tip Epithelial,http://purl.obolibrary.org/obo/CL_1000597,65.5,131
+Female,VHFRightKidney,renal papilla,Parietal Epithelial,http://purl.obolibrary.org/obo/CL_1000452,6,12
+Female,VHFRightKidney,renal papilla,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,22.5,45
+Female,VHFRightKidney,renal papilla,Plasma,http://purl.obolibrary.org/obo/CL_0000786,4,8
+Female,VHFRightKidney,renal papilla,Proximal Tubule Epithelial Segment 1,http://purl.obolibrary.org/obo/CL_4030009,12,24
+Female,VHFRightKidney,renal papilla,Proximal Tubule Epithelial Segment 2,http://purl.obolibrary.org/obo/CL_4030010,2,2
+Female,VHFRightKidney,renal papilla,Proximal Tubule Epithelial Segment 3,http://purl.obolibrary.org/obo/CL_4030011,76.5,153
+Female,VHFRightKidney,renal papilla,T,http://purl.obolibrary.org/obo/CL_0000084,31,62
+Female,VHFRightKidney,renal papilla,Vascular Smooth Muscle / Pericyte,http://purl.obolibrary.org/obo/CL_1001318,180.5,361
 Female,VHFRightKidney,renal pyramid,Afferent / Efferent Arteriole Endothelial,http://purl.obolibrary.org/obo/CL_1000412,161.8,1618
 Female,VHFRightKidney,renal pyramid,Ascending Thin Limb,http://purl.obolibrary.org/obo/CL_1001107,2771.6,41574
 Female,VHFRightKidney,renal pyramid,Ascending Vasa Recta Endothelial,http://purl.obolibrary.org/obo/CL_1001131,387.46666666666666666667,5812

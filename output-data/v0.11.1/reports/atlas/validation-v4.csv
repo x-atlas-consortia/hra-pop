@@ -1,9 +1,9 @@
 sex,tool,modality,asctb_only,both,exp_only
-Female,sc_proteomics,sc_proteomics,1192,3,22
-Male,sc_proteomics,sc_proteomics,1192,3,22
-Female,azimuth,sc_transcriptomics,1118,77,14
+Female,sc_proteomics,sc_proteomics,1192,3,26
+Male,sc_proteomics,sc_proteomics,1192,3,26
+Female,azimuth,sc_transcriptomics,1112,83,19
 Male,azimuth,sc_transcriptomics,1112,83,19
-Female,celltypist,sc_transcriptomics,1125,70,158
+Female,celltypist,sc_transcriptomics,1121,74,158
 Male,celltypist,sc_transcriptomics,1121,74,158
-Female,popv,sc_transcriptomics,1144,51,21
-Male,popv,sc_transcriptomics,1132,63,17
+Female,popv,sc_transcriptomics,1125,70,21
+Male,popv,sc_transcriptomics,1125,70,17
