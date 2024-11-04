@@ -36,7 +36,8 @@
       "@id": "ccf:has_corridor"
     },
     "aggregated_cell_source": {
-      "@id": "ccf:cell_source"
+      "@id": "ccf:cell_source",
+      "@type": "@id"
     },
     "summaries": {
       "@id": "ccf:has_cell_summary"

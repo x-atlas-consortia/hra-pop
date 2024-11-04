@@ -129,10 +129,11 @@ WHERE {
   ?as ccf:has_cell_summary [
       ccf:sex ?sex ;
       ccf:aggregates [
-        ccf:cell_source ?dataset ;
+        ccf:cell_source ?dataset_ ;
         ccf:percentage_of_total ?percent ;
       ] ;
     ] .
+  BIND(IRI(?dataset_) as ?dataset)
   ?as ccf:ccf_pref_label ?_as_label .
   ?dataset ccf:has_cell_summary [
     ccf:sex ?sex ;
@@ -163,7 +164,12 @@ ORDER BY ?tool ?sex ?as_label DESC(?mean_gene_expr)
 
 | sex | tool | as_label | cell_label | gene_label | as | cell_id | cell_count | mean_gene_expr |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-
+| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | ENSG00000280441.3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 0 | 1139.4583129882815 |
+| Female | azimuth | kidney capsule | Inner Medullary Collecting Duct | ENSG00000280441.3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_1000718 | 0 | 191.4571075439453 |
+| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-CO3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 0 | 166.96894836425785 |
+| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-RNR2 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 0 | 127.1288843154907075 |
+| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-CO2 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 0 | 126.62272262573245 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ## atlas-ad-hoc
 
