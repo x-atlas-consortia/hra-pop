@@ -1,8 +1,8 @@
 sex,as,tool,modality,pct_hra_ct_overlap
-Female,http://purl.obolibrary.org/obo/UBERON_0001153,sc_proteomics,sc_proteomics,0.12
+Female,http://purl.obolibrary.org/obo/UBERON_0001153,sc_proteomics,sc_proteomics,0.06666666666666666667
 Female,http://purl.obolibrary.org/obo/UBERON_0001153,celltypist,sc_transcriptomics,0.01526717557251908397
 Female,http://purl.obolibrary.org/obo/UBERON_0001153,popv,sc_transcriptomics,0.8125
-Female,http://purl.obolibrary.org/obo/UBERON_0001156,sc_proteomics,sc_proteomics,0.12
+Female,http://purl.obolibrary.org/obo/UBERON_0001156,sc_proteomics,sc_proteomics,0.06666666666666666667
 Female,http://purl.obolibrary.org/obo/UBERON_0001156,celltypist,sc_transcriptomics,0.01503759398496240602
 Female,http://purl.obolibrary.org/obo/UBERON_0001156,popv,sc_transcriptomics,0.8125
 Female,http://purl.obolibrary.org/obo/UBERON_0001157,sc_proteomics,sc_proteomics,0.12
@@ -17,6 +17,7 @@ Female,http://purl.obolibrary.org/obo/UBERON_0001159,popv,sc_transcriptomics,0.7
 Female,http://purl.obolibrary.org/obo/UBERON_0001222,azimuth,sc_transcriptomics,0.90322580645161290323
 Female,http://purl.obolibrary.org/obo/UBERON_0001223,azimuth,sc_transcriptomics,0.9
 Female,http://purl.obolibrary.org/obo/UBERON_0001228,azimuth,sc_transcriptomics,0.9
+Female,http://purl.obolibrary.org/obo/UBERON_0001248,sc_proteomics,sc_proteomics,0.08333333333333333333
 Female,http://purl.obolibrary.org/obo/UBERON_0001248,popv,sc_transcriptomics,1
 Female,http://purl.obolibrary.org/obo/UBERON_0001257,popv,sc_transcriptomics,1
 Female,http://purl.obolibrary.org/obo/UBERON_0001284,azimuth,sc_transcriptomics,0.91304347826086956522
@@ -36,6 +37,7 @@ Female,http://purl.obolibrary.org/obo/UBERON_0002084,popv,sc_transcriptomics,0.8
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,azimuth,sc_transcriptomics,0.9
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,celltypist,sc_transcriptomics,0.80487804878048780488
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,popv,sc_transcriptomics,0.83333333333333333333
+Female,http://purl.obolibrary.org/obo/UBERON_0002097,sc_proteomics,sc_proteomics,0.25
 Female,http://purl.obolibrary.org/obo/UBERON_0002097,celltypist,sc_transcriptomics,0.85714285714285714286
 Female,http://purl.obolibrary.org/obo/UBERON_0002097,popv,sc_transcriptomics,0.95238095238095238095
 Female,http://purl.obolibrary.org/obo/UBERON_0002115,sc_proteomics,sc_proteomics,0.12

@@ -1,4 +1,5 @@
 donor,consortium,tissue_provider,age,sex,bmi,race
+https://entity.api.hubmapconsortium.org/entities/e9f8d577aa01abb9c6ffdd31862be16a,HuBMAP,TMC-UCSD,43,Male,24.7,White
 https://entity.api.hubmapconsortium.org/entities/f0aa7e5d01c0d40f0b284cbf85eb8d03,HuBMAP,TMC-CalTech,55,Female,32.2,White
 https://entity.api.hubmapconsortium.org/entities/f84ff583687f3407636d8ce843b48ff0,HuBMAP,TMC-Stanford,37,Male,29.3,White
 https://entity.api.hubmapconsortium.org/entities/f8d963cab6bd10e2a4b8184ea8197fc1,HuBMAP,TMC-UCSD,57,Female,19.6,White
@@ -9,6 +10,8 @@ https://entity.api.sennetconsortium.org/entities/5c92452af6d4201f284fdc05cae7fbe
 https://entity.api.sennetconsortium.org/entities/8e9308decac252504d2079fd29eacb8b,SenNet,TMC - Washington University,37,Male,29.19,White
 https://entity.api.sennetconsortium.org/entities/a85236c4ccf27d67dff6b317fefa3084,SenNet,TMC - Washington University,69,Female,25.42,White
 https://entity.api.sennetconsortium.org/entities/c8da71c176451ab3072c9d0eb7fce65b,SenNet,TMC - University of Pittsburgh,69,Male,31.8,White
+https://hubmapconsortium.github.io/hra-registrations/staging/hubmap-lung-pryhuber-2023/rui_locations.jsonld#Donor1,HuBMAP,University of California San Diego,23,Male,23.1,
+https://hubmapconsortium.github.io/hra-registrations/staging/hubmap-lung-pryhuber-2023/rui_locations.jsonld#Donor2,HuBMAP,University of California San Diego,1,Female,,
 https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032_Donor,NHLBI/LungMap,NHLBI/LungMap,3,Male,,
 https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D046_Donor,NHLBI/LungMap,NHLBI/LungMap,3,Male,,
 https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D062_Donor,NHLBI/LungMap,NHLBI/LungMap,,Male,,
@@ -32,6 +35,7 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e
 https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5_Donor,HCA,Broad Institute,50,Female,20,
 https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6_Donor,HCA,Broad Institute,40,Female,20,
 https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7_Donor,HCA,Broad Institute,45,Female,25,
+https://doi.org/10.1016/j.cell.2022.12.028/CRC1#Donor,HuBMAP,Harvard University,69,Male,,
 https://doi.org/10.1126/science.abl4290#GTEX-12BJ1,GTEx,GTEx,,Male,,
 https://doi.org/10.1126/science.abl4290#GTEX-13N11,GTEx,GTEx,,Female,,
 https://doi.org/10.1126/science.abl4290#GTEX-15CHR,GTEx,GTEx,,Male,,
@@ -108,4 +112,3 @@ https://entity.api.hubmapconsortium.org/entities/e3d3717ad581030c03bed6641d76e08
 https://entity.api.hubmapconsortium.org/entities/e4e4ab805cb51f2c7f3f1f7010220598,HuBMAP,RTI-General Electric,52,Female,23.4,White
 https://entity.api.hubmapconsortium.org/entities/e5d3c8ea4ce06c7f1bca2c6419f49346,HuBMAP,TMC-CalTech,45,Male,33.1,White
 https://entity.api.hubmapconsortium.org/entities/e742ac485a0614e4114a26886ed0b444,HuBMAP,TMC-UCSD,69,Female,49.1,White
-https://entity.api.hubmapconsortium.org/entities/e9f8d577aa01abb9c6ffdd31862be16a,HuBMAP,TMC-UCSD,43,Male,24.7,White
