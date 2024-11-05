@@ -6,7 +6,7 @@ PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 
 SELECT ?sex ?tool  
   (SAMPLE(?_as_label) as ?as_label)
@@ -15,7 +15,7 @@ SELECT ?sex ?tool
   ?as ?cell_id
   (SUM(?_cell_count) AS ?cell_count)
   (AVG(xsd:decimal(?gene_expr)) as ?mean_gene_expr)
-FROM CCF:
+FROM HRA:
 FROM HRApop:
 WHERE {
   ?as ccf:has_cell_summary [

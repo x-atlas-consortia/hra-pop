@@ -8,7 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
@@ -38,7 +38,7 @@ WHERE {
       ccf:placement_relative_to ?refOrgan .
   }
 
-  GRAPH CCF: {
+  GRAPH HRA: {
     ?refOrgan ccf:representation_of ?organIri .
     ?organIri rdfs:label ?organ .
 
@@ -86,7 +86,7 @@ WHERE {
           ]
         ] .
 
-        GRAPH CCF: {
+        GRAPH HRA: {
           ?cell_id ccf:ccf_asctb_type ?ct_type ;
               rdfs:label ?ct_cell_label .
           FILTER (?ct_type = 'CT')
@@ -99,7 +99,7 @@ WHERE {
         )
       }
 
-      GRAPH CCF: {
+      GRAPH HRA: {
         ?as ccf:ccf_asctb_type ?as_type .
         FILTER (?as_type = 'AS')
       }

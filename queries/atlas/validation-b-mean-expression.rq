@@ -8,7 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 
 SELECT DISTINCT
@@ -22,7 +22,7 @@ SELECT DISTINCT
   ?gene_label
   ?mean_gene_expression_value
 FROM HRApop:
-FROM CCF:
+FROM HRA:
 WHERE {
   ?dataset_id rdf:type ccf:Dataset ;
     ccf:organ_id ?organ_iri ;

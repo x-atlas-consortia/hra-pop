@@ -1,11 +1,11 @@
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
 
 SELECT ?label ?count
-FROM CCF:
+FROM HRA:
 FROM HRApop:
 FROM HRApopFull:
 FROM HRApopTestData:

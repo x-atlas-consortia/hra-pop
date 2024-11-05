@@ -21,7 +21,7 @@ const valuesRq = values.map(({ tool, organ }) => `("${tool}" ${organ})`).join(' 
 const query = `
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?organ
@@ -29,7 +29,7 @@ SELECT ?organ
   (IF(SUM(?celltypist) > 0, 'x', '') as ?celltypist) 
   (IF(SUM(?popv) > 0, 'x', '') as ?popv)
   (IF(SUM(?hasReferenceOrgan) > 0, 'x', '') as ?hasReferenceOrgan)
-FROM CCF:
+FROM HRA:
 WHERE {
   VALUES (?tool ?organId) {
     ${valuesRq}

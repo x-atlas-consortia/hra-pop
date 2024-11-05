@@ -7,7 +7,7 @@ PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
 PREFIX ccf: <http://purl.org/ccf/>
@@ -19,7 +19,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT ?tool ?cell_id (COUNT(DISTINCT(?dataset)) as ?dataset_count)
 FROM HRApop:
-FROM CCF:
+FROM HRA:
 WHERE {
     ?dataset a ccf:Dataset ;
       ccf:has_cell_summary [
