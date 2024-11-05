@@ -11,10 +11,10 @@ HCA,Female,116,40,36,40,40,76,sc_transcriptomics,659085
 HCA,Male,113,42,29,42,42,71,sc_transcriptomics,799317
 "HIRN, ESPACE",Male,1,0,1,0,0,1,N/A,0
 HRA,Female,1,0,1,0,0,1,N/A,0
-HTAN,Male,2,0,0,2,0,2,N/A,0
-HuBMAP,Female,1197,139,992,66,90,1034,sc_transcriptomics,3410547
-HuBMAP,Male,1643,339,1284,20,20,1304,sc_proteomics,16033284
-HuBMAP,Male,1643,339,1284,20,20,1304,sc_transcriptomics,10314608
+HTAN,Male,4,0,2,2,0,4,N/A,0
+HuBMAP,Female,1223,139,1018,66,90,1060,sc_transcriptomics,3410547
+HuBMAP,Male,1701,339,1342,20,20,1362,sc_proteomics,16033284
+HuBMAP,Male,1701,339,1342,20,20,1362,sc_transcriptomics,10314608
 KPMP,Male,3,0,3,0,0,3,N/A,0
 LungMap,Female,4,0,0,4,4,4,N/A,0
 LungMap,Male,5,0,0,5,5,5,N/A,0
@@ -23,7 +23,7 @@ NHLBI/LungMap,Male,8,7,1,0,0,1,sc_transcriptomics,109809
 SEA-AD,Female,1,0,0,1,1,1,N/A,0
 SPARC,Female,38,0,38,0,0,38,N/A,0
 SPARC,Male,12,0,12,0,0,12,N/A,0
-SenNet,Female,270,1,269,0,8,261,sc_transcriptomics,106259
-SenNet,Male,694,7,687,0,1,686,sc_transcriptomics,130930
+SenNet,Female,273,1,272,0,8,264,sc_transcriptomics,106259
+SenNet,Male,697,7,690,0,1,689,sc_transcriptomics,130930
 UEdinburgh,Female,36,0,36,0,0,36,N/A,0
 UEdinburgh,Male,28,0,28,0,0,28,N/A,0

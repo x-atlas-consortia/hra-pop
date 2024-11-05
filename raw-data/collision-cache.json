@@ -20823,5 +20823,774 @@
       "representation_of": "http://purl.org/sig/ont/fma/fma58272",
       "tissue_volume": 1.28
     }
+  ],
+  "http://purl.org/ccf/1.5/5b582f69-1a30-49f5-8e80-f6cefe4ea5be": [],
+  "http://purl.org/ccf/1.5/ab0a9d87-8479-41ef-85f2-e8bfea4a8bbd": [],
+  "http://purl.org/ccf/1.5/f1d552fe-cc92-478c-890c-cb95adc4b846": [],
+  "http://purl.org/ccf/1.5/d498378e-8682-45f3-9bfd-11b48023125c": [
+    {
+      "AS_volume": 942.0201302940093,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_capsule_of_lymph_node",
+      "intersection_volume": 573.3,
+      "is_closed": true,
+      "label": "capsule of lymph node",
+      "node_name": "Yao_capsule_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.6085857207967202,
+      "percentage_of_tissue_block": 0.84,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002194",
+      "tissue_volume": 682.5
+    },
+    {
+      "AS_volume": 278.88799741943694,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_medulla_of_lymph_node",
+      "intersection_volume": 170.625,
+      "is_closed": true,
+      "label": "medulla of lymph node",
+      "node_name": "Yao_medulla_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.6118047444809411,
+      "percentage_of_tissue_block": 0.25,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002007",
+      "tissue_volume": 682.5
+    },
+    {
+      "AS_volume": 28.214379629610068,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_blood_vasculature",
+      "intersection_volume": 21.84,
+      "is_closed": true,
+      "label": "Lymph vasculature",
+      "node_name": "Yao_blood_vasculature",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.7740733727520854,
+      "percentage_of_tissue_block": 0.032,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004536",
+      "tissue_volume": 682.5
+    },
+    {
+      "AS_volume": 293.8355714310636,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_paracortex",
+      "intersection_volume": 261.3975,
+      "is_closed": true,
+      "label": "lymph node T cell domain",
+      "node_name": "Yao_paracortex",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.8896046817167815,
+      "percentage_of_tissue_block": 0.383,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010417",
+      "tissue_volume": 682.5
+    },
+    {
+      "AS_volume": 31.02400033462975,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_efferent_lymph_node",
+      "intersection_volume": 16.38,
+      "is_closed": true,
+      "label": "efferent lymphatic vessel",
+      "node_name": "Yao_efferent_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.527978333655323,
+      "percentage_of_tissue_block": 0.024,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010397",
+      "tissue_volume": 682.5
+    },
+    {
+      "AS_volume": 96.51918078420495,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_follicles",
+      "intersection_volume": 55.2825,
+      "is_closed": true,
+      "label": "lymph node follicle",
+      "node_name": "Yao_follicles",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.5727618028959359,
+      "percentage_of_tissue_block": 0.081,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010748",
+      "tissue_volume": 682.5
+    }
+  ],
+  "http://purl.org/ccf/1.5/513a5005-f9e5-4a00-a08a-15b5d47c5ea0": [
+    {
+      "AS_volume": 850.1275594939912,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_capsule_of_lymph_node",
+      "intersection_volume": 718.575,
+      "is_closed": true,
+      "label": "capsule of lymph node",
+      "node_name": "Yao_capsule_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.8452555054534484,
+      "percentage_of_tissue_block": 0.737,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002194",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 147.57927470450656,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_medulla_of_lymph_node",
+      "intersection_volume": 202.79999999999998,
+      "is_closed": true,
+      "label": "medulla of lymph node",
+      "node_name": "Yao_medulla_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 1.3741766952443708,
+      "percentage_of_tissue_block": 0.208,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002007",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 0.948642593389049,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_afferent_lymphatic_vessel",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "afferent lymphatic vessel",
+      "node_name": "Yao_afferent_lymphatic_vessel",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010396",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 24.514518021586625,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_blood_vasculature",
+      "intersection_volume": 23.400000000000002,
+      "is_closed": true,
+      "label": "Lymph vasculature",
+      "node_name": "Yao_blood_vasculature",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.9545364089718094,
+      "percentage_of_tissue_block": 0.024,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004536",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 265.03192673933347,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_paracortex",
+      "intersection_volume": 268.125,
+      "is_closed": true,
+      "label": "lymph node T cell domain",
+      "node_name": "Yao_paracortex",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 1.0116705685187455,
+      "percentage_of_tissue_block": 0.275,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010417",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 28.056733858555,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_efferent_lymph_node",
+      "intersection_volume": 15.6,
+      "is_closed": true,
+      "label": "efferent lymphatic vessel",
+      "node_name": "Yao_efferent_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.5560162518789863,
+      "percentage_of_tissue_block": 0.016,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010397",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 87.07891430058334,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_follicles",
+      "intersection_volume": 78.97500000000001,
+      "is_closed": true,
+      "label": "lymph node follicle",
+      "node_name": "Yao_follicles",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.9069359745045761,
+      "percentage_of_tissue_block": 0.081,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010748",
+      "tissue_volume": 975
+    }
+  ],
+  "http://purl.org/ccf/1.5/6ed1eb65-077b-4c7d-925a-14fb1d6b66ae": [
+    {
+      "AS_volume": 850.1275594939912,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_capsule_of_lymph_node",
+      "intersection_volume": 713.6999999999999,
+      "is_closed": true,
+      "label": "capsule of lymph node",
+      "node_name": "Yao_capsule_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.8395210719022037,
+      "percentage_of_tissue_block": 0.732,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002194",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 147.57927470450656,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_medulla_of_lymph_node",
+      "intersection_volume": 187.20000000000002,
+      "is_closed": true,
+      "label": "medulla of lymph node",
+      "node_name": "Yao_medulla_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 1.2684707956101886,
+      "percentage_of_tissue_block": 0.192,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002007",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 0.948642593389049,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_afferent_lymphatic_vessel",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "afferent lymphatic vessel",
+      "node_name": "Yao_afferent_lymphatic_vessel",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010396",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 24.514518021586625,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_blood_vasculature",
+      "intersection_volume": 17.549999999999997,
+      "is_closed": true,
+      "label": "Lymph vasculature",
+      "node_name": "Yao_blood_vasculature",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.7159023067288569,
+      "percentage_of_tissue_block": 0.018,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004536",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 265.03192673933347,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_paracortex",
+      "intersection_volume": 256.425,
+      "is_closed": true,
+      "label": "lymph node T cell domain",
+      "node_name": "Yao_paracortex",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.9675249437106548,
+      "percentage_of_tissue_block": 0.263,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010417",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 28.056733858555,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_efferent_lymph_node",
+      "intersection_volume": 12.674999999999999,
+      "is_closed": true,
+      "label": "efferent lymphatic vessel",
+      "node_name": "Yao_efferent_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.45176320465167635,
+      "percentage_of_tissue_block": 0.013,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010397",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 87.07891430058334,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_follicles",
+      "intersection_volume": 78,
+      "is_closed": true,
+      "label": "lymph node follicle",
+      "node_name": "Yao_follicles",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.8957392340785935,
+      "percentage_of_tissue_block": 0.08,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010748",
+      "tissue_volume": 975
+    }
+  ],
+  "http://purl.org/ccf/1.5/e30fdc54-9fd4-4b57-ad9f-1c121c9c9a1c": [
+    {
+      "AS_volume": 942.0201302940093,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_capsule_of_lymph_node",
+      "intersection_volume": 191.815,
+      "is_closed": true,
+      "label": "capsule of lymph node",
+      "node_name": "Yao_capsule_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.2036209140670206,
+      "percentage_of_tissue_block": 0.908,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002194",
+      "tissue_volume": 211.25
+    },
+    {
+      "AS_volume": 278.88799741943694,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_medulla_of_lymph_node",
+      "intersection_volume": 61.473749999999995,
+      "is_closed": true,
+      "label": "medulla of lymph node",
+      "node_name": "Yao_medulla_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.22042450936870478,
+      "percentage_of_tissue_block": 0.291,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002007",
+      "tissue_volume": 211.25
+    },
+    {
+      "AS_volume": 28.214379629610068,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_blood_vasculature",
+      "intersection_volume": 7.816249999999999,
+      "is_closed": true,
+      "label": "Lymph vasculature",
+      "node_name": "Yao_blood_vasculature",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.27703072343285196,
+      "percentage_of_tissue_block": 0.037,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004536",
+      "tissue_volume": 211.25
+    },
+    {
+      "AS_volume": 293.8355714310636,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_paracortex",
+      "intersection_volume": 69.29,
+      "is_closed": true,
+      "label": "lymph node T cell domain",
+      "node_name": "Yao_paracortex",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.23581215733186356,
+      "percentage_of_tissue_block": 0.328,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010417",
+      "tissue_volume": 211.25
+    },
+    {
+      "AS_volume": 31.02400033462975,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_efferent_lymph_node",
+      "intersection_volume": 10.985,
+      "is_closed": true,
+      "label": "efferent lymphatic vessel",
+      "node_name": "Yao_efferent_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.3540807078878952,
+      "percentage_of_tissue_block": 0.052,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010397",
+      "tissue_volume": 211.25
+    },
+    {
+      "AS_volume": 96.51918078420495,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_follicles",
+      "intersection_volume": 20.28,
+      "is_closed": true,
+      "label": "lymph node follicle",
+      "node_name": "Yao_follicles",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.21011367725283012,
+      "percentage_of_tissue_block": 0.096,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010748",
+      "tissue_volume": 211.25
+    }
+  ],
+  "http://purl.org/ccf/1.5/f5f662ff-2ba4-4442-b7ae-0f48fcadb79e": [
+    {
+      "AS_volume": 850.1275594939912,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_capsule_of_lymph_node",
+      "intersection_volume": 532.532,
+      "is_closed": true,
+      "label": "capsule of lymph node",
+      "node_name": "Yao_capsule_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.6264142293151527,
+      "percentage_of_tissue_block": 0.532,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002194",
+      "tissue_volume": 1001
+    },
+    {
+      "AS_volume": 147.57927470450656,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_medulla_of_lymph_node",
+      "intersection_volume": 124.124,
+      "is_closed": true,
+      "label": "medulla of lymph node",
+      "node_name": "Yao_medulla_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.8410666080893111,
+      "percentage_of_tissue_block": 0.124,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002007",
+      "tissue_volume": 1001
+    },
+    {
+      "AS_volume": 0.948642593389049,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_afferent_lymphatic_vessel",
+      "intersection_volume": 1.0010000000000001,
+      "is_closed": true,
+      "label": "afferent lymphatic vessel",
+      "node_name": "Yao_afferent_lymphatic_vessel",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 1.055191920514451,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010396",
+      "tissue_volume": 1001
+    },
+    {
+      "AS_volume": 24.514518021586625,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_blood_vasculature",
+      "intersection_volume": 14.014000000000001,
+      "is_closed": true,
+      "label": "Lymph vasculature",
+      "node_name": "Yao_blood_vasculature",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.5716612493731169,
+      "percentage_of_tissue_block": 0.014,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004536",
+      "tissue_volume": 1001
+    },
+    {
+      "AS_volume": 265.03192673933347,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_paracortex",
+      "intersection_volume": 229.229,
+      "is_closed": true,
+      "label": "lymph node T cell domain",
+      "node_name": "Yao_paracortex",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.8649108913789595,
+      "percentage_of_tissue_block": 0.229,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010417",
+      "tissue_volume": 1001
+    },
+    {
+      "AS_volume": 28.056733858555,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_efferent_lymph_node",
+      "intersection_volume": 23.023,
+      "is_closed": true,
+      "label": "efferent lymphatic vessel",
+      "node_name": "Yao_efferent_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.8205873183980706,
+      "percentage_of_tissue_block": 0.023,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010397",
+      "tissue_volume": 1001
+    },
+    {
+      "AS_volume": 87.07891430058334,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_follicles",
+      "intersection_volume": 47.047,
+      "is_closed": true,
+      "label": "lymph node follicle",
+      "node_name": "Yao_follicles",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-male_v1.3_assets_3d-nih-m-lymph-node",
+      "percentage_of_AS": 0.5402800480217382,
+      "percentage_of_tissue_block": 0.047,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010748",
+      "tissue_volume": 1001
+    }
+  ],
+  "http://purl.org/ccf/1.5/64f4282f-8782-4a46-a647-20a76b09f83b": [
+    {
+      "AS_volume": 942.0201302940093,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_capsule_of_lymph_node",
+      "intersection_volume": 611.325,
+      "is_closed": true,
+      "label": "capsule of lymph node",
+      "node_name": "Yao_capsule_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.6489511002373192,
+      "percentage_of_tissue_block": 0.627,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002194",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 278.88799741943694,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_medulla_of_lymph_node",
+      "intersection_volume": 161.85,
+      "is_closed": true,
+      "label": "medulla of lymph node",
+      "node_name": "Yao_medulla_of_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.5803405004790642,
+      "percentage_of_tissue_block": 0.166,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002007",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 1.0955936786499063,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_afferent_lymphatic_vessel",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "afferent lymphatic vessel",
+      "node_name": "Yao_afferent_lymphatic_vessel",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010396",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 28.214379629610068,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_blood_vasculature",
+      "intersection_volume": 26.325,
+      "is_closed": true,
+      "label": "Lymph vasculature",
+      "node_name": "Yao_blood_vasculature",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.9330348689422457,
+      "percentage_of_tissue_block": 0.027,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004536",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 293.8355714310636,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_paracortex",
+      "intersection_volume": 260.325,
+      "is_closed": true,
+      "label": "lymph node T cell domain",
+      "node_name": "Yao_paracortex",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.8859546811577049,
+      "percentage_of_tissue_block": 0.267,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010417",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 31.02400033462975,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_efferent_lymph_node",
+      "intersection_volume": 30.225,
+      "is_closed": true,
+      "label": "efferent lymphatic vessel",
+      "node_name": "Yao_efferent_lymph_node",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.9742457347211319,
+      "percentage_of_tissue_block": 0.031,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010397",
+      "tissue_volume": 975
+    },
+    {
+      "AS_volume": 96.51918078420495,
+      "id": "https://purl.humanatlas.io/ref-organ/lymph-node-male/v1.3#Yao_follicles",
+      "intersection_volume": 59.475,
+      "is_closed": true,
+      "label": "lymph node follicle",
+      "node_name": "Yao_follicles",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lymph-node-female_v1.3_assets_3d-nih-f-lymph-node",
+      "percentage_of_AS": 0.6161987650203191,
+      "percentage_of_tissue_block": 0.061,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010748",
+      "tissue_volume": 975
+    }
+  ],
+  "http://purl.org/ccf/1.5/73f8bc08-60e7-4450-99d8-b303cd4687d8": [
+    {
+      "AS_volume": 433374.5168756519,
+      "id": "https://purl.humanatlas.io/ref-organ/large-intestine-male/v1.3#VH_M_sigmoid_colon",
+      "intersection_volume": 0.68,
+      "is_closed": true,
+      "label": "sigmoid colon",
+      "node_name": "VH_M_sigmoid_colon",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_large-intestine-male_v1.3_assets_3d-sbu-m-large-intestine",
+      "percentage_of_AS": 0.0000015690816453684385,
+      "percentage_of_tissue_block": 0.034,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001159",
+      "tissue_volume": 20
+    }
+  ],
+  "http://purl.org/ccf/1.5/fdd856ff-ecc6-4212-9495-dfabe5824c1e": [
+    {
+      "AS_volume": 25064.97680944368,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 1002.0522773146499,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.03997818489650901,
+      "percentage_of_tissue_block": 0.961,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1042.71829065
+    }
+  ],
+  "http://purl.org/ccf/1.5/a8841b8e-1c1d-443b-8c34-0fb9ad3bc07b": [
+    {
+      "AS_volume": 17853.03350342208,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 690.4949999999999
+    },
+    {
+      "AS_volume": 2540.835250769721,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_neck_of_pancreas",
+      "intersection_volume": 377.700765,
+      "is_closed": true,
+      "label": "Neck of pancreas",
+      "node_name": "VH_M_neck_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.14865220595691092,
+      "percentage_of_tissue_block": 0.547,
+      "representation_of": "http://purl.org/sig/ont/fma/fma14517",
+      "tissue_volume": 690.4949999999999
+    }
+  ],
+  "http://purl.org/ccf/1.5/165e57a5-be19-48f7-9358-e90263f6e39e": [
+    {
+      "AS_volume": 27934.486693864255,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 461.538,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.016522157899589246,
+      "percentage_of_tissue_block": 0.666,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 693
+    }
+  ],
+  "http://purl.org/ccf/1.5/085f73e0-bed6-4996-8f72-d968112e6ba8": [
+    {
+      "AS_volume": 17853.03350342208,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 2531.8270598400004,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.14181495034749686,
+      "percentage_of_tissue_block": 0.31,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 8167.184064000001
+    }
+  ],
+  "http://purl.org/ccf/1.5/27bf79f9-9f19-4359-8b15-4e0f837a1ae8": [
+    {
+      "AS_volume": 22109.44339613643,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 948,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.042877605872505165,
+      "percentage_of_tissue_block": 0.474,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 2000
+    }
+  ],
+  "http://purl.org/ccf/1.5/b9ca252e-773f-4390-a8ea-aebffbcfca46": [
+    {
+      "AS_volume": 31085.612809535753,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 296.59499999999997,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.009541230594914222,
+      "percentage_of_tissue_block": 0.351,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 845
+    },
+    {
+      "AS_volume": 2679.113212058907,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_neck_of_pancreas",
+      "intersection_volume": 120.835,
+      "is_closed": true,
+      "label": "Neck of pancreas",
+      "node_name": "VH_F_neck_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.04510261061612171,
+      "percentage_of_tissue_block": 0.143,
+      "representation_of": "http://purl.org/sig/ont/fma/fma14517",
+      "tissue_volume": 845
+    }
+  ],
+  "http://purl.org/ccf/1.5/035eb5bc-7ab2-412e-9692-c858e5d3a4a5": [
+    {
+      "AS_volume": 31085.612809535753,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 1071,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.03445323746911827,
+      "percentage_of_tissue_block": 0.476,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 2250
+    }
+  ],
+  "http://purl.org/ccf/1.5/8f035ca4-5d5f-455d-a17a-c8c2390e7285": [
+    {
+      "AS_volume": 22246.9448980002,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_tail_of_pancreas",
+      "intersection_volume": 381,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_F_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.017125947034383512,
+      "percentage_of_tissue_block": 0.254,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/784db350-cdea-4f34-9546-e47ac7013a4c": [
+    {
+      "AS_volume": 22109.44339613643,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 948,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.042877605872505165,
+      "percentage_of_tissue_block": 0.474,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 2000
+    }
+  ],
+  "http://purl.org/ccf/1.5/6559aa8f-09f5-492a-b206-e17820e379bd": [
+    {
+      "AS_volume": 31085.612809535753,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 845
+    },
+    {
+      "AS_volume": 2679.113212058907,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_neck_of_pancreas",
+      "intersection_volume": 434.33,
+      "is_closed": true,
+      "label": "Neck of pancreas",
+      "node_name": "VH_F_neck_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.16211707592088503,
+      "percentage_of_tissue_block": 0.514,
+      "representation_of": "http://purl.org/sig/ont/fma/fma14517",
+      "tissue_volume": 845
+    }
+  ],
+  "http://purl.org/ccf/1.5/2ed71cb0-6c12-4796-be49-9dc0705639b9": [
+    {
+      "AS_volume": 31085.612809535753,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 586.125,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.018855185631733842,
+      "percentage_of_tissue_block": 0.521,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1125
+    }
+  ],
+  "http://purl.org/ccf/1.5/9a0de434-786d-471a-ab74-f1d2b6d4df09": [
+    {
+      "AS_volume": 22246.9448980002,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_tail_of_pancreas",
+      "intersection_volume": 972,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_F_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.04369139243417526,
+      "percentage_of_tissue_block": 0.486,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 2000
+    }
   ]
 }
