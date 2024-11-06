@@ -21592,5 +21592,48 @@
       "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
       "tissue_volume": 2000
     }
+  ],
+  "http://purl.org/ccf/1.5/461a8adc-10d3-4518-8dd2-d2daccaa128b": [
+    {
+      "AS_volume": 132321.2564316647,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-female-left/v1.3#VH_F_outer_cortex_of_kidney_L",
+      "intersection_volume": 9,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_F_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-female-left_v1.3_assets_3d-vh-f-kidney-l",
+      "percentage_of_AS": 0.00006801628281581435,
+      "percentage_of_tissue_block": 0.9,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 10
+    },
+    {
+      "AS_volume": 12774.593784304867,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-female-left/v1.3#VH_F_kidney_capsule_L",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_F_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-female-left_v1.3_assets_3d-vh-f-kidney-l",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 10
+    }
+  ],
+  "http://purl.org/ccf/1.5/2b922426-d192-47fb-ba8e-1921ea21fe4c": [
+    {
+      "AS_volume": 119897.2753511552,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 11,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00009174520411563311,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 11
+    }
   ]
 }

@@ -55,9 +55,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
 fi
 
 # Import HRA
-curl -s $HRA -H "Accept: application/rdf+xml" > $DIR/hra.owl
+curl --retry 3 --retry-connrefused -s $HRA -H "Accept: application/rdf+xml" > $DIR/hra.owl
 blazegraph-runner load --journal=$JNL "--graph=${HRA}" $DIR/hra.owl
 
 # Import ctann-crosswalks
-curl -s $CTANN_CROSSWALKS -H "Accept: text/turtle" > $DIR/ctann-crosswalks.ttl
+curl --retry 3 --retry-connrefused -s $CTANN_CROSSWALKS -H "Accept: text/turtle" > $DIR/ctann-crosswalks.ttl
 blazegraph-runner load --journal=$JNL "--graph=${CTANN_CROSSWALKS}" $DIR/ctann-crosswalks.ttl

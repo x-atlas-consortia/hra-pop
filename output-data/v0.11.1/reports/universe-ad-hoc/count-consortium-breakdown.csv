@@ -1,8 +1,8 @@
 consortium,sex,dataset_count,atlas_dataset_count,test_dataset_count,excluded_dataset_count,no_rui_dataset_count,no_summary_dataset_count,modality,cell_count
 Allen Institute for Brain Science,Female,5,0,5,0,0,5,N/A,0
 Allen Institute for Brain Science,Male,5,0,5,0,0,5,N/A,0
-CxG,Female,3492,0,2402,1090,3492,1090,sc_transcriptomics,19837006
-CxG,Male,3293,0,2432,861,3293,861,sc_transcriptomics,22694467
+CxG,Female,3478,0,2388,1090,3478,1090,sc_transcriptomics,19778197
+CxG,Male,3280,0,2419,861,3280,861,sc_transcriptomics,22640375
 CxG,Unknown,421,0,235,186,421,186,sc_transcriptomics,2007149
 GTEx,Female,37,7,25,5,5,30,sc_transcriptomics,123723
 GTEx,Male,37,8,25,4,4,29,sc_transcriptomics,143256
@@ -15,7 +15,8 @@ HTAN,Male,4,0,2,2,0,4,N/A,0
 HuBMAP,Female,1223,139,1018,66,90,1060,sc_transcriptomics,3410547
 HuBMAP,Male,1701,339,1342,20,20,1362,sc_proteomics,16033284
 HuBMAP,Male,1701,339,1342,20,20,1362,sc_transcriptomics,10314608
-KPMP,Male,3,0,3,0,0,3,N/A,0
+KPMP,Female,23,14,9,0,0,9,sc_transcriptomics,58809
+KPMP,Male,29,13,16,0,0,16,sc_transcriptomics,54092
 LungMap,Female,4,0,0,4,4,4,N/A,0
 LungMap,Male,5,0,0,5,5,5,N/A,0
 NHLBI/LungMap,Female,2,2,0,0,0,0,sc_transcriptomics,29691

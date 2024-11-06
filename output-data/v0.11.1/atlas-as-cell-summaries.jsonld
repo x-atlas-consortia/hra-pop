@@ -10997,7 +10997,7 @@
       "cell_source": "http://purl.obolibrary.org/obo/UBERON_0002189",
       "cell_source_label": "outer cortex of kidney",
       "annotation_method": "azimuth",
-      "aggregated_summary_count": 117,
+      "aggregated_summary_count": 144,
       "aggregated_summaries": [
         {
           "aggregated_cell_source": "https://entity.api.hubmapconsortium.org/entities/367fee3b40cba682063289505b922be1",
@@ -11466,6 +11466,114 @@
         {
           "aggregated_cell_source": "https://entity.api.hubmapconsortium.org/entities/56742ee7dcbe8b03d964f519009db12d",
           "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#29-10012$cortex%20of%20kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#30-10034$cortex%20of%20kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#33-10006$cortex%20of%20kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#32-10034$cortex%20of%20kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#29-10010$cortex%20of%20kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#27-10039$kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#29-10006$cortex%20of%20kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#18-142$cortex%20of%20kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#31-10035$cortex%20of%20kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#29-10008$cortex%20of%20kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#32-10074$kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#31-10042$kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#18-162$cortex%20of%20kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#18-312$cortex%20of%20kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#32-2$cortex%20of%20kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#32-10003$cortex%20of%20kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#29-10016$kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#34-10050$kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#31-10006$renal%20medulla",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#28-10051$kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#30-10125$kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#30-10123$kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#30-10018$kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#34-10184$kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#34-10187$kidney",
+          "percentage": 1
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#31-10040$kidney",
+          "percentage": 0.9
+        },
+        {
+          "aggregated_cell_source": "https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#29-10011$kidney",
+          "percentage": 0.9
         }
       ],
       "modality": "sc_transcriptomics",
@@ -11474,337 +11582,337 @@
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000692",
           "cell_label": "Fibroblast",
-          "count": 104228.98600000002,
-          "percentage": 0.030805078600023215
+          "count": 108800.58600000001,
+          "percentage": 0.031170307087721557
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1001108",
           "cell_label": "Medullary Thick Ascending Limb",
-          "count": 116176.85,
-          "percentage": 0.034336292936334493
+          "count": 120201.04999999999,
+          "percentage": 0.03443642886966227
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030013",
           "cell_label": "Descending Thin Limb Type 2",
-          "count": 179120.71,
-          "percentage": 0.05293947261889282
+          "count": 192234.01000000004,
+          "percentage": 0.05507316959123858
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1001318",
           "cell_label": "Cortical Vascular Smooth Muscle / Pericyte",
-          "count": 21613.148,
-          "percentage": 0.006387807734538783
+          "count": 24460.648,
+          "percentage": 0.007007737161679094
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030012",
           "cell_label": "Descending Thin Limb Type 1",
-          "count": 183471.168,
-          "percentage": 0.05422525890329647
+          "count": 189236.968,
+          "percentage": 0.05421454627927589
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000650",
           "cell_label": "Mesangial",
-          "count": 13825.833999999999,
-          "percentage": 0.004086252005568521
+          "count": 14150.233999999997,
+          "percentage": 0.004053904076795307
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030009",
           "cell_label": "Proximal Tubule Epithelial Segment 1",
-          "count": 295760.884,
-          "percentage": 0.0874127018604244
+          "count": 304050.284,
+          "percentage": 0.08710744188812504
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030016",
           "cell_label": "Distal Convoluted Tubule Type 1",
-          "count": 245452.11,
-          "percentage": 0.0725438463067418
+          "count": 250856.3099999999,
+          "percentage": 0.07186788697620317
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1001107",
           "cell_label": "Ascending Thin Limb",
-          "count": 216961.61200000005,
-          "percentage": 0.06412342446512663
+          "count": 217356.31200000003,
+          "percentage": 0.06227046417281814
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030014",
           "cell_label": "Descending Thin Limb Type 3",
-          "count": 48168.249999999985,
-          "percentage": 0.01423621954141977
+          "count": 49050.24999999999,
+          "percentage": 0.01405241838706194
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000653",
           "cell_label": "Podocyte",
-          "count": 27327.330999999995,
-          "percentage": 0.008076645582869343
+          "count": 28400.63099999999,
+          "percentage": 0.008136503876505446
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0011031",
           "cell_label": "Monocyte-derived",
-          "count": 2741.342,
-          "percentage": 0.0008102089353487985
+          "count": 3988.5420000000004,
+          "percentage": 0.0011426783948780856
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000714",
           "cell_label": "Cortical Collecting Duct Principal",
-          "count": 78016.057,
-          "percentage": 0.02305779668574048
+          "count": 81564.95699999997,
+          "percentage": 0.023367564925494085
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000768",
           "cell_label": "Connecting Tubule",
-          "count": 194384.37900000004,
-          "percentage": 0.057450679542365525
+          "count": 201095.679,
+          "percentage": 0.057611951358827046
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000890",
           "cell_label": "M2 Macrophage",
-          "count": 7752.605000000001,
-          "percentage": 0.0022912974168235022
+          "count": 9350.805000000002,
+          "percentage": 0.0026789144625324187
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1001109",
           "cell_label": "Cortical Thick Ascending Limb",
-          "count": 579272.2870000001,
-          "percentage": 0.17120504589625585
+          "count": 587947.887,
+          "percentage": 0.16844133715756834
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030022",
           "cell_label": "Medullary Fibroblast",
-          "count": 50515.05300000001,
-          "percentage": 0.014929821711489532
+          "count": 51684.35300000002,
+          "percentage": 0.014807063214165072
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000850",
           "cell_label": "Macula Densa",
-          "count": 71842.57599999999,
-          "percentage": 0.021233212424307195
+          "count": 74108.97600000001,
+          "percentage": 0.02123149906450492
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002573",
           "cell_label": "Schwann / Neural",
-          "count": 935.9449999999998,
-          "percentage": 0.0002766203567431685
+          "count": 1097.8449999999998,
+          "percentage": 0.00031452188855600157
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030011",
           "cell_label": "Proximal Tubule Epithelial Segment 3",
-          "count": 175719.278,
-          "percentage": 0.05193417280610721
+          "count": 180339.57799999998,
+          "percentage": 0.051665530793465704
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000715",
           "cell_label": "Cortical Collecting Duct Intercalated Type A",
-          "count": 28299.953,
-          "percentage": 0.00836410589796933
+          "count": 30828.253,
+          "percentage": 0.008831993910289907
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "ASCTB-TEMP:peritubular-capilary-endothelial",
           "cell_label": "Peritubular Capilary Endothelial ",
-          "count": 26432.516000000007,
-          "percentage": 0.00781218127725402
+          "count": 30338.41600000001,
+          "percentage": 0.008691660385680693
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1001131",
           "cell_label": "Ascending Vasa Recta Endothelial",
-          "count": 19944.60599999999,
-          "percentage": 0.005894666916134962
+          "count": 20844.905999999984,
+          "percentage": 0.0059718623320162
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000452",
           "cell_label": "Parietal Epithelial",
-          "count": 22912.885,
-          "percentage": 0.00677194752118468
+          "count": 24491.184999999994,
+          "percentage": 0.007016485714444586
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1001005",
           "cell_label": "Glomerular Capillary Endothelial",
-          "count": 14547.962999999996,
-          "percentage": 0.004299678629563079
+          "count": 15544.062999999993,
+          "percentage": 0.004453222495519373
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002138",
           "cell_label": "Lymphatic Endothelial",
-          "count": 1098.4940000000001,
-          "percentage": 0.0003246620283886663
+          "count": 1298.0939999999998,
+          "percentage": 0.00037189127463641437
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000716",
           "cell_label": "Outer Medullary Collecting Duct Principal",
-          "count": 25453.045,
-          "percentage": 0.007522696726944343
+          "count": 26720.745,
+          "percentage": 0.007655232916325472
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000097",
           "cell_label": "Mast",
-          "count": 2295.221,
-          "percentage": 0.0006783570101068034
+          "count": 2349.121,
+          "percentage": 0.0006730002626660076
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000084",
           "cell_label": "T",
-          "count": 3538.339999999999,
-          "percentage": 0.001045763237240033
+          "count": 6849.939999999999,
+          "percentage": 0.0019624410233642247
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000717",
           "cell_label": "Outer Medullary Collecting Duct Intercalated Type A",
-          "count": 17608.574999999997,
-          "percentage": 0.005204248431519842
+          "count": 18060.674999999996,
+          "percentage": 0.0051742072966549585
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0002201",
           "cell_label": "Intercalated Type B",
-          "count": 22684.762999999995,
-          "percentage": 0.006704525622439598
+          "count": 23593.162999999993,
+          "percentage": 0.006759211167122479
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030018",
           "cell_label": "Connecting Tubule Principal",
-          "count": 13956.811999999996,
-          "percentage": 0.004124962807042438
+          "count": 15472.011999999995,
+          "percentage": 0.004432580586513687
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000236",
           "cell_label": "B",
-          "count": 5601.955,
-          "percentage": 0.0016556686456567179
+          "count": 6974.855,
+          "percentage": 0.001998227952948067
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "ASCTB-TEMP:descending-vasa-recta-endothelial",
           "cell_label": "Descending Vasa Recta Endothelial ",
-          "count": 36487.116999999984,
-          "percentage": 0.010783838068550744
+          "count": 37879.51699999998,
+          "percentage": 0.010852112296753333
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000412",
           "cell_label": "Afferent / Efferent Arteriole Endothelial",
-          "count": 5328.857000000003,
-          "percentage": 0.0015749540030379262
+          "count": 5914.957000000004,
+          "percentage": 0.0016945775099103633
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000786",
           "cell_label": "Plasma",
-          "count": 1210.154,
-          "percentage": 0.0003576633575628615
+          "count": 1297.754,
+          "percentage": 0.0003717938679514005
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000990",
           "cell_label": "Classical Dendritic",
-          "count": 9033.438999999998,
-          "percentage": 0.0026698503852231182
+          "count": 9226.238999999998,
+          "percentage": 0.00264322751804584
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000875",
           "cell_label": "Non-classical monocyte",
-          "count": 330.69899999999996,
-          "percentage": 0.00009773872968455314
+          "count": 2063.499,
+          "percentage": 0.0005911723444688646
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000814",
           "cell_label": "Natural Killer T",
-          "count": 441.255,
-          "percentage": 0.00013041376952140015
+          "count": 2133.755,
+          "percentage": 0.0006113000034757286
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000718",
           "cell_label": "Inner Medullary Collecting Duct",
-          "count": 500403.13999999996,
-          "percentage": 0.14789511680942974
+          "count": 501705.04000000004,
+          "percentage": 0.14373360235631108
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000648",
           "cell_label": "Renin-positive Juxtaglomerular Granular",
-          "count": 397.15199999999993,
-          "percentage": 0.00011737904248782019
+          "count": 411.6519999999999,
+          "percentage": 0.00011793428440978019
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0001058",
           "cell_label": "Plasmacytoid Dendritic",
-          "count": 66.787,
-          "percentage": 0.000019739027149892355
+          "count": 210.187,
+          "percentage": 0.000060216526185317886
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030017",
           "cell_label": "Distal Convoluted Tubule Type 2",
-          "count": 5503.878000000001,
-          "percentage": 0.001626681798429264
+          "count": 5603.878000000001,
+          "percentage": 0.001605456409417932
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:1000597",
           "cell_label": "Papillary Tip Epithelial",
-          "count": 686.6949999999998,
-          "percentage": 0.00020295403669419687
+          "count": 2546.895,
+          "percentage": 0.0007296605853775695
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030020",
           "cell_label": "Connecting Tubule Intercalated Type A",
-          "count": 801.5450000000001,
-          "percentage": 0.00023689817654424467
+          "count": 1233.545,
+          "percentage": 0.0003533986154865332
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:4030010",
           "cell_label": "Proximal Tubule Epithelial Segment 2",
-          "count": 5119.831999999999,
-          "percentage": 0.0015131762596147103
+          "count": 6895.3319999999985,
+          "percentage": 0.001975445388794075
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000775",
           "cell_label": "Neutrophil",
-          "count": 22,
-          "percentage": 0.000006502142592085762
+          "count": 47.79999999999999,
+          "percentage": 0.000013694233951948476
         },
         {
           "@type": "CellSummaryRow",
           "cell_id": "CL:0000113",
           "cell_label": "Cycling Mononuclear Phagocyte",
-          "count": 6,
-          "percentage": 0.0000017733116160233898
+          "count": 8.8,
+          "percentage": 0.000002521114200358716
         }
       ]
     },

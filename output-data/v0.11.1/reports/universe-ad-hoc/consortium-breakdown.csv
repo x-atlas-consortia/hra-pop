@@ -1,9 +1,9 @@
 sex,consortium,dataset_count,cell_count,modality
 Female,Allen Institute for Brain Science,5,0,
 Male,Allen Institute for Brain Science,5,0,
-Female,CxG,2402,19837006,sc_transcriptomics
+Female,CxG,2388,19778197,sc_transcriptomics
 Female,CxG,1090,0,
-Male,CxG,2432,22694467,sc_transcriptomics
+Male,CxG,2419,22640375,sc_transcriptomics
 Male,CxG,861,0,
 Unknown,CxG,235,2007149,sc_transcriptomics
 Unknown,CxG,186,0,
@@ -19,13 +19,16 @@ Male,HCA,71,0,
 Male,"HIRN, ESPACE",1,0,
 Female,HRA,1,0,
 Male,HTAN,4,0,
-Female,HuBMAP,23,1514227,sc_proteomics
 Female,HuBMAP,140,3410547,sc_transcriptomics
+Female,HuBMAP,23,1514227,sc_proteomics
 Female,HuBMAP,1060,0,
 Male,HuBMAP,84,16033284,sc_proteomics
 Male,HuBMAP,255,10314608,sc_transcriptomics
 Male,HuBMAP,1362,0,
-Male,KPMP,3,0,
+Female,KPMP,14,58809,sc_transcriptomics
+Female,KPMP,9,0,
+Male,KPMP,13,54092,sc_transcriptomics
+Male,KPMP,16,0,
 Female,LungMap,4,0,
 Male,LungMap,5,0,
 Female,NHLBI/LungMap,2,29691,sc_transcriptomics
