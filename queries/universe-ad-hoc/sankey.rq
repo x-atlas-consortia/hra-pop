@@ -109,14 +109,13 @@ WHERE {
     # Ref Organ Name
     {
       ?ref_organ ccf:representation_of ?organ_iri .
-      ?ref_organ ccf:organ_owner_sex ?ref_organ_sex .
       ?organ_iri rdfs:label ?organ_name .
     }
 
     # Ref Organ GLB File
     {
       ?some_ref_organ a ?organ_iri ;
-        ccf:organ_owner_sex ?ref_organ_sex ;
+        ccf:organ_owner_sex ?donor_sex ;
         ccf:has_object_reference [
           ccf:file_name ?organ_name_glb_file
         ] .

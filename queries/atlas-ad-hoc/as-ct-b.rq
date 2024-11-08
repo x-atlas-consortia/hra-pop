@@ -39,7 +39,7 @@ WHERE {
       ]
     ]
   ] .
-  BIND (xsd:decimal(?count * ?percentage) AS ?_cell_count)
+  BIND (xsd:decimal(?count * ?percent) AS ?_cell_count)
 
   FILTER(STRSTARTS(STR(?as), STR(UBERON:)) || STRSTARTS(STR(?as), STR(FMA:)))
 }

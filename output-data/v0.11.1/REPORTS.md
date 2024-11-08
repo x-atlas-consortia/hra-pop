@@ -147,7 +147,7 @@ WHERE {
       ]
     ]
   ] .
-  BIND (xsd:decimal(?count * ?percentage) AS ?_cell_count)
+  BIND (xsd:decimal(?count * ?percent) AS ?_cell_count)
 
   FILTER(STRSTARTS(STR(?as), STR(UBERON:)) || STRSTARTS(STR(?as), STR(FMA:)))
 }
@@ -163,11 +163,11 @@ ORDER BY ?tool ?sex ?as_label DESC(?mean_gene_expr)
 
 | sex | tool | as_label | cell_label | gene_label | as | cell_id | cell_count | mean_gene_expr |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | ENSG00000280441.3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 0 | 1139.4583129882815 |
-| Female | azimuth | kidney capsule | Inner Medullary Collecting Duct | ENSG00000280441.3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_1000718 | 0 | 191.4571075439453 |
-| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-CO3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 0 | 166.96894836425785 |
-| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-RNR2 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 0 | 127.1288843154907075 |
-| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-CO2 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 0 | 126.62272262573245 |
+| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | ENSG00000280441.3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 1477.42 | 1139.4583129882815 |
+| Female | azimuth | kidney capsule | Inner Medullary Collecting Duct | ENSG00000280441.3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_1000718 | 5227.7 | 191.4571075439453 |
+| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-CO3 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 4.805 | 166.96894836425785 |
+| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-RNR2 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 1482.225 | 127.1288843154907075 |
+| Female | azimuth | kidney capsule | Descending Thin Limb Type 1 | MT-CO2 | http://purl.obolibrary.org/obo/UBERON_0002015 | http://purl.obolibrary.org/obo/CL_4030012 | 4.805 | 126.62272262573245 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ## atlas-ad-hoc
@@ -1294,6 +1294,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
 PREFIX dc: <http://purl.org/dc/terms/>
@@ -1316,9 +1317,9 @@ WHERE {
       ]
     ] .
 
-    # [] a ccf:SpatialPlacement ;
-    #     ccf:placement_for ?rui_location ;
-    #     ccf:placement_relative_to ?refOrgan .
+    [] a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?refOrgan .
 
     # BIND(EXISTS {
     #   GRAPH HRApop: {
@@ -1327,12 +1328,17 @@ WHERE {
     # } as ?in_atlas)
   }
 
-  # GRAPH HRA: {
-  #   ?refOrgan ccf:representation_of ?organIri .
-  #   ?organIri rdfs:label ?organ .
-
-  #   BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
-  # }
+  GRAPH HRA: {
+    {
+      SELECT ?refOrgan ?organIri (SAMPLE(?organ_) as ?organ)
+      WHERE {
+        ?refOrgan ccf:representation_of ?organIri .
+        ?organIri rdfs:label ?organ_ .
+      }
+      GROUP BY ?refOrgan ?organIri
+    }
+  }
+  BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
 
   # FILTER (?in_atlas != TRUE)
 }
@@ -1347,11 +1353,11 @@ ORDER BY ?sample DESC(?cell_count)
 
 | sample | rui_location | organ | organId | sex | tool | modality | cell_id | cell_label | cell_count | percentage_of_total |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e |  |  | Female | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000775 | neutrophil | 119659.9499999999 | 0.4051069703243614 |
-| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e |  |  | Female | celltypist | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000115 | Endothelial cells | 79093.80000000003 | 0.2645454545454546 |
-| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e |  |  | Female | celltypist | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000182 | Hepatocytes | 61997.57999999993 | 0.2073636363636361 |
-| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e |  |  | Female | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_1000398 | endothelial cell of hepatic sinusoid | 61617.05999999994 | 0.208603634690591 |
-| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e |  |  | Female | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000182 | hepatocyte | 59619.33000000003 | 0.2018403496664367 |
+| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e | liver | UBERON:0002107 | Female | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000775 | neutrophil | 119659.9499999999 | 0.4051069703243614 |
+| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e | liver | UBERON:0002107 | Female | celltypist | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000115 | Endothelial cells | 79093.80000000003 | 0.2645454545454546 |
+| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e | liver | UBERON:0002107 | Female | celltypist | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000182 | Hepatocytes | 61997.57999999993 | 0.2073636363636361 |
+| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e | liver | UBERON:0002107 | Female | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_1000398 | endothelial cell of hepatic sinusoid | 61617.05999999994 | 0.208603634690591 |
+| http://purl.org/ccf/APAP10#TissueBlock1 | http://purl.org/ccf/1.5/92c7d973-67c3-4548-b386-51591184367e | liver | UBERON:0002107 | Female | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000182 | hepatocyte | 59619.33000000003 | 0.2018403496664367 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ## atlas
@@ -7901,14 +7907,13 @@ WHERE {
     # Ref Organ Name
     {
       ?ref_organ ccf:representation_of ?organ_iri .
-      ?ref_organ ccf:organ_owner_sex ?ref_organ_sex .
       ?organ_iri rdfs:label ?organ_name .
     }
 
     # Ref Organ GLB File
     {
       ?some_ref_organ a ?organ_iri ;
-        ccf:organ_owner_sex ?ref_organ_sex ;
+        ccf:organ_owner_sex ?donor_sex ;
         ccf:has_object_reference [
           ccf:file_name ?organ_name_glb_file
         ] .
@@ -8009,9 +8014,9 @@ ORDER BY ?unique_dataset_id
 
 | portal | study_paper | doi | lead_author | is_azimuth_reference | donor_id | donor_sex | donor_age | donor_development_stage | donor_race | donor_bmi | organ_name | organ_name_glb_file | tissue_block_id | tissue_block_volume | collisions_bb | collisions_mesh | list_of_colliding_anatomical_structures_bb | list_of_colliding_anatomical_structures_mesh | list_of_colliding_anatomical_structures_bb_ids | list_of_colliding_anatomical_structures_mesh_ids | dataset_id | unique_dataset_id | link_to_h5ad_file | sc_transcriptomics_or_sc_proteomics | cell_type_annotation_tool | omap_id | number_of_cells_total | number_of_unique_cell_types | hubmap_dataset_publication_status | is_rui_registered | is_atlas_dataset |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor1 | Male |  |  |  |  |  |  | Donor1_TissueBlock1 |  |  |  |  |  |  |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027 |  |  |  |  |  |  | false | false |
-| KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor2 | Male |  |  |  |  |  |  | Donor2_TissueBlock1 |  |  |  |  |  |  |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor2_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor2_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027 |  |  |  |  |  |  | false | false |
-| KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor3 | Male |  |  |  |  |  |  | Donor3_TissueBlock1 |  |  |  |  |  |  |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor3_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor3_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1016/j.trsl.2017.07.006 |  |  |  |  |  |  | false | false |
+| KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor1 | Male |  |  |  |  | right kidney | 3d-vh-m-kidney-r.glb | Donor1_TissueBlock1 | 1.9794047017195975 | 1 |  | kidney |  | UBERON:0002113 |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027 |  |  |  |  |  |  | true | false |
+| KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor2 | Male |  |  |  |  | right kidney | 3d-vh-m-kidney-r.glb | Donor2_TissueBlock1 | 0.5009041281806214 | 1 |  | kidney |  | UBERON:0002113 |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor2_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor2_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027 |  |  |  |  |  |  | true | false |
+| KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor3 | Male |  |  |  |  | right kidney | 3d-vh-m-kidney-r.glb | Donor3_TissueBlock1 | 0.49626275595351454 | 1 |  | kidney |  | UBERON:0002113 |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor3_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor3_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1016/j.trsl.2017.07.006 |  |  |  |  |  |  | true | false |
 | HRA |  |  |  |  | Donor1 | Female | 38 |  |  |  | mesenteric lymph node | 3d-nih-f-lymph-node.glb | Donor1_TissueBlock1 | 2508 | 7 | 6 | medulla of lymph node; capsule of lymph node; lymph vasculature; afferent lymphatic vessel; efferent lymphatic vessel; lymph node T cell domain; lymph node follicle | capsule of lymph node; medulla of lymph node; Lymph vasculature; lymph node T cell domain; efferent lymphatic vessel; lymph node follicle | UBERON:0002007; UBERON:0002194; UBERON:0004536; UBERON:0010396; UBERON:0010397; UBERON:0010417; UBERON:0010748 | UBERON:0002194; UBERON:0002007; UBERON:0004536; UBERON:0010417; UBERON:0010397; UBERON:0010748 | http://purl.org/ccf/1.5/omap-1#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://purl.org/ccf/1.5/omap-1#Donor1_TissueBlock1_TissueBlock1_Dataset1 | https://hubmapconsortium.github.io/ccf-releases/v1.4/docs/omap/omap-1-human-lymph-node-ibex.html |  |  |  |  |  |  | true | false |
 | HIRN, ESPACE |  | https://doi.org/10.5281/zenodo.7742474 |  |  | Donor1 | Male |  |  |  |  | pancreas | 3d-vh-m-pancreas.glb | Donor1_TissueBlock1 | 0.2512805 | 1 | 1 | tail of pancreas | tail of pancreas | UBERON:0001151 | UBERON:0001151 | http://purl.org/ccf/1.5/omap-6#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://purl.org/ccf/1.5/omap-6#Donor1_TissueBlock1_TissueBlock1_Dataset1 | https://zenodo.org/record/7742474 |  |  |  |  |  |  | true | false |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
