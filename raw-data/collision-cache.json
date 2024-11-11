@@ -21635,5 +21635,52 @@
       "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
       "tissue_volume": 11
     }
+  ],
+  "http://purl.org/ccf/1.5/f0a0fa6c-c13a-4bbf-b31c-126299a8d691": [],
+  "http://purl.org/ccf/1.5/bd0fe887-9250-4949-9f6b-d1dae58ccde2": [],
+  "http://purl.org/ccf/1.5/34550b68-ca59-453b-b570-dd7fb627b959": [
+    {
+      "AS_volume": 31085.612809535753,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 119.5,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.003844222107898817,
+      "percentage_of_tissue_block": 0.239,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/7c6ea5af-8814-4ef9-b281-80e10509fa0e": [
+    {
+      "AS_volume": 1016.6682439629901,
+      "id": "https://purl.humanatlas.io/ref-organ/ovary-female-right/v1.2#primary",
+      "intersection_volume": 9.795,
+      "is_closed": true,
+      "label": "Right ovary",
+      "node_name": "VH_F_right_ovary",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_ovary-female-right_v1.2_assets_3d-vh-f-ovary-r",
+      "percentage_of_AS": 0.009634411282306727,
+      "percentage_of_tissue_block": 0.653,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7213",
+      "tissue_volume": 15
+    }
+  ],
+  "http://purl.org/ccf/1.5/f4bc7470-11f7-46cd-958f-b22391debe99": [
+    {
+      "AS_volume": 78646.79879643944,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-female/v1.3#VH_F_right_ventricle",
+      "intersection_volume": 101,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_F_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-female_v1.3_assets_3d-vh-f-heart",
+      "percentage_of_AS": 0.0012842226453668774,
+      "percentage_of_tissue_block": 0.101,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1000
+    }
   ]
 }
