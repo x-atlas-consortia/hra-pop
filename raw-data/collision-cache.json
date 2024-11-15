@@ -21682,5 +21682,110 @@
       "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
       "tissue_volume": 1000
     }
+  ],
+  "http://purl.org/ccf/1.5/a17166d6-f0f4-4b93-8aec-7c7bcdd27c74": [],
+  "http://purl.org/ccf/1.5/b326961c-17df-4146-91e2-585dd365bfcc": [],
+  "http://purl.org/ccf/1.5/0a1b1df3-324b-4cd3-a371-6f84a78ca498": [],
+  "http://purl.org/ccf/1.5/b17a8516-f01c-48a0-82e5-e7f868c19012": [
+    {
+      "AS_volume": 38.05749516661327,
+      "id": "https://purl.humanatlas.io/ref-organ/fallopian-tube-female-right/v1.2#VH_F_isthmus_of_fallopian_tube_R",
+      "intersection_volume": 1.845,
+      "is_closed": true,
+      "label": "Isthmus of right uterine tube",
+      "node_name": "VH_F_isthmus_of_fallopian_tube_R",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_fallopian-tube-female-right_v1.2_assets_3d-vh-f-fallopian-tube-r",
+      "percentage_of_AS": 0.048479280938556475,
+      "percentage_of_tissue_block": 0.41,
+      "representation_of": "http://purl.org/sig/ont/fma/fma18493",
+      "tissue_volume": 4.5
+    }
+  ],
+  "http://purl.org/ccf/1.5/b5511634-e629-4de6-b49e-a4d7383f0c43": [],
+  "http://purl.org/ccf/1.5/802b26a8-9462-40f3-ba63-82c4d5fdb241": [
+    {
+      "AS_volume": 325.6876386010617,
+      "id": "https://purl.humanatlas.io/ref-organ/fallopian-tube-female-left/v1.2#VH_F_ampulla_of_uterine_tube_L",
+      "intersection_volume": 3.2445,
+      "is_closed": true,
+      "label": "Ampulla of left uterine tube",
+      "node_name": "VH_F_ampulla_of_uterine_tube_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_fallopian-tube-female-left_v1.2_assets_3d-vh-f-fallopian-tube-l",
+      "percentage_of_AS": 0.009961999214757497,
+      "percentage_of_tissue_block": 0.515,
+      "representation_of": "http://purl.org/sig/ont/fma/fma18492",
+      "tissue_volume": 6.3
+    }
+  ],
+  "http://purl.org/ccf/1.5/82e523ca-abb8-4b78-90de-d02964bbb2bb": [
+    {
+      "AS_volume": 15.0259608411766,
+      "id": "https://purl.humanatlas.io/ref-organ/fallopian-tube-female-left/v1.2#VH_F_fibria_of_uterine_tube_L",
+      "intersection_volume": 1.3800000000000001,
+      "is_closed": true,
+      "label": "Fimbria of left uterine tube",
+      "node_name": "VH_F_fibria_of_uterine_tube_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_fallopian-tube-female-left_v1.2_assets_3d-vh-f-fallopian-tube-l",
+      "percentage_of_AS": 0.09184104860823929,
+      "percentage_of_tissue_block": 0.115,
+      "representation_of": "http://purl.org/sig/ont/fma/fma18498",
+      "tissue_volume": 12
+    },
+    {
+      "AS_volume": 271.6307161747521,
+      "id": "https://purl.humanatlas.io/ref-organ/fallopian-tube-female-left/v1.2#VH_F_uterine_tube_infundibulum_L",
+      "intersection_volume": 8.904,
+      "is_closed": true,
+      "label": "Infundibulum of left uterine tube",
+      "node_name": "VH_F_uterine_tube_infundibulum_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_fallopian-tube-female-left_v1.2_assets_3d-vh-f-fallopian-tube-l",
+      "percentage_of_AS": 0.03277979797495237,
+      "percentage_of_tissue_block": 0.742,
+      "representation_of": "http://purl.org/sig/ont/fma/fma18490",
+      "tissue_volume": 12
+    }
+  ],
+  "http://purl.org/ccf/1.5/1228b6a1-75e0-4851-b63b-848e66b1e3cb": [
+    {
+      "AS_volume": 131.9167343022108,
+      "id": "https://purl.humanatlas.io/ref-organ/fallopian-tube-female-right/v1.2#VH_F_ampulla_of_uterine_tube_R",
+      "intersection_volume": 0.8564999999999999,
+      "is_closed": true,
+      "label": "Ampulla of right uterine tube",
+      "node_name": "VH_F_ampulla_of_uterine_tube_R",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_fallopian-tube-female-right_v1.2_assets_3d-vh-f-fallopian-tube-r",
+      "percentage_of_AS": 0.006492731983781725,
+      "percentage_of_tissue_block": 0.571,
+      "representation_of": "http://purl.org/sig/ont/fma/fma18491",
+      "tissue_volume": 1.5
+    }
+  ],
+  "http://purl.org/ccf/1.5/2fb0ae56-d711-4edc-bbbf-7c2f4bbb2be6": [
+    {
+      "AS_volume": 292.58980371815966,
+      "id": "https://purl.humanatlas.io/ref-organ/fallopian-tube-female-right/v1.2#VH_F_uterine_tube_infundibulum_R",
+      "intersection_volume": 0.972,
+      "is_closed": true,
+      "label": "Infundibulum of right uterine tube",
+      "node_name": "VH_F_uterine_tube_infundibulum_R",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_fallopian-tube-female-right_v1.2_assets_3d-vh-f-fallopian-tube-r",
+      "percentage_of_AS": 0.0033220569809612696,
+      "percentage_of_tissue_block": 0.027,
+      "representation_of": "http://purl.org/sig/ont/fma/fma18489",
+      "tissue_volume": 36
+    },
+    {
+      "AS_volume": 7.109058938860018,
+      "id": "https://purl.humanatlas.io/ref-organ/fallopian-tube-female-right/v1.2#VH_F_fibria_of_uterine_tube_R",
+      "intersection_volume": 0.14400000000000002,
+      "is_closed": true,
+      "label": "Fimbria of right uterine tube",
+      "node_name": "VH_F_fibria_of_uterine_tube_R",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_fallopian-tube-female-right_v1.2_assets_3d-vh-f-fallopian-tube-r",
+      "percentage_of_AS": 0.020255845568090243,
+      "percentage_of_tissue_block": 0.004,
+      "representation_of": "http://purl.org/sig/ont/fma/fma18497",
+      "tissue_volume": 36
+    }
   ]
 }
