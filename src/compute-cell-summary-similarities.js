@@ -10,7 +10,7 @@ console.log('minimum similarity', MIN_SIMILARITY);
 const summaryLookup = {};
 for (const path of CELL_SUMMARIES) {
   const summaries = JSON.parse(readFileSync(path))['@graph'];
-  for (const summary of summaries) {
+  for (const summary of summaries.filter((summary) => summary.cell_source)) {
     const modality = summary.modality;
     const tool = summary.annotation_method;
     const sex = summary.sex || 'Unknown';
@@ -55,7 +55,7 @@ for (const modality of Object.keys(summaryLookup)) {
     const [a, toolA, sexA] = result.cell_source_a.split('||||');
     const [b, toolB, sexB] = result.cell_source_b.split('||||');
     const sim = result.similarity;
-    if (a && a !== b) {
+    if (a !== b) {
       const line = `[] a Edge:; mod: "${modality}"; toolA: "${toolA}"; toolB: "${toolB}"; sexA: "${sexA}"; sexB: "${sexB}"; a: <${a}>; b: <${b}>; sim: ${sim} .\n`;
 
       if (!results.write(line)) {

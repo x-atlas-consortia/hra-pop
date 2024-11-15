@@ -31,9 +31,9 @@ function handleCellSummaries(summaries, collisions) {
         const asLabel = collision.as_label;
         const modality = dsSummary.modality;
         const annotation_method = dsSummary.annotation_method;
-        const sex = collision.as_3d_id.includes('#VHMaleOrgans')
-          ? 'Male'
-          : 'Female';
+        const sex = collision.as_3d_id.toLowerCase().includes('female')
+          ? 'Female'
+          : 'Male';
         const summaryKey = sex + asIri + modality + annotation_method;
         const weightedCellCount = cell.count * collision.percentage;
 
