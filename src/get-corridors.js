@@ -9,7 +9,8 @@ const BASE_URI = `https://cdn.humanatlas.io/digital-objects/graph/hra-pop/${VERS
 const CORRIDOR_CACHE = 'raw-data/corridor-cache';
 const CORRIDOR_DIR = `raw-data/${VERSION}/corridors`;
 const donors = JSON.parse(readFileSync(REGISTRATIONS).toString());
-const API = 'https://apps.humanatlas.io/api/v1/corridor';
+const API_ENDPOINT = process.env['API_ENDPOINT'] ?? 'https://apps.humanatlas.io/api/';
+const API = `${API_ENDPOINT}v1/corridor`;
 
 if (!existsSync(CORRIDOR_CACHE)) {
   mkdirSync(CORRIDOR_CACHE);
@@ -23,7 +24,7 @@ async function getCorridor(ruiLocation) {
   const id = ruiLocation['@id'];
   const glbFile = `${id.split('/').slice(-1)[0]}.glb`;
   if (existsSync(join(CORRIDOR_CACHE, glbFile))) {
-    cpSync(join(CORRIDOR_CACHE, glbFile), join(CORRIDOR_DIR, glbFile))
+    cpSync(join(CORRIDOR_CACHE, glbFile), join(CORRIDOR_DIR, glbFile));
     return glbFile;
   } else {
     console.log(id);
@@ -35,7 +36,7 @@ async function getCorridor(ruiLocation) {
       .then((r) => r.arrayBuffer())
       .then((r) => {
         writeFileSync(join(CORRIDOR_CACHE, glbFile), Buffer.from(r));
-        cpSync(join(CORRIDOR_CACHE, glbFile), join(CORRIDOR_DIR, glbFile))
+        cpSync(join(CORRIDOR_CACHE, glbFile), join(CORRIDOR_DIR, glbFile));
         return glbFile;
       })
       .catch((e) => {

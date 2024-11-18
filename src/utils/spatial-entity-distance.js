@@ -1,13 +1,14 @@
 import { distance } from 'mathjs';
 
-const SPATIAL_PLACEMENT_LOOKUP = 'https://apps.humanatlas.io/api/v1/get-spatial-placement';
 const GLOBAL_ENTITY_ID = 'https://purl.humanatlas.io/graph/hra-ccf-body#VHBothSexes';
 const GLOBAL_POINT_CACHE = {};
+const API_ENDPOINT = process.env['API_ENDPOINT'] ?? 'https://apps.humanatlas.io/api/';
+const API = `${API_ENDPOINT}v1/get-spatial-placement`;
 
 async function getGlobalPoint(entity) {
   let point = GLOBAL_POINT_CACHE[entity['@id']];
   if (!point) {
-    point = await fetch(SPATIAL_PLACEMENT_LOOKUP, {
+    point = await fetch(API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

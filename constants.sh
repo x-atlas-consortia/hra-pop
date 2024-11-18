@@ -3,6 +3,7 @@ INPUT_DIR="./input-data"
 OUTPUT_DIR="./output-data"
 RAW_DIR="./raw-data"
 
+export API_ENDPOINT=${API_ENDPOINT:-"https://apps.humanatlas.io/api/"}
 export PATH=./node_modules/.bin:${PATH}
 export NODE_OPTIONS="--max-old-space-size=64000"
 

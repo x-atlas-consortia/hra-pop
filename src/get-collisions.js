@@ -5,7 +5,8 @@ const REGISTRATIONS = process.argv[2];
 const OUTPUT = process.argv[3];
 const COLLISION_CACHE = 'raw-data/collision-cache.json';
 const donors = JSON.parse(readFileSync(REGISTRATIONS).toString());
-const API = 'https://apps.humanatlas.io/api/v1/collisions';
+const API_ENDPOINT = process.env['API_ENDPOINT'] ?? 'https://apps.humanatlas.io/api/';
+const API = `${API_ENDPOINT}v1/collisions`;
 
 let collisionCache = {};
 if (existsSync(COLLISION_CACHE)) {
