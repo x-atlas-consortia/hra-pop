@@ -21787,5 +21787,121 @@
       "representation_of": "http://purl.org/sig/ont/fma/fma18497",
       "tissue_volume": 36
     }
-  ]
+  ],
+  "http://purl.org/ccf/1.5/15758785-f1c6-466e-8d82-2183c43c7f6d": [
+    {
+      "AS_volume": 133768.08382366848,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchopulmonary_segment",
+      "intersection_volume": 35,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00026164686672298145,
+      "percentage_of_tissue_block": 0.035,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 73356.78027282198,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "intersection_volume": 950,
+      "is_closed": true,
+      "label": "Right anterior basal bronchopulmonary segment",
+      "node_name": "VH_M_right_anterior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.01295040480875585,
+      "percentage_of_tissue_block": 0.95,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7364",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/309ed87f-0095-4ce0-bb5d-7f91f748acdd": [
+    {
+      "AS_volume": 256703.81977574018,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_bronchopulmonary_segment",
+      "intersection_volume": 881,
+      "is_closed": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_right_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0034319707465578545,
+      "percentage_of_tissue_block": 0.881,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7359",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/a449cf86-3a7a-4574-8fff-fb2baf7752cd": [
+    {
+      "AS_volume": 208294.03565949443,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_medial_bronchopulmonary_segment",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "Right Medial Bronchopulmonary Segment",
+      "node_name": "VH_M_right_medial_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7360",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 133768.08382366848,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_lateral_bronchopulmonary_segment",
+      "intersection_volume": 1,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_M_right_lateral_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.000007475624763513756,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/215b4c74-6642-4796-bfc7-33dfeaf6897e": [
+    {
+      "AS_volume": 55232.19222031879,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_lateral_basal_bronchopulmonary_segment",
+      "intersection_volume": 116,
+      "is_closed": true,
+      "label": "left Lateral Basal Bronchopulmonary Segment",
+      "node_name": "VH_M_left_lateral_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0021002244404364954,
+      "percentage_of_tissue_block": 0.116,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7379",
+      "tissue_volume": 1000
+    },
+    {
+      "AS_volume": 177963.69435657057,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "intersection_volume": 132,
+      "is_closed": true,
+      "label": "Left posterior basal segmental bronchus",
+      "node_name": "VH_M_left_posetrior_basal_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0007417243189811678,
+      "percentage_of_tissue_block": 0.132,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7508",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/73d6d5ad-0f57-44b2-a928-91abbfe51e78": [
+    {
+      "AS_volume": 109478.9352094898,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_apical_bronchopulmonary_segment",
+      "intersection_volume": 1000,
+      "is_closed": true,
+      "label": "Left apical bronchopulmonary segment",
+      "node_name": "VH_M_left_apical_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.009134177255985209,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7385",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/cf2f3af6-794e-4896-9009-7958eeea7a6c": [],
+  "http://purl.org/ccf/1.5/5aca9fce-eb27-4293-bbaf-17d8f7773a31": []
 }

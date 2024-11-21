@@ -1,10 +1,10 @@
-Run started on Thu Nov 14 16:46:09 EST 2024...
+j toRun started on Wed Nov 20 15:11:36 EST 2024...
 
 >> Running scripts/00-setup-environment.sh...
 
-real	0m0.013s
+real	0m0.014s
 user	0m0.003s
-sys	0m0.007s
+sys	0m0.008s
 
 >> Running scripts/05-build-deprecated-cell-summaries.sh...
 
@@ -16,9 +16,9 @@ if [ "${DEPRECATED_BULK_CELL_SUMMARIES}" != "" ]; then
   node ./src/gen-deprecated-cell-summaries-bulk.js $DEPRECATED_BULK_CELL_SUMMARIES $DEPRECATED_BULK_CELL_SUMMARY_DATASETS
 fi
 
-real	0m0.012s
-user	0m0.000s
-sys	0m0.009s
+real	0m0.013s
+user	0m0.002s
+sys	0m0.008s
 
 >> Running scripts/05-build-deprecated-corridors.sh...
 
@@ -26,9 +26,9 @@ if [ "${DEPRECATED_CORRIDORS}" ]; then
   node ./src/gen-deprecated-corridors.js $DEPRECATED_CORRIDORS
 fi
 
-real	0m0.012s
-user	0m0.004s
-sys	0m0.006s
+real	0m0.013s
+user	0m0.003s
+sys	0m0.007s
 
 >> Running scripts/05-build-deprecated-registrations.sh...
 
@@ -36,9 +36,9 @@ if [ "${DEPRECATED_REGISTRATIONS}" ]; then
   node ./src/gen-deprecated-registrations.js $DEPRECATED_REGISTRATIONS
 fi
 
-real	0m0.013s
-user	0m0.000s
-sys	0m0.010s
+real	0m0.014s
+user	0m0.002s
+sys	0m0.008s
 
 >> Running scripts/10-process-registrations.sh...
 
@@ -49,34 +49,30 @@ DISTANCES=$RAW_DIR/$VERSION/euclidean-distances.ttl
 
 node ./src/concatenate-jsonld.js $REGISTRATIONS $MERGED
 node ./src/get-collisions.js $MERGED $COLLISIONS
-http://purl.org/ccf/1.5/a17166d6-f0f4-4b93-8aec-7c7bcdd27c74
-http://purl.org/ccf/1.5/b326961c-17df-4146-91e2-585dd365bfcc
-http://purl.org/ccf/1.5/0a1b1df3-324b-4cd3-a371-6f84a78ca498
-http://purl.org/ccf/1.5/b17a8516-f01c-48a0-82e5-e7f868c19012
-http://purl.org/ccf/1.5/b5511634-e629-4de6-b49e-a4d7383f0c43
-http://purl.org/ccf/1.5/802b26a8-9462-40f3-ba63-82c4d5fdb241
-http://purl.org/ccf/1.5/82e523ca-abb8-4b78-90de-d02964bbb2bb
-http://purl.org/ccf/1.5/1228b6a1-75e0-4851-b63b-848e66b1e3cb
-http://purl.org/ccf/1.5/2fb0ae56-d711-4edc-bbbf-7c2f4bbb2be6
-420 RUI locations had more than one collision
-694 RUI locations had one collision
-WARNING 112 RUI locations had zero collisions
+http://purl.org/ccf/1.5/15758785-f1c6-466e-8d82-2183c43c7f6d
+http://purl.org/ccf/1.5/309ed87f-0095-4ce0-bb5d-7f91f748acdd
+http://purl.org/ccf/1.5/a449cf86-3a7a-4574-8fff-fb2baf7752cd
+http://purl.org/ccf/1.5/215b4c74-6642-4796-bfc7-33dfeaf6897e
+http://purl.org/ccf/1.5/73d6d5ad-0f57-44b2-a928-91abbfe51e78
+http://purl.org/ccf/1.5/cf2f3af6-794e-4896-9009-7958eeea7a6c
+http://purl.org/ccf/1.5/5aca9fce-eb27-4293-bbaf-17d8f7773a31
+422 RUI locations had more than one collision
+698 RUI locations had one collision
+WARNING 114 RUI locations had zero collisions
 node ./src/get-corridors.js $MERGED $CORRIDORS
-http://purl.org/ccf/1.5/a17166d6-f0f4-4b93-8aec-7c7bcdd27c74
-http://purl.org/ccf/1.5/b326961c-17df-4146-91e2-585dd365bfcc
-http://purl.org/ccf/1.5/0a1b1df3-324b-4cd3-a371-6f84a78ca498
-http://purl.org/ccf/1.5/b17a8516-f01c-48a0-82e5-e7f868c19012
-http://purl.org/ccf/1.5/b5511634-e629-4de6-b49e-a4d7383f0c43
-http://purl.org/ccf/1.5/802b26a8-9462-40f3-ba63-82c4d5fdb241
-http://purl.org/ccf/1.5/82e523ca-abb8-4b78-90de-d02964bbb2bb
-http://purl.org/ccf/1.5/1228b6a1-75e0-4851-b63b-848e66b1e3cb
-http://purl.org/ccf/1.5/2fb0ae56-d711-4edc-bbbf-7c2f4bbb2be6
-1226 RUI locations had a corridor
+http://purl.org/ccf/1.5/15758785-f1c6-466e-8d82-2183c43c7f6d
+http://purl.org/ccf/1.5/309ed87f-0095-4ce0-bb5d-7f91f748acdd
+http://purl.org/ccf/1.5/a449cf86-3a7a-4574-8fff-fb2baf7752cd
+http://purl.org/ccf/1.5/215b4c74-6642-4796-bfc7-33dfeaf6897e
+http://purl.org/ccf/1.5/73d6d5ad-0f57-44b2-a928-91abbfe51e78
+http://purl.org/ccf/1.5/cf2f3af6-794e-4896-9009-7958eeea7a6c
+http://purl.org/ccf/1.5/5aca9fce-eb27-4293-bbaf-17d8f7773a31
+1234 RUI locations had a corridor
 node ./src/compute-extraction-site-distances.js $MERGED $DISTANCES
 
-real	6m25.944s
-user	0m7.023s
-sys	0m1.261s
+real	15m22.373s
+user	0m7.425s
+sys	0m1.748s
 
 >> Running scripts/20-process-cell-summaries.sh...
 
@@ -86,18 +82,18 @@ node ./src/concatenate-jsonld.js $CELL_SUMMARIES $MERGED
 MERGED_DATASETS=$RAW_DIR/$VERSION/cell-summary-dataset-graph.jsonld
 node ./src/unflatten-dataset-graph.js $CELL_SUMMARY_DATASETS $MERGED_DATASETS
 
-real	0m12.743s
-user	0m8.789s
-sys	0m2.565s
+real	0m12.829s
+user	0m8.923s
+sys	0m2.508s
 
 >> Running scripts/30-process-publications.sh...
 
 PUBS_GRAPH=$RAW_DIR/$VERSION/publications-dataset-graph.jsonld
 node ./src/unflatten-dataset-graph.js $PUBLICATIONS $PUBS_GRAPH
 
-real	0m2.220s
-user	0m0.324s
-sys	0m0.041s
+real	0m2.451s
+user	0m0.322s
+sys	0m0.052s
 
 >> Running scripts/40-normalize-dataset-graph.sh...
 
@@ -112,9 +108,9 @@ node ./src/flatten-dataset-graph.js \
 node ./src/unflatten-dataset-graph.js $DIR/full-dataset-graph.csv $DIR/full-dataset-graph.jsonld
 node ./src/flatten-dataset-graph.js $DIR/full-dataset-graph.jsonld $DIR/full-dataset-graph.csv
 
-real	0m2.710s
-user	0m2.779s
-sys	0m0.510s
+real	0m2.830s
+user	0m2.854s
+sys	0m0.553s
 
 >> Running scripts/42-add-metadata-to-dataset-cell-summaries.sh...
 
@@ -125,9 +121,9 @@ node ./src/add-metadata-to-dataset-cell-summaries.js \
   $DIR/cell-summaries-no-metadata.jsonld \
   $DIR/cell-summaries.jsonld
 
-real	0m16.636s
-user	0m10.678s
-sys	0m2.977s
+real	0m12.401s
+user	0m10.565s
+sys	0m2.391s
 
 >> Running scripts/45-split-dataset-graph.sh...
 
@@ -152,9 +148,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
   node ./src/unflatten-dataset-graph.js $DIR/atlas-lq-dataset-graph.csv $DIR/atlas-lq-dataset-graph.jsonld
 fi
 
-real	0m11.167s
-user	0m8.494s
-sys	0m1.948s
+real	0m7.085s
+user	0m8.921s
+sys	0m1.333s
 
 >> Running scripts/50-generate-as-cell-summaries.sh...
 
@@ -179,9 +175,9 @@ fi
 
 echo '{"@graph":[]}' > $DIR/test-as-cell-summaries.jsonld
 
-real	0m4.395s
-user	0m7.104s
-sys	0m0.821s
+real	0m3.513s
+user	0m4.361s
+sys	0m0.896s
 
 >> Running scripts/55-generate-extraction-site-cell-summaries.sh...
 
@@ -223,9 +219,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
     $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld
 fi
 
-real	0m4.991s
-user	0m6.925s
-sys	0m1.101s
+real	0m4.811s
+user	0m6.369s
+sys	0m1.099s
 
 >> Running scripts/58-compute-cell-summary-similarities.sh...
 
@@ -253,9 +249,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
     $DIR/atlas-lq-as-as-cell-summary-similarities.ttl
 fi
 
-real	31m11.321s
-user	32m28.806s
-sys	0m26.241s
+real	34m8.552s
+user	34m42.853s
+sys	0m28.450s
 
 >> Running scripts/60-enrich-dataset-graphs.sh...
 
@@ -291,9 +287,9 @@ if [ "$COMPUTE_LQ" == "true" ]; then
     $DIR/test-atlas-lq-enriched-dataset-graph.jsonld
 fi
 
-real	0m13.006s
-user	0m15.123s
-sys	0m2.502s
+real	0m15.705s
+user	0m15.502s
+sys	0m2.818s
 
 >> Running scripts/70-create-internal-blazegraph.sh...
 
@@ -339,7 +335,7 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 17:25:07 EST 2024
+Wed Nov 20 16:02:34 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
@@ -379,10 +375,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 17:25:08:129[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 16:02:35:590[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/atlas-enriched-dataset-graph.nq[0m
-[36m[1m2024.11.14 17:25:19:854[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    1705515 stmts added in 8.657 secs, rate= 197009, commitLatency=2976ms, {failSet=0,goodSet=0}[0m
+[36m[1m2024.11.20 16:02:51:634[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    1705515 stmts added in 9.874 secs, rate= 172727, commitLatency=5993ms, {failSet=0,goodSet=0}[0m
 run_jsonld $DIR/atlas-as-cell-summaries.jsonld $HRA_POP
 log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
 log4j:WARN Please initialize the log4j system properly.
@@ -402,11 +398,11 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 17:25:21 EST 2024
+Wed Nov 20 16:02:59 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
-freeMemory=2108997632
+freeMemory=2111092736
 buildVersion=2.1.4
 gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
 
@@ -442,10 +438,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 17:25:22:394[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 16:03:00:565[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/atlas-as-cell-summaries.nq[0m
-[36m[1m2024.11.14 17:25:24:731[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    50042 stmts added in 1.656 secs, rate= 30218, commitLatency=573ms, {failSet=0,goodSet=0}[0m
+[36m[1m2024.11.20 16:03:20:620[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    50042 stmts added in 18.911 secs, rate= 2646, commitLatency=922ms, {failSet=0,goodSet=0}[0m
 
 # Test Data
 run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonld "${HRA_POP}#test-data"
@@ -467,7 +463,7 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 17:27:01 EST 2024
+Wed Nov 20 16:05:09 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
@@ -507,10 +503,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 17:27:02:576[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 16:05:10:738[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/test-atlas-enriched-dataset-graph.nq[0m
-[36m[1m2024.11.14 17:28:32:029[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    10709322 stmts added in 84.995 secs, rate= 125999, commitLatency=4345ms, {failSet=0,goodSet=0}[0m
+[36m[1m2024.11.20 16:08:58:748[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    10714700 stmts added in 222.512 secs, rate= 48153, commitLatency=5313ms, {failSet=0,goodSet=0}[0m
 
 # Full Dataset
 run_jsonld $DIR/full-dataset-graph.jsonld "${HRA_POP_FULL}"
@@ -532,7 +528,7 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 17:28:36 EST 2024
+Wed Nov 20 16:09:07 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
@@ -572,10 +568,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 17:28:37:208[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 16:09:08:246[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/full-dataset-graph.nq[0m
-[36m[1m2024.11.14 17:28:42:714[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    201899 stmts added in 3.322 secs, rate= 60776, commitLatency=2042ms, {failSet=0,goodSet=0}[0m
+[36m[1m2024.11.20 16:09:23:102[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    202414 stmts added in 13.222 secs, rate= 15308, commitLatency=1436ms, {failSet=0,goodSet=0}[0m
 
 # Precomputed Atlas distances and similarities
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#distances" $DIR/euclidean-distances.ttl
@@ -597,11 +593,11 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 17:28:43 EST 2024
+Wed Nov 20 16:09:25 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
-freeMemory=2108997632
+freeMemory=2111092736
 buildVersion=2.1.4
 gitCommit=738d05f08cffd319233a4bfbb0ec2a858e260f9c
 
@@ -637,10 +633,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 17:28:44:557[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 16:09:26:432[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/euclidean-distances.ttl[0m
-[36m[1m2024.11.14 17:28:53:858[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    1156720 stmts added in 6.775 secs, rate= 170733, commitLatency=2405ms, {failSet=0,goodSet=0}[0m
+[36m[1m2024.11.20 16:10:02:726[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    1178112 stmts added in 9.027 secs, rate= 130509, commitLatency=27163ms, {failSet=0,goodSet=0}[0m
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#similarities" $DIR/atlas-cell-summary-similarities.ttl
 log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
 log4j:WARN Please initialize the log4j system properly.
@@ -660,7 +656,7 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 17:28:54 EST 2024
+Wed Nov 20 16:10:07 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
@@ -700,11 +696,11 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 17:28:55:845[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 16:10:09:287[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/atlas-cell-summary-similarities.ttl[0m
-loading: 164596104 stmts added in 2733.441 secs, rate= 60215, commitLatency=0ms, {failSet=0,goodSet=0}
-[36m[1m2024.11.14 18:14:38:246[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    164596104 stmts added in 2733.441 secs, rate= 60215, commitLatency=8864ms, {failSet=0,goodSet=0}[0m
+loading: 164596104 stmts added in 3148.579 secs, rate= 52276, commitLatency=0ms, {failSet=0,goodSet=0}
+[36m[1m2024.11.20 17:02:41:448[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    164596104 stmts added in 3148.579 secs, rate= 52276, commitLatency=3413ms, {failSet=0,goodSet=0}[0m
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#as-as-sims" $DIR/atlas-as-as-cell-summary-similarities.ttl
 log4j:WARN No appenders could be found for logger (com.bigdata.config.Configuration).
 log4j:WARN Please initialize the log4j system properly.
@@ -724,7 +720,7 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 18:14:40 EST 2024
+Wed Nov 20 17:02:43 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
@@ -764,10 +760,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 18:14:42:020[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 17:02:46:747[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/atlas-as-as-cell-summary-similarities.ttl[0m
-[36m[1m2024.11.14 18:14:46:926[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    98865 stmts added in 3.447 secs, rate= 28681, commitLatency=1357ms, {failSet=0,goodSet=0}[0m
+[36m[1m2024.11.20 17:03:13:256[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    98865 stmts added in 22.22 secs, rate= 4449, commitLatency=4153ms, {failSet=0,goodSet=0}[0m
 
 if [ "$COMPUTE_LQ" == "true" ]; then
   # Atlas LQ
@@ -804,7 +800,7 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 18:14:54 EST 2024
+Wed Nov 20 17:03:21 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
@@ -844,10 +840,10 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 18:14:55:133[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 17:03:22:831[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/hra.owl[0m
-[36m[1m2024.11.14 18:15:20:026[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    1784313 stmts added in 21.085 secs, rate= 84624, commitLatency=3714ms, {failSet=0,goodSet=0}[0m
+[36m[1m2024.11.20 17:04:30:976[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    1784313 stmts added in 59.463 secs, rate= 30007, commitLatency=8562ms, {failSet=0,goodSet=0}[0m
 
 # Import ctann-crosswalks
 curl --retry 3 --retry-connrefused -s $CTANN_CROSSWALKS -H "Accept: text/turtle" > $DIR/ctann-crosswalks.ttl
@@ -870,7 +866,7 @@ BlazeGraph(TM) Graph Engine
 Copyright SYSTAP, LLC DBA Blazegraph 2006-2016.  All rights reserved.
 
 mccarthy.cns.iu.edu
-Thu Nov 14 18:15:21 EST 2024
+Wed Nov 20 17:04:33 EST 2024
 Linux/6.8.0-45-generic amd64
 Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz Family 6 Model 85 Stepping 7, GenuineIntel #CPU=20
 Ubuntu 11.0.25
@@ -910,14 +906,14 @@ sesame             http://www.openrdf.org/download.jsp
 slf4j              http://www.slf4j.org/license.html                                       
 zookeeper          http://www.apache.org/licenses/LICENSE-2.0.html                         
 
-[36m[1m2024.11.14 18:15:22:463[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
+[36m[1m2024.11.20 17:04:35:136[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:43[0m
     Loading ./raw-data/v0.11.1/ctann-crosswalks.ttl[0m
-[36m[1m2024.11.14 18:15:24:809[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
-    15442 stmts added in 1.679 secs, rate= 9197, commitLatency=543ms, {failSet=0,goodSet=0}[0m
+[36m[1m2024.11.20 17:04:43:313[0m[36m[0m [3mmain[0m [34mINFO[0m [32morg.renci.blazegraph.Load.runUsingConnection:47[0m
+    15442 stmts added in 4.795 secs, rate= 3220, commitLatency=3259ms, {failSet=0,goodSet=0}[0m
 
-real	50m30.437s
-user	134m49.289s
-sys	4m22.630s
+real	62m34.665s
+user	171m9.873s
+sys	6m49.052s
 
 >> Running scripts/75-run-reports.sh...
 Creating report: as-ct-b
@@ -955,8 +951,7 @@ Creating report: validation-b-mean-expression
 Creating report: validation-v1
 Creating report: validation-v2p1
 Creating report: validation-v2p2-extra1
-Creating report: validation-v2p2-extra2
-Creating report: validation-v2p2-extra3
+Creating report: validation-v2p2-extCreating report: validation-v2p2-extra3
 Creating report: validation-v2p2
 Creating report: validation-v2p3
 Creating report: validation-v3.edges
@@ -1010,9 +1005,9 @@ Creating report: spatial-and-bulk-datasets-breakdown
 Creating report: spatial-and-bulk-datasets
 Creating report: spatial-placements
 
-real	64m19.725s
-user	524m28.326s
-sys	15m28.257s
+real	70m31.727s
+user	566m5.440s
+sys	16m41.258s
 
 >> Running scripts/80-publish-results.sh...
 
@@ -1049,9 +1044,9 @@ echo "$CREATION_DATE" > $OUT/CREATION_DATE
 
 node src/gen-readme.js $VERSION "$CREATION_DATE" $OUT/README.md
 
-real	0m27.273s
-user	0m16.248s
-sys	0m3.808s
+real	0m28.038s
+user	0m18.319s
+sys	0m3.644s
 
 
-Run finished on Thu Nov 14 19:20:11 EST 2024
+Run finished on Wed Nov 20 18:15:43 EST 2024
