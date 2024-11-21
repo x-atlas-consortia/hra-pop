@@ -1,13 +1,14 @@
 import { distance } from 'mathjs';
 
-const SPATIAL_PLACEMENT_LOOKUP = 'https://apps.humanatlas.io/hra-api/v1/get-spatial-placement';
-const GLOBAL_ENTITY_ID = 'http://purl.org/ccf/latest/ccf.owl#VHBothSexes';
+const GLOBAL_ENTITY_ID = 'https://purl.humanatlas.io/graph/hra-ccf-body#VHBothSexes';
 const GLOBAL_POINT_CACHE = {};
+const API_ENDPOINT = process.env['API_ENDPOINT'] ?? 'https://apps.humanatlas.io/api/';
+const API = `${API_ENDPOINT}v1/get-spatial-placement`;
 
 async function getGlobalPoint(entity) {
   let point = GLOBAL_POINT_CACHE[entity['@id']];
   if (!point) {
-    point = await fetch(SPATIAL_PLACEMENT_LOOKUP, {
+    point = await fetch(API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,15 +41,20 @@ export async function getSpatialEntityDistance(entityA, entityB) {
 
   let pointA;
   let pointB;
-  if (targetA === targetB) {
-    pointA = getLocalPoint(entityA);
-    pointB = getLocalPoint(entityB);
-  } else {
-    pointA = await getGlobalPoint(entityA);
-    pointB = await getGlobalPoint(entityB);
-  }
 
-  return distance(pointA, pointB);
+  try {
+    if (targetA === targetB) {
+      pointA = getLocalPoint(entityA);
+      pointB = getLocalPoint(entityB);
+    } else {
+      pointA = await getGlobalPoint(entityA);
+      pointB = await getGlobalPoint(entityB);
+    }
+    return distance(pointA, pointB);
+  } catch (err) {
+    console.log(JSON.stringify({ message: err.message, entityA, entityB, pointA, pointB }, null, 2));
+    return Number.MAX_SAFE_INTEGER;
+  }
 }
 
 export async function* getAllSpatialEntityDistances(entities, maxDistance = 10000) {

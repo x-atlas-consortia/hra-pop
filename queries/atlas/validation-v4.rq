@@ -8,7 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
@@ -41,7 +41,7 @@ WHERE {
     SELECT ?sex ?tool ?modality 
       (COUNT(DISTINCT(?asctb_cell_id)) as ?asctb_only)
     WHERE {
-      GRAPH CCF: {
+      GRAPH HRA: {
         SELECT DISTINCT ?asctb_cell_id
         WHERE {
           ?asctb_cell_id ccf:ccf_asctb_type ?type .
@@ -80,7 +80,7 @@ WHERE {
   }
   
   BIND(EXISTS {
-    GRAPH CCF: {
+    GRAPH HRA: {
       SELECT DISTINCT ?cell_id
       WHERE {
         ?cell_id ccf:ccf_asctb_type ?type .

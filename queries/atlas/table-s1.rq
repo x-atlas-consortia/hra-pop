@@ -8,7 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
 PREFIX dc: <http://purl.org/dc/terms/>
@@ -47,7 +47,7 @@ SELECT DISTINCT
   ?number_of_unique_cell_types
   ?hubmap_dataset_publication_status
 FROM HRApop:
-FROM CCF:
+FROM HRA:
 WHERE {
 
   # Relationships 

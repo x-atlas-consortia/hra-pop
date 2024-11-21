@@ -8,7 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
@@ -18,7 +18,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT DISTINCT ?sex ?dataset ?organ ?cell_count ?in_atlas ?has_cell_summary ?has_extraction_site ?has_publication ?in_high_quality_portal ?portal ?provider ?study_paper ?doi ?lead_author
 FROM HRApopFull:
-FROM CCF:
+FROM HRA:
 WHERE {
   [] ccf:generates_dataset ?dataset .
 

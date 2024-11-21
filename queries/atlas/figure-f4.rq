@@ -8,7 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
@@ -29,7 +29,7 @@ SELECT
 	(COUNT(DISTINCT(?dataset)) as ?dataset_count)
   (COUNT(DISTINCT(?nonAtlasDataset)) as ?non_atlas_dataset_count)
 FROM HRApop:
-FROM CCF:
+FROM HRA:
 WHERE {
   {
     SELECT ?organIri ?sex (?dataset as ?nonAtlasDataset)
@@ -54,7 +54,7 @@ WHERE {
               ccf:placement_relative_to ?ref_organ .
           }
 
-          GRAPH CCF: {
+          GRAPH HRA: {
             ?ref_organ ccf:representation_of ?refOrganIri ;
               ccf:organ_owner_sex ?sex .
             ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .

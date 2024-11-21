@@ -10,7 +10,7 @@ console.log('minimum similarity', MIN_SIMILARITY);
 const summaryLookup = {};
 for (const path of CELL_SUMMARIES) {
   const summaries = JSON.parse(readFileSync(path))['@graph'];
-  for (const summary of summaries) {
+  for (const summary of summaries.filter((summary) => summary.cell_source)) {
     const modality = summary.modality;
     const tool = summary.annotation_method;
     const sex = summary.sex || 'Unknown';

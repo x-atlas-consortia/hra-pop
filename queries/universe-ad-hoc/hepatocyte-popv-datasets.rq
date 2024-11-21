@@ -1,0 +1,97 @@
+#+ summary: Popv cells information
+#+ description: Information about cells mapped via Popv considered or used in HRApop
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?dataset
+  (REPLACE(?organLabel, "skin of body", "skin") as ?Organ_Label)
+  (REPLACE(STR(?organ_id), STR(UBERON:), "UBERON:") as ?Organ_ID)
+  (?cell_label as ?Annotation_Label)
+  (REPLACE(STR(?cell_id), STR(CL:), "CL:") AS ?Annotation_Label_ID)
+  (?cell_label as ?CL_Label)
+  (REPLACE(STR(?cell_id), STR(CL:), "CL:") AS ?CL_ID)
+  # ("" as ?CL_Match)
+  # (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+  (?count as ?cell_count)
+FROM HRA:
+FROM HRApop:
+FROM HRApopTestData:
+WHERE {
+  VALUES (?cell_id) {
+    (CL:0000182)
+  }
+  VALUES (?organ_id) {
+    (UBERON:0000948)
+  }
+  [] ccf:generates_dataset ?dataset .
+
+  ?dataset ccf:has_cell_summary [
+    ccf:cell_annotation_method ?tool ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?cell_label ;
+      ccf:cell_count ?count ;
+    ]
+  ] .
+
+  OPTIONAL {
+    SELECT ?dataset ?refOrganIri 
+      (COALESCE(?refOrganRdfsLabel, ?refOrganCcfLabel) as ?refOrganLabel)
+    WHERE {
+      {
+        ?sample ccf:comes_from ?donor .
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:comes_from ?donor .
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+
+      ?ref_organ ccf:representation_of ?refOrganIri .
+      
+      OPTIONAL {
+        ?refOrganIri rdfs:label ?refOrganRdfsLabel .
+      }
+      OPTIONAL {
+        ?refOrganIri ccf:ccf_pref_label ?refOrganCcfLabel .
+      }
+    }
+  }
+
+  OPTIONAL {
+    ?dataset ccf:organ_id ?_reportedOrganIri .
+    BIND(IRI(?_reportedOrganIri) as ?reportedOrganIri)
+
+    OPTIONAL {
+      ?reportedOrganIri rdfs:label ?reportedOrganRdfsLabel .
+    }
+    OPTIONAL {
+      ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganCcfLabel .
+    }
+    BIND(IF(BOUND(?reportedOrganRdfsLabel), ?reportedOrganRdfsLabel, ?reportedOrganCcfLabel) as ?reportedOrganLabel)
+  }
+
+  BIND (COALESCE(?reportedOrganIri, ?refOrganIri, 'N/A') as ?organ_id)
+  BIND (STR(COALESCE(?reportedOrganLabel, ?refOrganLabel, 'N/A')) as ?organLabel)
+  FILTER (?tool = "popv")
+}
+# GROUP BY ?organLabel ?organ_id ?cell_id
+# ORDER BY ?Organ_Label ?Annotation_Label

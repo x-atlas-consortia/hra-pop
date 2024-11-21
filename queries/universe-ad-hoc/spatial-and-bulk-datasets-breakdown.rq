@@ -8,7 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
@@ -19,7 +19,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT ?organ ?side ?sex ?modality ?status (COUNT(DISTINCT(?dataset)) as ?dataset_count) (SUM(?cell_count) as ?cell_count)
 FROM HRApopFull:
-FROM CCF:
+FROM HRA:
 WHERE {
   VALUES (?organLabel ?organ ?side) {
     ("blood" "blood" "")

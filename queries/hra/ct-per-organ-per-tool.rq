@@ -1,7 +1,7 @@
 #+ summary: Cell types per organ per annotation tool
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX CTAnn: <https://purl.humanatlas.io/graph/ctann-crosswalks>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
@@ -15,7 +15,7 @@ SELECT ?Organ
   ?CellTypist
   ?popV
   (IF(?AS3D > 0, 'x', '') as ?hasReferenceOrgan)
-FROM CCF:
+FROM HRA:
 FROM CTAnn:
 WHERE {
   {

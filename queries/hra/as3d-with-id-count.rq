@@ -2,7 +2,7 @@
 #+ description: Count of `sceneNode`s in the 3D Reference Organs that have an ontology ID
 
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 
 SELECT (COUNT(?as3d) as ?as_count)
 FROM HRA:

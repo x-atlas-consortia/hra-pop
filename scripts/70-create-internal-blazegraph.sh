@@ -7,11 +7,10 @@ DIR=$RAW_DIR/$VERSION
 JNL=$DIR/blazegraph.jnl
 rm -f $JNL
 
-HRA=https://purl.humanatlas.io/collection/hra
+HRA=https://purl.humanatlas.io/collection/hra-api
 HRA_POP=https://purl.humanatlas.io/graph/hra-pop
 HRA_POP_LQ=https://purl.humanatlas.io/graph/hra-pop-lq
 HRA_POP_FULL=https://purl.humanatlas.io/ds-graph/hra-pop-full
-CCF=https://purl.humanatlas.io/graph/ccf
 CTANN_CROSSWALKS=https://purl.humanatlas.io/graph/ctann-crosswalks
 
 run_ndjsonld() {
@@ -55,14 +54,10 @@ if [ "$COMPUTE_LQ" == "true" ]; then
   blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#as-as-sims" $DIR/atlas-lq-as-as-cell-summary-similarities.ttl
 fi
 
-# Import CCF.OWL
-curl -s $CCF -H "Accept: application/rdf+xml" > $DIR/ccf.owl
-blazegraph-runner load --journal=$JNL "--graph=${CCF}" $DIR/ccf.owl
-
 # Import HRA
-curl -s $HRA -H "Accept: application/rdf+xml" > $DIR/hra.owl
+curl --retry 3 --retry-connrefused -s $HRA -H "Accept: application/rdf+xml" > $DIR/hra.owl
 blazegraph-runner load --journal=$JNL "--graph=${HRA}" $DIR/hra.owl
 
 # Import ctann-crosswalks
-curl -s $CTANN_CROSSWALKS -H "Accept: text/turtle" > $DIR/ctann-crosswalks.ttl
+curl --retry 3 --retry-connrefused -s $CTANN_CROSSWALKS -H "Accept: text/turtle" > $DIR/ctann-crosswalks.ttl
 blazegraph-runner load --journal=$JNL "--graph=${CTANN_CROSSWALKS}" $DIR/ctann-crosswalks.ttl

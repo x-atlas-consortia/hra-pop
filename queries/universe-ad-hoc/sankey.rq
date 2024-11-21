@@ -8,7 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
 PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
@@ -53,7 +53,7 @@ SELECT DISTINCT
 FROM HRApop:
 FROM HRApopFull:
 FROM HRApopTestData:
-FROM CCF:
+FROM HRA:
 WHERE {
 
   # Relationships 
@@ -109,14 +109,13 @@ WHERE {
     # Ref Organ Name
     {
       ?ref_organ ccf:representation_of ?organ_iri .
-      ?ref_organ ccf:organ_owner_sex ?ref_organ_sex .
       ?organ_iri rdfs:label ?organ_name .
     }
 
     # Ref Organ GLB File
     {
       ?some_ref_organ a ?organ_iri ;
-        ccf:organ_owner_sex ?ref_organ_sex ;
+        ccf:organ_owner_sex ?donor_sex ;
         ccf:has_object_reference [
           ccf:file_name ?organ_name_glb_file
         ] .

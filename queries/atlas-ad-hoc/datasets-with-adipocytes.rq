@@ -6,7 +6,7 @@
 
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX ccf: <http://purl.org/ccf/>
-PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX hgnc: <http://purl.bioontology.org/ontology/HGNC/>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
@@ -14,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 
 SELECT DISTINCT ?source ?dataset ?organ ?as ?as_iri ?age ?sex ?bmi ?tool ?cell_type ?cell_type_label ?cell_type_count ?cell_type_percentage ?biomarker ?mean_expression_value
-FROM CCF:
+FROM HRA:
 FROM HRApop:
 WHERE {
   VALUES (?_celltype_iri) {

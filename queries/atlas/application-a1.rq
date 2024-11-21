@@ -8,6 +8,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
 PREFIX dc: <http://purl.org/dc/terms/>
@@ -30,9 +31,9 @@ WHERE {
       ]
     ] .
 
-    # [] a ccf:SpatialPlacement ;
-    #     ccf:placement_for ?rui_location ;
-    #     ccf:placement_relative_to ?refOrgan .
+    [] a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?refOrgan .
 
     # BIND(EXISTS {
     #   GRAPH HRApop: {
@@ -41,12 +42,17 @@ WHERE {
     # } as ?in_atlas)
   }
 
-  # GRAPH CCF: {
-  #   ?refOrgan ccf:representation_of ?organIri .
-  #   ?organIri rdfs:label ?organ .
-
-  #   BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
-  # }
+  GRAPH HRA: {
+    {
+      SELECT ?refOrgan ?organIri (SAMPLE(?organ_) as ?organ)
+      WHERE {
+        ?refOrgan ccf:representation_of ?organIri .
+        ?organIri rdfs:label ?organ_ .
+      }
+      GROUP BY ?refOrgan ?organIri
+    }
+  }
+  BIND(REPLACE(REPLACE(STR(?organIri), 'http://purl.obolibrary.org/obo/UBERON_', 'UBERON:'), 'http://purl.org/sig/ont/fma/fma', 'FMA:') as ?organId)
 
   # FILTER (?in_atlas != TRUE)
 }
