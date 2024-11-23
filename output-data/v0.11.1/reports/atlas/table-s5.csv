@@ -118,8 +118,8 @@ http://purl.org/ccf/1.5/1995aefd-5289-4652-a7e0-cc66c495649f,VHFHeart,heart,hear
 http://purl.org/ccf/1.5/1995aefd-5289-4652-a7e0-cc66c495649f,VHFHeart,heart,heart right ventricle,http://purl.obolibrary.org/obo/UBERON_0002080,347.126,78646.79879643944,2197,0.8950000000000001
 http://purl.org/ccf/1.5/1995aefd-5289-4652-a7e0-cc66c495649f,VHFHeart,heart,interventricular septum,http://purl.obolibrary.org/obo/UBERON_0002094,127.426,65894.51634256751,2197,0.8950000000000001
 http://purl.org/ccf/1.5/da28394d-789a-4fba-842a-f8ba5046b221,VHMHeart,heart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2013831622,1600,0.886
-http://purl.org/ccf/1.5/886e391d-0151-46d3-8a51-084bf6a06910,VHMHeart,heart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2013831622,1600,0.886
 http://purl.org/ccf/1.5/5cb72454-f0fb-41d5-9cad-5797e1b447ae,VHMHeart,heart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2013831622,1600,0.886
+http://purl.org/ccf/1.5/886e391d-0151-46d3-8a51-084bf6a06910,VHMHeart,heart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2013831622,1600,0.886
 http://purl.org/ccf/1.5/a0ff0780-d666-42fe-8068-a3b41b1c6aa0,VHMHeart,heart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2013831622,1600,0.886
 http://purl.org/ccf/1.5/118235b7-38a4-4fcf-8834-bad5765f5eeb,VHMHeart,heart,heart left ventricle,http://purl.obolibrary.org/obo/UBERON_0002084,1417.6,121604.2013831622,1600,0.886
 http://purl.org/ccf/1.5/f9e28182-3ed3-4a3f-bd45-66ebce1efafb,VHFLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,4415.0,512008.4585746418,5000,0.883
@@ -181,8 +181,8 @@ http://purl.org/ccf/1.5/615aa60c-0a0a-4614-bae2-f85112479919,VHMLargeIntestine,l
 http://purl.org/ccf/1.5/615aa60c-0a0a-4614-bae2-f85112479919,VHMLargeIntestine,large intestine,caecum,http://purl.obolibrary.org/obo/UBERON_0001153,6403.05,116090.7338319923,47430,0.377
 http://purl.org/ccf/1.5/5764d42e-95e4-4e5a-b36e-ca498354906d,VHFLeftUreter,left ureter,Left ureter,http://purl.obolibrary.org/obo/UBERON_0001223,8.52,668.6656319325749,24,0.355
 http://purl.org/ccf/1.5/79a10f00-84e0-4b8e-8622-485973df3773,VHMSmallIntestine,small intestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,463.05,492305.8714266642,1350,0.343
-http://purl.org/ccf/1.5/502f175c-9d55-4341-b6ff-0f04d76522d5,VHMSmallIntestine,small intestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,463.05,492305.8714266642,1350,0.343
 http://purl.org/ccf/1.5/8023d0ab-338a-43c4-9f9b-d637220f1b8e,VHMSmallIntestine,small intestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,463.05,492305.8714266642,1350,0.343
+http://purl.org/ccf/1.5/502f175c-9d55-4341-b6ff-0f04d76522d5,VHMSmallIntestine,small intestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,463.05,492305.8714266642,1350,0.343
 http://purl.org/ccf/1.5/ea1d468d-e988-42cd-8e34-71701e568878,VHMSmallIntestine,small intestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,463.05,492305.8714266642,1350,0.343
 http://purl.org/ccf/1.5/bddd9066-3f8c-4330-8e33-23be89ee8a0b,VHMSmallIntestine,small intestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,463.05,492305.8714266642,1350,0.343
 http://purl.org/ccf/1.5/fd76b9bb-85b0-4dd0-8e60-7c6ec7c95d73,VHMSmallIntestine,small intestine,jejunum,http://purl.obolibrary.org/obo/UBERON_0002115,463.05,492305.8714266642,1350,0.343
@@ -206,9 +206,9 @@ http://purl.org/ccf/1.5/3425fa0c-c5cb-4493-b6ba-41520334b13e,VHFLargeIntestine,l
 http://purl.org/ccf/1.5/b730bf41-6de9-423a-bfe6-6da81191d821,VHMSpleen,spleen,renal surface of spleen,http://purl.org/sig/ont/fma/fma15839,180.0,8230.84266342754,1000,0.296
 http://purl.org/ccf/1.5/b730bf41-6de9-423a-bfe6-6da81191d821,VHMSpleen,spleen,diaphragmatic surface of spleen,http://purl.org/sig/ont/fma/fma15828,116.0,192762.6358055186,1000,0.296
 http://purl.org/ccf/1.5/ba9d007b-c5c7-4231-80f9-42403a98a6df,VHMLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,879509.278807413,5000,0.29
-http://purl.org/ccf/1.5/82d414d4-59a7-4a61-9d86-278cb73a3ddd,VHMLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,879509.278807413,5000,0.29
 http://purl.org/ccf/1.5/fb4cec06-b147-4277-a6cf-8aa21e294183,VHMLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,879509.278807413,5000,0.29
 http://purl.org/ccf/1.5/23e9d58a-c93f-414b-baf9-3692ea20fd1c,VHMLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,879509.278807413,5000,0.29
+http://purl.org/ccf/1.5/82d414d4-59a7-4a61-9d86-278cb73a3ddd,VHMLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,879509.278807413,5000,0.29
 http://purl.org/ccf/1.5/76a8931b-1c06-4646-8a17-ac7828b6e879,VHMLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,879509.278807413,5000,0.29
 http://purl.org/ccf/1.5/6bbdd96b-5fae-406c-a0a5-8e20e1bd0d8e,VHMLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,879509.278807413,5000,0.29
 http://purl.org/ccf/1.5/9a6cb9d5-afdd-429d-98ba-f157a42c7937,VHMLargeIntestine,large intestine,descending colon,http://purl.obolibrary.org/obo/UBERON_0001158,1450.0,879509.278807413,5000,0.29
