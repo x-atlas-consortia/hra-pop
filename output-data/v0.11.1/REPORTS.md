@@ -55,12 +55,12 @@
   * [Count of Anatomical Structures by Organ (as-cnt-per-organ)](#as-cnt-per-organ)
   * [Count of Anatomical Structures (as-cnt)](#as-cnt)
   * [Count of Anatomical Structures per `sceneNode`s (as3d-with-id-count)](#as3d-with-id-count)
-  * [AS, CT, and BM in the HRA (asctb-trios)](#asctb-trios)
+  * [AS, CT, and BM in the HRA (asctb-records)](#asctb-records)
   * [Cell types per annotation tool (count-ct-per-tool)](#count-ct-per-tool)
   * [Cell types per organ per annotation tool (ct-per-organ-per-tool)](#ct-per-organ-per-tool)
   * [Named graphs in the db (named-graphs)](#named-graphs)
 * universe-ad-hoc
-  * [AS, CT, BM, and mean Gene Expression from Azimuth in the HRA (asctb-expr-trios-az)](#asctb-expr-trios-az)
+  * [AS, CT, BM, and mean Gene Expression from Azimuth in the HRA (asctb-expr-records-az)](#asctb-expr-records-az)
   * [Universe consortium breakdown (consortium-breakdown)](#consortium-breakdown)
   * [Universe consortium breakdown with cell count (count-consortium-breakdown)](#count-consortium-breakdown)
   * [Universe consortium breakdown (count-consortium-datasets)](#count-consortium-datasets)
@@ -5124,7 +5124,7 @@ WHERE {
 | 1222 |
 
 
-### <a id="asctb-trios"></a>AS, CT, and BM in the HRA (asctb-trios)
+### <a id="asctb-records"></a>AS, CT, and BM in the HRA (asctb-records)
 
 
 
@@ -5166,10 +5166,10 @@ ORDER BY ?as_label
 
 ```
 
-([View Source](../../queries/hra/asctb-trios.rq))
+([View Source](../../queries/hra/asctb-records.rq))
 </details>
 
-#### Results ([View CSV File](reports/hra/asctb-trios.csv))
+#### Results ([View CSV File](reports/hra/asctb-records.csv.zip))
 
 | as_label | ct_label | bm_label | as | ct | bm | bmType |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -5424,7 +5424,7 @@ ORDER BY ?graph
 | https://purl.humanatlas.io/graph/hra-pop#test-data | 10612705 |
 
 
-### <a id="asctb-expr-trios-az"></a>AS, CT, BM, and mean Gene Expression from Azimuth in the HRA (asctb-expr-trios-az)
+### <a id="asctb-expr-records-az"></a>AS, CT, BM, and mean Gene Expression from Azimuth in the HRA (asctb-expr-records-az)
 
 
 
@@ -5477,10 +5477,10 @@ ORDER BY ?as_label
 
 ```
 
-([View Source](../../queries/universe-ad-hoc/asctb-expr-trios-az.rq))
+([View Source](../../queries/universe-ad-hoc/asctb-expr-records-az.rq))
 </details>
 
-#### Results ([View CSV File](reports/universe-ad-hoc/asctb-expr-trios-az.csv))
+#### Results ([View CSV File](reports/universe-ad-hoc/asctb-expr-records-az.csv))
 
 | as_label | ct_label | bm_label | as | ct | bm | bmType | avg_mean_gene_expr |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
