@@ -1,5 +1,4 @@
-#+ summary: Count of Cells and unique Cell Types
-#+ description: Number of processed cells and unique cell types that are included in HRApop
+#+ summary: Cell Counts for Universe Proteomics Datasets
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>

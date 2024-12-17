@@ -6,6 +6,8 @@
   * [Atlas AS with CT and B info from exp data (as-ct-b)](#as-ct-b)
   * [Atlas dataset, extraction site, and AS (as-datasets-extraction-sites)](#as-datasets-extraction-sites)
   * [Atlas dataset tool, modality, and AS info (as-datasets-modality)](#as-datasets-modality)
+  * [Cell Counts for Atlas Proteomics Datasets (atlas-sc-proteomics-cell-counts)](#atlas-sc-proteomics-cell-counts)
+  * [Cell Counts for Atlas Transcriptomics Datasets (atlas-sc-transcriptomics-cell-counts)](#atlas-sc-transcriptomics-cell-counts)
   * [Atlas consortium breakdown (consortium-breakdown)](#consortium-breakdown)
   * [Datasets by modality (count-dataset-modality)](#count-dataset-modality)
   * [Kidney AS Cell Distributions (counts-for-heart-as)](#counts-for-heart-as)
@@ -24,8 +26,6 @@
   * [Application A2P2 (application-a2p2)](#application-a2p2)
   * [Application A2P3 (application-a2p3)](#application-a2p3)
   * [Application A2P4 (application-a2p4)](#application-a2p4)
-  * [Count of Cells and unique Cell Types (atlas-sc-proteomics-cell-counts)](#atlas-sc-proteomics-cell-counts)
-  * [Count of Cells and unique Cell Types (atlas-sc-transcriptomics-cell-counts)](#atlas-sc-transcriptomics-cell-counts)
   * [Count of Cells and unique Cell Types by Modality (cell-and-cell-type-count-by-modality)](#cell-and-cell-type-count-by-modality)
   * [Count of Cells and unique Cell Types (cell-and-cell-type-count)](#cell-and-cell-type-count)
   * [Atlas-level Donor information (donor-info)](#donor-info)
@@ -97,8 +97,8 @@
   * [Spatial and bulk dataset breakdown (spatial-and-bulk-datasets-breakdown)](#spatial-and-bulk-datasets-breakdown)
   * [Spatial and bulk dataset information (spatial-and-bulk-datasets)](#spatial-and-bulk-datasets)
   * [Universe Spatial Placements (spatial-placements)](#spatial-placements)
-  * [Count of Cells and unique Cell Types (universe-sc-proteomics-cell-counts)](#universe-sc-proteomics-cell-counts)
-  * [Count of Cells and unique Cell Types (universe-sc-transcriptomics-cell-counts)](#universe-sc-transcriptomics-cell-counts)
+  * [Cell Counts for Universe Proteomics Datasets (universe-sc-proteomics-cell-counts)](#universe-sc-proteomics-cell-counts)
+  * [Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-counts)](#universe-sc-transcriptomics-cell-counts)
 
 
 
@@ -347,6 +347,116 @@ ORDER BY ?refOrgan
 | Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | celltypist | sc_transcriptomics | descending colon |
 | Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/277152f17b5a2f308820ab4d85c5a426 | celltypist | sc_transcriptomics | descending colon |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="atlas-sc-proteomics-cell-counts"></a>Cell Counts for Atlas Proteomics Datasets (atlas-sc-proteomics-cell-counts)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Cell Counts for Atlas Proteomics Datasets
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT 
+  (COUNT(DISTINCT(?dataset)) as ?atlas_sc_proteomics_dataset_count)
+  (SUM(?dataset_cell_count) as ?atlas_sc_proteomics_cell_count)
+FROM HRApop:
+# FROM HRApopTestData:
+WHERE {
+  {
+    SELECT ?dataset (MAX(?total_cell_count) as ?dataset_cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?tool (SUM(?cell_count) as ?total_cell_count)
+        WHERE {
+          ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [
+            ccf:cell_annotation_method ?tool ;
+            ccf:has_cell_summary_row [
+              ccf:cell_id ?cell_id ;
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+          FILTER(?tool = 'sc_proteomics')
+        }
+        GROUP BY ?dataset ?tool
+      }
+    }
+    GROUP BY ?dataset
+  }
+}
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/atlas-sc-proteomics-cell-counts.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/atlas-sc-proteomics-cell-counts.csv))
+
+| atlas_sc_proteomics_dataset_count | atlas_sc_proteomics_cell_count |
+| :--- | :--- |
+| 107 | 17547511 |
+
+
+### <a id="atlas-sc-transcriptomics-cell-counts"></a>Cell Counts for Atlas Transcriptomics Datasets (atlas-sc-transcriptomics-cell-counts)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Cell Counts for Atlas Transcriptomics Datasets
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT
+  (COUNT(DISTINCT(?dataset)) as ?atlas_sc_transcriptomics_dataset_count)
+  (SUM(?dataset_cell_count) as ?atlas_sc_transcriptomics_cell_count)
+FROM HRApop:
+# FROM HRApopTestData:
+WHERE {
+  {
+    SELECT ?dataset (MAX(?total_cell_count) as ?dataset_cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?tool (SUM(?cell_count) as ?total_cell_count)
+        WHERE {
+          ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [
+            ccf:cell_annotation_method ?tool ;
+            ccf:has_cell_summary_row [
+              ccf:cell_id ?cell_id ;
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+          FILTER(?tool != 'sc_proteomics')
+        }
+        GROUP BY ?dataset ?tool
+      }
+    }
+    GROUP BY ?dataset
+  }
+}
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/atlas-sc-transcriptomics-cell-counts.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/atlas-sc-transcriptomics-cell-counts.csv))
+
+| atlas_sc_transcriptomics_dataset_count | atlas_sc_transcriptomics_cell_count |
+| :--- | :--- |
+| 512 | 10413197 |
 
 
 ### <a id="consortium-breakdown"></a>Atlas consortium breakdown (consortium-breakdown)
@@ -1744,118 +1854,6 @@ WHERE {
 | https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp1$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Female | popv | sc_transcriptomics | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | celltypist | 0.27944850472819804 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp3$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Female | popv | sc_transcriptomics | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$right%20cardiac%20atrium | azimuth | 0.28489999068183564 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
-
-
-### <a id="atlas-sc-proteomics-cell-counts"></a>Count of Cells and unique Cell Types (atlas-sc-proteomics-cell-counts)
-
-Number of processed cells and unique cell types that are included in HRApop
-
-<details>
-  <summary>View Sparql Query</summary>
-
-```sparql
-#+ summary: Count of Cells and unique Cell Types
-#+ description: Number of processed cells and unique cell types that are included in HRApop
-
-PREFIX ccf: <http://purl.org/ccf/>
-PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
-PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
-
-SELECT 
-  (COUNT(DISTINCT(?dataset)) as ?atlas_sc_proteomics_dataset_count)
-  (SUM(?dataset_cell_count) as ?atlas_sc_proteomics_cell_count)
-FROM HRApop:
-# FROM HRApopTestData:
-WHERE {
-  {
-    SELECT ?dataset (MAX(?total_cell_count) as ?dataset_cell_count)
-    WHERE {
-      {
-        SELECT ?dataset ?tool (SUM(?cell_count) as ?total_cell_count)
-        WHERE {
-          ?dataset a ccf:Dataset ;
-          ccf:has_cell_summary [
-            ccf:cell_annotation_method ?tool ;
-            ccf:has_cell_summary_row [
-              ccf:cell_id ?cell_id ;
-              ccf:cell_count ?cell_count ;
-            ] ;
-          ] .
-          FILTER(?tool = 'sc_proteomics')
-        }
-        GROUP BY ?dataset ?tool
-      }
-    }
-    GROUP BY ?dataset
-  }
-}
-
-```
-
-([View Source](../../queries/atlas/atlas-sc-proteomics-cell-counts.rq))
-</details>
-
-#### Results ([View CSV File](reports/atlas/atlas-sc-proteomics-cell-counts.csv))
-
-| atlas_sc_proteomics_dataset_count | atlas_sc_proteomics_cell_count |
-| :--- | :--- |
-| 107 | 17547511 |
-
-
-### <a id="atlas-sc-transcriptomics-cell-counts"></a>Count of Cells and unique Cell Types (atlas-sc-transcriptomics-cell-counts)
-
-Number of processed cells and unique cell types that are included in HRApop
-
-<details>
-  <summary>View Sparql Query</summary>
-
-```sparql
-#+ summary: Count of Cells and unique Cell Types
-#+ description: Number of processed cells and unique cell types that are included in HRApop
-
-PREFIX ccf: <http://purl.org/ccf/>
-PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
-PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
-
-SELECT
-  (COUNT(DISTINCT(?dataset)) as ?atlas_sc_transcriptomics_dataset_count)
-  (SUM(?dataset_cell_count) as ?atlas_sc_transcriptomics_cell_count)
-FROM HRApop:
-# FROM HRApopTestData:
-WHERE {
-  {
-    SELECT ?dataset (MAX(?total_cell_count) as ?dataset_cell_count)
-    WHERE {
-      {
-        SELECT ?dataset ?tool (SUM(?cell_count) as ?total_cell_count)
-        WHERE {
-          ?dataset a ccf:Dataset ;
-          ccf:has_cell_summary [
-            ccf:cell_annotation_method ?tool ;
-            ccf:has_cell_summary_row [
-              ccf:cell_id ?cell_id ;
-              ccf:cell_count ?cell_count ;
-            ] ;
-          ] .
-          FILTER(?tool != 'sc_proteomics')
-        }
-        GROUP BY ?dataset ?tool
-      }
-    }
-    GROUP BY ?dataset
-  }
-}
-
-```
-
-([View Source](../../queries/atlas/atlas-sc-transcriptomics-cell-counts.rq))
-</details>
-
-#### Results ([View CSV File](reports/atlas/atlas-sc-transcriptomics-cell-counts.csv))
-
-| atlas_sc_transcriptomics_dataset_count | atlas_sc_transcriptomics_cell_count |
-| :--- | :--- |
-| 512 | 10413197 |
 
 
 ### <a id="cell-and-cell-type-count-by-modality"></a>Count of Cells and unique Cell Types by Modality (cell-and-cell-type-count-by-modality)
@@ -8589,16 +8587,15 @@ WHERE {
 | ... |
 
 
-### <a id="universe-sc-proteomics-cell-counts"></a>Count of Cells and unique Cell Types (universe-sc-proteomics-cell-counts)
+### <a id="universe-sc-proteomics-cell-counts"></a>Cell Counts for Universe Proteomics Datasets (universe-sc-proteomics-cell-counts)
 
-Number of processed cells and unique cell types that are included in HRApop
+
 
 <details>
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: Count of Cells and unique Cell Types
-#+ description: Number of processed cells and unique cell types that are included in HRApop
+#+ summary: Cell Counts for Universe Proteomics Datasets
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
@@ -8645,16 +8642,15 @@ WHERE {
 | 107 | 17547511 |
 
 
-### <a id="universe-sc-transcriptomics-cell-counts"></a>Count of Cells and unique Cell Types (universe-sc-transcriptomics-cell-counts)
+### <a id="universe-sc-transcriptomics-cell-counts"></a>Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-counts)
 
-Number of processed cells and unique cell types that are included in HRApop
+
 
 <details>
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: Count of Cells and unique Cell Types
-#+ description: Number of processed cells and unique cell types that are included in HRApop
+#+ summary: Cell Counts for Universe Transcriptomics Datasets
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
