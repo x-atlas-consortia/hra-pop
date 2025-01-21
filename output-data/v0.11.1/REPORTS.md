@@ -100,6 +100,7 @@
   * [Universe Spatial Placements (spatial-placements)](#spatial-placements)
   * [Cell Counts for Universe Proteomics Datasets (universe-sc-proteomics-cell-counts)](#universe-sc-proteomics-cell-counts)
   * [Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-counts)](#universe-sc-transcriptomics-cell-counts)
+  * [Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-instance-counts)](#universe-sc-transcriptomics-cell-instance-counts)
 
 
 
@@ -8753,6 +8754,63 @@ WHERE {
 | universe_sc_transcriptomics_dataset_count | universe_sc_transcriptomics_cell_count | universe_sc_transcriptomics_preannotated_cell_count |
 | :--- | :--- | :--- |
 | 5587 | 33996049 | 34066061 |
+
+
+### <a id="universe-sc-transcriptomics-cell-instance-counts"></a>Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-instance-counts)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Cell Counts for Universe Transcriptomics Datasets
+
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT
+  (COUNT(DISTINCT(?dataset)) as ?universe_sc_transcriptomics_dataset_count)
+  (SUM(?dataset_cell_count) as ?universe_sc_transcriptomics_cell_instance_count)
+FROM HRApop:
+FROM HRApopTestData:
+WHERE {
+  {
+    SELECT ?dataset (SUM(?total_cell_count) as ?dataset_cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?tool (SUM(?cell_count) as ?total_cell_count)
+        WHERE {
+          ?dataset a ccf:Dataset ;
+          ccf:cell_count ?preannotated_cell_count ;
+          ccf:has_cell_summary [
+            ccf:cell_annotation_method ?tool ;
+            ccf:has_cell_summary_row [
+              ccf:cell_id ?cell_id ;
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+          FILTER(?tool != 'sc_proteomics')
+        }
+        GROUP BY ?dataset ?tool
+      }
+    }
+    GROUP BY ?dataset
+  }
+}
+
+```
+
+([View Source](../../queries/universe-ad-hoc/universe-sc-transcriptomics-cell-instance-counts.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/universe-sc-transcriptomics-cell-instance-counts.csv))
+
+| universe_sc_transcriptomics_dataset_count | universe_sc_transcriptomics_cell_instance_count |
+| :--- | :--- |
+| 5587 | 58114887 |
 
 
   
