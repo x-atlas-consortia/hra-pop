@@ -1,15 +1,4 @@
 Organ_Label,Organ_ID,Annotation_Label,Annotation_Label_ID,CL_Label,CL_ID,CL_Match,dataset_count,cell_count
-N/A,UBERON:0001723,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,,6,11816
-N/A,UBERON:0001723,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,,6,162
-N/A,UBERON:0001723,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,,4,62
-N/A,UBERON:0001723,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,,4,74
-N/A,UBERON:0001723,epithelial cell,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell,epithelial cell,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell,,3,2117
-N/A,UBERON:0001723,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,,6,443
-N/A,UBERON:0001723,keratinocyte,https://purl.org/ccf/ASCTB-TEMP_keratinocyte,keratinocyte,https://purl.org/ccf/ASCTB-TEMP_keratinocyte,,6,5596
-N/A,UBERON:0001723,leukocyte,https://purl.org/ccf/ASCTB-TEMP_leukocyte,leukocyte,https://purl.org/ccf/ASCTB-TEMP_leukocyte,,6,3728
-N/A,UBERON:0001723,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,,6,207
-N/A,UBERON:0001723,tongue muscle cell,https://purl.org/ccf/ASCTB-TEMP_tongue-muscle-cell,tongue muscle cell,https://purl.org/ccf/ASCTB-TEMP_tongue-muscle-cell,,6,104
-N/A,UBERON:0001723,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,,4,364
 adipose tissue,UBERON:0001013,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,,6,51
 adipose tissue,UBERON:0001013,T cell,https://purl.org/ccf/ASCTB-TEMP_t-cell,T cell,https://purl.org/ccf/ASCTB-TEMP_t-cell,,4,1702
 adipose tissue,UBERON:0001013,endothelial cell,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell,endothelial cell,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell,,7,4340
@@ -308,6 +297,17 @@ thymus,UBERON:0002370,naive regulatory T cell,CL:0002677,naive regulatory T cell
 thymus,UBERON:0002370,plasma cell,CL:0000786,plasma cell,CL:0000786,,47,74718
 thymus,UBERON:0002370,vascular associated smooth muscle cell,CL:0000359,vascular associated smooth muscle cell,CL:0000359,,33,17828
 thymus,UBERON:0002370,vein endothelial cell,CL:0002543,vein endothelial cell,CL:0002543,,30,14820
+tongue,UBERON:0001723,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,,6,11816
+tongue,UBERON:0001723,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,,6,162
+tongue,UBERON:0001723,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,,4,62
+tongue,UBERON:0001723,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,,4,74
+tongue,UBERON:0001723,epithelial cell,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell,epithelial cell,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell,,3,2117
+tongue,UBERON:0001723,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,,6,443
+tongue,UBERON:0001723,keratinocyte,https://purl.org/ccf/ASCTB-TEMP_keratinocyte,keratinocyte,https://purl.org/ccf/ASCTB-TEMP_keratinocyte,,6,5596
+tongue,UBERON:0001723,leukocyte,https://purl.org/ccf/ASCTB-TEMP_leukocyte,leukocyte,https://purl.org/ccf/ASCTB-TEMP_leukocyte,,6,3728
+tongue,UBERON:0001723,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,,6,207
+tongue,UBERON:0001723,tongue muscle cell,https://purl.org/ccf/ASCTB-TEMP_tongue-muscle-cell,tongue muscle cell,https://purl.org/ccf/ASCTB-TEMP_tongue-muscle-cell,,6,104
+tongue,UBERON:0001723,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,,4,364
 trachea,UBERON:0003126,B cell,CL:0000236,B cell,CL:0000236,,22,2574
 trachea,UBERON:0003126,"CD4-positive, alpha-beta T cell",CL:0000624,"CD4-positive, alpha-beta T cell",CL:0000624,,20,1203
 trachea,UBERON:0003126,"CD8-positive, alpha-beta T cell",CL:0000625,"CD8-positive, alpha-beta T cell",CL:0000625,,21,5526

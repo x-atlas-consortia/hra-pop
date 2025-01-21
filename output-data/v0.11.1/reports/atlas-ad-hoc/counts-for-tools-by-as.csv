@@ -3350,66 +3350,6 @@ Female,popv,VHMSkin,skin,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,4
 Female,popv,VHMSkin,skin,regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,1,2
 Female,popv,VHMSkin,skin,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,11,22
 Female,popv,VHMSkin,skin,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,36,72
-Male,azimuth,VHFHeart,heart left ventricle,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,178,178
-Male,azimuth,VHFHeart,heart left ventricle,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,747,747
-Male,azimuth,VHFHeart,heart left ventricle,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,431,431
-Male,azimuth,VHFHeart,heart left ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,3979,3979
-Male,azimuth,VHFHeart,heart left ventricle,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1393,1393
-Male,azimuth,VHFHeart,heart left ventricle,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,245,245
-Male,azimuth,VHFHeart,heart left ventricle,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,16,16
-Male,azimuth,VHFHeart,heart left ventricle,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,11705,11705
-Male,azimuth,VHFHeart,heart left ventricle,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,230,230
-Male,azimuth,VHFHeart,heart left ventricle,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,1501,1501
-Male,azimuth,VHFHeart,heart left ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,267,267
-Male,azimuth,VHFHeart,heart left ventricle,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,305,305
-Male,azimuth,VHFHeart,heart left ventricle,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,2015,2015
-Male,azimuth,VHFHeart,heart left ventricle,NK,http://purl.obolibrary.org/obo/CL_0000623,491,491
-Male,azimuth,VHFHeart,heart left ventricle,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,141,141
-Male,azimuth,VHFHeart,heart left ventricle,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,1487,1487
-Male,azimuth,VHFHeart,heart left ventricle,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,495,495
-Male,azimuth,VHFHeart,heart left ventricle,T,http://purl.obolibrary.org/obo/CL_0000084,514,514
-Male,azimuth,VHFHeart,heart left ventricle,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,798,798
-Male,azimuth,VHFHeart,heart left ventricle,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,33410,33410
-Male,azimuth,VHFHeart,heart right ventricle,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,178,178
-Male,azimuth,VHFHeart,heart right ventricle,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,747,747
-Male,azimuth,VHFHeart,heart right ventricle,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,431,431
-Male,azimuth,VHFHeart,heart right ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,3979,3979
-Male,azimuth,VHFHeart,heart right ventricle,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1393,1393
-Male,azimuth,VHFHeart,heart right ventricle,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,245,245
-Male,azimuth,VHFHeart,heart right ventricle,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,16,16
-Male,azimuth,VHFHeart,heart right ventricle,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,11705,11705
-Male,azimuth,VHFHeart,heart right ventricle,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,230,230
-Male,azimuth,VHFHeart,heart right ventricle,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,1501,1501
-Male,azimuth,VHFHeart,heart right ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,267,267
-Male,azimuth,VHFHeart,heart right ventricle,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,305,305
-Male,azimuth,VHFHeart,heart right ventricle,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,2015,2015
-Male,azimuth,VHFHeart,heart right ventricle,NK,http://purl.obolibrary.org/obo/CL_0000623,491,491
-Male,azimuth,VHFHeart,heart right ventricle,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,141,141
-Male,azimuth,VHFHeart,heart right ventricle,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,1487,1487
-Male,azimuth,VHFHeart,heart right ventricle,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,495,495
-Male,azimuth,VHFHeart,heart right ventricle,T,http://purl.obolibrary.org/obo/CL_0000084,514,514
-Male,azimuth,VHFHeart,heart right ventricle,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,798,798
-Male,azimuth,VHFHeart,heart right ventricle,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,33410,33410
-Male,azimuth,VHFHeart,interventricular septum,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,178,178
-Male,azimuth,VHFHeart,interventricular septum,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,747,747
-Male,azimuth,VHFHeart,interventricular septum,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,431,431
-Male,azimuth,VHFHeart,interventricular septum,B,http://purl.obolibrary.org/obo/CL_0000236,3979,3979
-Male,azimuth,VHFHeart,interventricular septum,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1393,1393
-Male,azimuth,VHFHeart,interventricular septum,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,245,245
-Male,azimuth,VHFHeart,interventricular septum,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,16,16
-Male,azimuth,VHFHeart,interventricular septum,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,11705,11705
-Male,azimuth,VHFHeart,interventricular septum,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,230,230
-Male,azimuth,VHFHeart,interventricular septum,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,1501,1501
-Male,azimuth,VHFHeart,interventricular septum,Mast,http://purl.obolibrary.org/obo/CL_0000097,267,267
-Male,azimuth,VHFHeart,interventricular septum,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,305,305
-Male,azimuth,VHFHeart,interventricular septum,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,2015,2015
-Male,azimuth,VHFHeart,interventricular septum,NK,http://purl.obolibrary.org/obo/CL_0000623,491,491
-Male,azimuth,VHFHeart,interventricular septum,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,141,141
-Male,azimuth,VHFHeart,interventricular septum,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,1487,1487
-Male,azimuth,VHFHeart,interventricular septum,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,495,495
-Male,azimuth,VHFHeart,interventricular septum,T,http://purl.obolibrary.org/obo/CL_0000084,514,514
-Male,azimuth,VHFHeart,interventricular septum,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,798,798
-Male,azimuth,VHFHeart,interventricular septum,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,33410,33410
 Male,azimuth,VHFLeftKidney,renal pyramid,Afferent / Efferent Arteriole Endothelial,http://purl.obolibrary.org/obo/CL_1000412,38.25,153
 Male,azimuth,VHFLeftKidney,renal pyramid,Ascending Thin Limb,http://purl.obolibrary.org/obo/CL_1001107,3797.25,15189
 Male,azimuth,VHFLeftKidney,renal pyramid,Ascending Vasa Recta Endothelial,http://purl.obolibrary.org/obo/CL_1001131,362.75,1451
@@ -3515,67 +3455,68 @@ Male,azimuth,VHFLung,Lateral segmental bronchus,Suprabasal,http://purl.obolibrar
 Male,azimuth,VHFLung,Lateral segmental bronchus,T cells proliferating,http://purl.obolibrary.org/obo/CL_0000084,14,42
 Male,azimuth,VHFLung,Lateral segmental bronchus,Transitional Club-AT2,https://purl.org/ccf/ASCTB-TEMP_transitional-club-at2,16,48
 Male,azimuth,VHFLung,Lateral segmental bronchus,Tuft,http://purl.obolibrary.org/obo/CL_0002075,5,15
-Male,azimuth,VHMHeart,heart left ventricle,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,58.22123893805309734513,6579
-Male,azimuth,VHMHeart,heart left ventricle,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,123.21290322580645161290,19098
-Male,azimuth,VHMHeart,heart left ventricle,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,44.08247422680412371134,4276
-Male,azimuth,VHMHeart,heart left ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,450.56081081081081081081,66683
-Male,azimuth,VHMHeart,heart left ventricle,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1609.24691358024691358025,260698
-Male,azimuth,VHMHeart,heart left ventricle,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,71.69811320754716981132,7600
-Male,azimuth,VHMHeart,heart left ventricle,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,4.54838709677419354839,141
-Male,azimuth,VHMHeart,heart left ventricle,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,2145.46296296296296296296,347565
+Male,azimuth,VHMHeart,heart left ventricle,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,59.27192982456140350877,6757
+Male,azimuth,VHMHeart,heart left ventricle,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,127.21153846153846153846,19845
+Male,azimuth,VHMHeart,heart left ventricle,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,48.03061224489795918367,4707
+Male,azimuth,VHMHeart,heart left ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,474.24161073825503355705,70662
+Male,azimuth,VHMHeart,heart left ventricle,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1607.92024539877300613497,262091
+Male,azimuth,VHMHeart,heart left ventricle,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,73.31775700934579439252,7845
+Male,azimuth,VHMHeart,heart left ventricle,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,4.90625,157
+Male,azimuth,VHMHeart,heart left ventricle,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,2204.11042944785276073620,359270
 Male,azimuth,VHMHeart,heart left ventricle,ILC,http://purl.obolibrary.org/obo/CL_0001065,3.23076923076923076923,42
-Male,azimuth,VHMHeart,heart left ventricle,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,27.87401574803149606299,3540
-Male,azimuth,VHMHeart,heart left ventricle,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,219.01234567901234567901,35480
-Male,azimuth,VHMHeart,heart left ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,60.49645390070921985816,8530
-Male,azimuth,VHMHeart,heart left ventricle,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,89.28125,5714
-Male,azimuth,VHMHeart,heart left ventricle,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,256.16666666666666666667,41499
-Male,azimuth,VHMHeart,heart left ventricle,NK,http://purl.obolibrary.org/obo/CL_0000623,160.96129032258064516129,24949
-Male,azimuth,VHMHeart,heart left ventricle,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,66.59876543209876543210,10789
-Male,azimuth,VHMHeart,heart left ventricle,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,1173.66049382716049382716,190133
-Male,azimuth,VHMHeart,heart left ventricle,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,192.96913580246913580247,31261
-Male,azimuth,VHMHeart,heart left ventricle,T,http://purl.obolibrary.org/obo/CL_0000084,122.00617283950617283951,19765
-Male,azimuth,VHMHeart,heart left ventricle,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,111.61111111111111111111,18081
-Male,azimuth,VHMHeart,heart left ventricle,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,3595.98765432098765432099,582550
-Male,azimuth,VHMHeart,heart right ventricle,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,27.64788732394366197183,1963
-Male,azimuth,VHMHeart,heart right ventricle,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,339.29292929292929292929,33590
-Male,azimuth,VHMHeart,heart right ventricle,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,39.44186046511627906977,1696
-Male,azimuth,VHMHeart,heart right ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,37.70652173913043478261,3469
-Male,azimuth,VHMHeart,heart right ventricle,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1335.72727272727272727273,132237
-Male,azimuth,VHMHeart,heart right ventricle,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,34.078125,2181
-Male,azimuth,VHMHeart,heart right ventricle,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,4,4
-Male,azimuth,VHMHeart,heart right ventricle,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,921.92929292929292929293,91271
+Male,azimuth,VHMHeart,heart left ventricle,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,29.453125,3770
+Male,azimuth,VHMHeart,heart left ventricle,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,226.87730061349693251534,36981
+Male,azimuth,VHMHeart,heart left ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,61.95070422535211267606,8797
+Male,azimuth,VHMHeart,heart left ventricle,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,92.6,6019
+Male,azimuth,VHMHeart,heart left ventricle,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,266.95705521472392638037,43514
+Male,azimuth,VHMHeart,heart left ventricle,NK,http://purl.obolibrary.org/obo/CL_0000623,163.07692307692307692308,25440
+Male,azimuth,VHMHeart,heart left ventricle,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,67.05521472392638036810,10930
+Male,azimuth,VHMHeart,heart left ventricle,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,1175.58282208588957055215,191620
+Male,azimuth,VHMHeart,heart left ventricle,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,194.82208588957055214724,31756
+Male,azimuth,VHMHeart,heart left ventricle,T,http://purl.obolibrary.org/obo/CL_0000084,124.41104294478527607362,20279
+Male,azimuth,VHMHeart,heart left ventricle,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,115.82208588957055214724,18879
+Male,azimuth,VHMHeart,heart left ventricle,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,3778.89570552147239263804,615960
+Male,azimuth,VHMHeart,heart right ventricle,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,29.73611111111111111111,2141
+Male,azimuth,VHMHeart,heart right ventricle,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,343.37,34337
+Male,azimuth,VHMHeart,heart right ventricle,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,48.34090909090909090909,2127
+Male,azimuth,VHMHeart,heart right ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,80.08602150537634408602,7448
+Male,azimuth,VHMHeart,heart right ventricle,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1336.3,133630
+Male,azimuth,VHMHeart,heart right ventricle,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,37.32307692307692307692,2426
+Male,azimuth,VHMHeart,heart right ventricle,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,10,20
+Male,azimuth,VHMHeart,heart right ventricle,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,1029.76,102976
 Male,azimuth,VHMHeart,heart right ventricle,ILC,http://purl.obolibrary.org/obo/CL_0001065,2,16
-Male,azimuth,VHMHeart,heart right ventricle,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,16.76470588235294117647,1425
-Male,azimuth,VHMHeart,heart right ventricle,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,106.32323232323232323232,10526
-Male,azimuth,VHMHeart,heart right ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,39.70512820512820512821,3097
-Male,azimuth,VHMHeart,heart right ventricle,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,26.80555555555555555556,965
-Male,azimuth,VHMHeart,heart right ventricle,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,205.41414141414141414141,20336
-Male,azimuth,VHMHeart,heart right ventricle,NK,http://purl.obolibrary.org/obo/CL_0000623,120.31521739130434782609,11069
-Male,azimuth,VHMHeart,heart right ventricle,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,43.87878787878787878788,4344
-Male,azimuth,VHMHeart,heart right ventricle,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,894.49494949494949494949,88555
-Male,azimuth,VHMHeart,heart right ventricle,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,138.79797979797979797980,13741
-Male,azimuth,VHMHeart,heart right ventricle,T,http://purl.obolibrary.org/obo/CL_0000084,118.35353535353535353535,11717
-Male,azimuth,VHMHeart,heart right ventricle,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,64.13131313131313131313,6349
-Male,azimuth,VHMHeart,heart right ventricle,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,2152.11111111111111111111,213059
-Male,azimuth,VHMHeart,interventricular septum,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,3.5,98
-Male,azimuth,VHMHeart,interventricular septum,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,55,2695
-Male,azimuth,VHMHeart,interventricular septum,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,53.33333333333333333333,1120
-Male,azimuth,VHMHeart,interventricular septum,B,http://purl.obolibrary.org/obo/CL_0000236,11.83333333333333333333,497
-Male,azimuth,VHMHeart,interventricular septum,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1265.14285714285714285714,61992
-Male,azimuth,VHMHeart,interventricular septum,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,12.66666666666666666667,266
-Male,azimuth,VHMHeart,interventricular septum,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,666,32634
-Male,azimuth,VHMHeart,interventricular septum,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,20.8,728
-Male,azimuth,VHMHeart,interventricular septum,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,69.71428571428571428571,3416
-Male,azimuth,VHMHeart,interventricular septum,Mast,http://purl.obolibrary.org/obo/CL_0000097,48.75,1365
-Male,azimuth,VHMHeart,interventricular septum,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,4,56
-Male,azimuth,VHMHeart,interventricular septum,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,199.71428571428571428571,9786
-Male,azimuth,VHMHeart,interventricular septum,NK,http://purl.obolibrary.org/obo/CL_0000623,121.66666666666666666667,5110
-Male,azimuth,VHMHeart,interventricular septum,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,31.57142857142857142857,1547
-Male,azimuth,VHMHeart,interventricular septum,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,815.28571428571428571429,39949
-Male,azimuth,VHMHeart,interventricular septum,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,91.85714285714285714286,4501
-Male,azimuth,VHMHeart,interventricular septum,T,http://purl.obolibrary.org/obo/CL_0000084,95.28571428571428571429,4669
-Male,azimuth,VHMHeart,interventricular septum,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,51.57142857142857142857,2527
-Male,azimuth,VHMHeart,interventricular septum,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,2343.28571428571428571429,114821
+Male,azimuth,VHMHeart,heart right ventricle,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,19.24418604651162790698,1655
+Male,azimuth,VHMHeart,heart right ventricle,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,120.27,12027
+Male,azimuth,VHMHeart,heart right ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,42.58227848101265822785,3364
+Male,azimuth,VHMHeart,heart right ventricle,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,34.32432432432432432432,1270
+Male,azimuth,VHMHeart,heart right ventricle,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,223.51,22351
+Male,azimuth,VHMHeart,heart right ventricle,NK,http://purl.obolibrary.org/obo/CL_0000623,124.30107526881720430108,11560
+Male,azimuth,VHMHeart,heart right ventricle,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,44.85,4485
+Male,azimuth,VHMHeart,heart right ventricle,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,900.42,90042
+Male,azimuth,VHMHeart,heart right ventricle,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,142.36,14236
+Male,azimuth,VHMHeart,heart right ventricle,T,http://purl.obolibrary.org/obo/CL_0000084,122.31,12231
+Male,azimuth,VHMHeart,heart right ventricle,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,71.47,7147
+Male,azimuth,VHMHeart,heart right ventricle,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,2464.69,246469
+Male,azimuth,VHMHeart,interventricular septum,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,9.51724137931034482759,276
+Male,azimuth,VHMHeart,interventricular septum,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,68.84,3442
+Male,azimuth,VHMHeart,interventricular septum,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,70.5,1551
+Male,azimuth,VHMHeart,interventricular septum,B,http://purl.obolibrary.org/obo/CL_0000236,104.09302325581395348837,4476
+Male,azimuth,VHMHeart,interventricular septum,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1267.7,63385
+Male,azimuth,VHMHeart,interventricular septum,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,23.22727272727272727273,511
+Male,azimuth,VHMHeart,interventricular septum,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,16,16
+Male,azimuth,VHMHeart,interventricular septum,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,886.78,44339
+Male,azimuth,VHMHeart,interventricular septum,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,26.61111111111111111111,958
+Male,azimuth,VHMHeart,interventricular septum,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,98.34,4917
+Male,azimuth,VHMHeart,interventricular septum,Mast,http://purl.obolibrary.org/obo/CL_0000097,56.27586206896551724138,1632
+Male,azimuth,VHMHeart,interventricular septum,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,24.06666666666666666667,361
+Male,azimuth,VHMHeart,interventricular septum,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,236.02,11801
+Male,azimuth,VHMHeart,interventricular septum,NK,http://purl.obolibrary.org/obo/CL_0000623,130.25581395348837209302,5601
+Male,azimuth,VHMHeart,interventricular septum,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,33.76,1688
+Male,azimuth,VHMHeart,interventricular septum,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,828.72,41436
+Male,azimuth,VHMHeart,interventricular septum,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,99.92,4996
+Male,azimuth,VHMHeart,interventricular septum,T,http://purl.obolibrary.org/obo/CL_0000084,103.66,5183
+Male,azimuth,VHMHeart,interventricular septum,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,66.5,3325
+Male,azimuth,VHMHeart,interventricular septum,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,2964.62,148231
 Male,azimuth,VHMHeart,left cardiac atrium,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,132,6468
 Male,azimuth,VHMHeart,left cardiac atrium,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,59.85714285714285714286,2933
 Male,azimuth,VHMHeart,left cardiac atrium,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,1017.71428571428571428571,49868
@@ -4605,93 +4546,6 @@ Male,azimuth,VHMRightUreter,Right ureter,Parietal Epithelial,http://purl.obolibr
 Male,azimuth,VHMRightUreter,Right ureter,"Peritubular Capilary Endothelial ",https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,10,20
 Male,azimuth,VHMRightUreter,Right ureter,Plasmacytoid Dendritic,http://purl.obolibrary.org/obo/CL_0001058,10,20
 Male,azimuth,VHMRightUreter,Right ureter,T,http://purl.obolibrary.org/obo/CL_0000084,90,180
-Male,celltypist,VHFHeart,heart left ventricle,Adip1,http://purl.obolibrary.org/obo/CL_0000136,28,28
-Male,celltypist,VHFHeart,heart left ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,36,36
-Male,celltypist,VHFHeart,heart left ventricle,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,2,2
-Male,celltypist,VHFHeart,heart left ventricle,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,90,90
-Male,celltypist,VHFHeart,heart left ventricle,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,207,207
-Male,celltypist,VHFHeart,heart left ventricle,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,22,22
-Male,celltypist,VHFHeart,heart left ventricle,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,209,209
-Male,celltypist,VHFHeart,heart left ventricle,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,8,8
-Male,celltypist,VHFHeart,heart left ventricle,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,17,17
-Male,celltypist,VHFHeart,heart left ventricle,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,215,215
-Male,celltypist,VHFHeart,heart left ventricle,DC,http://purl.obolibrary.org/obo/CL_0000451,93,93
-Male,celltypist,VHFHeart,heart left ventricle,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,8097,8097
-Male,celltypist,VHFHeart,heart left ventricle,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,73,73
-Male,celltypist,VHFHeart,heart left ventricle,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,50,50
-Male,celltypist,VHFHeart,heart left ventricle,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,403,403
-Male,celltypist,VHFHeart,heart left ventricle,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,43,43
-Male,celltypist,VHFHeart,heart left ventricle,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,88,88
-Male,celltypist,VHFHeart,heart left ventricle,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,7414,7414
-Male,celltypist,VHFHeart,heart left ventricle,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,2922,2922
-Male,celltypist,VHFHeart,heart left ventricle,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,2,2
-Male,celltypist,VHFHeart,heart left ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,13,13
-Male,celltypist,VHFHeart,heart left ventricle,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,52,52
-Male,celltypist,VHFHeart,heart left ventricle,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,78,78
-Male,celltypist,VHFHeart,heart left ventricle,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,20,20
-Male,celltypist,VHFHeart,heart left ventricle,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,35755,35755
-Male,celltypist,VHFHeart,heart left ventricle,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,1
-Male,celltypist,VHFHeart,heart left ventricle,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,55,55
-Male,celltypist,VHFHeart,heart left ventricle,aCM1,http://purl.obolibrary.org/obo/CL_0002129,841,841
-Male,celltypist,VHFHeart,heart left ventricle,vCM1,http://purl.obolibrary.org/obo/CL_0002131,3514,3514
-Male,celltypist,VHFHeart,heart right ventricle,Adip1,http://purl.obolibrary.org/obo/CL_0000136,28,28
-Male,celltypist,VHFHeart,heart right ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,36,36
-Male,celltypist,VHFHeart,heart right ventricle,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,2,2
-Male,celltypist,VHFHeart,heart right ventricle,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,90,90
-Male,celltypist,VHFHeart,heart right ventricle,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,207,207
-Male,celltypist,VHFHeart,heart right ventricle,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,22,22
-Male,celltypist,VHFHeart,heart right ventricle,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,209,209
-Male,celltypist,VHFHeart,heart right ventricle,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,8,8
-Male,celltypist,VHFHeart,heart right ventricle,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,17,17
-Male,celltypist,VHFHeart,heart right ventricle,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,215,215
-Male,celltypist,VHFHeart,heart right ventricle,DC,http://purl.obolibrary.org/obo/CL_0000451,93,93
-Male,celltypist,VHFHeart,heart right ventricle,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,8097,8097
-Male,celltypist,VHFHeart,heart right ventricle,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,73,73
-Male,celltypist,VHFHeart,heart right ventricle,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,50,50
-Male,celltypist,VHFHeart,heart right ventricle,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,403,403
-Male,celltypist,VHFHeart,heart right ventricle,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,43,43
-Male,celltypist,VHFHeart,heart right ventricle,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,88,88
-Male,celltypist,VHFHeart,heart right ventricle,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,7414,7414
-Male,celltypist,VHFHeart,heart right ventricle,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,2922,2922
-Male,celltypist,VHFHeart,heart right ventricle,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,2,2
-Male,celltypist,VHFHeart,heart right ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,13,13
-Male,celltypist,VHFHeart,heart right ventricle,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,52,52
-Male,celltypist,VHFHeart,heart right ventricle,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,78,78
-Male,celltypist,VHFHeart,heart right ventricle,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,20,20
-Male,celltypist,VHFHeart,heart right ventricle,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,35755,35755
-Male,celltypist,VHFHeart,heart right ventricle,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,1
-Male,celltypist,VHFHeart,heart right ventricle,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,55,55
-Male,celltypist,VHFHeart,heart right ventricle,aCM1,http://purl.obolibrary.org/obo/CL_0002129,841,841
-Male,celltypist,VHFHeart,heart right ventricle,vCM1,http://purl.obolibrary.org/obo/CL_0002131,3514,3514
-Male,celltypist,VHFHeart,interventricular septum,Adip1,http://purl.obolibrary.org/obo/CL_0000136,28,28
-Male,celltypist,VHFHeart,interventricular septum,B,http://purl.obolibrary.org/obo/CL_0000236,36,36
-Male,celltypist,VHFHeart,interventricular septum,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,2,2
-Male,celltypist,VHFHeart,interventricular septum,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,90,90
-Male,celltypist,VHFHeart,interventricular septum,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,207,207
-Male,celltypist,VHFHeart,interventricular septum,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,22,22
-Male,celltypist,VHFHeart,interventricular septum,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,209,209
-Male,celltypist,VHFHeart,interventricular septum,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,8,8
-Male,celltypist,VHFHeart,interventricular septum,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,17,17
-Male,celltypist,VHFHeart,interventricular septum,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,215,215
-Male,celltypist,VHFHeart,interventricular septum,DC,http://purl.obolibrary.org/obo/CL_0000451,93,93
-Male,celltypist,VHFHeart,interventricular septum,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,8097,8097
-Male,celltypist,VHFHeart,interventricular septum,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,73,73
-Male,celltypist,VHFHeart,interventricular septum,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,50,50
-Male,celltypist,VHFHeart,interventricular septum,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,403,403
-Male,celltypist,VHFHeart,interventricular septum,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,43,43
-Male,celltypist,VHFHeart,interventricular septum,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,88,88
-Male,celltypist,VHFHeart,interventricular septum,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,7414,7414
-Male,celltypist,VHFHeart,interventricular septum,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,2922,2922
-Male,celltypist,VHFHeart,interventricular septum,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,2,2
-Male,celltypist,VHFHeart,interventricular septum,Mast,http://purl.obolibrary.org/obo/CL_0000097,13,13
-Male,celltypist,VHFHeart,interventricular septum,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,52,52
-Male,celltypist,VHFHeart,interventricular septum,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,78,78
-Male,celltypist,VHFHeart,interventricular septum,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,20,20
-Male,celltypist,VHFHeart,interventricular septum,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,35755,35755
-Male,celltypist,VHFHeart,interventricular septum,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,1
-Male,celltypist,VHFHeart,interventricular septum,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,55,55
-Male,celltypist,VHFHeart,interventricular septum,aCM1,http://purl.obolibrary.org/obo/CL_0002129,841,841
-Male,celltypist,VHFHeart,interventricular septum,vCM1,http://purl.obolibrary.org/obo/CL_0002131,3514,3514
 Male,celltypist,VHFLung,Cartilage of segmental bronchus,AT0,http://purl.obolibrary.org/obo/CL_0010003,3,9
 Male,celltypist,VHFLung,Cartilage of segmental bronchus,AT1,http://purl.obolibrary.org/obo/CL_0002062,363,1089
 Male,celltypist,VHFLung,Cartilage of segmental bronchus,AT2,http://purl.obolibrary.org/obo/CL_0002063,648,1944
@@ -4791,179 +4645,180 @@ Male,celltypist,VHFLung,Lateral segmental bronchus,T cells proliferating,http://
 Male,celltypist,VHFLung,Lateral segmental bronchus,Tuft,http://purl.obolibrary.org/obo/CL_0002075,2,6
 Male,celltypist,VHFLung,Lateral segmental bronchus,pre-TB secretory,http://purl.obolibrary.org/obo/CL_0019001,219,657
 Male,celltypist,VHMHeart,heart left ventricle,AVN_P_cell,http://purl.obolibrary.org/obo/CL_0002072,1,7
-Male,celltypist,VHMHeart,heart left ventricle,Adip1,http://purl.obolibrary.org/obo/CL_0000136,38.90625,3735
+Male,celltypist,VHMHeart,heart left ventricle,Adip1,http://purl.obolibrary.org/obo/CL_0000136,38.79381443298969072165,3763
 Male,celltypist,VHMHeart,heart left ventricle,Adip2,http://purl.obolibrary.org/obo/CL_0000136,14.35087719298245614035,818
 Male,celltypist,VHMHeart,heart left ventricle,Adip4,http://purl.obolibrary.org/obo/CL_0000136,33.44444444444444444444,301
-Male,celltypist,VHMHeart,heart left ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,13.128,1641
-Male,celltypist,VHMHeart,heart left ventricle,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,3.32110091743119266055,362
-Male,celltypist,VHMHeart,heart left ventricle,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,72.5,8555
-Male,celltypist,VHMHeart,heart left ventricle,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,53.00617283950617283951,8587
+Male,celltypist,VHMHeart,heart left ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,13.30952380952380952381,1677
+Male,celltypist,VHMHeart,heart left ventricle,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,3.30909090909090909091,364
+Male,celltypist,VHMHeart,heart left ventricle,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,72.64705882352941176471,8645
+Male,celltypist,VHMHeart,heart left ventricle,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,53.95092024539877300613,8794
 Male,celltypist,VHMHeart,heart left ventricle,CD4+T_Tfh,http://purl.obolibrary.org/obo/CL_0000492,3,42
 Male,celltypist,VHMHeart,heart left ventricle,CD4+T_Th1,http://purl.obolibrary.org/obo/CL_0000545,2.30508474576271186441,136
 Male,celltypist,VHMHeart,heart left ventricle,CD4+T_Th17,http://purl.obolibrary.org/obo/CL_0000899,1.5,21
 Male,celltypist,VHMHeart,heart left ventricle,CD4+T_Th2,http://purl.obolibrary.org/obo/CL_0000546,2.64705882352941176471,180
-Male,celltypist,VHMHeart,heart left ventricle,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,13.86486486486486486486,2052
-Male,celltypist,VHMHeart,heart left ventricle,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,47.41216216216216216216,7017
+Male,celltypist,VHMHeart,heart left ventricle,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,13.91946308724832214765,2074
+Male,celltypist,VHMHeart,heart left ventricle,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,48.49664429530201342282,7226
 Male,celltypist,VHMHeart,heart left ventricle,CD4+T_reg,http://purl.obolibrary.org/obo/CL_0000792,1.64615384615384615385,107
-Male,celltypist,VHMHeart,heart left ventricle,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,33.85074626865671641791,4536
-Male,celltypist,VHMHeart,heart left ventricle,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,14.02702702702702702703,2076
+Male,celltypist,VHMHeart,heart left ventricle,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,33.65925925925925925926,4544
+Male,celltypist,VHMHeart,heart left ventricle,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,14.04697986577181208054,2093
 Male,celltypist,VHMHeart,heart left ventricle,CD8+T_te,http://purl.obolibrary.org/obo/CL_0001050,32,3776
-Male,celltypist,VHMHeart,heart left ventricle,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,39.48387096774193548387,6120
-Male,celltypist,VHMHeart,heart left ventricle,DC,http://purl.obolibrary.org/obo/CL_0000451,10.97163120567375886525,1547
+Male,celltypist,VHMHeart,heart left ventricle,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,40.60897435897435897436,6335
+Male,celltypist,VHMHeart,heart left ventricle,DC,http://purl.obolibrary.org/obo/CL_0000451,11.54929577464788732394,1640
 Male,celltypist,VHMHeart,heart left ventricle,EC10_CMC-like,http://purl.obolibrary.org/obo/CL_0000115,73.24324324324324324324,2710
-Male,celltypist,VHMHeart,heart left ventricle,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,2004.78378378378378378378,222531
+Male,celltypist,VHMHeart,heart left ventricle,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,2059.17857142857142857143,230628
 Male,celltypist,VHMHeart,heart left ventricle,EC2_cap,http://purl.obolibrary.org/obo/CL_0002144,1903,39963
 Male,celltypist,VHMHeart,heart left ventricle,EC3_cap,http://purl.obolibrary.org/obo/CL_0002144,374.3,11229
-Male,celltypist,VHMHeart,heart left ventricle,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,31.39830508474576271186,3705
-Male,celltypist,VHMHeart,heart left ventricle,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,448.90740740740740740741,72723
-Male,celltypist,VHMHeart,heart left ventricle,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,104.78395061728395061728,16975
-Male,celltypist,VHMHeart,heart left ventricle,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,39.29661016949152542373,4637
-Male,celltypist,VHMHeart,heart left ventricle,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,20.02027027027027027027,2963
+Male,celltypist,VHMHeart,heart left ventricle,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,31.74789915966386554622,3778
+Male,celltypist,VHMHeart,heart left ventricle,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,446.46012269938650306748,72773
+Male,celltypist,VHMHeart,heart left ventricle,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,106.61349693251533742331,17378
+Male,celltypist,VHMHeart,heart left ventricle,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,39.32773109243697478992,4680
+Male,celltypist,VHMHeart,heart left ventricle,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,20.47651006711409395973,3051
 Male,celltypist,VHMHeart,heart left ventricle,EC9_FB-like,http://purl.obolibrary.org/obo/CL_0000115,5,35
 Male,celltypist,VHMHeart,heart left ventricle,FB1,http://purl.obolibrary.org/obo/CL_0000057,1053.63963963963963963964,116954
-Male,celltypist,VHMHeart,heart left ventricle,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,2097.06666666666666666667,62912
+Male,celltypist,VHMHeart,heart left ventricle,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,2268.58064516129032258065,70326
 Male,celltypist,VHMHeart,heart left ventricle,FB5,http://purl.obolibrary.org/obo/CL_0000057,741.5,10381
 Male,celltypist,VHMHeart,heart left ventricle,FB6,http://purl.obolibrary.org/obo/CL_0000057,533,3731
 Male,celltypist,VHMHeart,heart left ventricle,ILC,http://purl.obolibrary.org/obo/CL_0001065,2.05319148936170212766,193
-Male,celltypist,VHMHeart,heart left ventricle,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,374.66666666666666666667,52828
+Male,celltypist,VHMHeart,heart left ventricle,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,392.60563380281690140845,55750
 Male,celltypist,VHMHeart,heart left ventricle,LYVE1+TIMD4+MP,http://purl.obolibrary.org/obo/CL_0000235,311.5,4361
-Male,celltypist,VHMHeart,heart left ventricle,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,8.23741007194244604317,1145
-Male,celltypist,VHMHeart,heart left ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,45.29850746268656716418,6070
+Male,celltypist,VHMHeart,heart left ventricle,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,8.19285714285714285714,1147
+Male,celltypist,VHMHeart,heart left ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,45.05925925925925925926,6083
 Male,celltypist,VHMHeart,heart left ventricle,Meso,http://purl.obolibrary.org/obo/CL_0000077,9.78947368421052631579,558
 Male,celltypist,VHMHeart,heart left ventricle,MoMP,http://purl.obolibrary.org/obo/CL_0000235,204,1428
-Male,celltypist,VHMHeart,heart left ventricle,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,47.04,5880
+Male,celltypist,VHMHeart,heart left ventricle,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,47.07936507936507936508,5932
 Male,celltypist,VHMHeart,heart left ventricle,NC2_glial_NGF+,http://purl.obolibrary.org/obo/CL_0010020,70.16216216216216216216,2596
-Male,celltypist,VHMHeart,heart left ventricle,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,97.37837837837837837838,14412
-Male,celltypist,VHMHeart,heart left ventricle,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,11.99315068493150684932,1751
+Male,celltypist,VHMHeart,heart left ventricle,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,97.24832214765100671141,14490
+Male,celltypist,VHMHeart,heart left ventricle,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,12.04761904761904761905,1771
 Male,celltypist,VHMHeart,heart left ventricle,Neut,http://purl.obolibrary.org/obo/CL_0000775,5.66666666666666666667,187
-Male,celltypist,VHMHeart,heart left ventricle,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,4364.76271186440677966102,515042
+Male,celltypist,VHMHeart,heart left ventricle,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,4628.54621848739495798319,550797
 Male,celltypist,VHMHeart,heart left ventricle,PC2_atria,http://purl.obolibrary.org/obo/CL_0000669,1165.5,16317
 Male,celltypist,VHMHeart,heart left ventricle,PC3_str,http://purl.obolibrary.org/obo/CL_0000669,837.75,23457
 Male,celltypist,VHMHeart,heart left ventricle,PC4_CMC-like,http://purl.obolibrary.org/obo/CL_0000669,199,398
 Male,celltypist,VHMHeart,heart left ventricle,Purkinje_cell,http://purl.obolibrary.org/obo/CL_0002068,3.05882352941176470588,156
-Male,celltypist,VHMHeart,heart left ventricle,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,7
-Male,celltypist,VHMHeart,heart left ventricle,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,243.87581699346405228758,37313
+Male,celltypist,VHMHeart,heart left ventricle,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,8
+Male,celltypist,VHMHeart,heart left ventricle,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,242.64935064935064935065,37368
 Male,celltypist,VHMHeart,heart left ventricle,SMC2_art,http://purl.obolibrary.org/obo/CL_0000359,45.77777777777777777778,412
 Male,celltypist,VHMHeart,heart left ventricle,T/NK_cycling,http://purl.obolibrary.org/obo/CL_0000814,10.57142857142857142857,518
-Male,celltypist,VHMHeart,heart left ventricle,aCM1,http://purl.obolibrary.org/obo/CL_0002129,150.67272727272727272727,8287
+Male,celltypist,VHMHeart,heart left ventricle,aCM1,http://purl.obolibrary.org/obo/CL_0002129,163,9128
 Male,celltypist,VHMHeart,heart left ventricle,aCM2,http://purl.obolibrary.org/obo/CL_0002129,2,28
 Male,celltypist,VHMHeart,heart left ventricle,aCM3,http://purl.obolibrary.org/obo/CL_0002129,2,70
 Male,celltypist,VHMHeart,heart left ventricle,aCM4,http://purl.obolibrary.org/obo/CL_0002129,2,28
 Male,celltypist,VHMHeart,heart left ventricle,gdT,http://purl.obolibrary.org/obo/CL_0000798,2,42
-Male,celltypist,VHMHeart,heart left ventricle,vCM1,http://purl.obolibrary.org/obo/CL_0002131,2224.512,278064
+Male,celltypist,VHMHeart,heart left ventricle,vCM1,http://purl.obolibrary.org/obo/CL_0002131,2234.74603174603174603175,281578
 Male,celltypist,VHMHeart,heart left ventricle,vCM2,http://purl.obolibrary.org/obo/CL_0002131,3197,22379
 Male,celltypist,VHMHeart,heart left ventricle,vCM3_stressed,http://purl.obolibrary.org/obo/CL_0002131,2573.66666666666666666667,54047
 Male,celltypist,VHMHeart,heart left ventricle,vCM4,http://purl.obolibrary.org/obo/CL_0002131,1548.22222222222222222222,13934
 Male,celltypist,VHMHeart,heart right ventricle,AVN_bundle_cell,http://purl.obolibrary.org/obo/CL_0010005,1,7
-Male,celltypist,VHMHeart,heart right ventricle,Adip1,http://purl.obolibrary.org/obo/CL_0000136,21.17543859649122807018,1207
+Male,celltypist,VHMHeart,heart right ventricle,Adip1,http://purl.obolibrary.org/obo/CL_0000136,21.29310344827586206897,1235
 Male,celltypist,VHMHeart,heart right ventricle,Adip2,http://purl.obolibrary.org/obo/CL_0000136,39,1638
-Male,celltypist,VHMHeart,heart right ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,10.25,656
-Male,celltypist,VHMHeart,heart right ventricle,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,3.21794871794871794872,251
-Male,celltypist,VHMHeart,heart right ventricle,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,95.5625,6116
-Male,celltypist,VHMHeart,heart right ventricle,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,59.29347826086956521739,5455
+Male,celltypist,VHMHeart,heart right ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,10.64615384615384615385,692
+Male,celltypist,VHMHeart,heart right ventricle,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,3.20253164556962025316,253
+Male,celltypist,VHMHeart,heart right ventricle,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,95.47692307692307692308,6206
+Male,celltypist,VHMHeart,heart right ventricle,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,60.88172043010752688172,5662
 Male,celltypist,VHMHeart,heart right ventricle,CD4+T_Tfh,http://purl.obolibrary.org/obo/CL_0000492,1.33333333333333333333,28
 Male,celltypist,VHMHeart,heart right ventricle,CD4+T_Th1,http://purl.obolibrary.org/obo/CL_0000545,2.16666666666666666667,91
 Male,celltypist,VHMHeart,heart right ventricle,CD4+T_Th17,http://purl.obolibrary.org/obo/CL_0000899,1,7
 Male,celltypist,VHMHeart,heart right ventricle,CD4+T_Th2,http://purl.obolibrary.org/obo/CL_0000546,3.28571428571428571429,161
-Male,celltypist,VHMHeart,heart right ventricle,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,16.61176470588235294118,1412
-Male,celltypist,VHMHeart,heart right ventricle,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,34.28205128205128205128,2674
+Male,celltypist,VHMHeart,heart right ventricle,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,16.67441860465116279070,1434
+Male,celltypist,VHMHeart,heart right ventricle,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,36.49367088607594936709,2883
 Male,celltypist,VHMHeart,heart right ventricle,CD4+T_reg,http://purl.obolibrary.org/obo/CL_0000792,2.33333333333333333333,98
-Male,celltypist,VHMHeart,heart right ventricle,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,25.12941176470588235294,2136
-Male,celltypist,VHMHeart,heart right ventricle,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,24.35897435897435897436,1900
+Male,celltypist,VHMHeart,heart right ventricle,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,24.93023255813953488372,2144
+Male,celltypist,VHMHeart,heart right ventricle,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,24.26582278481012658228,1917
 Male,celltypist,VHMHeart,heart right ventricle,CD8+T_te,http://purl.obolibrary.org/obo/CL_0001050,39.328125,2517
-Male,celltypist,VHMHeart,heart right ventricle,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,32.46739130434782608696,2987
-Male,celltypist,VHMHeart,heart right ventricle,DC,http://purl.obolibrary.org/obo/CL_0000451,4.81521739130434782609,443
+Male,celltypist,VHMHeart,heart right ventricle,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,34.43010752688172043011,3202
+Male,celltypist,VHMHeart,heart right ventricle,DC,http://purl.obolibrary.org/obo/CL_0000451,5.76344086021505376344,536
 Male,celltypist,VHMHeart,heart right ventricle,EC10_CMC-like,http://purl.obolibrary.org/obo/CL_0000115,78.5,2198
-Male,celltypist,VHMHeart,heart right ventricle,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,1280.79487179487179487179,99902
+Male,celltypist,VHMHeart,heart right ventricle,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,1367.07594936708860759494,107999
 Male,celltypist,VHMHeart,heart right ventricle,EC2_cap,http://purl.obolibrary.org/obo/CL_0002144,192,2688
 Male,celltypist,VHMHeart,heart right ventricle,EC3_cap,http://purl.obolibrary.org/obo/CL_0002144,173,1211
-Male,celltypist,VHMHeart,heart right ventricle,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,25.67605633802816901408,1823
-Male,celltypist,VHMHeart,heart right ventricle,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,335,33165
-Male,celltypist,VHMHeart,heart right ventricle,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,81.22222222222222222222,8041
-Male,celltypist,VHMHeart,heart right ventricle,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,28.60563380281690140845,2031
-Male,celltypist,VHMHeart,heart right ventricle,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,15.19565217391304347826,1398
+Male,celltypist,VHMHeart,heart right ventricle,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,26.33333333333333333333,1896
+Male,celltypist,VHMHeart,heart right ventricle,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,332.15,33215
+Male,celltypist,VHMHeart,heart right ventricle,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,84.44,8444
+Male,celltypist,VHMHeart,heart right ventricle,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,28.80555555555555555556,2074
+Male,celltypist,VHMHeart,heart right ventricle,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,15.97849462365591397849,1486
 Male,celltypist,VHMHeart,heart right ventricle,FB1,http://purl.obolibrary.org/obo/CL_0000057,856.92307692307692307692,66840
 Male,celltypist,VHMHeart,heart right ventricle,FB2,http://purl.obolibrary.org/obo/CL_0000057,1639,11473
 Male,celltypist,VHMHeart,heart right ventricle,FB3,http://purl.obolibrary.org/obo/CL_0000057,207,1449
-Male,celltypist,VHMHeart,heart right ventricle,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,1015,7105
+Male,celltypist,VHMHeart,heart right ventricle,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,1814.875,14519
 Male,celltypist,VHMHeart,heart right ventricle,ILC,http://purl.obolibrary.org/obo/CL_0001065,2.28571428571428571429,112
-Male,celltypist,VHMHeart,heart right ventricle,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,198.96470588235294117647,16912
+Male,celltypist,VHMHeart,heart right ventricle,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,230.62790697674418604651,19834
 Male,celltypist,VHMHeart,heart right ventricle,LYVE1+MP_cycling,http://purl.obolibrary.org/obo/CL_0000235,145,1015
 Male,celltypist,VHMHeart,heart right ventricle,LYVE1+TIMD4+MP,http://purl.obolibrary.org/obo/CL_0000235,82,574
-Male,celltypist,VHMHeart,heart right ventricle,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,6.51282051282051282051,508
-Male,celltypist,VHMHeart,heart right ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,34.29487179487179487179,2675
+Male,celltypist,VHMHeart,heart right ventricle,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,6.45569620253164556962,510
+Male,celltypist,VHMHeart,heart right ventricle,Mast,http://purl.obolibrary.org/obo/CL_0000097,34.02531645569620253165,2688
 Male,celltypist,VHMHeart,heart right ventricle,Meso,http://purl.obolibrary.org/obo/CL_0000077,6.75,189
-Male,celltypist,VHMHeart,heart right ventricle,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,52.015625,3329
+Male,celltypist,VHMHeart,heart right ventricle,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,52.01538461538461538462,3381
 Male,celltypist,VHMHeart,heart right ventricle,NC2_glial_NGF+,http://purl.obolibrary.org/obo/CL_0010020,40.4,1414
-Male,celltypist,VHMHeart,heart right ventricle,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,88.23529411764705882353,7500
-Male,celltypist,VHMHeart,heart right ventricle,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,10.24358974358974358974,799
+Male,celltypist,VHMHeart,heart right ventricle,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,88.11627906976744186047,7578
+Male,celltypist,VHMHeart,heart right ventricle,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,10.36708860759493670886,819
 Male,celltypist,VHMHeart,heart right ventricle,Neut,http://purl.obolibrary.org/obo/CL_0000775,14,196
-Male,celltypist,VHMHeart,heart right ventricle,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,1299.08974358974358974359,101329
+Male,celltypist,VHMHeart,heart right ventricle,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,1735.24050632911392405063,137084
 Male,celltypist,VHMHeart,heart right ventricle,PC2_atria,http://purl.obolibrary.org/obo/CL_0000669,260,1820
 Male,celltypist,VHMHeart,heart right ventricle,PC3_str,http://purl.obolibrary.org/obo/CL_0000669,705,9870
 Male,celltypist,VHMHeart,heart right ventricle,Purkinje_cell,http://purl.obolibrary.org/obo/CL_0002068,1,14
-Male,celltypist,VHMHeart,heart right ventricle,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,7
-Male,celltypist,VHMHeart,heart right ventricle,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,163.23913043478260869565,15018
+Male,celltypist,VHMHeart,heart right ventricle,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,8
+Male,celltypist,VHMHeart,heart right ventricle,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,162.07526881720430107527,15073
 Male,celltypist,VHMHeart,heart right ventricle,SMC2_art,http://purl.obolibrary.org/obo/CL_0000359,650,4550
 Male,celltypist,VHMHeart,heart right ventricle,T/NK_cycling,http://purl.obolibrary.org/obo/CL_0000814,7,245
-Male,celltypist,VHMHeart,heart right ventricle,aCM1,http://purl.obolibrary.org/obo/CL_0002129,28.96551724137931034483,840
+Male,celltypist,VHMHeart,heart right ventricle,aCM1,http://purl.obolibrary.org/obo/CL_0002129,56.03333333333333333333,1681
 Male,celltypist,VHMHeart,heart right ventricle,aCM2,http://purl.obolibrary.org/obo/CL_0002129,1,7
 Male,celltypist,VHMHeart,heart right ventricle,aCM3,http://purl.obolibrary.org/obo/CL_0002129,1.75,49
 Male,celltypist,VHMHeart,heart right ventricle,aCM4,http://purl.obolibrary.org/obo/CL_0002129,3,21
 Male,celltypist,VHMHeart,heart right ventricle,aCM5,http://purl.obolibrary.org/obo/CL_0002129,1,14
 Male,celltypist,VHMHeart,heart right ventricle,gdT,http://purl.obolibrary.org/obo/CL_0000798,1.33333333333333333333,28
-Male,celltypist,VHMHeart,heart right ventricle,vCM1,http://purl.obolibrary.org/obo/CL_0002131,1918.03508771929824561404,109328
+Male,celltypist,VHMHeart,heart right ventricle,vCM1,http://purl.obolibrary.org/obo/CL_0002131,1945.55172413793103448276,112842
 Male,celltypist,VHMHeart,heart right ventricle,vCM2,http://purl.obolibrary.org/obo/CL_0002131,1894,26516
 Male,celltypist,VHMHeart,heart right ventricle,vCM3_stressed,http://purl.obolibrary.org/obo/CL_0002131,4786,33502
 Male,celltypist,VHMHeart,heart right ventricle,vCM4,http://purl.obolibrary.org/obo/CL_0002131,2101,44121
-Male,celltypist,VHMHeart,interventricular septum,Adip1,http://purl.obolibrary.org/obo/CL_0000136,7.5,210
+Male,celltypist,VHMHeart,interventricular septum,Adip1,http://purl.obolibrary.org/obo/CL_0000136,8.20689655172413793103,238
 Male,celltypist,VHMHeart,interventricular septum,Adip2,http://purl.obolibrary.org/obo/CL_0000136,9.33333333333333333333,196
-Male,celltypist,VHMHeart,interventricular septum,B,http://purl.obolibrary.org/obo/CL_0000236,12,252
-Male,celltypist,VHMHeart,interventricular septum,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,3.33333333333333333333,140
-Male,celltypist,VHMHeart,interventricular septum,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,130.25,3647
-Male,celltypist,VHMHeart,interventricular septum,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,56.85714285714285714286,2786
+Male,celltypist,VHMHeart,interventricular septum,B,http://purl.obolibrary.org/obo/CL_0000236,13.09090909090909090909,288
+Male,celltypist,VHMHeart,interventricular septum,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,3.30232558139534883721,142
+Male,celltypist,VHMHeart,interventricular septum,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,128.86206896551724137931,3737
+Male,celltypist,VHMHeart,interventricular septum,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,59.86,2993
 Male,celltypist,VHMHeart,interventricular septum,CD4+T_Tfh,http://purl.obolibrary.org/obo/CL_0000492,1,7
 Male,celltypist,VHMHeart,interventricular septum,CD4+T_Th1,http://purl.obolibrary.org/obo/CL_0000545,2.66666666666666666667,56
 Male,celltypist,VHMHeart,interventricular septum,CD4+T_Th2,http://purl.obolibrary.org/obo/CL_0000546,4,84
-Male,celltypist,VHMHeart,interventricular septum,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,15,525
-Male,celltypist,VHMHeart,interventricular septum,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,30.4,1064
+Male,celltypist,VHMHeart,interventricular septum,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,15.19444444444444444444,547
+Male,celltypist,VHMHeart,interventricular septum,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,35.36111111111111111111,1273
 Male,celltypist,VHMHeart,interventricular septum,CD4+T_reg,http://purl.obolibrary.org/obo/CL_0000792,2,28
-Male,celltypist,VHMHeart,interventricular septum,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,18.33333333333333333333,770
-Male,celltypist,VHMHeart,interventricular septum,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,15.2,532
+Male,celltypist,VHMHeart,interventricular septum,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,18.09302325581395348837,778
+Male,celltypist,VHMHeart,interventricular septum,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,15.25,549
 Male,celltypist,VHMHeart,interventricular septum,CD8+T_te,http://purl.obolibrary.org/obo/CL_0001050,51,1428
-Male,celltypist,VHMHeart,interventricular septum,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,18.33333333333333333333,770
-Male,celltypist,VHMHeart,interventricular septum,DC,http://purl.obolibrary.org/obo/CL_0000451,3.83333333333333333333,161
+Male,celltypist,VHMHeart,interventricular septum,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,22.90697674418604651163,985
+Male,celltypist,VHMHeart,interventricular septum,DC,http://purl.obolibrary.org/obo/CL_0000451,5.90697674418604651163,254
 Male,celltypist,VHMHeart,interventricular septum,EC10_CMC-like,http://purl.obolibrary.org/obo/CL_0000115,74,1036
-Male,celltypist,VHMHeart,interventricular septum,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,1009.66666666666666666667,42406
+Male,celltypist,VHMHeart,interventricular septum,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,1174.48837209302325581395,50503
 Male,celltypist,VHMHeart,interventricular septum,EC2_cap,http://purl.obolibrary.org/obo/CL_0002144,183,1281
-Male,celltypist,VHMHeart,interventricular septum,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,16.2,567
-Male,celltypist,VHMHeart,interventricular septum,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,333.85714285714285714286,16359
-Male,celltypist,VHMHeart,interventricular septum,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,62.85714285714285714286,3080
-Male,celltypist,VHMHeart,interventricular septum,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,10.5,294
-Male,celltypist,VHMHeart,interventricular septum,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,19.66666666666666666667,826
+Male,celltypist,VHMHeart,interventricular septum,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,17.77777777777777777778,640
+Male,celltypist,VHMHeart,interventricular septum,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,328.18,16409
+Male,celltypist,VHMHeart,interventricular septum,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,69.66,3483
+Male,celltypist,VHMHeart,interventricular septum,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,11.62068965517241379310,337
+Male,celltypist,VHMHeart,interventricular septum,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,21.25581395348837209302,914
 Male,celltypist,VHMHeart,interventricular septum,FB1,http://purl.obolibrary.org/obo/CL_0000057,610.66666666666666666667,25648
-Male,celltypist,VHMHeart,interventricular septum,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,1015,7105
+Male,celltypist,VHMHeart,interventricular septum,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,1814.875,14519
 Male,celltypist,VHMHeart,interventricular septum,ILC,http://purl.obolibrary.org/obo/CL_0001065,1.66666666666666666667,35
-Male,celltypist,VHMHeart,interventricular septum,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,149.33333333333333333333,6272
+Male,celltypist,VHMHeart,interventricular septum,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,213.81395348837209302326,9194
 Male,celltypist,VHMHeart,interventricular septum,LYVE1+TIMD4+MP,http://purl.obolibrary.org/obo/CL_0000235,82,574
-Male,celltypist,VHMHeart,interventricular septum,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,6.6,231
-Male,celltypist,VHMHeart,interventricular septum,Mast,http://purl.obolibrary.org/obo/CL_0000097,48,1344
+Male,celltypist,VHMHeart,interventricular septum,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,6.47222222222222222222,233
+Male,celltypist,VHMHeart,interventricular septum,Mast,http://purl.obolibrary.org/obo/CL_0000097,46.79310344827586206897,1357
 Male,celltypist,VHMHeart,interventricular septum,Meso,http://purl.obolibrary.org/obo/CL_0000077,4.5,63
-Male,celltypist,VHMHeart,interventricular septum,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,36.25,1015
+Male,celltypist,VHMHeart,interventricular septum,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,36.79310344827586206897,1067
 Male,celltypist,VHMHeart,interventricular septum,NC2_glial_NGF+,http://purl.obolibrary.org/obo/CL_0010020,33,693
-Male,celltypist,VHMHeart,interventricular septum,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,120.8,4228
-Male,celltypist,VHMHeart,interventricular septum,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,6.66666666666666666667,280
+Male,celltypist,VHMHeart,interventricular septum,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,119.61111111111111111111,4306
+Male,celltypist,VHMHeart,interventricular septum,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,6.97674418604651162791,300
 Male,celltypist,VHMHeart,interventricular septum,Neut,http://purl.obolibrary.org/obo/CL_0000775,14,98
-Male,celltypist,VHMHeart,interventricular septum,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,791,27685
+Male,celltypist,VHMHeart,interventricular septum,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,1762.22222222222222222222,63440
 Male,celltypist,VHMHeart,interventricular septum,PC3_str,http://purl.obolibrary.org/obo/CL_0000669,705,9870
 Male,celltypist,VHMHeart,interventricular septum,Purkinje_cell,http://purl.obolibrary.org/obo/CL_0002068,1,7
-Male,celltypist,VHMHeart,interventricular septum,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,162.28571428571428571429,7952
+Male,celltypist,VHMHeart,interventricular septum,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,1
+Male,celltypist,VHMHeart,interventricular septum,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,160.14,8007
 Male,celltypist,VHMHeart,interventricular septum,T/NK_cycling,http://purl.obolibrary.org/obo/CL_0000814,8,112
-Male,celltypist,VHMHeart,interventricular septum,aCM1,http://purl.obolibrary.org/obo/CL_0002129,3.5,49
+Male,celltypist,VHMHeart,interventricular septum,aCM1,http://purl.obolibrary.org/obo/CL_0002129,59.33333333333333333333,890
 Male,celltypist,VHMHeart,interventricular septum,aCM3,http://purl.obolibrary.org/obo/CL_0002129,1.5,21
 Male,celltypist,VHMHeart,interventricular septum,aCM4,http://purl.obolibrary.org/obo/CL_0002129,3,21
 Male,celltypist,VHMHeart,interventricular septum,gdT,http://purl.obolibrary.org/obo/CL_0000798,1,7
-Male,celltypist,VHMHeart,interventricular septum,vCM1,http://purl.obolibrary.org/obo/CL_0002131,2058.4,72044
+Male,celltypist,VHMHeart,interventricular septum,vCM1,http://purl.obolibrary.org/obo/CL_0002131,2098.83333333333333333333,75558
 Male,celltypist,VHMHeart,interventricular septum,vCM3_stressed,http://purl.obolibrary.org/obo/CL_0002131,4786,33502
 Male,celltypist,VHMHeart,interventricular septum,vCM4,http://purl.obolibrary.org/obo/CL_0002131,1488,10416
 Male,celltypist,VHMHeart,left cardiac atrium,Adip1,http://purl.obolibrary.org/obo/CL_0000136,99.66666666666666666667,4186

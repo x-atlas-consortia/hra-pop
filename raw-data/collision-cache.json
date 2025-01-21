@@ -21903,5 +21903,2610 @@
     }
   ],
   "http://purl.org/ccf/1.5/cf2f3af6-794e-4896-9009-7958eeea7a6c": [],
-  "http://purl.org/ccf/1.5/5aca9fce-eb27-4293-bbaf-17d8f7773a31": []
+  "http://purl.org/ccf/1.5/5aca9fce-eb27-4293-bbaf-17d8f7773a31": [],
+  "http://purl.org/ccf/1.5/5c798396-639b-4964-9a91-501b42d23d6f": [
+    {
+      "AS_volume": 121604.20702742106,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_left_ventricle",
+      "intersection_volume": 957.6,
+      "is_closed": true,
+      "label": "heart left ventricle",
+      "node_name": "VH_M_heart_left_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.007874727555964134,
+      "percentage_of_tissue_block": 0.532,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002084",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 28091.876066633104,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_interventricular_septum",
+      "intersection_volume": 583.2,
+      "is_closed": true,
+      "label": "interventricular septum",
+      "node_name": "VH_M_interventricular_septum",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.02076045040981481,
+      "percentage_of_tissue_block": 0.324,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002094",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 73988.45321948585,
+      "id": "https://purl.humanatlas.io/ref-organ/heart-male/v1.3#VH_M_heart_right_ventricle",
+      "intersection_volume": 552.6,
+      "is_closed": true,
+      "label": "heart right ventricle",
+      "node_name": "VH_M_heart_right_ventricle",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_heart-male_v1.3_assets_3d-vh-m-heart",
+      "percentage_of_AS": 0.007468732970544996,
+      "percentage_of_tissue_block": 0.307,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002080",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/f308376b-519b-4593-b16d-17779beabea9": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 499,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.004161855570403023,
+      "percentage_of_tissue_block": 0.998,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 1,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00015994476020303005,
+      "percentage_of_tissue_block": 0.002,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 4757.093155183277,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_e",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_e",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/9285a8ac-ad43-4e7d-ae23-7013879d1a04": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 26.5,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.000221020386003367,
+      "percentage_of_tissue_block": 0.053,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 2232.3583515414857,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_i",
+      "intersection_volume": 473,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_i",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.21188354444678856,
+      "percentage_of_tissue_block": 0.946,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 4,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00008394172295028184,
+      "percentage_of_tissue_block": 0.008,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/03d9492a-ca42-4e06-8527-82aec092e65d": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 305,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.002543819537019884,
+      "percentage_of_tissue_block": 0.61,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 55,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0011541986905663753,
+      "percentage_of_tissue_block": 0.11,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 154,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.03965626545367385,
+      "percentage_of_tissue_block": 0.308,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/8e37ec98-6191-4b7b-a8eb-a3e811f78295": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 495,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.004128494002704403,
+      "percentage_of_tissue_block": 0.99,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 3.5,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0005598066607106052,
+      "percentage_of_tissue_block": 0.007,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/174b77df-a3cd-44fd-8f50-209191d71226": [
+    {
+      "AS_volume": 3264.2546207697205,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_b",
+      "intersection_volume": 3,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_b",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0009190459533737572,
+      "percentage_of_tissue_block": 0.006,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 5918.448941539169,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_b",
+      "intersection_volume": 66,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_b",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.011151570394866979,
+      "percentage_of_tissue_block": 0.132,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 8041.465664953461,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_a",
+      "intersection_volume": 234.5,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_a",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.02916135065054178,
+      "percentage_of_tissue_block": 0.469,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 224,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.004700736485215783,
+      "percentage_of_tissue_block": 0.448,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 1780.817421550268,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_a",
+      "intersection_volume": 0.5,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_a",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00028076993966328755,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/7a1828cd-40d2-442a-aeaa-d18d0a909557": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 488.5,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.004074281455194143,
+      "percentage_of_tissue_block": 0.977,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 0.5,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00007997238010151503,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/86dcf56f-5053-4df3-b19a-48438cbefeff": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 488.5,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.004074281455194143,
+      "percentage_of_tissue_block": 0.977,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 0.5,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00007997238010151503,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/fbd3c785-7788-4dc3-810e-8a8743ca4c44": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 442,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.003686453230697668,
+      "percentage_of_tissue_block": 0.884,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 4.5,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00009443443831906706,
+      "percentage_of_tissue_block": 0.009,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 28,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.007210230082486155,
+      "percentage_of_tissue_block": 0.056,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 7,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0011196133214212104,
+      "percentage_of_tissue_block": 0.014,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/337410fd-2744-403e-a9cc-ffa8e94c7b61": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 190.79999999999998,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.0074911572267885515,
+      "percentage_of_tissue_block": 0.106,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/3c8d2571-3769-4525-8162-9dd2f6f34386": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 358,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.002985860309026618,
+      "percentage_of_tissue_block": 0.716,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 125.5,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.002633671557565093,
+      "percentage_of_tissue_block": 0.251,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 25.5,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.006566459539407033,
+      "percentage_of_tissue_block": 0.051,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/65fe3b83-e95a-490b-8547-8a6e0064aeec": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 1239,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.03631720846478329,
+      "percentage_of_tissue_block": 0.826,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/61b676ce-e25a-46b9-a38b-f2e80efe14bf": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 495,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.004128494002704403,
+      "percentage_of_tissue_block": 0.99,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 3.5,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0005598066607106052,
+      "percentage_of_tissue_block": 0.007,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/43c8e73f-8ab1-4a12-9573-f176d8c0417e": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 499,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.004161855570403023,
+      "percentage_of_tissue_block": 0.998,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 1,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00015994476020303005,
+      "percentage_of_tissue_block": 0.002,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 4757.093155183277,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_e",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_e",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/9ca63efc-2932-49ed-bab9-7ce3d9bf4867": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 332.5,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0027731803149479064,
+      "percentage_of_tissue_block": 0.665,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 52,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.001091242398353664,
+      "percentage_of_tissue_block": 0.104,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 124.5,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.032059773045340224,
+      "percentage_of_tissue_block": 0.249,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/9efa35bc-0240-42a0-9dbd-dfe79a8926b7": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 381,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0031776893232936913,
+      "percentage_of_tissue_block": 0.762,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 47,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0009863152446658117,
+      "percentage_of_tissue_block": 0.094,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 92.5,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.023819510093927476,
+      "percentage_of_tissue_block": 0.185,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/d8814cb9-e2a2-4943-8e1a-367c0bcf7940": [
+    {
+      "AS_volume": 1322.1908514580361,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_h",
+      "intersection_volume": 18,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_h",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.013613768375534163,
+      "percentage_of_tissue_block": 0.036,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 1446.3704228908953,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_g",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 1226.2339485035807,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_i",
+      "intersection_volume": 0.5,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_i",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0004077525341800957,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 802.7397507302222,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_h",
+      "intersection_volume": 183,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_h",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.2279692762611192,
+      "percentage_of_tissue_block": 0.366,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 279.5,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.005865427891150943,
+      "percentage_of_tissue_block": 0.559,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 6.5,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0016738034120057145,
+      "percentage_of_tissue_block": 0.013,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/3558feb3-44e0-47c2-ae6c-ca87dc63a3db": [
+    {
+      "AS_volume": 3264.2546207697205,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_b",
+      "intersection_volume": 3,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_b",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0009190459533737572,
+      "percentage_of_tissue_block": 0.006,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 5918.448941539169,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_b",
+      "intersection_volume": 66,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_b",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.011151570394866979,
+      "percentage_of_tissue_block": 0.132,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 8041.465664953461,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_a",
+      "intersection_volume": 234.5,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_a",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.02916135065054178,
+      "percentage_of_tissue_block": 0.469,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 224,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.004700736485215783,
+      "percentage_of_tissue_block": 0.448,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 1780.817421550268,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_a",
+      "intersection_volume": 0.5,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_a",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00028076993966328755,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/023b9dbe-b858-484b-9b06-256945279f1c": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 26.5,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.000221020386003367,
+      "percentage_of_tissue_block": 0.053,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 2232.3583515414857,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_i",
+      "intersection_volume": 473,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_i",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.21188354444678856,
+      "percentage_of_tissue_block": 0.946,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 4,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00008394172295028184,
+      "percentage_of_tissue_block": 0.008,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/f91ecdd4-5c2d-4ef6-a835-298be7fe03fe": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 379,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0031610085394443805,
+      "percentage_of_tissue_block": 0.758,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 18.5,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0029589780637560557,
+      "percentage_of_tissue_block": 0.037,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/533e3dd2-b42e-40c5-8eb5-7d3667e98765": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 547.5,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.006976195586024711,
+      "percentage_of_tissue_block": 0.365,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1500
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 630,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.006771307965467433,
+      "percentage_of_tissue_block": 0.42,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/c47a1ee7-74fe-475a-829c-ef49021771f8": [
+    {
+      "AS_volume": 119898.4423074725,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_outer_cortex_of_kidney_L",
+      "intersection_volume": 413,
+      "is_closed": true,
+      "label": "outer cortex of kidney",
+      "node_name": "VH_M_outer_cortex_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.003444581864882663,
+      "percentage_of_tissue_block": 0.826,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002189",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 9.5,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.00019936159200691935,
+      "percentage_of_tissue_block": 0.019,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 88,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.022660723116385055,
+      "percentage_of_tissue_block": 0.176,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6252.15854980572,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_kidney_capsule_L",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "kidney capsule",
+      "node_name": "VH_M_kidney_capsule_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0002015",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/e7cded2f-3002-479d-8023-6a62d2f90840": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 948,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.010189206271846232,
+      "percentage_of_tissue_block": 0.632,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/d09dba18-dff2-4a6c-995b-b444f1f3232a": [
+    {
+      "AS_volume": 1322.1908514580361,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_h",
+      "intersection_volume": 18,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_h",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.013613768375534163,
+      "percentage_of_tissue_block": 0.036,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 1446.3704228908953,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_g",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 1226.2339485035807,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_papilla_L_i",
+      "intersection_volume": 0.5,
+      "is_closed": true,
+      "label": "renal papilla",
+      "node_name": "VH_M_renal_papilla_L_i",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0004077525341800957,
+      "percentage_of_tissue_block": 0.001,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001228",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 802.7397507302222,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_h",
+      "intersection_volume": 183,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_h",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.2279692762611192,
+      "percentage_of_tissue_block": 0.366,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 279.5,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.005865427891150943,
+      "percentage_of_tissue_block": 0.559,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 3883.371221122716,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_pyramid_L_g",
+      "intersection_volume": 6.5,
+      "is_closed": true,
+      "label": "renal pyramid",
+      "node_name": "VH_M_renal_pyramid_L_g",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0016738034120057145,
+      "percentage_of_tissue_block": 0.013,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0004200",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/5f835bf3-5039-4815-80ab-04cbb490d906": [
+    {
+      "AS_volume": 9931.640284981242,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_hilum_of_kidney_L",
+      "intersection_volume": 112.5,
+      "is_closed": true,
+      "label": "hilum of kidney",
+      "node_name": "VH_M_hilum_of_kidney_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0113274340161236,
+      "percentage_of_tissue_block": 0.225,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0008716",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 47652.10743135658,
+      "id": "https://purl.humanatlas.io/ref-organ/kidney-male-left/v1.3#VH_M_renal_column_L",
+      "intersection_volume": 93,
+      "is_closed": true,
+      "label": "renal column",
+      "node_name": "VH_M_renal_column_L",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_kidney-male-left_v1.3_assets_3d-vh-m-kidney-l",
+      "percentage_of_AS": 0.0019516450585940527,
+      "percentage_of_tissue_block": 0.186,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001284",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/2bf83f37-13b3-4393-8eb7-2b859b7957b4": [
+    {
+      "AS_volume": 364524.0467728021,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_bronchopulmonary_segment",
+      "intersection_volume": 459,
+      "is_closed": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_right_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00125917618896095,
+      "percentage_of_tissue_block": 0.918,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7359",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/8440a5c0-a640-4c90-b5c0-6a113761a9cb": [
+    {
+      "AS_volume": 44007.02025885209,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_anterior_bronchopulmonary_segm",
+      "intersection_volume": 392,
+      "is_closed": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "node_name": "VH_F_right_anterior_bronchopulmonary_segm",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.008907669678479276,
+      "percentage_of_tissue_block": 0.784,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7359",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/a884cbd1-6fc6-4c92-993c-984f4db551dd": [
+    {
+      "AS_volume": 568998.7143063463,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_lingula_superior_bronchopulmonary_segment",
+      "intersection_volume": 946.05,
+      "is_closed": true,
+      "label": "Superior lingular bronchopulmonary segment",
+      "node_name": "VH_M_left_lingula_superior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0016626575354450643,
+      "percentage_of_tissue_block": 0.742,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7374",
+      "tissue_volume": 1275
+    },
+    {
+      "AS_volume": 679913.9339070129,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_lingula_inferior_bronchopulmonary_segment",
+      "intersection_volume": 297.075,
+      "is_closed": true,
+      "label": "Inferior lingular bronchopulmonary segment",
+      "node_name": "VH_M_left_lingula_inferior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00043693030129991257,
+      "percentage_of_tissue_block": 0.233,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7375",
+      "tissue_volume": 1275
+    }
+  ],
+  "http://purl.org/ccf/1.5/ee91b4a1-de53-44b9-b0e6-dd23605e2652": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 362.88,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.014247332989816718,
+      "percentage_of_tissue_block": 0.252,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1440
+    }
+  ],
+  "http://purl.org/ccf/1.5/269f53a9-bf8a-453b-ac4e-d233906a9d25": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 1144.8,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.0335560453999063,
+      "percentage_of_tissue_block": 0.636,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/3787d40c-0308-4bf4-8ce2-f7df0de87c12": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 407.16,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.005187995972248075,
+      "percentage_of_tissue_block": 0.377,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1080
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 513,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.005513779343309195,
+      "percentage_of_tissue_block": 0.475,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1080
+    }
+  ],
+  "http://purl.org/ccf/1.5/b1443e1b-0464-4984-b9c3-e0fb75b4feb0": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 987.12,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.010609672252178116,
+      "percentage_of_tissue_block": 0.914,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1080
+    }
+  ],
+  "http://purl.org/ccf/1.5/569e97c9-901f-40a3-b5bf-942dc4a7c4e1": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 558,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.007109985638359431,
+      "percentage_of_tissue_block": 0.372,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1500
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 624,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.006706819318177267,
+      "percentage_of_tissue_block": 0.416,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/1da34ba2-6e68-41e5-a8ea-b328c38e395a": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 851.9999999999999,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.02497357676512943,
+      "percentage_of_tissue_block": 0.568,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/79e0572b-32fe-4f5c-9977-664a0c8b03b0": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 390,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.01531211382834138,
+      "percentage_of_tissue_block": 0.3,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1300
+    }
+  ],
+  "http://purl.org/ccf/1.5/de2c01b3-5199-41e6-a907-237ae3f9d0d7": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 948,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.010189206271846232,
+      "percentage_of_tissue_block": 0.632,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/c657ec7b-8c67-4c73-8ad8-b6f13bb368f5": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 550.8,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.02162541614525752,
+      "percentage_of_tissue_block": 0.306,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/a932f63c-c424-476c-8a8d-45eda55ad252": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 1330.2,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.0389904364002056,
+      "percentage_of_tissue_block": 0.739,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/7127ed28-1ee4-43dc-9c64-989aa67602eb": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 623.52,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.007944835564928086,
+      "percentage_of_tissue_block": 0.433,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1440
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 404.64000000000004,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.004349114373248798,
+      "percentage_of_tissue_block": 0.281,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1440
+    }
+  ],
+  "http://purl.org/ccf/1.5/17e2d1d5-fef4-4bed-8884-13a8c5f6e55d": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 1247.04,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.013403320452788107,
+      "percentage_of_tissue_block": 0.866,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1440
+    }
+  ],
+  "http://purl.org/ccf/1.5/74f00868-e26b-4d50-951d-b623aeb4ba50": [
+    {
+      "AS_volume": 151195.02224744155,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_medial_bronchopulmonary_segment",
+      "intersection_volume": 312,
+      "is_closed": true,
+      "label": "Right Medial Bronchopulmonary Segment",
+      "node_name": "VH_F_right_medial_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.0020635599992795367,
+      "percentage_of_tissue_block": 0.24,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7360",
+      "tissue_volume": 1300
+    },
+    {
+      "AS_volume": 243792.54480400792,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_lateral_bronchopulmonary_segmennt",
+      "intersection_volume": 730.6,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_F_right_lateral_bronchopulmonary_segmennt",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.0029968102617221174,
+      "percentage_of_tissue_block": 0.562,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1300
+    }
+  ],
+  "http://purl.org/ccf/1.5/eaa8b4d9-1cee-4aa8-aa73-fe67b544365a": [
+    {
+      "AS_volume": 43885.349974284036,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_ucinate_process1",
+      "intersection_volume": 383.4,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_F_ucinate_process1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.008736400649070018,
+      "percentage_of_tissue_block": 0.213,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 937.8000000000001,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.014359864138354472,
+      "percentage_of_tissue_block": 0.521,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/4e89f8cc-97f6-4df1-a4b1-0ecf1fcd805c": [
+    {
+      "AS_volume": 32944.00211977638,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_tail_of_pancreas",
+      "intersection_volume": 703.8000000000001,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_F_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.02136352460885458,
+      "percentage_of_tissue_block": 0.391,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/93da1599-2fc8-4aa9-99de-954ec1989adf": [
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 460.8,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.0070559025324735975,
+      "percentage_of_tissue_block": 0.256,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/86031ae3-0668-4ad8-b211-233c7a2b0415": [
+    {
+      "AS_volume": 30555.03595354699,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 1476,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.04830627600124483,
+      "percentage_of_tissue_block": 0.82,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/d5713b2b-ad15-4225-850e-a8efa16a597c": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 1378.8,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.014819491147280152,
+      "percentage_of_tissue_block": 0.766,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/61e5b5eb-4ea7-4937-8e2a-ef0f158ec6c2": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 1146.6,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.03360880647757911,
+      "percentage_of_tissue_block": 0.637,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/bbe8e6fc-c62c-4f86-800d-c04d11704a8e": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 462.6,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.018162522710232623,
+      "percentage_of_tissue_block": 0.257,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/b1b42a46-c5d1-4f96-a2db-cbdc06cfdbc5": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 567,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.007224662826074906,
+      "percentage_of_tissue_block": 0.315,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 680.4,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.007313012602704828,
+      "percentage_of_tissue_block": 0.378,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/1cbd9283-2d58-4a2d-88fe-effb18c3f14f": [
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 700.2,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.010721664395047773,
+      "percentage_of_tissue_block": 0.389,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/798bbe04-761c-4a68-b610-3989ef36833f": [
+    {
+      "AS_volume": 43885.349974284036,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_ucinate_process1",
+      "intersection_volume": 405,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_F_ucinate_process1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.009228592234933119,
+      "percentage_of_tissue_block": 0.225,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 1132.2,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.01733657301924177,
+      "percentage_of_tissue_block": 0.629,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/69c1a97a-63bb-434d-a2d0-1511905d25da": [
+    {
+      "AS_volume": 30555.03595354699,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 1591.2,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.052076521933049305,
+      "percentage_of_tissue_block": 0.884,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/56621014-64de-4351-a724-be42becb142e": [
+    {
+      "AS_volume": 32944.00211977638,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_tail_of_pancreas",
+      "intersection_volume": 703.8000000000001,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_F_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.02136352460885458,
+      "percentage_of_tissue_block": 0.391,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/4f3f138b-6bc5-49c0-9857-4a4a4b6d22c1": [
+    {
+      "AS_volume": 56009.8815045948,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_medial_bronchopulmonary_segment",
+      "intersection_volume": 1341,
+      "is_closed": true,
+      "label": "Right Medial Bronchopulmonary Segment",
+      "node_name": "VH_M_right_medial_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.023942203839334857,
+      "percentage_of_tissue_block": 0.894,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7360",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/034b84d0-ebd2-4aef-a1e5-002db57cbe09": [
+    {
+      "AS_volume": 602131.2196730863,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_left_apical_bronchopulmonary_segment",
+      "intersection_volume": 455,
+      "is_closed": true,
+      "label": "Left apical bronchopulmonary segment",
+      "node_name": "VH_F_left_apical_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.0007556492424475716,
+      "percentage_of_tissue_block": 0.91,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7385",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/006cb235-3d41-4998-8866-0737924068b0": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 1357.2,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.03978185256529773,
+      "percentage_of_tissue_block": 0.754,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/a50b3e65-47bc-43cd-9ce4-7e43575853fb": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 362.88,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.014247332989816718,
+      "percentage_of_tissue_block": 0.252,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1440
+    }
+  ],
+  "http://purl.org/ccf/1.5/cb66c4bf-591d-404e-9d62-4b956bfbb7e7": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 911.52,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.009797115296322023,
+      "percentage_of_tissue_block": 0.844,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1080
+    }
+  ],
+  "http://purl.org/ccf/1.5/139ad120-b165-4e11-90b8-b86c170d2fc9": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 407.16,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.005187995972248075,
+      "percentage_of_tissue_block": 0.377,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1080
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 513,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.005513779343309195,
+      "percentage_of_tissue_block": 0.475,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1080
+    }
+  ],
+  "http://purl.org/ccf/1.5/4afc7c70-d7b5-457b-8cc7-e84e9fa786a0": [
+    {
+      "AS_volume": 32944.00211977638,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_tail_of_pancreas",
+      "intersection_volume": 685.8,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_F_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.02081714290530331,
+      "percentage_of_tissue_block": 0.381,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/b19e73ee-8358-48e8-9bbb-804e5b42c933": [
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 388.8,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.005953417761774598,
+      "percentage_of_tissue_block": 0.216,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/c361f725-c7cf-4e71-9c7f-4236cf3e99b5": [
+    {
+      "AS_volume": 43885.349974284036,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_ucinate_process1",
+      "intersection_volume": 370.79999999999995,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_F_ucinate_process1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.008449288890649876,
+      "percentage_of_tissue_block": 0.206,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 1067.3999999999999,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.016344336725612668,
+      "percentage_of_tissue_block": 0.593,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/51c13bbf-0cf6-4b4e-b141-7703bbde92a2": [
+    {
+      "AS_volume": 30555.03595354699,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 1544.3999999999999,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.050544859523253736,
+      "percentage_of_tissue_block": 0.858,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/44c47c29-6e1b-48ef-978d-8b9ea7ba01ca": [
+    {
+      "AS_volume": 61898.9348796958,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_lingula_superior_bronchopulmonary_segment",
+      "intersection_volume": 222,
+      "is_closed": true,
+      "label": "Superior lingular bronchopulmonary segment",
+      "node_name": "VH_F_lingula_superior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.0035864914385274962,
+      "percentage_of_tissue_block": 0.888,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7374",
+      "tissue_volume": 250
+    }
+  ],
+  "http://purl.org/ccf/1.5/d4fa38d5-5821-4ff1-9d6a-7ad85368a11b": [
+    {
+      "AS_volume": 56009.8815045948,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_medial_bronchopulmonary_segment",
+      "intersection_volume": 200,
+      "is_closed": true,
+      "label": "Right Medial Bronchopulmonary Segment",
+      "node_name": "VH_M_right_medial_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0035707984846137,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7360",
+      "tissue_volume": 200
+    }
+  ],
+  "http://purl.org/ccf/1.5/56e375c9-bbf5-458d-8d64-b9791be0e7d3": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 1209.6000000000001,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.013000911293697473,
+      "percentage_of_tissue_block": 0.672,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/4154a974-b347-4af7-ab5e-e66911484e1f": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 241.20000000000002,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.009469953475374208,
+      "percentage_of_tissue_block": 0.134,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/fe48df6d-25c3-4efd-8f9e-8e0b659cd618": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 1612.8,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.047273925594836556,
+      "percentage_of_tissue_block": 0.896,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/9118e096-c87c-4a04-8610-3f87c67d8844": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 554.4,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.007064114763273241,
+      "percentage_of_tissue_block": 0.308,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 664.2,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.007138893255021379,
+      "percentage_of_tissue_block": 0.369,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/d77268ef-1df2-4b9f-87d1-1b9a51b0e11a": [
+    {
+      "AS_volume": 30555.03595354699,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 604.8000000000001,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.019793791141973494,
+      "percentage_of_tissue_block": 0.336,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/246cf4d2-6f9d-4f7f-9499-6f34e3e643e2": [
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 351,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.005374613257157623,
+      "percentage_of_tissue_block": 0.195,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/a438b2b7-3e1c-4062-8223-a72656ce6a94": [
+    {
+      "AS_volume": 43885.349974284036,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_ucinate_process1",
+      "intersection_volume": 221.4,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_F_ucinate_process1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.005044963755096772,
+      "percentage_of_tissue_block": 0.123,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 966.6,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.01480085804663407,
+      "percentage_of_tissue_block": 0.537,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/2eb99525-e795-4a92-9e4e-d9eabfe9f43d": [
+    {
+      "AS_volume": 32944.00211977638,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_tail_of_pancreas",
+      "intersection_volume": 666,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_F_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.020216123031396915,
+      "percentage_of_tissue_block": 0.37,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/77d4fb55-21e5-4221-a0a1-aa784c03738f": [
+    {
+      "AS_volume": 1312569.339816986,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 741,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0005645416036483978,
+      "percentage_of_tissue_block": 0.988,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 750
+    }
+  ],
+  "http://purl.org/ccf/1.5/4d7ef4bc-5776-4a85-80d1-3b185952e29c": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 1035,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.01112429165755364,
+      "percentage_of_tissue_block": 0.69,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/91045d3f-23ec-40cf-95a8-1f89674c47bc": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 900,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.01146771877154747,
+      "percentage_of_tissue_block": 0.6,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1500
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 450,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.004836648546762452,
+      "percentage_of_tissue_block": 0.3,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/7ed7879d-c1e2-4f31-b0d6-83f8251ce953": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 538.1999999999999,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.015775562224169787,
+      "percentage_of_tissue_block": 0.299,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/e08edab6-fa0f-4626-8efb-4095041e3783": [
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 454.5,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.006959435115037435,
+      "percentage_of_tissue_block": 0.303,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/bbbd7c74-f645-4654-9dc8-63a8473e095b": [
+    {
+      "AS_volume": 30555.03595354699,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 849.5999999999999,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.027805563747057997,
+      "percentage_of_tissue_block": 0.472,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/6b724dd2-a261-4671-a0d1-ede1e170ca4b": [
+    {
+      "AS_volume": 43885.349974284036,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_ucinate_process1",
+      "intersection_volume": 415.8,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_F_ucinate_process1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.009474688027864669,
+      "percentage_of_tissue_block": 0.231,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 748.8,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.011465841615269595,
+      "percentage_of_tissue_block": 0.416,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/60046b34-cf00-4137-9858-466305871150": [
+    {
+      "AS_volume": 32944.00211977638,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_tail_of_pancreas",
+      "intersection_volume": 401.7,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_F_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.01219341835091913,
+      "percentage_of_tissue_block": 0.309,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1300
+    }
+  ],
+  "http://purl.org/ccf/1.5/50709361-c670-4ccf-9322-e65b57b3ea8f": [
+    {
+      "AS_volume": 61898.9348796958,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_lingula_superior_bronchopulmonary_segment",
+      "intersection_volume": 178.74,
+      "is_closed": true,
+      "label": "Superior lingular bronchopulmonary segment",
+      "node_name": "VH_F_lingula_superior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.002887610269019841,
+      "percentage_of_tissue_block": 0.993,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7374",
+      "tissue_volume": 180
+    }
+  ],
+  "http://purl.org/ccf/1.5/179b0d79-f350-400a-ab71-d454e7e319df": [
+    {
+      "AS_volume": 56009.8815045948,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_medial_bronchopulmonary_segment",
+      "intersection_volume": 2189.25,
+      "is_closed": true,
+      "label": "Right Medial Bronchopulmonary Segment",
+      "node_name": "VH_M_right_medial_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.039086852912202714,
+      "percentage_of_tissue_block": 0.973,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7360",
+      "tissue_volume": 2250
+    }
+  ],
+  "http://purl.org/ccf/1.5/b5f8fa4e-9335-4ad3-99da-bfb6d4d93491": [
+    {
+      "AS_volume": 1312569.339816986,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 249.25,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00018989472970224448,
+      "percentage_of_tissue_block": 0.997,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 250
+    }
+  ],
+  "http://purl.org/ccf/1.5/47867b88-d714-467f-82a7-fd7d248856e3": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 1126.5,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.012107743528728671,
+      "percentage_of_tissue_block": 0.751,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/6e84416f-6f4f-4ce2-9cc0-a3ba3a2053a9": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 780,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.022863133658217086,
+      "percentage_of_tissue_block": 0.52,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/15f18e96-7ae3-48a8-b80e-c0f645b08858": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 945,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.012041104710124843,
+      "percentage_of_tissue_block": 0.63,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1500
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 391.5,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.004207884235683333,
+      "percentage_of_tissue_block": 0.261,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/2a981b9a-3e66-4c3c-b71c-acd374d6aaea": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 403.2,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.01583036998868524,
+      "percentage_of_tissue_block": 0.224,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/f1457b61-aef0-468b-9cfb-1efb7171e20b": [
+    {
+      "AS_volume": 44007.02025885209,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_anterior_bronchopulmonary_segm",
+      "intersection_volume": 457.5,
+      "is_closed": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "node_name": "VH_F_right_anterior_bronchopulmonary_segm",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.010396068566082318,
+      "percentage_of_tissue_block": 0.305,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7359",
+      "tissue_volume": 1500
+    },
+    {
+      "AS_volume": 243792.54480400792,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_lateral_bronchopulmonary_segmennt",
+      "intersection_volume": 1228.5,
+      "is_closed": true,
+      "label": "Right Lateral Bronchopulmonary Segment",
+      "node_name": "VH_F_right_lateral_bronchopulmonary_segmennt",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.005039120457877937,
+      "percentage_of_tissue_block": 0.819,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7361",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/eb8b86ed-d5ed-4e89-96cd-772e7632d14c": [
+    {
+      "AS_volume": 151195.02224744155,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_medial_bronchopulmonary_segment",
+      "intersection_volume": 480,
+      "is_closed": true,
+      "label": "Right Medial Bronchopulmonary Segment",
+      "node_name": "VH_F_right_medial_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.003174707691199287,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7360",
+      "tissue_volume": 480
+    }
+  ],
+  "http://purl.org/ccf/1.5/3c7e7a3e-ad9c-4c0b-b4f1-044acccd9485": [
+    {
+      "AS_volume": 364524.0467728021,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_bronchopulmonary_segment",
+      "intersection_volume": 402.6,
+      "is_closed": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_right_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0011044538860036568,
+      "percentage_of_tissue_block": 0.915,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7359",
+      "tissue_volume": 440
+    }
+  ],
+  "http://purl.org/ccf/1.5/1a5f8a16-0cee-4945-9f2a-a970bce5b80c": [
+    {
+      "AS_volume": 568998.7143063463,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_lingula_superior_bronchopulmonary_segment",
+      "intersection_volume": 246,
+      "is_closed": true,
+      "label": "Superior lingular bronchopulmonary segment",
+      "node_name": "VH_M_left_lingula_superior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.000432338410992533,
+      "percentage_of_tissue_block": 0.615,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7374",
+      "tissue_volume": 400
+    }
+  ],
+  "http://purl.org/ccf/1.5/3a4f28de-bbd0-4931-be34-5105cbd182ef": [
+    {
+      "AS_volume": 2573.857607458668,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_cartilage_of_the_tertiary_bronchus_R",
+      "intersection_volume": 1.5,
+      "is_closed": true,
+      "label": "Cartilage of segmental bronchus",
+      "node_name": "VH_M_cartilage_of_the_tertiary_bronchus_R",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0005827828220384906,
+      "percentage_of_tissue_block": 0.003,
+      "representation_of": "http://purl.org/sig/ont/fma/fma62662",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 6549.113513482485,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_apical_bronchus",
+      "intersection_volume": 0,
+      "is_closed": true,
+      "label": "Right superior segmental bronchus",
+      "node_name": "VH_M_right_apical_bronchus",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0,
+      "percentage_of_tissue_block": 0,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7416",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 364524.0467728021,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_anterior_bronchopulmonary_segment",
+      "intersection_volume": 4.5,
+      "is_closed": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_right_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.000012344864597656372,
+      "percentage_of_tissue_block": 0.009,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7359",
+      "tissue_volume": 500
+    },
+    {
+      "AS_volume": 365276.6048983475,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_apical_bronchopulmonary_segment",
+      "intersection_volume": 59.5,
+      "is_closed": true,
+      "label": "Right Apical Bronchopulmonary Segment",
+      "node_name": "VH_M_right_apical_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00016289025686864943,
+      "percentage_of_tissue_block": 0.119,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7338",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/ce12af91-344c-4930-a433-4a92bc6c1dc5": [
+    {
+      "AS_volume": 334392.64385545684,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 495.72,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_F_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.0014824488789121745,
+      "percentage_of_tissue_block": 0.918,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 540
+    }
+  ],
+  "http://purl.org/ccf/1.5/1c2fb1d3-5026-4aa1-9204-b49c96b4bf63": [
+    {
+      "AS_volume": 43885.349974284036,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_ucinate_process1",
+      "intersection_volume": 433.8,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_F_ucinate_process1",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.009884847682750586,
+      "percentage_of_tissue_block": 0.241,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1800
+    },
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 1018.8,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.015600159505390844,
+      "percentage_of_tissue_block": 0.566,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/19d06baf-65cc-4530-a0eb-5fcd9b98bcce": [
+    {
+      "AS_volume": 32944.00211977638,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_tail_of_pancreas",
+      "intersection_volume": 723.6,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_F_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.021964544482760973,
+      "percentage_of_tissue_block": 0.402,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/335df3c2-03f9-44ce-8c8b-722c313b4fcb": [
+    {
+      "AS_volume": 65307.02456266168,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_head_of_pancreas",
+      "intersection_volume": 138.6,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_F_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.002122283183595574,
+      "percentage_of_tissue_block": 0.077,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/80869cd6-418b-4abd-bad8-c1f937e0d71f": [
+    {
+      "AS_volume": 30555.03595354699,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#VH_F_body_of_pancreas",
+      "intersection_volume": 604.8000000000001,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_F_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-female_v1.3_assets_3d-vh-f-pancreas",
+      "percentage_of_AS": 0.019793791141973494,
+      "percentage_of_tissue_block": 0.336,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 1800
+    }
+  ],
+  "http://purl.org/ccf/1.5/3b9e6b08-0238-467b-9523-3f672764d8a5": [
+    {
+      "AS_volume": 34116.05826481557,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_tail_of_pancreas",
+      "intersection_volume": 889.5,
+      "is_closed": true,
+      "label": "tail of pancreas",
+      "node_name": "VH_M_tail_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.026072765883312945,
+      "percentage_of_tissue_block": 0.593,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001151",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/536c9dcc-7a5a-49cb-8d61-2863ce860037": [
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 1024.5,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.011011436524795849,
+      "percentage_of_tissue_block": 0.683,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/182ca45e-8190-4709-a3af-def316572e09": [
+    {
+      "AS_volume": 25470.03009330718,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_body_of_pancreas",
+      "intersection_volume": 488,
+      "is_closed": true,
+      "label": "body of pancreas",
+      "node_name": "VH_M_body_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.019159773200591267,
+      "percentage_of_tissue_block": 0.244,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001150",
+      "tissue_volume": 2000
+    }
+  ],
+  "http://purl.org/ccf/1.5/be8c8224-646f-4e98-a876-73e1209de49d": [
+    {
+      "AS_volume": 78481.17118401856,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_uncinate_process_of_the_pancreas",
+      "intersection_volume": 891,
+      "is_closed": true,
+      "label": "uncinate process of pancreas",
+      "node_name": "VH_M_uncinate_process_of_the_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.011353041583831994,
+      "percentage_of_tissue_block": 0.594,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0010373",
+      "tissue_volume": 1500
+    },
+    {
+      "AS_volume": 93039.63181307029,
+      "id": "https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#VH_M_head_of_pancreas",
+      "intersection_volume": 250.50000000000003,
+      "is_closed": true,
+      "label": "head of pancreas",
+      "node_name": "VH_M_head_of_pancreas",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_pancreas-male_v1.3_assets_3d-vh-m-pancreas",
+      "percentage_of_AS": 0.002692401024364432,
+      "percentage_of_tissue_block": 0.167,
+      "representation_of": "http://purl.obolibrary.org/obo/UBERON_0001069",
+      "tissue_volume": 1500
+    }
+  ],
+  "http://purl.org/ccf/1.5/2cfde066-3472-4cf0-b1c4-f6b1fa6ca514": [
+    {
+      "AS_volume": 44007.02025885209,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_right_anterior_bronchopulmonary_segm",
+      "intersection_volume": 370.5,
+      "is_closed": true,
+      "label": "Right Anterior Bronchopulmonary Segment",
+      "node_name": "VH_F_right_anterior_bronchopulmonary_segm",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.008419111264991255,
+      "percentage_of_tissue_block": 0.988,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7359",
+      "tissue_volume": 375
+    }
+  ],
+  "http://purl.org/ccf/1.5/a455ba9e-2a53-4fa8-a2ba-0461ba23f448": [
+    {
+      "AS_volume": 334392.64385545684,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 940.5,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_F_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.002812561870848261,
+      "percentage_of_tissue_block": 0.95,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 990
+    }
+  ],
+  "http://purl.org/ccf/1.5/fa75f41f-3436-45ea-8b4e-50ced128a76f": [],
+  "http://purl.org/ccf/1.5/eeb93a42-968a-44f6-a633-5d6b64303d85": [
+    {
+      "AS_volume": 1312569.339816986,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 480.15,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.00036580924560293955,
+      "percentage_of_tissue_block": 0.97,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 495
+    }
+  ],
+  "http://purl.org/ccf/1.5/a3d0dc1b-4cf7-4c0f-bf7e-6e00e285026c": [],
+  "http://purl.org/ccf/1.5/886b120f-d9da-420e-b6ff-24e08f0d38c1": [
+    {
+      "AS_volume": 91436.7101653435,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_right_posterior_bronchopulmonary_segment",
+      "intersection_volume": 500,
+      "is_closed": true,
+      "label": "Right Posterior Bronchopulmonary Segment",
+      "node_name": "VH_M_right_posterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.005468263229241934,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7339",
+      "tissue_volume": 500
+    }
+  ],
+  "http://purl.org/ccf/1.5/da50ebfc-4c43-47f7-a711-a89d381c36fd": [
+    {
+      "AS_volume": 61898.9348796958,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_lingula_superior_bronchopulmonary_segment",
+      "intersection_volume": 695.52,
+      "is_closed": true,
+      "label": "Superior lingular bronchopulmonary segment",
+      "node_name": "VH_F_lingula_superior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.011236380744705603,
+      "percentage_of_tissue_block": 0.966,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7374",
+      "tissue_volume": 720
+    }
+  ],
+  "http://purl.org/ccf/1.5/19eeb5e2-56e3-4e37-8d63-97aec1b4c0c2": [
+    {
+      "AS_volume": 1312569.339816986,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 719.1,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0005478567708280201,
+      "percentage_of_tissue_block": 0.799,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 900
+    }
+  ],
+  "http://purl.org/ccf/1.5/e72cabc9-73c7-47c0-80f9-0a07a7f6e32e": [],
+  "http://purl.org/ccf/1.5/59978ebf-ee21-4d66-aec5-7cddceffa9cd": [],
+  "http://purl.org/ccf/1.5/35e9c5f4-c809-4cc2-bd71-b885743dc548": [
+    {
+      "AS_volume": 334392.64385545684,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-female/v1.4#VH_F_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 613.14,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_F_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-female_v1.4_assets_3d-vh-f-lung",
+      "percentage_of_AS": 0.0018335929670301996,
+      "percentage_of_tissue_block": 0.929,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 660
+    }
+  ],
+  "http://purl.org/ccf/1.5/fce4c274-c5f7-4e89-b72b-7d81627bb8d6": [],
+  "http://purl.org/ccf/1.5/089602f5-0ba8-47b2-abcf-4a4d45b9b5b4": [
+    {
+      "AS_volume": 1312569.339816986,
+      "id": "https://purl.humanatlas.io/ref-organ/lung-male/v1.4#VH_M_left_anterior_bronchopulmonary_segment",
+      "intersection_volume": 1000,
+      "is_closed": true,
+      "label": "Left Anterior Bronchopulmonary Segment",
+      "node_name": "VH_M_left_anterior_bronchopulmonary_segment",
+      "organ": "https___cdn.humanatlas.io_digital-objects_ref-organ_lung-male_v1.4_assets_3d-vh-m-lung",
+      "percentage_of_AS": 0.0007618645123460159,
+      "percentage_of_tissue_block": 1,
+      "representation_of": "http://purl.org/sig/ont/fma/fma7373",
+      "tissue_volume": 1000
+    }
+  ],
+  "http://purl.org/ccf/1.5/bd3dabbb-e01d-4037-96bc-43f2bd54f147": []
 }
