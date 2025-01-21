@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT *
+FROM HRApopTestData:
+FROM HRApop:
+WHERE {
+  ?dataset ccf:has_cell_summary [
+    ccf:cell_annotation_method ?tool ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?cell_label ;
+      ccf:cell_count ?cell_count ;
+      ccf:gene_expr [
+        ccf:gene_id ?gene_id ;
+        ccf:gene_label ?gene_label ;
+        ccf:mean_gene_expr_value ?gene_expr ;
+      ]
+    ]
+  ] .
+  FILTER(?gene_label = "ANXA10")
+}

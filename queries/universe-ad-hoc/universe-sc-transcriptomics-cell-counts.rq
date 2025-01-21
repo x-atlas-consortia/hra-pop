@@ -1,5 +1,6 @@
 #+ summary: Cell Counts for Universe Transcriptomics Datasets
 
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
@@ -7,16 +8,18 @@ PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
 SELECT
   (COUNT(DISTINCT(?dataset)) as ?universe_sc_transcriptomics_dataset_count)
   (SUM(?dataset_cell_count) as ?universe_sc_transcriptomics_cell_count)
+  (SUM(?preannotated_cell_count) as ?universe_sc_transcriptomics_preannotated_cell_count)
 FROM HRApop:
 FROM HRApopTestData:
 WHERE {
   {
-    SELECT ?dataset (MAX(?total_cell_count) as ?dataset_cell_count)
+    SELECT ?dataset (SAMPLE(?preannotated_cell_count) as ?preannotated_cell_count) (MAX(?total_cell_count) as ?dataset_cell_count)
     WHERE {
       {
-        SELECT ?dataset ?tool (SUM(?cell_count) as ?total_cell_count)
+        SELECT ?dataset ?tool (MAX(xsd:integer(STR(?preannotated_cell_count))) as ?preannotated_cell_count) (SUM(?cell_count) as ?total_cell_count)
         WHERE {
           ?dataset a ccf:Dataset ;
+          ccf:cell_count ?preannotated_cell_count ;
           ccf:has_cell_summary [
             ccf:cell_annotation_method ?tool ;
             ccf:has_cell_summary_row [
