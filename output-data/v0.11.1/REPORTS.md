@@ -52,6 +52,7 @@
   * [Validation V6 (validation-v6)](#validation-v6)
   * [Validation V7 (5 variables) (validation-v7-ctann-rui)](#validation-v7-ctann-rui)
   * [Validation V7 (x-axis) (validation-v7-x-axis)](#validation-v7-x-axis)
+  * [Validation V7 (y-axis) local version (validation-v7-y-axis-local)](#validation-v7-y-axis-local)
   * [Validation V7 (y-axis) (validation-v7-y-axis)](#validation-v7-y-axis)
 * hra
   * [Count of Anatomical Structures by Organ (as-cnt-per-organ)](#as-cnt-per-organ)
@@ -5047,6 +5048,86 @@ ORDER BY ?sex ?organ ?dataset ?tool
 | Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | http://purl.org/ccf/1.5/9abfed4e-2fde-4d80-a8aa-7439a106d895 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | azimuth | sc_transcriptomics | heart | UBERON:0000948 | 0.9215982327279015 |
 | Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | http://purl.org/ccf/1.5/9abfed4e-2fde-4d80-a8aa-7439a106d895 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | celltypist | sc_transcriptomics | heart | UBERON:0000948 | 0.7120357262609033 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="validation-v7-y-axis-local"></a>Validation V7 (y-axis) local version (validation-v7-y-axis-local)
+
+y-axis compares input rui vs top predicted rui cell summaries
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Validation V7 (y-axis) local version
+#+ description: y-axis compares input rui vs top predicted rui cell summaries
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT ?sex ?rui_location ?dataset ?tool ?predicted_rui ?similarity
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH HRApop: {
+    {
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+    [] ccf:has_registration_location ?predicted_rui .
+    FILTER (?rui_location != ?predicted_rui)
+  }
+  
+  GRAPH hra-pop:similarities-local {
+    {
+      []  ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ;
+          ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_b_tool ?tool ;
+          ccf:cell_source_a ?dataset ;
+          ccf:cell_source_b ?predicted_rui ;
+          ccf:similarity ?similarity .
+    } UNION {
+      []  ccf:cell_source_a_sex ?sex ;
+          ccf:cell_source_b_sex ?sex ;
+          ccf:cell_source_a_tool ?tool ;
+          ccf:cell_source_b_tool ?tool ;
+          ccf:cell_source_a ?predicted_rui ;
+          ccf:cell_source_b ?dataset ;
+          ccf:similarity ?similarity .
+    }
+  }
+}
+ORDER BY ?sex ?rui_location ?dataset ?tool DESC(?similarity)
+
+```
+
+([View Source](../../queries/atlas/validation-v7-y-axis-local.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/validation-v7-y-axis-local.csv))
+
+| sex | rui_location | dataset | tool | predicted_rui | similarity |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Female | http://purl.org/ccf/1.5/1d965182-bf13-4738-af05-72b817121959 | https://entity.api.hubmapconsortium.org/entities/08c1aa2e74700e1170fc9218ae255992 | azimuth | http://purl.org/ccf/1.5/85ad9566-c363-4b61-a522-6576b253d9af | 0.9682706124324476 |
+| Female | http://purl.org/ccf/1.5/461a8adc-10d3-4518-8dd2-d2daccaa128b | https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c#30-10034$cortex%20of%20kidney | azimuth | http://purl.org/ccf/1.5/2a9e525a-4ad9-4085-bca9-31a2d0512008 | 0.8519707411680548 |
+| Female | http://purl.org/ccf/1.5/f66f91f9-c6c5-414d-b784-2faec33e0505 | https://entity.api.hubmapconsortium.org/entities/704d16116f29994ab0e714f4afdb5516 | azimuth | http://purl.org/ccf/1.5/007eb4d9-1694-4380-99e1-4aba832d9227 | 0.9057725747725139 |
+| Male | http://purl.org/ccf/1.5/3156203b-0238-447d-9aae-c4341f2da943 | https://entity.api.hubmapconsortium.org/entities/17f67cb15e59f65e640d85d2f3866cde | azimuth | http://purl.org/ccf/1.5/39e72b20-77e5-45a5-bb0e-f374ea5894ad | 0.9981570438239028 |
+| Male | http://purl.org/ccf/1.5/37283102-d963-4639-8834-4813fbb3c247 | https://entity.api.hubmapconsortium.org/entities/9bc5d8fc743fd4dd610586ca720976f1 | azimuth | http://purl.org/ccf/1.5/f3f2fabb-6802-4fd4-920e-1914293db252 | 0.7821912418163285 |
+| ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="validation-v7-y-axis"></a>Validation V7 (y-axis) (validation-v7-y-axis)
