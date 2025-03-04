@@ -29,14 +29,25 @@ WHERE {
   }
 
   OPTIONAL {
-    ?dataset ccf:has_cell_summary [
-      ccf:sex ?sex ;
-      ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-      ccf:has_cell_summary_row [
-        ccf:cell_count ?cell_count ;
-      ] ;
-    ] .
+    SELECT ?dataset ?sex ?modality (MAX(?total_cell_count) as ?cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?sex ?modality (SUM(?cell_count) as ?total_cell_count)
+        WHERE {
+          ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [
+            ccf:sex ?sex ;
+            ccf:cell_annotation_method ?tool ;
+            ccf:modality ?modality ;
+            ccf:has_cell_summary_row [
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+        }
+        GROUP BY ?dataset ?sex ?modality ?tool
+      }
+    }
+    GROUP BY ?dataset ?sex ?modality
   }
 }
 GROUP BY ?sex ?consortium ?modality
