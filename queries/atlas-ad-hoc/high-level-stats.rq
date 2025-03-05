@@ -1,0 +1,35 @@
+SELECT ?label ?count
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+WHERE {
+  # hint:Query hint:analytic "true" .
+
+  {
+    SELECT ("nodes" as ?label) (COUNT(DISTINCT(?s)) as ?count)
+    WHERE {
+      {
+        ?s ?p1 [] .
+      }
+      UNION
+      {
+        [] ?p2 ?s .
+        FILTER(isIRI(?s)) 
+      }
+    }
+  }
+  UNION
+  {
+    SELECT ("edges" as ?label) (COUNT(*) as ?count)
+    WHERE {
+      ?s ?p ?o .
+    }
+  }
+  # UNION
+  # {
+  #   SELECT ("# Edge Types" as ?label) (COUNT(DISTINCT(?p)) as ?count)
+  #   WHERE {
+  #     ?s ?p ?o .
+  #   }
+  # }
+}
+ORDER BY DESC(?label)
+
