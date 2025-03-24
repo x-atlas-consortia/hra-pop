@@ -14,9 +14,13 @@
   * [Kidney AS Cell Distributions (counts-for-kidney-as)](#counts-for-kidney-as)
   * [Bulk Tool-Organ-AS Cell Distributions (counts-for-tools-by-as)](#counts-for-tools-by-as)
   * [Atlas-level CxG collections (cxg-collections)](#cxg-collections)
+  * [data-provenance](#data-provenance)
   * [Atlas Datasets and their cell types and biomarkers (datasets-ct-bm-data)](#datasets-ct-bm-data)
   * [Atlas Datasets with a given Cell Type (datasets-with-adipocytes)](#datasets-with-adipocytes)
   * [Extraction Site Statistics (extraction-site-stats)](#extraction-site-stats)
+  * [high-level-stats](#high-level-stats)
+  * [Lung ctann cell summaries (lung-ctann-cell-summaries)](#lung-ctann-cell-summaries)
+  * [Lung dataset cell summaries by ctann tool (lung-dataset-cell-summaries-by-ctann)](#lung-dataset-cell-summaries-by-ctann)
   * [Tissue Provider Counts (provider-breakdown)](#provider-breakdown)
   * [RUI Registered H5AD Dataset and TB Count (rui-registered-h5ad-datasets)](#rui-registered-h5ad-datasets)
   * [Unmapped cell types (unmapped-cell-ids)](#unmapped-cell-ids)
@@ -502,16 +506,23 @@ WHERE {
   }
 
   {
-    SELECT ?dataset ?sex ?modality (SUM(?_cell_count) as ?cell_count)
+    SELECT ?dataset ?sex ?modality (MAX(?total_cell_count) as ?cell_count)
     WHERE {
-      ?dataset ccf:has_cell_summary [
-        ccf:sex ?sex ;
-        ccf:cell_annotation_method ?tool ;
-        ccf:modality ?modality ;
-        ccf:has_cell_summary_row [
-          ccf:cell_count ?_cell_count ;
-        ] ;
-      ] .
+      {
+        SELECT ?dataset ?sex ?modality (SUM(?cell_count) as ?total_cell_count)
+        WHERE {
+          ?dataset a ccf:Dataset ;
+  			    ccf:has_cell_summary [
+              ccf:sex ?sex ;
+              ccf:cell_annotation_method ?tool ;
+              ccf:modality ?modality ;
+              ccf:has_cell_summary_row [
+                ccf:cell_count ?cell_count ;
+              ] ;
+            ] .
+        }
+        GROUP BY ?dataset ?sex ?modality ?tool
+      }
     }
     GROUP BY ?dataset ?sex ?modality
   }
@@ -529,11 +540,11 @@ ORDER BY ?consortium ?sex
 
 | sex | consortium | dataset_count | cell_count | modality |
 | :--- | :--- | :--- | :--- | :--- |
-| Female | GTEx | 7 | 99216 | sc_transcriptomics |
-| Male | GTEx | 8 | 131189 | sc_transcriptomics |
-| Female | HCA | 40 | 439390 | sc_transcriptomics |
-| Male | HCA | 42 | 532878 | sc_transcriptomics |
-| Female | HuBMAP | 116 | 3313621 | sc_transcriptomics |
+| Female | GTEx | 7 | 47863 | sc_transcriptomics |
+| Male | GTEx | 8 | 70113 | sc_transcriptomics |
+| Female | HCA | 40 | 219695 | sc_transcriptomics |
+| Male | HCA | 42 | 266439 | sc_transcriptomics |
+| Female | HuBMAP | 116 | 2951598 | sc_transcriptomics |
 | ... | ... | ... | ... | ... |
 
 
@@ -865,6 +876,98 @@ ORDER BY DESC(?dataset_count)
 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72 | 82 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/bcb61471-2a44-4d00-a0af-ff085512674c | 27 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837 | 9 |
+
+
+### <a id="data-provenance"></a>data-provenance
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT ?label ?count
+FROM HRA:
+FROM HRApop:
+WHERE {
+  {
+    SELECT ("HuBMAP datasets" as ?label) (COUNT(DISTINCT ?dataset) as ?count) (1 as ?order)
+    WHERE {
+      ?dataset a ccf:Dataset .
+      FILTER(STRSTARTS(STR(?dataset), "https://entity.api.hubmapconsortium.org/entities/"))
+    }
+  }
+  UNION
+  {
+    SELECT ("SenNet datasets" as ?label) (COUNT(DISTINCT ?dataset) as ?count) (2 as ?order)
+    WHERE {
+      ?dataset a ccf:Dataset .
+      FILTER(STRSTARTS(STR(?dataset), "https://entity.api.sennetconsortium.org/entities/"))
+    }
+  }
+  UNION
+  {
+    SELECT ("tissue donors" as ?label) (COUNT(DISTINCT ?donor) as ?count) (3 as ?order)
+    WHERE {
+      ?donor a ccf:Donor .
+    }
+  }
+  UNION
+  {
+    SELECT ("organs" as ?label) (COUNT(DISTINCT ?organ) as ?count) (4 as ?order)
+    WHERE {
+      ?as ccf:has_cell_summary [] .
+      [] ccf:representation_of ?as ;
+        ccf:has_reference_organ [
+          ccf:representation_of ?organ ;
+        ] .
+    }
+  }
+  UNION
+  {
+    SELECT ("anatomical structures" as ?label) (COUNT(DISTINCT ?as) as ?count) (5 as ?order)
+    WHERE {
+      ?as ccf:has_cell_summary [] .
+      [] ccf:representation_of ?as .
+    }
+  }
+  UNION
+  {
+    SELECT ("cells" as ?label) (SUM(?cell_count) as ?count) (6 as ?order)
+    WHERE {
+      [] a ccf:Dataset ;
+         ccf:has_cell_summary [
+            ccf:has_cell_summary_row [
+              ccf:cell_count ?cell_count ;
+            ] ;
+         ] .
+    }
+  }
+}
+ORDER BY ?order
+
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/data-provenance.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/data-provenance.csv))
+
+| label | count |
+| :--- | :--- |
+| HuBMAP datasets | 2828 |
+| SenNet datasets | 1142 |
+| tissue donors | 6468 |
+| organs | 15 |
+| anatomical structures | 59 |
+| cells | 75662398 |
 
 
 ### <a id="datasets-ct-bm-data"></a>Atlas Datasets and their cell types and biomarkers (datasets-ct-bm-data)
@@ -1216,6 +1319,278 @@ GROUP BY ?sex
 | :--- | :--- | :--- | :--- |
 | Female | 134 | 92 | 0 |
 | Male | 201 | 152 | 0 |
+
+
+### <a id="high-level-stats"></a>high-level-stats
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+SELECT ?label ?count
+FROM <https://purl.humanatlas.io/graph/hra-pop>
+WHERE {
+  # hint:Query hint:analytic "true" .
+
+  {
+    SELECT ("nodes" as ?label) (COUNT(DISTINCT(?s)) as ?count)
+    WHERE {
+      {
+        ?s ?p1 [] .
+      }
+      UNION
+      {
+        [] ?p2 ?s .
+        FILTER(isIRI(?s)) 
+      }
+    }
+  }
+  UNION
+  {
+    SELECT ("edges" as ?label) (COUNT(*) as ?count)
+    WHERE {
+      ?s ?p ?o .
+    }
+  }
+  # UNION
+  # {
+  #   SELECT ("# Edge Types" as ?label) (COUNT(DISTINCT(?p)) as ?count)
+  #   WHERE {
+  #     ?s ?p ?o .
+  #   }
+  # }
+}
+ORDER BY DESC(?label)
+
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/high-level-stats.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/high-level-stats.csv))
+
+| label | count |
+| :--- | :--- |
+| nodes | 2401507 |
+| edges | 12391248 |
+
+
+### <a id="lung-ctann-cell-summaries"></a>Lung ctann cell summaries (lung-ctann-cell-summaries)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Lung ctann cell summaries
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?tool ?cell_id ?cell_label 
+  (SUM(?count) as ?count)
+  (AVG(?percentage_of_total) as ?avg_percentage_of_total)
+FROM HRApop:
+FROM HRA:
+WHERE {
+  VALUES (?organIri ?organ) {
+    (<http://purl.obolibrary.org/obo/UBERON_0002182> "Lung") # Main Bronchus
+    (<http://purl.obolibrary.org/obo/UBERON_0002048> "Lung") # Lung
+    (<http://purl.obolibrary.org/obo/UBERON_0001004> "Lung") # Respiratory System
+  }
+
+  [] ccf:generates_dataset ?dataset .
+
+  OPTIONAL {
+    {
+      ?sample ccf:comes_from ?donor .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:comes_from ?donor .
+      ?block ccf:subdivided_into_sections ?sample .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+
+    ?donor ccf:consortium_name ?portal ;
+      ccf:sex ?sex .
+  }
+
+  {
+    SELECT ?dataset ?rui_location ?ruiOrganIri
+    WHERE {
+      {
+        ?sample ccf:comes_from ?donor .
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:comes_from ?donor .
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+
+      ?ref_organ ccf:representation_of ?refOrganIri .
+      ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
+    }
+  }
+  UNION
+  {
+    ?dataset ccf:organ_id ?reportedOrganIri .
+  }
+
+  {
+    ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method ?tool ;
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_id ;
+        ccf:cell_label ?cell_label ;
+        ccf:cell_count ?count ;
+        ccf:percentage_of_total ?percentage_of_total ;
+      ]
+    ];
+  }
+
+  BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
+    IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
+
+  FILTER(?organ_id = ?organIri)
+  FILTER(?tool != 'sc_proteomics')
+}
+GROUP BY ?tool ?cell_id ?cell_label
+ORDER BY ?tool DESC(?count)
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/lung-ctann-cell-summaries.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/lung-ctann-cell-summaries.csv))
+
+| tool | cell_id | cell_label | count | avg_percentage_of_total |
+| :--- | :--- | :--- | :--- | :--- |
+| azimuth | http://purl.obolibrary.org/obo/CL_4028002 | EC general capillary | 1067664 | 0.1833142661813769 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002062 | AT1 | 692194 | 0.1494743503690493 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002063 | AT2 | 330530 | 0.15045945580937573 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002145 | Multiciliated (non-nasal) | 290708 | 0.048467399687791464 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0000624 | CD4 T cells | 202292 | 0.04618990784793639 |
+| ... | ... | ... | ... | ... |
+
+
+### <a id="lung-dataset-cell-summaries-by-ctann"></a>Lung dataset cell summaries by ctann tool (lung-dataset-cell-summaries-by-ctann)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Lung dataset cell summaries by ctann tool
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?dataset ?tool ?cell_id ?cell_label ?count ?percentage_of_total
+FROM HRApop:
+FROM HRA:
+WHERE {
+  VALUES (?organIri ?organ) {
+    (<http://purl.obolibrary.org/obo/UBERON_0002182> "Lung") # Main Bronchus
+    (<http://purl.obolibrary.org/obo/UBERON_0002048> "Lung") # Lung
+    (<http://purl.obolibrary.org/obo/UBERON_0001004> "Lung") # Respiratory System
+  }
+
+  [] ccf:generates_dataset ?dataset .
+
+  OPTIONAL {
+    {
+      ?sample ccf:comes_from ?donor .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:comes_from ?donor .
+      ?block ccf:subdivided_into_sections ?sample .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+
+    ?donor ccf:consortium_name ?portal ;
+      ccf:sex ?sex .
+  }
+
+  {
+    SELECT ?dataset ?rui_location ?ruiOrganIri
+    WHERE {
+      {
+        ?sample ccf:comes_from ?donor .
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:comes_from ?donor .
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+
+      ?ref_organ ccf:representation_of ?refOrganIri .
+      ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
+    }
+  }
+  UNION
+  {
+    ?dataset ccf:organ_id ?reportedOrganIri .
+  }
+
+  {
+    ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method ?tool ;
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_id ;
+        ccf:cell_label ?cell_label ;
+        ccf:cell_count ?count ;
+        ccf:percentage_of_total ?percentage_of_total ;
+      ]
+    ];
+  }
+
+  BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
+    IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
+
+  FILTER(?organ_id = ?organIri)
+  FILTER(?tool != 'sc_proteomics')
+}
+ORDER BY ?dataset ?tool DESC(?count)
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/lung-dataset-cell-summaries-by-ctann.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/lung-dataset-cell-summaries-by-ctann.csv))
+
+| dataset | tool | cell_id | cell_label | count | percentage_of_total |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0002063 | AT2 | 838 | 0.1686116700201207 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0002062 | AT1 | 740 | 0.1488933601609658 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0000583 | Alveolar macrophages | 697 | 0.1402414486921529 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_4028002 | EC general capillary | 473 | 0.09517102615694165 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_4028004 | Alveolar fibroblasts | 470 | 0.09456740442655935 |
+| ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="provider-breakdown"></a>Tissue Provider Counts (provider-breakdown)
@@ -5855,14 +6230,25 @@ WHERE {
   }
 
   OPTIONAL {
-    ?dataset ccf:has_cell_summary [
-      ccf:sex ?sex ;
-      ccf:cell_annotation_method ?tool ;
-      ccf:modality ?modality ;
-      ccf:has_cell_summary_row [
-        ccf:cell_count ?cell_count ;
-      ] ;
-    ] .
+    SELECT ?dataset ?sex ?modality (MAX(?total_cell_count) as ?cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?sex ?modality (SUM(?cell_count) as ?total_cell_count)
+        WHERE {
+          ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [
+            ccf:sex ?sex ;
+            ccf:cell_annotation_method ?tool ;
+            ccf:modality ?modality ;
+            ccf:has_cell_summary_row [
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+        }
+        GROUP BY ?dataset ?sex ?modality ?tool
+      }
+    }
+    GROUP BY ?dataset ?sex ?modality
   }
 }
 GROUP BY ?sex ?consortium ?modality
@@ -5877,11 +6263,11 @@ ORDER BY ?consortium ?sex
 
 | sex | consortium | dataset_count | cell_count | modality |
 | :--- | :--- | :--- | :--- | :--- |
-| Female | GTEx | 7 | 99216 | sc_transcriptomics |
-| Male | GTEx | 8 | 131189 | sc_transcriptomics |
-| Female | HCA | 40 | 439390 | sc_transcriptomics |
-| Male | HCA | 42 | 532878 | sc_transcriptomics |
-| Female | HuBMAP | 116 | 3313621 | sc_transcriptomics |
+| Female | GTEx | 7 | 47863 | sc_transcriptomics |
+| Male | GTEx | 8 | 70113 | sc_transcriptomics |
+| Female | HCA | 40 | 219695 | sc_transcriptomics |
+| Male | HCA | 42 | 266439 | sc_transcriptomics |
+| Female | HuBMAP | 116 | 2951598 | sc_transcriptomics |
 | ... | ... | ... | ... | ... |
 
 

@@ -1,0 +1,80 @@
+#+ summary: Lung dataset cell summaries by ctann tool
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?dataset ?tool ?cell_id ?cell_label ?count ?percentage_of_total
+FROM HRApop:
+FROM HRA:
+WHERE {
+  VALUES (?organIri ?organ) {
+    (<http://purl.obolibrary.org/obo/UBERON_0002182> "Lung") # Main Bronchus
+    (<http://purl.obolibrary.org/obo/UBERON_0002048> "Lung") # Lung
+    (<http://purl.obolibrary.org/obo/UBERON_0001004> "Lung") # Respiratory System
+  }
+
+  [] ccf:generates_dataset ?dataset .
+
+  OPTIONAL {
+    {
+      ?sample ccf:comes_from ?donor .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:comes_from ?donor .
+      ?block ccf:subdivided_into_sections ?sample .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+
+    ?donor ccf:consortium_name ?portal ;
+      ccf:sex ?sex .
+  }
+
+  {
+    SELECT ?dataset ?rui_location ?ruiOrganIri
+    WHERE {
+      {
+        ?sample ccf:comes_from ?donor .
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:comes_from ?donor .
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+
+      ?placement a ccf:SpatialPlacement ;
+        ccf:placement_for ?rui_location ;
+        ccf:placement_relative_to ?ref_organ .
+
+      ?ref_organ ccf:representation_of ?refOrganIri .
+      ?refOrganIri ccf:ccf_part_of* ?ruiOrganIri .
+    }
+  }
+  UNION
+  {
+    ?dataset ccf:organ_id ?reportedOrganIri .
+  }
+
+  {
+    ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method ?tool ;
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_id ;
+        ccf:cell_label ?cell_label ;
+        ccf:cell_count ?count ;
+        ccf:percentage_of_total ?percentage_of_total ;
+      ]
+    ];
+  }
+
+  BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
+    IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
+
+  FILTER(?organ_id = ?organIri)
+  FILTER(?tool != 'sc_proteomics')
+}
+ORDER BY ?dataset ?tool DESC(?count)
