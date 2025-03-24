@@ -1454,12 +1454,18 @@ WHERE {
       ccf:cell_annotation_method ?tool ;
       ccf:has_cell_summary_row [
         ccf:cell_id ?cell_id ;
-        ccf:cell_label ?cell_label ;
+        ccf:cell_label ?cell_summary_label ;
         ccf:cell_count ?count ;
         ccf:percentage_of_total ?percentage_of_total ;
       ]
     ];
   }
+
+  OPTIONAL {
+    ?cell_id rdfs:label ?cell_rdfs_label .
+  }
+
+  BIND(COALESCE(?cell_rdfs_label, ?cell_summary_label) as ?cell_label)
 
   BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
     IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
@@ -1479,11 +1485,11 @@ ORDER BY ?tool DESC(?count)
 
 | tool | cell_id | cell_label | count | avg_percentage_of_total |
 | :--- | :--- | :--- | :--- | :--- |
-| azimuth | http://purl.obolibrary.org/obo/CL_4028002 | EC general capillary | 1067664 | 0.1833142661813769 |
-| azimuth | http://purl.obolibrary.org/obo/CL_0002062 | AT1 | 692194 | 0.1494743503690493 |
-| azimuth | http://purl.obolibrary.org/obo/CL_0002063 | AT2 | 330530 | 0.15045945580937573 |
-| azimuth | http://purl.obolibrary.org/obo/CL_0002145 | Multiciliated (non-nasal) | 290708 | 0.048467399687791464 |
-| azimuth | http://purl.obolibrary.org/obo/CL_0000624 | CD4 T cells | 202292 | 0.04618990784793639 |
+| azimuth | http://purl.obolibrary.org/obo/CL_4028002 | alveolar capillary type 1 endothelial cell | 1067664 | 0.18331426618137683 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002062 | pulmonary alveolar type 1 cell | 692194 | 0.14947435036904935 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002063 | pulmonary alveolar type 2 cell | 330530 | 0.1504594558093757 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002145 | ciliated columnar cell of tracheobronchial tree | 290708 | 0.04846739968779146 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0000624 | CD4-positive, alpha-beta T cell | 202292 | 0.046189907847936404 |
 | ... | ... | ... | ... | ... |
 
 
@@ -1561,12 +1567,18 @@ WHERE {
       ccf:cell_annotation_method ?tool ;
       ccf:has_cell_summary_row [
         ccf:cell_id ?cell_id ;
-        ccf:cell_label ?cell_label ;
+        ccf:cell_label ?cell_summary_label ;
         ccf:cell_count ?count ;
         ccf:percentage_of_total ?percentage_of_total ;
       ]
     ];
   }
+
+  OPTIONAL {
+    ?cell_id rdfs:label ?cell_rdfs_label .
+  }
+
+  BIND(COALESCE(?cell_rdfs_label, ?cell_summary_label) as ?cell_label)
 
   BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
     IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
@@ -1585,11 +1597,11 @@ ORDER BY ?dataset ?tool DESC(?count)
 
 | dataset | tool | cell_id | cell_label | count | percentage_of_total |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0002063 | AT2 | 838 | 0.1686116700201207 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0002062 | AT1 | 740 | 0.1488933601609658 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0000583 | Alveolar macrophages | 697 | 0.1402414486921529 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_4028002 | EC general capillary | 473 | 0.09517102615694165 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_4028004 | Alveolar fibroblasts | 470 | 0.09456740442655935 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0002063 | pulmonary alveolar type 2 cell | 838 | 0.1686116700201207 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0002062 | pulmonary alveolar type 1 cell | 740 | 0.1488933601609658 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_0000583 | alveolar macrophage | 697 | 0.1402414486921529 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_4028002 | alveolar capillary type 1 endothelial cell | 473 | 0.09517102615694165 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung | azimuth | http://purl.obolibrary.org/obo/CL_4028004 | alveolar type 1 fibroblast cell | 470 | 0.09456740442655935 |
 | ... | ... | ... | ... | ... | ... |
 
 

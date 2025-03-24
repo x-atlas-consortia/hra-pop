@@ -64,12 +64,18 @@ WHERE {
       ccf:cell_annotation_method ?tool ;
       ccf:has_cell_summary_row [
         ccf:cell_id ?cell_id ;
-        ccf:cell_label ?cell_label ;
+        ccf:cell_label ?cell_summary_label ;
         ccf:cell_count ?count ;
         ccf:percentage_of_total ?percentage_of_total ;
       ]
     ];
   }
+
+  OPTIONAL {
+    ?cell_id rdfs:label ?cell_rdfs_label .
+  }
+
+  BIND(COALESCE(?cell_rdfs_label, ?cell_summary_label) as ?cell_label)
 
   BIND (IF(BOUND(?ruiOrganIri) && ?ruiOrganIri = ?organIri, ?organIri,
     IF(BOUND(?reportedOrganIri) && ?reportedOrganIri = STR(?organIri), ?organIri, false)) as ?organ_id)
