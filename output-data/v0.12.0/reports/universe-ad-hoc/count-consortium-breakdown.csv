@@ -1,0 +1,31 @@
+consortium,sex,dataset_count,atlas_dataset_count,test_dataset_count,excluded_dataset_count,no_rui_dataset_count,no_summary_dataset_count,modality,cell_count
+Allen Institute for Brain Science,Female,5,0,5,0,0,5,N/A,0
+Allen Institute for Brain Science,Male,5,0,5,0,0,5,N/A,0
+CxG,Female,4250,0,2781,1469,4250,4250,N/A,0
+CxG,Male,4217,0,2946,1271,4217,4217,N/A,0
+CxG,Unknown,708,0,355,353,708,708,N/A,0
+GTEx,Female,37,7,25,5,5,37,N/A,0
+GTEx,Male,37,8,25,4,4,37,N/A,0
+GUDMAP,Male,12,0,12,0,0,12,N/A,0
+HCA,Female,151,50,61,40,40,151,N/A,0
+HCA,Male,132,53,37,42,42,132,N/A,0
+"HIRN, ESPACE",Male,1,0,1,0,0,1,N/A,0
+HRA,Female,1,0,1,0,0,1,N/A,0
+HTAN,Male,5,0,3,2,0,5,N/A,0
+HuBMAP,Female,1474,139,1271,64,88,1474,N/A,0
+HuBMAP,Male,1957,339,1610,8,8,1957,N/A,0
+KPMP,Female,24,14,10,0,0,24,N/A,0
+KPMP,Male,30,13,17,0,0,30,N/A,0
+LungMap,Female,4,0,0,4,4,4,N/A,0
+LungMap,Male,5,0,0,5,5,5,N/A,0
+NHLBI/LungMap,Female,2,2,0,0,0,2,N/A,0
+NHLBI/LungMap,Male,8,7,1,0,0,8,N/A,0
+SEA-AD,Female,1,0,0,1,1,1,N/A,0
+SPARC,Female,38,0,38,0,0,38,N/A,0
+SPARC,Male,12,0,12,0,0,12,N/A,0
+SenNet,Female,421,0,421,0,0,421,N/A,0
+SenNet,Male,899,0,899,0,0,899,N/A,0
+UEdinburgh,Female,36,0,36,0,0,36,N/A,0
+UEdinburgh,Male,28,0,28,0,0,28,N/A,0
+UIowa,Female,20,0,20,0,0,20,N/A,0
+UIowa,Male,23,0,23,0,0,23,N/A,0
