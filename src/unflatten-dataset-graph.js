@@ -1,6 +1,7 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import fetch from 'node-fetch';
 import Papa from 'papaparse';
+import { writeJson } from './utils/json.js';
 
 const FLATTENED_GRAPHS = process.argv.slice(2, -1);
 const OUTPUT_JSONLD = process.argv.slice(-1)[0];
@@ -150,4 +151,4 @@ async function unflattenDatasetGraphs(inputFiles) {
 }
 
 const jsonld = await unflattenDatasetGraphs(FLATTENED_GRAPHS);
-writeFileSync(OUTPUT_JSONLD, JSON.stringify(jsonld, null, 2));
+await writeJson(OUTPUT_JSONLD, jsonld);

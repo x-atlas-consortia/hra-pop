@@ -7,5 +7,5 @@ DIR=$RAW_DIR/$VERSION
 
 node ./src/add-metadata-to-dataset-cell-summaries.js \
   $DIR/full-dataset-graph.csv \
-  $DIR/cell-summaries-no-metadata.jsonld \
-  $DIR/cell-summaries.jsonld
+  $DIR/cell-summaries-no-metadata.jsonl \
+  $DIR/cell-summaries.jsonl

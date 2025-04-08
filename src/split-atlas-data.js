@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
 import Papa from 'papaparse';
+import { readJson, readJsonLd } from './utils/json.js';
 
 const FLAT_DATASET_GRAPH = process.argv[2];
 const CELL_SUMMARIES = process.argv[3];
@@ -12,7 +13,7 @@ const APPROVED_SOURCES = process.env.APPROVED_SOURCES || '';
 const UTF8_BOM = '\uFEFF';
 
 const approvedSources = new Set(APPROVED_SOURCES.split(/\W+/).filter((s) => !!s));
-const summaries = JSON.parse(readFileSync(CELL_SUMMARIES).toString());
+const summaries = await readJsonLd(CELL_SUMMARIES);
 // const summaryLookup = new Set(summaries['@graph'].map((s) => s.cell_source));
 const summaryLookup = summaries['@graph'].reduce((acc, summary) => {
   const src = summary.cell_source;
