@@ -1,1 +1,130 @@
 tool,cell_id,cell_label,count,avg_percentage_of_total
+azimuth,http://purl.obolibrary.org/obo/CL_4028002,alveolar capillary type 1 endothelial cell,1067162,0.20635211284985772
+azimuth,http://purl.obolibrary.org/obo/CL_0002062,pulmonary alveolar type 1 cell,691252,0.16732765597774443
+azimuth,http://purl.obolibrary.org/obo/CL_0002063,pulmonary alveolar type 2 cell,329056,0.16737024873141443
+azimuth,http://purl.obolibrary.org/obo/CL_0002145,ciliated columnar cell of tracheobronchial tree,286048,0.04575379809584197
+azimuth,http://purl.obolibrary.org/obo/CL_4028004,alveolar type 1 fibroblast cell,200622,0.07531732398027378
+azimuth,http://purl.obolibrary.org/obo/CL_0000624,"CD4-positive, alpha-beta T cell",198716,0.04522062840264246
+azimuth,http://purl.obolibrary.org/obo/CL_0000625,"CD8-positive, alpha-beta T cell",194362,0.05003868532604793
+azimuth,http://purl.obolibrary.org/obo/CL_4033008,vein endothelial cell of respiratory system,152720,0.021745834189739917
+azimuth,http://purl.obolibrary.org/obo/CL_0017000,pulmonary ionocyte,95518,0.014288954986801092
+azimuth,http://purl.obolibrary.org/obo/CL_1001568,pulmonary artery endothelial cell,78922,0.016195931919328495
+azimuth,http://purl.obolibrary.org/obo/CL_0009089,lung pericyte,54870,0.017904848244365102
+azimuth,http://purl.obolibrary.org/obo/CL_4028006,alveolar adventitial fibroblast,39940,0.01571665714070406
+azimuth,http://purl.obolibrary.org/obo/CL_4028003,alveolar capillary type 2 endothelial cell,39398,0.0231790105704587
+azimuth,http://purl.obolibrary.org/obo/CL_0009086,endothelial cell of respiratory system lymphatic vessel,30052,0.011260351588046778
+azimuth,http://purl.obolibrary.org/obo/CL_0000192,smooth muscle cell,29582,0.007568596948649648
+azimuth,http://purl.obolibrary.org/obo/CL_0002633,respiratory basal cell,27110,0.006734652551545439
+azimuth,http://purl.obolibrary.org/obo/CL_0000860,classical monocyte,19366,0.012241000230986556
+azimuth,http://purl.obolibrary.org/obo/CL_0000236,B cell,19142,0.00827998161094288
+azimuth,http://purl.obolibrary.org/obo/CL_0002399,CD1c-positive myeloid dendritic cell,19026,0.008235605928353961
+azimuth,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,Non-classical monocytes,17606,0.02293053348192274
+azimuth,http://purl.obolibrary.org/obo/CL_0000186,myofibroblast cell,15030,0.008809440521160769
+azimuth,http://purl.obolibrary.org/obo/CL_0000583,alveolar macrophage,12132,0.01746322689817194
+azimuth,https://purl.org/ccf/ASCTB-TEMP_transitional-club-at2,Transitional Club-AT2,9418,0.008456863036792156
+azimuth,http://purl.obolibrary.org/obo/CL_0000097,mast cell,7734,0.0032539055333589326
+azimuth,https://purl.org/ccf/ASCTB-TEMP_monocyte-derived-m,Monocyte-derived M��,7496,0.010487768193787656
+azimuth,http://purl.obolibrary.org/obo/CL_0000623,natural killer cell,4956,0.001613811734990002
+azimuth,http://purl.obolibrary.org/obo/CL_0002480,Goblet (nasal),4108,0.0012752061952473494
+azimuth,http://purl.obolibrary.org/obo/CL_0000158,club cell,2654,0.0019042912328378135
+azimuth,http://purl.obolibrary.org/obo/CL_0000786,plasma cell,2512,0.002535239615865232
+azimuth,https://purl.org/ccf/ASCTB-TEMP_interstitial-m-perivascular,Interstitial M�� perivascular,1730,0.004787846233031582
+azimuth,http://purl.obolibrary.org/obo/CL_0002241,pulmonary interstitial fibroblast,1442,0.01704673025219482
+azimuth,http://purl.obolibrary.org/obo/CL_0001058,"plasmacytoid dendritic cell, human",902,3.236762580390042E-4
+azimuth,http://purl.obolibrary.org/obo/CL_4033048,respiratory suprabasal cell,842,4.2512356790065393E-4
+azimuth,http://purl.obolibrary.org/obo/CL_0002075,brush cell of tracheobronchial tree,768,3.758742541947934E-4
+azimuth,http://purl.obolibrary.org/obo/CL_4033005,serous secreting cell of bronchus submucosal gland,500,0.0038755408335726573
+azimuth,http://purl.obolibrary.org/obo/CL_4033044,deuterosomal cell,322,2.3678833401911194E-4
+azimuth,http://purl.obolibrary.org/obo/CL_0019003,tracheobronchial goblet cell,212,0.002393215803331468
+azimuth,http://purl.obolibrary.org/obo/CL_0005012,multi-ciliated epithelial cell,156,2.7550291560802864E-4
+azimuth,http://purl.obolibrary.org/obo/CL_4033022,mucus secreting cell of bronchus submucosal gland,104,2.8285920774720214E-4
+azimuth,http://purl.obolibrary.org/obo/CL_4033023,airway submucosal gland collecting duct epithelial cell,104,1.3324937787789718E-4
+azimuth,http://purl.obolibrary.org/obo/CL_0000084,T cell,94,3.096149107471486E-4
+azimuth,http://purl.obolibrary.org/obo/CL_0000313,serous secreting cell,68,6.745705534741918E-5
+azimuth,https://purl.org/ccf/ASCTB-TEMP_alveolar-m-proliferating,Alveolar M�� proliferating,18,3.2341183461690587E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0002063,pulmonary alveolar type 2 cell,629300,0.2086528417350868
+celltypist,http://purl.obolibrary.org/obo/CL_0002633,respiratory basal cell,541016,0.06629824093617684
+celltypist,http://purl.obolibrary.org/obo/CL_0000492,CD4-positive helper T cell,394754,0.07399696437762321
+celltypist,http://purl.obolibrary.org/obo/CL_0002144,capillary endothelial cell,328018,0.08350873218480843
+celltypist,http://purl.obolibrary.org/obo/CL_0002062,pulmonary alveolar type 1 cell,319346,0.09920856571874585
+celltypist,http://purl.obolibrary.org/obo/CL_0005012,multi-ciliated epithelial cell,280982,0.051600653644237215
+celltypist,http://purl.obolibrary.org/obo/CL_0000158,club cell,204204,0.032007591215186405
+celltypist,http://purl.obolibrary.org/obo/CL_0000875,non-classical monocyte,138700,0.05608236050821851
+celltypist,http://purl.obolibrary.org/obo/CL_4028004,alveolar type 1 fibroblast cell,126636,0.05185821273602634
+celltypist,http://purl.obolibrary.org/obo/CL_0019001,tracheobronchial serous cell,71334,0.024866663557732756
+celltypist,http://purl.obolibrary.org/obo/CL_1000312,bronchial goblet cell,70140,0.012489859380878284
+celltypist,http://purl.obolibrary.org/obo/CL_4028003,alveolar capillary type 2 endothelial cell,61690,0.02788490589992671
+celltypist,http://purl.obolibrary.org/obo/CL_1001603,lung macrophage,50976,0.028614935574936943
+celltypist,http://purl.obolibrary.org/obo/CL_0000913,"effector memory CD8-positive, alpha-beta T cell",46842,0.010522120232655831
+celltypist,http://purl.obolibrary.org/obo/CL_0002138,endothelial cell of lymphatic vessel,46664,0.017189401257234643
+celltypist,http://purl.obolibrary.org/obo/CL_0000669,pericyte,40140,0.015125640781184047
+celltypist,http://purl.obolibrary.org/obo/CL_1000413,endothelial cell of artery,35228,0.013156649931302616
+celltypist,http://purl.obolibrary.org/obo/CL_0000192,smooth muscle cell,28986,0.010691315516791765
+celltypist,http://purl.obolibrary.org/obo/CL_0000165,neuroendocrine cell,28308,0.005272641351433189
+celltypist,http://purl.obolibrary.org/obo/CL_1000414,endothelial cell of venule,26876,0.009329342512092715
+celltypist,http://purl.obolibrary.org/obo/CL_0000097,mast cell,25478,0.008404920334582636
+celltypist,http://purl.obolibrary.org/obo/CL_0002399,CD1c-positive myeloid dendritic cell,23854,0.007140023504635847
+celltypist,http://purl.obolibrary.org/obo/CL_0000786,plasma cell,22886,0.007969425505011573
+celltypist,http://purl.obolibrary.org/obo/CL_0000583,alveolar macrophage,22756,0.02463596527422655
+celltypist,http://purl.obolibrary.org/obo/CL_0000623,natural killer cell,12608,0.008177556088803191
+celltypist,http://purl.obolibrary.org/obo/CL_0002241,pulmonary interstitial fibroblast,10842,0.005841870630086136
+celltypist,http://purl.obolibrary.org/obo/CL_4028006,alveolar adventitial fibroblast,10192,0.007747637573186494
+celltypist,http://purl.obolibrary.org/obo/CL_4033022,mucus secreting cell of bronchus submucosal gland,8508,0.0016626422843823967
+celltypist,http://purl.obolibrary.org/obo/CL_4033043,lung interstitial macrophage,7920,0.0069840913893778975
+celltypist,http://purl.obolibrary.org/obo/CL_0000236,B cell,7088,0.0048011989121567395
+celltypist,http://purl.obolibrary.org/obo/CL_0000186,myofibroblast cell,6454,0.00449968806952353
+celltypist,http://purl.obolibrary.org/obo/CL_4033005,serous secreting cell of bronchus submucosal gland,5404,0.0019150109386423951
+celltypist,http://purl.obolibrary.org/obo/CL_0000313,serous secreting cell,3794,0.001052212548132309
+celltypist,http://purl.obolibrary.org/obo/CL_0002394,CD141-positive myeloid dendritic cell,3540,0.0010472517448876118
+celltypist,http://purl.obolibrary.org/obo/CL_0010003,AT0,3226,0.0031494181735327196
+celltypist,http://purl.obolibrary.org/obo/CL_4033044,deuterosomal cell,2724,9.678059824358958E-4
+celltypist,http://purl.obolibrary.org/obo/CL_4033041,CCL3-positive alveolar macrophage,2696,0.0011568557365333743
+celltypist,http://purl.obolibrary.org/obo/CL_1000491,mesothelial cell of pleura,2466,7.78807390949014E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0002480,Goblet (nasal),1938,0.0010390670601165008
+celltypist,http://purl.obolibrary.org/obo/CL_0000784,plasmacytoid dendritic cell,1896,9.619106826790321E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0005006,ionocyte,948,3.81241300185722E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0000576,monocyte,948,9.680139516356198E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0000084,T cell,940,2.863608546412015E-4
+celltypist,http://purl.obolibrary.org/obo/CL_4033042,metallothionein-positive alveolar macrophage,916,3.785131845282597E-4
+celltypist,http://purl.obolibrary.org/obo/CL_4033023,airway submucosal gland collecting duct epithelial cell,722,4.720328701220975E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0001056,"dendritic cell, human",710,5.846555593767727E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0002075,brush cell of tracheobronchial tree,686,3.2877019110541224E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0000037,hematopoietic stem cell,628,2.800406393458843E-4
+celltypist,http://purl.obolibrary.org/obo/CL_0019003,tracheobronchial goblet cell,540,2.552670431501298E-4
+celltypist,http://purl.obolibrary.org/obo/CL_4023054,mesothelial fibroblast,324,1.904913749495187E-4
+popv,http://purl.obolibrary.org/obo/CL_0002063,pulmonary alveolar type 2 cell,534180,0.25871938825261187
+popv,http://purl.obolibrary.org/obo/CL_0002144,capillary endothelial cell,315634,0.14420316934505065
+popv,http://purl.obolibrary.org/obo/CL_0000624,"CD4-positive, alpha-beta T cell",286554,0.11049126671764838
+popv,http://purl.obolibrary.org/obo/CL_0000057,fibroblast,210796,0.11645321331535666
+popv,http://purl.obolibrary.org/obo/CL_0002062,pulmonary alveolar type 1 cell,166980,0.09320905301688373
+popv,http://purl.obolibrary.org/obo/CL_0000235,macrophage,75730,0.06760326468009852
+popv,http://purl.obolibrary.org/obo/CL_0000158,club cell,60598,0.03230611635905707
+popv,http://purl.obolibrary.org/obo/CL_0002543,vein endothelial cell,49468,0.021950694718666966
+popv,http://purl.obolibrary.org/obo/CL_1000271,lung ciliated cell,49044,0.023648814179318186
+popv,http://purl.obolibrary.org/obo/CL_0000775,neutrophil,33864,0.023470895526694843
+popv,http://purl.obolibrary.org/obo/CL_0000646,basal cell,26742,0.011310104913667499
+popv,http://purl.obolibrary.org/obo/CL_0000669,pericyte,22266,0.013141768938136072
+popv,http://purl.obolibrary.org/obo/CL_0000860,classical monocyte,22262,0.01597296364718576
+popv,http://purl.obolibrary.org/obo/CL_0000767,basophil,14452,0.008645179390809875
+popv,http://purl.obolibrary.org/obo/CL_1000413,endothelial cell of artery,11324,0.006036472729477632
+popv,http://purl.obolibrary.org/obo/CL_0000875,non-classical monocyte,9546,0.009576629141629886
+popv,http://purl.obolibrary.org/obo/CL_0000814,mature NK T cell,9492,0.00830918083968061
+popv,http://purl.obolibrary.org/obo/CL_0002138,endothelial cell of lymphatic vessel,8576,0.007469152641242775
+popv,http://purl.obolibrary.org/obo/CL_0000625,"CD8-positive, alpha-beta T cell",7332,0.0049278958037673685
+popv,http://purl.obolibrary.org/obo/CL_0002370,respiratory goblet cell,6958,0.0037160633999390796
+popv,http://purl.obolibrary.org/obo/CL_0000786,plasma cell,5188,0.004759814060270249
+popv,http://purl.obolibrary.org/obo/CL_0001050,"effector CD8-positive, alpha-beta T cell",5134,0.0021839558315922348
+popv,http://purl.obolibrary.org/obo/CL_0002598,bronchial smooth muscle cell,4720,0.003371750186139794
+popv,http://purl.obolibrary.org/obo/CL_0000236,B cell,3174,0.00395228298771446
+popv,http://purl.obolibrary.org/obo/CL_0000359,vascular associated smooth muscle cell,1390,0.0011125085827423937
+popv,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell,1238,0.0019312411998172363
+popv,http://purl.obolibrary.org/obo/CL_2000016,lung microvascular endothelial cell,578,3.355312146421351E-4
+popv,http://purl.obolibrary.org/obo/CL_0001044,"effector CD4-positive, alpha-beta T cell",564,2.8222495597851686E-4
+popv,http://purl.obolibrary.org/obo/CL_1000331,serous cell of epithelium of bronchus,528,0.00355128875330128
+popv,http://purl.obolibrary.org/obo/CL_4028006,alveolar adventitial fibroblast,228,3.233235007962788E-4
+popv,http://purl.obolibrary.org/obo/CL_0002393,intermediate monocyte,206,3.3542844375590965E-4
+popv,https://purl.org/ccf/ASCTB-TEMP_pneumocyte,pneumocyte,176,1.400431859544579E-4
+popv,http://purl.obolibrary.org/obo/CL_0000071,blood vessel endothelial cell,92,2.1911971380190063E-4
+popv,http://purl.obolibrary.org/obo/CL_0017000,pulmonary ionocyte,46,2.6810896720497326E-4
+popv,http://purl.obolibrary.org/obo/CL_0000192,smooth muscle cell,34,3.906186375131927E-4
+popv,http://purl.obolibrary.org/obo/CL_0000784,plasmacytoid dendritic cell,30,4.945630154433517E-4

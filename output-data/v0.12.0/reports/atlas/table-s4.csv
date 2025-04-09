@@ -1,1 +1,635 @@
 organ,as_label,cell_label,cell_id,mean_cell_count,cell_count
+VHFLargeIntestine,ascending colon,B,http://purl.obolibrary.org/obo/CL_0000236,208,416
+VHFLargeIntestine,ascending colon,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,876,1752
+VHFLargeIntestine,ascending colon,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,1,1
+VHFLargeIntestine,ascending colon,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,711.5,1423
+VHFLargeIntestine,ascending colon,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,30,60
+VHFLargeIntestine,ascending colon,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,812.5,1625
+VHFLargeIntestine,ascending colon,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,904.5,1809
+VHFLargeIntestine,ascending colon,DC,http://purl.obolibrary.org/obo/CL_0000451,299.5,599
+VHFLargeIntestine,ascending colon,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,1259,2518
+VHFLargeIntestine,ascending colon,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2651,5302
+VHFLargeIntestine,ascending colon,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1876.5,3753
+VHFLargeIntestine,ascending colon,ICC,http://purl.obolibrary.org/obo/CL_0002088,262,524
+VHFLargeIntestine,ascending colon,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,498.5,997
+VHFLargeIntestine,ascending colon,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,45.5,91
+VHFLargeIntestine,ascending colon,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,921,1842
+VHFLargeIntestine,ascending colon,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,223.5,447
+VHFLargeIntestine,ascending colon,NK,http://purl.obolibrary.org/obo/CL_0000623,38.5,77
+VHFLargeIntestine,ascending colon,Nerve,http://purl.obolibrary.org/obo/CL_0000540,341,682
+VHFLargeIntestine,ascending colon,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,65,130
+VHFLargeIntestine,ascending colon,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,95.5,191
+VHFLargeIntestine,ascending colon,Paneth,http://purl.obolibrary.org/obo/CL_0000510,3,3
+VHFLargeIntestine,ascending colon,Plasma,http://purl.obolibrary.org/obo/CL_0000786,1369,2738
+VHFLargeIntestine,ascending colon,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,2291,4582
+VHFLargeIntestine,ascending colon,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2168.5,4337
+VHFLargeIntestine,ascending colon,TA,http://purl.obolibrary.org/obo/CL_0009010,897.5,1795
+VHFLargeIntestine,caecum,B,http://purl.obolibrary.org/obo/CL_0000236,208,416
+VHFLargeIntestine,caecum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,876,1752
+VHFLargeIntestine,caecum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,1,1
+VHFLargeIntestine,caecum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,711.5,1423
+VHFLargeIntestine,caecum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,30,60
+VHFLargeIntestine,caecum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,812.5,1625
+VHFLargeIntestine,caecum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,904.5,1809
+VHFLargeIntestine,caecum,DC,http://purl.obolibrary.org/obo/CL_0000451,299.5,599
+VHFLargeIntestine,caecum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,1259,2518
+VHFLargeIntestine,caecum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2651,5302
+VHFLargeIntestine,caecum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1876.5,3753
+VHFLargeIntestine,caecum,ICC,http://purl.obolibrary.org/obo/CL_0002088,262,524
+VHFLargeIntestine,caecum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,498.5,997
+VHFLargeIntestine,caecum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,45.5,91
+VHFLargeIntestine,caecum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,921,1842
+VHFLargeIntestine,caecum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,223.5,447
+VHFLargeIntestine,caecum,NK,http://purl.obolibrary.org/obo/CL_0000623,38.5,77
+VHFLargeIntestine,caecum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,341,682
+VHFLargeIntestine,caecum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,65,130
+VHFLargeIntestine,caecum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,95.5,191
+VHFLargeIntestine,caecum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,3,3
+VHFLargeIntestine,caecum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,1369,2738
+VHFLargeIntestine,caecum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,2291,4582
+VHFLargeIntestine,caecum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2168.5,4337
+VHFLargeIntestine,caecum,TA,http://purl.obolibrary.org/obo/CL_0009010,897.5,1795
+VHFLargeIntestine,descending colon,B,http://purl.obolibrary.org/obo/CL_0000236,2463,4926
+VHFLargeIntestine,descending colon,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,2491,4982
+VHFLargeIntestine,descending colon,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,3,6
+VHFLargeIntestine,descending colon,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1524.5,3049
+VHFLargeIntestine,descending colon,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,45.5,91
+VHFLargeIntestine,descending colon,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1445.5,2891
+VHFLargeIntestine,descending colon,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,2928.5,5857
+VHFLargeIntestine,descending colon,DC,http://purl.obolibrary.org/obo/CL_0000451,811.5,1623
+VHFLargeIntestine,descending colon,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,2424.5,4849
+VHFLargeIntestine,descending colon,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,5921.5,11843
+VHFLargeIntestine,descending colon,Goblet,http://purl.obolibrary.org/obo/CL_0000160,3522.5,7045
+VHFLargeIntestine,descending colon,ICC,http://purl.obolibrary.org/obo/CL_0002088,519,1038
+VHFLargeIntestine,descending colon,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,763.5,1527
+VHFLargeIntestine,descending colon,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,163,326
+VHFLargeIntestine,descending colon,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1447,2894
+VHFLargeIntestine,descending colon,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,251.5,503
+VHFLargeIntestine,descending colon,NK,http://purl.obolibrary.org/obo/CL_0000623,27.5,55
+VHFLargeIntestine,descending colon,Nerve,http://purl.obolibrary.org/obo/CL_0000540,729,1458
+VHFLargeIntestine,descending colon,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,307.5,615
+VHFLargeIntestine,descending colon,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,187.5,375
+VHFLargeIntestine,descending colon,Plasma,http://purl.obolibrary.org/obo/CL_0000786,1729.5,3459
+VHFLargeIntestine,descending colon,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,2491,4982
+VHFLargeIntestine,descending colon,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2089.5,4179
+VHFLargeIntestine,descending colon,TA,http://purl.obolibrary.org/obo/CL_0009010,1612.5,3225
+VHFLargeIntestine,sigmoid colon,B,http://purl.obolibrary.org/obo/CL_0000236,3.5,7
+VHFLargeIntestine,sigmoid colon,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,230,460
+VHFLargeIntestine,sigmoid colon,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,3,3
+VHFLargeIntestine,sigmoid colon,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,629.5,1259
+VHFLargeIntestine,sigmoid colon,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,11,11
+VHFLargeIntestine,sigmoid colon,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,217,434
+VHFLargeIntestine,sigmoid colon,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,507,1014
+VHFLargeIntestine,sigmoid colon,DC,http://purl.obolibrary.org/obo/CL_0000451,267,534
+VHFLargeIntestine,sigmoid colon,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,1439.5,2879
+VHFLargeIntestine,sigmoid colon,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1316.5,2633
+VHFLargeIntestine,sigmoid colon,Goblet,http://purl.obolibrary.org/obo/CL_0000160,178.5,357
+VHFLargeIntestine,sigmoid colon,ICC,http://purl.obolibrary.org/obo/CL_0002088,225.5,451
+VHFLargeIntestine,sigmoid colon,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,879,1758
+VHFLargeIntestine,sigmoid colon,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,10.5,21
+VHFLargeIntestine,sigmoid colon,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1790,3580
+VHFLargeIntestine,sigmoid colon,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,636,636
+VHFLargeIntestine,sigmoid colon,NK,http://purl.obolibrary.org/obo/CL_0000623,30.5,61
+VHFLargeIntestine,sigmoid colon,Nerve,http://purl.obolibrary.org/obo/CL_0000540,830.5,1661
+VHFLargeIntestine,sigmoid colon,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,29.5,59
+VHFLargeIntestine,sigmoid colon,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,631,1262
+VHFLargeIntestine,sigmoid colon,Plasma,http://purl.obolibrary.org/obo/CL_0000786,217,217
+VHFLargeIntestine,sigmoid colon,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,5027.5,10055
+VHFLargeIntestine,sigmoid colon,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2878,5756
+VHFLargeIntestine,sigmoid colon,TA,http://purl.obolibrary.org/obo/CL_0009010,161.5,323
+VHFLargeIntestine,transverse colon,B,http://purl.obolibrary.org/obo/CL_0000236,97.5,195
+VHFLargeIntestine,transverse colon,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,1048,2096
+VHFLargeIntestine,transverse colon,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,3,6
+VHFLargeIntestine,transverse colon,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,932.5,1865
+VHFLargeIntestine,transverse colon,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,43,86
+VHFLargeIntestine,transverse colon,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,607,1214
+VHFLargeIntestine,transverse colon,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,1115.5,2231
+VHFLargeIntestine,transverse colon,DC,http://purl.obolibrary.org/obo/CL_0000451,402.5,805
+VHFLargeIntestine,transverse colon,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,2169.5,4339
+VHFLargeIntestine,transverse colon,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2975,5950
+VHFLargeIntestine,transverse colon,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1768.5,3537
+VHFLargeIntestine,transverse colon,ICC,http://purl.obolibrary.org/obo/CL_0002088,766.5,1533
+VHFLargeIntestine,transverse colon,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,1070,2140
+VHFLargeIntestine,transverse colon,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,53,106
+VHFLargeIntestine,transverse colon,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,2596,5192
+VHFLargeIntestine,transverse colon,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,188,376
+VHFLargeIntestine,transverse colon,NK,http://purl.obolibrary.org/obo/CL_0000623,43,86
+VHFLargeIntestine,transverse colon,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1722,3444
+VHFLargeIntestine,transverse colon,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,128.5,257
+VHFLargeIntestine,transverse colon,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,159,318
+VHFLargeIntestine,transverse colon,Paneth,http://purl.obolibrary.org/obo/CL_0000510,331,331
+VHFLargeIntestine,transverse colon,Plasma,http://purl.obolibrary.org/obo/CL_0000786,1151,2302
+VHFLargeIntestine,transverse colon,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,7799,15598
+VHFLargeIntestine,transverse colon,Stroma,http://purl.obolibrary.org/obo/CL_0000499,4876.5,9753
+VHFLargeIntestine,transverse colon,TA,http://purl.obolibrary.org/obo/CL_0009010,636,1272
+VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,B Cell,http://purl.obolibrary.org/obo/CL_0000236,191,191
+VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,CD4+ T Cell,http://purl.obolibrary.org/obo/CL_4033038,68003,68003
+VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,CD68+ Macrophage,https://purl.org/ccf/ASCTB-TEMP_cd68-macrophage,259113,259113
+VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,CD8+ T Cell,http://purl.obolibrary.org/obo/CL_4033039,7055,7055
+VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,49444,49444
+VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,Smooth Muscle Cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,113656,113656
+VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,Type 2 Alveolar Epithelial Cell,http://purl.obolibrary.org/obo/CL_0002063,116218,116218
+VHFSkin,skin,CD68,https://purl.org/ccf/ASCTB-TEMP_cd68,118.33333333333333333333,355
+VHFSkin,skin,DDB2,https://purl.org/ccf/ASCTB-TEMP_ddb2,675,2025
+VHFSkin,skin,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,1811,5433
+VHFSkin,skin,KI67,https://purl.org/ccf/ASCTB-TEMP_ki67,566.66666666666666666667,1700
+VHFSkin,skin,P53,https://purl.org/ccf/ASCTB-TEMP_p53,214.66666666666666666667,644
+VHFSkin,skin,T-Helper,http://purl.obolibrary.org/obo/CL_0000912,1030,3090
+VHFSkin,skin,T-Killer,http://purl.obolibrary.org/obo/CL_0000910,35.66666666666666666667,107
+VHFSkin,skin,T-Reg,http://purl.obolibrary.org/obo/CL_0000815,101.66666666666666666667,305
+VHFSmallIntestine,ascending part of duodenum,B,http://purl.obolibrary.org/obo/CL_0000236,3781,7562
+VHFSmallIntestine,ascending part of duodenum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,2254.5,4509
+VHFSmallIntestine,ascending part of duodenum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,1.5,3
+VHFSmallIntestine,ascending part of duodenum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,245,490
+VHFSmallIntestine,ascending part of duodenum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,69.5,139
+VHFSmallIntestine,ascending part of duodenum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1822,3644
+VHFSmallIntestine,ascending part of duodenum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,1463,2926
+VHFSmallIntestine,ascending part of duodenum,DC,http://purl.obolibrary.org/obo/CL_0000451,700.5,1401
+VHFSmallIntestine,ascending part of duodenum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,2908,5816
+VHFSmallIntestine,ascending part of duodenum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2809.5,5619
+VHFSmallIntestine,ascending part of duodenum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1046,2092
+VHFSmallIntestine,ascending part of duodenum,ICC,http://purl.obolibrary.org/obo/CL_0002088,531,1062
+VHFSmallIntestine,ascending part of duodenum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,1273,2546
+VHFSmallIntestine,ascending part of duodenum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,105,210
+VHFSmallIntestine,ascending part of duodenum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,2106.5,4213
+VHFSmallIntestine,ascending part of duodenum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,62.5,125
+VHFSmallIntestine,ascending part of duodenum,NK,http://purl.obolibrary.org/obo/CL_0000623,85.5,171
+VHFSmallIntestine,ascending part of duodenum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1503.5,3007
+VHFSmallIntestine,ascending part of duodenum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,127.5,255
+VHFSmallIntestine,ascending part of duodenum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,583.5,1167
+VHFSmallIntestine,ascending part of duodenum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,251,502
+VHFSmallIntestine,ascending part of duodenum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,389.5,779
+VHFSmallIntestine,ascending part of duodenum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,6229.5,12459
+VHFSmallIntestine,ascending part of duodenum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3023,6046
+VHFSmallIntestine,ascending part of duodenum,TA,http://purl.obolibrary.org/obo/CL_0009010,1151,2302
+VHFSmallIntestine,descending part of duodenum,B,http://purl.obolibrary.org/obo/CL_0000236,108.5,217
+VHFSmallIntestine,descending part of duodenum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,2481,4962
+VHFSmallIntestine,descending part of duodenum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,97,194
+VHFSmallIntestine,descending part of duodenum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,454,908
+VHFSmallIntestine,descending part of duodenum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,48.5,97
+VHFSmallIntestine,descending part of duodenum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1908,3816
+VHFSmallIntestine,descending part of duodenum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,5094,10188
+VHFSmallIntestine,descending part of duodenum,DC,http://purl.obolibrary.org/obo/CL_0000451,590.5,1181
+VHFSmallIntestine,descending part of duodenum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,3739,7478
+VHFSmallIntestine,descending part of duodenum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,10343.5,20687
+VHFSmallIntestine,descending part of duodenum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,2839.5,5679
+VHFSmallIntestine,descending part of duodenum,ICC,http://purl.obolibrary.org/obo/CL_0002088,509,1018
+VHFSmallIntestine,descending part of duodenum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,1399,2798
+VHFSmallIntestine,descending part of duodenum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,93,186
+VHFSmallIntestine,descending part of duodenum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,2294.5,4589
+VHFSmallIntestine,descending part of duodenum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,494.5,989
+VHFSmallIntestine,descending part of duodenum,NK,http://purl.obolibrary.org/obo/CL_0000623,121,242
+VHFSmallIntestine,descending part of duodenum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1362.5,2725
+VHFSmallIntestine,descending part of duodenum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,314.5,629
+VHFSmallIntestine,descending part of duodenum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,158,316
+VHFSmallIntestine,descending part of duodenum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,601.5,1203
+VHFSmallIntestine,descending part of duodenum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2128,4256
+VHFSmallIntestine,descending part of duodenum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,3632,7264
+VHFSmallIntestine,descending part of duodenum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2949.5,5899
+VHFSmallIntestine,descending part of duodenum,TA,http://purl.obolibrary.org/obo/CL_0009010,1441,2882
+VHFSmallIntestine,distal part of ileum,B,http://purl.obolibrary.org/obo/CL_0000236,81.5,163
+VHFSmallIntestine,distal part of ileum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,969.5,1939
+VHFSmallIntestine,distal part of ileum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,1,2
+VHFSmallIntestine,distal part of ileum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,87,174
+VHFSmallIntestine,distal part of ileum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,38,76
+VHFSmallIntestine,distal part of ileum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1618.5,3237
+VHFSmallIntestine,distal part of ileum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,1024.5,2049
+VHFSmallIntestine,distal part of ileum,DC,http://purl.obolibrary.org/obo/CL_0000451,222.5,445
+VHFSmallIntestine,distal part of ileum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,2009,4018
+VHFSmallIntestine,distal part of ileum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,3114.5,6229
+VHFSmallIntestine,distal part of ileum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1401.5,2803
+VHFSmallIntestine,distal part of ileum,ICC,http://purl.obolibrary.org/obo/CL_0002088,396,792
+VHFSmallIntestine,distal part of ileum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,1285,2570
+VHFSmallIntestine,distal part of ileum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,30,60
+VHFSmallIntestine,distal part of ileum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1702,3404
+VHFSmallIntestine,distal part of ileum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,30.5,61
+VHFSmallIntestine,distal part of ileum,NK,http://purl.obolibrary.org/obo/CL_0000623,32,64
+VHFSmallIntestine,distal part of ileum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,882,1764
+VHFSmallIntestine,distal part of ileum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,162.5,325
+VHFSmallIntestine,distal part of ileum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,89,178
+VHFSmallIntestine,distal part of ileum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,317.5,635
+VHFSmallIntestine,distal part of ileum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,689,1378
+VHFSmallIntestine,distal part of ileum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,4364,8728
+VHFSmallIntestine,distal part of ileum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3288.5,6577
+VHFSmallIntestine,distal part of ileum,TA,http://purl.obolibrary.org/obo/CL_0009010,1471.5,2943
+VHFSmallIntestine,horizontal part of duodenum,B,http://purl.obolibrary.org/obo/CL_0000236,3781,7562
+VHFSmallIntestine,horizontal part of duodenum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,2254.5,4509
+VHFSmallIntestine,horizontal part of duodenum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,1.5,3
+VHFSmallIntestine,horizontal part of duodenum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,245,490
+VHFSmallIntestine,horizontal part of duodenum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,69.5,139
+VHFSmallIntestine,horizontal part of duodenum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1822,3644
+VHFSmallIntestine,horizontal part of duodenum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,1463,2926
+VHFSmallIntestine,horizontal part of duodenum,DC,http://purl.obolibrary.org/obo/CL_0000451,700.5,1401
+VHFSmallIntestine,horizontal part of duodenum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,2908,5816
+VHFSmallIntestine,horizontal part of duodenum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2809.5,5619
+VHFSmallIntestine,horizontal part of duodenum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1046,2092
+VHFSmallIntestine,horizontal part of duodenum,ICC,http://purl.obolibrary.org/obo/CL_0002088,531,1062
+VHFSmallIntestine,horizontal part of duodenum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,1273,2546
+VHFSmallIntestine,horizontal part of duodenum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,105,210
+VHFSmallIntestine,horizontal part of duodenum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,2106.5,4213
+VHFSmallIntestine,horizontal part of duodenum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,62.5,125
+VHFSmallIntestine,horizontal part of duodenum,NK,http://purl.obolibrary.org/obo/CL_0000623,85.5,171
+VHFSmallIntestine,horizontal part of duodenum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1503.5,3007
+VHFSmallIntestine,horizontal part of duodenum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,127.5,255
+VHFSmallIntestine,horizontal part of duodenum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,583.5,1167
+VHFSmallIntestine,horizontal part of duodenum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,251,502
+VHFSmallIntestine,horizontal part of duodenum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,389.5,779
+VHFSmallIntestine,horizontal part of duodenum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,6229.5,12459
+VHFSmallIntestine,horizontal part of duodenum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3023,6046
+VHFSmallIntestine,horizontal part of duodenum,TA,http://purl.obolibrary.org/obo/CL_0009010,1151,2302
+VHFSmallIntestine,ileum,B,http://purl.obolibrary.org/obo/CL_0000236,81.5,163
+VHFSmallIntestine,ileum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,969.5,1939
+VHFSmallIntestine,ileum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,1,2
+VHFSmallIntestine,ileum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,87,174
+VHFSmallIntestine,ileum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,38,76
+VHFSmallIntestine,ileum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1618.5,3237
+VHFSmallIntestine,ileum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,1024.5,2049
+VHFSmallIntestine,ileum,DC,http://purl.obolibrary.org/obo/CL_0000451,222.5,445
+VHFSmallIntestine,ileum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,2009,4018
+VHFSmallIntestine,ileum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,3114.5,6229
+VHFSmallIntestine,ileum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1401.5,2803
+VHFSmallIntestine,ileum,ICC,http://purl.obolibrary.org/obo/CL_0002088,396,792
+VHFSmallIntestine,ileum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,1285,2570
+VHFSmallIntestine,ileum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,30,60
+VHFSmallIntestine,ileum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1702,3404
+VHFSmallIntestine,ileum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,30.5,61
+VHFSmallIntestine,ileum,NK,http://purl.obolibrary.org/obo/CL_0000623,32,64
+VHFSmallIntestine,ileum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,882,1764
+VHFSmallIntestine,ileum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,162.5,325
+VHFSmallIntestine,ileum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,89,178
+VHFSmallIntestine,ileum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,317.5,635
+VHFSmallIntestine,ileum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,689,1378
+VHFSmallIntestine,ileum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,4364,8728
+VHFSmallIntestine,ileum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3288.5,6577
+VHFSmallIntestine,ileum,TA,http://purl.obolibrary.org/obo/CL_0009010,1471.5,2943
+VHFSmallIntestine,jejunum,B,http://purl.obolibrary.org/obo/CL_0000236,100,200
+VHFSmallIntestine,jejunum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,3701.5,7403
+VHFSmallIntestine,jejunum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,12.5,25
+VHFSmallIntestine,jejunum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,342.5,685
+VHFSmallIntestine,jejunum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,102,204
+VHFSmallIntestine,jejunum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,10865.5,21731
+VHFSmallIntestine,jejunum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,4264.5,8529
+VHFSmallIntestine,jejunum,DC,http://purl.obolibrary.org/obo/CL_0000451,591,1182
+VHFSmallIntestine,jejunum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,4102,8204
+VHFSmallIntestine,jejunum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,14060.5,28121
+VHFSmallIntestine,jejunum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,4425,8850
+VHFSmallIntestine,jejunum,ICC,http://purl.obolibrary.org/obo/CL_0002088,821,1642
+VHFSmallIntestine,jejunum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,2589.5,5179
+VHFSmallIntestine,jejunum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,172,344
+VHFSmallIntestine,jejunum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,2654,5308
+VHFSmallIntestine,jejunum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,39,78
+VHFSmallIntestine,jejunum,NK,http://purl.obolibrary.org/obo/CL_0000623,58.5,117
+VHFSmallIntestine,jejunum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1548,3096
+VHFSmallIntestine,jejunum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,551,1102
+VHFSmallIntestine,jejunum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,253.5,507
+VHFSmallIntestine,jejunum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,810,1620
+VHFSmallIntestine,jejunum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2943,5886
+VHFSmallIntestine,jejunum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,4200.5,8401
+VHFSmallIntestine,jejunum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2563,5126
+VHFSmallIntestine,jejunum,TA,http://purl.obolibrary.org/obo/CL_0009010,3294,6588
+VHFSpleen,diaphragmatic surface of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,9438,9438
+VHFSpleen,diaphragmatic surface of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,9690,9690
+VHFSpleen,diaphragmatic surface of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,10973,10973
+VHFSpleen,diaphragmatic surface of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,7448,7448
+VHFSpleen,diaphragmatic surface of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,15429,15429
+VHFSpleen,diaphragmatic surface of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,9656,9656
+VHFSpleen,diaphragmatic surface of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,16131,16131
+VHFSpleen,diaphragmatic surface of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,9697,9697
+VHFSpleen,diaphragmatic surface of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,28224,28224
+VHFSpleen,diaphragmatic surface of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,1914,1914
+VHFSpleen,diaphragmatic surface of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,25838,25838
+VHFSpleen,diaphragmatic surface of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,8458,8458
+VHFSpleen,hilum of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,11966,11966
+VHFSpleen,hilum of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,12094,12094
+VHFSpleen,hilum of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,13265,13265
+VHFSpleen,hilum of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,7491,7491
+VHFSpleen,hilum of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,22030,22030
+VHFSpleen,hilum of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,9175,9175
+VHFSpleen,hilum of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,16717,16717
+VHFSpleen,hilum of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,12703,12703
+VHFSpleen,hilum of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,27779,27779
+VHFSpleen,hilum of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,3020,3020
+VHFSpleen,hilum of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,32468,32468
+VHFSpleen,hilum of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,9069,9069
+VHMLargeIntestine,ascending colon,B,http://purl.obolibrary.org/obo/CL_0000236,381.83333333333333333333,2291
+VHMLargeIntestine,ascending colon,B cells,http://purl.obolibrary.org/obo/CL_0000236,20556.16,513904
+VHMLargeIntestine,ascending colon,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,1443,8658
+VHMLargeIntestine,ascending colon,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,13,65
+VHMLargeIntestine,ascending colon,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1431,8586
+VHMLargeIntestine,ascending colon,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,43.83333333333333333333,263
+VHMLargeIntestine,ascending colon,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1522,9132
+VHMLargeIntestine,ascending colon,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,1175.5,7053
+VHMLargeIntestine,ascending colon,DC,http://purl.obolibrary.org/obo/CL_0000451,593.66666666666666666667,3562
+VHMLargeIntestine,ascending colon,DN Lymphocyte,http://purl.obolibrary.org/obo/CL_0002489,1860.16,46504
+VHMLargeIntestine,ascending colon,DP Lymphocyte,http://purl.obolibrary.org/obo/CL_0000809,8166.24,204156
+VHMLargeIntestine,ascending colon,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,28533.29032258064516129032,884532
+VHMLargeIntestine,ascending colon,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,5087.33333333333333333333,30524
+VHMLargeIntestine,ascending colon,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1917.66666666666666666667,11506
+VHMLargeIntestine,ascending colon,ICC,http://purl.obolibrary.org/obo/CL_0002088,475.5,2853
+VHMLargeIntestine,ascending colon,Ki67+ Tumor/Epithelial,http://purl.obolibrary.org/obo/CL_0000066,16299.95833333333333333333,391199
+VHMLargeIntestine,ascending colon,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,932.33333333333333333333,5594
+VHMLargeIntestine,ascending colon,Lymphocyte(III),http://purl.obolibrary.org/obo/CL_0000542,34599.48,864987
+VHMLargeIntestine,ascending colon,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,341.5,2049
+VHMLargeIntestine,ascending colon,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1430.66666666666666666667,8584
+VHMLargeIntestine,ascending colon,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,371,2226
+VHMLargeIntestine,ascending colon,Macrophage(I),http://purl.obolibrary.org/obo/CL_0000235,5024.04,125601
+VHMLargeIntestine,ascending colon,Macrophage(II),http://purl.obolibrary.org/obo/CL_0000235,1745.72,43643
+VHMLargeIntestine,ascending colon,Macrophage(III),http://purl.obolibrary.org/obo/CL_0000235,15941.12,398528
+VHMLargeIntestine,ascending colon,Macrophage(IV),http://purl.obolibrary.org/obo/CL_0000235,7691.84,192296
+VHMLargeIntestine,ascending colon,Muscle/Fibroblast,http://purl.obolibrary.org/obo/CL_0000186,60704.92,1517623
+VHMLargeIntestine,ascending colon,NK,http://purl.obolibrary.org/obo/CL_0000623,73.8,369
+VHMLargeIntestine,ascending colon,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1140.83333333333333333333,6845
+VHMLargeIntestine,ascending colon,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,151.33333333333333333333,908
+VHMLargeIntestine,ascending colon,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,270,1620
+VHMLargeIntestine,ascending colon,Other,http://purl.obolibrary.org/obo/CL_0000000,25773,644325
+VHMLargeIntestine,ascending colon,PD1+ T helper,http://purl.obolibrary.org/obo/CL_0000912,6497.36,162434
+VHMLargeIntestine,ascending colon,PD1+ Tc,http://purl.obolibrary.org/obo/CL_0000910,2185.16666666666666666667,52444
+VHMLargeIntestine,ascending colon,PDL1+ Macrophage,http://purl.obolibrary.org/obo/CL_0000235,5148.64,128716
+VHMLargeIntestine,ascending colon,PDL1+ Tumor/Epithelial,http://purl.obolibrary.org/obo/CL_0000066,3361.91666666666666666667,80686
+VHMLargeIntestine,ascending colon,PDL1+ lymphocyte,http://purl.obolibrary.org/obo/CL_0000542,1262.72,31568
+VHMLargeIntestine,ascending colon,Paneth,http://purl.obolibrary.org/obo/CL_0000510,4.25,17
+VHMLargeIntestine,ascending colon,Plasma,http://purl.obolibrary.org/obo/CL_0000786,1905.83333333333333333333,11435
+VHMLargeIntestine,ascending colon,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,6996.5,41979
+VHMLargeIntestine,ascending colon,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3165,18990
+VHMLargeIntestine,ascending colon,T helper,http://purl.obolibrary.org/obo/CL_0000912,18299.72,457493
+VHMLargeIntestine,ascending colon,TA,http://purl.obolibrary.org/obo/CL_0009010,700.66666666666666666667,4204
+VHMLargeIntestine,ascending colon,Tc cell,http://purl.obolibrary.org/obo/CL_0000910,44203.96,1105099
+VHMLargeIntestine,ascending colon,Treg,http://purl.obolibrary.org/obo/CL_0000815,17117,427925
+VHMLargeIntestine,ascending colon,Tumor/Epithelial,http://purl.obolibrary.org/obo/CL_0001063,187445.58333333333333333333,4498694
+VHMLargeIntestine,caecum,B cells,http://purl.obolibrary.org/obo/CL_0000236,20556.16,513904
+VHMLargeIntestine,caecum,DN Lymphocyte,http://purl.obolibrary.org/obo/CL_0002489,1860.16,46504
+VHMLargeIntestine,caecum,DP Lymphocyte,http://purl.obolibrary.org/obo/CL_0000809,8166.24,204156
+VHMLargeIntestine,caecum,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,34812.64,870316
+VHMLargeIntestine,caecum,Ki67+ Tumor/Epithelial,http://purl.obolibrary.org/obo/CL_0000066,16299.95833333333333333333,391199
+VHMLargeIntestine,caecum,Lymphocyte(III),http://purl.obolibrary.org/obo/CL_0000542,34599.48,864987
+VHMLargeIntestine,caecum,Macrophage(I),http://purl.obolibrary.org/obo/CL_0000235,5024.04,125601
+VHMLargeIntestine,caecum,Macrophage(II),http://purl.obolibrary.org/obo/CL_0000235,1745.72,43643
+VHMLargeIntestine,caecum,Macrophage(III),http://purl.obolibrary.org/obo/CL_0000235,15941.12,398528
+VHMLargeIntestine,caecum,Macrophage(IV),http://purl.obolibrary.org/obo/CL_0000235,7691.84,192296
+VHMLargeIntestine,caecum,Muscle/Fibroblast,http://purl.obolibrary.org/obo/CL_0000186,60704.92,1517623
+VHMLargeIntestine,caecum,Other,http://purl.obolibrary.org/obo/CL_0000000,25773,644325
+VHMLargeIntestine,caecum,PD1+ T helper,http://purl.obolibrary.org/obo/CL_0000912,6497.36,162434
+VHMLargeIntestine,caecum,PD1+ Tc,http://purl.obolibrary.org/obo/CL_0000910,2185.16666666666666666667,52444
+VHMLargeIntestine,caecum,PDL1+ Macrophage,http://purl.obolibrary.org/obo/CL_0000235,5148.64,128716
+VHMLargeIntestine,caecum,PDL1+ Tumor/Epithelial,http://purl.obolibrary.org/obo/CL_0000066,3361.91666666666666666667,80686
+VHMLargeIntestine,caecum,PDL1+ lymphocyte,http://purl.obolibrary.org/obo/CL_0000542,1262.72,31568
+VHMLargeIntestine,caecum,T helper,http://purl.obolibrary.org/obo/CL_0000912,18299.72,457493
+VHMLargeIntestine,caecum,Tc cell,http://purl.obolibrary.org/obo/CL_0000910,44203.96,1105099
+VHMLargeIntestine,caecum,Treg,http://purl.obolibrary.org/obo/CL_0000815,17117,427925
+VHMLargeIntestine,caecum,Tumor/Epithelial,http://purl.obolibrary.org/obo/CL_0001063,187445.58333333333333333333,4498694
+VHMLargeIntestine,descending colon,B,http://purl.obolibrary.org/obo/CL_0000236,749.42857142857142857143,5246
+VHMLargeIntestine,descending colon,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,1921,13447
+VHMLargeIntestine,descending colon,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,10,40
+VHMLargeIntestine,descending colon,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1011.57142857142857142857,7081
+VHMLargeIntestine,descending colon,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,93.14285714285714285714,652
+VHMLargeIntestine,descending colon,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1575,11025
+VHMLargeIntestine,descending colon,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,1784.28571428571428571429,12490
+VHMLargeIntestine,descending colon,DC,http://purl.obolibrary.org/obo/CL_0000451,645.28571428571428571429,4517
+VHMLargeIntestine,descending colon,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,2681.57142857142857142857,18771
+VHMLargeIntestine,descending colon,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,5810.28571428571428571429,40672
+VHMLargeIntestine,descending colon,Goblet,http://purl.obolibrary.org/obo/CL_0000160,4061.85714285714285714286,28433
+VHMLargeIntestine,descending colon,ICC,http://purl.obolibrary.org/obo/CL_0002088,523,3661
+VHMLargeIntestine,descending colon,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,1036.14285714285714285714,7253
+VHMLargeIntestine,descending colon,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,360.28571428571428571429,2522
+VHMLargeIntestine,descending colon,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1761.28571428571428571429,12329
+VHMLargeIntestine,descending colon,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,290,1740
+VHMLargeIntestine,descending colon,NK,http://purl.obolibrary.org/obo/CL_0000623,100.85714285714285714286,706
+VHMLargeIntestine,descending colon,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1834,12838
+VHMLargeIntestine,descending colon,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,194.57142857142857142857,1362
+VHMLargeIntestine,descending colon,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,72.42857142857142857143,507
+VHMLargeIntestine,descending colon,Paneth,http://purl.obolibrary.org/obo/CL_0000510,2.5,10
+VHMLargeIntestine,descending colon,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2354.85714285714285714286,16484
+VHMLargeIntestine,descending colon,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,8756.85714285714285714286,61298
+VHMLargeIntestine,descending colon,Stroma,http://purl.obolibrary.org/obo/CL_0000499,4151.42857142857142857143,29060
+VHMLargeIntestine,descending colon,TA,http://purl.obolibrary.org/obo/CL_0009010,1109.71428571428571428571,7768
+VHMLargeIntestine,sigmoid colon,B,http://purl.obolibrary.org/obo/CL_0000236,54.83333333333333333333,329
+VHMLargeIntestine,sigmoid colon,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,1058,6348
+VHMLargeIntestine,sigmoid colon,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,14.75,59
+VHMLargeIntestine,sigmoid colon,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1123.16666666666666666667,6739
+VHMLargeIntestine,sigmoid colon,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,49.16666666666666666667,295
+VHMLargeIntestine,sigmoid colon,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,951.5,5709
+VHMLargeIntestine,sigmoid colon,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,1035.66666666666666666667,6214
+VHMLargeIntestine,sigmoid colon,DC,http://purl.obolibrary.org/obo/CL_0000451,514.83333333333333333333,3089
+VHMLargeIntestine,sigmoid colon,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,1759.16666666666666666667,10555
+VHMLargeIntestine,sigmoid colon,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,4419.33333333333333333333,26516
+VHMLargeIntestine,sigmoid colon,Goblet,http://purl.obolibrary.org/obo/CL_0000160,2286.5,13719
+VHMLargeIntestine,sigmoid colon,ICC,http://purl.obolibrary.org/obo/CL_0002088,368.5,2211
+VHMLargeIntestine,sigmoid colon,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,795.66666666666666666667,4774
+VHMLargeIntestine,sigmoid colon,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,260.16666666666666666667,1561
+VHMLargeIntestine,sigmoid colon,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1563.66666666666666666667,9382
+VHMLargeIntestine,sigmoid colon,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,252.33333333333333333333,1514
+VHMLargeIntestine,sigmoid colon,NK,http://purl.obolibrary.org/obo/CL_0000623,63.4,317
+VHMLargeIntestine,sigmoid colon,Nerve,http://purl.obolibrary.org/obo/CL_0000540,924.66666666666666666667,5548
+VHMLargeIntestine,sigmoid colon,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,156.83333333333333333333,941
+VHMLargeIntestine,sigmoid colon,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,141.5,849
+VHMLargeIntestine,sigmoid colon,Paneth,http://purl.obolibrary.org/obo/CL_0000510,2,4
+VHMLargeIntestine,sigmoid colon,Plasma,http://purl.obolibrary.org/obo/CL_0000786,1616,9696
+VHMLargeIntestine,sigmoid colon,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,7425.83333333333333333333,44555
+VHMLargeIntestine,sigmoid colon,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3151.5,18909
+VHMLargeIntestine,sigmoid colon,TA,http://purl.obolibrary.org/obo/CL_0009010,698.33333333333333333333,4190
+VHMLargeIntestine,transverse colon,B,http://purl.obolibrary.org/obo/CL_0000236,258.5,1034
+VHMLargeIntestine,transverse colon,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,987.4,4937
+VHMLargeIntestine,transverse colon,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,9.25,37
+VHMLargeIntestine,transverse colon,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1501.8,7509
+VHMLargeIntestine,transverse colon,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,27.6,138
+VHMLargeIntestine,transverse colon,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,1011.6,5058
+VHMLargeIntestine,transverse colon,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,590.2,2951
+VHMLargeIntestine,transverse colon,DC,http://purl.obolibrary.org/obo/CL_0000451,362,1810
+VHMLargeIntestine,transverse colon,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,1954,9770
+VHMLargeIntestine,transverse colon,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,3758.2,18791
+VHMLargeIntestine,transverse colon,Goblet,http://purl.obolibrary.org/obo/CL_0000160,1485.2,7426
+VHMLargeIntestine,transverse colon,ICC,http://purl.obolibrary.org/obo/CL_0002088,365.8,1829
+VHMLargeIntestine,transverse colon,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,725.6,3628
+VHMLargeIntestine,transverse colon,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,404.4,2022
+VHMLargeIntestine,transverse colon,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1142,5710
+VHMLargeIntestine,transverse colon,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,193.8,969
+VHMLargeIntestine,transverse colon,NK,http://purl.obolibrary.org/obo/CL_0000623,42.4,212
+VHMLargeIntestine,transverse colon,Nerve,http://purl.obolibrary.org/obo/CL_0000540,710,3550
+VHMLargeIntestine,transverse colon,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,58.2,291
+VHMLargeIntestine,transverse colon,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,114.4,572
+VHMLargeIntestine,transverse colon,Paneth,http://purl.obolibrary.org/obo/CL_0000510,3.5,7
+VHMLargeIntestine,transverse colon,Plasma,http://purl.obolibrary.org/obo/CL_0000786,1436.6,7183
+VHMLargeIntestine,transverse colon,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,3694.2,18471
+VHMLargeIntestine,transverse colon,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2332.8,11664
+VHMLargeIntestine,transverse colon,TA,http://purl.obolibrary.org/obo/CL_0009010,280.6,1403
+VHMLung,Left posterior basal segmental bronchus,B Cell,http://purl.obolibrary.org/obo/CL_0000236,464,464
+VHMLung,Left posterior basal segmental bronchus,Basal Epithelial Cell,https://purl.org/ccf/ASCTB-TEMP_basal-epithelial-cell,974,974
+VHMLung,Left posterior basal segmental bronchus,CD4+ T Cell,http://purl.obolibrary.org/obo/CL_4033038,16844,16844
+VHMLung,Left posterior basal segmental bronchus,CD68+ Macrophage,https://purl.org/ccf/ASCTB-TEMP_cd68-macrophage,43845,43845
+VHMLung,Left posterior basal segmental bronchus,CD8+ T Cell,http://purl.obolibrary.org/obo/CL_4033039,3706,3706
+VHMLung,Left posterior basal segmental bronchus,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,40385,40385
+VHMLung,Left posterior basal segmental bronchus,Lymphatic Endothelial (and some immune cells),https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial-and-some-immune-cells-,1761,1761
+VHMLung,Left posterior basal segmental bronchus,MPO+,https://purl.org/ccf/ASCTB-TEMP_mpo-,93569,93569
+VHMLung,Left posterior basal segmental bronchus,Mast Cell,https://purl.org/ccf/ASCTB-TEMP_mast-cell,15384,15384
+VHMLung,Left posterior basal segmental bronchus,Smooth Muscle Cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,35799,35799
+VHMLung,Left posterior basal segmental bronchus,Type 1 Alveolar Epithelial Cell,http://purl.obolibrary.org/obo/CL_0002062,293708,293708
+VHMLung,Left posterior basal segmental bronchus,Type 2 Alveolar Epithelial Cell,http://purl.obolibrary.org/obo/CL_0002063,76345,76345
+VHMSkin,skin,CD68,https://purl.org/ccf/ASCTB-TEMP_cd68,111.14285714285714285714,778
+VHMSkin,skin,DDB2,https://purl.org/ccf/ASCTB-TEMP_ddb2,300.14285714285714285714,2101
+VHMSkin,skin,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,2427.71428571428571428571,16994
+VHMSkin,skin,KI67,https://purl.org/ccf/ASCTB-TEMP_ki67,733.42857142857142857143,5134
+VHMSkin,skin,P53,https://purl.org/ccf/ASCTB-TEMP_p53,114.71428571428571428571,803
+VHMSkin,skin,T-Helper,http://purl.obolibrary.org/obo/CL_0000912,1122.14285714285714285714,7855
+VHMSkin,skin,T-Killer,http://purl.obolibrary.org/obo/CL_0000910,32.85714285714285714286,230
+VHMSkin,skin,T-Reg,http://purl.obolibrary.org/obo/CL_0000815,109.85714285714285714286,769
+VHMSmallIntestine,ascending part of duodenum,B,http://purl.obolibrary.org/obo/CL_0000236,54.83333333333333333333,329
+VHMSmallIntestine,ascending part of duodenum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,1618.66666666666666666667,9712
+VHMSmallIntestine,ascending part of duodenum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,29.33333333333333333333,176
+VHMSmallIntestine,ascending part of duodenum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,266.66666666666666666667,1600
+VHMSmallIntestine,ascending part of duodenum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,266,1596
+VHMSmallIntestine,ascending part of duodenum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,4778.5,28671
+VHMSmallIntestine,ascending part of duodenum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,559.66666666666666666667,3358
+VHMSmallIntestine,ascending part of duodenum,DC,http://purl.obolibrary.org/obo/CL_0000451,339.16666666666666666667,2035
+VHMSmallIntestine,ascending part of duodenum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,3190.83333333333333333333,19145
+VHMSmallIntestine,ascending part of duodenum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,10487.33333333333333333333,62924
+VHMSmallIntestine,ascending part of duodenum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,2328.33333333333333333333,13970
+VHMSmallIntestine,ascending part of duodenum,ICC,http://purl.obolibrary.org/obo/CL_0002088,600.66666666666666666667,3604
+VHMSmallIntestine,ascending part of duodenum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,856.5,5139
+VHMSmallIntestine,ascending part of duodenum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,331.33333333333333333333,1988
+VHMSmallIntestine,ascending part of duodenum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1563.16666666666666666667,9379
+VHMSmallIntestine,ascending part of duodenum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,321.83333333333333333333,1931
+VHMSmallIntestine,ascending part of duodenum,NK,http://purl.obolibrary.org/obo/CL_0000623,42.66666666666666666667,256
+VHMSmallIntestine,ascending part of duodenum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1081.16666666666666666667,6487
+VHMSmallIntestine,ascending part of duodenum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,276.16666666666666666667,1657
+VHMSmallIntestine,ascending part of duodenum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,180.33333333333333333333,1082
+VHMSmallIntestine,ascending part of duodenum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,533.83333333333333333333,3203
+VHMSmallIntestine,ascending part of duodenum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2438.66666666666666666667,14632
+VHMSmallIntestine,ascending part of duodenum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,4095.33333333333333333333,24572
+VHMSmallIntestine,ascending part of duodenum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2671.66666666666666666667,16030
+VHMSmallIntestine,ascending part of duodenum,TA,http://purl.obolibrary.org/obo/CL_0009010,735.66666666666666666667,4414
+VHMSmallIntestine,descending part of duodenum,B,http://purl.obolibrary.org/obo/CL_0000236,43.83333333333333333333,263
+VHMSmallIntestine,descending part of duodenum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,2132.16666666666666666667,12793
+VHMSmallIntestine,descending part of duodenum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,187,1122
+VHMSmallIntestine,descending part of duodenum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,293.66666666666666666667,1762
+VHMSmallIntestine,descending part of duodenum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,240.5,1443
+VHMSmallIntestine,descending part of duodenum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,3828.33333333333333333333,22970
+VHMSmallIntestine,descending part of duodenum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,982.5,5895
+VHMSmallIntestine,descending part of duodenum,DC,http://purl.obolibrary.org/obo/CL_0000451,367.5,2205
+VHMSmallIntestine,descending part of duodenum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,3713.5,22281
+VHMSmallIntestine,descending part of duodenum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,13295.5,79773
+VHMSmallIntestine,descending part of duodenum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,2683.33333333333333333333,16100
+VHMSmallIntestine,descending part of duodenum,ICC,http://purl.obolibrary.org/obo/CL_0002088,528.66666666666666666667,3172
+VHMSmallIntestine,descending part of duodenum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,958.16666666666666666667,5749
+VHMSmallIntestine,descending part of duodenum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,693.33333333333333333333,4160
+VHMSmallIntestine,descending part of duodenum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1985.33333333333333333333,11912
+VHMSmallIntestine,descending part of duodenum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,800.16666666666666666667,4801
+VHMSmallIntestine,descending part of duodenum,NK,http://purl.obolibrary.org/obo/CL_0000623,86.5,519
+VHMSmallIntestine,descending part of duodenum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1078.33333333333333333333,6470
+VHMSmallIntestine,descending part of duodenum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,462.5,2775
+VHMSmallIntestine,descending part of duodenum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,323,1938
+VHMSmallIntestine,descending part of duodenum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,592.66666666666666666667,3556
+VHMSmallIntestine,descending part of duodenum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,3267.16666666666666666667,19603
+VHMSmallIntestine,descending part of duodenum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,4615.16666666666666666667,27691
+VHMSmallIntestine,descending part of duodenum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3713.66666666666666666667,22282
+VHMSmallIntestine,descending part of duodenum,TA,http://purl.obolibrary.org/obo/CL_0009010,983.66666666666666666667,5902
+VHMSmallIntestine,distal part of ileum,B,http://purl.obolibrary.org/obo/CL_0000236,1987.83333333333333333333,11927
+VHMSmallIntestine,distal part of ileum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,3053.83333333333333333333,18323
+VHMSmallIntestine,distal part of ileum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,14,70
+VHMSmallIntestine,distal part of ileum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,519.33333333333333333333,3116
+VHMSmallIntestine,distal part of ileum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,115.16666666666666666667,691
+VHMSmallIntestine,distal part of ileum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,5252.83333333333333333333,31517
+VHMSmallIntestine,distal part of ileum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,840,5040
+VHMSmallIntestine,distal part of ileum,DC,http://purl.obolibrary.org/obo/CL_0000451,779,4674
+VHMSmallIntestine,distal part of ileum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,3968.33333333333333333333,23810
+VHMSmallIntestine,distal part of ileum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,9562.83333333333333333333,57377
+VHMSmallIntestine,distal part of ileum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,3828.33333333333333333333,22970
+VHMSmallIntestine,distal part of ileum,ICC,http://purl.obolibrary.org/obo/CL_0002088,974.83333333333333333333,5849
+VHMSmallIntestine,distal part of ileum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,1203.5,7221
+VHMSmallIntestine,distal part of ileum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,584,3504
+VHMSmallIntestine,distal part of ileum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,2256,13536
+VHMSmallIntestine,distal part of ileum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,157.66666666666666666667,946
+VHMSmallIntestine,distal part of ileum,NK,http://purl.obolibrary.org/obo/CL_0000623,138.83333333333333333333,833
+VHMSmallIntestine,distal part of ileum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1519.66666666666666666667,9118
+VHMSmallIntestine,distal part of ileum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,291.83333333333333333333,1751
+VHMSmallIntestine,distal part of ileum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,283.5,1701
+VHMSmallIntestine,distal part of ileum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,994.33333333333333333333,5966
+VHMSmallIntestine,distal part of ileum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2263.5,13581
+VHMSmallIntestine,distal part of ileum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,7055.16666666666666666667,42331
+VHMSmallIntestine,distal part of ileum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,4182,25092
+VHMSmallIntestine,distal part of ileum,TA,http://purl.obolibrary.org/obo/CL_0009010,840,5040
+VHMSmallIntestine,horizontal part of duodenum,B,http://purl.obolibrary.org/obo/CL_0000236,54.83333333333333333333,329
+VHMSmallIntestine,horizontal part of duodenum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,1618.66666666666666666667,9712
+VHMSmallIntestine,horizontal part of duodenum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,29.33333333333333333333,176
+VHMSmallIntestine,horizontal part of duodenum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,266.66666666666666666667,1600
+VHMSmallIntestine,horizontal part of duodenum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,266,1596
+VHMSmallIntestine,horizontal part of duodenum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,4778.5,28671
+VHMSmallIntestine,horizontal part of duodenum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,559.66666666666666666667,3358
+VHMSmallIntestine,horizontal part of duodenum,DC,http://purl.obolibrary.org/obo/CL_0000451,339.16666666666666666667,2035
+VHMSmallIntestine,horizontal part of duodenum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,3190.83333333333333333333,19145
+VHMSmallIntestine,horizontal part of duodenum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,10487.33333333333333333333,62924
+VHMSmallIntestine,horizontal part of duodenum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,2328.33333333333333333333,13970
+VHMSmallIntestine,horizontal part of duodenum,ICC,http://purl.obolibrary.org/obo/CL_0002088,600.66666666666666666667,3604
+VHMSmallIntestine,horizontal part of duodenum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,856.5,5139
+VHMSmallIntestine,horizontal part of duodenum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,331.33333333333333333333,1988
+VHMSmallIntestine,horizontal part of duodenum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1563.16666666666666666667,9379
+VHMSmallIntestine,horizontal part of duodenum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,321.83333333333333333333,1931
+VHMSmallIntestine,horizontal part of duodenum,NK,http://purl.obolibrary.org/obo/CL_0000623,42.66666666666666666667,256
+VHMSmallIntestine,horizontal part of duodenum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1081.16666666666666666667,6487
+VHMSmallIntestine,horizontal part of duodenum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,276.16666666666666666667,1657
+VHMSmallIntestine,horizontal part of duodenum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,180.33333333333333333333,1082
+VHMSmallIntestine,horizontal part of duodenum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,533.83333333333333333333,3203
+VHMSmallIntestine,horizontal part of duodenum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2438.66666666666666666667,14632
+VHMSmallIntestine,horizontal part of duodenum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,4095.33333333333333333333,24572
+VHMSmallIntestine,horizontal part of duodenum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2671.66666666666666666667,16030
+VHMSmallIntestine,horizontal part of duodenum,TA,http://purl.obolibrary.org/obo/CL_0009010,735.66666666666666666667,4414
+VHMSmallIntestine,jejunum,B,http://purl.obolibrary.org/obo/CL_0000236,66.83333333333333333333,401
+VHMSmallIntestine,jejunum,CD4+ T cell,http://purl.obolibrary.org/obo/CL_0000624,2451.16666666666666666667,14707
+VHMSmallIntestine,jejunum,CD57+ Enterocyte,http://purl.obolibrary.org/obo/CL_4033092,17.2,86
+VHMSmallIntestine,jejunum,CD66+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,532.5,3195
+VHMSmallIntestine,jejunum,CD7+ Immune,http://purl.obolibrary.org/obo/CL_0001028,222,1332
+VHMSmallIntestine,jejunum,CD8+ T,http://purl.obolibrary.org/obo/CL_0000625,7954.5,47727
+VHMSmallIntestine,jejunum,Cycling TA,http://purl.obolibrary.org/obo/CL_0009010,874.16666666666666666667,5245
+VHMSmallIntestine,jejunum,DC,http://purl.obolibrary.org/obo/CL_0000451,390,2340
+VHMSmallIntestine,jejunum,Endothelial,http://purl.obolibrary.org/obo/CL_0000071,3685.5,22113
+VHMSmallIntestine,jejunum,Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,13650.5,81903
+VHMSmallIntestine,jejunum,Goblet,http://purl.obolibrary.org/obo/CL_0000160,2488.33333333333333333333,14930
+VHMSmallIntestine,jejunum,ICC,http://purl.obolibrary.org/obo/CL_0002088,432.16666666666666666667,2593
+VHMSmallIntestine,jejunum,Lymphatic,http://purl.obolibrary.org/obo/CL_0002138,937.5,5625
+VHMSmallIntestine,jejunum,M1 Macrophage,http://purl.obolibrary.org/obo/CL_0000863,445.83333333333333333333,2675
+VHMSmallIntestine,jejunum,M2 Macrophage,http://purl.obolibrary.org/obo/CL_0000890,1770.66666666666666666667,10624
+VHMSmallIntestine,jejunum,MUC1+ Enterocyte,http://purl.obolibrary.org/obo/CL_0000584,87.83333333333333333333,527
+VHMSmallIntestine,jejunum,NK,http://purl.obolibrary.org/obo/CL_0000623,157,942
+VHMSmallIntestine,jejunum,Nerve,http://purl.obolibrary.org/obo/CL_0000540,1368.33333333333333333333,8210
+VHMSmallIntestine,jejunum,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,318.83333333333333333333,1913
+VHMSmallIntestine,jejunum,Neutrophil,http://purl.obolibrary.org/obo/CL_0000775,345.66666666666666666667,2074
+VHMSmallIntestine,jejunum,Paneth,http://purl.obolibrary.org/obo/CL_0000510,720.66666666666666666667,4324
+VHMSmallIntestine,jejunum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2448.5,14691
+VHMSmallIntestine,jejunum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,7029.5,42177
+VHMSmallIntestine,jejunum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3872.83333333333333333333,23237
+VHMSmallIntestine,jejunum,TA,http://purl.obolibrary.org/obo/CL_0009010,500.33333333333333333333,3002
+VHMSpleen,diaphragmatic surface of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,10288,20576
+VHMSpleen,diaphragmatic surface of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,9871,19742
+VHMSpleen,diaphragmatic surface of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,19533,39066
+VHMSpleen,diaphragmatic surface of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,9390,18780
+VHMSpleen,diaphragmatic surface of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,17227,34454
+VHMSpleen,diaphragmatic surface of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,6344,12688
+VHMSpleen,diaphragmatic surface of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,20595.5,41191
+VHMSpleen,diaphragmatic surface of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,14522,29044
+VHMSpleen,diaphragmatic surface of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,28471,56942
+VHMSpleen,diaphragmatic surface of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,1463.5,2927
+VHMSpleen,diaphragmatic surface of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,38733,77466
+VHMSpleen,diaphragmatic surface of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,13977,27954
+VHMSpleen,hilum of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,10288,20576
+VHMSpleen,hilum of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,9871,19742
+VHMSpleen,hilum of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,19533,39066
+VHMSpleen,hilum of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,9390,18780
+VHMSpleen,hilum of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,17227,34454
+VHMSpleen,hilum of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,6344,12688
+VHMSpleen,hilum of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,20595.5,41191
+VHMSpleen,hilum of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,14522,29044
+VHMSpleen,hilum of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,28471,56942
+VHMSpleen,hilum of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,1463.5,2927
+VHMSpleen,hilum of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,38733,77466
+VHMSpleen,hilum of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,13977,27954
+VHMSpleen,renal surface of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,7133,14266
+VHMSpleen,renal surface of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,6228.5,12457
+VHMSpleen,renal surface of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,14322,28644
+VHMSpleen,renal surface of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,7240,14480
+VHMSpleen,renal surface of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,13258.5,26517
+VHMSpleen,renal surface of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,6523.5,13047
+VHMSpleen,renal surface of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,14536.5,29073
+VHMSpleen,renal surface of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,10468,20936
+VHMSpleen,renal surface of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,23226,46452
+VHMSpleen,renal surface of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,1604,3208
+VHMSpleen,renal surface of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,27667.5,55335
+VHMSpleen,renal surface of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,8240,16480

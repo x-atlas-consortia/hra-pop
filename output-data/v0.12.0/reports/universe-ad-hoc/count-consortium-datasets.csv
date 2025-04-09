@@ -1,16 +1,16 @@
 consortium,dataset_count,atlas_dataset_count,test_dataset_count,excluded_dataset_count,no_rui_dataset_count,no_summary_dataset_count
 Allen Institute for Brain Science,10,0,10,0,0,10
-CxG,9175,0,6082,3093,9175,9175
-GTEx,74,15,50,9,9,74
+CxG,9175,0,6082,3093,9175,3093
+GTEx,74,15,50,9,9,59
 GUDMAP,12,0,12,0,0,12
-HCA,283,103,98,82,82,283
+HCA,283,103,98,82,82,180
 "HIRN, ESPACE",1,0,1,0,0,1
 HRA,1,0,1,0,0,1
 HTAN,5,0,3,2,0,5
-HuBMAP,3431,478,2881,72,96,3431
-KPMP,54,27,27,0,0,54
+HuBMAP,3431,478,2881,72,96,2929
+KPMP,54,27,27,0,0,27
 LungMap,9,0,0,9,9,9
-NHLBI/LungMap,10,9,1,0,0,10
+NHLBI/LungMap,10,9,1,0,0,1
 SEA-AD,1,0,0,1,1,1
 SPARC,50,0,50,0,0,50
 SenNet,1320,0,1320,0,0,1320
