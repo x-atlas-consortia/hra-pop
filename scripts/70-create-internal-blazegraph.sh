@@ -13,12 +13,6 @@ HRA_POP_LQ=https://purl.humanatlas.io/graph/hra-pop-lq
 HRA_POP_FULL=https://purl.humanatlas.io/ds-graph/hra-pop-full
 CTANN_CROSSWALKS=https://purl.humanatlas.io/graph/ctann-crosswalks
 
-run_ndjsonld() {
-  QUADS=${1%.jsonl}.nq
-  ndjsonld canonize $1 $QUADS -c ccf-context.jsonld 
-  blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
-}
-
 run_jsonld() {
   QUADS=${1%.jsonl}.nq
   ./src/jsonld-to-nq.js ccf-context.jsonld $1 $QUADS
@@ -26,14 +20,14 @@ run_jsonld() {
 }
 
 # Atlas
-run_ndjsonld $DIR/atlas-enriched-dataset-graph.jsonl $HRA_POP
-run_ndjsonld $DIR/atlas-as-cell-summaries.jsonl $HRA_POP
+run_jsonld $DIR/atlas-enriched-dataset-graph.jsonl $HRA_POP
+run_jsonld $DIR/atlas-as-cell-summaries.jsonl $HRA_POP
 
 # Test Data
-run_ndjsonld $DIR/test-atlas-enriched-dataset-graph.jsonl "${HRA_POP}#test-data"
+run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonl "${HRA_POP}#test-data"
 
 # Full Dataset
-run_ndjsonld $DIR/full-dataset-graph.jsonl "${HRA_POP_FULL}"
+run_jsonld $DIR/full-dataset-graph.jsonl "${HRA_POP_FULL}"
 
 # Precomputed Atlas distances and similarities
 blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#distances" $DIR/euclidean-distances.ttl
@@ -43,11 +37,11 @@ blazegraph-runner load --journal=$JNL "--graph=${HRA_POP}#as-as-sims" $DIR/atlas
 
 if [ "$COMPUTE_LQ" == "true" ]; then
   # Atlas LQ
-  run_ndjsonld $DIR/atlas-lq-enriched-dataset-graph.jsonl $HRA_POP_LQ
-  run_ndjsonld $DIR/atlas-lq-as-cell-summaries.jsonl $HRA_POP_LQ
+  run_jsonld $DIR/atlas-lq-enriched-dataset-graph.jsonl $HRA_POP_LQ
+  run_jsonld $DIR/atlas-lq-as-cell-summaries.jsonl $HRA_POP_LQ
 
   # Test Data LQ
-  run_ndjsonld $DIR/test-atlas-lq-enriched-dataset-graph.jsonl "${HRA_POP_LQ}#test-data"
+  run_jsonld $DIR/test-atlas-lq-enriched-dataset-graph.jsonl "${HRA_POP_LQ}#test-data"
 
   # Precomputed Atlas LQ distances and similarities
   blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#distances" $DIR/euclidean-distances.ttl
