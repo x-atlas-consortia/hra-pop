@@ -3,7 +3,7 @@ Female,http://purl.org/ccf/GTEX-13N11-5002-SM-H5JDV,Heart,,false,false,true,fals
 Male,http://purl.org/ccf/GTEX-15RIE-5015-SM-H8L6X,Heart,,false,false,true,false,true,GTEx,,,
 Female,http://purl.org/ccf/GTEX-1ICG6-5003-SM-GHS9A,Heart,,false,false,true,false,true,GTEx,,,
 Female,https://doi.org/10.1126/science.abl4290#GTEX-13N11-5002,Heart,,false,false,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,10.1126/science.abl4294,
-Female,https://doi.org/10.1126/science.abl4290#GTEX-13N11-5002-SM-H5JDV,Heart,20,true,true,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,https://doi.org/10.1126/science.abl4290,G��kcen Eraslan
+Female,https://doi.org/10.1126/science.abl4290#GTEX-13N11-5002-SM-H5JDV,Heart,37,true,true,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,https://doi.org/10.1126/science.abl4290,G��kcen Eraslan
 Male,https://doi.org/10.1126/science.abl4290#GTEX-15RIE-5015,Heart,,false,false,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,10.1126/science.abl4296,
 Male,https://doi.org/10.1126/science.abl4290#GTEX-15RIE-5015-SM-H8L6X,Heart,19,true,true,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,https://doi.org/10.1126/science.abl4290,G��kcen Eraslan
 Female,https://doi.org/10.1126/science.abl4290#GTEX-1ICG6-5003,Heart,,false,false,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,10.1126/science.abl4295,
@@ -14,8 +14,8 @@ Male,https://gtexportal.org/home/tissue/Heart_Atrial_Appendage#MDonors_TissueBlo
 Female,https://gtexportal.org/home/tissue/Heart_Left_Ventricle#FDonors_TissueBlock1_TissueBlock1_Dataset1,Heart,,false,false,true,false,true,GTEx,,,
 Male,https://gtexportal.org/home/tissue/Heart_Left_Ventricle#MDonors_TissueBlock1_TissueBlock1_Dataset1,Heart,,false,false,true,false,true,GTEx,,,
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#$right%20cardiac%20atrium,Heart,,false,false,true,true,false,HCA,,https://doi.org/10.1038/s41586-020-2797-4,
-Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart,Heart,6,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20left%20ventricle,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20left%20ventricle,Heart,26,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20right%20ventricle,Heart,14,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$left%20cardiac%20atrium,Heart,12,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$apex%20of%20heart,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
@@ -29,13 +29,13 @@ Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$heart%20right%20ventricle,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$interventricular%20septum,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$left%20cardiac%20atrium,Heart,20,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$right%20cardiac%20atrium,Heart,6,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$right%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$apex%20of%20heart,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$heart%20left%20ventricle,Heart,20,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$heart%20right%20ventricle,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$interventricular%20septum,Heart,17,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$left%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$right%20cardiac%20atrium,Heart,28,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$right%20cardiac%20atrium,Heart,19,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$apex%20of%20heart,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$heart%20left%20ventricle,Heart,17,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$heart%20right%20ventricle,Heart,19,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
@@ -43,7 +43,7 @@ Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$left%20cardiac%20atrium,Heart,19,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$right%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$apex%20of%20heart,Heart,19,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$heart%20left%20ventricle,Heart,17,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$heart%20left%20ventricle,Heart,6,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$heart%20right%20ventricle,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$interventricular%20septum,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$left%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
@@ -69,10 +69,10 @@ Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$apex%20of%20heart,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$heart%20left%20ventricle,Heart,17,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$heart%20right%20ventricle,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$interventricular%20septum,Heart,23,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$interventricular%20septum,Heart,15,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$left%20cardiac%20atrium,Heart,17,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$apex%20of%20heart,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$apex%20of%20heart,Heart,28,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$heart%20left%20ventricle,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$heart%20right%20ventricle,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$interventricular%20septum,Heart,17,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
@@ -84,15 +84,15 @@ Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$interventricular%20septum,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$left%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$right%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$apex%20of%20heart,Heart,26,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$heart%20left%20ventricle,Heart,29,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$apex%20of%20heart,Heart,15,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$heart%20left%20ventricle,Heart,19,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$heart%20right%20ventricle,Heart,29,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$interventricular%20septum,Heart,20,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$left%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$right%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$apex%20of%20heart,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$heart%20left%20ventricle,Heart,15,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
-Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$heart%20right%20ventricle,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
+Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$heart%20right%20ventricle,Heart,28,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$interventricular%20septum,Heart,16,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$left%20cardiac%20atrium,Heart,20,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$right%20cardiac%20atrium,Heart,18,true,true,true,true,false,HCA,Cells of the adult human heart,https://doi.org/10.1038/s41586-020-2797-4,Monika Litvi��ukov��
@@ -149,7 +149,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/0bf827ea01b64963d39a10cac6
 Male,https://entity.api.hubmapconsortium.org/entities/1324f228f23b7ec156c6c58a66bd58fd,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/17f67cb15e59f65e640d85d2f3866cde,Heart,30,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/19304b10d9e1f17af19cccb2feb014a5,Heart,21,true,true,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/21043afd6be7ec258f8a9fa1577c41b5,Heart,20,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/21043afd6be7ec258f8a9fa1577c41b5,Heart,32,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/224e01ccfc20977ee5a6a6a5b96aa7d7,Heart,19,true,true,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/22684b9011fc5aea5cb3f89670a461e8,Heart,21,true,true,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/232aac63e35e0fd4a856bb2ebf7f8d50,Heart,,false,false,true,false,true,HuBMAP,,,
@@ -167,7 +167,7 @@ Female,https://entity.api.hubmapconsortium.org/entities/3d0bf870aaa607cd0bd0146a
 Male,https://entity.api.hubmapconsortium.org/entities/3eb2ebe44756a1a9cd244d8c9507fc7b,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/42b73e4e346571372f4babe678688dfd,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/4b0a0671bad77bc469ae000a66535f31,Heart,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/4c435d2297941eafda7fe30f327f88ec,Heart,19,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/4c435d2297941eafda7fe30f327f88ec,Heart,24,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/53cc1f9c21907d8f7880eed6828ba8a1,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/6cd2abf4cbace23ff76f919a96353363,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/756a0eed9508a9b96a0276b8a7a6d7e2,Heart,,false,false,true,false,true,HuBMAP,,,
@@ -198,9 +198,9 @@ Male,https://entity.api.hubmapconsortium.org/entities/bb53dbcfc65250bc99c0620c78
 Male,https://entity.api.hubmapconsortium.org/entities/bd435ed6aa55e9f57d783ce630d746bf,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/bf6406f58d3bb6144b84ca16938315fa,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/bf88e07da70ee088e31c7f568e41b196,Heart,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/c616de3ce57804ede2dd519a1c8addf2,Heart,32,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/c616de3ce57804ede2dd519a1c8addf2,Heart,20,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/c6a254b2dc2ed46b002500ade163a7cc,Heart,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/c6bb00096b0cf40751f9d6003fb730c7,Heart,30,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/c6bb00096b0cf40751f9d6003fb730c7,Heart,20,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/c715da8f682da0b39231ba04c07f18c6,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/ceab8754162592b4014093f09881a47c,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d0f164331f53f745cfa3e67bf3feb22d,Heart,19,true,true,true,false,true,HuBMAP,,,
@@ -226,7 +226,7 @@ Female,https://entity.api.hubmapconsortium.org/entities/ead5cc01250b4f9ea73dd915
 Female,https://entity.api.hubmapconsortium.org/entities/ef4c4b97a759bd48807ff01400cfb2b8,Heart,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/f19758fd3821bb492f1737a27d3e31d1,Heart,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/f91b925ab975d7f5997c51a72d9b1329,Heart,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/fd57a928d9f3cee7e95d284f1d5b9935,Heart,30,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/fd57a928d9f3cee7e95d284f1d5b9935,Heart,21,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/fdf26c991b398a26be1354543e54af23,Heart,,false,false,true,false,true,HuBMAP,,,
 Female,https://doi.org/10.1161/CIRCRESAHA.120.318458#Donor10_TissueBlock1_TissueBlock1_Dataset1,Heart,,false,false,true,true,false,SPARC,,https://doi.org/10.1161/CIRCRESAHA.120.318458,
 Female,https://doi.org/10.1161/CIRCRESAHA.120.318458#Donor11_TissueBlock1_TissueBlock1_Dataset1,Heart,,false,false,true,true,false,SPARC,,https://doi.org/10.1161/CIRCRESAHA.120.318458,
@@ -544,7 +544,7 @@ Male,http://purl.org/ccf/GTEX-1HSMQ-5005-SM-GKSJF,Lung,,false,false,true,false,t
 Female,https://doi.org/10.1126/science.abl4290#GTEX-13N11-5030,Lung,,false,false,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,10.1126/science.abl4297,
 Female,https://doi.org/10.1126/science.abl4290#GTEX-13N11-5030-SM-H5JDW,Lung,28,true,true,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,https://doi.org/10.1126/science.abl4290,G��kcen Eraslan
 Male,https://doi.org/10.1126/science.abl4290#GTEX-15CHR-5005,Lung,,false,false,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,10.1126/science.abl4296,
-Male,https://doi.org/10.1126/science.abl4290#GTEX-15CHR-5005-SM-H5JDT,Lung,31,true,true,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,https://doi.org/10.1126/science.abl4290,G��kcen Eraslan
+Male,https://doi.org/10.1126/science.abl4290#GTEX-15CHR-5005-SM-H5JDT,Lung,28,true,true,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,https://doi.org/10.1126/science.abl4290,G��kcen Eraslan
 Male,https://doi.org/10.1126/science.abl4290#GTEX-1HSMQ-5005,Lung,,false,false,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,10.1126/science.abl4298,
 Male,https://doi.org/10.1126/science.abl4290#GTEX-1HSMQ-5005-SM-GKSJF,Lung,30,true,true,true,true,true,GTEx,Single-nucleus cross-tissue molecular reference maps toward understanding disease gene function,https://doi.org/10.1126/science.abl4290,G��kcen Eraslan
 Female,https://gtexportal.org/home/tissue/Lung#FDonors_TissueBlock1_TissueBlock1_Dataset1,Lung,,false,false,true,false,true,GTEx,,,
@@ -591,7 +591,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/099a05e6266e1edfdab4db5581
 Male,https://entity.api.hubmapconsortium.org/entities/0ad51e6a4d4b6d4900c2114f31c1bc3c,Lung,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/0b1a9bdd765270100c96e87bc3bd346b,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/0b3884698c52e092b413603232800abe,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/0b590c9e3a62178da592e85572e2f1bf,Lung,28,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/0b590c9e3a62178da592e85572e2f1bf,Lung,47,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/0bd35ddf7c0f4db9150c1a9f782ff5e9,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/0bfcb1dc2c74e13d9d4df4821f5680ea,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/0c207b5991b590f468a2c13457ffb92f,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -611,9 +611,9 @@ Male,https://entity.api.hubmapconsortium.org/entities/155f1bb8140cab8bda64331c0e
 Male,https://entity.api.hubmapconsortium.org/entities/15b1eebc7acb6ec29c6375fd5ac9eadf,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/1636bc3f5388bb309733f7b7423ed9f6,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/16ea48624bc2a33f329e4da02f688bab,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/171bd6114652ce2a1ff0e4757b5eaef9,Lung,28,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/171bd6114652ce2a1ff0e4757b5eaef9,Lung,29,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/172da498e8dd97c28f8a83ee3bf2ceef,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/176edb4b0e16059522f6f087576fbeec,Lung,50,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/176edb4b0e16059522f6f087576fbeec,Lung,39,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/179b836ebc9fa8a4cfd87b592e39478c,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/17fb669b70bc0d46293accd5b0a64426,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/18f644163d1114f46dc67cc75f0a8edd,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -645,13 +645,13 @@ Male,https://entity.api.hubmapconsortium.org/entities/26b642ddbae00e7ff6570ddd57
 Male,https://entity.api.hubmapconsortium.org/entities/26d919225137aa5dc48624bcc14c4585,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/26f87ae1022484a3d16677865752abc0,Lung,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/28adfdab2632a2da190b1ffda55edbce,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/293d9f9a1a076c616ed91d7251ec831c,Lung,34,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/293d9f9a1a076c616ed91d7251ec831c,Lung,50,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/2a676665ea9479d4ba9dbd3bfdfe6070,Lung,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/2afde3a66af791d9b8e02335884ebb01,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/2b75f282f806df3867a4cd9fe2af2175,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/2c3d2c02f2d8e8c1a14ff7d5623f3893,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/2cf796213437461788a38245efc18047,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/2dac500177620d78ca174c2c1d36a6c8,Lung,50,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/2dac500177620d78ca174c2c1d36a6c8,Lung,33,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/2f61b389d2d8603795bd4c8e762bdd1b,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/2f7fd2a7aeb375ea5ec0ea0e74a82d85,Lung,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/2f82f7dc556d57b308e4015be2159f0d,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -665,7 +665,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/322b6e23ffaf69aff3c840c1a1
 Male,https://entity.api.hubmapconsortium.org/entities/32b766911c8a98e5a4f209903f1aa569,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/334a644f20967f51b83ef87bfd337e71,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/35b3448b571ba291609d8b83389685b5,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/37ccf28cb5c06e8ba076f587ee4e50be,Lung,28,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/37ccf28cb5c06e8ba076f587ee4e50be,Lung,47,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/37ec4c8dcb8c6f466a3387c05df52533,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/37ff32a1868159ac3132808b2630259f,Lung,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/38aa597f09db1d885b66fa3f596eb7e9,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -704,7 +704,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/49852844206b94bd859874bf26
 Male,https://entity.api.hubmapconsortium.org/entities/49e36fd2309e1fad0297e71dff13b21a,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/4aa417f213a1a3adf2c03c1d8252ee87,Lung,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/4ae5a725fa9400daf76bc24c0dbe1e1d,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/4b16c24a3997ea8754921b0f1d60bc4d,Lung,33,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/4b16c24a3997ea8754921b0f1d60bc4d,Lung,48,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/4b34ac1bc711691c808701ab2744cf9c,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/4bc9b335040544bc76d87acb189e594a,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/4bceb0a48f16be0bc4243112c7c32eb2,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -723,7 +723,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/521460d6c68852ff5de8f7f19a
 Male,https://entity.api.hubmapconsortium.org/entities/522946aff94472407987b9ffb9d1b971,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/53430601153573f6a2803432d4ac970c,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/53da8d721e5f00e63efe819fa6465ec2,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/53fe8a84564b313d4e8ee90f337129dc,Lung,28,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/53fe8a84564b313d4e8ee90f337129dc,Lung,47,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/5509ec968c8d990424c9985048ac5dd0,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/55268cd4558d68ad5242fdac079e3125,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/56ebc2ebc5446a039cb0a86ace68bd32,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -815,11 +815,11 @@ Male,https://entity.api.hubmapconsortium.org/entities/8464b72f60b42590266834f904
 Female,https://entity.api.hubmapconsortium.org/entities/84aa0347ea3b110097a5e23c58aebf3f,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/84b5c63c679d080f65d55bacabee98b5,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/84d901b9a943dd9c233107a8d502fa3b,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/84db9a72aba9ae0ef740192ad8747ee3,Lung,33,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/84db9a72aba9ae0ef740192ad8747ee3,Lung,32,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/8517d322ac927d842b35887877cf0d78,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/8546ebd5335295b822389fc87c0884c9,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/8574788d347648a14d5e55274f0b24ad,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/85fa094cbdb29173e0a3463dce0790fc,Lung,50,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/85fa094cbdb29173e0a3463dce0790fc,Lung,32,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/86e83042602c59e11d88dd3969c13b5c,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/87972c21b572e98cb9b278e683b8fb5b,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/88a335560ab0bc16c7d63c01d6480f3d,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -866,7 +866,7 @@ Female,https://entity.api.hubmapconsortium.org/entities/a2a6df9d6a6891309bd7b2d7
 Male,https://entity.api.hubmapconsortium.org/entities/a2bf1303a535bba11900932213b0f987,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/a31e8d86a3b46f8a402ddea322ca51fa,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/a34ce7e009df9814e695f57dc529f35c,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/a39fed027b51d97f83cec90c63c44744,Lung,34,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/a39fed027b51d97f83cec90c63c44744,Lung,50,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/a4464393c08c88067d3d6f7b0d94e427,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/a5605d3133a29cd8c6199fb3f546541c,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/a56e28a00d95709aae1fa8e3ca030c0f,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -885,7 +885,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/ac42e6c447aa0498bef641d945
 Male,https://entity.api.hubmapconsortium.org/entities/aca551f41e8e3d876967884d2b002aa1,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/ae1cf3212a4e98bfa807db7c9e4c20de,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/b07b51225e631bb0491303e14fc10b61,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/b0f51c557f05bcff69c9eed090c93b79,Lung,50,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/b0f51c557f05bcff69c9eed090c93b79,Lung,33,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/b1c0802817178ad7b8143a6d422ddf6e,Lung,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/b1e664a6943fbc08ba31e6506de36d87,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/b27ae62cc3f8f2dc6a440b1c8fda7ad6,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -949,7 +949,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/cfea4a20544af9bdb3c60634d7
 Male,https://entity.api.hubmapconsortium.org/entities/d017886a6ecb7231e8374ffd387e8dd6,Lung,,false,false,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/d02ae87d307217460a5d5fee8690153f,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d0c1bd09443c301413f44f7108d20e08,Lung,30,true,true,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/d171ff8d83f707ecca64ff159c7160a7,Lung,50,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/d171ff8d83f707ecca64ff159c7160a7,Lung,39,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d1a6bed45735b4154e10d66c3277ce3f,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d1e29bf7808a8daf6be8f555cd24eb9f,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d25c82a75e24ea430ac185abd36d03b3,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -968,7 +968,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/d68eb55a484036b3575043bdec
 Male,https://entity.api.hubmapconsortium.org/entities/d72167071755738d489c192028cf97bb,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d73169319152f418520c2b833d3eb82e,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d74c1643f3f4c22a4758e5931029ed75,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/d8ec264c4660ef7053764f71ae1789d0,Lung,35,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/d8ec264c4660ef7053764f71ae1789d0,Lung,50,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d90737b6f1563e164f8a30b4315205a0,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d9476d126e8d04cc88f35c20aa8ec0e4,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/d960e39e0fcd8c979c08e03d26f984a5,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -1028,7 +1028,7 @@ Male,https://entity.api.hubmapconsortium.org/entities/f90b5f84189588fdcde86381df
 Male,https://entity.api.hubmapconsortium.org/entities/f9848244883f6c70972acef16680431a,Lung,30,true,true,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/f9cf201c8bc36c096edd0d105672cc55,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/f9cf6c918105b5a4f080eb5c187d4e62,Lung,,false,false,true,false,true,HuBMAP,,,
-Male,https://entity.api.hubmapconsortium.org/entities/faa1acc13943ee9d365b6cc6a3ea889f,Lung,27,true,true,true,false,true,HuBMAP,,,
+Male,https://entity.api.hubmapconsortium.org/entities/faa1acc13943ee9d365b6cc6a3ea889f,Lung,28,true,true,true,false,true,HuBMAP,,,
 Female,https://entity.api.hubmapconsortium.org/entities/faa9b411d73e86e952e98af962a457ec,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/fae67b16f2c5100803b62b5eb02b15b9,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://entity.api.hubmapconsortium.org/entities/fafea10b5a36d5d99ca785bfdc459440,Lung,,false,false,true,false,true,HuBMAP,,,
@@ -1041,11 +1041,11 @@ Male,https://entity.api.hubmapconsortium.org/entities/fdacb21245e14fd126bfce05ae
 Male,https://entity.api.hubmapconsortium.org/entities/fe9081cfbb764d807781b5894187a066,Lung,,false,false,true,false,true,HuBMAP,,,
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D032$lung,Lung,25,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D046$lung,Lung,33,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
-Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D062$lung,Lung,47,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
+Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D062$lung,Lung,30,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D088$lung,Lung,29,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D110_Donor_TissueBlock1_TissueBlock1_Dataset1,Lung,,false,false,true,true,false,NHLBI/LungMap,,https://doi.org/10.7554/eLife.62522,
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D122$lung,Lung,28,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
-Female,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D139$lung,Lung,41,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
+Female,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D139$lung,Lung,27,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D150$lung,Lung,33,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
 Male,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D175$lung,Lung,24,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang
 Female,https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung,Lung,28,true,true,true,true,false,NHLBI/LungMap,LungMAP ��� Human data from a broad age healthy donor group,https://doi.org/10.7554/eLife.62522,Allen Wang

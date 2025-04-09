@@ -1535,7 +1535,7 @@ VHFLung,Cartilage of segmental bronchus,Deuterosomal,http://purl.obolibrary.org/
 VHFLung,Cartilage of segmental bronchus,EC aerocyte capillary,http://purl.obolibrary.org/obo/CL_4028003,64,1152
 VHFLung,Cartilage of segmental bronchus,EC arterial,http://purl.obolibrary.org/obo/CL_1001568,38.16666666666666666667,687
 VHFLung,Cartilage of segmental bronchus,EC general capillary,http://purl.obolibrary.org/obo/CL_4028002,227.5,4095
-VHFLung,Cartilage of segmental bronchus,EC venous pulmonary,http://purl.obolibrary.org/obo/CL_1000414,32.75,393
+VHFLung,Cartilage of segmental bronchus,EC venous pulmonary,http://purl.obolibrary.org/obo/CL_4033008,32.75,393
 VHFLung,Cartilage of segmental bronchus,EC venous systemic,http://purl.obolibrary.org/obo/CL_1000414,20,120
 VHFLung,Cartilage of segmental bronchus,Goblet (bronchial),http://purl.obolibrary.org/obo/CL_0019003,2,6
 VHFLung,Cartilage of segmental bronchus,Goblet (nasal),http://purl.obolibrary.org/obo/CL_0002480,11.75,141
@@ -1544,7 +1544,7 @@ VHFLung,Cartilage of segmental bronchus,Hematopoietic stem cells,http://purl.obo
 VHFLung,Cartilage of segmental bronchus,Interstitial Mph perivascular,http://purl.obolibrary.org/obo/CL_4033043,47.33333333333333333333,426
 VHFLung,Cartilage of segmental bronchus,Interstitial M�� perivascular,https://purl.org/ccf/ASCTB-TEMP_interstitial-m-perivascular,81,729
 VHFLung,Cartilage of segmental bronchus,Ionocyte,http://purl.obolibrary.org/obo/CL_0017000,14.25,171
-VHFLung,Cartilage of segmental bronchus,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0002138,121.33333333333333333333,2184
+VHFLung,Cartilage of segmental bronchus,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0009086,121.33333333333333333333,2184
 VHFLung,Cartilage of segmental bronchus,Mast cells,http://purl.obolibrary.org/obo/CL_0000097,7.16666666666666666667,129
 VHFLung,Cartilage of segmental bronchus,Mesothelium,http://purl.obolibrary.org/obo/CL_1000491,1.5,9
 VHFLung,Cartilage of segmental bronchus,Migratory DCs,http://purl.obolibrary.org/obo/CL_0001056,5,45
@@ -1624,7 +1624,7 @@ VHFLung,Lateral segmental bronchus,Deuterosomal,http://purl.obolibrary.org/obo/C
 VHFLung,Lateral segmental bronchus,EC aerocyte capillary,http://purl.obolibrary.org/obo/CL_4028003,64,1152
 VHFLung,Lateral segmental bronchus,EC arterial,http://purl.obolibrary.org/obo/CL_1001568,38.16666666666666666667,687
 VHFLung,Lateral segmental bronchus,EC general capillary,http://purl.obolibrary.org/obo/CL_4028002,227.5,4095
-VHFLung,Lateral segmental bronchus,EC venous pulmonary,http://purl.obolibrary.org/obo/CL_1000414,32.75,393
+VHFLung,Lateral segmental bronchus,EC venous pulmonary,http://purl.obolibrary.org/obo/CL_4033008,32.75,393
 VHFLung,Lateral segmental bronchus,EC venous systemic,http://purl.obolibrary.org/obo/CL_1000414,20,120
 VHFLung,Lateral segmental bronchus,Goblet (bronchial),http://purl.obolibrary.org/obo/CL_0019003,2,6
 VHFLung,Lateral segmental bronchus,Goblet (nasal),http://purl.obolibrary.org/obo/CL_0002480,11.75,141
@@ -1633,7 +1633,7 @@ VHFLung,Lateral segmental bronchus,Hematopoietic stem cells,http://purl.obolibra
 VHFLung,Lateral segmental bronchus,Interstitial Mph perivascular,http://purl.obolibrary.org/obo/CL_4033043,47.33333333333333333333,426
 VHFLung,Lateral segmental bronchus,Interstitial M�� perivascular,https://purl.org/ccf/ASCTB-TEMP_interstitial-m-perivascular,81,729
 VHFLung,Lateral segmental bronchus,Ionocyte,http://purl.obolibrary.org/obo/CL_0017000,14.25,171
-VHFLung,Lateral segmental bronchus,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0002138,121.33333333333333333333,2184
+VHFLung,Lateral segmental bronchus,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0009086,121.33333333333333333333,2184
 VHFLung,Lateral segmental bronchus,Mast cells,http://purl.obolibrary.org/obo/CL_0000097,7.16666666666666666667,129
 VHFLung,Lateral segmental bronchus,Mesothelium,http://purl.obolibrary.org/obo/CL_1000491,1.5,9
 VHFLung,Lateral segmental bronchus,Migratory DCs,http://purl.obolibrary.org/obo/CL_0001056,5,45
@@ -4090,17 +4090,17 @@ VHMLung,Cartilage of segmental bronchus,B cells,http://purl.obolibrary.org/obo/C
 VHMLung,Cartilage of segmental bronchus,Basal resting,http://purl.obolibrary.org/obo/CL_0002633,32.5,1950
 VHMLung,Cartilage of segmental bronchus,CD4 T cells,http://purl.obolibrary.org/obo/CL_0000624,303.41666666666666666667,21846
 VHMLung,Cartilage of segmental bronchus,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,527.83333333333333333333,19002
-VHMLung,Cartilage of segmental bronchus,CD8 T cells,http://purl.obolibrary.org/obo/CL_0000913,199.5,14364
+VHMLung,Cartilage of segmental bronchus,CD8 T cells,http://purl.obolibrary.org/obo/CL_0000625,199.5,14364
 VHMLung,Cartilage of segmental bronchus,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,50.16666666666666666667,1806
-VHMLung,Cartilage of segmental bronchus,Classical monocytes,http://purl.obolibrary.org/obo/CL_0000576,21.45454545454545454545,1416
+VHMLung,Cartilage of segmental bronchus,Classical monocytes,http://purl.obolibrary.org/obo/CL_0000860,21.45454545454545454545,1416
 VHMLung,Cartilage of segmental bronchus,Club (nasal),http://purl.obolibrary.org/obo/CL_0000158,43,1548
 VHMLung,Cartilage of segmental bronchus,Club (non-nasal),http://purl.obolibrary.org/obo/CL_0000158,2,12
 VHMLung,Cartilage of segmental bronchus,DC1,http://purl.obolibrary.org/obo/CL_0002394,6.66666666666666666667,240
 VHMLung,Cartilage of segmental bronchus,DC2,http://purl.obolibrary.org/obo/CL_0002399,80.91666666666666666667,5826
 VHMLung,Cartilage of segmental bronchus,Deuterosomal,http://purl.obolibrary.org/obo/CL_4033044,3.85714285714285714286,162
 VHMLung,Cartilage of segmental bronchus,EC aerocyte capillary,http://purl.obolibrary.org/obo/CL_4028003,107.41666666666666666667,7734
-VHMLung,Cartilage of segmental bronchus,EC arterial,http://purl.obolibrary.org/obo/CL_1000413,51.75,3726
-VHMLung,Cartilage of segmental bronchus,EC general capillary,http://purl.obolibrary.org/obo/CL_0002144,208.83333333333333333333,15036
+VHMLung,Cartilage of segmental bronchus,EC arterial,http://purl.obolibrary.org/obo/CL_1001568,51.75,3726
+VHMLung,Cartilage of segmental bronchus,EC general capillary,http://purl.obolibrary.org/obo/CL_4028002,208.83333333333333333333,15036
 VHMLung,Cartilage of segmental bronchus,EC venous pulmonary,http://purl.obolibrary.org/obo/CL_4033008,26.4,792
 VHMLung,Cartilage of segmental bronchus,EC venous systemic,http://purl.obolibrary.org/obo/CL_1000414,18.71428571428571428571,786
 VHMLung,Cartilage of segmental bronchus,Goblet (bronchial),http://purl.obolibrary.org/obo/CL_0019003,1,12
@@ -4110,8 +4110,8 @@ VHMLung,Cartilage of segmental bronchus,Hematopoietic stem cells,http://purl.obo
 VHMLung,Cartilage of segmental bronchus,Hillock-like,http://purl.obolibrary.org/obo/CL_0000158,46.66666666666666666667,840
 VHMLung,Cartilage of segmental bronchus,Interstitial Mph perivascular,http://purl.obolibrary.org/obo/CL_4033043,148.16666666666666666667,5334
 VHMLung,Cartilage of segmental bronchus,Interstitial M�� perivascular,https://purl.org/ccf/ASCTB-TEMP_interstitial-m-perivascular,65,2340
-VHMLung,Cartilage of segmental bronchus,Ionocyte,http://purl.obolibrary.org/obo/CL_0005006,9.16666666666666666667,330
-VHMLung,Cartilage of segmental bronchus,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0002138,109.5,6570
+VHMLung,Cartilage of segmental bronchus,Ionocyte,http://purl.obolibrary.org/obo/CL_0017000,9.16666666666666666667,330
+VHMLung,Cartilage of segmental bronchus,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0009086,109.5,6570
 VHMLung,Cartilage of segmental bronchus,Lymphatic EC mature,http://purl.obolibrary.org/obo/CL_0009086,157,1884
 VHMLung,Cartilage of segmental bronchus,Mast cells,http://purl.obolibrary.org/obo/CL_0000097,15.72727272727272727273,1038
 VHMLung,Cartilage of segmental bronchus,Mesothelium,http://purl.obolibrary.org/obo/CL_1000491,2.33333333333333333333,42
@@ -4125,7 +4125,7 @@ VHMLung,Cartilage of segmental bronchus,NK cells,http://purl.obolibrary.org/obo/
 VHMLung,Cartilage of segmental bronchus,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,10.6,318
 VHMLung,Cartilage of segmental bronchus,Non-classical monocytes,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,239.75,17262
 VHMLung,Cartilage of segmental bronchus,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,142.77777777777777777778,7710
-VHMLung,Cartilage of segmental bronchus,Pericytes,http://purl.obolibrary.org/obo/CL_0000669,82,5904
+VHMLung,Cartilage of segmental bronchus,Pericytes,http://purl.obolibrary.org/obo/CL_0009089,82,5904
 VHMLung,Cartilage of segmental bronchus,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,16.11111111111111111111,870
 VHMLung,Cartilage of segmental bronchus,Plasmacytoid DCs,http://purl.obolibrary.org/obo/CL_0001058,18.8,564
 VHMLung,Cartilage of segmental bronchus,SMG duct,http://purl.obolibrary.org/obo/CL_4033023,5.5,198
@@ -4184,17 +4184,17 @@ VHMLung,Lateral segmental bronchus,B cells,http://purl.obolibrary.org/obo/CL_000
 VHMLung,Lateral segmental bronchus,Basal resting,http://purl.obolibrary.org/obo/CL_0002633,32.5,1950
 VHMLung,Lateral segmental bronchus,CD4 T cells,http://purl.obolibrary.org/obo/CL_0000624,303.41666666666666666667,21846
 VHMLung,Lateral segmental bronchus,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,527.83333333333333333333,19002
-VHMLung,Lateral segmental bronchus,CD8 T cells,http://purl.obolibrary.org/obo/CL_0000913,199.5,14364
+VHMLung,Lateral segmental bronchus,CD8 T cells,http://purl.obolibrary.org/obo/CL_0000625,199.5,14364
 VHMLung,Lateral segmental bronchus,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,50.16666666666666666667,1806
-VHMLung,Lateral segmental bronchus,Classical monocytes,http://purl.obolibrary.org/obo/CL_0000576,21.45454545454545454545,1416
+VHMLung,Lateral segmental bronchus,Classical monocytes,http://purl.obolibrary.org/obo/CL_0000860,21.45454545454545454545,1416
 VHMLung,Lateral segmental bronchus,Club (nasal),http://purl.obolibrary.org/obo/CL_0000158,43,1548
 VHMLung,Lateral segmental bronchus,Club (non-nasal),http://purl.obolibrary.org/obo/CL_0000158,2,12
 VHMLung,Lateral segmental bronchus,DC1,http://purl.obolibrary.org/obo/CL_0002394,6.66666666666666666667,240
 VHMLung,Lateral segmental bronchus,DC2,http://purl.obolibrary.org/obo/CL_0002399,80.91666666666666666667,5826
 VHMLung,Lateral segmental bronchus,Deuterosomal,http://purl.obolibrary.org/obo/CL_4033044,3.85714285714285714286,162
 VHMLung,Lateral segmental bronchus,EC aerocyte capillary,http://purl.obolibrary.org/obo/CL_4028003,107.41666666666666666667,7734
-VHMLung,Lateral segmental bronchus,EC arterial,http://purl.obolibrary.org/obo/CL_1000413,51.75,3726
-VHMLung,Lateral segmental bronchus,EC general capillary,http://purl.obolibrary.org/obo/CL_0002144,208.83333333333333333333,15036
+VHMLung,Lateral segmental bronchus,EC arterial,http://purl.obolibrary.org/obo/CL_1001568,51.75,3726
+VHMLung,Lateral segmental bronchus,EC general capillary,http://purl.obolibrary.org/obo/CL_4028002,208.83333333333333333333,15036
 VHMLung,Lateral segmental bronchus,EC venous pulmonary,http://purl.obolibrary.org/obo/CL_4033008,26.4,792
 VHMLung,Lateral segmental bronchus,EC venous systemic,http://purl.obolibrary.org/obo/CL_1000414,18.71428571428571428571,786
 VHMLung,Lateral segmental bronchus,Goblet (bronchial),http://purl.obolibrary.org/obo/CL_0019003,1,12
@@ -4204,8 +4204,8 @@ VHMLung,Lateral segmental bronchus,Hematopoietic stem cells,http://purl.obolibra
 VHMLung,Lateral segmental bronchus,Hillock-like,http://purl.obolibrary.org/obo/CL_0000158,46.66666666666666666667,840
 VHMLung,Lateral segmental bronchus,Interstitial Mph perivascular,http://purl.obolibrary.org/obo/CL_4033043,148.16666666666666666667,5334
 VHMLung,Lateral segmental bronchus,Interstitial M�� perivascular,https://purl.org/ccf/ASCTB-TEMP_interstitial-m-perivascular,65,2340
-VHMLung,Lateral segmental bronchus,Ionocyte,http://purl.obolibrary.org/obo/CL_0005006,9.16666666666666666667,330
-VHMLung,Lateral segmental bronchus,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0002138,109.5,6570
+VHMLung,Lateral segmental bronchus,Ionocyte,http://purl.obolibrary.org/obo/CL_0017000,9.16666666666666666667,330
+VHMLung,Lateral segmental bronchus,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0009086,109.5,6570
 VHMLung,Lateral segmental bronchus,Lymphatic EC mature,http://purl.obolibrary.org/obo/CL_0009086,157,1884
 VHMLung,Lateral segmental bronchus,Mast cells,http://purl.obolibrary.org/obo/CL_0000097,15.72727272727272727273,1038
 VHMLung,Lateral segmental bronchus,Mesothelium,http://purl.obolibrary.org/obo/CL_1000491,2.33333333333333333333,42
@@ -4219,7 +4219,7 @@ VHMLung,Lateral segmental bronchus,NK cells,http://purl.obolibrary.org/obo/CL_00
 VHMLung,Lateral segmental bronchus,Neuroendocrine,http://purl.obolibrary.org/obo/CL_0000165,10.6,318
 VHMLung,Lateral segmental bronchus,Non-classical monocytes,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,239.75,17262
 VHMLung,Lateral segmental bronchus,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,142.77777777777777777778,7710
-VHMLung,Lateral segmental bronchus,Pericytes,http://purl.obolibrary.org/obo/CL_0000669,82,5904
+VHMLung,Lateral segmental bronchus,Pericytes,http://purl.obolibrary.org/obo/CL_0009089,82,5904
 VHMLung,Lateral segmental bronchus,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,16.11111111111111111111,870
 VHMLung,Lateral segmental bronchus,Plasmacytoid DCs,http://purl.obolibrary.org/obo/CL_0001058,18.8,564
 VHMLung,Lateral segmental bronchus,SMG duct,http://purl.obolibrary.org/obo/CL_4033023,5.5,198
@@ -4379,8 +4379,8 @@ VHMLung,Right Medial Bronchopulmonary Segment,Deuterosomal,http://purl.obolibrar
 VHMLung,Right Medial Bronchopulmonary Segment,EC aerocyte capillary,http://purl.obolibrary.org/obo/CL_4028003,922.4375,14759
 VHMLung,Right Medial Bronchopulmonary Segment,EC arterial,http://purl.obolibrary.org/obo/CL_1001568,969.5625,15513
 VHMLung,Right Medial Bronchopulmonary Segment,EC general capillary,http://purl.obolibrary.org/obo/CL_4028002,10122.9375,161967
-VHMLung,Right Medial Bronchopulmonary Segment,EC venous pulmonary,http://purl.obolibrary.org/obo/CL_4033008,425.55555555555555555556,3830
-VHMLung,Right Medial Bronchopulmonary Segment,EC venous systemic,http://purl.obolibrary.org/obo/CL_1000414,3122,21854
+VHMLung,Right Medial Bronchopulmonary Segment,EC venous pulmonary,http://purl.obolibrary.org/obo/CL_1000414,425.55555555555555555556,3830
+VHMLung,Right Medial Bronchopulmonary Segment,EC venous systemic,http://purl.obolibrary.org/obo/CL_4033008,3122,21854
 VHMLung,Right Medial Bronchopulmonary Segment,Goblet (bronchial),http://purl.obolibrary.org/obo/CL_0019003,4.14285714285714285714,29
 VHMLung,Right Medial Bronchopulmonary Segment,Goblet (nasal),http://purl.obolibrary.org/obo/CL_0002480,34.83333333333333333333,418
 VHMLung,Right Medial Bronchopulmonary Segment,Goblet (subsegmental),http://purl.obolibrary.org/obo/CL_1000312,996.125,7969
@@ -4389,7 +4389,7 @@ VHMLung,Right Medial Bronchopulmonary Segment,Hillock-like,http://purl.obolibrar
 VHMLung,Right Medial Bronchopulmonary Segment,Interstitial Mph perivascular,http://purl.obolibrary.org/obo/CL_4033043,95.25,762
 VHMLung,Right Medial Bronchopulmonary Segment,Interstitial M�� perivascular,https://purl.org/ccf/ASCTB-TEMP_interstitial-m-perivascular,8.57142857142857142857,60
 VHMLung,Right Medial Bronchopulmonary Segment,Ionocyte,http://purl.obolibrary.org/obo/CL_0017000,586.5625,9385
-VHMLung,Right Medial Bronchopulmonary Segment,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0009086,648.8,6488
+VHMLung,Right Medial Bronchopulmonary Segment,Lymphatic EC differentiating,http://purl.obolibrary.org/obo/CL_0002138,648.8,6488
 VHMLung,Right Medial Bronchopulmonary Segment,Lymphatic EC mature,http://purl.obolibrary.org/obo/CL_0009086,605.5,3633
 VHMLung,Right Medial Bronchopulmonary Segment,Mast cells,http://purl.obolibrary.org/obo/CL_0000097,290.875,4654
 VHMLung,Right Medial Bronchopulmonary Segment,Mesothelium,http://purl.obolibrary.org/obo/CL_1000491,38.375,307
@@ -4405,8 +4405,8 @@ VHMLung,Right Medial Bronchopulmonary Segment,Non-classical monocytes,https://pu
 VHMLung,Right Medial Bronchopulmonary Segment,Peribronchial fibroblasts,http://purl.obolibrary.org/obo/CL_0002241,114.33333333333333333333,1029
 VHMLung,Right Medial Bronchopulmonary Segment,Pericytes,http://purl.obolibrary.org/obo/CL_0009089,875.1875,14003
 VHMLung,Right Medial Bronchopulmonary Segment,Plasma cells,http://purl.obolibrary.org/obo/CL_0000786,134.0625,2145
-VHMLung,Right Medial Bronchopulmonary Segment,Plasmacytoid DCs,http://purl.obolibrary.org/obo/CL_0000784,18.42857142857142857143,258
-VHMLung,Right Medial Bronchopulmonary Segment,SM activated stress response,http://purl.obolibrary.org/obo/CL_0000313,63.66666666666666666667,191
+VHMLung,Right Medial Bronchopulmonary Segment,Plasmacytoid DCs,http://purl.obolibrary.org/obo/CL_0001058,18.42857142857142857143,258
+VHMLung,Right Medial Bronchopulmonary Segment,SM activated stress response,http://purl.obolibrary.org/obo/CL_0000192,63.66666666666666666667,191
 VHMLung,Right Medial Bronchopulmonary Segment,SMG duct,http://purl.obolibrary.org/obo/CL_4033023,5.28571428571428571429,37
 VHMLung,Right Medial Bronchopulmonary Segment,SMG mucous,http://purl.obolibrary.org/obo/CL_4033022,137.75,1102
 VHMLung,Right Medial Bronchopulmonary Segment,SMG serous (bronchial),http://purl.obolibrary.org/obo/CL_4033005,56,448
