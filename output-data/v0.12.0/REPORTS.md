@@ -8,6 +8,8 @@
   * [Atlas dataset tool, modality, and AS info (as-datasets-modality)](#as-datasets-modality)
   * [Cell Counts for Atlas Proteomics Datasets (atlas-sc-proteomics-cell-counts)](#atlas-sc-proteomics-cell-counts)
   * [Cell Counts for Atlas Transcriptomics Datasets (atlas-sc-transcriptomics-cell-counts)](#atlas-sc-transcriptomics-cell-counts)
+  * [Cell Summaries by Anatomical Structure  (cell-types-in-anatomical-structurescts-per-as)](#cell-types-in-anatomical-structurescts-per-as)
+  * [atlas cell type level mapping (cell-types-level-mapping)](#cell-types-level-mapping)
   * [Atlas consortium breakdown (consortium-breakdown)](#consortium-breakdown)
   * [Datasets by modality (count-dataset-modality)](#count-dataset-modality)
   * [Kidney AS Cell Distributions (counts-for-heart-as)](#counts-for-heart-as)
@@ -469,6 +471,158 @@ WHERE {
 | atlas_sc_transcriptomics_dataset_count | atlas_sc_transcriptomics_cell_count | atlas_sc_transcriptomics_preannotated_cell_count |
 | :--- | :--- | :--- |
 | 525 | 10541300 | 10553618 |
+
+
+### <a id="cell-types-in-anatomical-structurescts-per-as"></a>Cell Summaries by Anatomical Structure  (cell-types-in-anatomical-structurescts-per-as)
+
+Computes the cell summaries for each organ by anatomical strcutrure.
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Cell Summaries by Anatomical Structure 
+#+ description: Computes the cell summaries for each organ by anatomical strcutrure.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?organ ?as ?as_label ?sex ?tool ?modality ?cell_id ?cell_label ?cell_count ?cell_percentage ?dataset_count
+FROM HRA:
+FROM HRApop:
+WHERE {
+  ?as ccf:has_cell_summary [ 
+      ccf:cell_annotation_method ?tool ;
+      ccf:cell_source_label ?as_label ;
+      ccf:sex ?sex ;
+      ccf:modality ?modality ;
+      ccf:aggregated_summary_count ?dataset_count ;
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_id ;
+        ccf:cell_label ?cell_label ;
+        ccf:cell_count ?cell_count ;
+        ccf:percentage_of_total ?cell_percentage ;
+    ]
+  ] .
+  FILTER(STRSTARTS(STR(?as), STR(UBERON:)) || STRSTARTS(STR(?as), STR(FMA:)))
+  
+  ?refOrganPiece ccf:representation_of ?as ;
+      ccf:has_reference_organ ?refOrgan .
+  ?refOrgan ccf:organ_owner_sex ?sex .
+  ?refOrgan skos:prefLabel ?organ .
+}
+ORDER BY ?sex ?as ?tool DESC(?cell_count)
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/cell-types-in-anatomical-structurescts-per-as.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/cell-types-in-anatomical-structurescts-per-as.csv))
+
+| organ | as | as_label | sex | tool | modality | cell_id | cell_label | cell_count | cell_percentage | dataset_count |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| pancreas | http://purl.obolibrary.org/obo/UBERON_0001069 | head of pancreas | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0002079 | ductal | 15.312 | 0.5225225225225225 | 1 |
+| pancreas | http://purl.obolibrary.org/obo/UBERON_0001069 | head of pancreas | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0002064 | acinar | 8.64 | 0.2948402948402948 | 1 |
+| pancreas | http://purl.obolibrary.org/obo/UBERON_0001069 | head of pancreas | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000115 | endothelial | 3.864 | 0.1318591318591318 | 1 |
+| pancreas | http://purl.obolibrary.org/obo/UBERON_0001069 | head of pancreas | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0000738 | immune | 1.464 | 0.04995904995904996 | 1 |
+| pancreas | http://purl.obolibrary.org/obo/UBERON_0001069 | head of pancreas | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0002410 | activated_stellate | 0.024 | 8.190008190008189E-4 | 1 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="cell-types-level-mapping"></a>atlas cell type level mapping (cell-types-level-mapping)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: atlas cell type level mapping
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?cell_label ?cell_id ?level_1_cell_id ?level_1_cell_label
+FROM HRA:
+FROM <https://purl.humanatlas.io/vocab/cl>
+FROM <https://purl.humanatlas.io/vocab/pcl>
+WHERE {
+  # Select cell types to map
+  GRAPH HRApop: {
+    [] ccf:has_cell_summary [
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_id ;
+      ]
+    ] .
+    FILTER(!STRSTARTS(STR(?cell_id), 'https://purl.org/ccf/ASCTB-TEMP'))
+  }
+  ?cell_id rdfs:label ?cell_label .
+  
+  # Match to upper level cell types
+  OPTIONAL {
+    # https://github.com/obophenotype/cell-ontology/blob/master/src/templates/general_cell_types_upper_slim.csv
+    VALUES (?l1_cell_id) {
+      (CL:0000540) # neuron
+      (CL:0000125) # glial cell
+      (CL:0000066) # epithelial cell
+      (CL:0000152) # exocrine cell
+      (CL:0000057) # fibroblast
+      (CL:0000235) # macrophage
+      (CL:0000084) # T cell
+      (CL:0000236) # B cell
+      (CL:0000623) # natural killer cell
+      (CL:0000451) # dendritic cell
+      (CL:0000192) # smooth muscle cell
+      (CL:0000746) # cardiac muscle cell
+      (CL:0000188) # cardiac muscle cell
+      (CL:0000163) # endocrine cell
+      (CL:0000148) # melanocyte
+      (CL:0009004) # retinal cell
+      (CL:0000349) # extraembryonic cell
+      (CL:0000081) # blood cell
+      (CL:0000576) # monocyte
+      (CL:0000039) # germ line cell
+      (CL:0000136) # fat cell
+      (CL:0000499) # stromal cell
+      (CL:0001035) # bone cell
+      (CL:0000034) # stem cell
+    }
+    ?cell_id (rdfs:subClassOf|rdf:type)* ?l1_cell_id .
+    ?l1_cell_id rdfs:label ?l1_cell_label .
+  }
+
+  BIND(COALESCE(?l1_cell_id, CL:0000000) as ?level_1_cell_id)
+  BIND(COALESCE(?l1_cell_label, 'unknown cell') as ?level_1_cell_label)
+}
+ORDER BY ?cell_id
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/cell-types-level-mapping.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/cell-types-level-mapping.csv))
+
+| cell_label | cell_id | level_1_cell_id | level_1_cell_label |
+| :--- | :--- | :--- | :--- |
+| cell | http://purl.obolibrary.org/obo/CL_0000000 | http://purl.obolibrary.org/obo/CL_0000000 | unknown cell |
+| hematopoietic stem cell | http://purl.obolibrary.org/obo/CL_0000037 | http://purl.obolibrary.org/obo/CL_0000034 | stem cell |
+| fibroblast | http://purl.obolibrary.org/obo/CL_0000057 | http://purl.obolibrary.org/obo/CL_0000057 | fibroblast |
+| epithelial cell | http://purl.obolibrary.org/obo/CL_0000066 | http://purl.obolibrary.org/obo/CL_0000066 | epithelial cell |
+| blood vessel endothelial cell | http://purl.obolibrary.org/obo/CL_0000071 | http://purl.obolibrary.org/obo/CL_0000000 | unknown cell |
+| ... | ... | ... | ... |
 
 
 ### <a id="consortium-breakdown"></a>Atlas consortium breakdown (consortium-breakdown)
