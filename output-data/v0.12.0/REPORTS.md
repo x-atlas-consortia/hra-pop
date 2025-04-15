@@ -1998,7 +1998,6 @@ WHERE {
     FILTER(STRSTARTS(STR(?cell_id), "https://purl.org/ccf/ASCTB-TEMP_"))
 
     ?dataset a ccf:Dataset ;
-      ccf:organ_id ?organ_iri ;
       ccf:has_cell_summary [
         ccf:cell_annotation_method ?tool ;
         ccf:modality ?modality ;
@@ -2008,7 +2007,11 @@ WHERE {
         ] ;
       ] .
 
-    BIND(REPLACE(STR(?organ_iri), STR(UBERON:), 'UBERON:') as ?organ)
+    OPTIONAL {
+      ?dataset ccf:organ_id ?organ_iri .
+    }
+
+    BIND(IF(BOUND(?organ_iri), REPLACE(STR(?organ_iri), STR(UBERON:), 'UBERON:'), 'unknown') as ?organ)
 }
 GROUP BY ?tool ?organ ?cell_label
 ORDER BY ?tool ?organ ?cell_label
@@ -9712,7 +9715,6 @@ WHERE {
     FILTER(STRSTARTS(STR(?cell_id), "https://purl.org/ccf/ASCTB-TEMP_"))
 
     ?dataset a ccf:Dataset ;
-      ccf:organ_id ?organ_iri ;
       ccf:has_cell_summary [
         ccf:cell_annotation_method ?tool ;
         ccf:modality ?modality ;
@@ -9722,7 +9724,11 @@ WHERE {
         ] ;
       ] .
 
-    BIND(REPLACE(STR(?organ_iri), STR(UBERON:), 'UBERON:') as ?organ)
+    OPTIONAL {
+      ?dataset ccf:organ_id ?organ_iri .
+    }
+
+    BIND(IF(BOUND(?organ_iri), REPLACE(STR(?organ_iri), STR(UBERON:), 'UBERON:'), 'unknown') as ?organ)
 }
 GROUP BY ?tool ?organ ?cell_label
 ORDER BY ?tool ?organ ?cell_label
