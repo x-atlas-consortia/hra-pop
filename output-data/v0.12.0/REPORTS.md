@@ -110,6 +110,7 @@
   * [Cell Counts for Universe Proteomics Datasets (universe-sc-proteomics-cell-counts)](#universe-sc-proteomics-cell-counts)
   * [Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-counts)](#universe-sc-transcriptomics-cell-counts)
   * [Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-instance-counts)](#universe-sc-transcriptomics-cell-instance-counts)
+  * [Unmapped cell types (unmapped-cell-ids)](#unmapped-cell-ids)
 
 
 
@@ -1989,23 +1990,28 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
 PREFIX rui: <http://purl.org/ccf/1.5/>
 
-SELECT ?tool ?cell_id (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+SELECT ?tool ?organ ?cell_label (COUNT(DISTINCT(?dataset)) as ?dataset_count)
 FROM HRApop:
 FROM HRA:
 WHERE {
+    [] ccf:cell_id ?cell_id .
+    FILTER(STRSTARTS(STR(?cell_id), "https://purl.org/ccf/ASCTB-TEMP_"))
+
     ?dataset a ccf:Dataset ;
+      ccf:organ_id ?organ_iri ;
       ccf:has_cell_summary [
         ccf:cell_annotation_method ?tool ;
         ccf:modality ?modality ;
         ccf:has_cell_summary_row [
           ccf:cell_id ?cell_id ;
+          ccf:cell_label ?cell_label
         ] ;
       ] .
 
-    FILTER(STRSTARTS(STR(?cell_id), "https://purl.org/ccf/ASCTB-TEMP_"))
+    BIND(REPLACE(STR(?organ_iri), STR(UBERON:), 'UBERON:') as ?organ)
 }
-GROUP BY ?tool ?cell_id
-ORDER BY ?tool ?cell_id
+GROUP BY ?tool ?organ ?cell_label
+ORDER BY ?tool ?organ ?cell_label
 
 ```
 
@@ -2014,14 +2020,14 @@ ORDER BY ?tool ?cell_id
 
 #### Results ([View CSV File](reports/atlas-ad-hoc/unmapped-cell-ids.csv))
 
-| tool | cell_id | dataset_count |
-| :--- | :--- | :--- |
-| azimuth | https://purl.org/ccf/ASCTB-TEMP_alveolar-m-proliferating | 4 |
-| azimuth | https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial | 229 |
-| azimuth | https://purl.org/ccf/ASCTB-TEMP_interstitial-m-perivascular | 30 |
-| azimuth | https://purl.org/ccf/ASCTB-TEMP_monocyte-derived-m | 46 |
-| azimuth | https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes | 46 |
-| ... | ... | ... |
+| tool | organ | cell_label | dataset_count |
+| :--- | :--- | :--- | :--- |
+| azimuth | UBERON:0002048 | Alveolar M�� proliferating | 4 |
+| azimuth | UBERON:0002048 | Interstitial M�� perivascular | 30 |
+| azimuth | UBERON:0002048 | Monocyte-derived M�� | 46 |
+| azimuth | UBERON:0002048 | Non-classical monocytes | 46 |
+| azimuth | UBERON:0002048 | Transitional Club-AT2 | 44 |
+| ... | ... | ... | ... |
 
 
 ### <a id="application-a1"></a>Application A1 (application-a1)
@@ -9667,6 +9673,75 @@ WHERE {
 | universe_sc_transcriptomics_dataset_count | universe_sc_transcriptomics_cell_instance_count |
 | :--- | :--- |
 | 6979 | 69124741 |
+
+
+### <a id="unmapped-cell-ids"></a>Unmapped cell types (unmapped-cell-ids)
+
+Cell types per tool that are not in cell ontology yet and the number of datasets affected
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Unmapped cell types
+#+ description: Cell types per tool that are not in cell ontology yet and the number of datasets affected
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT ?tool ?organ ?cell_label (COUNT(DISTINCT(?dataset)) as ?dataset_count)
+FROM HRApop:
+FROM HRA:
+FROM HRApopTestData:
+WHERE {
+    [] ccf:cell_id ?cell_id .
+    FILTER(STRSTARTS(STR(?cell_id), "https://purl.org/ccf/ASCTB-TEMP_"))
+
+    ?dataset a ccf:Dataset ;
+      ccf:organ_id ?organ_iri ;
+      ccf:has_cell_summary [
+        ccf:cell_annotation_method ?tool ;
+        ccf:modality ?modality ;
+        ccf:has_cell_summary_row [
+          ccf:cell_id ?cell_id ;
+          ccf:cell_label ?cell_label
+        ] ;
+      ] .
+
+    BIND(REPLACE(STR(?organ_iri), STR(UBERON:), 'UBERON:') as ?organ)
+}
+GROUP BY ?tool ?organ ?cell_label
+ORDER BY ?tool ?organ ?cell_label
+
+```
+
+([View Source](../../queries/universe-ad-hoc/unmapped-cell-ids.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/unmapped-cell-ids.csv))
+
+| tool | organ | cell_label | dataset_count |
+| :--- | :--- | :--- | :--- |
+| azimuth | UBERON:0002048 | Alveolar M�� proliferating | 4 |
+| azimuth | UBERON:0002048 | Interstitial M�� perivascular | 30 |
+| azimuth | UBERON:0002048 | Monocyte-derived M�� | 46 |
+| azimuth | UBERON:0002048 | Non-classical monocytes | 46 |
+| azimuth | UBERON:0002048 | Transitional Club-AT2 | 44 |
+| ... | ... | ... | ... |
 
 
   

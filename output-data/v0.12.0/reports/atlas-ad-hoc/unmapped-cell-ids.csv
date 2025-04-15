@@ -1,163 +1,285 @@
-tool,cell_id,dataset_count
-azimuth,https://purl.org/ccf/ASCTB-TEMP_alveolar-m-proliferating,4
-azimuth,https://purl.org/ccf/ASCTB-TEMP_descending-vasa-recta-endothelial,229
-azimuth,https://purl.org/ccf/ASCTB-TEMP_interstitial-m-perivascular,30
-azimuth,https://purl.org/ccf/ASCTB-TEMP_monocyte-derived-m,46
-azimuth,https://purl.org/ccf/ASCTB-TEMP_non-classical-monocytes,46
-azimuth,https://purl.org/ccf/ASCTB-TEMP_peritubular-capilary-endothelial,232
-azimuth,https://purl.org/ccf/ASCTB-TEMP_transitional-club-at2,44
-celltypist,https://purl.org/ccf/ASCTB-TEMP_-cells-ins-,20
-celltypist,https://purl.org/ccf/ASCTB-TEMP_activated-cd4-t,31
-celltypist,https://purl.org/ccf/ASCTB-TEMP_activated-cd8-t,42
-celltypist,https://purl.org/ccf/ASCTB-TEMP_activated-t,74
-celltypist,https://purl.org/ccf/ASCTB-TEMP_adult-glia,74
-celltypist,https://purl.org/ccf/ASCTB-TEMP_angiogenic-pericyte,62
-celltypist,https://purl.org/ccf/ASCTB-TEMP_arterial-capillary,76
-celltypist,https://purl.org/ccf/ASCTB-TEMP_best2-goblet-cell,63
-celltypist,https://purl.org/ccf/ASCTB-TEMP_best4-epithelial,72
-celltypist,https://purl.org/ccf/ASCTB-TEMP_branch-a1-imn-,60
-celltypist,https://purl.org/ccf/ASCTB-TEMP_branch-a2-ipan-in-,68
-celltypist,https://purl.org/ccf/ASCTB-TEMP_branch-a3-ipan-in-,60
-celltypist,https://purl.org/ccf/ASCTB-TEMP_branch-a4-in-,72
-celltypist,https://purl.org/ccf/ASCTB-TEMP_branch-b1-emn-,76
-celltypist,https://purl.org/ccf/ASCTB-TEMP_branch-b2-emn-,46
-celltypist,https://purl.org/ccf/ASCTB-TEMP_branch-b3-ipan-,65
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cd8-tmem,63
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cdc1,63
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cdc2,51
-celltypist,https://purl.org/ccf/ASCTB-TEMP_clc-mast-cell,61
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cldn10-cells,59
-celltypist,https://purl.org/ccf/ASCTB-TEMP_clp,63
-celltypist,https://purl.org/ccf/ASCTB-TEMP_colonocyte,52
-celltypist,https://purl.org/ccf/ASCTB-TEMP_contractile-pericyte-pln-,75
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cx3cr1-cd8-tmem,45
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cycling-b-cell,75
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cycling-ec,66
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cycling-encc-glia,44
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cycling-neuroblast,35
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cycling-plasma-cell,76
-celltypist,https://purl.org/ccf/ASCTB-TEMP_cycling-stromal,11
-celltypist,https://purl.org/ccf/ASCTB-TEMP_d-cells-sst-,65
-celltypist,https://purl.org/ccf/ASCTB-TEMP_differentiating-glia,29
-celltypist,https://purl.org/ccf/ASCTB-TEMP_distal-progenitor,50
-celltypist,https://purl.org/ccf/ASCTB-TEMP_dz-gc-cell,64
-celltypist,https://purl.org/ccf/ASCTB-TEMP_ec-cells-npw-,51
-celltypist,https://purl.org/ccf/ASCTB-TEMP_ec-cells-tac1-,63
-celltypist,https://purl.org/ccf/ASCTB-TEMP_eecs,77
-celltypist,https://purl.org/ccf/ASCTB-TEMP_encc-glia-progenitor,40
-celltypist,https://purl.org/ccf/ASCTB-TEMP_enterocyte,70
-celltypist,https://purl.org/ccf/ASCTB-TEMP_fcrl4-memory-b,46
-celltypist,https://purl.org/ccf/ASCTB-TEMP_fdc,55
-celltypist,https://purl.org/ccf/ASCTB-TEMP_fetal-arterial-ec,55
-celltypist,https://purl.org/ccf/ASCTB-TEMP_fetal-venous-ec,65
-celltypist,https://purl.org/ccf/ASCTB-TEMP_gc-b-cell,41
-celltypist,https://purl.org/ccf/ASCTB-TEMP_gdt,8
-celltypist,https://purl.org/ccf/ASCTB-TEMP_germ,53
-celltypist,https://purl.org/ccf/ASCTB-TEMP_glia-1-dhh-,49
-celltypist,https://purl.org/ccf/ASCTB-TEMP_glia-2-eln-,64
-celltypist,https://purl.org/ccf/ASCTB-TEMP_glia-3-bcan-,72
-celltypist,https://purl.org/ccf/ASCTB-TEMP_goblet-cell,78
-celltypist,https://purl.org/ccf/ASCTB-TEMP_i-cells-cck-,70
-celltypist,https://purl.org/ccf/ASCTB-TEMP_icc,47
-celltypist,https://purl.org/ccf/ASCTB-TEMP_iga-plasma-cell,46
-celltypist,https://purl.org/ccf/ASCTB-TEMP_igg-plasma-cell,65
-celltypist,https://purl.org/ccf/ASCTB-TEMP_igm-plasma-cell,9
-celltypist,https://purl.org/ccf/ASCTB-TEMP_ilc2,48
-celltypist,https://purl.org/ccf/ASCTB-TEMP_ilc3,52
-celltypist,https://purl.org/ccf/ASCTB-TEMP_ilcp,57
-celltypist,https://purl.org/ccf/ASCTB-TEMP_immature-b,26
-celltypist,https://purl.org/ccf/ASCTB-TEMP_immature-pericyte,49
-celltypist,https://purl.org/ccf/ASCTB-TEMP_k-cells-gip-,63
-celltypist,https://purl.org/ccf/ASCTB-TEMP_l-cells-pyy-,70
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lec1-ackr4-,70
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lec2-madcam1-,38
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lec3-adgrg3-,66
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lec4-stab2-,73
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lec5-cldn11-,49
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lec6-adamts4-,71
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lti-like-ncr-ilc3,64
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lymphoid-dc,69
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lyve1-macrophage,62
-celltypist,https://purl.org/ccf/ASCTB-TEMP_lz-gc-cell,39
-celltypist,https://purl.org/ccf/ASCTB-TEMP_m-x-cells-mln-ghrl-,49
-celltypist,https://purl.org/ccf/ASCTB-TEMP_macrophages,62
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mait-cell,68
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mast-cell,62
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mature-arterial-ec,74
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mature-venous-ec,73
-celltypist,https://purl.org/ccf/ASCTB-TEMP_megakaryocyte,59
-celltypist,https://purl.org/ccf/ASCTB-TEMP_memory-b,60
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mesoderm-1-hand1-,65
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mesoderm-2-zeb2-,11
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mesothelium,34
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mesothelium-prg4-,26
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mesothelium-rgs5-,68
-celltypist,https://purl.org/ccf/ASCTB-TEMP_microfold-cell,77
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mln-stroma-fmo2-,57
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mlto,69
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mmp9-inflammatory-macrophage,61
-celltypist,https://purl.org/ccf/ASCTB-TEMP_monocytes,64
-celltypist,https://purl.org/ccf/ASCTB-TEMP_mpo-mono-neutrophil,52
-celltypist,https://purl.org/ccf/ASCTB-TEMP_myofibroblast,76
-celltypist,https://purl.org/ccf/ASCTB-TEMP_myofibroblast-rspo2-,71
-celltypist,https://purl.org/ccf/ASCTB-TEMP_n-cells-nts-,41
-celltypist,https://purl.org/ccf/ASCTB-TEMP_naive-b,62
-celltypist,https://purl.org/ccf/ASCTB-TEMP_neuroblast,53
-celltypist,https://purl.org/ccf/ASCTB-TEMP_nk-cell,71
-celltypist,https://purl.org/ccf/ASCTB-TEMP_nk-t-cell,69
-celltypist,https://purl.org/ccf/ASCTB-TEMP_paneth,70
-celltypist,https://purl.org/ccf/ASCTB-TEMP_pdc,52
-celltypist,https://purl.org/ccf/ASCTB-TEMP_pericyte,66
-celltypist,https://purl.org/ccf/ASCTB-TEMP_pre-b,70
-celltypist,https://purl.org/ccf/ASCTB-TEMP_pro-b,62
-celltypist,https://purl.org/ccf/ASCTB-TEMP_progenitor-neurog3-,71
-celltypist,https://purl.org/ccf/ASCTB-TEMP_proximal-progenitor,69
-celltypist,https://purl.org/ccf/ASCTB-TEMP_rbc,59
-celltypist,https://purl.org/ccf/ASCTB-TEMP_sell-cd4-t,58
-celltypist,https://purl.org/ccf/ASCTB-TEMP_sell-cd8-t,65
-celltypist,https://purl.org/ccf/ASCTB-TEMP_smc-part1-capn3-,68
-celltypist,https://purl.org/ccf/ASCTB-TEMP_smc-plpp2-,65
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stat1-naive-b,74
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stem-cells,75
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stromal-1-adamdec1-,9
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stromal-1-ccl11-,61
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stromal-2-ch25h-,52
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stromal-2-npy-,60
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stromal-3-c7-,61
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stromal-3-kcnn3-,65
-celltypist,https://purl.org/ccf/ASCTB-TEMP_stromal-4-mmp1-,51
-celltypist,https://purl.org/ccf/ASCTB-TEMP_t-reticular,71
-celltypist,https://purl.org/ccf/ASCTB-TEMP_ta,64
-celltypist,https://purl.org/ccf/ASCTB-TEMP_tfh,73
-celltypist,https://purl.org/ccf/ASCTB-TEMP_th1,66
-celltypist,https://purl.org/ccf/ASCTB-TEMP_th17,53
-celltypist,https://purl.org/ccf/ASCTB-TEMP_transitional-stromal-3-c3-,73
-celltypist,https://purl.org/ccf/ASCTB-TEMP_trdv2-trgv9-gdt,60
-celltypist,https://purl.org/ccf/ASCTB-TEMP_treg,55
-celltypist,https://purl.org/ccf/ASCTB-TEMP_trgv2-gdt,77
-celltypist,https://purl.org/ccf/ASCTB-TEMP_trgv4-gdt,69
-celltypist,https://purl.org/ccf/ASCTB-TEMP_trgv5-7-gdt,28
-celltypist,https://purl.org/ccf/ASCTB-TEMP_tuft,75
-celltypist,https://purl.org/ccf/ASCTB-TEMP_venous-capillary,36
-popv,https://purl.org/ccf/ASCTB-TEMP_b-cell-cd19-positive,2
-popv,https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,8
-popv,https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,8
-popv,https://purl.org/ccf/ASCTB-TEMP_colon-epithelial-cell,6
-popv,https://purl.org/ccf/ASCTB-TEMP_conventional-dendritic-cell,1
-popv,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell-of-large-intestine,11
-popv,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell-of-small-intestine,1
-popv,https://purl.org/ccf/ASCTB-TEMP_pneumocyte,19
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,6
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_basal-epithelial-cell,1
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_cd68,10
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_cd68-macrophage,2
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_ddb2,10
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_endothelial,18
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_ki67,10
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial-and-some-immune-cells-,1
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_mast-cell,1
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_mpo-,1
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,6
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_p53,10
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_podoplanin,6
-sc_proteomics,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,2
+tool,organ,cell_label,dataset_count
+azimuth,UBERON:0002048,Alveolar M�� proliferating,4
+azimuth,UBERON:0002048,Interstitial M�� perivascular,30
+azimuth,UBERON:0002048,Monocyte-derived M��,46
+azimuth,UBERON:0002048,Non-classical monocytes,46
+azimuth,UBERON:0002048,Transitional Club-AT2,44
+azimuth,UBERON:0002113,"Descending Vasa Recta Endothelial ",229
+azimuth,UBERON:0002113,"Peritubular Capilary Endothelial ",232
+celltypist,UBERON:0000059,Activated CD4 T,12
+celltypist,UBERON:0000059,Activated CD8 T,21
+celltypist,UBERON:0000059,Activated T,38
+celltypist,UBERON:0000059,Adult Glia,39
+celltypist,UBERON:0000059,BEST2+ Goblet cell,39
+celltypist,UBERON:0000059,BEST4+ epithelial,38
+celltypist,UBERON:0000059,Branch A1 (iMN),33
+celltypist,UBERON:0000059,Branch A2 (IPAN/IN),37
+celltypist,UBERON:0000059,Branch A3 (IPAN/IN),30
+celltypist,UBERON:0000059,Branch A4 (IN),37
+celltypist,UBERON:0000059,Branch B1 (eMN),37
+celltypist,UBERON:0000059,Branch B2 (eMN),27
+celltypist,UBERON:0000059,Branch B3 (IPAN),35
+celltypist,UBERON:0000059,CD8 Tmem,34
+celltypist,UBERON:0000059,CLC+ Mast cell,32
+celltypist,UBERON:0000059,CLDN10+ cells,31
+celltypist,UBERON:0000059,CLP,34
+celltypist,UBERON:0000059,CX3CR1+ CD8 Tmem,26
+celltypist,UBERON:0000059,Colonocyte,38
+celltypist,UBERON:0000059,Contractile pericyte (PLN+),39
+celltypist,UBERON:0000059,Cycling B cell,39
+celltypist,UBERON:0000059,Cycling plasma cell,39
+celltypist,UBERON:0000059,D cells (SST+),32
+celltypist,UBERON:0000059,DZ GC cell,30
+celltypist,UBERON:0000059,Differentiating glia,19
+celltypist,UBERON:0000059,Distal progenitor,30
+celltypist,UBERON:0000059,EC cells (NPW+),29
+celltypist,UBERON:0000059,EC cells (TAC1+),32
+celltypist,UBERON:0000059,EECs,39
+celltypist,UBERON:0000059,ENCC/glia Progenitor,25
+celltypist,UBERON:0000059,Enterocyte,32
+celltypist,UBERON:0000059,FCRL4+ Memory B,20
+celltypist,UBERON:0000059,FDC,26
+celltypist,UBERON:0000059,Fetal arterial EC,32
+celltypist,UBERON:0000059,Fetal venous EC,36
+celltypist,UBERON:0000059,GC B cell,22
+celltypist,UBERON:0000059,Germ,30
+celltypist,UBERON:0000059,Glia 1 (DHH+),25
+celltypist,UBERON:0000059,Glia 2 (ELN+),33
+celltypist,UBERON:0000059,Glia 3 (BCAN+),39
+celltypist,UBERON:0000059,Goblet cell,39
+celltypist,UBERON:0000059,I cells (CCK+),33
+celltypist,UBERON:0000059,ICC,26
+celltypist,UBERON:0000059,ILC2,26
+celltypist,UBERON:0000059,ILC3,29
+celltypist,UBERON:0000059,ILCP,33
+celltypist,UBERON:0000059,IgA plasma cell,26
+celltypist,UBERON:0000059,IgG plasma cell,35
+celltypist,UBERON:0000059,IgM plasma cell,5
+celltypist,UBERON:0000059,Immature B,14
+celltypist,UBERON:0000059,Immature pericyte,23
+celltypist,UBERON:0000059,K cells (GIP+),28
+celltypist,UBERON:0000059,L cells (PYY+),36
+celltypist,UBERON:0000059,LEC1 (ACKR4+),37
+celltypist,UBERON:0000059,LEC2 (MADCAM1+),19
+celltypist,UBERON:0000059,LEC3 (ADGRG3+),34
+celltypist,UBERON:0000059,LEC4 (STAB2+),36
+celltypist,UBERON:0000059,LEC5 (CLDN11+),26
+celltypist,UBERON:0000059,LEC6 (ADAMTS4+),38
+celltypist,UBERON:0000059,LTi-like NCR+ ILC3,15
+celltypist,UBERON:0000059,LTi-like NCR- ILC3,19
+celltypist,UBERON:0000059,LYVE1+ Macrophage,33
+celltypist,UBERON:0000059,LZ GC cell,22
+celltypist,UBERON:0000059,Lymphoid DC,36
+celltypist,UBERON:0000059,M/X cells (MLN/GHRL+),17
+celltypist,UBERON:0000059,MAIT cell,35
+celltypist,UBERON:0000059,MMP9+ Inflammatory macrophage,34
+celltypist,UBERON:0000059,MPO+ mono-neutrophil,27
+celltypist,UBERON:0000059,Macrophages,36
+celltypist,UBERON:0000059,Mast cell,32
+celltypist,UBERON:0000059,Mature arterial EC,39
+celltypist,UBERON:0000059,Mature venous EC,38
+celltypist,UBERON:0000059,Megakaryocyte,34
+celltypist,UBERON:0000059,Memory B,33
+celltypist,UBERON:0000059,Mesoderm 1 (HAND1+),36
+celltypist,UBERON:0000059,Mesoderm 2 (ZEB2+),10
+celltypist,UBERON:0000059,Mesothelium,20
+celltypist,UBERON:0000059,Mesothelium (PRG4+),18
+celltypist,UBERON:0000059,Mesothelium (RGS5+),39
+celltypist,UBERON:0000059,Microfold cell,38
+celltypist,UBERON:0000059,Monocytes,36
+celltypist,UBERON:0000059,N cells (NTS+),18
+celltypist,UBERON:0000059,NK T cell,35
+celltypist,UBERON:0000059,NK cell,36
+celltypist,UBERON:0000059,Naive B,34
+celltypist,UBERON:0000059,Neuroblast,30
+celltypist,UBERON:0000059,Paneth,33
+celltypist,UBERON:0000059,Pericyte,36
+celltypist,UBERON:0000059,Pre-B,34
+celltypist,UBERON:0000059,Pro-B,33
+celltypist,UBERON:0000059,Progenitor (NEUROG3+),35
+celltypist,UBERON:0000059,Proximal progenitor,36
+celltypist,UBERON:0000059,RBC,32
+celltypist,UBERON:0000059,SELL+ CD4 T,32
+celltypist,UBERON:0000059,SELL+ CD8 T,37
+celltypist,UBERON:0000059,SMC (PART1/CAPN3+),36
+celltypist,UBERON:0000059,SMC (PLPP2+),36
+celltypist,UBERON:0000059,STAT1+ Naive B,37
+celltypist,UBERON:0000059,Stem cells,39
+celltypist,UBERON:0000059,Stromal 1 (ADAMDEC1+),3
+celltypist,UBERON:0000059,Stromal 1 (CCL11+),33
+celltypist,UBERON:0000059,Stromal 2 (CH25H+),35
+celltypist,UBERON:0000059,Stromal 2 (NPY+),31
+celltypist,UBERON:0000059,Stromal 3 (C7+),33
+celltypist,UBERON:0000059,Stromal 3 (KCNN3+),35
+celltypist,UBERON:0000059,Stromal 4 (MMP1+),30
+celltypist,UBERON:0000059,T reticular,35
+celltypist,UBERON:0000059,TA,36
+celltypist,UBERON:0000059,TRDV2/TRGV9 gdT,27
+celltypist,UBERON:0000059,TRGV2 gdT,38
+celltypist,UBERON:0000059,TRGV4 gdT,35
+celltypist,UBERON:0000059,TRGV5/7 gdT,15
+celltypist,UBERON:0000059,Tfh,38
+celltypist,UBERON:0000059,Th1,33
+celltypist,UBERON:0000059,Th17,25
+celltypist,UBERON:0000059,Transitional Stromal 3 (C3+),39
+celltypist,UBERON:0000059,Treg,29
+celltypist,UBERON:0000059,Tuft,37
+celltypist,UBERON:0000059,angiogenic pericyte,36
+celltypist,UBERON:0000059,arterial capillary,38
+celltypist,UBERON:0000059,cDC1,33
+celltypist,UBERON:0000059,cDC2,32
+celltypist,UBERON:0000059,cycling EC,33
+celltypist,UBERON:0000059,cycling ENCC/glia,31
+celltypist,UBERON:0000059,cycling neuroblast,22
+celltypist,UBERON:0000059,cycling stromal,6
+celltypist,UBERON:0000059,gdT,4
+celltypist,UBERON:0000059,mLN Stroma (FMO2+),35
+celltypist,UBERON:0000059,mLTo,36
+celltypist,UBERON:0000059,myofibroblast,39
+celltypist,UBERON:0000059,myofibroblast (RSPO2+),37
+celltypist,UBERON:0000059,pDC,25
+celltypist,UBERON:0000059,venous capillary,23
+celltypist,UBERON:0000059,�� cells (INS+),9
+celltypist,UBERON:0002108,Activated CD4 T,19
+celltypist,UBERON:0002108,Activated CD8 T,21
+celltypist,UBERON:0002108,Activated T,36
+celltypist,UBERON:0002108,Adult Glia,35
+celltypist,UBERON:0002108,BEST2+ Goblet cell,24
+celltypist,UBERON:0002108,BEST4+ epithelial,34
+celltypist,UBERON:0002108,Branch A1 (iMN),27
+celltypist,UBERON:0002108,Branch A2 (IPAN/IN),31
+celltypist,UBERON:0002108,Branch A3 (IPAN/IN),30
+celltypist,UBERON:0002108,Branch A4 (IN),35
+celltypist,UBERON:0002108,Branch B1 (eMN),39
+celltypist,UBERON:0002108,Branch B2 (eMN),19
+celltypist,UBERON:0002108,Branch B3 (IPAN),30
+celltypist,UBERON:0002108,CD8 Tmem,29
+celltypist,UBERON:0002108,CLC+ Mast cell,29
+celltypist,UBERON:0002108,CLDN10+ cells,28
+celltypist,UBERON:0002108,CLP,29
+celltypist,UBERON:0002108,CX3CR1+ CD8 Tmem,19
+celltypist,UBERON:0002108,Colonocyte,14
+celltypist,UBERON:0002108,Contractile pericyte (PLN+),36
+celltypist,UBERON:0002108,Cycling B cell,36
+celltypist,UBERON:0002108,Cycling plasma cell,37
+celltypist,UBERON:0002108,D cells (SST+),33
+celltypist,UBERON:0002108,DZ GC cell,34
+celltypist,UBERON:0002108,Differentiating glia,10
+celltypist,UBERON:0002108,Distal progenitor,20
+celltypist,UBERON:0002108,EC cells (NPW+),22
+celltypist,UBERON:0002108,EC cells (TAC1+),31
+celltypist,UBERON:0002108,EECs,38
+celltypist,UBERON:0002108,ENCC/glia Progenitor,15
+celltypist,UBERON:0002108,Enterocyte,38
+celltypist,UBERON:0002108,FCRL4+ Memory B,26
+celltypist,UBERON:0002108,FDC,29
+celltypist,UBERON:0002108,Fetal arterial EC,23
+celltypist,UBERON:0002108,Fetal venous EC,29
+celltypist,UBERON:0002108,GC B cell,19
+celltypist,UBERON:0002108,Germ,23
+celltypist,UBERON:0002108,Glia 1 (DHH+),24
+celltypist,UBERON:0002108,Glia 2 (ELN+),31
+celltypist,UBERON:0002108,Glia 3 (BCAN+),33
+celltypist,UBERON:0002108,Goblet cell,39
+celltypist,UBERON:0002108,I cells (CCK+),37
+celltypist,UBERON:0002108,ICC,21
+celltypist,UBERON:0002108,ILC2,22
+celltypist,UBERON:0002108,ILC3,23
+celltypist,UBERON:0002108,ILCP,24
+celltypist,UBERON:0002108,IgA plasma cell,20
+celltypist,UBERON:0002108,IgG plasma cell,30
+celltypist,UBERON:0002108,IgM plasma cell,4
+celltypist,UBERON:0002108,Immature B,12
+celltypist,UBERON:0002108,Immature pericyte,26
+celltypist,UBERON:0002108,K cells (GIP+),35
+celltypist,UBERON:0002108,L cells (PYY+),34
+celltypist,UBERON:0002108,LEC1 (ACKR4+),33
+celltypist,UBERON:0002108,LEC2 (MADCAM1+),19
+celltypist,UBERON:0002108,LEC3 (ADGRG3+),32
+celltypist,UBERON:0002108,LEC4 (STAB2+),37
+celltypist,UBERON:0002108,LEC5 (CLDN11+),23
+celltypist,UBERON:0002108,LEC6 (ADAMTS4+),33
+celltypist,UBERON:0002108,LTi-like NCR+ ILC3,12
+celltypist,UBERON:0002108,LTi-like NCR- ILC3,18
+celltypist,UBERON:0002108,LYVE1+ Macrophage,29
+celltypist,UBERON:0002108,LZ GC cell,17
+celltypist,UBERON:0002108,Lymphoid DC,33
+celltypist,UBERON:0002108,M/X cells (MLN/GHRL+),32
+celltypist,UBERON:0002108,MAIT cell,33
+celltypist,UBERON:0002108,MMP9+ Inflammatory macrophage,27
+celltypist,UBERON:0002108,MPO+ mono-neutrophil,25
+celltypist,UBERON:0002108,Macrophages,26
+celltypist,UBERON:0002108,Mast cell,30
+celltypist,UBERON:0002108,Mature arterial EC,35
+celltypist,UBERON:0002108,Mature venous EC,35
+celltypist,UBERON:0002108,Megakaryocyte,25
+celltypist,UBERON:0002108,Memory B,27
+celltypist,UBERON:0002108,Mesoderm 1 (HAND1+),29
+celltypist,UBERON:0002108,Mesoderm 2 (ZEB2+),1
+celltypist,UBERON:0002108,Mesothelium,14
+celltypist,UBERON:0002108,Mesothelium (PRG4+),8
+celltypist,UBERON:0002108,Mesothelium (RGS5+),29
+celltypist,UBERON:0002108,Microfold cell,39
+celltypist,UBERON:0002108,Monocytes,28
+celltypist,UBERON:0002108,N cells (NTS+),23
+celltypist,UBERON:0002108,NK T cell,34
+celltypist,UBERON:0002108,NK cell,35
+celltypist,UBERON:0002108,Naive B,28
+celltypist,UBERON:0002108,Neuroblast,23
+celltypist,UBERON:0002108,Paneth,37
+celltypist,UBERON:0002108,Pericyte,30
+celltypist,UBERON:0002108,Pre-B,36
+celltypist,UBERON:0002108,Pro-B,29
+celltypist,UBERON:0002108,Progenitor (NEUROG3+),36
+celltypist,UBERON:0002108,Proximal progenitor,33
+celltypist,UBERON:0002108,RBC,27
+celltypist,UBERON:0002108,SELL+ CD4 T,26
+celltypist,UBERON:0002108,SELL+ CD8 T,28
+celltypist,UBERON:0002108,SMC (PART1/CAPN3+),32
+celltypist,UBERON:0002108,SMC (PLPP2+),29
+celltypist,UBERON:0002108,STAT1+ Naive B,37
+celltypist,UBERON:0002108,Stem cells,36
+celltypist,UBERON:0002108,Stromal 1 (ADAMDEC1+),6
+celltypist,UBERON:0002108,Stromal 1 (CCL11+),28
+celltypist,UBERON:0002108,Stromal 2 (CH25H+),17
+celltypist,UBERON:0002108,Stromal 2 (NPY+),29
+celltypist,UBERON:0002108,Stromal 3 (C7+),28
+celltypist,UBERON:0002108,Stromal 3 (KCNN3+),30
+celltypist,UBERON:0002108,Stromal 4 (MMP1+),21
+celltypist,UBERON:0002108,T reticular,36
+celltypist,UBERON:0002108,TA,28
+celltypist,UBERON:0002108,TRDV2/TRGV9 gdT,33
+celltypist,UBERON:0002108,TRGV2 gdT,39
+celltypist,UBERON:0002108,TRGV4 gdT,34
+celltypist,UBERON:0002108,TRGV5/7 gdT,13
+celltypist,UBERON:0002108,Tfh,35
+celltypist,UBERON:0002108,Th1,33
+celltypist,UBERON:0002108,Th17,28
+celltypist,UBERON:0002108,Transitional Stromal 3 (C3+),34
+celltypist,UBERON:0002108,Treg,26
+celltypist,UBERON:0002108,Tuft,38
+celltypist,UBERON:0002108,angiogenic pericyte,26
+celltypist,UBERON:0002108,arterial capillary,38
+celltypist,UBERON:0002108,cDC1,30
+celltypist,UBERON:0002108,cDC2,19
+celltypist,UBERON:0002108,cycling EC,33
+celltypist,UBERON:0002108,cycling ENCC/glia,13
+celltypist,UBERON:0002108,cycling neuroblast,13
+celltypist,UBERON:0002108,cycling stromal,5
+celltypist,UBERON:0002108,gdT,4
+celltypist,UBERON:0002108,mLN Stroma (FMO2+),22
+celltypist,UBERON:0002108,mLTo,33
+celltypist,UBERON:0002108,myofibroblast,37
+celltypist,UBERON:0002108,myofibroblast (RSPO2+),34
+celltypist,UBERON:0002108,pDC,27
+celltypist,UBERON:0002108,venous capillary,13
+celltypist,UBERON:0002108,�� cells (INS+),11
+popv,UBERON:0000059,colon epithelial cell,6
+popv,UBERON:0000059,epithelial cell of large intestine,11
+popv,UBERON:0002048,pneumocyte,19
+popv,UBERON:0002097,"CD8-positive, alpha-beta T cell",1
+popv,UBERON:0002097,conventional dendritic cell,1
+popv,UBERON:0002106,"B cell, CD19-positive",2
+popv,UBERON:0002106,"CD4-positive, alpha-beta T cell",8
+popv,UBERON:0002106,"CD8-positive, alpha-beta T cell",7
+popv,UBERON:0002108,epithelial cell of small intestine,1
