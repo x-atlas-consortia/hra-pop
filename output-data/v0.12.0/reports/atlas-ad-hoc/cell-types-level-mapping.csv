@@ -14,13 +14,8 @@ melanocyte,http://purl.obolibrary.org/obo/CL_0000148,http://purl.obolibrary.org/
 club cell,http://purl.obolibrary.org/obo/CL_0000158,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 goblet cell,http://purl.obolibrary.org/obo/CL_0000160,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 neuroendocrine cell,http://purl.obolibrary.org/obo/CL_0000165,http://purl.obolibrary.org/obo/CL_0000540,neuron
-neuroendocrine cell,http://purl.obolibrary.org/obo/CL_0000165,http://purl.obolibrary.org/obo/CL_0000163,endocrine cell
-neuroendocrine cell,http://purl.obolibrary.org/obo/CL_0000165,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,http://purl.obolibrary.org/obo/CL_0000163,endocrine cell
-pancreatic A cell,http://purl.obolibrary.org/obo/CL_0000171,http://purl.obolibrary.org/obo/CL_0000163,endocrine cell
 pancreatic A cell,http://purl.obolibrary.org/obo/CL_0000171,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-pancreatic D cell,http://purl.obolibrary.org/obo/CL_0000173,http://purl.obolibrary.org/obo/CL_0000163,endocrine cell
 pancreatic D cell,http://purl.obolibrary.org/obo/CL_0000173,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 hepatocyte,http://purl.obolibrary.org/obo/CL_0000182,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,http://purl.obolibrary.org/obo/CL_0000000,unknown cell
@@ -89,7 +84,6 @@ innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,http://purl.oboli
 T follicular helper cell,http://purl.obolibrary.org/obo/CL_0002038,http://purl.obolibrary.org/obo/CL_0000084,T cell
 pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-pancreatic acinar cell,http://purl.obolibrary.org/obo/CL_0002064,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 pancreatic acinar cell,http://purl.obolibrary.org/obo/CL_0002064,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell
 Purkinje myocyte,http://purl.obolibrary.org/obo/CL_0002068,http://purl.obolibrary.org/obo/CL_0000746,cardiac muscle cell
 enterocyte of epithelium of large intestine,http://purl.obolibrary.org/obo/CL_0002071,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -104,7 +98,6 @@ corneocyte,http://purl.obolibrary.org/obo/CL_0002153,http://purl.obolibrary.org/
 renal beta-intercalated cell,http://purl.obolibrary.org/obo/CL_0002201,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 pulmonary interstitial fibroblast,http://purl.obolibrary.org/obo/CL_0002241,http://purl.obolibrary.org/obo/CL_0000057,fibroblast
 pancreatic PP cell,http://purl.obolibrary.org/obo/CL_0002275,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-pancreatic PP cell,http://purl.obolibrary.org/obo/CL_0002275,http://purl.obolibrary.org/obo/CL_0000163,endocrine cell
 luminal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002340,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 basal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002341,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 endocardial cell,http://purl.obolibrary.org/obo/CL_0002350,http://purl.obolibrary.org/obo/CL_0000000,unknown cell
@@ -130,7 +123,6 @@ paneth cell of colon,http://purl.obolibrary.org/obo/CL_0009009,http://purl.oboli
 transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,http://purl.obolibrary.org/obo/CL_0000000,unknown cell
 transit amplifying cell of colon,http://purl.obolibrary.org/obo/CL_0009011,http://purl.obolibrary.org/obo/CL_0000000,unknown cell
 intestinal crypt stem cell of large intestine,http://purl.obolibrary.org/obo/CL_0009016,http://purl.obolibrary.org/obo/CL_0000034,stem cell
-intestinal crypt stem cell of large intestine,http://purl.obolibrary.org/obo/CL_0009016,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 tuft cell of small intestine,http://purl.obolibrary.org/obo/CL_0009080,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 endothelial cell of respiratory system lymphatic vessel,http://purl.obolibrary.org/obo/CL_0009086,http://purl.obolibrary.org/obo/CL_0000000,unknown cell
 lung pericyte,http://purl.obolibrary.org/obo/CL_0009089,http://purl.obolibrary.org/obo/CL_0000000,unknown cell
@@ -192,7 +184,6 @@ renal medullary fibroblast,http://purl.obolibrary.org/obo/CL_4030022,http://purl
 serous secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033005,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell
 vein endothelial cell of respiratory system,http://purl.obolibrary.org/obo/CL_4033008,http://purl.obolibrary.org/obo/CL_0000000,unknown cell
 mucus secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033022,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-mucus secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033022,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell
 airway submucosal gland collecting duct epithelial cell,http://purl.obolibrary.org/obo/CL_4033023,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 "lung resident memory CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_4033038,http://purl.obolibrary.org/obo/CL_0000084,T cell
 "lung resident memory CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_4033039,http://purl.obolibrary.org/obo/CL_0000084,T cell

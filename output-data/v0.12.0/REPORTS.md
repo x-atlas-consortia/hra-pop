@@ -555,7 +555,7 @@ PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 
-SELECT DISTINCT ?cell_label ?cell_id ?level_1_cell_id ?level_1_cell_label
+SELECT ?cell_label ?cell_id (SAMPLE(?level_1_cell_id) as ?level_1_cell_id) (SAMPLE(?level_1_cell_label) as ?level_1_cell_label)
 FROM HRA:
 FROM <https://purl.humanatlas.io/vocab/cl>
 FROM <https://purl.humanatlas.io/vocab/pcl>
@@ -607,6 +607,7 @@ WHERE {
   BIND(COALESCE(?l1_cell_id, CL:0000000) as ?level_1_cell_id)
   BIND(COALESCE(?l1_cell_label, 'unknown cell') as ?level_1_cell_label)
 }
+GROUP BY ?cell_id ?cell_label
 ORDER BY ?cell_id
 
 ```
