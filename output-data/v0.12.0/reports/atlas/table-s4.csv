@@ -126,12 +126,12 @@ VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,B Cell,http://purl.ob
 VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,CD4+ T Cell,http://purl.obolibrary.org/obo/CL_4033038,68003,68003
 VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,CD68+ Macrophage,https://purl.org/ccf/ASCTB-TEMP_cd68-macrophage,259113,259113
 VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,CD8+ T Cell,http://purl.obolibrary.org/obo/CL_4033039,7055,7055
-VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,49444,49444
+VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,49444,49444
 VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,Smooth Muscle Cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,113656,113656
 VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,Type 2 Alveolar Epithelial Cell,http://purl.obolibrary.org/obo/CL_0002063,116218,116218
 VHFSkin,skin,CD68,https://purl.org/ccf/ASCTB-TEMP_cd68,118.33333333333333333333,355
 VHFSkin,skin,DDB2,https://purl.org/ccf/ASCTB-TEMP_ddb2,675,2025
-VHFSkin,skin,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,1811,5433
+VHFSkin,skin,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,1811,5433
 VHFSkin,skin,KI67,https://purl.org/ccf/ASCTB-TEMP_ki67,566.66666666666666666667,1700
 VHFSkin,skin,P53,https://purl.org/ccf/ASCTB-TEMP_p53,214.66666666666666666667,644
 VHFSkin,skin,T-Helper,http://purl.obolibrary.org/obo/CL_0000912,1030,3090
@@ -287,28 +287,28 @@ VHFSmallIntestine,jejunum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2943,
 VHFSmallIntestine,jejunum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,4200.5,8401
 VHFSmallIntestine,jejunum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,2563,5126
 VHFSmallIntestine,jejunum,TA,http://purl.obolibrary.org/obo/CL_0009010,3294,6588
-VHFSpleen,diaphragmatic surface of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,9438,9438
+VHFSpleen,diaphragmatic surface of spleen,"B cells, red pulp",http://purl.obolibrary.org/obo/CL_0000236,9438,9438
 VHFSpleen,diaphragmatic surface of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,9690,9690
 VHFSpleen,diaphragmatic surface of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,10973,10973
-VHFSpleen,diaphragmatic surface of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,7448,7448
+VHFSpleen,diaphragmatic surface of spleen,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,7448,7448
 VHFSpleen,diaphragmatic surface of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,15429,15429
 VHFSpleen,diaphragmatic surface of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,9656,9656
 VHFSpleen,diaphragmatic surface of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,16131,16131
 VHFSpleen,diaphragmatic surface of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,9697,9697
 VHFSpleen,diaphragmatic surface of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,28224,28224
-VHFSpleen,diaphragmatic surface of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,1914,1914
+VHFSpleen,diaphragmatic surface of spleen,Podoplanin,http://purl.obolibrary.org/obo/CL_0002138,1914,1914
 VHFSpleen,diaphragmatic surface of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,25838,25838
 VHFSpleen,diaphragmatic surface of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,8458,8458
-VHFSpleen,hilum of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,11966,11966
+VHFSpleen,hilum of spleen,"B cells, red pulp",http://purl.obolibrary.org/obo/CL_0000236,11966,11966
 VHFSpleen,hilum of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,12094,12094
 VHFSpleen,hilum of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,13265,13265
-VHFSpleen,hilum of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,7491,7491
+VHFSpleen,hilum of spleen,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,7491,7491
 VHFSpleen,hilum of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,22030,22030
 VHFSpleen,hilum of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,9175,9175
 VHFSpleen,hilum of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,16717,16717
 VHFSpleen,hilum of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,12703,12703
 VHFSpleen,hilum of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,27779,27779
-VHFSpleen,hilum of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,3020,3020
+VHFSpleen,hilum of spleen,Podoplanin,http://purl.obolibrary.org/obo/CL_0002138,3020,3020
 VHFSpleen,hilum of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,32468,32468
 VHFSpleen,hilum of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,9069,9069
 VHMLargeIntestine,ascending colon,B,http://purl.obolibrary.org/obo/CL_0000236,381.83333333333333333333,2291
@@ -457,16 +457,16 @@ VHMLung,Left posterior basal segmental bronchus,Basal Epithelial Cell,https://pu
 VHMLung,Left posterior basal segmental bronchus,CD4+ T Cell,http://purl.obolibrary.org/obo/CL_4033038,16844,16844
 VHMLung,Left posterior basal segmental bronchus,CD68+ Macrophage,https://purl.org/ccf/ASCTB-TEMP_cd68-macrophage,43845,43845
 VHMLung,Left posterior basal segmental bronchus,CD8+ T Cell,http://purl.obolibrary.org/obo/CL_4033039,3706,3706
-VHMLung,Left posterior basal segmental bronchus,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,40385,40385
+VHMLung,Left posterior basal segmental bronchus,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,40385,40385
 VHMLung,Left posterior basal segmental bronchus,Lymphatic Endothelial (and some immune cells),https://purl.org/ccf/ASCTB-TEMP_lymphatic-endothelial-and-some-immune-cells-,1761,1761
 VHMLung,Left posterior basal segmental bronchus,MPO+,https://purl.org/ccf/ASCTB-TEMP_mpo-,93569,93569
-VHMLung,Left posterior basal segmental bronchus,Mast Cell,https://purl.org/ccf/ASCTB-TEMP_mast-cell,15384,15384
+VHMLung,Left posterior basal segmental bronchus,Mast Cell,http://purl.obolibrary.org/obo/CL_0000097,15384,15384
 VHMLung,Left posterior basal segmental bronchus,Smooth Muscle Cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,35799,35799
 VHMLung,Left posterior basal segmental bronchus,Type 1 Alveolar Epithelial Cell,http://purl.obolibrary.org/obo/CL_0002062,293708,293708
 VHMLung,Left posterior basal segmental bronchus,Type 2 Alveolar Epithelial Cell,http://purl.obolibrary.org/obo/CL_0002063,76345,76345
 VHMSkin,skin,CD68,https://purl.org/ccf/ASCTB-TEMP_cd68,111.14285714285714285714,778
 VHMSkin,skin,DDB2,https://purl.org/ccf/ASCTB-TEMP_ddb2,300.14285714285714285714,2101
-VHMSkin,skin,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,2427.71428571428571428571,16994
+VHMSkin,skin,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,2427.71428571428571428571,16994
 VHMSkin,skin,KI67,https://purl.org/ccf/ASCTB-TEMP_ki67,733.42857142857142857143,5134
 VHMSkin,skin,P53,https://purl.org/ccf/ASCTB-TEMP_p53,114.71428571428571428571,803
 VHMSkin,skin,T-Helper,http://purl.obolibrary.org/obo/CL_0000912,1122.14285714285714285714,7855
@@ -597,39 +597,39 @@ VHMSmallIntestine,jejunum,Plasma,http://purl.obolibrary.org/obo/CL_0000786,2448.
 VHMSmallIntestine,jejunum,Smooth muscle,http://purl.obolibrary.org/obo/CL_0002504,7029.5,42177
 VHMSmallIntestine,jejunum,Stroma,http://purl.obolibrary.org/obo/CL_0000499,3872.83333333333333333333,23237
 VHMSmallIntestine,jejunum,TA,http://purl.obolibrary.org/obo/CL_0009010,500.33333333333333333333,3002
-VHMSpleen,diaphragmatic surface of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,10288,20576
+VHMSpleen,diaphragmatic surface of spleen,"B cells, red pulp",http://purl.obolibrary.org/obo/CL_0000236,10288,20576
 VHMSpleen,diaphragmatic surface of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,9871,19742
 VHMSpleen,diaphragmatic surface of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,19533,39066
-VHMSpleen,diaphragmatic surface of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,9390,18780
+VHMSpleen,diaphragmatic surface of spleen,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,9390,18780
 VHMSpleen,diaphragmatic surface of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,17227,34454
 VHMSpleen,diaphragmatic surface of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,6344,12688
 VHMSpleen,diaphragmatic surface of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,20595.5,41191
 VHMSpleen,diaphragmatic surface of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,14522,29044
 VHMSpleen,diaphragmatic surface of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,28471,56942
-VHMSpleen,diaphragmatic surface of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,1463.5,2927
+VHMSpleen,diaphragmatic surface of spleen,Podoplanin,http://purl.obolibrary.org/obo/CL_0002138,1463.5,2927
 VHMSpleen,diaphragmatic surface of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,38733,77466
 VHMSpleen,diaphragmatic surface of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,13977,27954
-VHMSpleen,hilum of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,10288,20576
+VHMSpleen,hilum of spleen,"B cells, red pulp",http://purl.obolibrary.org/obo/CL_0000236,10288,20576
 VHMSpleen,hilum of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,9871,19742
 VHMSpleen,hilum of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,19533,39066
-VHMSpleen,hilum of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,9390,18780
+VHMSpleen,hilum of spleen,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,9390,18780
 VHMSpleen,hilum of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,17227,34454
 VHMSpleen,hilum of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,6344,12688
 VHMSpleen,hilum of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,20595.5,41191
 VHMSpleen,hilum of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,14522,29044
 VHMSpleen,hilum of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,28471,56942
-VHMSpleen,hilum of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,1463.5,2927
+VHMSpleen,hilum of spleen,Podoplanin,http://purl.obolibrary.org/obo/CL_0002138,1463.5,2927
 VHMSpleen,hilum of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,38733,77466
 VHMSpleen,hilum of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,13977,27954
-VHMSpleen,renal surface of spleen,"B cells, red pulp",https://purl.org/ccf/ASCTB-TEMP_b-cells-red-pulp,7133,14266
+VHMSpleen,renal surface of spleen,"B cells, red pulp",http://purl.obolibrary.org/obo/CL_0000236,7133,14266
 VHMSpleen,renal surface of spleen,CD4 Memory T cells,http://purl.obolibrary.org/obo/CL_0000897,6228.5,12457
 VHMSpleen,renal surface of spleen,CD8 Memory T cells,http://purl.obolibrary.org/obo/CL_0000909,14322,28644
-VHMSpleen,renal surface of spleen,Endothelial,https://purl.org/ccf/ASCTB-TEMP_endothelial,7240,14480
+VHMSpleen,renal surface of spleen,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,7240,14480
 VHMSpleen,renal surface of spleen,Fol B cells,http://purl.obolibrary.org/obo/CL_0000843,13258.5,26517
 VHMSpleen,renal surface of spleen,Ki67 proliferating,http://purl.obolibrary.org/obo/CL_0000000,6523.5,13047
 VHMSpleen,renal surface of spleen,Macrophages,http://purl.obolibrary.org/obo/CL_0000235,14536.5,29073
 VHMSpleen,renal surface of spleen,Myeloid cells,http://purl.obolibrary.org/obo/CL_0000763,10468,20936
 VHMSpleen,renal surface of spleen,Neutrophils/Monocytes,https://purl.org/ccf/ASCTB-TEMP_neutrophils-monocytes,23226,46452
-VHMSpleen,renal surface of spleen,Podoplanin,https://purl.org/ccf/ASCTB-TEMP_podoplanin,1604,3208
+VHMSpleen,renal surface of spleen,Podoplanin,http://purl.obolibrary.org/obo/CL_0002138,1604,3208
 VHMSpleen,renal surface of spleen,Sinusoidal cells,http://purl.obolibrary.org/obo/CL_2000053,27667.5,55335
 VHMSpleen,renal surface of spleen,indistinct,http://purl.obolibrary.org/obo/CL_0000000,8240,16480

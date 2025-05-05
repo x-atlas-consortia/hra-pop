@@ -1,11 +1,11 @@
 tool,organ,cell_label,dataset_count
 azimuth,UBERON:0002048,Alveolar M�� proliferating,4
-azimuth,UBERON:0002048,Interstitial M�� perivascular,30
-azimuth,UBERON:0002048,Monocyte-derived M��,46
-azimuth,UBERON:0002048,Non-classical monocytes,46
-azimuth,UBERON:0002048,Transitional Club-AT2,44
-azimuth,UBERON:0002113,"Descending Vasa Recta Endothelial ",229
-azimuth,UBERON:0002113,"Peritubular Capilary Endothelial ",232
+azimuth,UBERON:0002048,Interstitial M�� perivascular,29
+azimuth,UBERON:0002048,Monocyte-derived M��,45
+azimuth,UBERON:0002048,Non-classical monocytes,45
+azimuth,UBERON:0002048,Transitional Club-AT2,43
+azimuth,UBERON:0002113,"Descending Vasa Recta Endothelial ",228
+azimuth,UBERON:0002113,"Peritubular Capilary Endothelial ",231
 celltypist,UBERON:0000059,Activated CD4 T,12
 celltypist,UBERON:0000059,Activated CD8 T,21
 celltypist,UBERON:0000059,Activated T,38
@@ -274,26 +274,23 @@ celltypist,UBERON:0002108,myofibroblast (RSPO2+),34
 celltypist,UBERON:0002108,pDC,27
 celltypist,UBERON:0002108,venous capillary,13
 celltypist,UBERON:0002108,�� cells (INS+),11
-popv,UBERON:0000059,colon epithelial cell,6
-popv,UBERON:0000059,epithelial cell of large intestine,11
-popv,UBERON:0002048,pneumocyte,19
+popv,UBERON:0000059,colon epithelial cell,5
+popv,UBERON:0000059,epithelial cell of large intestine,12
+popv,UBERON:0000948,hepatocyte,105
+popv,UBERON:0002048,pneumocyte,18
 popv,UBERON:0002097,"CD8-positive, alpha-beta T cell",1
 popv,UBERON:0002097,conventional dendritic cell,1
 popv,UBERON:0002106,"B cell, CD19-positive",2
 popv,UBERON:0002106,"CD4-positive, alpha-beta T cell",8
 popv,UBERON:0002106,"CD8-positive, alpha-beta T cell",7
 popv,UBERON:0002108,epithelial cell of small intestine,1
-sc_proteomics,unknown,"B cells, red pulp",6
 sc_proteomics,unknown,Basal Epithelial Cell,1
 sc_proteomics,unknown,CD68,10
 sc_proteomics,unknown,CD68+ Macrophage,2
 sc_proteomics,unknown,DDB2,10
-sc_proteomics,unknown,Endothelial,18
 sc_proteomics,unknown,KI67,10
 sc_proteomics,unknown,Lymphatic Endothelial (and some immune cells),1
 sc_proteomics,unknown,MPO+,1
-sc_proteomics,unknown,Mast Cell,1
 sc_proteomics,unknown,Neutrophils/Monocytes,6
 sc_proteomics,unknown,P53,10
-sc_proteomics,unknown,Podoplanin,6
 sc_proteomics,unknown,Smooth Muscle Cell,2

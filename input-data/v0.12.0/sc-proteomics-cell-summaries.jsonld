@@ -15342,7 +15342,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 49444,
         "percentage": 0.08056967800808239
@@ -15399,7 +15399,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 40385,
         "percentage": 0.06484591768574659
@@ -15420,7 +15420,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:mast-cell",
+        "cell_id": "CL:0000097",
         "cell_label": "Mast Cell",
         "count": 15384,
         "percentage": 0.024701983352173468
@@ -15463,7 +15463,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 1580,
         "percentage": 0.5509065550906556
@@ -15527,7 +15527,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 728,
         "percentage": 0.2927221552070768
@@ -15591,7 +15591,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 2314,
         "percentage": 0.4775072224515064
@@ -15655,7 +15655,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 3721,
         "percentage": 0.6130148270181219
@@ -15719,7 +15719,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 1510,
         "percentage": 0.4663372452130945
@@ -15783,7 +15783,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 3055,
         "percentage": 0.4353092049016814
@@ -15847,7 +15847,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 2391,
         "percentage": 0.3779639582674676
@@ -15911,7 +15911,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 1972,
         "percentage": 0.44374437443744374
@@ -15975,7 +15975,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 2058,
         "percentage": 0.6086956521739131
@@ -16039,7 +16039,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 3098,
         "percentage": 0.4052321778940484
@@ -16103,7 +16103,7 @@
     "summary": [
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:tumor",
+        "cell_id": "CL:0001063",
         "cell_label": "Tumor",
         "count": 22762,
         "percentage": 0.5177182368193605
@@ -16216,7 +16216,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:tumor",
+        "cell_id": "CL:0001063",
         "cell_label": "Tumor",
         "count": 1146,
         "percentage": 0.10151474887058198
@@ -16336,7 +16336,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:b-cells-red-pulp",
+        "cell_id": "CL:0000236",
         "cell_label": "B cells, red pulp",
         "count": 17254,
         "percentage": 0.07621563361368294
@@ -16357,7 +16357,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 12579,
         "percentage": 0.055564880910311684
@@ -16378,7 +16378,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:podoplanin",
+        "cell_id": "CL:0002138",
         "cell_label": "Podoplanin",
         "count": 2189,
         "percentage": 0.009669411265813839
@@ -16449,7 +16449,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:b-cells-red-pulp",
+        "cell_id": "CL:0000236",
         "cell_label": "B cells, red pulp",
         "count": 9438,
         "percentage": 0.0617282335705316
@@ -16463,14 +16463,14 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 7448,
         "percentage": 0.04871285056509
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:podoplanin",
+        "cell_id": "CL:0002138",
         "cell_label": "Podoplanin",
         "count": 1914,
         "percentage": 0.0125183131017162
@@ -16534,7 +16534,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:b-cells-red-pulp",
+        "cell_id": "CL:0000236",
         "cell_label": "B cells, red pulp",
         "count": 11966,
         "percentage": 0.06730904447706959
@@ -16555,14 +16555,14 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 7491,
         "percentage": 0.04213705934963465
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:podoplanin",
+        "cell_id": "CL:0002138",
         "cell_label": "Podoplanin",
         "count": 3020,
         "percentage": 0.016987574320637654
@@ -16626,7 +16626,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:b-cells-red-pulp",
+        "cell_id": "CL:0000236",
         "cell_label": "B cells, red pulp",
         "count": 8764,
         "percentage": 0.06711388837836182
@@ -16640,7 +16640,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 7371,
         "percentage": 0.056446425289468846
@@ -16654,7 +16654,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:podoplanin",
+        "cell_id": "CL:0002138",
         "cell_label": "Podoplanin",
         "count": 1920,
         "percentage": 0.014703179562580408
@@ -16732,21 +16732,21 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 6201,
         "percentage": 0.04014995532419098
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:b-cells-red-pulp",
+        "cell_id": "CL:0000236",
         "cell_label": "B cells, red pulp",
         "count": 3322,
         "percentage": 0.021509135879206973
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:podoplanin",
+        "cell_id": "CL:0002138",
         "cell_label": "Podoplanin",
         "count": 738,
         "percentage": 0.0047783691387280995
@@ -16810,7 +16810,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:endothelial",
+        "cell_id": "CL:0000115",
         "cell_label": "Endothelial",
         "count": 7109,
         "percentage": 0.0472952744642774
@@ -16824,7 +16824,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:b-cells-red-pulp",
+        "cell_id": "CL:0000236",
         "cell_label": "B cells, red pulp",
         "count": 5502,
         "percentage": 0.036604107483816886
@@ -16838,7 +16838,7 @@
       },
       {
         "@type": "CellSummaryRow",
-        "cell_id": "ASCTB-TEMP:podoplanin",
+        "cell_id": "CL:0002138",
         "cell_label": "Podoplanin",
         "count": 1288,
         "percentage": 0.008568900479672147

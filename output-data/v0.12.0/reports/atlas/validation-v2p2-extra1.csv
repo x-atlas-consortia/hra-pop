@@ -26,7 +26,7 @@ Female,http://purl.obolibrary.org/obo/UBERON_0001159,popv,sc_transcriptomics,0.7
 Female,http://purl.obolibrary.org/obo/UBERON_0001222,azimuth,sc_transcriptomics,0.86956521739130434783
 Female,http://purl.obolibrary.org/obo/UBERON_0001223,azimuth,sc_transcriptomics,0.89743589743589743590
 Female,http://purl.obolibrary.org/obo/UBERON_0001228,azimuth,sc_transcriptomics,0.89743589743589743590
-Female,http://purl.obolibrary.org/obo/UBERON_0001248,sc_proteomics,sc_proteomics,0.54545454545454545455
+Female,http://purl.obolibrary.org/obo/UBERON_0001248,sc_proteomics,sc_proteomics,0.72727272727272727273
 Female,http://purl.obolibrary.org/obo/UBERON_0001248,popv,sc_transcriptomics,1
 Female,http://purl.obolibrary.org/obo/UBERON_0001284,azimuth,sc_transcriptomics,0.91489361702127659574
 Female,http://purl.obolibrary.org/obo/UBERON_0002015,azimuth,sc_transcriptomics,0.91304347826086956522
@@ -45,7 +45,7 @@ Female,http://purl.obolibrary.org/obo/UBERON_0002084,popv,sc_transcriptomics,0.8
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,azimuth,sc_transcriptomics,0.9
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,celltypist,sc_transcriptomics,0.79487179487179487179
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,popv,sc_transcriptomics,0.83333333333333333333
-Female,http://purl.obolibrary.org/obo/UBERON_0002097,sc_proteomics,sc_proteomics,0.5
+Female,http://purl.obolibrary.org/obo/UBERON_0002097,sc_proteomics,sc_proteomics,0.625
 Female,http://purl.obolibrary.org/obo/UBERON_0002115,sc_proteomics,sc_proteomics,0.63636363636363636364
 Female,http://purl.obolibrary.org/obo/UBERON_0002115,celltypist,sc_transcriptomics,0.01587301587301587302
 Female,http://purl.obolibrary.org/obo/UBERON_0002115,popv,sc_transcriptomics,0.5625
@@ -98,7 +98,7 @@ Male,http://purl.obolibrary.org/obo/UBERON_0001159,popv,sc_transcriptomics,0.722
 Male,http://purl.obolibrary.org/obo/UBERON_0001222,azimuth,sc_transcriptomics,0.88461538461538461538
 Male,http://purl.obolibrary.org/obo/UBERON_0001223,azimuth,sc_transcriptomics,0.87878787878787878788
 Male,http://purl.obolibrary.org/obo/UBERON_0001228,azimuth,sc_transcriptomics,0.89285714285714285714
-Male,http://purl.obolibrary.org/obo/UBERON_0001248,sc_proteomics,sc_proteomics,0.54545454545454545455
+Male,http://purl.obolibrary.org/obo/UBERON_0001248,sc_proteomics,sc_proteomics,0.72727272727272727273
 Male,http://purl.obolibrary.org/obo/UBERON_0001248,popv,sc_transcriptomics,0.95454545454545454545
 Male,http://purl.obolibrary.org/obo/UBERON_0001257,popv,sc_transcriptomics,1
 Male,http://purl.obolibrary.org/obo/UBERON_0001284,azimuth,sc_transcriptomics,0.87878787878787878788
@@ -118,7 +118,7 @@ Male,http://purl.obolibrary.org/obo/UBERON_0002084,popv,sc_transcriptomics,0.833
 Male,http://purl.obolibrary.org/obo/UBERON_0002094,azimuth,sc_transcriptomics,0.9
 Male,http://purl.obolibrary.org/obo/UBERON_0002094,celltypist,sc_transcriptomics,0.8
 Male,http://purl.obolibrary.org/obo/UBERON_0002094,popv,sc_transcriptomics,0.83333333333333333333
-Male,http://purl.obolibrary.org/obo/UBERON_0002097,sc_proteomics,sc_proteomics,0.5
+Male,http://purl.obolibrary.org/obo/UBERON_0002097,sc_proteomics,sc_proteomics,0.625
 Male,http://purl.obolibrary.org/obo/UBERON_0002097,celltypist,sc_transcriptomics,0.82608695652173913043
 Male,http://purl.obolibrary.org/obo/UBERON_0002097,popv,sc_transcriptomics,0.95652173913043478261
 Male,http://purl.obolibrary.org/obo/UBERON_0002115,sc_proteomics,sc_proteomics,0.63636363636363636364

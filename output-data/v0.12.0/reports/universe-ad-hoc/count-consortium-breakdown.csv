@@ -1,20 +1,20 @@
 consortium,sex,dataset_count,atlas_dataset_count,test_dataset_count,excluded_dataset_count,no_rui_dataset_count,no_summary_dataset_count,modality,cell_count
 Allen Institute for Brain Science,Female,5,0,5,0,0,5,N/A,0
 Allen Institute for Brain Science,Male,5,0,5,0,0,5,N/A,0
-CxG,Female,4250,0,2781,1469,4250,1469,sc_transcriptomics,21993476
-CxG,Male,4217,0,2946,1271,4217,1271,sc_transcriptomics,26875178
+CxG,Female,4265,0,2795,1470,4265,1470,sc_transcriptomics,22100708
+CxG,Male,4238,0,2967,1271,4238,1271,sc_transcriptomics,26997838
 CxG,Unknown,708,0,355,353,708,353,sc_transcriptomics,3007134
 GTEx,Female,37,7,25,5,5,30,sc_transcriptomics,123723
 GTEx,Male,37,8,25,4,4,29,sc_transcriptomics,143256
 GUDMAP,Male,12,0,12,0,0,12,N/A,0
-HCA,Female,427,50,246,131,316,192,sc_transcriptomics,1479375
-HCA,Male,319,53,200,66,229,103,sc_transcriptomics,1525043
+HCA,Female,427,50,246,131,316,192,sc_transcriptomics,1476354
+HCA,Male,319,53,200,66,229,103,sc_transcriptomics,1523313
 "HIRN, ESPACE",Male,1,0,1,0,0,1,N/A,0
 HRA,Female,1,0,1,0,0,1,N/A,0
 HTAN,Male,5,0,3,2,0,5,N/A,0
-HuBMAP,Female,1474,139,1271,64,88,1311,sc_transcriptomics,3410547
-HuBMAP,Male,1957,339,1610,8,8,1618,sc_proteomics,16033284
-HuBMAP,Male,1957,339,1610,8,8,1618,sc_transcriptomics,10314608
+HuBMAP,Female,1764,139,1561,64,88,1601,sc_transcriptomics,3406109
+HuBMAP,Male,2423,338,2077,8,8,2085,sc_proteomics,16033284
+HuBMAP,Male,2423,338,2077,8,8,2085,sc_transcriptomics,10101298
 KPMP,Female,24,14,10,0,0,10,sc_transcriptomics,58809
 KPMP,Male,30,13,17,0,0,17,sc_transcriptomics,54092
 LungMap,Female,4,0,0,4,4,4,N/A,0

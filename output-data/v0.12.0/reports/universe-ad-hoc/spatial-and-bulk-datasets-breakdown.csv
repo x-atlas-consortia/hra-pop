@@ -1,33 +1,33 @@
 organ,side,sex,modality,status,dataset_count,cell_count
-blood,,female,sc_transcriptomics,Non-Atlas,1562,34127
-blood,,male,sc_transcriptomics,Non-Atlas,1211,26252
+blood,,female,sc_transcriptomics,Non-Atlas,1562,34093
+blood,,male,sc_transcriptomics,Non-Atlas,1211,26222
 blood,,unknown,sc_transcriptomics,Non-Atlas,59,1273
 blood vasculature,,female,sc_transcriptomics,Non-Atlas,20,215
-blood vasculature,,male,sc_transcriptomics,Non-Atlas,26,264
+blood vasculature,,male,sc_transcriptomics,Non-Atlas,26,265
 bone marrow,,female,sc_transcriptomics,Non-Atlas,68,1710
 bone marrow,,male,sc_transcriptomics,Non-Atlas,80,1832
 bone marrow,,unknown,sc_transcriptomics,Non-Atlas,59,602
-eye,,female,sc_transcriptomics,Non-Atlas,118,1008
-eye,,male,sc_transcriptomics,Non-Atlas,171,1225
-eye,,unknown,sc_transcriptomics,Non-Atlas,39,280
+eye,,female,sc_transcriptomics,Non-Atlas,117,997
+eye,,male,sc_transcriptomics,Non-Atlas,171,1224
+eye,,unknown,sc_transcriptomics,Non-Atlas,39,277
 heart,,female,sc_transcriptomics,Atlas,49,3634
-heart,,female,sc_transcriptomics,Non-Atlas,129,3403
+heart,,female,sc_transcriptomics,Non-Atlas,129,3401
 heart,,male,sc_transcriptomics,Atlas,60,10914
-heart,,male,sc_transcriptomics,Non-Atlas,299,7737
+heart,,male,sc_transcriptomics,Non-Atlas,299,7715
 kidney,,female,sc_transcriptomics,Atlas,89,3262
 kidney,,female,sc_transcriptomics,Non-Atlas,210,5977
-kidney,,male,sc_transcriptomics,Atlas,149,5685
+kidney,,male,sc_transcriptomics,Atlas,148,5651
 kidney,,male,sc_transcriptomics,Non-Atlas,232,7019
 kidney,left,female,sc_transcriptomics,Atlas,48,12551
-kidney,left,male,sc_transcriptomics,Atlas,55,13447
+kidney,left,male,sc_transcriptomics,Atlas,54,13209
 kidney,right,female,sc_transcriptomics,Atlas,8,1953
 kidney,right,male,sc_transcriptomics,Atlas,79,23415
 large intestine,,female,sc_proteomics,Atlas,6,870
 large intestine,,female,sc_transcriptomics,Atlas,14,6983
-large intestine,,female,sc_transcriptomics,Non-Atlas,100,6094
+large intestine,,female,sc_transcriptomics,Non-Atlas,101,6128
 large intestine,,male,sc_proteomics,Atlas,49,6588
 large intestine,,male,sc_transcriptomics,Atlas,25,18312
-large intestine,,male,sc_transcriptomics,Non-Atlas,123,6372
+large intestine,,male,sc_transcriptomics,Non-Atlas,125,6441
 large intestine,,unknown,sc_transcriptomics,Non-Atlas,21,774
 liver,,female,sc_transcriptomics,Non-Atlas,41,560
 liver,,male,sc_transcriptomics,Non-Atlas,39,525
@@ -36,8 +36,8 @@ lung,,female,sc_proteomics,Atlas,1,56
 lung,,female,sc_transcriptomics,Atlas,3,122
 lung,,female,sc_transcriptomics,Non-Atlas,264,8612
 lung,,male,sc_proteomics,Atlas,1,96
-lung,,male,sc_transcriptomics,Atlas,43,2038
-lung,,male,sc_transcriptomics,Non-Atlas,378,12797
+lung,,male,sc_transcriptomics,Atlas,43,2020
+lung,,male,sc_transcriptomics,Non-Atlas,378,12798
 lung,,unknown,sc_transcriptomics,Non-Atlas,76,1996
 lymph node,,female,sc_transcriptomics,Non-Atlas,13,190
 lymph node,,male,sc_transcriptomics,Non-Atlas,22,313
@@ -45,41 +45,41 @@ male reproductive system,,male,sc_transcriptomics,Atlas,6,292
 mammary gland,,female,sc_transcriptomics,Atlas,5,61
 mammary gland,,female,sc_transcriptomics,Non-Atlas,5,57
 pancreas,,female,sc_transcriptomics,Atlas,1,11
-pancreas,,female,sc_transcriptomics,Non-Atlas,12,111
+pancreas,,female,sc_transcriptomics,Non-Atlas,12,112
 pancreas,,male,sc_transcriptomics,Atlas,1,13
-pancreas,,male,sc_transcriptomics,Non-Atlas,7,79
+pancreas,,male,sc_transcriptomics,Non-Atlas,7,81
 prostate gland,,male,sc_transcriptomics,Atlas,6,73
-prostate gland,,male,sc_transcriptomics,Non-Atlas,41,435
+prostate gland,,male,sc_transcriptomics,Non-Atlas,41,437
 skin,,female,sc_transcriptomics,Atlas,1,165
 skin,,female,sc_transcriptomics,Non-Atlas,43,851
 skin,,male,sc_proteomics,Atlas,2,160
 skin,,male,sc_transcriptomics,Atlas,5,1133
-skin,,male,sc_transcriptomics,Non-Atlas,37,677
+skin,,male,sc_transcriptomics,Non-Atlas,37,675
 small intestine,,female,sc_proteomics,Atlas,8,1200
 small intestine,,female,sc_transcriptomics,Atlas,13,8862
-small intestine,,female,sc_transcriptomics,Non-Atlas,81,4702
+small intestine,,female,sc_transcriptomics,Non-Atlas,95,5681
 small intestine,,male,sc_proteomics,Atlas,24,3588
 small intestine,,male,sc_transcriptomics,Atlas,26,16506
-small intestine,,male,sc_transcriptomics,Non-Atlas,127,5906
+small intestine,,male,sc_transcriptomics,Non-Atlas,145,6957
 small intestine,,unknown,sc_transcriptomics,Non-Atlas,68,1921
 spleen,,female,sc_proteomics,Atlas,1,48
 spleen,,female,sc_transcriptomics,Atlas,6,440
-spleen,,female,sc_transcriptomics,Non-Atlas,52,850
+spleen,,female,sc_transcriptomics,Non-Atlas,52,853
 spleen,,male,sc_proteomics,Atlas,4,192
-spleen,,male,sc_transcriptomics,Atlas,11,990
-spleen,,male,sc_transcriptomics,Non-Atlas,43,694
+spleen,,male,sc_transcriptomics,Atlas,11,995
+spleen,,male,sc_transcriptomics,Non-Atlas,43,693
 thymus,,female,sc_transcriptomics,Atlas,2,205
-thymus,,female,sc_transcriptomics,Non-Atlas,50,899
+thymus,,female,sc_transcriptomics,Non-Atlas,50,897
 thymus,,male,sc_transcriptomics,Atlas,2,205
-thymus,,male,sc_transcriptomics,Non-Atlas,50,834
-thymus,,unknown,sc_transcriptomics,Non-Atlas,10,163
+thymus,,male,sc_transcriptomics,Non-Atlas,50,833
+thymus,,unknown,sc_transcriptomics,Non-Atlas,10,162
 trachea,,female,sc_transcriptomics,Non-Atlas,22,271
-trachea,,male,sc_transcriptomics,Non-Atlas,25,345
+trachea,,male,sc_transcriptomics,Non-Atlas,25,344
 ureter,left,female,sc_transcriptomics,Atlas,4,1024
 ureter,left,male,sc_transcriptomics,Atlas,9,1736
-urinary bladder,,female,sc_transcriptomics,Atlas,6,560
+urinary bladder,,female,sc_transcriptomics,Atlas,6,553
 urinary bladder,,female,sc_transcriptomics,Non-Atlas,15,154
 urinary bladder,,male,sc_transcriptomics,Atlas,8,707
-urinary bladder,,male,sc_transcriptomics,Non-Atlas,6,59
-uterus,,female,sc_transcriptomics,Non-Atlas,53,504
+urinary bladder,,male,sc_transcriptomics,Non-Atlas,7,73
+uterus,,female,sc_transcriptomics,Non-Atlas,53,502
 uterus,,unknown,sc_transcriptomics,Non-Atlas,3,13
