@@ -1,11 +1,12 @@
 tool,organ,cell_label,dataset_count
-azimuth,UBERON:0002048,Alveolar M�� proliferating,4
-azimuth,UBERON:0002048,Interstitial M�� perivascular,29
-azimuth,UBERON:0002048,Monocyte-derived M��,45
-azimuth,UBERON:0002048,Non-classical monocytes,45
-azimuth,UBERON:0002048,Transitional Club-AT2,43
-azimuth,UBERON:0002113,"Descending Vasa Recta Endothelial ",228
-azimuth,UBERON:0002113,"Peritubular Capilary Endothelial ",231
+azimuth,UBERON:0002048,Alveolar M�� CCL3+,2
+azimuth,UBERON:0002048,Alveolar M�� proliferating,13
+azimuth,UBERON:0002048,Interstitial M�� perivascular,70
+azimuth,UBERON:0002048,Monocyte-derived M��,106
+azimuth,UBERON:0002048,Non-classical monocytes,106
+azimuth,UBERON:0002048,Transitional Club-AT2,94
+azimuth,UBERON:0002113,"Descending Vasa Recta Endothelial ",229
+azimuth,UBERON:0002113,"Peritubular Capilary Endothelial ",232
 celltypist,UBERON:0000059,Activated CD4 T,12
 celltypist,UBERON:0000059,Activated CD8 T,21
 celltypist,UBERON:0000059,Activated T,38
@@ -276,8 +277,10 @@ celltypist,UBERON:0002108,venous capillary,13
 celltypist,UBERON:0002108,�� cells (INS+),11
 popv,UBERON:0000059,colon epithelial cell,5
 popv,UBERON:0000059,epithelial cell of large intestine,12
-popv,UBERON:0000948,hepatocyte,105
-popv,UBERON:0002048,pneumocyte,18
+popv,UBERON:0000948,hepatocyte,107
+popv,UBERON:0002048,bronchial epithelial cell,1
+popv,UBERON:0002048,microvascular endothelial cell,3
+popv,UBERON:0002048,pneumocyte,57
 popv,UBERON:0002097,"CD8-positive, alpha-beta T cell",1
 popv,UBERON:0002097,conventional dendritic cell,1
 popv,UBERON:0002106,"B cell, CD19-positive",2
