@@ -6,6 +6,7 @@
   * [Atlas AS with CT and B info from exp data (as-ct-b)](#as-ct-b)
   * [Atlas dataset, extraction site, and AS (as-datasets-extraction-sites)](#as-datasets-extraction-sites)
   * [Atlas dataset tool, modality, and AS info (as-datasets-modality)](#as-datasets-modality)
+  * [All biomarkers seen in Atlas Datasets (atlas-organ-cell-biomarker-scores)](#atlas-organ-cell-biomarker-scores)
   * [Cell Counts for Atlas Proteomics Datasets (atlas-sc-proteomics-cell-counts)](#atlas-sc-proteomics-cell-counts)
   * [Cell Counts for Atlas Transcriptomics Datasets (atlas-sc-transcriptomics-cell-counts)](#atlas-sc-transcriptomics-cell-counts)
   * [Cell Summaries by Anatomical Structure  (cell-types-in-anatomical-structurescts-per-as)](#cell-types-in-anatomical-structurescts-per-as)
@@ -107,6 +108,7 @@
   * [Spatial and bulk dataset breakdown (spatial-and-bulk-datasets-breakdown)](#spatial-and-bulk-datasets-breakdown)
   * [Spatial and bulk dataset information (spatial-and-bulk-datasets)](#spatial-and-bulk-datasets)
   * [Universe Spatial Placements (spatial-placements)](#spatial-placements)
+  * [All biomarkers seen in Atlas Datasets (universe-organ-cell-biomarker-scores)](#universe-organ-cell-biomarker-scores)
   * [Cell Counts for Universe Proteomics Datasets (universe-sc-proteomics-cell-counts)](#universe-sc-proteomics-cell-counts)
   * [Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-counts)](#universe-sc-transcriptomics-cell-counts)
   * [Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-instance-counts)](#universe-sc-transcriptomics-cell-instance-counts)
@@ -359,6 +361,91 @@ ORDER BY ?refOrgan
 | Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/3480cd404d4bacd7bb8d21be8de12c6c | sc_proteomics | sc_proteomics | descending colon |
 | Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/a5729f859fc944c76f77fc74a1710e3b | celltypist | sc_transcriptomics | descending colon |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="atlas-organ-cell-biomarker-scores"></a>All biomarkers seen in Atlas Datasets (atlas-organ-cell-biomarker-scores)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: All biomarkers seen in Atlas Datasets
+
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT ?organ ?cell_id (SAMPLE(?cell_label) as ?cell_label) 
+  ?biomarker_label (SAMPLE(?biomarker_id) as ?biomarker_id)
+  (MAX(?expr_value) as ?max_expr)
+FROM HRApop:
+FROM HRA:
+WHERE {
+  {
+    ?sample ccf:comes_from ?donor .
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  {
+    ?dataset ccf:organ_id ?reportedOrganIriString .
+    BIND(IRI(?reportedOrganIriString) as ?reportedOrganIri)
+
+    OPTIONAL {
+      ?reportedOrganIri rdfs:label ?reportedOrganRdfsLabel .
+    }
+    OPTIONAL {
+      ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganCcfLabel .
+    }
+    BIND(IF(BOUND(?reportedOrganRdfsLabel), ?reportedOrganRdfsLabel, ?reportedOrganCcfLabel) as ?organ)
+  }
+
+  [] ccf:generates_dataset ?dataset .
+  ?dataset ccf:has_cell_summary [
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?raw_cell_label ;
+      ccf:gene_expr [
+        ccf:gene_label ?biomarker_label ;
+        ccf:gene_id ?biomarker_id ;
+        ccf:mean_gene_expr_value ?expr_value 
+        ;
+      ]
+    ]
+  ] .
+
+  OPTIONAL { 
+    ?cell_id rdfs:label ?proper_cell_label .
+  }
+  BIND(COALESCE(?proper_cell_label, ?raw_cell_label) as ?cell_label)
+}
+GROUP BY ?organ ?cell_id ?biomarker_label
+ORDER BY ?organ ?cell_id DESC(?max_expr)
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/atlas-organ-cell-biomarker-scores.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/atlas-organ-cell-biomarker-scores.csv))
+
+| organ | cell_id | cell_label | biomarker_label | biomarker_id | max_expr |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| heart | http://purl.obolibrary.org/obo/CL_0000057 | fibroblast | RORA | HGNC:10258 | 17.52645874023438 |
+| heart | http://purl.obolibrary.org/obo/CL_0000057 | fibroblast | DCN | HGNC:2705 | 14.64254570007324 |
+| heart | http://purl.obolibrary.org/obo/CL_0000057 | fibroblast | NEGR1 | HGNC:17302 | 13.67218399047852 |
+| heart | http://purl.obolibrary.org/obo/CL_0000057 | fibroblast | EBF1 | HGNC:3126 | 11.74514293670654 |
+| heart | http://purl.obolibrary.org/obo/CL_0000057 | fibroblast | TCF4 | HGNC:11634 | 10.43396282196045 |
+| ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="atlas-sc-proteomics-cell-counts"></a>Cell Counts for Atlas Proteomics Datasets (atlas-sc-proteomics-cell-counts)
@@ -9502,6 +9589,97 @@ WHERE {
 | http://purl.org/ccf/1.5/6bbdd96b-5fae-406c-a0a5-8e20e1bd0d8e_placement |
 | http://purl.org/ccf/1.5/6f055461-adb2-41fe-86c1-50d3afdf9360_placement |
 | ... |
+
+
+### <a id="universe-organ-cell-biomarker-scores"></a>All biomarkers seen in Atlas Datasets (universe-organ-cell-biomarker-scores)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: All biomarkers seen in Atlas Datasets
+
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT ?organ ?cell_id (SAMPLE(?cell_label) as ?cell_label) 
+  ?biomarker_label (SAMPLE(?biomarker_id) as ?biomarker_id)
+  (MAX(?expr_value) as ?max_expr)
+FROM HRApop:
+FROM HRApopFull:
+FROM HRApopTestData:
+FROM HRA:
+WHERE {
+  OPTIONAL {
+    {
+      ?sample ccf:comes_from ?donor .
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:comes_from ?donor .
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+  }
+
+  {
+    ?dataset ccf:organ_id ?reportedOrganIriString .
+    BIND(IRI(?reportedOrganIriString) as ?reportedOrganIri)
+
+    OPTIONAL {
+      ?reportedOrganIri rdfs:label ?reportedOrganRdfsLabel .
+    }
+    OPTIONAL {
+      ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganCcfLabel .
+    }
+    BIND(IF(BOUND(?reportedOrganRdfsLabel), ?reportedOrganRdfsLabel, ?reportedOrganCcfLabel) as ?organ)
+  }
+
+  [] ccf:generates_dataset ?dataset .
+  ?dataset ccf:has_cell_summary [
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?raw_cell_label ;
+      ccf:gene_expr [
+        ccf:gene_label ?biomarker_label ;
+        ccf:gene_id ?biomarker_id ;
+        ccf:mean_gene_expr_value ?expr_value 
+        ;
+      ]
+    ]
+  ] .
+
+  OPTIONAL { 
+    ?cell_id rdfs:label ?proper_cell_label .
+  }
+  BIND(COALESCE(?proper_cell_label, ?raw_cell_label) as ?cell_label)
+}
+GROUP BY ?organ ?cell_id ?biomarker_label
+ORDER BY ?organ ?cell_id DESC(?max_expr)
+
+```
+
+([View Source](../../queries/universe-ad-hoc/universe-organ-cell-biomarker-scores.rq))
+</details>
+
+#### Results ([View CSV File](reports/universe-ad-hoc/universe-organ-cell-biomarker-scores.csv))
+
+| organ | cell_id | cell_label | biomarker_label | biomarker_id | max_expr |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| adipose tissue | https://purl.org/ccf/ASCTB-TEMP_b-cell | B cell | FABP4 | ASCTB-TEMP:fabp4 | 7.248185494932398 |
+| adipose tissue | https://purl.org/ccf/ASCTB-TEMP_b-cell | B cell | SAA1 | ASCTB-TEMP:saa1 | 7.096130592874982 |
+| adipose tissue | https://purl.org/ccf/ASCTB-TEMP_b-cell | B cell | FTL | ASCTB-TEMP:ftl | 6.614257700263741 |
+| adipose tissue | https://purl.org/ccf/ASCTB-TEMP_b-cell | B cell | CFD | ASCTB-TEMP:cfd | 5.9225445356557 |
+| adipose tissue | https://purl.org/ccf/ASCTB-TEMP_b-cell | B cell | TMSB10 | ASCTB-TEMP:tmsb10 | 5.776321770640957 |
+| ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="universe-sc-proteomics-cell-counts"></a>Cell Counts for Universe Proteomics Datasets (universe-sc-proteomics-cell-counts)

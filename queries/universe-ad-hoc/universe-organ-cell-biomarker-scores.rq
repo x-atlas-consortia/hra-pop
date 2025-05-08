@@ -1,0 +1,65 @@
+#+ summary: All biomarkers seen in Atlas Datasets
+
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX CCF: <https://purl.humanatlas.io/graph/ccf>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT ?organ ?cell_id (SAMPLE(?cell_label) as ?cell_label) 
+  ?biomarker_label (SAMPLE(?biomarker_id) as ?biomarker_id)
+  (MAX(?expr_value) as ?max_expr)
+FROM HRApop:
+FROM HRApopFull:
+FROM HRApopTestData:
+FROM HRA:
+WHERE {
+  OPTIONAL {
+    {
+      ?sample ccf:comes_from ?donor .
+      ?sample ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    } UNION {
+      ?block ccf:comes_from ?donor .
+      ?block ccf:subdivided_into_sections ?sample .
+      ?block ccf:has_registration_location ?rui_location .
+      ?sample ccf:generates_dataset ?dataset .
+    }
+  }
+
+  {
+    ?dataset ccf:organ_id ?reportedOrganIriString .
+    BIND(IRI(?reportedOrganIriString) as ?reportedOrganIri)
+
+    OPTIONAL {
+      ?reportedOrganIri rdfs:label ?reportedOrganRdfsLabel .
+    }
+    OPTIONAL {
+      ?reportedOrganIri ccf:ccf_pref_label ?reportedOrganCcfLabel .
+    }
+    BIND(IF(BOUND(?reportedOrganRdfsLabel), ?reportedOrganRdfsLabel, ?reportedOrganCcfLabel) as ?organ)
+  }
+
+  [] ccf:generates_dataset ?dataset .
+  ?dataset ccf:has_cell_summary [
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?raw_cell_label ;
+      ccf:gene_expr [
+        ccf:gene_label ?biomarker_label ;
+        ccf:gene_id ?biomarker_id ;
+        ccf:mean_gene_expr_value ?expr_value 
+        ;
+      ]
+    ]
+  ] .
+
+  OPTIONAL { 
+    ?cell_id rdfs:label ?proper_cell_label .
+  }
+  BIND(COALESCE(?proper_cell_label, ?raw_cell_label) as ?cell_label)
+}
+GROUP BY ?organ ?cell_id ?biomarker_label
+ORDER BY ?organ ?cell_id DESC(?max_expr)
