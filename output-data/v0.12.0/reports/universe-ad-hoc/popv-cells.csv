@@ -1,0 +1,378 @@
+Organ_Label,Organ_ID,Annotation_Label,Annotation_Label_ID,CL_Label,CL_ID,CL_Match,dataset_count,cell_count
+adipose tissue,UBERON:0001013,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,B cell,https://purl.org/ccf/ASCTB-TEMP_b-cell,,29,9096
+adipose tissue,UBERON:0001013,T cell,https://purl.org/ccf/ASCTB-TEMP_t-cell,T cell,https://purl.org/ccf/ASCTB-TEMP_t-cell,,30,32856
+adipose tissue,UBERON:0001013,endothelial cell,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell,endothelial cell,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell,,35,10248
+adipose tissue,UBERON:0001013,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,,33,37693
+adipose tissue,UBERON:0001013,leukocyte,https://purl.org/ccf/ASCTB-TEMP_leukocyte,leukocyte,https://purl.org/ccf/ASCTB-TEMP_leukocyte,,34,5342
+adipose tissue,UBERON:0001013,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,macrophage,https://purl.org/ccf/ASCTB-TEMP_macrophage,,34,21404
+adipose tissue,UBERON:0001013,mature NK T cell,https://purl.org/ccf/ASCTB-TEMP_mature-nk-t-cell,mature NK T cell,https://purl.org/ccf/ASCTB-TEMP_mature-nk-t-cell,,30,2381
+adipose tissue,UBERON:0001013,mesenchymal stem cell,https://purl.org/ccf/ASCTB-TEMP_mesenchymal-stem-cell,mesenchymal stem cell,https://purl.org/ccf/ASCTB-TEMP_mesenchymal-stem-cell,,24,6669
+adipose tissue,UBERON:0001013,myofibroblast cell,https://purl.org/ccf/ASCTB-TEMP_myofibroblast-cell,myofibroblast cell,https://purl.org/ccf/ASCTB-TEMP_myofibroblast-cell,,26,4904
+adipose tissue,UBERON:0001013,neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,neutrophil,https://purl.org/ccf/ASCTB-TEMP_neutrophil,,27,4550
+adipose tissue,UBERON:0001013,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,plasma cell,https://purl.org/ccf/ASCTB-TEMP_plasma-cell,,29,1748
+adipose tissue,UBERON:0001013,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,smooth muscle cell,https://purl.org/ccf/ASCTB-TEMP_smooth-muscle-cell,,19,130
+blood,UBERON:0000178,"B cell, CD19-positive",https://purl.org/ccf/ASCTB-TEMP_b-cell-cd19-positive,"B cell, CD19-positive",https://purl.org/ccf/ASCTB-TEMP_b-cell-cd19-positive,,51,72
+blood,UBERON:0000178,CD141-positive myeloid dendritic cell,CL:0002394,CD141-positive myeloid dendritic cell,CL:0002394,,535,29453
+blood,UBERON:0000178,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,,170,391
+blood,UBERON:0000178,"CD4-positive, alpha-beta memory T cell",CL:0000897,"CD4-positive, alpha-beta memory T cell",CL:0000897,,2828,2545350
+blood,UBERON:0000178,"CD8-positive, alpha-beta T cell",CL:0000625,"CD8-positive, alpha-beta T cell",CL:0000625,,2814,765979
+blood,UBERON:0000178,"CD8-positive, alpha-beta cytokine secreting effector T cell",CL:0000908,"CD8-positive, alpha-beta cytokine secreting effector T cell",CL:0000908,,2791,514121
+blood,UBERON:0000178,T cell,CL:0000084,T cell,CL:0000084,,389,1850
+blood,UBERON:0000178,basophil,CL:0000767,basophil,CL:0000767,,796,30860
+blood,UBERON:0000178,classical monocyte,CL:0000860,classical monocyte,CL:0000860,,2822,1886520
+blood,UBERON:0000178,erythrocyte,CL:0000232,erythrocyte,CL:0000232,,501,29105
+blood,UBERON:0000178,hematopoietic stem cell,CL:0000037,hematopoietic stem cell,CL:0000037,,1274,416275
+blood,UBERON:0000178,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,2823,676808
+blood,UBERON:0000178,memory B cell,CL:0000787,memory B cell,CL:0000787,,2819,453714
+blood,UBERON:0000178,naive B cell,CL:0000788,naive B cell,CL:0000788,,2803,649398
+blood,UBERON:0000178,"naive thymus-derived CD4-positive, alpha-beta T cell",CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",CL:0000895,,2810,533156
+blood,UBERON:0000178,neutrophil,CL:0000775,neutrophil,CL:0000775,,339,70679
+blood,UBERON:0000178,plasma cell,CL:0000786,plasma cell,CL:0000786,,2541,81228
+blood,UBERON:0000178,plasmacytoid dendritic cell,CL:0000784,plasmacytoid dendritic cell,CL:0000784,,540,9243
+blood,UBERON:0000178,platelet,CL:0000233,platelet,CL:0000233,,1690,50728
+blood,UBERON:0000178,type I NK T cell,CL:0000921,type I NK T cell,CL:0000921,,2819,299628
+blood vasculature,UBERON:0004537,B cell,CL:0000236,B cell,CL:0000236,,23,1156
+blood vasculature,UBERON:0004537,T cell,CL:0000084,T cell,CL:0000084,,42,10884
+blood vasculature,UBERON:0004537,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,44,33618
+blood vasculature,UBERON:0004537,endothelial cell of artery,CL:1000413,endothelial cell of artery,CL:1000413,,37,4266
+blood vasculature,UBERON:0004537,endothelial cell of lymphatic vessel,CL:0002138,endothelial cell of lymphatic vessel,CL:0002138,,28,840
+blood vasculature,UBERON:0004537,epithelial cell,CL:0000066,epithelial cell,CL:0000066,,12,196
+blood vasculature,UBERON:0004537,erythrocyte,CL:0000232,erythrocyte,CL:0000232,,16,204
+blood vasculature,UBERON:0004537,fibroblast,CL:0000057,fibroblast,CL:0000057,,45,57092
+blood vasculature,UBERON:0004537,macrophage,CL:0000235,macrophage,CL:0000235,,41,55628
+blood vasculature,UBERON:0004537,mast cell,CL:0000097,mast cell,CL:0000097,,39,1720
+blood vasculature,UBERON:0004537,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,33,3118
+blood vasculature,UBERON:0004537,pericyte,CL:0000669,pericyte,CL:0000669,,44,23096
+blood vasculature,UBERON:0004537,plasma cell,CL:0000786,plasma cell,CL:0000786,,32,892
+blood vasculature,UBERON:0004537,smooth muscle cell,CL:0000192,smooth muscle cell,CL:0000192,,44,73980
+bone marrow,UBERON:0002371,"B cell, CD19-positive",https://purl.org/ccf/ASCTB-TEMP_b-cell-cd19-positive,"B cell, CD19-positive",https://purl.org/ccf/ASCTB-TEMP_b-cell-cd19-positive,,2,4
+bone marrow,UBERON:0002371,"CD4-positive, alpha-beta T cell",CL:0000624,"CD4-positive, alpha-beta T cell",CL:0000624,,185,225090
+bone marrow,UBERON:0002371,"CD8-positive, alpha-beta T cell",CL:0000625,"CD8-positive, alpha-beta T cell",CL:0000625,,158,153750
+bone marrow,UBERON:0002371,common myeloid progenitor,CL:0000049,common myeloid progenitor,CL:0000049,,134,25252
+bone marrow,UBERON:0002371,erythrocyte,CL:0000232,erythrocyte,CL:0000232,,94,45252
+bone marrow,UBERON:0002371,erythroid progenitor cell,CL:0000038,erythroid progenitor cell,CL:0000038,,171,153514
+bone marrow,UBERON:0002371,granulocyte,CL:0000094,granulocyte,CL:0000094,,164,184170
+bone marrow,UBERON:0002371,hematopoietic stem cell,CL:0000037,hematopoietic stem cell,CL:0000037,,152,253632
+bone marrow,UBERON:0002371,macrophage,CL:0000235,macrophage,CL:0000235,,146,69912
+bone marrow,UBERON:0002371,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,154,88398
+bone marrow,UBERON:0002371,memory B cell,CL:0000787,memory B cell,CL:0000787,,162,114824
+bone marrow,UBERON:0002371,monocyte,CL:0000576,monocyte,CL:0000576,,198,214964
+bone marrow,UBERON:0002371,naive B cell,CL:0000788,naive B cell,CL:0000788,,106,12704
+bone marrow,UBERON:0002371,neutrophil,CL:0000775,neutrophil,CL:0000775,,78,68926
+bone marrow,UBERON:0002371,plasma cell,CL:0000786,plasma cell,CL:0000786,,197,112340
+eye,UBERON:0000970,B cell,CL:0000236,B cell,CL:0000236,,42,8629
+eye,UBERON:0000970,"CD4-positive, alpha-beta T cell",CL:0000624,"CD4-positive, alpha-beta T cell",CL:0000624,,44,389
+eye,UBERON:0000970,Mueller cell,CL:0000636,Mueller cell,CL:0000636,,299,201511
+eye,UBERON:0000970,T cell,CL:0000084,T cell,CL:0000084,,148,6969
+eye,UBERON:0000970,bipolar neuron,https://purl.org/ccf/ASCTB-TEMP_bipolar-neuron,bipolar neuron,https://purl.org/ccf/ASCTB-TEMP_bipolar-neuron,,4,5
+eye,UBERON:0000970,blood vessel endothelial cell,https://purl.org/ccf/ASCTB-TEMP_blood-vessel-endothelial-cell,blood vessel endothelial cell,https://purl.org/ccf/ASCTB-TEMP_blood-vessel-endothelial-cell,,2,2
+eye,UBERON:0000970,conjunctival epithelial cell,CL:1000432,conjunctival epithelial cell,CL:1000432,,77,23521
+eye,UBERON:0000970,corneal epithelial cell,CL:0000575,corneal epithelial cell,CL:0000575,,34,15160
+eye,UBERON:0000970,dendritic cell,CL:0000451,dendritic cell,CL:0000451,,62,2867
+eye,UBERON:0000970,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,72,3441
+eye,UBERON:0000970,epithelial cell of lacrimal sac,CL:1000436,epithelial cell of lacrimal sac,CL:1000436,,2,198
+eye,UBERON:0000970,erythroid lineage cell,CL:0000764,erythroid lineage cell,CL:0000764,,38,666
+eye,UBERON:0000970,eye photoreceptor cell,CL:0000287,eye photoreceptor cell,CL:0000287,,254,296472
+eye,UBERON:0000970,fat cell,CL:0000136,fat cell,CL:0000136,,10,446
+eye,UBERON:0000970,fibroblast,CL:0000057,fibroblast,CL:0000057,,48,10719
+eye,UBERON:0000970,keratocyte,CL:0002363,keratocyte,CL:0002363,,72,22323
+eye,UBERON:0000970,macrophage,CL:0000235,macrophage,CL:0000235,,50,947
+eye,UBERON:0000970,melanocyte,CL:0000148,melanocyte,CL:0000148,,46,22419
+eye,UBERON:0000970,microglial cell,CL:0000129,microglial cell,CL:0000129,,108,7104
+eye,UBERON:0000970,monocyte,CL:0000576,monocyte,CL:0000576,,48,667
+eye,UBERON:0000970,pigmented ciliary epithelial cell,CL:0002303,pigmented ciliary epithelial cell,CL:0002303,,27,17582
+eye,UBERON:0000970,plasma cell,CL:0000786,plasma cell,CL:0000786,,27,2564
+eye,UBERON:0000970,radial glial cell,CL:0000681,radial glial cell,CL:0000681,,128,2316
+eye,UBERON:0000970,retinal bipolar neuron,CL:0000748,retinal bipolar neuron,CL:0000748,,284,1455830
+eye,UBERON:0000970,retinal blood vessel endothelial cell,CL:0002585,retinal blood vessel endothelial cell,CL:0002585,,95,8330
+eye,UBERON:0000970,retinal pigment epithelial cell,CL:0002586,retinal pigment epithelial cell,CL:0002586,,29,2305
+eye,UBERON:0000970,sensory neuron,https://purl.org/ccf/ASCTB-TEMP_sensory-neuron,sensory neuron,https://purl.org/ccf/ASCTB-TEMP_sensory-neuron,,20,94
+eye,UBERON:0000970,stem cell,CL:0000034,stem cell,CL:0000034,,59,29916
+eye,UBERON:0000970,stromal cell,CL:0000499,stromal cell,CL:0000499,,318,796024
+eye,UBERON:0000970,surface ectodermal cell,CL:0000114,surface ectodermal cell,CL:0000114,,55,2109
+heart,UBERON:0000948,cardiac endothelial cell,CL:0010008,cardiac endothelial cell,CL:0010008,,531,374555
+heart,UBERON:0000948,cardiac muscle cell,CL:0000746,cardiac muscle cell,CL:0000746,,512,1383767
+heart,UBERON:0000948,fibroblast of cardiac tissue,CL:0002548,fibroblast of cardiac tissue,CL:0002548,,532,515918
+heart,UBERON:0000948,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,hepatocyte,https://purl.org/ccf/ASCTB-TEMP_hepatocyte,,491,51675
+heart,UBERON:0000948,macrophage,CL:0000235,macrophage,CL:0000235,,523,262063
+heart,UBERON:0000948,smooth muscle cell,CL:0000192,smooth muscle cell,CL:0000192,,533,317556
+large intestine,UBERON:0000059,B cell,CL:0000236,B cell,CL:0000236,,237,31974
+large intestine,UBERON:0000059,"CD4-positive, alpha-beta T cell",CL:0000624,"CD4-positive, alpha-beta T cell",CL:0000624,,228,48285
+large intestine,UBERON:0000059,"CD8-positive, alpha-beta T cell",CL:0000625,"CD8-positive, alpha-beta T cell",CL:0000625,,235,30956
+large intestine,UBERON:0000059,colon epithelial cell,https://purl.org/ccf/ASCTB-TEMP_colon-epithelial-cell,colon epithelial cell,https://purl.org/ccf/ASCTB-TEMP_colon-epithelial-cell,,9,22
+large intestine,UBERON:0000059,enterocyte of epithelium of large intestine,CL:0002071,enterocyte of epithelium of large intestine,CL:0002071,,250,366984
+large intestine,UBERON:0000059,epithelial cell of large intestine,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell-of-large-intestine,epithelial cell of large intestine,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell-of-large-intestine,,17,51
+large intestine,UBERON:0000059,fibroblast,CL:0000057,fibroblast,CL:0000057,,180,129030
+large intestine,UBERON:0000059,gut endothelial cell,CL:0000131,gut endothelial cell,CL:0000131,,190,15655
+large intestine,UBERON:0000059,intestinal crypt stem cell of large intestine,CL:0009016,intestinal crypt stem cell of large intestine,CL:0009016,,52,199
+large intestine,UBERON:0000059,intestinal enteroendocrine cell,CL:1001516,intestinal enteroendocrine cell,CL:1001516,,203,4793
+large intestine,UBERON:0000059,intestinal tuft cell,CL:0019032,intestinal tuft cell,CL:0019032,,201,14227
+large intestine,UBERON:0000059,large intestine goblet cell,CL:1000320,large intestine goblet cell,CL:1000320,,234,86553
+large intestine,UBERON:0000059,mast cell,CL:0000097,mast cell,CL:0000097,,170,5029
+large intestine,UBERON:0000059,monocyte,CL:0000576,monocyte,CL:0000576,,133,10280
+large intestine,UBERON:0000059,neutrophil,CL:0000775,neutrophil,CL:0000775,,178,21116
+large intestine,UBERON:0000059,paneth cell of colon,CL:0009009,paneth cell of colon,CL:0009009,,247,25773
+large intestine,UBERON:0000059,plasma cell,CL:0000786,plasma cell,CL:0000786,,211,78605
+large intestine,UBERON:0000059,transit amplifying cell of colon,CL:0009011,transit amplifying cell of colon,CL:0009011,,218,11992
+liver,UBERON:0002107,T cell,CL:0000084,T cell,CL:0000084,,80,75738
+liver,UBERON:0002107,endothelial cell of hepatic sinusoid,CL:1000398,endothelial cell of hepatic sinusoid,CL:1000398,,77,39556
+liver,UBERON:0002107,erythrocyte,CL:0000232,erythrocyte,CL:0000232,,34,3674
+liver,UBERON:0002107,fibroblast,CL:0000057,fibroblast,CL:0000057,,61,9049
+liver,UBERON:0002107,hepatocyte,CL:0000182,hepatocyte,CL:0000182,,64,135449
+liver,UBERON:0002107,intrahepatic cholangiocyte,CL:0002538,intrahepatic cholangiocyte,CL:0002538,,69,11979
+liver,UBERON:0002107,liver dendritic cell,CL:2000055,liver dendritic cell,CL:2000055,,73,13739
+liver,UBERON:0002107,macrophage,CL:0000235,macrophage,CL:0000235,,86,95279
+liver,UBERON:0002107,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,81,125327
+liver,UBERON:0002107,monocyte,CL:0000576,monocyte,CL:0000576,,84,97063
+liver,UBERON:0002107,neutrophil,CL:0000775,neutrophil,CL:0000775,,87,172826
+liver,UBERON:0002107,plasma cell,CL:0000786,plasma cell,CL:0000786,,82,13530
+lung,UBERON:0002048,B cell,CL:0000236,B cell,CL:0000236,,664,69838
+lung,UBERON:0002048,"CD4-positive, alpha-beta T cell",CL:0000624,"CD4-positive, alpha-beta T cell",CL:0000624,,777,536190
+lung,UBERON:0002048,"CD8-positive, alpha-beta T cell",CL:0000625,"CD8-positive, alpha-beta T cell",CL:0000625,,759,274299
+lung,UBERON:0002048,adventitial cell,CL:4028006,adventitial cell,CL:4028006,,548,31365
+lung,UBERON:0002048,basal cell,CL:0000646,basal cell,CL:0000646,,695,224910
+lung,UBERON:0002048,basophil,CL:0000767,basophil,CL:0000767,,685,75261
+lung,UBERON:0002048,blood vessel endothelial cell,CL:0000071,blood vessel endothelial cell,CL:0000071,,362,4752
+lung,UBERON:0002048,bronchial epithelial cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-epithelial-cell,bronchial epithelial cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-epithelial-cell,,9,11
+lung,UBERON:0002048,bronchial smooth muscle cell,CL:0002598,bronchial smooth muscle cell,CL:0002598,,562,22930
+lung,UBERON:0002048,capillary endothelial cell,CL:0002144,capillary endothelial cell,CL:0002144,,672,366786
+lung,UBERON:0002048,classical monocyte,CL:0000860,classical monocyte,CL:0000860,,744,156534
+lung,UBERON:0002048,club cell,CL:0000158,club cell,CL:0000158,,681,115800
+lung,UBERON:0002048,dendritic cell,CL:0000451,dendritic cell,CL:0000451,,744,96134
+lung,UBERON:0002048,"effector CD4-positive, alpha-beta T cell",CL:0001044,"effector CD4-positive, alpha-beta T cell",CL:0001044,,482,6217
+lung,UBERON:0002048,"effector CD8-positive, alpha-beta T cell",CL:0001050,"effector CD8-positive, alpha-beta T cell",CL:0001050,,483,7643
+lung,UBERON:0002048,endothelial cell of artery,CL:1000413,endothelial cell of artery,CL:1000413,,643,46454
+lung,UBERON:0002048,endothelial cell of lymphatic vessel,CL:0002138,endothelial cell of lymphatic vessel,CL:0002138,,610,43206
+lung,UBERON:0002048,fibroblast,CL:0000057,fibroblast,CL:0000057,,720,518651
+lung,UBERON:0002048,intermediate monocyte,CL:0002393,intermediate monocyte,CL:0002393,,475,3716
+lung,UBERON:0002048,lung ciliated cell,CL:1000271,lung ciliated cell,CL:1000271,,706,106125
+lung,UBERON:0002048,lung microvascular endothelial cell,CL:2000016,lung microvascular endothelial cell,CL:2000016,,495,15416
+lung,UBERON:0002048,macrophage,CL:0000235,macrophage,CL:0000235,,731,721069
+lung,UBERON:0002048,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,680,120997
+lung,UBERON:0002048,mesothelial cell,CL:0000077,mesothelial cell,CL:0000077,,246,2653
+lung,UBERON:0002048,microvascular endothelial cell,https://purl.org/ccf/ASCTB-TEMP_microvascular-endothelial-cell,microvascular endothelial cell,https://purl.org/ccf/ASCTB-TEMP_microvascular-endothelial-cell,,5,5
+lung,UBERON:0002048,neutrophil,CL:0000775,neutrophil,CL:0000775,,556,36690
+lung,UBERON:0002048,non-classical monocyte,CL:0000875,non-classical monocyte,CL:0000875,,729,97163
+lung,UBERON:0002048,pericyte,CL:0000669,pericyte,CL:0000669,,471,36056
+lung,UBERON:0002048,plasma cell,CL:0000786,plasma cell,CL:0000786,,698,37275
+lung,UBERON:0002048,plasmacytoid dendritic cell,CL:0000784,plasmacytoid dendritic cell,CL:0000784,,342,3812
+lung,UBERON:0002048,pneumocyte,https://purl.org/ccf/ASCTB-TEMP_pneumocyte,pneumocyte,https://purl.org/ccf/ASCTB-TEMP_pneumocyte,,93,235
+lung,UBERON:0002048,pulmonary ionocyte,CL:0017000,pulmonary ionocyte,CL:0017000,,209,25552
+lung,UBERON:0002048,respiratory goblet cell,CL:0002370,respiratory goblet cell,CL:0002370,,681,85234
+lung,UBERON:0002048,serous cell of epithelium of bronchus,CL:1000331,serous cell of epithelium of bronchus,CL:1000331,,43,1400
+lung,UBERON:0002048,smooth muscle cell,CL:0000192,smooth muscle cell,CL:0000192,,209,1357
+lung,UBERON:0002048,type I pneumocyte,CL:0002062,type I pneumocyte,CL:0002062,,733,312073
+lung,UBERON:0002048,type II pneumocyte,CL:0002063,type II pneumocyte,CL:0002063,,727,784827
+lung,UBERON:0002048,vascular associated smooth muscle cell,CL:0000359,vascular associated smooth muscle cell,CL:0000359,,504,11595
+lung,UBERON:0002048,vein endothelial cell,CL:0002543,vein endothelial cell,CL:0002543,,677,101351
+mammary gland,UBERON:0001911,B cell,CL:0000236,B cell,CL:0000236,,9,69
+mammary gland,UBERON:0001911,T cell,CL:0000084,T cell,CL:0000084,,10,7237
+mammary gland,UBERON:0001911,basal cell,CL:0000646,basal cell,CL:0000646,,9,4681
+mammary gland,UBERON:0001911,endothelial cell of artery,CL:1000413,endothelial cell of artery,CL:1000413,,9,2153
+mammary gland,UBERON:0001911,endothelial cell of lymphatic vessel,CL:0002138,endothelial cell of lymphatic vessel,CL:0002138,,9,390
+mammary gland,UBERON:0001911,fibroblast of breast,CL:4006000,fibroblast of breast,CL:4006000,,8,12079
+mammary gland,UBERON:0001911,luminal epithelial cell of mammary gland,CL:0002326,luminal epithelial cell of mammary gland,CL:0002326,,9,38624
+mammary gland,UBERON:0001911,macrophage,CL:0000235,macrophage,CL:0000235,,10,1684
+mammary gland,UBERON:0001911,mast cell,CL:0000097,mast cell,CL:0000097,,5,112
+mammary gland,UBERON:0001911,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,7,27
+mammary gland,UBERON:0001911,pericyte,CL:0000669,pericyte,CL:0000669,,9,857
+mammary gland,UBERON:0001911,plasma cell,CL:0000786,plasma cell,CL:0000786,,7,587
+mammary gland,UBERON:0001911,vascular associated smooth muscle cell,CL:0000359,vascular associated smooth muscle cell,CL:0000359,,8,965
+mammary gland,UBERON:0001911,vein endothelial cell,CL:0002543,vein endothelial cell,CL:0002543,,9,1952
+mesenteric lymph node,UBERON:0002509,B cell,CL:0000236,B cell,CL:0000236,,34,27534
+mesenteric lymph node,UBERON:0002509,CD141-positive myeloid dendritic cell,CL:0002394,CD141-positive myeloid dendritic cell,CL:0002394,,29,119
+mesenteric lymph node,UBERON:0002509,CD1c-positive myeloid dendritic cell,CL:0002399,CD1c-positive myeloid dendritic cell,CL:0002399,,20,155
+mesenteric lymph node,UBERON:0002509,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,,1,1
+mesenteric lymph node,UBERON:0002509,T cell,CL:0000084,T cell,CL:0000084,,34,10833
+mesenteric lymph node,UBERON:0002509,classical monocyte,CL:0000860,classical monocyte,CL:0000860,,16,75
+mesenteric lymph node,UBERON:0002509,"effector CD4-positive, alpha-beta T cell",CL:0001044,"effector CD4-positive, alpha-beta T cell",CL:0001044,,34,20873
+mesenteric lymph node,UBERON:0002509,"effector CD8-positive, alpha-beta T cell",CL:0001050,"effector CD8-positive, alpha-beta T cell",CL:0001050,,35,12588
+mesenteric lymph node,UBERON:0002509,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,9,543
+mesenteric lymph node,UBERON:0002509,erythrocyte,CL:0000232,erythrocyte,CL:0000232,,7,46
+mesenteric lymph node,UBERON:0002509,hematopoietic stem cell,CL:0000037,hematopoietic stem cell,CL:0000037,,19,74
+mesenteric lymph node,UBERON:0002509,innate lymphoid cell,CL:0001065,innate lymphoid cell,CL:0001065,,34,4398
+mesenteric lymph node,UBERON:0002509,intermediate monocyte,CL:0002393,intermediate monocyte,CL:0002393,,22,119
+mesenteric lymph node,UBERON:0002509,macrophage,CL:0000235,macrophage,CL:0000235,,29,698
+mesenteric lymph node,UBERON:0002509,mast cell,CL:0000097,mast cell,CL:0000097,,15,40
+mesenteric lymph node,UBERON:0002509,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,32,3628
+mesenteric lymph node,UBERON:0002509,mature conventional dendritic cell,CL:0000841,mature conventional dendritic cell,CL:0000841,,10,21
+mesenteric lymph node,UBERON:0002509,neutrophil,CL:0000775,neutrophil,CL:0000775,,6,20
+mesenteric lymph node,UBERON:0002509,non-classical monocyte,CL:0000875,non-classical monocyte,CL:0000875,,9,11
+mesenteric lymph node,UBERON:0002509,plasma cell,CL:0000786,plasma cell,CL:0000786,,33,381
+mesenteric lymph node,UBERON:0002509,regulatory T cell,CL:0000815,regulatory T cell,CL:0000815,,33,5512
+mesenteric lymph node,UBERON:0002509,stromal cell,CL:0000499,stromal cell,CL:0000499,,7,428
+mesenteric lymph node,UBERON:0002509,type I NK T cell,CL:0000921,type I NK T cell,CL:0000921,,35,10265
+pancreas,UBERON:0001264,B cell,CL:0000236,B cell,CL:0000236,,14,11811
+pancreas,UBERON:0001264,T cell,CL:0000084,T cell,CL:0000084,,12,6721
+pancreas,UBERON:0001264,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,20,11295
+pancreas,UBERON:0001264,fibroblast,CL:0000057,fibroblast,CL:0000057,,12,4337
+pancreas,UBERON:0001264,mast cell,CL:0000097,mast cell,CL:0000097,,10,27
+pancreas,UBERON:0001264,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,10,567
+pancreas,UBERON:0001264,myeloid cell,CL:0000763,myeloid cell,CL:0000763,,19,5854
+pancreas,UBERON:0001264,pancreatic A cell,CL:0000171,pancreatic A cell,CL:0000171,,14,2529
+pancreas,UBERON:0001264,pancreatic PP cell,CL:0002275,pancreatic PP cell,CL:0002275,,15,1409
+pancreas,UBERON:0001264,pancreatic acinar cell,CL:0002064,pancreatic acinar cell,CL:0002064,,21,32080
+pancreas,UBERON:0001264,pancreatic ductal cell,CL:0002079,pancreatic ductal cell,CL:0002079,,20,14468
+pancreas,UBERON:0001264,pancreatic stellate cell,CL:0002410,pancreatic stellate cell,CL:0002410,,20,9520
+pancreas,UBERON:0001264,plasma cell,CL:0000786,plasma cell,CL:0000786,,7,33
+pancreas,UBERON:0001264,type B pancreatic cell,CL:0000169,type B pancreatic cell,CL:0000169,,17,3235
+prostate gland,UBERON:0002367,"CD8-positive, alpha-beta T cell",CL:0000625,"CD8-positive, alpha-beta T cell",CL:0000625,,42,13153
+prostate gland,UBERON:0002367,basal cell of prostate epithelium,CL:0002341,basal cell of prostate epithelium,CL:0002341,,47,49177
+prostate gland,UBERON:0002367,bronchial epithelial cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-epithelial-cell,bronchial epithelial cell,https://purl.org/ccf/ASCTB-TEMP_bronchial-epithelial-cell,,1,1
+prostate gland,UBERON:0002367,club cell,CL:0000158,club cell,CL:0000158,,47,67928
+prostate gland,UBERON:0002367,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,38,20961
+prostate gland,UBERON:0002367,epithelial cell,CL:0000066,epithelial cell,CL:0000066,,42,13221
+prostate gland,UBERON:0002367,erythroid progenitor cell,CL:0000038,erythroid progenitor cell,CL:0000038,,11,294
+prostate gland,UBERON:0002367,fibroblast,CL:0000057,fibroblast,CL:0000057,,45,9547
+prostate gland,UBERON:0002367,luminal cell of prostate epithelium,CL:0002340,luminal cell of prostate epithelium,CL:0002340,,45,26287
+prostate gland,UBERON:0002367,macrophage,CL:0000235,macrophage,CL:0000235,,37,10273
+prostate gland,UBERON:0002367,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,40,7239
+prostate gland,UBERON:0002367,monocyte,CL:0000576,monocyte,CL:0000576,,38,2075
+prostate gland,UBERON:0002367,smooth muscle cell,CL:0000192,smooth muscle cell,CL:0000192,,45,12438
+prostate gland,UBERON:0002367,stromal cell,CL:0000499,stromal cell,CL:0000499,,32,12643
+skin,UBERON:0002097,CD141-positive myeloid dendritic cell,CL:0002394,CD141-positive myeloid dendritic cell,CL:0002394,,26,728
+skin,UBERON:0002097,CD1c-positive myeloid dendritic cell,CL:0002399,CD1c-positive myeloid dendritic cell,CL:0002399,,83,48418
+skin,UBERON:0002097,CD4-positive helper T cell,CL:0000492,CD4-positive helper T cell,CL:0000492,,36,560
+skin,UBERON:0002097,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,,11,30
+skin,UBERON:0002097,"CD4-positive, alpha-beta memory T cell",CL:0000897,"CD4-positive, alpha-beta memory T cell",CL:0000897,,81,15304
+skin,UBERON:0002097,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,,4,10
+skin,UBERON:0002097,"CD8-positive, alpha-beta cytotoxic T cell",CL:0000794,"CD8-positive, alpha-beta cytotoxic T cell",CL:0000794,,71,4516
+skin,UBERON:0002097,"CD8-positive, alpha-beta memory T cell",CL:0000909,"CD8-positive, alpha-beta memory T cell",CL:0000909,,84,31452
+skin,UBERON:0002097,Langerhans cell,CL:0000453,Langerhans cell,CL:0000453,,62,20584
+skin,UBERON:0002097,T cell,CL:0000084,T cell,CL:0000084,,86,79612
+skin,UBERON:0002097,conventional dendritic cell,https://purl.org/ccf/ASCTB-TEMP_conventional-dendritic-cell,conventional dendritic cell,https://purl.org/ccf/ASCTB-TEMP_conventional-dendritic-cell,,4,16
+skin,UBERON:0002097,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,81,88038
+skin,UBERON:0002097,epithelial cell,CL:0000066,epithelial cell,CL:0000066,,83,214794
+skin,UBERON:0002097,macrophage,CL:0000235,macrophage,CL:0000235,,85,110420
+skin,UBERON:0002097,mast cell,CL:0000097,mast cell,CL:0000097,,65,12180
+skin,UBERON:0002097,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,85,63708
+skin,UBERON:0002097,melanocyte,CL:0000148,melanocyte,CL:0000148,,78,48982
+skin,UBERON:0002097,muscle cell,CL:0000187,muscle cell,CL:0000187,,75,41600
+skin,UBERON:0002097,"naive thymus-derived CD4-positive, alpha-beta T cell",CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",CL:0000895,,53,2674
+skin,UBERON:0002097,"naive thymus-derived CD8-positive, alpha-beta T cell",CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",CL:0000900,,52,2748
+skin,UBERON:0002097,plasma cell,CL:0000786,plasma cell,CL:0000786,,76,7306
+skin,UBERON:0002097,regulatory T cell,CL:0000815,regulatory T cell,CL:0000815,,60,8386
+skin,UBERON:0002097,smooth muscle cell,CL:0000192,smooth muscle cell,CL:0000192,,58,2756
+skin,UBERON:0002097,stromal cell,CL:0000499,stromal cell,CL:0000499,,83,352364
+small intestine,UBERON:0002108,B cell,CL:0000236,B cell,CL:0000236,,214,76018
+small intestine,UBERON:0002108,"CD4-positive, alpha-beta T cell",CL:0000624,"CD4-positive, alpha-beta T cell",CL:0000624,,280,240870
+small intestine,UBERON:0002108,"CD8-positive, alpha-beta T cell",CL:0000625,"CD8-positive, alpha-beta T cell",CL:0000625,,279,187430
+small intestine,UBERON:0002108,enterocyte of epithelium of small intestine,CL:1000334,enterocyte of epithelium of small intestine,CL:1000334,,330,1011660
+small intestine,UBERON:0002108,epithelial cell of small intestine,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell-of-small-intestine,epithelial cell of small intestine,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell-of-small-intestine,,8,18
+small intestine,UBERON:0002108,fibroblast,CL:0000057,fibroblast,CL:0000057,,226,354240
+small intestine,UBERON:0002108,gut endothelial cell,CL:0000131,gut endothelial cell,CL:0000131,,239,72028
+small intestine,UBERON:0002108,intestinal crypt stem cell of small intestine,CL:0009017,intestinal crypt stem cell of small intestine,CL:0009017,,275,130352
+small intestine,UBERON:0002108,intestinal enteroendocrine cell,CL:0009006,intestinal enteroendocrine cell,CL:0009006,,288,19470
+small intestine,UBERON:0002108,intestinal tuft cell,CL:0009080,intestinal tuft cell,CL:0009080,,257,18516
+small intestine,UBERON:0002108,mast cell,CL:0000097,mast cell,CL:0000097,,158,23320
+small intestine,UBERON:0002108,monocyte,CL:0000576,monocyte,CL:0000576,,191,21414
+small intestine,UBERON:0002108,neutrophil,CL:0000775,neutrophil,CL:0000775,,272,184132
+small intestine,UBERON:0002108,paneth cell of epithelium of small intestine,CL:1000343,paneth cell of epithelium of small intestine,CL:1000343,,306,52888
+small intestine,UBERON:0002108,plasma cell,CL:0000786,plasma cell,CL:0000786,,237,162388
+small intestine,UBERON:0002108,small intestine goblet cell,CL:1000495,small intestine goblet cell,CL:1000495,,327,174172
+small intestine,UBERON:0002108,transit amplifying cell of small intestine,CL:0009012,transit amplifying cell of small intestine,CL:0009012,,318,109670
+spleen,UBERON:0002106,"B cell, CD19-positive",https://purl.org/ccf/ASCTB-TEMP_b-cell-cd19-positive,"B cell, CD19-positive",https://purl.org/ccf/ASCTB-TEMP_b-cell-cd19-positive,,5,8
+spleen,UBERON:0002106,CD141-positive myeloid dendritic cell,CL:0002394,CD141-positive myeloid dendritic cell,CL:0002394,,79,2190
+spleen,UBERON:0002106,CD1c-positive myeloid dendritic cell,CL:0002399,CD1c-positive myeloid dendritic cell,CL:0002399,,11,34
+spleen,UBERON:0002106,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,,16,33
+spleen,UBERON:0002106,"CD4-positive, alpha-beta memory T cell",CL:0000897,"CD4-positive, alpha-beta memory T cell",CL:0000897,,103,44635
+spleen,UBERON:0002106,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,,12,27
+spleen,UBERON:0002106,"CD8-positive, alpha-beta memory T cell",CL:0000909,"CD8-positive, alpha-beta memory T cell",CL:0000909,,108,67200
+spleen,UBERON:0002106,classical monocyte,CL:0000860,classical monocyte,CL:0000860,,103,47519
+spleen,UBERON:0002106,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,78,57554
+spleen,UBERON:0002106,erythrocyte,CL:0000232,erythrocyte,CL:0000232,,71,39494
+spleen,UBERON:0002106,hematopoietic stem cell,CL:0000037,hematopoietic stem cell,CL:0000037,,79,6279
+spleen,UBERON:0002106,innate lymphoid cell,CL:0001065,innate lymphoid cell,CL:0001065,,82,2456
+spleen,UBERON:0002106,intermediate monocyte,CL:0002393,intermediate monocyte,CL:0002393,,49,2848
+spleen,UBERON:0002106,macrophage,CL:0000235,macrophage,CL:0000235,,101,30180
+spleen,UBERON:0002106,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,108,63144
+spleen,UBERON:0002106,memory B cell,CL:0000787,memory B cell,CL:0000787,,103,148130
+spleen,UBERON:0002106,naive B cell,CL:0000788,naive B cell,CL:0000788,,102,76934
+spleen,UBERON:0002106,"naive thymus-derived CD4-positive, alpha-beta T cell",CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",CL:0000895,,101,57997
+spleen,UBERON:0002106,"naive thymus-derived CD8-positive, alpha-beta T cell",CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",CL:0000900,,99,15588
+spleen,UBERON:0002106,neutrophil,CL:0000775,neutrophil,CL:0000775,,70,33419
+spleen,UBERON:0002106,plasma cell,CL:0000786,plasma cell,CL:0000786,,102,43390
+spleen,UBERON:0002106,plasmacytoid dendritic cell,CL:0000784,plasmacytoid dendritic cell,CL:0000784,,3,42
+spleen,UBERON:0002106,platelet,CL:0000233,platelet,CL:0000233,,78,4649
+spleen,UBERON:0002106,regulatory T cell,CL:0000815,regulatory T cell,CL:0000815,,90,5246
+spleen,UBERON:0002106,type I NK T cell,CL:0000921,type I NK T cell,CL:0000921,,108,20720
+thymus,UBERON:0002370,B cell,CL:0000236,B cell,CL:0000236,,109,46360
+thymus,UBERON:0002370,CD4-positive helper T cell,CL:0000492,CD4-positive helper T cell,CL:0000492,,106,164310
+thymus,UBERON:0002370,"CD4-positive, CD25-positive, alpha-beta regulatory T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-cd25-positive-alpha-beta-regulatory-t-cell,"CD4-positive, CD25-positive, alpha-beta regulatory T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-cd25-positive-alpha-beta-regulatory-t-cell,,5,10
+thymus,UBERON:0002370,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,"CD4-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd4-positive-alpha-beta-t-cell,,3,6
+thymus,UBERON:0002370,"CD8-positive, alpha-beta cytotoxic T cell",CL:0000794,"CD8-positive, alpha-beta cytotoxic T cell",CL:0000794,,96,14998
+thymus,UBERON:0002370,DN1 thymic pro-T cell,CL:0000894,DN1 thymic pro-T cell,CL:0000894,,99,25032
+thymus,UBERON:0002370,DN3 thymocyte,CL:0000807,DN3 thymocyte,CL:0000807,,109,856410
+thymus,UBERON:0002370,DN4 thymocyte,CL:0000808,DN4 thymocyte,CL:0000808,,101,442954
+thymus,UBERON:0002370,T follicular helper cell,CL:0002038,T follicular helper cell,CL:0002038,,80,14882
+thymus,UBERON:0002370,capillary endothelial cell,CL:0002144,capillary endothelial cell,CL:0002144,,90,47998
+thymus,UBERON:0002370,endothelial cell of artery,CL:1000413,endothelial cell of artery,CL:1000413,,87,23494
+thymus,UBERON:0002370,endothelial cell of lymphatic vessel,CL:0002138,endothelial cell of lymphatic vessel,CL:0002138,,77,11724
+thymus,UBERON:0002370,erythrocyte,CL:0000232,erythrocyte,CL:0000232,,82,8034
+thymus,UBERON:0002370,fibroblast,CL:0000057,fibroblast,CL:0000057,,98,148792
+thymus,UBERON:0002370,innate lymphoid cell,CL:0001065,innate lymphoid cell,CL:0001065,,103,32390
+thymus,UBERON:0002370,macrophage,CL:0000235,macrophage,CL:0000235,,99,14458
+thymus,UBERON:0002370,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,100,17394
+thymus,UBERON:0002370,medullary thymic epithelial cell,CL:0002365,medullary thymic epithelial cell,CL:0002365,,61,4134
+thymus,UBERON:0002370,monocyte,CL:0000576,monocyte,CL:0000576,,88,5006
+thymus,UBERON:0002370,naive regulatory T cell,CL:0002677,naive regulatory T cell,CL:0002677,,101,141640
+thymus,UBERON:0002370,plasma cell,CL:0000786,plasma cell,CL:0000786,,114,73164
+thymus,UBERON:0002370,vascular associated smooth muscle cell,CL:0000359,vascular associated smooth muscle cell,CL:0000359,,83,52372
+thymus,UBERON:0002370,vein endothelial cell,CL:0002543,vein endothelial cell,CL:0002543,,83,40960
+tongue,UBERON:0001723,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,basal cell,https://purl.org/ccf/ASCTB-TEMP_basal-cell,,24,37081
+tongue,UBERON:0001723,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,capillary endothelial cell,https://purl.org/ccf/ASCTB-TEMP_capillary-endothelial-cell,,18,436
+tongue,UBERON:0001723,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,endothelial cell of artery,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-artery,,15,347
+tongue,UBERON:0001723,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,endothelial cell of lymphatic vessel,https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-lymphatic-vessel,,16,223
+tongue,UBERON:0001723,epithelial cell,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell,epithelial cell,https://purl.org/ccf/ASCTB-TEMP_epithelial-cell,,8,221
+tongue,UBERON:0001723,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,fibroblast,https://purl.org/ccf/ASCTB-TEMP_fibroblast,,21,3494
+tongue,UBERON:0001723,keratinocyte,https://purl.org/ccf/ASCTB-TEMP_keratinocyte,keratinocyte,https://purl.org/ccf/ASCTB-TEMP_keratinocyte,,19,20737
+tongue,UBERON:0001723,leukocyte,https://purl.org/ccf/ASCTB-TEMP_leukocyte,leukocyte,https://purl.org/ccf/ASCTB-TEMP_leukocyte,,19,10821
+tongue,UBERON:0001723,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,pericyte,https://purl.org/ccf/ASCTB-TEMP_pericyte,,21,1479
+tongue,UBERON:0001723,tongue muscle cell,https://purl.org/ccf/ASCTB-TEMP_tongue-muscle-cell,tongue muscle cell,https://purl.org/ccf/ASCTB-TEMP_tongue-muscle-cell,,17,396
+tongue,UBERON:0001723,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,vein endothelial cell,https://purl.org/ccf/ASCTB-TEMP_vein-endothelial-cell,,17,1828
+trachea,UBERON:0003126,B cell,CL:0000236,B cell,CL:0000236,,37,3422
+trachea,UBERON:0003126,"CD4-positive, alpha-beta T cell",CL:0000624,"CD4-positive, alpha-beta T cell",CL:0000624,,31,1341
+trachea,UBERON:0003126,"CD8-positive, alpha-beta T cell",CL:0000625,"CD8-positive, alpha-beta T cell",CL:0000625,,34,7478
+trachea,UBERON:0003126,T cell,CL:0000084,T cell,CL:0000084,,34,1666
+trachea,UBERON:0003126,basal cell,CL:0000646,basal cell,CL:0000646,,45,22118
+trachea,UBERON:0003126,ciliated cell,CL:0000064,ciliated cell,CL:0000064,,43,8830
+trachea,UBERON:0003126,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,27,6478
+trachea,UBERON:0003126,fibroblast,CL:0000057,fibroblast,CL:0000057,,29,10489
+trachea,UBERON:0003126,ionocyte,CL:0005006,ionocyte,CL:0005006,,21,204
+trachea,UBERON:0003126,macrophage,CL:0000235,macrophage,CL:0000235,,37,7442
+trachea,UBERON:0003126,mast cell,CL:0000097,mast cell,CL:0000097,,28,516
+trachea,UBERON:0003126,mucus secreting cell,CL:0000319,mucus secreting cell,CL:0000319,,40,3532
+trachea,UBERON:0003126,neutrophil,CL:0000775,neutrophil,CL:0000775,,29,9834
+trachea,UBERON:0003126,plasma cell,CL:0000786,plasma cell,CL:0000786,,34,1022
+trachea,UBERON:0003126,secretory cell,CL:0000151,secretory cell,CL:0000151,,46,17992
+trachea,UBERON:0003126,serous cell of epithelium of trachea,CL:1000330,serous cell of epithelium of trachea,CL:1000330,,35,7322
+trachea,UBERON:0003126,smooth muscle cell,CL:0000192,smooth muscle cell,CL:0000192,,26,2062
+trachea,UBERON:0003126,tracheal goblet cell,CL:1000329,tracheal goblet cell,CL:1000329,,39,2409
+urinary bladder,UBERON:0001255,B cell,CL:0000236,B cell,CL:0000236,,33,3829
+urinary bladder,UBERON:0001255,T cell,CL:0000084,T cell,CL:0000084,,28,7061
+urinary bladder,UBERON:0001255,bladder urothelial cell,CL:1001428,bladder urothelial cell,CL:1001428,,31,73797
+urinary bladder,UBERON:0001255,capillary endothelial cell,CL:0002144,capillary endothelial cell,CL:0002144,,26,1738
+urinary bladder,UBERON:0001255,endothelial cell of lymphatic vessel,CL:0002138,endothelial cell of lymphatic vessel,CL:0002138,,23,506
+urinary bladder,UBERON:0001255,fibroblast,CL:0000057,fibroblast,CL:0000057,,31,25274
+urinary bladder,UBERON:0001255,macrophage,CL:0000235,macrophage,CL:0000235,,31,11044
+urinary bladder,UBERON:0001255,mast cell,CL:0000097,mast cell,CL:0000097,,28,2120
+urinary bladder,UBERON:0001255,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,27,2316
+urinary bladder,UBERON:0001255,myofibroblast cell,CL:0000186,myofibroblast cell,CL:0000186,,31,11557
+urinary bladder,UBERON:0001255,pericyte,CL:0000669,pericyte,CL:0000669,,31,3479
+urinary bladder,UBERON:0001255,plasma cell,CL:0000786,plasma cell,CL:0000786,,25,1419
+urinary bladder,UBERON:0001255,plasmacytoid dendritic cell,https://purl.org/ccf/ASCTB-TEMP_plasmacytoid-dendritic-cell,plasmacytoid dendritic cell,https://purl.org/ccf/ASCTB-TEMP_plasmacytoid-dendritic-cell,,4,19
+urinary bladder,UBERON:0001255,smooth muscle cell,CL:0000192,smooth muscle cell,CL:0000192,,30,113695
+urinary bladder,UBERON:0001255,vein endothelial cell,CL:0002543,vein endothelial cell,CL:0002543,,28,7443
+uterus,UBERON:0000995,T cell,CL:0000084,T cell,CL:0000084,,43,9002
+uterus,UBERON:0000995,ciliated epithelial cell,CL:0000067,ciliated epithelial cell,CL:0000067,,26,37466
+uterus,UBERON:0000995,endothelial cell,CL:0000115,endothelial cell,CL:0000115,,53,50756
+uterus,UBERON:0000995,endothelial cell of lymphatic vessel,CL:0002138,endothelial cell of lymphatic vessel,CL:0002138,,43,3624
+uterus,UBERON:0000995,epithelial cell,CL:0000066,epithelial cell,CL:0000066,,35,26590
+uterus,UBERON:0000995,epithelial cell of uterus,CL:0002149,epithelial cell of uterus,CL:0002149,,56,275122
+uterus,UBERON:0000995,fibroblast,CL:0000057,fibroblast,CL:0000057,,56,156878
+uterus,UBERON:0000995,leukocyte,CL:0000738,leukocyte,CL:0000738,,16,464
+uterus,UBERON:0000995,macrophage,CL:0000235,macrophage,CL:0000235,,38,7960
+uterus,UBERON:0000995,mature NK T cell,CL:0000814,mature NK T cell,CL:0000814,,26,3468
+uterus,UBERON:0000995,myometrial cell,CL:0002366,myometrial cell,CL:0002366,,42,99374
+uterus,UBERON:0000995,pericyte,CL:0000669,pericyte,CL:0000669,,41,7266
+uterus,UBERON:0000995,vascular associated smooth muscle cell,CL:0000359,vascular associated smooth muscle cell,CL:0000359,,40,18772

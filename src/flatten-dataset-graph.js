@@ -1,6 +1,7 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { writeFileSync } from 'fs';
 import fetch from 'node-fetch';
 import Papa from 'papaparse';
+import { readJsonLd } from './utils/json.js';
 
 const DS_GRAPHS = process.argv.slice(2, -1);
 const OUTPUT_CSV = process.argv.slice(-1)[0];
@@ -10,7 +11,7 @@ async function flattenDatasetGraph(inputFile) {
   if (inputFile.startsWith('http')) {
     donors = await fetch(inputFile, { follow: true }).then((r) => r.json());
   } else {
-    donors = JSON.parse(readFileSync(inputFile).toString());
+    donors = await readJsonLd(inputFile);
   }
   const datasets = [];
   for (const donor of donors['@graph'] ?? donors) {

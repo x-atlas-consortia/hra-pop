@@ -6,31 +6,31 @@ set -ev
 DIR=$RAW_DIR/$VERSION
 
 node ./src/enrich-dataset-graph.js \
-  $DIR/atlas-dataset-graph.jsonld \
-  $DIR/collisions.jsonld \
-  $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
-  $DIR/atlas-extraction-site-cell-summaries.jsonld \
-  $DIR/atlas-enriched-dataset-graph.jsonld
+  $DIR/atlas-dataset-graph.jsonl \
+  $DIR/collisions.jsonl \
+  $DIR/corridors.jsonl $DIR/cell-summaries.jsonl \
+  $DIR/atlas-extraction-site-cell-summaries.jsonl \
+  $DIR/atlas-enriched-dataset-graph.jsonl
 
 node ./src/enrich-dataset-graph.js \
-  $DIR/test-dataset-graph.jsonld \
-  $DIR/collisions.jsonld \
-  $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
-  $DIR/test-atlas-extraction-site-as-cell-summaries.jsonld \
-  $DIR/test-atlas-enriched-dataset-graph.jsonld
+  $DIR/test-dataset-graph.jsonl \
+  $DIR/collisions.jsonl \
+  $DIR/corridors.jsonl $DIR/cell-summaries.jsonl \
+  $DIR/test-atlas-extraction-site-as-cell-summaries.jsonl \
+  $DIR/test-atlas-enriched-dataset-graph.jsonl
 
 if [ "$COMPUTE_LQ" == "true" ]; then
   node ./src/enrich-dataset-graph.js \
-    $DIR/atlas-lq-dataset-graph.jsonld \
-    $DIR/collisions.jsonld \
-    $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
-    $DIR/atlas-lq-extraction-site-cell-summaries.jsonld \
-    $DIR/atlas-lq-enriched-dataset-graph.jsonld
+    $DIR/atlas-lq-dataset-graph.jsonl \
+    $DIR/collisions.jsonl \
+    $DIR/corridors.jsonl $DIR/cell-summaries.jsonl \
+    $DIR/atlas-lq-extraction-site-cell-summaries.jsonl \
+    $DIR/atlas-lq-enriched-dataset-graph.jsonl
 
   node ./src/enrich-dataset-graph.js \
-    $DIR/test-dataset-graph.jsonld \
-    $DIR/collisions.jsonld \
-    $DIR/corridors.jsonld $DIR/cell-summaries.jsonld \
-    $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonld \
-    $DIR/test-atlas-lq-enriched-dataset-graph.jsonld
+    $DIR/test-dataset-graph.jsonl \
+    $DIR/collisions.jsonl \
+    $DIR/corridors.jsonl $DIR/cell-summaries.jsonl \
+    $DIR/test-atlas-lq-extraction-site-as-cell-summaries.jsonl \
+    $DIR/test-atlas-lq-enriched-dataset-graph.jsonl
 fi

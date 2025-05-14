@@ -3,9 +3,9 @@ source constants.sh
 shopt -s extglob
 set -ev
 
-MERGED=$RAW_DIR/$VERSION/registrations-dataset-graph.jsonld
-COLLISIONS=$RAW_DIR/$VERSION/collisions.jsonld
-CORRIDORS=$RAW_DIR/$VERSION/corridors.jsonld
+MERGED=$RAW_DIR/$VERSION/registrations-dataset-graph.jsonl
+COLLISIONS=$RAW_DIR/$VERSION/collisions.jsonl
+CORRIDORS=$RAW_DIR/$VERSION/corridors.jsonl
 DISTANCES=$RAW_DIR/$VERSION/euclidean-distances.ttl
 
 node ./src/concatenate-jsonld.js $REGISTRATIONS $MERGED

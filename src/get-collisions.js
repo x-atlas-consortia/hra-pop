@@ -1,16 +1,17 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import fetch from 'node-fetch';
+import { readJson, readJsonLd, writeJson } from './utils/json.js';
 
 const REGISTRATIONS = process.argv[2];
 const OUTPUT = process.argv[3];
-const COLLISION_CACHE = 'raw-data/collision-cache.json';
-const donors = JSON.parse(readFileSync(REGISTRATIONS).toString());
+const COLLISION_CACHE = 'raw-data/collision-cache.jsonld';
+const donors = await readJsonLd(REGISTRATIONS);
 const API_ENDPOINT = process.env['API_ENDPOINT'] ?? 'https://apps.humanatlas.io/api/';
 const API = `${API_ENDPOINT}v1/collisions`;
 
 let collisionCache = {};
 if (existsSync(COLLISION_CACHE)) {
-  collisionCache = JSON.parse(readFileSync(COLLISION_CACHE));
+  collisionCache = await readJson(COLLISION_CACHE);
 }
 
 function getCollisions(ruiLocation) {
@@ -25,9 +26,9 @@ function getCollisions(ruiLocation) {
       body: JSON.stringify(ruiLocation),
     })
       .then((r) => r.json())
-      .then((r) => {
+      .then(async (r) => {
         collisionCache[id] = r;
-        writeFileSync(COLLISION_CACHE, JSON.stringify(collisionCache, null, 2));
+        await writeJson(COLLISION_CACHE, collisionCache);
         return r;
       })
       .catch((e) => {
@@ -91,6 +92,6 @@ const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': results,
 };
-writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+await writeJson(OUTPUT, jsonld);
 
-writeFileSync(COLLISION_CACHE, JSON.stringify(collisionCache, null, 2));
+await writeJson(COLLISION_CACHE, collisionCache);

@@ -1,0 +1,47 @@
+sex,consortium,dataset_count,cell_count,modality
+Female,Allen Institute for Brain Science,5,0,
+Male,Allen Institute for Brain Science,5,0,
+Female,CxG,2796,11795420,sc_transcriptomics
+Female,CxG,1469,0,
+Male,CxG,2968,14510180,sc_transcriptomics
+Male,CxG,1272,0,
+Unknown,CxG,355,1693544,sc_transcriptomics
+Unknown,CxG,353,0,
+Female,GTEx,7,47863,sc_transcriptomics
+Female,GTEx,30,0,
+Male,GTEx,8,70113,sc_transcriptomics
+Male,GTEx,29,0,
+Male,GUDMAP,12,0,
+Female,HCA,235,781198,sc_transcriptomics
+Female,HCA,192,0,
+Male,HCA,216,707039,sc_transcriptomics
+Male,HCA,103,0,
+Male,"HIRN, ESPACE",1,0,
+Female,HRA,1,0,
+Male,HTAN,5,0,
+Female,HuBMAP,23,1514227,sc_proteomics
+Female,HuBMAP,140,3021191,sc_transcriptomics
+Female,HuBMAP,1601,0,
+Male,HuBMAP,255,6643168,sc_transcriptomics
+Male,HuBMAP,84,16033284,sc_proteomics
+Male,HuBMAP,2084,0,
+Female,KPMP,14,58809,sc_transcriptomics
+Female,KPMP,10,0,
+Male,KPMP,13,54092,sc_transcriptomics
+Male,KPMP,17,0,
+Female,LungMap,4,0,
+Male,LungMap,5,0,
+Female,NHLBI/LungMap,2,9897,sc_transcriptomics
+Male,NHLBI/LungMap,7,36603,sc_transcriptomics
+Male,NHLBI/LungMap,1,0,
+Female,SEA-AD,1,0,
+Female,SPARC,38,0,
+Male,SPARC,12,0,
+Female,SenNet,37,353198,sc_transcriptomics
+Female,SenNet,396,0,
+Male,SenNet,54,582105,sc_transcriptomics
+Male,SenNet,846,0,
+Female,UEdinburgh,36,0,
+Male,UEdinburgh,28,0,
+Female,UIowa,20,0,
+Male,UIowa,23,0,

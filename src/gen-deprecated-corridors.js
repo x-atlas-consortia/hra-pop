@@ -1,6 +1,7 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import { globSync } from 'glob';
 import { basename } from 'path';
+import { writeJson } from './utils/json.js';
 
 const OUTPUT = process.argv[2];
 const GLB_FILES = './raw-data/corridor-cache';
@@ -20,4 +21,4 @@ const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': results,
 };
-writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+await writeJson(OUTPUT, jsonld);

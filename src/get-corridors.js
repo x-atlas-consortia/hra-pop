@@ -1,6 +1,7 @@
 import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import fetch from 'node-fetch';
 import { join } from 'path';
+import { readJsonLd, writeJson } from './utils/json.js';
 
 const REGISTRATIONS = process.argv[2];
 const OUTPUT = process.argv[3];
@@ -8,7 +9,7 @@ const VERSION = process.env.VERSION;
 const BASE_URI = `https://cdn.humanatlas.io/digital-objects/graph/hra-pop/${VERSION}/assets/corridors/`;
 const CORRIDOR_CACHE = 'raw-data/corridor-cache';
 const CORRIDOR_DIR = `raw-data/${VERSION}/corridors`;
-const donors = JSON.parse(readFileSync(REGISTRATIONS).toString());
+const donors = await readJsonLd(REGISTRATIONS);
 const API_ENDPOINT = process.env['API_ENDPOINT'] ?? 'https://apps.humanatlas.io/api/';
 const API = `${API_ENDPOINT}v1/corridor`;
 
@@ -81,4 +82,4 @@ const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': results,
 };
-writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+await writeJson(OUTPUT, jsonld);

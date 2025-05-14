@@ -1,20 +1,21 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import Papa from 'papaparse';
+import { readJsonLd, writeJson } from './utils/json.js';
 
 const DATASET_GRAPH_CSV = process.argv[2];
 const COLLISIONS = process.argv[3];
 const AS_CELL_SUMMARIES = process.argv[4];
 const OUTPUT = process.argv[5];
 
-const asCellSummaries = JSON.parse(readFileSync(AS_CELL_SUMMARIES));
-const collisions = JSON.parse(readFileSync(COLLISIONS));
+const asCellSummaries = await readJsonLd(AS_CELL_SUMMARIES);
+const collisions = await readJsonLd(COLLISIONS);
 
-const collisionLookup = collisions['@graph'].reduce(
+const collisionLookup = (collisions['@graph'] || collisions).reduce(
   (acc, collision) => ((acc[collision['collision_source']] = collision.collisions || []), acc),
   {}
 );
 
-const asCellSummaryLookup = asCellSummaries['@graph'].reduce(
+const asCellSummaryLookup = (asCellSummaries['@graph'] || asCellSummaries).reduce(
   (acc, summary) => ((acc[summary['cell_source']] = (acc[summary['cell_source']] || []).concat(summary)), acc),
   {}
 );
@@ -70,10 +71,12 @@ function finalizeAsCellSummaries() {
     const cellCount = summary.summary.reduce((acc, s) => acc + s.count, 0);
     summary.summary.forEach((s) => (s.percentage = s.count / cellCount));
     summary.aggregated_summary_count = Object.keys(summary.aggregated_summaries).length;
-    summary.aggregated_summaries = Object.entries(summary.aggregated_summaries).map(([aggregated_cell_source, percentage]) => ({
-      aggregated_cell_source,
-      percentage,
-    }));
+    summary.aggregated_summaries = Object.entries(summary.aggregated_summaries).map(
+      ([aggregated_cell_source, percentage]) => ({
+        aggregated_cell_source,
+        percentage,
+      })
+    );
     return summary;
   });
 }
@@ -94,4 +97,4 @@ const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': results,
 };
-writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+await writeJson(OUTPUT, jsonld);
