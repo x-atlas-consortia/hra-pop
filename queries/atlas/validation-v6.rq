@@ -44,12 +44,16 @@ WHERE {
     ccf:modality ?modality ;
     ccf:has_cell_summary_row [
       ccf:cell_id ?cell_iri ;
-      ccf:cell_label ?cell_label ;
+      ccf:cell_label ?cell_label_summary ;
       ccf:cell_count ?cell_count ;
       ccf:percentage_of_total ?percentage
     ]
   ] .
 
+  OPTIONAL {
+    ?cell_iri rdfs:label ?cell_label_ontology .
+  }
+  BIND(COALESCE(?cell_label_ontology, ?cell_label_summary) as ?cell_label)
   BIND(REPLACE(REPLACE(STR(?cell_iri), STR(CL:), 'CL:'), STR(ASCTB-TEMP:), 'ASCTB-TEMP:') as ?cell_id)
 
   ?ref_organ ccf:representation_of ?organIri .

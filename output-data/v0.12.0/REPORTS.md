@@ -5333,12 +5333,16 @@ WHERE {
     ccf:modality ?modality ;
     ccf:has_cell_summary_row [
       ccf:cell_id ?cell_iri ;
-      ccf:cell_label ?cell_label ;
+      ccf:cell_label ?cell_label_summary ;
       ccf:cell_count ?cell_count ;
       ccf:percentage_of_total ?percentage
     ]
   ] .
 
+  OPTIONAL {
+    ?cell_iri rdfs:label ?cell_label_ontology .
+  }
+  BIND(COALESCE(?cell_label_ontology, ?cell_label_summary) as ?cell_label)
   BIND(REPLACE(REPLACE(STR(?cell_iri), STR(CL:), 'CL:'), STR(ASCTB-TEMP:), 'ASCTB-TEMP:') as ?cell_id)
 
   ?ref_organ ccf:representation_of ?organIri .
@@ -5374,10 +5378,10 @@ WHERE {
 | sex | tool | modality | organ | organId | as | as_id | cell_id | cell_label | cell_count | percentage | asct_relation_in_asctb_table | indirect_asct_relation_in_asctb_table |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Female | popv | sc_transcriptomics | large intestine | UBERON:0000059 | descending colon | UBERON:0001158 | CL:0000624 | CD4-positive, alpha-beta T cell | 222.516 | 0.01540907423260365 | false | true |
-| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0000625 | CD8+T_trans | 4.08 | 0.00117776959882223 | false | true |
-| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0000913 | CD8+T_em | 2.04 | 5.888847994111151E-4 | false | true |
-| Female | azimuth | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0000077 | Mesothelial | 2.04 | 5.888847994111152E-4 | false | true |
-| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | heart left ventricle | UBERON:0002084 | CL:0000359 | SMC1_basic | 3255.041 | 0.009688101729013293 | true | true |
+| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0000625 | CD8-positive, alpha-beta T cell | 4.08 | 0.00117776959882223 | false | true |
+| Female | azimuth | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0000077 | mesothelial cell | 2.04 | 5.888847994111152E-4 | false | true |
+| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0000913 | effector memory CD8-positive, alpha-beta T cell | 2.04 | 5.888847994111151E-4 | false | true |
+| Male | celltypist | sc_transcriptomics | respiratory system | UBERON:0001004 | Left anterior segmental bronchus | FMA:7428 | CL:0000784 | plasmacytoid dendritic cell | 0.008 | 0.001092150170648464 | false | true |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
