@@ -1,0 +1,375 @@
+#####Coverage percentage#####
+87.56%
+#####Number of terms covered by each term in the slim#####
+melanocyte,14
+extraembryonic cell,31
+germ line cell,39
+bone cell,39
+endothelial cell,107
+stem cell,107
+muscle cell,145
+connective tissue cell,228
+epithelial cell,658
+neural cell,699
+hematopoietic cell,702
+#####Terms that are not covered by ../templates/very_high_level_upper_slim.csv under CL:0000000#####
+http://purl.obolibrary.org/obo/CL_4029001,gamete-nursing cell
+http://purl.obolibrary.org/obo/CL_0000445,apoptosis fated cell
+http://purl.obolibrary.org/obo/CL_0000520,prokaryotic cell
+http://purl.obolibrary.org/obo/CL_0002321,embryonic cell (metazoa)
+http://purl.obolibrary.org/obo/CL_0000151,secretory cell
+http://purl.obolibrary.org/obo/CL_0009002,inflammatory cell
+http://purl.obolibrary.org/obo/CL_0000329,oxygen accumulating cell
+http://purl.obolibrary.org/obo/CL_0001034,cell in vitro
+http://purl.obolibrary.org/obo/CL_4033054,perivascular cell
+http://purl.obolibrary.org/obo/CL_0000293,structural cell
+http://purl.obolibrary.org/obo/CL_0010017,zygote
+http://purl.obolibrary.org/obo/CL_0000725,nitrogen fixing cell
+http://purl.obolibrary.org/obo/CL_0000628,photosynthetic cell
+http://purl.obolibrary.org/obo/CL_0001061,abnormal cell
+http://purl.obolibrary.org/obo/CL_0000412,polyploid cell
+http://purl.obolibrary.org/obo/CL_0000630,supporting cell
+http://purl.obolibrary.org/obo/CL_0000891,foam cell
+http://purl.obolibrary.org/obo/CL_0000627,transporting cell
+http://purl.obolibrary.org/obo/CL_0002242,nucleate cell
+http://purl.obolibrary.org/obo/CL_0000225,anucleate cell
+http://purl.obolibrary.org/obo/CL_0000219,motile cell
+http://purl.obolibrary.org/obo/CL_0007001,skeletogenic cell
+http://purl.obolibrary.org/obo/CL_0000424,excretory cell
+http://purl.obolibrary.org/obo/CL_0000415,diploid cell
+http://purl.obolibrary.org/obo/CL_0000413,haploid cell
+http://purl.obolibrary.org/obo/CL_0000422,mitogenic signaling cell
+http://purl.obolibrary.org/obo/CL_0000228,multinucleate cell
+http://purl.obolibrary.org/obo/CL_1000182,malpighian tubule tip cell
+http://purl.obolibrary.org/obo/CL_0007000,preameloblast
+http://purl.obolibrary.org/obo/CL_0000032,neuroplacodal cell
+http://purl.obolibrary.org/obo/CL_0000438,luteinizing hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000157,surfactant secreting cell
+http://purl.obolibrary.org/obo/CL_0000064,ciliated cell
+http://purl.obolibrary.org/obo/CL_0000592,large luteal cell
+http://purl.obolibrary.org/obo/CL_0000460,glucocorticoid secreting cell
+http://purl.obolibrary.org/obo/CL_0000314,milk secreting cell
+http://purl.obolibrary.org/obo/CL_1000507,kidney tubule cell
+http://purl.obolibrary.org/obo/CL_0000621,fusion competent myoblast
+http://purl.obolibrary.org/obo/CL_0000360,morula cell
+http://purl.obolibrary.org/obo/CL_0000163,endocrine cell
+http://purl.obolibrary.org/obo/CL_0000306,crystallin accumulating cell
+http://purl.obolibrary.org/obo/CL_0000469,ganglion mother cell
+http://purl.obolibrary.org/obo/CL_0007008,notochordal vacuole cell
+http://purl.obolibrary.org/obo/CL_0000479,vasopressin stimulating hormone secreting cell
+http://purl.obolibrary.org/obo/CL_2000035,anterior lateral line neuromast mantle cell
+http://purl.obolibrary.org/obo/CL_0000487,oenocyte
+http://purl.obolibrary.org/obo/CL_0002676,neural crest derived neuroblast
+http://purl.obolibrary.org/obo/CL_0007006,chordamesodermal cell
+http://purl.obolibrary.org/obo/CL_0007017,Stiftchenzellen
+http://purl.obolibrary.org/obo/CL_0000167,peptide hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000726,chlamydospore
+http://purl.obolibrary.org/obo/CL_1000618,juxtaglomerular complex cell
+http://purl.obolibrary.org/obo/CL_0002675,H plus
+http://purl.obolibrary.org/obo/CL_0000732,amoeboid cell
+http://purl.obolibrary.org/obo/CL_0000382,scolopale cell
+http://purl.obolibrary.org/obo/CL_0000517,macrophage derived foam cell
+http://purl.obolibrary.org/obo/CL_0000851,neuromast mantle cell
+http://purl.obolibrary.org/obo/CL_1000803,kidney inner medulla interstitial cell
+http://purl.obolibrary.org/obo/CL_0000197,sensory receptor cell
+http://purl.obolibrary.org/obo/CL_0000478,oxytocin stimulating hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0002196,hepatic oval stem cell
+http://purl.obolibrary.org/obo/CL_0008006,muscle founder cell
+http://purl.obolibrary.org/obo/CL_0002153,corneocyte
+http://purl.obolibrary.org/obo/CL_0010021,cardiac myoblast
+http://purl.obolibrary.org/obo/CL_0000031,neuroblast (sensu Vertebrata)
+http://purl.obolibrary.org/obo/CL_0000607,ascospore
+http://purl.obolibrary.org/obo/CL_0011007,paraxial cell
+http://purl.obolibrary.org/obo/CL_4033066,pre-granulosa cell
+http://purl.obolibrary.org/obo/CL_0000416,polytene cell
+http://purl.obolibrary.org/obo/CL_0005002,xanthoblast
+http://purl.obolibrary.org/obo/CL_0017001,splanchnic mesodermal cell
+http://purl.obolibrary.org/obo/CL_4033083,squamous granulosa cell
+http://purl.obolibrary.org/obo/CL_0000054,bone matrix secreting cell
+http://purl.obolibrary.org/obo/CL_0010005,atrioventricular bundle cell
+http://purl.obolibrary.org/obo/CL_0000343,visual pigment cell (sensu Vertebrata)
+http://purl.obolibrary.org/obo/CL_1001319,bladder cell
+http://purl.obolibrary.org/obo/CL_0000511,androgen binding protein secreting cell
+http://purl.obolibrary.org/obo/CL_0000783,multinucleated phagocyte
+http://purl.obolibrary.org/obo/CL_0000080,circulating cell
+http://purl.obolibrary.org/obo/CL_0000713,corona radiata cell
+http://purl.obolibrary.org/obo/CL_0002174,follicular cell of ovary
+http://purl.obolibrary.org/obo/CL_0002522,renal filtration cell
+http://purl.obolibrary.org/obo/CL_1001145,interlobular vein cell
+http://purl.obolibrary.org/obo/CL_0000482,juvenile hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000176,ecdysteroid secreting cell
+http://purl.obolibrary.org/obo/CL_1001052,kidney cortex vein cell
+http://purl.obolibrary.org/obo/CL_0000033,apocrine cell
+http://purl.obolibrary.org/obo/CL_0000308,metal ion accumulating cell
+http://purl.obolibrary.org/obo/CL_4047005,cycling neuroblast (sensu Vertebrata)
+http://purl.obolibrary.org/obo/CL_0000458,serotonin secreting cell
+http://purl.obolibrary.org/obo/CL_2000039,posterior lateral line neuromast supporting cell
+http://purl.obolibrary.org/obo/CL_0002418,hemangioblast
+http://purl.obolibrary.org/obo/CL_0011023,CD25+ mast cell
+http://purl.obolibrary.org/obo/CL_0000313,serous secreting cell
+http://purl.obolibrary.org/obo/CL_0000724,heterocyst
+http://purl.obolibrary.org/obo/CL_1000332,serous cell of epithelium of terminal bronchiole
+http://purl.obolibrary.org/obo/CL_0011011,intermediate mesodermal cell
+http://purl.obolibrary.org/obo/CL_0000563,endospore
+http://purl.obolibrary.org/obo/CL_0007016,adaxial cell
+http://purl.obolibrary.org/obo/CL_0007022,micropylar cell
+http://purl.obolibrary.org/obo/CL_0001658,visual pigment cell (sensu Nematoda and Protostomia)
+http://purl.obolibrary.org/obo/CL_0000323,lysozyme secreting cell
+http://purl.obolibrary.org/obo/CL_0000852,neuromast supporting cell
+http://purl.obolibrary.org/obo/CL_0000608,zygospore
+http://purl.obolibrary.org/obo/CL_4052002,syncytial cell
+http://purl.obolibrary.org/obo/CL_0000459,noradrenergic cell
+http://purl.obolibrary.org/obo/CL_1001009,kidney efferent arteriole cell
+http://purl.obolibrary.org/obo/CL_0000599,conidium
+http://purl.obolibrary.org/obo/CL_4033084,cuboidal granulosa cell
+http://purl.obolibrary.org/obo/CL_1000616,kidney outer medulla cell
+http://purl.obolibrary.org/obo/CL_0000159,seromucus secreting cell
+http://purl.obolibrary.org/obo/CL_4052047,late luteal cell
+http://purl.obolibrary.org/obo/CL_0005001,iridoblast
+http://purl.obolibrary.org/obo/CL_0007023,flask cell
+http://purl.obolibrary.org/obo/CL_0000417,endopolyploid cell
+http://purl.obolibrary.org/obo/CL_0002385,blastoconidium
+http://purl.obolibrary.org/obo/CL_0007020,bottle cell
+http://purl.obolibrary.org/obo/CL_0000857,slow muscle myoblast
+http://purl.obolibrary.org/obo/CL_0000509,gastrin secreting cell
+http://purl.obolibrary.org/obo/CL_0000309,copper accumulating cell
+http://purl.obolibrary.org/obo/CL_0002390,uninucleate blastconidium
+http://purl.obolibrary.org/obo/CL_0002520,nephrocyte
+http://purl.obolibrary.org/obo/CL_0011020,neural progenitor cell
+http://purl.obolibrary.org/obo/CL_2000075,anterior visceral endoderm cell
+http://purl.obolibrary.org/obo/CL_0000234,phagocyte
+http://purl.obolibrary.org/obo/CL_1000505,kidney pelvis cell
+http://purl.obolibrary.org/obo/CL_0000703,sustentacular cell
+http://purl.obolibrary.org/obo/CL_0000597,microconidium
+http://purl.obolibrary.org/obo/CL_0000286,hyphal cell
+http://purl.obolibrary.org/obo/CL_1000891,kidney arterial blood vessel cell
+http://purl.obolibrary.org/obo/CL_0000677,gut absorptive cell
+http://purl.obolibrary.org/obo/CL_0000565,fat body cell
+http://purl.obolibrary.org/obo/CL_0005004,pigment erythroblast
+http://purl.obolibrary.org/obo/CL_0008019,mesenchymal cell
+http://purl.obolibrary.org/obo/CL_0002674,H minus
+http://purl.obolibrary.org/obo/CL_1000682,kidney medulla interstitial cell
+http://purl.obolibrary.org/obo/CL_1000601,ureteral cell
+http://purl.obolibrary.org/obo/CL_0000590,small luteal cell
+http://purl.obolibrary.org/obo/CL_0000373,histoblast
+http://purl.obolibrary.org/obo/CL_0000518,phagocyte (sensu Vertebrata)
+http://purl.obolibrary.org/obo/CL_0009099,fibro/adipogenic progenitor cell
+http://purl.obolibrary.org/obo/CL_0002559,hair follicle cell
+http://purl.obolibrary.org/obo/CL_1001006,kidney afferent arteriole cell
+http://purl.obolibrary.org/obo/CL_0001063,neoplastic cell
+http://purl.obolibrary.org/obo/CL_0000334,vegetative cell (sensu Fungi)
+http://purl.obolibrary.org/obo/CL_1000155,Malpighian tubule stellate cell
+http://purl.obolibrary.org/obo/CL_0000747,cyanophore
+http://purl.obolibrary.org/obo/CL_0000056,myoblast
+http://purl.obolibrary.org/obo/CL_0000133,neurectodermal cell
+http://purl.obolibrary.org/obo/CL_0000606,macroconidium
+http://purl.obolibrary.org/obo/CL_0000483,bombesin stimulating hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000361,gastrula cell
+http://purl.obolibrary.org/obo/CL_1001045,kidney cortex artery cell
+http://purl.obolibrary.org/obo/CL_0007009,prechondroblast
+http://purl.obolibrary.org/obo/CL_0000519,phagocyte (sensu Nematoda and Protostomia)
+http://purl.obolibrary.org/obo/CL_0000007,early embryonic cell (metazoa)
+http://purl.obolibrary.org/obo/CL_0000168,insulin secreting cell
+http://purl.obolibrary.org/obo/CL_0000319,mucus secreting cell
+http://purl.obolibrary.org/obo/CL_0000367,sheath cell (sensu Nematoda)
+http://purl.obolibrary.org/obo/CL_0000447,carbohydrate secreting cell
+http://purl.obolibrary.org/obo/CL_0008018,somatic muscle myoblast
+http://purl.obolibrary.org/obo/CL_0002274,histamine secreting cell
+http://purl.obolibrary.org/obo/CL_0002391,multinucleate blastoconidium
+http://purl.obolibrary.org/obo/CL_0009013,fetal hepatobiliary progenitor cell
+http://purl.obolibrary.org/obo/CL_0000515,skeletal muscle myoblast
+http://purl.obolibrary.org/obo/CL_4029003,somatic nurse-like cell
+http://purl.obolibrary.org/obo/CL_0002369,fungal spore
+http://purl.obolibrary.org/obo/CL_0008020,skeletal muscle satellite myogenic cell
+http://purl.obolibrary.org/obo/CL_1001320,urethra cell
+http://purl.obolibrary.org/obo/CL_0000315,tear secreting cell
+http://purl.obolibrary.org/obo/CL_1001138,interlobular artery cell
+http://purl.obolibrary.org/obo/CL_1001225,kidney collecting duct cell
+http://purl.obolibrary.org/obo/CL_4033005,serous secreting cell of bronchus submucosal gland
+http://purl.obolibrary.org/obo/CL_0000521,fungal cell
+http://purl.obolibrary.org/obo/CL_0000347,scleral cell
+http://purl.obolibrary.org/obo/CL_0000423,tip cell
+http://purl.obolibrary.org/obo/CL_0000341,pigment cell (sensu Nematoda and Protostomia)
+http://purl.obolibrary.org/obo/CL_0007018,epidermal ciliary cell
+http://purl.obolibrary.org/obo/CL_0008016,activated skeletal muscle satellite cell
+http://purl.obolibrary.org/obo/CL_0000208,pH receptor cell
+http://purl.obolibrary.org/obo/CL_0000701,paraganglia type 2 cell
+http://purl.obolibrary.org/obo/CL_0000571,leucophore
+http://purl.obolibrary.org/obo/CL_0009005,salivary gland cell
+http://purl.obolibrary.org/obo/CL_0000380,thecogen cell
+http://purl.obolibrary.org/obo/CL_0000256,uric acid accumulating cell
+http://purl.obolibrary.org/obo/CL_0000615,basidiospore
+http://purl.obolibrary.org/obo/CL_0000689,myoendocrine cell
+http://purl.obolibrary.org/obo/CL_0000326,glycogen accumulating cell
+http://purl.obolibrary.org/obo/CL_0000188,cell of skeletal muscle
+http://purl.obolibrary.org/obo/CL_0007007,notochordal sheath cell
+http://purl.obolibrary.org/obo/CL_0000430,xanthophore cell
+http://purl.obolibrary.org/obo/CL_0000152,exocrine cell
+http://purl.obolibrary.org/obo/CL_0008034,mural cell
+http://purl.obolibrary.org/obo/CL_4030032,valve interstitial cell
+http://purl.obolibrary.org/obo/CL_0000465,cardioblast (sensu Arthropoda)
+http://purl.obolibrary.org/obo/CL_0000501,granulosa cell
+http://purl.obolibrary.org/obo/CL_0007005,notochordal cell
+http://purl.obolibrary.org/obo/CL_0000223,endodermal cell
+http://purl.obolibrary.org/obo/CL_0002381,uninucleate conidium
+http://purl.obolibrary.org/obo/CL_0000507,endorphin secreting cell
+http://purl.obolibrary.org/obo/CL_0000596,sexual spore
+http://purl.obolibrary.org/obo/CL_0002524,disseminated nephrocyte
+http://purl.obolibrary.org/obo/CL_0000514,smooth muscle myoblast
+http://purl.obolibrary.org/obo/CL_0000435,alkali secreting cell
+http://purl.obolibrary.org/obo/CL_0000858,fast muscle myoblast
+http://purl.obolibrary.org/obo/CL_0019001,tracheobronchial serous cell
+http://purl.obolibrary.org/obo/CL_0000174,steroid hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000180,estradiol secreting cell
+http://purl.obolibrary.org/obo/CL_0000892,smooth muscle cell derived foam cell
+http://purl.obolibrary.org/obo/CL_1000331,serous cell of epithelium of bronchus
+http://purl.obolibrary.org/obo/CL_0002269,vasoactive intestinal peptide secreting cell
+http://purl.obolibrary.org/obo/CL_0000854,interneuromast cell
+http://purl.obolibrary.org/obo/CL_0000711,cumulus granulosa cell
+http://purl.obolibrary.org/obo/CL_0002380,oospore
+http://purl.obolibrary.org/obo/CL_0009003,larval midgut cell
+http://purl.obolibrary.org/obo/CL_0000177,testosterone secreting cell
+http://purl.obolibrary.org/obo/CL_0000600,heterokaryon
+http://purl.obolibrary.org/obo/CL_0000335,mesenchyme condensation cell
+http://purl.obolibrary.org/obo/CL_0000407,scolopidial ligament cell
+http://purl.obolibrary.org/obo/CL_0000457,biogenic amine secreting cell
+http://purl.obolibrary.org/obo/CL_0011026,progenitor cell
+http://purl.obolibrary.org/obo/CL_0002175,primary follicular cell of ovary
+http://purl.obolibrary.org/obo/CL_0000348,choroidal cell of the eye
+http://purl.obolibrary.org/obo/CL_0000342,pigment cell (sensu Vertebrata)
+http://purl.obolibrary.org/obo/CL_0000170,glucagon secreting cell
+http://purl.obolibrary.org/obo/CL_0000365,animal zygote
+http://purl.obolibrary.org/obo/CL_0008012,quiescent skeletal muscle satellite cell
+http://purl.obolibrary.org/obo/CL_0002681,kidney cortical cell
+http://purl.obolibrary.org/obo/CL_1000600,lower urinary tract cell
+http://purl.obolibrary.org/obo/CL_0000474,pericardial nephrocyte
+http://purl.obolibrary.org/obo/CL_0002388,multinucleate arthroconidium
+http://purl.obolibrary.org/obo/CL_0000384,ligament cell
+http://purl.obolibrary.org/obo/CL_0000404,electrically signaling cell
+http://purl.obolibrary.org/obo/CL_2000038,posterior lateral line neuromast mantle cell
+http://purl.obolibrary.org/obo/CL_1001142,arcuate vein cell
+http://purl.obolibrary.org/obo/CL_0002272,motilin secreting cell
+http://purl.obolibrary.org/obo/CL_1000596,inner renal cortex cell
+http://purl.obolibrary.org/obo/CL_0000206,chemoreceptor cell
+http://purl.obolibrary.org/obo/CL_0000513,cardiac muscle myoblast
+http://purl.obolibrary.org/obo/CL_0000439,prolactin secreting cell
+http://purl.obolibrary.org/obo/CL_1000504,kidney medulla cell
+http://purl.obolibrary.org/obo/CL_0000295,somatotropin secreting cell
+http://purl.obolibrary.org/obo/CL_0002389,uninucleate arthroconidium
+http://purl.obolibrary.org/obo/CL_0000149,visual pigment cell
+http://purl.obolibrary.org/obo/CL_0002386,multinucleate macroconidium
+http://purl.obolibrary.org/obo/CL_0007002,precementoblast
+http://purl.obolibrary.org/obo/CL_0000311,keratin accumulating cell
+http://purl.obolibrary.org/obo/CL_0000114,surface ectodermal cell
+http://purl.obolibrary.org/obo/CL_0000462,adepithelial cell
+http://purl.obolibrary.org/obo/CL_1000893,kidney venous blood vessel cell
+http://purl.obolibrary.org/obo/CL_0000629,storage cell
+http://purl.obolibrary.org/obo/CL_0005005,cyanoblast
+http://purl.obolibrary.org/obo/CL_0000371,protoplast
+http://purl.obolibrary.org/obo/CL_0000226,single nucleate cell
+http://purl.obolibrary.org/obo/CL_0000454,epinephrine secreting cell
+http://purl.obolibrary.org/obo/CL_0005003,leucoblast
+http://purl.obolibrary.org/obo/CL_0009116,progenitor cell of mammary luminal epithelium
+http://purl.obolibrary.org/obo/CL_0002387,arthroconidium
+http://purl.obolibrary.org/obo/CL_0000467,adrenocorticotropic hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000249,hatching gland cell
+http://purl.obolibrary.org/obo/CL_0000486,garland cell
+http://purl.obolibrary.org/obo/CL_0000661,distal tip cell (sensu Nematoda)
+http://purl.obolibrary.org/obo/CL_0000221,ectodermal cell
+http://purl.obolibrary.org/obo/CL_4033089,atretic follicular cell of ovary
+http://purl.obolibrary.org/obo/CL_0000554,gastrin stimulating hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000436,vaginal lubricant secreting cell
+http://purl.obolibrary.org/obo/CL_1000272,lung secretory cell
+http://purl.obolibrary.org/obo/CL_2000036,anterior lateral line neuromast supporting cell
+http://purl.obolibrary.org/obo/CL_0000178,Leydig cell
+http://purl.obolibrary.org/obo/CL_0002176,secondary follicular cell of ovary
+http://purl.obolibrary.org/obo/CL_0000506,enkephalin secreting cell
+http://purl.obolibrary.org/obo/CL_0000154,protein secreting cell
+http://purl.obolibrary.org/obo/CL_4052046,early luteal cell
+http://purl.obolibrary.org/obo/CL_0001064,malignant cell
+http://purl.obolibrary.org/obo/CL_0009010,transit amplifying cell
+http://purl.obolibrary.org/obo/CL_0002546,embryonic blood vessel endothelial progenitor cell
+http://purl.obolibrary.org/obo/CL_2000022,cardiac septum cell
+http://purl.obolibrary.org/obo/CL_1000330,serous cell of epithelium of trachea
+http://purl.obolibrary.org/obo/CL_2000021,sebaceous gland cell
+http://purl.obolibrary.org/obo/CL_1000804,kidney outer medulla interstitial cell
+http://purl.obolibrary.org/obo/CL_0008017,adult skeletal muscle myoblast
+http://purl.obolibrary.org/obo/CL_0010007,His-Purkinje system cell
+http://purl.obolibrary.org/obo/CL_0000603,dikaryon
+http://purl.obolibrary.org/obo/CL_0000431,iridophore
+http://purl.obolibrary.org/obo/CL_0010016,collar cell
+http://purl.obolibrary.org/obo/CL_4033090,atretic granulosa cell
+http://purl.obolibrary.org/obo/CL_0000010,cultured cell
+http://purl.obolibrary.org/obo/CL_0000605,fungal asexual spore
+http://purl.obolibrary.org/obo/CL_0000641,chromophobe cell
+http://purl.obolibrary.org/obo/CL_0000676,cap cell
+http://purl.obolibrary.org/obo/CL_0002375,Schwann cell precursor
+http://purl.obolibrary.org/obo/CL_1000500,kidney interstitial cell
+http://purl.obolibrary.org/obo/CL_0009019,nephrogenic zone cell
+http://purl.obolibrary.org/obo/CL_0000353,blastoderm cell
+http://purl.obolibrary.org/obo/CL_1000617,kidney inner medulla cell
+http://purl.obolibrary.org/obo/CL_0000541,melanoblast
+http://purl.obolibrary.org/obo/CL_0002494,cardiocyte
+http://purl.obolibrary.org/obo/CL_0000175,luteal cell
+http://purl.obolibrary.org/obo/CL_0000594,skeletal muscle satellite cell
+http://purl.obolibrary.org/obo/CL_0002351,progenitor cell of endocrine pancreas
+http://purl.obolibrary.org/obo/CL_1000333,serous cell of epithelium of lobular bronchiole
+http://purl.obolibrary.org/obo/CL_1001135,arcuate artery cell
+http://purl.obolibrary.org/obo/CL_0000593,androgen secreting cell
+http://purl.obolibrary.org/obo/CL_4052027,atretic theca cell
+http://purl.obolibrary.org/obo/CL_0000030,glioblast
+http://purl.obolibrary.org/obo/CL_0000222,mesodermal cell
+http://purl.obolibrary.org/obo/CL_0000421,coelomocyte
+http://purl.obolibrary.org/obo/CL_4042016,nasal serous secreting cell
+http://purl.obolibrary.org/obo/CL_0002384,uninucleate macroconidium
+http://purl.obolibrary.org/obo/CL_4033067,mural granulosa cell
+http://purl.obolibrary.org/obo/CL_0000619,supporting cell (sensu Nematoda)
+http://purl.obolibrary.org/obo/CL_0000310,iron accumulating cell
+http://purl.obolibrary.org/obo/CL_0000631,labyrinth supporting cell
+http://purl.obolibrary.org/obo/CL_0005018,ghrelin secreting cell
+http://purl.obolibrary.org/obo/CL_0000179,progesterone secreting cell
+http://purl.obolibrary.org/obo/CL_0000257,Eumycetozoan cell
+http://purl.obolibrary.org/obo/CL_1000854,kidney blood vessel cell
+http://purl.obolibrary.org/obo/CL_2000020,inner cell mass cell
+http://purl.obolibrary.org/obo/CL_0000524,spheroplast
+http://purl.obolibrary.org/obo/CL_4040006,dermal chromatophore
+http://purl.obolibrary.org/obo/CL_0000055,non-terminally differentiated cell
+http://purl.obolibrary.org/obo/CL_0000578,experimentally modified cell in vitro
+http://purl.obolibrary.org/obo/CL_0000505,substance P secreting cell
+http://purl.obolibrary.org/obo/CL_0000345,dental papilla cell
+http://purl.obolibrary.org/obo/CL_0000456,mineralocorticoid secreting cell
+http://purl.obolibrary.org/obo/CL_0002383,conidium of conidiophore head
+http://purl.obolibrary.org/obo/CL_0000443,calcitonin secreting cell
+http://purl.obolibrary.org/obo/CL_1000497,kidney cell
+http://purl.obolibrary.org/obo/CL_0007003,preodontoblast
+http://purl.obolibrary.org/obo/CL_1000550,kidney papillary duct principal epithelial cell
+http://purl.obolibrary.org/obo/CL_0000452,thyroid hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000470,digestive enzyme secreting cell
+http://purl.obolibrary.org/obo/CL_4030031,interstitial cell
+http://purl.obolibrary.org/obo/CL_0002382,multinucleate conidium
+http://purl.obolibrary.org/obo/CL_0000574,erythrophore
+http://purl.obolibrary.org/obo/CL_0002373,growth hormone releasing hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000481,cholecystokin stimulating hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000480,secretin stimulating hormone secreting cell
+http://purl.obolibrary.org/obo/CL_0000440,melanocyte stimulating hormone secreting cell
+http://purl.obolibrary.org/obo/CL_1000597,papillary tips cell
+http://purl.obolibrary.org/obo/CL_0000172,somatostatin secreting cell
+http://purl.obolibrary.org/obo/CL_0011029,cnidocyte
+http://purl.obolibrary.org/obo/CL_0002630,actinomycete-type spore
+http://purl.obolibrary.org/obo/CL_0000680,muscle precursor cell
+http://purl.obolibrary.org/obo/CL_0000001,primary cultured cell
+http://purl.obolibrary.org/obo/CL_0011010,lateral mesodermal cell
+http://purl.obolibrary.org/obo/CL_0000227,binucleate cell
+http://purl.obolibrary.org/obo/CL_1000147,cardiac valve cell
+http://purl.obolibrary.org/obo/CL_0007019,epidermal mucus secreting cell
+http://purl.obolibrary.org/obo/CL_0000378,supporting cell (sensu Nematoda and Protostomia)
+http://purl.obolibrary.org/obo/CL_4052024,myotendinous junction nucleus
+http://purl.obolibrary.org/obo/CL_0017508,cartwheel heterochromatin
+http://purl.obolibrary.org/obo/CL_0017503,basophilic cytoplasm
+http://purl.obolibrary.org/obo/CL_4052025,neuromuscular junction nucleus
+http://purl.obolibrary.org/obo/CL_0017500,neutrophillic cytoplasm
+http://purl.obolibrary.org/obo/CL_0017507,reniform nucleus
+http://purl.obolibrary.org/obo/CL_0017504,polychromatophilic cytoplasm
+http://purl.obolibrary.org/obo/CL_0017509,alobate nucleus
+http://purl.obolibrary.org/obo/CL_0017502,acidophilic cytoplasm
+http://purl.obolibrary.org/obo/CL_0017506,banded nucleus
