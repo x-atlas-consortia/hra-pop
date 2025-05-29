@@ -8,6 +8,7 @@ OUT=$OUTPUT_DIR/$VERSION
 
 mkdir -p $OUT
 
+node src/pretty-jsonld.js ccf-context.jsonld $DIR/full-dataset-graph.jsonl $OUT/full-dataset-graph.jsonld
 node src/pretty-jsonld.js ccf-context.jsonld $DIR/atlas-dataset-graph.jsonl $OUT/atlas-dataset-graph.jsonld
 node src/pretty-jsonld.js ccf-context.jsonld $DIR/atlas-enriched-dataset-graph.jsonl $OUT/atlas-enriched-dataset-graph.jsonld
 node src/pretty-jsonld.js ccf-context.jsonld $DIR/atlas-as-cell-summaries.jsonl $OUT/atlas-as-cell-summaries.jsonld
