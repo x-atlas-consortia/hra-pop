@@ -1,9 +1,10 @@
-import { createWriteStream, readFileSync } from 'fs';
+import { createWriteStream } from 'fs';
+import { readJsonLd } from './utils/json.js';
 import { getAllSpatialEntityDistances } from './utils/spatial-entity-distance.js';
 
 const REGISTRATIONS = process.argv[2];
 const OUTPUT = process.argv[3];
-const donors = JSON.parse(readFileSync(REGISTRATIONS))['@graph'];
+const donors = (await readJsonLd(REGISTRATIONS))['@graph'];
 
 const ruiLocationLookup = {};
 for (const donor of donors) {
@@ -27,7 +28,14 @@ for await (const result of getAllSpatialEntityDistances(ruiLocations)) {
   const a = result.entity_a;
   const b = result.entity_b;
   const dist = result.distance;
-  results.write(`[] a Edge: ; a: <${a}> ; b: <${b}> ; dist: ${dist} .\n`);
+  const line = `[] a Edge: ; a: <${a}> ; b: <${b}> ; dist: ${dist} .\n`;
+
+  if (!results.write(line)) {
+    // Drain buffer periodically
+    await new Promise((resolve) => {
+      results.once('drain', resolve);
+    });
+  }
 }
 
 results.close();

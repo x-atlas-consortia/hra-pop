@@ -1,5 +1,6 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import Papa from 'papaparse';
+import { readJsonLd, writeJson } from './utils/json.js';
 
 const DATASET_GRAPH_CSV = process.argv[2];
 const CELL_SUMMARIES = process.argv[3];
@@ -24,7 +25,7 @@ function getRuiSex(ruiString) {
   return sex;
 }
 
-const cellSummaries = JSON.parse(readFileSync(CELL_SUMMARIES));
+const cellSummaries = await readJsonLd(CELL_SUMMARIES);
 for (const summary of cellSummaries['@graph']) {
   const dataset = datasetLookup[summary['cell_source']];
   if (dataset) {
@@ -44,4 +45,4 @@ for (const summary of cellSummaries['@graph']) {
   }
 }
 
-writeFileSync(OUTPUT, JSON.stringify(cellSummaries, null, 2));
+writeJson(OUTPUT, cellSummaries);

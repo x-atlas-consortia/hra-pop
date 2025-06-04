@@ -4,6 +4,7 @@ import Papa from 'papaparse';
 import { basename } from 'path';
 import sh from 'shelljs';
 import { getHbmToUuidLookup } from './utils/hubmap-uuid-lookup.js';
+import { writeJson } from './utils/json.js';
 const HUBMAP_TOKEN = process.env.HUBMAP_TOKEN;
 
 const OUTPUT = process.argv[2];
@@ -119,7 +120,7 @@ const metadataResults = results.map((summary) => {
   return {
     donor_id: `${id}$TEMP_DONOR`,
     block_id: `${id}$TEMP_BLOCK`,
-    dataset_id: id
+    dataset_id: id,
   };
 });
 
@@ -127,7 +128,7 @@ const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': results,
 };
-writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+await writeJson(OUTPUT, jsonld);
 
 const metadataCsv = Papa.unparse(metadataResults, { header: true });
 writeFileSync(OUTPUT_CSV, metadataCsv);

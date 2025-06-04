@@ -5,9 +5,9 @@ RAW_DIR="./raw-data"
 
 export API_ENDPOINT=${API_ENDPOINT:-"https://apps.humanatlas.io/api/"}
 export PATH=./node_modules/.bin:${PATH}
-export NODE_OPTIONS="--max-old-space-size=64000"
+export NODE_OPTIONS="--max-old-space-size=192000"
 
-source input-data/v0.11.1/config.sh
+source input-data/v1.0/config.sh
 
 export VERSION
 

@@ -1,0 +1,37 @@
+#+ summary: Cell Summaries by Anatomical Structure 
+#+ description: Computes the cell summaries for each organ by anatomical strcutrure.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?organ ?as ?as_label ?sex ?tool ?modality ?cell_id ?cell_label ?cell_count ?cell_percentage ?dataset_count
+FROM HRA:
+FROM HRApop:
+WHERE {
+  ?as ccf:has_cell_summary [ 
+      ccf:cell_annotation_method ?tool ;
+      ccf:cell_source_label ?as_label ;
+      ccf:sex ?sex ;
+      ccf:modality ?modality ;
+      ccf:aggregated_summary_count ?dataset_count ;
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_id ;
+        ccf:cell_label ?cell_label ;
+        ccf:cell_count ?cell_count ;
+        ccf:percentage_of_total ?cell_percentage ;
+    ]
+  ] .
+  FILTER(STRSTARTS(STR(?as), STR(UBERON:)) || STRSTARTS(STR(?as), STR(FMA:)))
+  
+  ?refOrganPiece ccf:representation_of ?as ;
+      ccf:has_reference_organ ?refOrgan .
+  ?refOrgan ccf:organ_owner_sex ?sex .
+  ?refOrgan skos:prefLabel ?organ .
+}
+ORDER BY ?sex ?as ?tool DESC(?cell_count)

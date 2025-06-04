@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
 import Papa from 'papaparse';
+import { readJsonLd } from './utils/json.js';
 
 const FLAT_DATASET_GRAPH = process.argv[2];
 const CELL_SUMMARIES = process.argv[3];
@@ -12,7 +13,7 @@ const APPROVED_SOURCES = process.env.APPROVED_SOURCES || '';
 const UTF8_BOM = '\uFEFF';
 
 const approvedSources = new Set(APPROVED_SOURCES.split(/\W+/).filter((s) => !!s));
-const summaries = JSON.parse(readFileSync(CELL_SUMMARIES).toString());
+const summaries = await readJsonLd(CELL_SUMMARIES);
 // const summaryLookup = new Set(summaries['@graph'].map((s) => s.cell_source));
 const summaryLookup = summaries['@graph'].reduce((acc, summary) => {
   const src = summary.cell_source;
@@ -89,9 +90,12 @@ for (const row of data) {
   const hasPublication = !!row.publication;
   const hasApprovedSource = approvedSources.has(row.consortium_name);
   const isVerified = hasPublication || hasApprovedSource;
-  const maxDiamonds = 3;
-  const diamonds = (hasExtractionSite ? 1 : 0) + (hasCellSummary ? 1 : 0) + (hasPublication ? 1 : 0);
-  const inAtlas = hasExtractionSite && hasCellSummary && isVerified;
+  const age = parseFloat(row.donor_age + '');
+  const isAdult = !isNaN(age) && age >= 18;
+  const maxDiamonds = 4;
+  const diamonds =
+    (hasExtractionSite ? 1 : 0) + (hasCellSummary ? 1 : 0) + (hasPublication ? 1 : 0) + (isAdult ? 1 : 0);
+  const inAtlas = hasExtractionSite && hasCellSummary && isVerified && isAdult;
 
   // Find the highest quality datasets for the atlas
   if (inAtlas) {

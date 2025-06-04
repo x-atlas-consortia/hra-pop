@@ -1,0 +1,11 @@
+sex,consortium,dataset_count,cell_count,modality
+Female,HCA,63,364993,sc_transcriptomics
+Male,HCA,58,359273,sc_transcriptomics
+Female,HuBMAP,112,2933015,sc_transcriptomics
+Female,HuBMAP,22,900547,sc_proteomics
+Male,HuBMAP,82,15676316,sc_proteomics
+Male,HuBMAP,253,6626620,sc_transcriptomics
+Female,NHLBI/LungMap,1,4680,sc_transcriptomics
+Male,NHLBI/LungMap,2,5713,sc_transcriptomics
+Female,SenNet,18,225940,sc_transcriptomics
+Male,SenNet,36,404540,sc_transcriptomics

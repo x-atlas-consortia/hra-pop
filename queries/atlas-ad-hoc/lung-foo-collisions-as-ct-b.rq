@@ -1,0 +1,58 @@
+#+ summary: FOO
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?organ ?as_label ?ct_label ?gene_symbol ?as ?ct ?gene
+WHERE {
+  # Get AS of interest
+  {
+    SELECT DISTINCT ?organ ?as ?as_label
+    WHERE {
+      VALUES (?refOrganAs ?organ) {
+        (<http://purl.obolibrary.org/obo/UBERON_0002113> "Kidney")
+        (<http://purl.obolibrary.org/obo/UBERON_0001004> "Lung") # Respiratory System
+        (<http://purl.obolibrary.org/obo/UBERON_0002108> "Small Intestine")
+        (<http://purl.obolibrary.org/obo/UBERON_0000059> "Large Intestine")
+      }
+
+      { GRAPH HRApop: { ?as ccf:has_cell_summary [ ] . } }
+      UNION
+      { [] ccf:collides_with ?as . }
+
+      GRAPH HRA: {
+        ?as rdfs:label ?as_label .
+        [] ccf:representation_of ?as .
+        ?as ccf:ccf_part_of* ?refOrganAs .
+      }
+
+      FILTER(?as != <http://purl.obolibrary.org/obo/UBERON_0002048> && ?as != ?refOrganAs)
+    }
+  }
+
+  # Lookup CT + B for the AS via ASCT+B tables
+  GRAPH HRA: {
+    [] a ccf:AsctbRecord ;
+      ccf:anatomical_structure [
+        ccf:source_concept ?as 
+      ];
+      ccf:cell_type [
+        ccf:source_concept ?ct 
+      ];
+      ccf:gene_marker [
+        ccf:source_concept ?gene 
+      ] .
+
+    # Alternative that only looks up CT+B specifically assigned to that AS, does not include children
+    # [] a ccf:CellMarkerDescriptor ;
+    #   ccf:primary_anatomical_structure ?as ;
+    #   ccf:primary_cell_type ?ct ;
+    #   ccf:biomarker ?gene .
+
+    ?ct rdfs:label ?ct_label .
+    ?gene rdfs:label ?gene_symbol .
+  }
+}

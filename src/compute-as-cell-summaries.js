@@ -1,18 +1,19 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import Papa from 'papaparse';
+import { readJsonLd, writeJson } from './utils/json.js';
 
 const DATASET_GRAPH_CSV = process.argv[2];
 const COLLISIONS = process.argv[3];
 const CELL_SUMMARIES = process.argv[4];
 const OUTPUT = process.argv[5];
 
-const collisions = JSON.parse(readFileSync(COLLISIONS));
+const collisions = await readJsonLd(COLLISIONS);
 const collisionLookup = collisions['@graph'].reduce(
   (acc, collision) => ((acc[collision['collision_source']] = collision.collisions), acc),
   {}
 );
 
-const summaries = JSON.parse(readFileSync(CELL_SUMMARIES));
+const summaries = await readJsonLd(CELL_SUMMARIES);
 const summaryLookup = summaries['@graph'].reduce((lookup, summary) => {
   const id = summary['cell_source'];
   lookup[id] = lookup[id] || [];
@@ -31,9 +32,7 @@ function handleCellSummaries(summaries, collisions) {
         const asLabel = collision.as_label;
         const modality = dsSummary.modality;
         const annotation_method = dsSummary.annotation_method;
-        const sex = collision.as_3d_id.toLowerCase().includes('female')
-          ? 'Female'
-          : 'Male';
+        const sex = collision.as_3d_id.toLowerCase().includes('female') ? 'Female' : 'Male';
         const summaryKey = sex + asIri + modality + annotation_method;
         const weightedCellCount = cell.count * collision.percentage;
 
@@ -73,10 +72,12 @@ function finalizeAsCellSummaries() {
     const cellCount = summary.summary.reduce((acc, s) => acc + s.count, 0);
     summary.summary.forEach((s) => (s.percentage = s.count / cellCount));
     summary.aggregated_summary_count = Object.keys(summary.aggregated_summaries).length;
-    summary.aggregated_summaries = Object.entries(summary.aggregated_summaries).map(([aggregated_cell_source, percentage]) => ({
-      aggregated_cell_source,
-      percentage,
-    }));
+    summary.aggregated_summaries = Object.entries(summary.aggregated_summaries).map(
+      ([aggregated_cell_source, percentage]) => ({
+        aggregated_cell_source,
+        percentage,
+      })
+    );
     return summary;
   });
 }
@@ -98,4 +99,4 @@ const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': results,
 };
-writeFileSync(OUTPUT, JSON.stringify(jsonld, null, 2));
+writeJson(OUTPUT, jsonld);

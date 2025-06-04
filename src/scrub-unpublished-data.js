@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
 import Papa from 'papaparse';
+import { readJsonLd, writeJson } from './utils/json.js';
 import { getPublicXConsortiaEntities } from './utils/xconsortia-entities.js';
 
 const IN_FILE = process.argv[2];
@@ -32,13 +33,13 @@ function filterCsv(inFile, outFile, entities) {
   writeCsv(outFile, data);
 }
 
-function filterJSON(inFile, outFile, entities) {
-  const data = JSON.parse(readFileSync(inFile));
+async function filterJSON(inFile, outFile, entities) {
+  const data = await readJsonLd(inFile);
   data['@graph'] = data['@graph'].filter((row) => {
     const ds = row.cell_source;
     return (isXConsortiaEntity(ds) && entities.has(ds)) || !isXConsortiaEntity(ds);
   });
-  writeFileSync(outFile, JSON.stringify(data, null, 2));
+  await writeJson(outFile, data);
 }
 
 const entities = await getPublicXConsortiaEntities();
@@ -46,5 +47,5 @@ const entities = await getPublicXConsortiaEntities();
 if (IN_FILE.endsWith('.csv')) {
   filterCsv(IN_FILE, OUT_FILE, entities);
 } else {
-  filterJSON(IN_FILE, OUT_FILE, entities);
+  await filterJSON(IN_FILE, OUT_FILE, entities);
 }

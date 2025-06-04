@@ -1,4 +1,5 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
+import { readJsonLd, writeJson } from './utils/json.js';
 
 const DATASET_GRAPH = process.argv[2];
 const COLLISIONS = process.argv[3];
@@ -7,30 +8,33 @@ const DATASET_CELL_SUMMARIES = process.argv[5];
 const EXTRACTION_SITE_CELL_SUMMARIES = process.argv[6];
 const OUTPUT = process.argv[7];
 
-const collisions = JSON.parse(readFileSync(COLLISIONS));
-const corridors = JSON.parse(readFileSync(CORRIDORS));
-const datasetSummaries = JSON.parse(readFileSync(DATASET_CELL_SUMMARIES));
-const ruiSummaries = JSON.parse(readFileSync(EXTRACTION_SITE_CELL_SUMMARIES));
-const donors = JSON.parse(readFileSync(DATASET_GRAPH));
+const collisions = await readJsonLd(COLLISIONS);
+const corridors = await readJsonLd(CORRIDORS);
+const datasetSummaries = await readJsonLd(DATASET_CELL_SUMMARIES);
+const ruiSummaries = await readJsonLd(EXTRACTION_SITE_CELL_SUMMARIES);
+const donors = await readJsonLd(DATASET_GRAPH);
 
-const summaryLookup = datasetSummaries['@graph'].concat(ruiSummaries['@graph'])
-  .reduce((acc, summary) => {
-    const summaries = acc[summary['cell_source']] = acc[summary['cell_source']] || [];
-    summaries.push(summary);
-    delete summary.cell_source;
-    return acc; 
-  }, {});
+const summaryLookup = datasetSummaries['@graph'].concat(ruiSummaries['@graph']).reduce((acc, summary) => {
+  const summaries = (acc[summary['cell_source']] = acc[summary['cell_source']] || []);
+  summaries.push(summary);
+  delete summary.cell_source;
+  return acc;
+}, {});
 
 // Add summary to an object if it exists in *-cell-sumaries.jsonld
 function enrichWithSummaries(obj) {
   obj.summaries = summaryLookup[obj['@id']] || [];
 }
 
-const collisionLookup = collisions['@graph']
-  .reduce((acc, collision) => (acc[collision['collision_source']] = collision, acc), {});
+const collisionLookup = collisions['@graph'].reduce(
+  (acc, collision) => ((acc[collision['collision_source']] = collision), acc),
+  {}
+);
 
-const corridorLookup = corridors['@graph']
-  .reduce((acc, corridor) => (acc[corridor['corridor_source']] = corridor, acc), {});
+const corridorLookup = corridors['@graph'].reduce(
+  (acc, corridor) => ((acc[corridor['corridor_source']] = corridor), acc),
+  {}
+);
 
 function enrichRuiLocation(ruiLocation) {
   const collision = collisionLookup[ruiLocation['@id']];
@@ -67,4 +71,4 @@ const jsonld = {
   ...JSON.parse(readFileSync('ccf-context.jsonld')),
   '@graph': donors['@graph'],
 };
-writeFileSync(OUTPUT, JSON.stringify(jsonld));
+writeJson(OUTPUT, jsonld);

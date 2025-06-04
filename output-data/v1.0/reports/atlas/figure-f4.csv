@@ -1,0 +1,51 @@
+organId,organ,sex,modality,tool,total_organ_as_count,organ_as_count_with_collisions,rui_location_count,dataset_count,non_atlas_dataset_count
+UBERON:0000059,large intestine,Female,sc_proteomics,sc_proteomics,11,7,6,6,64
+UBERON:0000059,large intestine,Male,sc_proteomics,sc_proteomics,11,6,25,49,238
+UBERON:0001004,respiratory system,Male,sc_proteomics,sc_proteomics,59,11,1,1,276
+UBERON:0002097,skin of body,Male,sc_proteomics,sc_proteomics,1,1,2,2,13
+UBERON:0002108,small intestine,Female,sc_proteomics,sc_proteomics,11,8,8,8,211
+UBERON:0002108,small intestine,Male,sc_proteomics,sc_proteomics,12,7,24,24,244
+UBERON:0002106,spleen,Female,sc_proteomics,sc_proteomics,6,1,1,1,19
+UBERON:0002106,spleen,Male,sc_proteomics,sc_proteomics,6,3,2,2,61
+UBERON:0000948,heart,Female,sc_transcriptomics,azimuth,17,5,5,17,46
+UBERON:0000948,heart,Female,sc_transcriptomics,celltypist,17,5,5,17,46
+UBERON:0000948,heart,Male,sc_transcriptomics,azimuth,17,5,17,59,342
+UBERON:0000948,heart,Male,sc_transcriptomics,celltypist,17,5,17,59,342
+UBERON:0000059,large intestine,Female,sc_transcriptomics,celltypist,11,7,8,14,64
+UBERON:0000059,large intestine,Female,sc_transcriptomics,popv,11,7,8,14,64
+UBERON:0000059,large intestine,Male,sc_transcriptomics,celltypist,11,6,24,27,238
+UBERON:0000059,large intestine,Male,sc_transcriptomics,popv,11,6,24,27,238
+UBERON:0004538,left kidney,Female,sc_transcriptomics,azimuth,9,4,7,33,276
+UBERON:0004538,left kidney,Male,sc_transcriptomics,azimuth,9,6,12,42,248
+UBERON:0001223,left ureter,Female,sc_transcriptomics,azimuth,1,1,2,4,4
+UBERON:0001223,left ureter,Male,sc_transcriptomics,azimuth,1,1,5,9,16
+UBERON:0002107,liver,Male,sc_transcriptomics,celltypist,23,4,1,1,35
+UBERON:0002107,liver,Male,sc_transcriptomics,popv,23,4,1,1,35
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,popv,14,6,1,2,29
+UBERON:0001264,pancreas,Female,sc_transcriptomics,azimuth,6,5,1,1,162
+UBERON:0001264,pancreas,Female,sc_transcriptomics,celltypist,6,5,1,1,162
+UBERON:0001264,pancreas,Female,sc_transcriptomics,popv,6,5,1,1,162
+UBERON:0001264,pancreas,Male,sc_transcriptomics,azimuth,6,5,1,1,212
+UBERON:0001264,pancreas,Male,sc_transcriptomics,celltypist,6,5,1,1,212
+UBERON:0001264,pancreas,Male,sc_transcriptomics,popv,6,5,1,1,212
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,azimuth,62,5,3,9,249
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,celltypist,62,5,3,9,249
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,popv,62,5,3,9,249
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,azimuth,59,11,8,24,276
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,celltypist,59,11,8,24,276
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,popv,59,11,8,24,276
+UBERON:0004539,right kidney,Female,sc_transcriptomics,azimuth,9,2,7,8,143
+UBERON:0004539,right kidney,Male,sc_transcriptomics,azimuth,9,3,9,79,252
+UBERON:0001222,right ureter,Female,sc_transcriptomics,azimuth,1,1,1,1,2
+UBERON:0001222,right ureter,Male,sc_transcriptomics,azimuth,1,1,1,2,2
+UBERON:0002097,skin of body,Male,sc_transcriptomics,celltypist,1,1,1,5,13
+UBERON:0002097,skin of body,Male,sc_transcriptomics,popv,1,1,1,5,13
+UBERON:0002108,small intestine,Female,sc_transcriptomics,celltypist,11,8,15,18,211
+UBERON:0002108,small intestine,Female,sc_transcriptomics,popv,11,8,15,18,211
+UBERON:0002108,small intestine,Male,sc_transcriptomics,celltypist,12,7,25,28,244
+UBERON:0002108,small intestine,Male,sc_transcriptomics,popv,12,7,25,28,244
+UBERON:0002106,spleen,Female,sc_transcriptomics,popv,6,1,1,4,19
+UBERON:0002106,spleen,Male,sc_transcriptomics,popv,6,3,5,9,61
+UBERON:0002370,thymus,Male,sc_transcriptomics,popv,3,2,1,2,46
+UBERON:0001255,urinary bladder,Female,sc_transcriptomics,popv,6,1,4,4,12
+UBERON:0001255,urinary bladder,Male,sc_transcriptomics,popv,6,2,7,8,10
