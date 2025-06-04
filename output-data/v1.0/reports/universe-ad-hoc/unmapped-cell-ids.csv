@@ -57,13 +57,13 @@ azimuth,UBERON:0001384,VLMC,172
 azimuth,UBERON:0001384,Vip,169
 azimuth,UBERON:0002048,Alveolar M�� CCL3+,137
 azimuth,UBERON:0002048,Alveolar M�� MT-positive,2
-azimuth,UBERON:0002048,Alveolar M�� proliferating,248
-azimuth,UBERON:0002048,Interstitial M�� perivascular,570
-azimuth,UBERON:0002048,Monocyte-derived M��,697
-azimuth,UBERON:0002048,Non-classical monocytes,647
-azimuth,UBERON:0002048,Transitional Club-AT2,562
-azimuth,UBERON:0002113,"Descending Vasa Recta Endothelial ",490
-azimuth,UBERON:0002113,"Peritubular Capilary Endothelial ",646
+azimuth,UBERON:0002048,Alveolar M�� proliferating,246
+azimuth,UBERON:0002048,Interstitial M�� perivascular,552
+azimuth,UBERON:0002048,Monocyte-derived M��,668
+azimuth,UBERON:0002048,Non-classical monocytes,615
+azimuth,UBERON:0002048,Transitional Club-AT2,529
+azimuth,UBERON:0002113,"Descending Vasa Recta Endothelial ",469
+azimuth,UBERON:0002113,"Peritubular Capilary Endothelial ",617
 azimuth,UBERON:0002371,CD8 Effector_1,103
 azimuth,UBERON:0002371,CD8 Effector_2,96
 azimuth,UBERON:0002371,CD8 Effector_3,51
@@ -360,15 +360,15 @@ popv,UBERON:0001723,pericyte,9
 popv,UBERON:0001723,tongue muscle cell,8
 popv,UBERON:0001723,vein endothelial cell,8
 popv,UBERON:0002097,"CD4-positive, alpha-beta T cell",9
-popv,UBERON:0002097,"CD8-positive, alpha-beta T cell",4
-popv,UBERON:0002097,conventional dendritic cell,4
+popv,UBERON:0002097,"CD8-positive, alpha-beta T cell",3
+popv,UBERON:0002097,conventional dendritic cell,3
 sc_proteomics,unknown,Basal Epithelial Cell,1
 sc_proteomics,unknown,CD68,10
-sc_proteomics,unknown,CD68+ Macrophage,2
+sc_proteomics,unknown,CD68+ Macrophage,1
 sc_proteomics,unknown,DDB2,10
 sc_proteomics,unknown,KI67,10
 sc_proteomics,unknown,Lymphatic Endothelial (and some immune cells),1
 sc_proteomics,unknown,MPO+,1
-sc_proteomics,unknown,Neutrophils/Monocytes,6
+sc_proteomics,unknown,Neutrophils/Monocytes,4
 sc_proteomics,unknown,P53,10
-sc_proteomics,unknown,Smooth Muscle Cell,2
+sc_proteomics,unknown,Smooth Muscle Cell,1

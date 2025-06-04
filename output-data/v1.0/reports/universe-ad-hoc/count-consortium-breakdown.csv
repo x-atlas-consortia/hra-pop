@@ -5,29 +5,31 @@ Allen Institute for Brain Science,Male,5,0,5,0,0,5,N/A,0
 CxG,Female,4446,0,2872,1574,4446,1574,sc_transcriptomics,21995944
 CxG,Male,4571,0,3116,1455,4571,1455,sc_transcriptomics,26479417
 CxG,Unknown,727,0,374,353,727,353,sc_transcriptomics,3164481
-GTEx,Female,37,7,25,5,5,30,sc_transcriptomics,99216
-GTEx,Male,37,8,25,4,4,29,sc_transcriptomics,131189
+GTEx,Female,37,0,25,12,5,37,N/A,0
+GTEx,Male,37,0,25,12,4,37,N/A,0
 GUDMAP,Male,12,0,12,0,0,12,N/A,0
 HCA,Female,153,63,50,40,40,90,sc_transcriptomics,628847
 HCA,Male,132,58,32,42,42,74,sc_transcriptomics,658187
 "HIRN, ESPACE",Male,1,0,1,0,0,1,N/A,0
 HRA,Female,1,0,1,0,0,1,N/A,0
 HTAN,Male,5,0,3,2,0,5,N/A,0
-HuBMAP,Female,1802,139,1599,64,88,1639,sc_transcriptomics,3383201
-HuBMAP,Male,2465,339,2118,8,8,2126,sc_proteomics,16033284
-HuBMAP,Male,2465,339,2118,8,8,2126,sc_transcriptomics,10203312
-KPMP,Female,36,14,22,0,0,22,sc_transcriptomics,58809
-KPMP,Male,38,13,25,0,0,25,sc_transcriptomics,54092
+HuBMAP,Female,1849,134,1646,69,88,1691,sc_transcriptomics,3364627
+HuBMAP,Male,2466,335,2119,12,8,2131,sc_transcriptomics,10186764
+HuBMAP,Male,2466,335,2119,12,8,2131,sc_proteomics,15676316
+KPMP,Female,93,0,79,14,0,93,N/A,0
+KPMP,Male,79,0,66,13,0,79,N/A,0
 LungMap,Female,4,0,0,4,4,4,N/A,0
 LungMap,Male,5,0,0,5,5,5,N/A,0
-NHLBI/LungMap,Female,2,2,0,0,0,0,sc_transcriptomics,29691
-NHLBI/LungMap,Male,8,7,1,0,0,1,sc_transcriptomics,109809
+NHLBI/LungMap,Female,2,1,0,1,0,1,sc_transcriptomics,14040
+NHLBI/LungMap,Male,8,2,1,5,0,6,sc_transcriptomics,17139
 SEA-AD,Female,1,0,0,1,1,1,N/A,0
 SPARC,Female,38,0,38,0,0,38,N/A,0
 SPARC,Male,12,0,12,0,0,12,N/A,0
-SenNet,Female,433,29,400,4,12,396,sc_transcriptomics,928315
-SenNet,Male,900,53,847,0,1,846,sc_transcriptomics,1643520
+SenNet,Female,519,18,486,15,12,493,sc_transcriptomics,696367
+SenNet,Male,900,36,847,17,1,863,sc_transcriptomics,1137958
 UEdinburgh,Female,36,0,36,0,0,36,N/A,0
 UEdinburgh,Male,28,0,28,0,0,28,N/A,0
 UIowa,Female,20,0,20,0,0,20,N/A,0
 UIowa,Male,23,0,23,0,0,23,N/A,0
+University of California San Francisco,Female,30,0,30,0,0,30,N/A,0
+University of California San Francisco,Male,30,0,30,0,0,30,N/A,0
