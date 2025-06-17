@@ -91,7 +91,9 @@ for (const row of data) {
   const hasApprovedSource = approvedSources.has(row.consortium_name);
   const isVerified = hasPublication || hasApprovedSource;
   const age = parseFloat(row.donor_age + '');
-  const isAdult = !isNaN(age) && age >= 18;
+  // All GTEx data is adult, but does not have age metadata (just a range string).
+  // We're putting in a special case until age ranges for donors are modeled (not any time soon).
+  const isAdult = (!isNaN(age) && age >= 18) || row.consortium_name === 'GTEx';
   const maxDiamonds = 4;
   const diamonds =
     (hasExtractionSite ? 1 : 0) + (hasCellSummary ? 1 : 0) + (hasPublication ? 1 : 0) + (isAdult ? 1 : 0);
