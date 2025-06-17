@@ -8,8 +8,10 @@ Male,CxG,3116,15389033,sc_transcriptomics
 Male,CxG,1455,0,
 Unknown,CxG,374,1831653,sc_transcriptomics
 Unknown,CxG,353,0,
-Female,GTEx,37,0,
-Male,GTEx,37,0,
+Female,GTEx,7,47863,sc_transcriptomics
+Female,GTEx,30,0,
+Male,GTEx,8,70113,sc_transcriptomics
+Male,GTEx,29,0,
 Male,GUDMAP,12,0,
 Female,HCA,63,364993,sc_transcriptomics
 Female,HCA,90,0,
@@ -18,8 +20,8 @@ Male,HCA,74,0,
 Male,"HIRN, ESPACE",1,0,
 Female,HRA,1,0,
 Male,HTAN,5,0,
-Female,HuBMAP,22,900547,sc_proteomics
 Female,HuBMAP,136,3002606,sc_transcriptomics
+Female,HuBMAP,22,900547,sc_proteomics
 Female,HuBMAP,1691,0,
 Male,HuBMAP,253,6626620,sc_transcriptomics
 Male,HuBMAP,82,15676316,sc_proteomics

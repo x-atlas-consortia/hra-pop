@@ -1,10 +1,10 @@
 tool,organ,cell_label,dataset_count
 azimuth,UBERON:0002048,Alveolar M�� CCL3+,2
-azimuth,UBERON:0002048,Alveolar M�� proliferating,11
-azimuth,UBERON:0002048,Interstitial M�� perivascular,52
-azimuth,UBERON:0002048,Monocyte-derived M��,77
-azimuth,UBERON:0002048,Non-classical monocytes,75
-azimuth,UBERON:0002048,Transitional Club-AT2,61
+azimuth,UBERON:0002048,Alveolar M�� proliferating,12
+azimuth,UBERON:0002048,Interstitial M�� perivascular,55
+azimuth,UBERON:0002048,Monocyte-derived M��,80
+azimuth,UBERON:0002048,Non-classical monocytes,78
+azimuth,UBERON:0002048,Transitional Club-AT2,64
 azimuth,UBERON:0002113,"Descending Vasa Recta Endothelial ",208
 azimuth,UBERON:0002113,"Peritubular Capilary Endothelial ",203
 celltypist,UBERON:0000059,Activated CD4 T,18
@@ -275,6 +275,8 @@ celltypist,UBERON:0002108,myofibroblast (RSPO2+),38
 celltypist,UBERON:0002108,pDC,30
 celltypist,UBERON:0002108,venous capillary,16
 celltypist,UBERON:0002108,�� cells (INS+),13
+popv,UBERON:0002097,"CD8-positive, alpha-beta T cell",1
+popv,UBERON:0002097,conventional dendritic cell,1
 sc_proteomics,unknown,Basal Epithelial Cell,1
 sc_proteomics,unknown,CD68,10
 sc_proteomics,unknown,CD68+ Macrophage,1

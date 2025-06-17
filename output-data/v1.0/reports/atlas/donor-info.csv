@@ -1,4 +1,15 @@
 donor,consortium,tissue_provider,age,sex,bmi,race
+https://entity.api.hubmapconsortium.org/entities/e5d3c8ea4ce06c7f1bca2c6419f49346,HuBMAP,TMC-CalTech,45,Male,33.1,White
+https://entity.api.hubmapconsortium.org/entities/e742ac485a0614e4114a26886ed0b444,HuBMAP,TMC-UCSD,69,Female,49.1,White
+https://entity.api.hubmapconsortium.org/entities/e9f8d577aa01abb9c6ffdd31862be16a,HuBMAP,TMC-UCSD,43,Male,24.7,White
+https://entity.api.hubmapconsortium.org/entities/f0aa7e5d01c0d40f0b284cbf85eb8d03,HuBMAP,TMC-CalTech,55,Female,32.2,White
+https://entity.api.hubmapconsortium.org/entities/f84ff583687f3407636d8ce843b48ff0,HuBMAP,TMC-Stanford,37,Male,29.3,White
+https://entity.api.hubmapconsortium.org/entities/f8d963cab6bd10e2a4b8184ea8197fc1,HuBMAP,TMC-UCSD,57,Female,19.6,White
+https://entity.api.hubmapconsortium.org/entities/ff043e8a4b6d7b21620ad9f0978238d0,HuBMAP,TMC-UCSD,75,Female,32,White
+https://entity.api.hubmapconsortium.org/entities/ff831c86a141380f572fa9a2ba7cae52,HuBMAP,TMC-UCSD,25,Female,,White
+https://entity.api.sennetconsortium.org/entities/0241f4a06e9c67ac595d46459bd3d5ec,SenNet,TMC - University of Pittsburgh,67,Female,33.2,White
+https://entity.api.sennetconsortium.org/entities/1bc972f7be757b4ed08d0e02a2049d8a,SenNet,TMC - University of Pittsburgh,49,Male,30.84,White
+https://entity.api.sennetconsortium.org/entities/21923a4fa5fc4686f867c100b647e599,SenNet,TMC - University of Pittsburgh,90,Male,26.297,White
 https://entity.api.sennetconsortium.org/entities/21cfbd48d1d99322e11b340a017653b0,SenNet,TMC - University of Pittsburgh,62,Male,28.88,White
 https://entity.api.sennetconsortium.org/entities/37bc0de0d225a173532dd57d5117a526,SenNet,TMC - University of Pittsburgh,77,Male,31.35,White
 https://entity.api.sennetconsortium.org/entities/4f6f13720e5b4ca62a24e174efe254dc,SenNet,TMC - University of Pittsburgh,75,Female,30.43,White
@@ -41,6 +52,17 @@ https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e
 https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6_Donor,HCA,Broad Institute,40,Female,20,
 https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7_Donor,HCA,Broad Institute,45,Female,25,
 https://doi.org/10.1016/j.cell.2022.12.028/CRC1#Donor,HuBMAP,Harvard University,69,Male,,
+https://doi.org/10.1126/science.abl4290#GTEX-12BJ1,GTEx,GTEx,,Male,,
+https://doi.org/10.1126/science.abl4290#GTEX-13N11,GTEx,GTEx,,Female,,
+https://doi.org/10.1126/science.abl4290#GTEX-15CHR,GTEx,GTEx,,Male,,
+https://doi.org/10.1126/science.abl4290#GTEX-15EOM,GTEx,GTEx,,Female,,
+https://doi.org/10.1126/science.abl4290#GTEX-15RIE,GTEx,GTEx,,Male,,
+https://doi.org/10.1126/science.abl4290#GTEX-1CAMS,GTEx,GTEx,,Female,,
+https://doi.org/10.1126/science.abl4290#GTEX-1HSMQ,GTEx,GTEx,,Male,,
+https://doi.org/10.1126/science.abl4290#GTEX-1I1GU,GTEx,GTEx,,Male,,
+https://doi.org/10.1126/science.abl4290#GTEX-1ICG6,GTEx,GTEx,,Female,,
+https://doi.org/10.1126/science.abl4290#GTEX-1MCC2,GTEx,GTEx,,Female,,
+https://doi.org/10.1126/science.abl4290#GTEX-1R9PN,GTEx,GTEx,,Female,,
 https://doi.org/10.1126/science.abl4896#TSP1,HCA,Tabula Sapiens,59,Female,23,
 https://doi.org/10.1126/science.abl4896#TSP10,HCA,Tabula Sapiens,33,Male,,
 https://doi.org/10.1126/science.abl4896#TSP14,HCA,Tabula Sapiens,59,Male,18,
@@ -112,14 +134,3 @@ https://entity.api.hubmapconsortium.org/entities/da320fb2114ed3535ae97dde9abd747
 https://entity.api.hubmapconsortium.org/entities/dfd0352b60504b321899f738c860e3fc,HuBMAP,TMC-UCSD,57,Female,31.5,White
 https://entity.api.hubmapconsortium.org/entities/e3d3717ad581030c03bed6641d76e088,HuBMAP,TMC-UCSD,55,Female,27.07,White
 https://entity.api.hubmapconsortium.org/entities/e4e4ab805cb51f2c7f3f1f7010220598,HuBMAP,RTI-General Electric,52,Female,23.4,White
-https://entity.api.hubmapconsortium.org/entities/e5d3c8ea4ce06c7f1bca2c6419f49346,HuBMAP,TMC-CalTech,45,Male,33.1,White
-https://entity.api.hubmapconsortium.org/entities/e742ac485a0614e4114a26886ed0b444,HuBMAP,TMC-UCSD,69,Female,49.1,White
-https://entity.api.hubmapconsortium.org/entities/e9f8d577aa01abb9c6ffdd31862be16a,HuBMAP,TMC-UCSD,43,Male,24.7,White
-https://entity.api.hubmapconsortium.org/entities/f0aa7e5d01c0d40f0b284cbf85eb8d03,HuBMAP,TMC-CalTech,55,Female,32.2,White
-https://entity.api.hubmapconsortium.org/entities/f84ff583687f3407636d8ce843b48ff0,HuBMAP,TMC-Stanford,37,Male,29.3,White
-https://entity.api.hubmapconsortium.org/entities/f8d963cab6bd10e2a4b8184ea8197fc1,HuBMAP,TMC-UCSD,57,Female,19.6,White
-https://entity.api.hubmapconsortium.org/entities/ff043e8a4b6d7b21620ad9f0978238d0,HuBMAP,TMC-UCSD,75,Female,32,White
-https://entity.api.hubmapconsortium.org/entities/ff831c86a141380f572fa9a2ba7cae52,HuBMAP,TMC-UCSD,25,Female,,White
-https://entity.api.sennetconsortium.org/entities/0241f4a06e9c67ac595d46459bd3d5ec,SenNet,TMC - University of Pittsburgh,67,Female,33.2,White
-https://entity.api.sennetconsortium.org/entities/1bc972f7be757b4ed08d0e02a2049d8a,SenNet,TMC - University of Pittsburgh,49,Male,30.84,White
-https://entity.api.sennetconsortium.org/entities/21923a4fa5fc4686f867c100b647e599,SenNet,TMC - University of Pittsburgh,90,Male,26.297,White

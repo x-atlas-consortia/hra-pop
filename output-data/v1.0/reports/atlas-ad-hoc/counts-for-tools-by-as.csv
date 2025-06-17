@@ -671,6 +671,26 @@ Female,azimuth,VHFRightUreter,Right ureter,Plasma,http://purl.obolibrary.org/obo
 Female,azimuth,VHFRightUreter,Right ureter,Renin-positive Juxtaglomerular Granular,http://purl.obolibrary.org/obo/CL_0000648,1,1
 Female,azimuth,VHFRightUreter,Right ureter,Schwann / Neural,http://purl.obolibrary.org/obo/CL_0002573,2,2
 Female,azimuth,VHFRightUreter,Right ureter,T,http://purl.obolibrary.org/obo/CL_0000084,295,295
+Female,azimuth,VHMHeart,right cardiac atrium,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,72.5,435
+Female,azimuth,VHMHeart,right cardiac atrium,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,399,2394
+Female,azimuth,VHMHeart,right cardiac atrium,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,7.5,45
+Female,azimuth,VHMHeart,right cardiac atrium,B,http://purl.obolibrary.org/obo/CL_0000236,12,72
+Female,azimuth,VHMHeart,right cardiac atrium,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,1205.5,7233
+Female,azimuth,VHMHeart,right cardiac atrium,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,110.5,663
+Female,azimuth,VHMHeart,right cardiac atrium,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,4.5,27
+Female,azimuth,VHMHeart,right cardiac atrium,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,3307,19842
+Female,azimuth,VHMHeart,right cardiac atrium,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,210.5,1263
+Female,azimuth,VHMHeart,right cardiac atrium,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,1052,6312
+Female,azimuth,VHMHeart,right cardiac atrium,Mast,http://purl.obolibrary.org/obo/CL_0000097,33.5,201
+Female,azimuth,VHMHeart,right cardiac atrium,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,2,6
+Female,azimuth,VHMHeart,right cardiac atrium,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,412,2472
+Female,azimuth,VHMHeart,right cardiac atrium,NK,http://purl.obolibrary.org/obo/CL_0000623,111,666
+Female,azimuth,VHMHeart,right cardiac atrium,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,109.5,657
+Female,azimuth,VHMHeart,right cardiac atrium,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,655,3930
+Female,azimuth,VHMHeart,right cardiac atrium,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,230,1380
+Female,azimuth,VHMHeart,right cardiac atrium,T,http://purl.obolibrary.org/obo/CL_0000084,81.5,489
+Female,azimuth,VHMHeart,right cardiac atrium,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,875,5250
+Female,azimuth,VHMHeart,right cardiac atrium,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,3364,20184
 Female,azimuth,VHMLeftKidney,renal papilla,Ascending Thin Limb,http://purl.obolibrary.org/obo/CL_1001107,506,506
 Female,azimuth,VHMLeftKidney,renal papilla,Ascending Vasa Recta Endothelial,http://purl.obolibrary.org/obo/CL_1001131,950,950
 Female,azimuth,VHMLeftKidney,renal papilla,Connecting Tubule,http://purl.obolibrary.org/obo/CL_1000768,176,176
@@ -3350,6 +3370,49 @@ Female,celltypist,VHFSmallIntestine,superior part of duodenum,myofibroblast,http
 Female,celltypist,VHFSmallIntestine,superior part of duodenum,myofibroblast (RSPO2+),https://purl.org/ccf/ASCTB-TEMP_myofibroblast-rspo2-,3.5,14
 Female,celltypist,VHFSmallIntestine,superior part of duodenum,pDC,https://purl.org/ccf/ASCTB-TEMP_pdc,2,4
 Female,celltypist,VHFSmallIntestine,superior part of duodenum,venous capillary,https://purl.org/ccf/ASCTB-TEMP_venous-capillary,1,2
+Female,celltypist,VHMHeart,right cardiac atrium,AVN_P_cell,http://purl.obolibrary.org/obo/CL_0002072,1,3
+Female,celltypist,VHMHeart,right cardiac atrium,Adip2,http://purl.obolibrary.org/obo/CL_0000136,118.5,711
+Female,celltypist,VHMHeart,right cardiac atrium,B,http://purl.obolibrary.org/obo/CL_0000236,11,66
+Female,celltypist,VHMHeart,right cardiac atrium,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,3,9
+Female,celltypist,VHMHeart,right cardiac atrium,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,22,132
+Female,celltypist,VHMHeart,right cardiac atrium,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,135,810
+Female,celltypist,VHMHeart,right cardiac atrium,CD4+T_Tfh,http://purl.obolibrary.org/obo/CL_0000492,1.5,9
+Female,celltypist,VHMHeart,right cardiac atrium,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,12.5,75
+Female,celltypist,VHMHeart,right cardiac atrium,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,54,324
+Female,celltypist,VHMHeart,right cardiac atrium,CD4+T_reg,http://purl.obolibrary.org/obo/CL_0000792,1,3
+Female,celltypist,VHMHeart,right cardiac atrium,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,6.5,39
+Female,celltypist,VHMHeart,right cardiac atrium,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,8.5,51
+Female,celltypist,VHMHeart,right cardiac atrium,CD8+T_te,http://purl.obolibrary.org/obo/CL_0001050,3,9
+Female,celltypist,VHMHeart,right cardiac atrium,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,13,78
+Female,celltypist,VHMHeart,right cardiac atrium,DC,http://purl.obolibrary.org/obo/CL_0000451,37,222
+Female,celltypist,VHMHeart,right cardiac atrium,EC10_CMC-like,http://purl.obolibrary.org/obo/CL_0000115,26,78
+Female,celltypist,VHMHeart,right cardiac atrium,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,1031,6186
+Female,celltypist,VHMHeart,right cardiac atrium,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,22,66
+Female,celltypist,VHMHeart,right cardiac atrium,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,500,3000
+Female,celltypist,VHMHeart,right cardiac atrium,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,894,5364
+Female,celltypist,VHMHeart,right cardiac atrium,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,114.5,687
+Female,celltypist,VHMHeart,right cardiac atrium,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,207.5,1245
+Female,celltypist,VHMHeart,right cardiac atrium,FB2,http://purl.obolibrary.org/obo/CL_0000057,3593,10779
+Female,celltypist,VHMHeart,right cardiac atrium,FB6,http://purl.obolibrary.org/obo/CL_0000057,3023,9069
+Female,celltypist,VHMHeart,right cardiac atrium,ILC,http://purl.obolibrary.org/obo/CL_0001065,2,12
+Female,celltypist,VHMHeart,right cardiac atrium,LYVE1+IGF1+MP,http://purl.obolibrary.org/obo/CL_0000235,1218,7308
+Female,celltypist,VHMHeart,right cardiac atrium,LYVE1+MP_cycling,http://purl.obolibrary.org/obo/CL_4033076,39,234
+Female,celltypist,VHMHeart,right cardiac atrium,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,3.5,21
+Female,celltypist,VHMHeart,right cardiac atrium,Mast,http://purl.obolibrary.org/obo/CL_0000097,26.5,159
+Female,celltypist,VHMHeart,right cardiac atrium,Meso,http://purl.obolibrary.org/obo/CL_0000077,5,15
+Female,celltypist,VHMHeart,right cardiac atrium,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,134,402
+Female,celltypist,VHMHeart,right cardiac atrium,NC2_glial_NGF+,http://purl.obolibrary.org/obo/CL_0010020,106,318
+Female,celltypist,VHMHeart,right cardiac atrium,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,76,456
+Female,celltypist,VHMHeart,right cardiac atrium,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,13.5,81
+Female,celltypist,VHMHeart,right cardiac atrium,Neut,http://purl.obolibrary.org/obo/CL_0000775,1,3
+Female,celltypist,VHMHeart,right cardiac atrium,PC4_CMC-like,http://purl.obolibrary.org/obo/CL_0000669,629.5,3777
+Female,celltypist,VHMHeart,right cardiac atrium,Purkinje_cell,http://purl.obolibrary.org/obo/CL_0002068,1,3
+Female,celltypist,VHMHeart,right cardiac atrium,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,1,3
+Female,celltypist,VHMHeart,right cardiac atrium,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,257.5,1545
+Female,celltypist,VHMHeart,right cardiac atrium,T/NK_cycling,http://purl.obolibrary.org/obo/CL_0000814,1,3
+Female,celltypist,VHMHeart,right cardiac atrium,aCM4,http://purl.obolibrary.org/obo/CL_0002129,11.5,69
+Female,celltypist,VHMHeart,right cardiac atrium,vCM1,http://purl.obolibrary.org/obo/CL_0002131,2875,8625
+Female,celltypist,VHMHeart,right cardiac atrium,vCM4,http://purl.obolibrary.org/obo/CL_0002131,3824,11472
 Female,celltypist,VHMLiver,,B cells,http://purl.obolibrary.org/obo/CL_0000236,20,20
 Female,celltypist,VHMLiver,,Basophils,http://purl.obolibrary.org/obo/CL_0000767,16,16
 Female,celltypist,VHMLiver,,Cholangiocytes,http://purl.obolibrary.org/obo/CL_1000488,781,781
@@ -3470,6 +3533,20 @@ Female,celltypist,VHMLung,Left posterior basal segmental bronchus,Subpleural fib
 Female,celltypist,VHMLung,Left posterior basal segmental bronchus,T cells proliferating,http://purl.obolibrary.org/obo/CL_4033069,4,80
 Female,celltypist,VHMLung,Left posterior basal segmental bronchus,Tuft,http://purl.obolibrary.org/obo/CL_0002075,38.85714285714285714286,1360
 Female,celltypist,VHMLung,Left posterior basal segmental bronchus,pre-TB secretory,http://purl.obolibrary.org/obo/CL_0019001,177.25,7090
+Female,celltypist,VHMSkin,skin,DC2,http://purl.obolibrary.org/obo/CL_0002399,2,4
+Female,celltypist,VHMSkin,skin,Differentiated_KC,http://purl.obolibrary.org/obo/CL_0002153,124,248
+Female,celltypist,VHMSkin,skin,F2,http://purl.obolibrary.org/obo/CL_0000057,7,14
+Female,celltypist,VHMSkin,skin,Inf_mac,http://purl.obolibrary.org/obo/CL_0000863,4,8
+Female,celltypist,VHMSkin,skin,Macro_1,http://purl.obolibrary.org/obo/CL_0000235,4,8
+Female,celltypist,VHMSkin,skin,Melanocyte,http://purl.obolibrary.org/obo/CL_1000458,96,192
+Female,celltypist,VHMSkin,skin,MigDC,http://purl.obolibrary.org/obo/CL_0001056,2,4
+Female,celltypist,VHMSkin,skin,Pericyte_1,http://purl.obolibrary.org/obo/CL_0000669,6,12
+Female,celltypist,VHMSkin,skin,Tc,http://purl.obolibrary.org/obo/CL_0000910,2,4
+Female,celltypist,VHMSkin,skin,Th,http://purl.obolibrary.org/obo/CL_0000912,40,80
+Female,celltypist,VHMSkin,skin,Treg,http://purl.obolibrary.org/obo/CL_0000815,1,2
+Female,celltypist,VHMSkin,skin,Undifferentiated_KC,http://purl.obolibrary.org/obo/CL_0002187,33,66
+Female,celltypist,VHMSkin,skin,VE1,http://purl.obolibrary.org/obo/CL_0000071,4,8
+Female,celltypist,VHMSkin,skin,moDC,http://purl.obolibrary.org/obo/CL_0011031,1,2
 Female,celltypist,https://purl.humanatlas.io/ref-organ/heart-female/v1.3#primary,heart left ventricle,Adip2,http://purl.obolibrary.org/obo/CL_0000136,17,17
 Female,celltypist,https://purl.humanatlas.io/ref-organ/heart-female/v1.3#primary,heart left ventricle,B,http://purl.obolibrary.org/obo/CL_0000236,2,2
 Female,celltypist,https://purl.humanatlas.io/ref-organ/heart-female/v1.3#primary,heart left ventricle,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,5,5
@@ -3963,6 +4040,32 @@ Female,popv,VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,type I pn
 Female,popv,VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,type II pneumocyte,http://purl.obolibrary.org/obo/CL_0002063,1152.28571428571428571429,120990
 Female,popv,VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,2.8,210
 Female,popv,VHFLungV1.2,Right Posterior Basal Bronchopulmonary Segment,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,103.71428571428571428571,10890
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,B cell,http://purl.obolibrary.org/obo/CL_0000236,8.33333333333333333333,75
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,T cell,http://purl.obolibrary.org/obo/CL_0000084,14.33333333333333333333,129
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,basal cell,http://purl.obolibrary.org/obo/CL_0000646,301,2709
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,422.33333333333333333333,3801
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,35,315
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,fibroblast of breast,http://purl.obolibrary.org/obo/CL_4006000,628,3768
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,luminal epithelial cell of mammary gland,http://purl.obolibrary.org/obo/CL_0002326,1721,15489
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,macrophage,http://purl.obolibrary.org/obo/CL_0000235,100.66666666666666666667,906
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,1,3
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,pericyte,http://purl.obolibrary.org/obo/CL_0000669,188.33333333333333333333,1695
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,6,18
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,28,168
+Female,popv,VHFRightMammaryGland,Interlobar adipose tissue of right mammary gland,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,26,234
+Female,popv,VHFRightMammaryGland,main lactiferous duct,B cell,http://purl.obolibrary.org/obo/CL_0000236,8.33333333333333333333,75
+Female,popv,VHFRightMammaryGland,main lactiferous duct,T cell,http://purl.obolibrary.org/obo/CL_0000084,14.33333333333333333333,129
+Female,popv,VHFRightMammaryGland,main lactiferous duct,basal cell,http://purl.obolibrary.org/obo/CL_0000646,301,2709
+Female,popv,VHFRightMammaryGland,main lactiferous duct,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,422.33333333333333333333,3801
+Female,popv,VHFRightMammaryGland,main lactiferous duct,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,35,315
+Female,popv,VHFRightMammaryGland,main lactiferous duct,fibroblast of breast,http://purl.obolibrary.org/obo/CL_4006000,628,3768
+Female,popv,VHFRightMammaryGland,main lactiferous duct,luminal epithelial cell of mammary gland,http://purl.obolibrary.org/obo/CL_0002326,1721,15489
+Female,popv,VHFRightMammaryGland,main lactiferous duct,macrophage,http://purl.obolibrary.org/obo/CL_0000235,100.66666666666666666667,906
+Female,popv,VHFRightMammaryGland,main lactiferous duct,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,1,3
+Female,popv,VHFRightMammaryGland,main lactiferous duct,pericyte,http://purl.obolibrary.org/obo/CL_0000669,188.33333333333333333333,1695
+Female,popv,VHFRightMammaryGland,main lactiferous duct,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,6,18
+Female,popv,VHFRightMammaryGland,main lactiferous duct,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,28,168
+Female,popv,VHFRightMammaryGland,main lactiferous duct,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,26,234
 Female,popv,VHFSmallIntestine,ascending part of duodenum,B cell,http://purl.obolibrary.org/obo/CL_0000236,2,2
 Female,popv,VHFSmallIntestine,ascending part of duodenum,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,34.66666666666666666667,104
 Female,popv,VHFSmallIntestine,ascending part of duodenum,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,65.33333333333333333333,196
@@ -4204,6 +4307,21 @@ Female,popv,VHMLung,Left posterior basal segmental bronchus,type I pneumocyte,ht
 Female,popv,VHMLung,Left posterior basal segmental bronchus,type II pneumocyte,http://purl.obolibrary.org/obo/CL_0002063,683.25,27330
 Female,popv,VHMLung,Left posterior basal segmental bronchus,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,7.5,300
 Female,popv,VHMLung,Left posterior basal segmental bronchus,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,473.375,18935
+Female,popv,VHMSkin,skin,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,1,2
+Female,popv,VHMSkin,skin,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,1,2
+Female,popv,VHMSkin,skin,"CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,2,4
+Female,popv,VHMSkin,skin,T cell,http://purl.obolibrary.org/obo/CL_0000084,13,26
+Female,popv,VHMSkin,skin,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,18,36
+Female,popv,VHMSkin,skin,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,108,216
+Female,popv,VHMSkin,skin,macrophage,http://purl.obolibrary.org/obo/CL_0000235,5,10
+Female,popv,VHMSkin,skin,mast cell,http://purl.obolibrary.org/obo/CL_0000097,1,2
+Female,popv,VHMSkin,skin,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,1,2
+Female,popv,VHMSkin,skin,melanocyte,http://purl.obolibrary.org/obo/CL_0000148,117,234
+Female,popv,VHMSkin,skin,muscle cell,http://purl.obolibrary.org/obo/CL_0000187,8,16
+Female,popv,VHMSkin,skin,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,4,8
+Female,popv,VHMSkin,skin,regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,1,2
+Female,popv,VHMSkin,skin,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,6,12
+Female,popv,VHMSkin,skin,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,40,80
 Female,popv,https://purl.humanatlas.io/ref-organ/lung-female/v1.4#primary,Right Anterior Bronchopulmonary Segment,B cell,http://purl.obolibrary.org/obo/CL_0000236,35,35
 Female,popv,https://purl.humanatlas.io/ref-organ/lung-female/v1.4#primary,Right Anterior Bronchopulmonary Segment,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,560,560
 Female,popv,https://purl.humanatlas.io/ref-organ/lung-female/v1.4#primary,Right Anterior Bronchopulmonary Segment,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,70,70
@@ -4585,26 +4703,26 @@ Male,azimuth,VHMHeart,left cardiac atrium,Smooth Muscle,http://purl.obolibrary.o
 Male,azimuth,VHMHeart,left cardiac atrium,T,http://purl.obolibrary.org/obo/CL_0000084,214.71428571428571428571,10521
 Male,azimuth,VHMHeart,left cardiac atrium,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,101.28571428571428571429,4963
 Male,azimuth,VHMHeart,left cardiac atrium,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,85.75,2401
-Male,azimuth,VHMHeart,right cardiac atrium,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,21.28571428571428571429,1043
-Male,azimuth,VHMHeart,right cardiac atrium,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,78.14285714285714285714,3829
-Male,azimuth,VHMHeart,right cardiac atrium,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,859.57142857142857142857,42119
-Male,azimuth,VHMHeart,right cardiac atrium,B,http://purl.obolibrary.org/obo/CL_0000236,76.71428571428571428571,3759
-Male,azimuth,VHMHeart,right cardiac atrium,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,353.42857142857142857143,17318
-Male,azimuth,VHMHeart,right cardiac atrium,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,240.57142857142857142857,11788
-Male,azimuth,VHMHeart,right cardiac atrium,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,71.5,3003
-Male,azimuth,VHMHeart,right cardiac atrium,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,967.14285714285714285714,47390
-Male,azimuth,VHMHeart,right cardiac atrium,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,6,84
-Male,azimuth,VHMHeart,right cardiac atrium,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,83.85714285714285714286,4109
-Male,azimuth,VHMHeart,right cardiac atrium,Mast,http://purl.obolibrary.org/obo/CL_0000097,5.14285714285714285714,252
+Male,azimuth,VHMHeart,right cardiac atrium,Adipocyte,http://purl.obolibrary.org/obo/CL_0000136,22.94230769230769230769,1193
+Male,azimuth,VHMHeart,right cardiac atrium,Arterial Endothelial,http://purl.obolibrary.org/obo/CL_1000413,103.17307692307692307692,5365
+Male,azimuth,VHMHeart,right cardiac atrium,Atrial Cardiomyocyte,http://purl.obolibrary.org/obo/CL_0002129,812.40384615384615384615,42245
+Male,azimuth,VHMHeart,right cardiac atrium,B,http://purl.obolibrary.org/obo/CL_0000236,72.63461538461538461538,3777
+Male,azimuth,VHMHeart,right cardiac atrium,Capillary Endothelial,http://purl.obolibrary.org/obo/CL_0002144,385.94230769230769230769,20069
+Male,azimuth,VHMHeart,right cardiac atrium,Endocardial,http://purl.obolibrary.org/obo/CL_0002350,229.05769230769230769231,11911
+Male,azimuth,VHMHeart,right cardiac atrium,Endothelial,http://purl.obolibrary.org/obo/CL_0000115,66.86666666666666666667,3009
+Male,azimuth,VHMHeart,right cardiac atrium,Fibroblast,http://purl.obolibrary.org/obo/CL_0000057,1079.51923076923076923077,56135
+Male,azimuth,VHMHeart,right cardiac atrium,Lymphatic Endothelial,http://purl.obolibrary.org/obo/CL_0002138,31.58823529411764705882,537
+Male,azimuth,VHMHeart,right cardiac atrium,Macrophage,http://purl.obolibrary.org/obo/CL_0000235,132.26923076923076923077,6878
+Male,azimuth,VHMHeart,right cardiac atrium,Mast,http://purl.obolibrary.org/obo/CL_0000097,6.63461538461538461538,345
 Male,azimuth,VHMHeart,right cardiac atrium,Mesothelial,http://purl.obolibrary.org/obo/CL_0000077,48.16666666666666666667,2023
-Male,azimuth,VHMHeart,right cardiac atrium,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,219.42857142857142857143,10752
-Male,azimuth,VHMHeart,right cardiac atrium,NK,http://purl.obolibrary.org/obo/CL_0000623,111.71428571428571428571,5474
-Male,azimuth,VHMHeart,right cardiac atrium,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,70.14285714285714285714,3437
-Male,azimuth,VHMHeart,right cardiac atrium,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,272.57142857142857142857,13356
-Male,azimuth,VHMHeart,right cardiac atrium,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,103.57142857142857142857,5075
-Male,azimuth,VHMHeart,right cardiac atrium,T,http://purl.obolibrary.org/obo/CL_0000084,156.57142857142857142857,7672
-Male,azimuth,VHMHeart,right cardiac atrium,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,36.28571428571428571429,1778
-Male,azimuth,VHMHeart,right cardiac atrium,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,7.75,217
+Male,azimuth,VHMHeart,right cardiac atrium,Monocyte/cDC,http://purl.obolibrary.org/obo/CL_0011031,357,18564
+Male,azimuth,VHMHeart,right cardiac atrium,NK,http://purl.obolibrary.org/obo/CL_0000623,114.73076923076923076923,5966
+Male,azimuth,VHMHeart,right cardiac atrium,Neuronal,http://purl.obolibrary.org/obo/CL_0002573,72.15384615384615384615,3752
+Male,azimuth,VHMHeart,right cardiac atrium,Pericyte,http://purl.obolibrary.org/obo/CL_0000669,283.03846153846153846154,14718
+Male,azimuth,VHMHeart,right cardiac atrium,Smooth Muscle,http://purl.obolibrary.org/obo/CL_0000192,111.09615384615384615385,5777
+Male,azimuth,VHMHeart,right cardiac atrium,T,http://purl.obolibrary.org/obo/CL_0000084,155.90384615384615384615,8107
+Male,azimuth,VHMHeart,right cardiac atrium,Venous Endothelial,http://purl.obolibrary.org/obo/CL_1000414,68.17307692307692307692,3545
+Male,azimuth,VHMHeart,right cardiac atrium,Ventricular Cardiomycoyte,http://purl.obolibrary.org/obo/CL_0002131,218.16129032258064516129,6763
 Male,azimuth,VHMLeftKidney,hilum of kidney,Afferent / Efferent Arteriole Endothelial,http://purl.obolibrary.org/obo/CL_1000412,9,18
 Male,azimuth,VHMLeftKidney,hilum of kidney,Ascending Thin Limb,http://purl.obolibrary.org/obo/CL_1001107,2,4
 Male,azimuth,VHMLeftKidney,hilum of kidney,Ascending Vasa Recta Endothelial,http://purl.obolibrary.org/obo/CL_1001131,237,474
@@ -5875,57 +5993,62 @@ Male,celltypist,VHMHeart,left cardiac atrium,vCM2,http://purl.obolibrary.org/obo
 Male,celltypist,VHMHeart,left cardiac atrium,vCM3_stressed,http://purl.obolibrary.org/obo/CL_0002131,17,119
 Male,celltypist,VHMHeart,left cardiac atrium,vCM5,http://purl.obolibrary.org/obo/CL_0002131,3,21
 Male,celltypist,VHMHeart,right cardiac atrium,Adip1,http://purl.obolibrary.org/obo/CL_0000136,20.33333333333333333333,427
-Male,celltypist,VHMHeart,right cardiac atrium,Adip2,http://purl.obolibrary.org/obo/CL_0000136,24,336
+Male,celltypist,VHMHeart,right cardiac atrium,Adip2,http://purl.obolibrary.org/obo/CL_0000136,35.11764705882352941176,597
 Male,celltypist,VHMHeart,right cardiac atrium,Adip3,http://purl.obolibrary.org/obo/CL_0000136,32.5,455
-Male,celltypist,VHMHeart,right cardiac atrium,B,http://purl.obolibrary.org/obo/CL_0000236,57.66666666666666666667,2422
-Male,celltypist,VHMHeart,right cardiac atrium,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,14,490
-Male,celltypist,VHMHeart,right cardiac atrium,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,47.28571428571428571429,2317
-Male,celltypist,VHMHeart,right cardiac atrium,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,60.42857142857142857143,2961
-Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_Tfh,http://purl.obolibrary.org/obo/CL_0000492,2.25,63
+Male,celltypist,VHMHeart,right cardiac atrium,B,http://purl.obolibrary.org/obo/CL_0000236,54.08888888888888888889,2434
+Male,celltypist,VHMHeart,right cardiac atrium,B_plasma,http://purl.obolibrary.org/obo/CL_0000786,12.97368421052631578947,493
+Male,celltypist,VHMHeart,right cardiac atrium,CD14+Mo,http://purl.obolibrary.org/obo/CL_0002057,59.15384615384615384615,3076
+Male,celltypist,VHMHeart,right cardiac atrium,CD16+Mo,http://purl.obolibrary.org/obo/CL_0002396,128.01923076923076923077,6657
+Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_Tfh,http://purl.obolibrary.org/obo/CL_0000492,2.22580645161290322581,69
 Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_Th1,http://purl.obolibrary.org/obo/CL_0000545,7,49
-Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_Th2,http://purl.obolibrary.org/obo/CL_0000546,4.33333333333333333333,91
-Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,36.28571428571428571429,1778
-Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,27.14285714285714285714,1330
-Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_reg,http://purl.obolibrary.org/obo/CL_0000792,3,63
-Male,celltypist,VHMHeart,right cardiac atrium,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,21.42857142857142857143,1050
-Male,celltypist,VHMHeart,right cardiac atrium,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,11.42857142857142857143,560
-Male,celltypist,VHMHeart,right cardiac atrium,CD8+T_te,http://purl.obolibrary.org/obo/CL_0001050,58.57142857142857142857,2870
-Male,celltypist,VHMHeart,right cardiac atrium,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,28.85714285714285714286,1414
-Male,celltypist,VHMHeart,right cardiac atrium,DC,http://purl.obolibrary.org/obo/CL_0000451,6.42857142857142857143,315
+Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_Th2,http://purl.obolibrary.org/obo/CL_0000546,3.91666666666666666667,94
+Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_act,http://purl.obolibrary.org/obo/CL_0001043,35.34615384615384615385,1838
+Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_naive,http://purl.obolibrary.org/obo/CL_0000895,28.51923076923076923077,1483
+Male,celltypist,VHMHeart,right cardiac atrium,CD4+T_reg,http://purl.obolibrary.org/obo/CL_0000792,2.875,69
+Male,celltypist,VHMHeart,right cardiac atrium,CD8+T_cytox,http://purl.obolibrary.org/obo/CL_0000794,21.05769230769230769231,1095
+Male,celltypist,VHMHeart,right cardiac atrium,CD8+T_em,http://purl.obolibrary.org/obo/CL_0000913,12.32692307692307692308,641
+Male,celltypist,VHMHeart,right cardiac atrium,CD8+T_te,http://purl.obolibrary.org/obo/CL_0001050,55.76923076923076923077,2900
+Male,celltypist,VHMHeart,right cardiac atrium,CD8+T_trans,http://purl.obolibrary.org/obo/CL_0000625,29.5,1534
+Male,celltypist,VHMHeart,right cardiac atrium,DC,http://purl.obolibrary.org/obo/CL_0000451,18.69230769230769230769,972
 Male,celltypist,VHMHeart,right cardiac atrium,EC10_CMC-like,http://purl.obolibrary.org/obo/CL_0000115,65,1820
 Male,celltypist,VHMHeart,right cardiac atrium,EC1_cap,http://purl.obolibrary.org/obo/CL_0002144,143.85714285714285714286,7049
-Male,celltypist,VHMHeart,right cardiac atrium,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,48.33333333333333333333,1015
-Male,celltypist,VHMHeart,right cardiac atrium,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,166.42857142857142857143,8155
-Male,celltypist,VHMHeart,right cardiac atrium,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,169.42857142857142857143,8302
-Male,celltypist,VHMHeart,right cardiac atrium,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,229.85714285714285714286,11263
-Male,celltypist,VHMHeart,right cardiac atrium,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,7,98
+Male,celltypist,VHMHeart,right cardiac atrium,EC2_cap,http://purl.obolibrary.org/obo/CL_0002144,840,2520
+Male,celltypist,VHMHeart,right cardiac atrium,EC4_immune,http://purl.obolibrary.org/obo/CL_0000115,45.04166666666666666667,1081
+Male,celltypist,VHMHeart,right cardiac atrium,EC5_art,http://purl.obolibrary.org/obo/CL_1000413,188.21153846153846153846,9787
+Male,celltypist,VHMHeart,right cardiac atrium,EC6_ven,http://purl.obolibrary.org/obo/CL_0002543,194.03846153846153846154,10090
+Male,celltypist,VHMHeart,right cardiac atrium,EC7_endocardial,http://purl.obolibrary.org/obo/CL_0002350,218.67307692307692307692,11371
+Male,celltypist,VHMHeart,right cardiac atrium,EC8_ln,http://purl.obolibrary.org/obo/CL_0002138,32.41176470588235294118,551
 Male,celltypist,VHMHeart,right cardiac atrium,FB2,http://purl.obolibrary.org/obo/CL_0000057,1039,29092
 Male,celltypist,VHMHeart,right cardiac atrium,FB3,http://purl.obolibrary.org/obo/CL_0000057,2181,15267
 Male,celltypist,VHMHeart,right cardiac atrium,FB4_activated,http://purl.obolibrary.org/obo/CL_0000057,279.5,3913
-Male,celltypist,VHMHeart,right cardiac atrium,ILC,http://purl.obolibrary.org/obo/CL_0001065,10,140
-Male,celltypist,VHMHeart,right cardiac atrium,LYVE1+MP_cycling,http://purl.obolibrary.org/obo/CL_4033076,10.33333333333333333333,434
+Male,celltypist,VHMHeart,right cardiac atrium,FB5,http://purl.obolibrary.org/obo/CL_0000057,2922,8766
+Male,celltypist,VHMHeart,right cardiac atrium,ILC,http://purl.obolibrary.org/obo/CL_0001065,8.94117647058823529412,152
+Male,celltypist,VHMHeart,right cardiac atrium,LYVE1+MP_cycling,http://purl.obolibrary.org/obo/CL_4033076,11.97777777777777777778,539
 Male,celltypist,VHMHeart,right cardiac atrium,LYVE1+TIMD4+MP,http://purl.obolibrary.org/obo/CL_0000235,194.5,8169
-Male,celltypist,VHMHeart,right cardiac atrium,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,3.71428571428571428571,182
-Male,celltypist,VHMHeart,right cardiac atrium,Mast,http://purl.obolibrary.org/obo/CL_0000097,3.6,126
+Male,celltypist,VHMHeart,right cardiac atrium,MAIT-like,http://purl.obolibrary.org/obo/CL_0000791,4.19230769230769230769,218
+Male,celltypist,VHMHeart,right cardiac atrium,Mast,http://purl.obolibrary.org/obo/CL_0000097,5.05263157894736842105,192
 Male,celltypist,VHMHeart,right cardiac atrium,Meso,http://purl.obolibrary.org/obo/CL_0000077,51.66666666666666666667,1085
-Male,celltypist,VHMHeart,right cardiac atrium,MoMP,http://purl.obolibrary.org/obo/CL_0000235,134,938
-Male,celltypist,VHMHeart,right cardiac atrium,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,75.66666666666666666667,3178
+Male,celltypist,VHMHeart,right cardiac atrium,MoMP,http://purl.obolibrary.org/obo/CL_0000235,618.5,6185
+Male,celltypist,VHMHeart,right cardiac atrium,NC1_glial,http://purl.obolibrary.org/obo/CL_0010020,77.75555555555555555556,3499
 Male,celltypist,VHMHeart,right cardiac atrium,NC2_glial_NGF+,http://purl.obolibrary.org/obo/CL_0010020,32,224
-Male,celltypist,VHMHeart,right cardiac atrium,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,67.14285714285714285714,3290
-Male,celltypist,VHMHeart,right cardiac atrium,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,10.66666666666666666667,448
-Male,celltypist,VHMHeart,right cardiac atrium,Neut,http://purl.obolibrary.org/obo/CL_0000775,16,112
+Male,celltypist,VHMHeart,right cardiac atrium,NK_CD16hi,http://purl.obolibrary.org/obo/CL_0000939,69.5,3614
+Male,celltypist,VHMHeart,right cardiac atrium,NK_CD56hi,http://purl.obolibrary.org/obo/CL_0000938,11.35555555555555555556,511
+Male,celltypist,VHMHeart,right cardiac atrium,Neut,http://purl.obolibrary.org/obo/CL_0000775,11.5,115
 Male,celltypist,VHMHeart,right cardiac atrium,PC1_vent,http://purl.obolibrary.org/obo/CL_0000669,144,1008
 Male,celltypist,VHMHeart,right cardiac atrium,PC2_atria,http://purl.obolibrary.org/obo/CL_0000669,307.4,10759
 Male,celltypist,VHMHeart,right cardiac atrium,PC3_str,http://purl.obolibrary.org/obo/CL_0000669,162,1134
-Male,celltypist,VHMHeart,right cardiac atrium,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,145.4,5089
+Male,celltypist,VHMHeart,right cardiac atrium,PC4_CMC-like,http://purl.obolibrary.org/obo/CL_0000669,455,1365
+Male,celltypist,VHMHeart,right cardiac atrium,Purkinje_cell,http://purl.obolibrary.org/obo/CL_0002068,1,3
+Male,celltypist,VHMHeart,right cardiac atrium,SAN_P_cell,http://purl.obolibrary.org/obo/CL_1000477,2,6
+Male,celltypist,VHMHeart,right cardiac atrium,SMC1_basic,http://purl.obolibrary.org/obo/CL_0000359,154.68421052631578947368,5878
 Male,celltypist,VHMHeart,right cardiac atrium,SMC2_art,http://purl.obolibrary.org/obo/CL_0000359,44.5,623
 Male,celltypist,VHMHeart,right cardiac atrium,T/NK_cycling,http://purl.obolibrary.org/obo/CL_0000814,5.33333333333333333333,112
 Male,celltypist,VHMHeart,right cardiac atrium,aCM1,http://purl.obolibrary.org/obo/CL_0002129,1005.5,14077
-Male,celltypist,VHMHeart,right cardiac atrium,aCM2,http://purl.obolibrary.org/obo/CL_0002129,1146,16044
+Male,celltypist,VHMHeart,right cardiac atrium,aCM2,http://purl.obolibrary.org/obo/CL_0002129,949.76470588235294117647,16146
 Male,celltypist,VHMHeart,right cardiac atrium,aCM3,http://purl.obolibrary.org/obo/CL_0002129,214.5,3003
 Male,celltypist,VHMHeart,right cardiac atrium,aCM4,http://purl.obolibrary.org/obo/CL_0002129,1313,9191
 Male,celltypist,VHMHeart,right cardiac atrium,vCM1,http://purl.obolibrary.org/obo/CL_0002131,3.33333333333333333333,70
-Male,celltypist,VHMHeart,right cardiac atrium,vCM3_stressed,http://purl.obolibrary.org/obo/CL_0002131,4.5,63
+Male,celltypist,VHMHeart,right cardiac atrium,vCM3_stressed,http://purl.obolibrary.org/obo/CL_0002131,388.05882352941176470588,6597
 Male,celltypist,VHMHeart,right cardiac atrium,vCM5,http://purl.obolibrary.org/obo/CL_0002131,2,14
 Male,celltypist,VHMLargeIntestine,ascending colon,Activated CD4 T,https://purl.org/ccf/ASCTB-TEMP_activated-cd4-t,2,2
 Male,celltypist,VHMLargeIntestine,ascending colon,Activated CD8 T,https://purl.org/ccf/ASCTB-TEMP_activated-cd8-t,2,8
@@ -7285,35 +7408,36 @@ Male,celltypist,VHMLung,left anterior basal bronchopulmonary segment,Plasmacytoi
 Male,celltypist,VHMLung,left anterior basal bronchopulmonary segment,Smooth muscle,http://purl.obolibrary.org/obo/CL_0000192,4,4
 Male,celltypist,VHMLung,left anterior basal bronchopulmonary segment,T cells proliferating,http://purl.obolibrary.org/obo/CL_4033069,6,6
 Male,celltypist,VHMLung,left anterior basal bronchopulmonary segment,pre-TB secretory,http://purl.obolibrary.org/obo/CL_0019001,45,45
-Male,celltypist,VHMSkin,skin,DC1,http://purl.obolibrary.org/obo/CL_0002394,3,24
-Male,celltypist,VHMSkin,skin,DC2,http://purl.obolibrary.org/obo/CL_0002399,1,2
-Male,celltypist,VHMSkin,skin,Differentiated_KC,http://purl.obolibrary.org/obo/CL_0002153,23.4,234
-Male,celltypist,VHMSkin,skin,F2,http://purl.obolibrary.org/obo/CL_0000057,1154,4616
+Male,celltypist,VHMSkin,skin,DC1,http://purl.obolibrary.org/obo/CL_0002394,7,70
+Male,celltypist,VHMSkin,skin,DC2,http://purl.obolibrary.org/obo/CL_0002399,14,56
+Male,celltypist,VHMSkin,skin,Differentiated_KC,http://purl.obolibrary.org/obo/CL_0002153,365.16666666666666666667,4382
+Male,celltypist,VHMSkin,skin,F2,http://purl.obolibrary.org/obo/CL_0000057,809.33333333333333333333,4856
 Male,celltypist,VHMSkin,skin,F3,http://purl.obolibrary.org/obo/CL_0000057,202.33333333333333333333,1214
-Male,celltypist,VHMSkin,skin,ILC1_3,http://purl.obolibrary.org/obo/CL_0001078,14.33333333333333333333,86
-Male,celltypist,VHMSkin,skin,ILC1_NK,http://purl.obolibrary.org/obo/CL_0000623,1,2
+Male,celltypist,VHMSkin,skin,ILC1_3,http://purl.obolibrary.org/obo/CL_0001078,13.75,110
+Male,celltypist,VHMSkin,skin,ILC1_NK,http://purl.obolibrary.org/obo/CL_0000623,2,8
 Male,celltypist,VHMSkin,skin,ILC2,http://purl.obolibrary.org/obo/CL_0001081,2.75,22
-Male,celltypist,VHMSkin,skin,Inf_mac,http://purl.obolibrary.org/obo/CL_0000863,6.6,66
-Male,celltypist,VHMSkin,skin,LE2,http://purl.obolibrary.org/obo/CL_0002138,18.2,182
+Male,celltypist,VHMSkin,skin,Inf_mac,http://purl.obolibrary.org/obo/CL_0000863,11.16666666666666666667,134
+Male,celltypist,VHMSkin,skin,LC,http://purl.obolibrary.org/obo/CL_0002457,28,56
+Male,celltypist,VHMSkin,skin,LE2,http://purl.obolibrary.org/obo/CL_0002138,40.5,486
 Male,celltypist,VHMSkin,skin,Macro_1,http://purl.obolibrary.org/obo/CL_0000235,92.5,370
-Male,celltypist,VHMSkin,skin,Mast_cell,http://purl.obolibrary.org/obo/CL_0000097,174.2,1742
-Male,celltypist,VHMSkin,skin,Melanocyte,http://purl.obolibrary.org/obo/CL_1000458,16.8,168
-Male,celltypist,VHMSkin,skin,MigDC,http://purl.obolibrary.org/obo/CL_0001056,2.5,20
-Male,celltypist,VHMSkin,skin,Mono_mac,http://purl.obolibrary.org/obo/CL_0000235,275.66666666666666666667,1654
+Male,celltypist,VHMSkin,skin,Mast_cell,http://purl.obolibrary.org/obo/CL_0000097,146.33333333333333333333,1756
+Male,celltypist,VHMSkin,skin,Melanocyte,http://purl.obolibrary.org/obo/CL_1000458,44.66666666666666666667,536
+Male,celltypist,VHMSkin,skin,MigDC,http://purl.obolibrary.org/obo/CL_0001056,14.8,148
+Male,celltypist,VHMSkin,skin,Mono_mac,http://purl.obolibrary.org/obo/CL_0000235,225,1800
 Male,celltypist,VHMSkin,skin,NK,http://purl.obolibrary.org/obo/CL_0000623,21,126
-Male,celltypist,VHMSkin,skin,Pericyte_1,http://purl.obolibrary.org/obo/CL_0000669,46.33333333333333333333,278
+Male,celltypist,VHMSkin,skin,Pericyte_1,http://purl.obolibrary.org/obo/CL_0000669,64.75,518
 Male,celltypist,VHMSkin,skin,Pericyte_2,http://purl.obolibrary.org/obo/CL_0000669,177.5,710
 Male,celltypist,VHMSkin,skin,Plasma,http://purl.obolibrary.org/obo/CL_0000786,5,30
-Male,celltypist,VHMSkin,skin,Schwann_1,http://purl.obolibrary.org/obo/CL_0002573,11.5,46
+Male,celltypist,VHMSkin,skin,Schwann_1,http://purl.obolibrary.org/obo/CL_0002573,8.33333333333333333333,50
 Male,celltypist,VHMSkin,skin,Schwann_2,http://purl.obolibrary.org/obo/CL_0002573,4.5,18
-Male,celltypist,VHMSkin,skin,Tc,http://purl.obolibrary.org/obo/CL_0000910,106.8,1068
-Male,celltypist,VHMSkin,skin,Th,http://purl.obolibrary.org/obo/CL_0000912,404.4,4044
-Male,celltypist,VHMSkin,skin,Treg,http://purl.obolibrary.org/obo/CL_0000815,91.6,916
-Male,celltypist,VHMSkin,skin,Undifferentiated_KC,http://purl.obolibrary.org/obo/CL_0002187,7.25,58
+Male,celltypist,VHMSkin,skin,Tc,http://purl.obolibrary.org/obo/CL_0000910,94.33333333333333333333,1132
+Male,celltypist,VHMSkin,skin,Th,http://purl.obolibrary.org/obo/CL_0000912,400,4800
+Male,celltypist,VHMSkin,skin,Treg,http://purl.obolibrary.org/obo/CL_0000815,84.33333333333333333333,1012
+Male,celltypist,VHMSkin,skin,Undifferentiated_KC,http://purl.obolibrary.org/obo/CL_0002187,218.4,2184
 Male,celltypist,VHMSkin,skin,VE1,http://purl.obolibrary.org/obo/CL_0000071,356,712
-Male,celltypist,VHMSkin,skin,VE2,http://purl.obolibrary.org/obo/CL_0000071,242.75,1942
+Male,celltypist,VHMSkin,skin,VE2,http://purl.obolibrary.org/obo/CL_0000071,296.4,2964
 Male,celltypist,VHMSkin,skin,migLC,http://purl.obolibrary.org/obo/CL_0002457,10.2,102
-Male,celltypist,VHMSkin,skin,moDC,http://purl.obolibrary.org/obo/CL_0011031,57.6,576
+Male,celltypist,VHMSkin,skin,moDC,http://purl.obolibrary.org/obo/CL_0011031,49,588
 Male,celltypist,VHMSmallIntestine,ascending part of duodenum,Activated CD4 T,https://purl.org/ccf/ASCTB-TEMP_activated-cd4-t,2.75,11
 Male,celltypist,VHMSmallIntestine,ascending part of duodenum,Activated CD8 T,https://purl.org/ccf/ASCTB-TEMP_activated-cd8-t,15.66666666666666666667,47
 Male,celltypist,VHMSmallIntestine,ascending part of duodenum,Activated T,https://purl.org/ccf/ASCTB-TEMP_activated-t,99.14285714285714285714,694
@@ -8762,27 +8886,55 @@ Male,popv,VHMLung,left anterior basal bronchopulmonary segment,respiratory goble
 Male,popv,VHMLung,left anterior basal bronchopulmonary segment,type I pneumocyte,http://purl.obolibrary.org/obo/CL_0002062,8,8
 Male,popv,VHMLung,left anterior basal bronchopulmonary segment,type II pneumocyte,http://purl.obolibrary.org/obo/CL_0002063,18,18
 Male,popv,VHMLung,left anterior basal bronchopulmonary segment,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,9,9
+Male,popv,VHMProstate,central zone of prostate,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,194.33333333333333333333,4664
+Male,popv,VHMProstate,central zone of prostate,basal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002341,1170.75,37464
+Male,popv,VHMProstate,central zone of prostate,club cell,http://purl.obolibrary.org/obo/CL_0000158,1126.25,36040
+Male,popv,VHMProstate,central zone of prostate,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,688.25,22024
+Male,popv,VHMProstate,central zone of prostate,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,133.5,4272
+Male,popv,VHMProstate,central zone of prostate,erythroid progenitor cell,http://purl.obolibrary.org/obo/CL_0000038,1,8
+Male,popv,VHMProstate,central zone of prostate,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,231.25,7400
+Male,popv,VHMProstate,central zone of prostate,luminal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002340,2334.5,74704
+Male,popv,VHMProstate,central zone of prostate,macrophage,http://purl.obolibrary.org/obo/CL_0000235,108,3456
+Male,popv,VHMProstate,central zone of prostate,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,27.25,872
+Male,popv,VHMProstate,central zone of prostate,monocyte,http://purl.obolibrary.org/obo/CL_0000576,134,4288
+Male,popv,VHMProstate,central zone of prostate,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,530.75,16984
+Male,popv,VHMProstate,central zone of prostate,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,1134.75,36312
+Male,popv,VHMProstate,peripheral zone of prostate,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,194.33333333333333333333,4664
+Male,popv,VHMProstate,peripheral zone of prostate,basal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002341,1170.75,37464
+Male,popv,VHMProstate,peripheral zone of prostate,club cell,http://purl.obolibrary.org/obo/CL_0000158,1126.25,36040
+Male,popv,VHMProstate,peripheral zone of prostate,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,688.25,22024
+Male,popv,VHMProstate,peripheral zone of prostate,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,133.5,4272
+Male,popv,VHMProstate,peripheral zone of prostate,erythroid progenitor cell,http://purl.obolibrary.org/obo/CL_0000038,1,8
+Male,popv,VHMProstate,peripheral zone of prostate,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,231.25,7400
+Male,popv,VHMProstate,peripheral zone of prostate,luminal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002340,2334.5,74704
+Male,popv,VHMProstate,peripheral zone of prostate,macrophage,http://purl.obolibrary.org/obo/CL_0000235,108,3456
+Male,popv,VHMProstate,peripheral zone of prostate,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,27.25,872
+Male,popv,VHMProstate,peripheral zone of prostate,monocyte,http://purl.obolibrary.org/obo/CL_0000576,134,4288
+Male,popv,VHMProstate,peripheral zone of prostate,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,530.75,16984
+Male,popv,VHMProstate,peripheral zone of prostate,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,1134.75,36312
 Male,popv,VHMSkin,skin,CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,3.8,38
-Male,popv,VHMSkin,skin,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,43,430
-Male,popv,VHMSkin,skin,CD4-positive helper T cell,http://purl.obolibrary.org/obo/CL_0000492,7.6,76
-Male,popv,VHMSkin,skin,"CD4-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000897,78.2,782
-Male,popv,VHMSkin,skin,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,28.5,228
-Male,popv,VHMSkin,skin,"CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,188.6,1886
-Male,popv,VHMSkin,skin,Langerhans cell,http://purl.obolibrary.org/obo/CL_0000453,9.6,96
-Male,popv,VHMSkin,skin,T cell,http://purl.obolibrary.org/obo/CL_0000084,130.6,1306
-Male,popv,VHMSkin,skin,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,282.6,2826
-Male,popv,VHMSkin,skin,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,18.8,188
-Male,popv,VHMSkin,skin,macrophage,http://purl.obolibrary.org/obo/CL_0000235,203.2,2032
-Male,popv,VHMSkin,skin,mast cell,http://purl.obolibrary.org/obo/CL_0000097,183,1830
-Male,popv,VHMSkin,skin,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,123.4,1234
-Male,popv,VHMSkin,skin,melanocyte,http://purl.obolibrary.org/obo/CL_0000148,17,170
-Male,popv,VHMSkin,skin,muscle cell,http://purl.obolibrary.org/obo/CL_0000187,94.4,944
-Male,popv,VHMSkin,skin,"naive thymus-derived CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000895,16,128
-Male,popv,VHMSkin,skin,"naive thymus-derived CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000900,23.2,232
-Male,popv,VHMSkin,skin,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,4.4,44
-Male,popv,VHMSkin,skin,regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,30.4,304
-Male,popv,VHMSkin,skin,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,8.66666666666666666667,52
-Male,popv,VHMSkin,skin,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,620.2,6202
+Male,popv,VHMSkin,skin,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,41.83333333333333333333,502
+Male,popv,VHMSkin,skin,CD4-positive helper T cell,http://purl.obolibrary.org/obo/CL_0000492,6.83333333333333333333,82
+Male,popv,VHMSkin,skin,"CD4-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000897,70.16666666666666666667,842
+Male,popv,VHMSkin,skin,"CD8-positive, alpha-beta T cell",https://purl.org/ccf/ASCTB-TEMP_cd8-positive-alpha-beta-t-cell,1,2
+Male,popv,VHMSkin,skin,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,24,240
+Male,popv,VHMSkin,skin,"CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,163.83333333333333333333,1966
+Male,popv,VHMSkin,skin,Langerhans cell,http://purl.obolibrary.org/obo/CL_0000453,10.5,126
+Male,popv,VHMSkin,skin,T cell,http://purl.obolibrary.org/obo/CL_0000084,157.66666666666666666667,1892
+Male,popv,VHMSkin,skin,conventional dendritic cell,https://purl.org/ccf/ASCTB-TEMP_conventional-dendritic-cell,1,2
+Male,popv,VHMSkin,skin,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,406.16666666666666666667,4874
+Male,popv,VHMSkin,skin,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,305.66666666666666666667,3668
+Male,popv,VHMSkin,skin,macrophage,http://purl.obolibrary.org/obo/CL_0000235,190.33333333333333333333,2284
+Male,popv,VHMSkin,skin,mast cell,http://purl.obolibrary.org/obo/CL_0000097,154.33333333333333333333,1852
+Male,popv,VHMSkin,skin,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,120.33333333333333333333,1444
+Male,popv,VHMSkin,skin,melanocyte,http://purl.obolibrary.org/obo/CL_0000148,107,1284
+Male,popv,VHMSkin,skin,muscle cell,http://purl.obolibrary.org/obo/CL_0000187,102.16666666666666666667,1226
+Male,popv,VHMSkin,skin,"naive thymus-derived CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000895,14.4,144
+Male,popv,VHMSkin,skin,"naive thymus-derived CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000900,20.66666666666666666667,248
+Male,popv,VHMSkin,skin,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,9,108
+Male,popv,VHMSkin,skin,regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,27.83333333333333333333,334
+Male,popv,VHMSkin,skin,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,24.5,196
+Male,popv,VHMSkin,skin,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,633,7596
 Male,popv,VHMSmallIntestine,ascending part of duodenum,B cell,http://purl.obolibrary.org/obo/CL_0000236,4.75,19
 Male,popv,VHMSmallIntestine,ascending part of duodenum,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,36.33333333333333333333,218
 Male,popv,VHMSmallIntestine,ascending part of duodenum,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,47.71428571428571428571,334
