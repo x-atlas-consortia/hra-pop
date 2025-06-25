@@ -58,7 +58,7 @@ WHERE {
   }
 
   BIND(COALESCE(?l1_cell_id, CL:0000000) as ?level_1_cell_id)
-  BIND(COALESCE(?l1_cell_label, 'unknown cell') as ?level_1_cell_label)
+  BIND(COALESCE(?l1_cell_label, 'no mapped parent cell') as ?level_1_cell_label)
 }
 GROUP BY ?cell_id ?cell_label
 ORDER BY ?cell_id
