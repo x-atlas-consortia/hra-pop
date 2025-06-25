@@ -8,7 +8,9 @@ PREFIX ccf: <http://purl.org/ccf/>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
 PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
 
-SELECT ?cell_label ?cell_id (SAMPLE(?level_1_cell_id) as ?level_1_cell_id) (SAMPLE(?level_1_cell_label) as ?level_1_cell_label)
+SELECT ?cell_label ?cell_id
+  (SAMPLE(?level_1_cell_id) as ?level_1_cell_id) (SAMPLE(?level_1_cell_label) as ?level_1_cell_label)
+  (SAMPLE(?level_2_cell_id) as ?level_2_cell_id) (SAMPLE(?level_2_cell_label) as ?level_2_cell_label)
 FROM HRA:
 FROM <https://purl.humanatlas.io/vocab/cl>
 FROM <https://purl.humanatlas.io/vocab/pcl>
@@ -24,41 +26,57 @@ WHERE {
   }
   ?cell_id rdfs:label ?cell_label .
   
-  # Match to upper level cell types
+  # Match to level 1 cell types
   OPTIONAL {
-    # https://github.com/obophenotype/cell-ontology/blob/master/src/templates/general_cell_types_upper_slim.csv
     VALUES (?l1_cell_id) {
-      (CL:0000540) # neuron
-      (CL:0000125) # glial cell
-      (CL:0000066) # epithelial cell
-      (CL:0000152) # exocrine cell
-      (CL:0000057) # fibroblast
-      (CL:0000235) # macrophage
-      (CL:0000084) # T cell
-      (CL:0000236) # B cell
-      (CL:0000623) # natural killer cell
-      (CL:0000451) # dendritic cell
-      (CL:0000192) # smooth muscle cell
-      (CL:0000746) # cardiac muscle cell
-      (CL:0000188) # cardiac muscle cell
-      (CL:0000163) # endocrine cell
+      (CL:0002320) # connective tissue cell
       (CL:0000148) # melanocyte
-      (CL:0009004) # retinal cell
+      (CL:0000988) # hematopoietic cell
       (CL:0000349) # extraembryonic cell
-      (CL:0000081) # blood cell
-      (CL:0000576) # monocyte
+      (CL:0000988) # hematopoietic cell
       (CL:0000039) # germ line cell
-      (CL:0000136) # fat cell
-      (CL:0000499) # stromal cell
       (CL:0001035) # bone cell
+      (CL:0000988) # hematopoietic cell
+      (CL:0002319) # neural cell
+      (CL:0000988) # hematopoietic cell
+      (CL:0000988) # hematopoietic cell
+      (CL:0000988) # hematopoietic cell
+      (CL:0000115) # endothelial cell
       (CL:0000034) # stem cell
+      (CL:0002320) # connective tissue cell
+      (CL:0000187) # muscle cell
+      (CL:0000988) # hematopoietic cell
+      (CL:0002319) # neural cell
+      (CL:0000066) # epithelial cell
     }
     ?cell_id (rdfs:subClassOf|rdf:type)* ?l1_cell_id .
     ?l1_cell_id rdfs:label ?l1_cell_label .
   }
 
+  # Match to level 2 cell types
+  OPTIONAL {
+    VALUES (?l2_cell_id) {
+      (CL::0000136) # adipocyte
+      (CL::0000576) # monocyte
+      (CL::0000152) # exocrine cell
+      (CL::0000081) # blood cell
+      (CL::0000125) # glial cell
+      (CL::0000235) # macrophage
+      (CL::0000451) # dendritic cell
+      (CL::0000236) # B cell
+      (CL::0000499) # stromal cell
+      (CL::0000084) # T cell
+      (CL::0000540) # neuron
+    }
+    ?cell_id (rdfs:subClassOf|rdf:type)* ?l2_cell_id .
+    ?l2_cell_id rdfs:label ?l2_cell_label .
+  }
+
   BIND(COALESCE(?l1_cell_id, CL:0000000) as ?level_1_cell_id)
-  BIND(COALESCE(?l1_cell_label, 'unknown cell') as ?level_1_cell_label)
+  BIND(COALESCE(?l1_cell_label, 'no mapped parent cell') as ?level_1_cell_label)
+
+  BIND(COALESCE(?l2_cell_id, ?l1_cell_id, CL:0000000) as ?level_2_cell_id)
+  BIND(COALESCE(?l2_cell_label, ?l1_cell_label, 'no mapped parent cell') as ?level_2_cell_label)
 }
 GROUP BY ?cell_id ?cell_label
 ORDER BY ?cell_id
