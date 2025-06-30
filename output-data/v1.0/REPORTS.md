@@ -18,6 +18,7 @@
   * [Kidney AS Cell Distributions (counts-for-heart-as)](#counts-for-heart-as)
   * [Kidney AS Cell Distributions (counts-for-kidney-as)](#counts-for-kidney-as)
   * [Bulk Tool-Organ-AS Cell Distributions (counts-for-tools-by-as)](#counts-for-tools-by-as)
+  * [Cell Summaries with Biomarker information by Dataset (ct-bm-per-dataset)](#ct-bm-per-dataset)
   * [Atlas-level CxG collections (cxg-collections)](#cxg-collections)
   * [data-provenance](#data-provenance)
   * [Atlas Datasets and their cell types and biomarkers (datasets-ct-bm-data)](#datasets-ct-bm-data)
@@ -1252,6 +1253,91 @@ ORDER BY ?sex ?tool ?organ ?as_label ?cell_label
 | Female | azimuth | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | B | http://purl.obolibrary.org/obo/CL_0000236 | 20.16666666666666666667 | 726 |
 | Female | azimuth | VHFHeart | Posteromedial head of posterior papillary muscle of left ventricle | Capillary Endothelial | http://purl.obolibrary.org/obo/CL_0002144 | 1359.16666666666666666667 | 48930 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="ct-bm-per-dataset"></a>Cell Summaries with Biomarker information by Dataset (ct-bm-per-dataset)
+
+Computes the cell summaries plus biomarkers and their mean gene expression for each organ by dataset.
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Cell Summaries with Biomarker information by Dataset
+#+ description: Computes the cell summaries plus biomarkers and their mean gene expression for each organ by dataset.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?organ_id ?organ ?dataset ?sex ?tool ?modality ?cell_id ?cell_label ?cell_count ?cell_percentage
+  ?biomarker_id ?biomarker_label ?mean_gene_expr_value
+FROM HRA:
+FROM HRApop:
+WHERE {
+  {
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  ?dataset ccf:has_cell_summary [ 
+    ccf:cell_annotation_method ?tool ;
+    ccf:modality ?modality ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_id ;
+      ccf:cell_label ?raw_cell_label ;
+      ccf:cell_count ?cell_count ;
+      ccf:percentage_of_total ?cell_percentage ;
+      ccf:gene_expr [
+        ccf:gene_label ?biomarker_label ;
+        ccf:gene_id ?biomarker_id ;
+        ccf:mean_gene_expr_value ?mean_gene_expr_value ;
+      ]
+    ]
+  ] .
+
+  [] a ccf:SpatialPlacement ;
+    ccf:placement_relative_to ?refOrgan ;
+    ccf:placement_for ?rui_location .
+
+  ?refOrgan owl:sameAs* [
+    ccf:representation_of ?organ_id ;
+    ccf:organ_owner_sex ?sex ;
+    skos:prefLabel ?organ
+  ] .
+
+  ?organ_id rdfs:label ?organ_label .
+
+  OPTIONAL { ?cell_id rdfs:label ?rdfs_cell_label . }
+  BIND(COALESCE(?rdfs_cell_label, ?raw_cell_label) as ?cell_label)
+}
+ORDER BY ?sex ?tool ?dataset DESC(?cell_count)
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/ct-bm-per-dataset.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/ct-bm-per-dataset.csv))
+
+| organ_id | organ | dataset | sex | tool | modality | cell_id | cell_label | cell_count | cell_percentage | biomarker_id | biomarker_label | mean_gene_expr_value |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| http://purl.obolibrary.org/obo/UBERON_0000948 | heart | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$left%20cardiac%20atrium | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0002129 | Atrial Cardiomyocyte | 430 | 0.4029990627928772 | HGNC:10484 | RYR2 | 3.399410963058472 |
+| http://purl.obolibrary.org/obo/UBERON_0000948 | heart | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$left%20cardiac%20atrium | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0002129 | Atrial Cardiomyocyte | 430 | 0.4029990627928772 | HGNC:12403 | TTN | 2.725457668304443 |
+| http://purl.obolibrary.org/obo/UBERON_0000948 | heart | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$left%20cardiac%20atrium | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0002129 | Atrial Cardiomyocyte | 430 | 0.4029990627928772 | HGNC:3668 | FGF12 | 2.062190771102905 |
+| http://purl.obolibrary.org/obo/UBERON_0000948 | heart | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$left%20cardiac%20atrium | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0002129 | Atrial Cardiomyocyte | 430 | 0.4029990627928772 | HGNC:11949 | TNNT2 | 1.555407524108887 |
+| http://purl.obolibrary.org/obo/UBERON_0000948 | heart | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$left%20cardiac%20atrium | Female | azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/CL_0002129 | Atrial Cardiomyocyte | 430 | 0.4029990627928772 | HGNC:15710 | LDB3 | 1.476308226585388 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="cxg-collections"></a>Atlas-level CxG collections (cxg-collections)
