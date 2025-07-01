@@ -56,17 +56,17 @@ WHERE {
   # Match to level 2 cell types
   OPTIONAL {
     VALUES (?l2_cell_id) {
-      (CL::0000136) # adipocyte
-      (CL::0000576) # monocyte
-      (CL::0000152) # exocrine cell
-      (CL::0000081) # blood cell
-      (CL::0000125) # glial cell
-      (CL::0000235) # macrophage
-      (CL::0000451) # dendritic cell
-      (CL::0000236) # B cell
-      (CL::0000499) # stromal cell
-      (CL::0000084) # T cell
-      (CL::0000540) # neuron
+      (CL:0000136) # adipocyte
+      (CL:0000576) # monocyte
+      (CL:0000152) # exocrine cell
+      (CL:0000081) # blood cell
+      (CL:0000125) # glial cell
+      (CL:0000235) # macrophage
+      (CL:0000451) # dendritic cell
+      (CL:0000236) # B cell
+      (CL:0000499) # stromal cell
+      (CL:0000084) # T cell
+      (CL:0000540) # neuron
     }
     ?cell_id (rdfs:subClassOf|rdf:type)* ?l2_cell_id .
     ?l2_cell_id rdfs:label ?l2_cell_label .

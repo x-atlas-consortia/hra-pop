@@ -693,17 +693,17 @@ WHERE {
   # Match to level 2 cell types
   OPTIONAL {
     VALUES (?l2_cell_id) {
-      (CL::0000136) # adipocyte
-      (CL::0000576) # monocyte
-      (CL::0000152) # exocrine cell
-      (CL::0000081) # blood cell
-      (CL::0000125) # glial cell
-      (CL::0000235) # macrophage
-      (CL::0000451) # dendritic cell
-      (CL::0000236) # B cell
-      (CL::0000499) # stromal cell
-      (CL::0000084) # T cell
-      (CL::0000540) # neuron
+      (CL:0000136) # adipocyte
+      (CL:0000576) # monocyte
+      (CL:0000152) # exocrine cell
+      (CL:0000081) # blood cell
+      (CL:0000125) # glial cell
+      (CL:0000235) # macrophage
+      (CL:0000451) # dendritic cell
+      (CL:0000236) # B cell
+      (CL:0000499) # stromal cell
+      (CL:0000084) # T cell
+      (CL:0000540) # neuron
     }
     ?cell_id (rdfs:subClassOf|rdf:type)* ?l2_cell_id .
     ?l2_cell_id rdfs:label ?l2_cell_label .
@@ -729,7 +729,7 @@ ORDER BY ?cell_id
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | cell | http://purl.obolibrary.org/obo/CL_0000000 | http://purl.obolibrary.org/obo/CL_0000000 | no mapped parent cell | http://purl.obolibrary.org/obo/CL_0000000 | no mapped parent cell |
 | hematopoietic stem cell | http://purl.obolibrary.org/obo/CL_0000037 | http://purl.obolibrary.org/obo/CL_0000988 | hematopoietic cell | http://purl.obolibrary.org/obo/CL_0000988 | hematopoietic cell |
-| fibroblast | http://purl.obolibrary.org/obo/CL_0000057 | http://purl.obolibrary.org/obo/CL_0002320 | connective tissue cell | http://purl.obolibrary.org/obo/CL_0002320 | connective tissue cell |
+| fibroblast | http://purl.obolibrary.org/obo/CL_0000057 | http://purl.obolibrary.org/obo/CL_0002320 | connective tissue cell | http://purl.obolibrary.org/obo/CL_0000499 | stromal cell |
 | epithelial cell | http://purl.obolibrary.org/obo/CL_0000066 | http://purl.obolibrary.org/obo/CL_0000066 | epithelial cell | http://purl.obolibrary.org/obo/CL_0000066 | epithelial cell |
 | blood vessel endothelial cell | http://purl.obolibrary.org/obo/CL_0000071 | http://purl.obolibrary.org/obo/CL_0000115 | endothelial cell | http://purl.obolibrary.org/obo/CL_0000115 | endothelial cell |
 | ... | ... | ... | ... | ... | ... |
