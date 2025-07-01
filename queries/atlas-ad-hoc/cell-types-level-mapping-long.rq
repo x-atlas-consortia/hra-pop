@@ -37,7 +37,6 @@ WHERE {
     (CL:0000034 "L1") # stem cell
     (CL:0002320 "L1") # connective tissue cell
     (CL:0000187 "L1") # muscle cell
-    (CL:0002319 "L1") # neural cell
     (CL:0000066 "L1") # epithelial cell
 
     (CL:0000136 "L2") # adipocyte
