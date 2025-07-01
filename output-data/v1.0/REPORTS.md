@@ -10,6 +10,7 @@
   * [Cell Counts for Atlas Proteomics Datasets (atlas-sc-proteomics-cell-counts)](#atlas-sc-proteomics-cell-counts)
   * [Cell Counts for Atlas Transcriptomics Datasets (atlas-sc-transcriptomics-cell-counts)](#atlas-sc-transcriptomics-cell-counts)
   * [Cell Summaries by Anatomical Structure  (cell-types-in-anatomical-structurescts-per-as)](#cell-types-in-anatomical-structurescts-per-as)
+  * [atlas cell type level mapping (cell-types-level-mapping-long)](#cell-types-level-mapping-long)
   * [atlas cell type level mapping (cell-types-level-mapping)](#cell-types-level-mapping)
   * [Cell Summaries by Dataset (cell-types-per-dataset)](#cell-types-per-dataset)
   * [Cell Summaries by Extraction Site  (cell-types-per-extraction-site)](#cell-types-per-extraction-site)
@@ -625,6 +626,93 @@ ORDER BY ?sex ?as ?tool DESC(?cell_count)
 | large intestine | http://purl.obolibrary.org/obo/UBERON_0001052 | rectum | Female | celltypist | sc_transcriptomics | https://purl.org/ccf/ASCTB-TEMP_activated-cd4-t | Activated CD4 T | 0.6900000000000001 | 0.08454846219826005 | 3 |
 | large intestine | http://purl.obolibrary.org/obo/UBERON_0001052 | rectum | Female | celltypist | sc_transcriptomics | https://purl.org/ccf/ASCTB-TEMP_ta | TA | 0.54 | 0.06616836172037743 | 3 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+
+### <a id="cell-types-level-mapping-long"></a>atlas cell type level mapping (cell-types-level-mapping-long)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: atlas cell type level mapping
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT DISTINCT ?cell_label ?cell_id ?level ?level_cell_id ?level_cell_label
+FROM HRA:
+FROM <https://purl.humanatlas.io/vocab/cl>
+FROM <https://purl.humanatlas.io/vocab/pcl>
+WHERE {
+  # Select cell types to map
+  GRAPH HRApop: {
+    [] ccf:has_cell_summary [
+      ccf:has_cell_summary_row [
+        ccf:cell_id ?cell_id ;
+      ]
+    ] .
+    FILTER(!STRSTARTS(STR(?cell_id), 'https://purl.org/ccf/ASCTB-TEMP'))
+  }
+  ?cell_id rdfs:label ?cell_label .
+
+  # Match to leveled cell types
+  VALUES (?lvl_cell_id ?level) {
+    (CL:0002320 "L1") # connective tissue cell
+    (CL:0000148 "L1") # melanocyte
+    (CL:0000988 "L1") # hematopoietic cell
+    (CL:0000349 "L1") # extraembryonic cell
+    (CL:0000039 "L1") # germ line cell
+    (CL:0001035 "L1") # bone cell
+    (CL:0002319 "L1") # neural cell
+    (CL:0000115 "L1") # endothelial cell
+    (CL:0000034 "L1") # stem cell
+    (CL:0002320 "L1") # connective tissue cell
+    (CL:0000187 "L1") # muscle cell
+    (CL:0002319 "L1") # neural cell
+    (CL:0000066 "L1") # epithelial cell
+
+    (CL:0000136 "L2") # adipocyte
+    (CL:0000576 "L2") # monocyte
+    (CL:0000152 "L2") # exocrine cell
+    (CL:0000081 "L2") # blood cell
+    (CL:0000125 "L2") # glial cell
+    (CL:0000235 "L2") # macrophage
+    (CL:0000451 "L2") # dendritic cell
+    (CL:0000236 "L2") # B cell
+    (CL:0000499 "L2") # stromal cell
+    (CL:0000084 "L2") # T cell
+    (CL:0000540 "L2") # neuron
+  }
+  ?cell_id (rdfs:subClassOf|rdf:type)* ?lvl_cell_id .
+  ?lvl_cell_id rdfs:label ?lvl_cell_label .
+
+  BIND(COALESCE(?lvl_cell_id, CL:0000000) as ?level_cell_id)
+  BIND(COALESCE(?lvl_cell_label, 'no mapped parent cell') as ?level_cell_label)
+}
+ORDER BY ?cell_label ?level ?level_cell_label
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/cell-types-level-mapping-long.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/cell-types-level-mapping-long.csv))
+
+| cell_label | cell_id | level | level_cell_id | level_cell_label |
+| :--- | :--- | :--- | :--- | :--- |
+| intestinal tuft cell | http://purl.obolibrary.org/obo/CL_0019032 | L1 | http://purl.obolibrary.org/obo/CL_0000066 | epithelial cell |
+| tracheobronchial goblet cell | http://purl.obolibrary.org/obo/CL_0019003 | L1 | http://purl.obolibrary.org/obo/CL_0000066 | epithelial cell |
+| B cell | http://purl.obolibrary.org/obo/CL_0000236 | L1 | http://purl.obolibrary.org/obo/CL_0000988 | hematopoietic cell |
+| B cell | http://purl.obolibrary.org/obo/CL_0000236 | L2 | http://purl.obolibrary.org/obo/CL_0000236 | B cell |
+| B cell, CD19-positive | http://purl.obolibrary.org/obo/CL_0001201 | L1 | http://purl.obolibrary.org/obo/CL_0000988 | hematopoietic cell |
+| ... | ... | ... | ... | ... |
 
 
 ### <a id="cell-types-level-mapping"></a>atlas cell type level mapping (cell-types-level-mapping)
