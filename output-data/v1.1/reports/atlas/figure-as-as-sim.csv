@@ -1,0 +1,561 @@
+organId,organ,sex,modality,as1_label,as2_label,cosine_sim,as1_dataset_count,as2_dataset_count
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,kidney pyramid,0.1260325709928595577225,7,81
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal papilla,kidney pyramid,0.31469848068910138035,7,81
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,kidney pyramid,0.1260325709928595577225,7,81
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal papilla,kidney pyramid,0.31469848068910138035,7,81
+UBERON:0004538,left kidney,Male,sc_transcriptomics,kidney capsule,kidney pyramid,0.2495763382649905,7,81
+UBERON:0004539,right kidney,Male,sc_transcriptomics,kidney capsule,kidney pyramid,0.2495763382649905,7,81
+UBERON:0004539,right kidney,Female,sc_transcriptomics,kidney capsule,kidney pyramid,0.394116797599292482325,7,81
+UBERON:0004538,left kidney,Female,sc_transcriptomics,kidney capsule,kidney pyramid,0.394116797599292482325,7,81
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal column,kidney pyramid,0.26588026695307520649,12,81
+UBERON:0004539,right kidney,Male,sc_transcriptomics,kidney capsule,hilum of kidney,0.286490996370966764268,7,2
+UBERON:0004538,left kidney,Male,sc_transcriptomics,kidney capsule,hilum of kidney,0.286490996370966764268,7,2
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal column,kidney pyramid,0.26588026695307520649,12,81
+UBERON:0004538,left kidney,Female,sc_transcriptomics,outer cortex of kidney,kidney pyramid,0.405450374855165786775,46,81
+UBERON:0004538,left kidney,Male,sc_transcriptomics,outer cortex of kidney,kidney pyramid,0.278053740626085401845,46,81
+UBERON:0004539,right kidney,Female,sc_transcriptomics,outer cortex of kidney,kidney pyramid,0.405450374855165786775,46,81
+UBERON:0004539,right kidney,Male,sc_transcriptomics,outer cortex of kidney,kidney pyramid,0.278053740626085401845,46,81
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,outer cortex of kidney,0.38779384224374699135,7,46
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,outer cortex of kidney,0.38779384224374699135,7,46
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal papilla,outer cortex of kidney,0.362649738352247320975,7,46
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal papilla,outer cortex of kidney,0.362649738352247320975,7,46
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Distal part of ileum,0.8057662017776196,20,18
+UBERON:0002108,small intestine,Male,sc_proteomics,jejunum,Distal part of ileum,0.9661851403676475,20,18
+UBERON:0004538,left kidney,Male,sc_transcriptomics,kidney pyramid,hilum of kidney,0.2946064143746127649545,81,2
+UBERON:0004539,right kidney,Male,sc_transcriptomics,kidney pyramid,hilum of kidney,0.2946064143746127649545,81,2
+UBERON:0000059,large intestine,Female,sc_transcriptomics,transverse colon,sigmoid colon,0.22633524074717389256,15,23
+UBERON:0000059,large intestine,Male,sc_proteomics,transverse colon,sigmoid colon,0.9568405002640554,15,23
+UBERON:0000059,large intestine,Female,sc_proteomics,transverse colon,sigmoid colon,0.9768897247504795,15,23
+UBERON:0000059,large intestine,Male,sc_proteomics,caecum,sigmoid colon,0.08187788919956071,31,23
+UBERON:0000059,large intestine,Female,sc_proteomics,caecum,sigmoid colon,0.7909912736484943,31,23
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,sigmoid colon,0.29713593133964542789,31,23
+UBERON:0000059,large intestine,Female,sc_transcriptomics,rectum,sigmoid colon,0.28648626144850250256,3,23
+UBERON:0000059,large intestine,Female,sc_transcriptomics,descending colon,hepatic flexure of colon,0.17740821398236395067,20,4
+UBERON:0000059,large intestine,Male,sc_transcriptomics,transverse colon,hepatic flexure of colon,0.23779946634533149928,15,4
+UBERON:0000059,large intestine,Female,sc_transcriptomics,transverse colon,hepatic flexure of colon,0.16840322023109875511,15,4
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,hepatic flexure of colon,0.19494027905768112878,31,4
+UBERON:0000059,large intestine,Female,sc_transcriptomics,rectum,hepatic flexure of colon,0.44812657158266511833,3,4
+UBERON:0000948,heart,Female,sc_transcriptomics,left cardiac atrium,interventricular septum,0.36145660558179347444,14,15
+UBERON:0000948,heart,Male,sc_transcriptomics,left cardiac atrium,interventricular septum,0.50024532784470745556,14,15
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,interventricular septum,0.38258447238651628333,17,15
+UBERON:0000948,heart,Male,sc_transcriptomics,right cardiac atrium,interventricular septum,0.52712097691347596333,17,15
+UBERON:0000948,heart,Female,sc_transcriptomics,heart left ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.62234413390275708222,65,6
+UBERON:0000948,heart,Female,sc_transcriptomics,interventricular septum,Posteromedial head of posterior papillary muscle of left ventricle,0.71550880641656341778,15,6
+UBERON:0000948,heart,Female,sc_transcriptomics,left cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.35742485109654648,14,6
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,Posteromedial head of posterior papillary muscle of left ventricle,0.37655471246105317333,17,6
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Duodenum,0.34288021918684979725,20,3
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Duodenum,0.53223760964276403130,8,3
+UBERON:0002108,small intestine,Male,sc_transcriptomics,ileum,Descending part of duodenum,0.35059020684516153576,8,19
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Descending part of duodenum,0.855825955000521,8,19
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Ascending part of duodenum,0.6929263131298675,20,19
+UBERON:0002108,small intestine,Male,sc_proteomics,jejunum,Ascending part of duodenum,0.990351297689485,20,19
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Ascending part of duodenum,0.4283233381822659342,20,19
+UBERON:0002108,small intestine,Male,sc_transcriptomics,ileum,Ascending part of duodenum,0.4827765146013495707,8,19
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Ascending part of duodenum,0.906944606626076,8,19
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Descending part of duodenum,Ascending part of duodenum,0.3430933867756096583,19,19
+UBERON:0002108,small intestine,Female,sc_proteomics,Descending part of duodenum,Ascending part of duodenum,0.7380054511714887,19,19
+UBERON:0002108,small intestine,Male,sc_proteomics,Descending part of duodenum,Ascending part of duodenum,0.9905943196363463,19,19
+UBERON:0002108,small intestine,Female,sc_proteomics,Horizontal part of duodenum,Ascending part of duodenum,1,18,19
+UBERON:0002108,small intestine,Male,sc_proteomics,Horizontal part of duodenum,Ascending part of duodenum,1,18,19
+UBERON:0002108,small intestine,Female,sc_transcriptomics,duodenal ampulla,Ascending part of duodenum,0.37915519905268624256,2,19
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,ileum,0.8057662017776197,20,8
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,ileum,0.34539859016168560773,20,8
+UBERON:0000948,heart,Male,sc_transcriptomics,heart left ventricle,interventricular septum,0.59795477582622937333,65,15
+UBERON:0000948,heart,Female,sc_transcriptomics,heart left ventricle,interventricular septum,0.62387637008815656,65,15
+UBERON:0000948,heart,Female,sc_transcriptomics,heart right ventricle,Posteromedial head of posterior papillary muscle of left ventricle,0.65549141130193625667,30,6
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Duodenum,0.39679015800910179553,20,3
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,hilum of kidney,0.25989566314547230900525,7,2
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,hilum of kidney,0.25989566314547230900525,7,2
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,renal column,0.25989566314547230903025,7,12
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal papilla,renal column,0.2426309715482477755075,7,12
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,renal column,0.25989566314547230903025,7,12
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal papilla,renal column,0.2426309715482477755075,7,12
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal column,kidney capsule,0.28649099637096678760,12,7
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal column,kidney capsule,0.30874609474927988425,12,7
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal column,kidney capsule,0.28649099637096678760,12,7
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal column,kidney capsule,0.30874609474927988425,12,7
+UBERON:0000059,large intestine,Female,sc_transcriptomics,rectum,descending colon,0.18224331732022247289,3,20
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Horizontal part of duodenum,0.6929263131298675,20,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Descending part of duodenum,Horizontal part of duodenum,0.34309338677560967201,19,18
+UBERON:0002108,small intestine,Male,sc_proteomics,Descending part of duodenum,Horizontal part of duodenum,0.9905943196363463,19,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,duodenal ampulla,Horizontal part of duodenum,0.37915519905268622362,2,18
+UBERON:0000059,large intestine,Male,sc_transcriptomics,descending colon,sigmoid colon,0.28637198828500068262,20,23
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Descending part of duodenum,0.33553885705470416086,20,19
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Descending part of duodenum,0.32603145424867540079,8,19
+UBERON:0002108,small intestine,Female,sc_transcriptomics,duodenal ampulla,Descending part of duodenum,0.32454525295581373695,2,19
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Ascending part of duodenum,0.35744858005572644186,20,19
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Ascending part of duodenum,0.38062455540082057012,8,19
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Descending part of duodenum,Ascending part of duodenum,0.40133887371007430133,19,19
+UBERON:0000059,large intestine,Male,sc_proteomics,caecum,transverse colon,0.11058054023677759,31,15
+UBERON:0000059,large intestine,Female,sc_proteomics,caecum,transverse colon,0.8776725707585741,31,15
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,transverse colon,0.32306530052102927056,31,15
+UBERON:0000059,large intestine,Male,sc_transcriptomics,caecum,transverse colon,0.23779946634533152126,31,15
+UBERON:0000059,large intestine,Female,sc_transcriptomics,rectum,transverse colon,0.11084985415379811022,3,15
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal papilla,kidney capsule,0.40657627454490336,7,7
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal papilla,kidney capsule,0.428839749800815024875,7,7
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal papilla,kidney capsule,0.40657627454490336,7,7
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal papilla,kidney capsule,0.428839749800815024875,7,7
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Distal part of ileum,0.38221933937363250898,20,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Distal part of ileum,0.34369677303696481626,20,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,ileum,Distal part of ileum,0.28160862169538921809,8,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Distal part of ileum,0.34605586315141904707,8,18
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Distal part of ileum,1,8,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Descending part of duodenum,Distal part of ileum,0.33715666589544254224,19,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Descending part of duodenum,Distal part of ileum,0.30584322622171933519,19,18
+UBERON:0002108,small intestine,Male,sc_proteomics,Descending part of duodenum,Distal part of ileum,0.9435659292678967,19,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Descending part of duodenum,Distal part of ileum,0.8558259550005213,19,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Horizontal part of duodenum,Distal part of ileum,0.35521212836714402011,18,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Horizontal part of duodenum,Distal part of ileum,0.33799170903820167547,18,18
+UBERON:0000948,heart,Male,sc_transcriptomics,heart right ventricle,heart left ventricle,0.63559844609056762222,30,65
+UBERON:0000948,heart,Male,sc_transcriptomics,left cardiac atrium,heart left ventricle,0.56097589672917031778,14,65
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,heart left ventricle,0.37078157520753622667,17,65
+UBERON:0000948,heart,Male,sc_transcriptomics,right cardiac atrium,heart left ventricle,0.57297960810398662,17,65
+UBERON:0000059,large intestine,Female,sc_transcriptomics,ascending colon,transverse colon,0.32895951128725459744,47,15
+UBERON:0000059,large intestine,Female,sc_proteomics,ascending colon,transverse colon,0.8776725707585743,47,15
+UBERON:0000059,large intestine,Male,sc_proteomics,ascending colon,transverse colon,0.12874180218997375,47,15
+UBERON:0000059,large intestine,Male,sc_transcriptomics,ascending colon,transverse colon,0.32076237128748689838,47,15
+UBERON:0000059,large intestine,Male,sc_proteomics,descending colon,sigmoid colon,0.9895096843157141,20,23
+UBERON:0000059,large intestine,Female,sc_proteomics,descending colon,sigmoid colon,0.6230691604159252,20,23
+UBERON:0000059,large intestine,Male,sc_transcriptomics,transverse colon,sigmoid colon,0.30812644810610847067,15,23
+UBERON:0000059,large intestine,Male,sc_transcriptomics,caecum,sigmoid colon,0.27063915460308036794,31,23
+UBERON:0000059,large intestine,Male,sc_transcriptomics,ascending colon,hepatic flexure of colon,0.20852589130941925692,47,4
+UBERON:0000059,large intestine,Female,sc_transcriptomics,ascending colon,hepatic flexure of colon,0.262131377350947659,47,4
+UBERON:0000059,large intestine,Male,sc_transcriptomics,descending colon,hepatic flexure of colon,0.17046058734228935837,20,4
+UBERON:0000059,large intestine,Male,sc_transcriptomics,caecum,hepatic flexure of colon,0.47661070354368147111,31,4
+UBERON:0000059,large intestine,Female,sc_transcriptomics,sigmoid colon,hepatic flexure of colon,0.27475221196179115722,23,4
+UBERON:0000059,large intestine,Male,sc_transcriptomics,sigmoid colon,hepatic flexure of colon,0.27063915460308038652,23,4
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Descending part of duodenum,0.33865137557919913645,20,19
+UBERON:0002108,small intestine,Female,sc_proteomics,jejunum,Descending part of duodenum,0.9190516048880674,20,19
+UBERON:0002108,small intestine,Male,sc_proteomics,jejunum,Descending part of duodenum,0.9689109956083971,20,19
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Horizontal part of duodenum,Ascending part of duodenum,0.42727499549401526209,18,19
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Horizontal part of duodenum,Ascending part of duodenum,0.38176576776826840928,18,19
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,ileum,0.39685780957362335954,20,8
+UBERON:0002370,thymus,Female,sc_transcriptomics,left thymus lobe,right thymus lobe,0.67685090406159579,4,4
+UBERON:0002370,thymus,Male,sc_transcriptomics,left thymus lobe,right thymus lobe,0.84181093925303855,4,4
+UBERON:0000948,heart,Female,sc_transcriptomics,heart right ventricle,heart left ventricle,0.58488365158938245778,30,65
+UBERON:0000948,heart,Female,sc_transcriptomics,left cardiac atrium,heart left ventricle,0.37551855005328761333,14,65
+UBERON:0000059,large intestine,Female,sc_transcriptomics,transverse colon,descending colon,0.24603936800595503916,15,20
+UBERON:0000059,large intestine,Male,sc_transcriptomics,transverse colon,descending colon,0.317407494552599311,15,20
+UBERON:0000059,large intestine,Female,sc_proteomics,transverse colon,descending colon,0.7229521352855671,15,20
+UBERON:0000059,large intestine,Male,sc_proteomics,transverse colon,descending colon,0.9567657084354716,15,20
+UBERON:0000059,large intestine,Male,sc_proteomics,caecum,descending colon,0.09879992489131292,31,20
+UBERON:0000059,large intestine,Female,sc_proteomics,caecum,descending colon,0.9400566196706707,31,20
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,descending colon,0.30619007929482219763,31,20
+UBERON:0000059,large intestine,Male,sc_transcriptomics,caecum,descending colon,0.17046058734228936503,31,20
+UBERON:0002108,small intestine,Male,sc_proteomics,jejunum,Horizontal part of duodenum,0.9903512976894852,20,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,jejunum,Horizontal part of duodenum,0.38319160182485032291,20,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,Horizontal part of duodenum,0.35744858005572641797,20,18
+UBERON:0002108,small intestine,Female,sc_proteomics,ileum,Horizontal part of duodenum,0.9069446066260761,8,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,ileum,Horizontal part of duodenum,0.378088153222422036,8,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,Horizontal part of duodenum,0.38062455540082058327,8,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Descending part of duodenum,Horizontal part of duodenum,0.37425709620409516363,19,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Descending part of duodenum,Horizontal part of duodenum,0.7380054511714887,19,18
+UBERON:0000059,large intestine,Female,sc_proteomics,ascending colon,sigmoid colon,0.7909912736484944,47,23
+UBERON:0000059,large intestine,Male,sc_proteomics,ascending colon,sigmoid colon,0.10025209672234005,47,23
+UBERON:0000059,large intestine,Female,sc_transcriptomics,ascending colon,sigmoid colon,0.32177126863978254556,47,23
+UBERON:0000059,large intestine,Male,sc_transcriptomics,ascending colon,sigmoid colon,0.30289574398402874856,47,23
+UBERON:0000059,large intestine,Female,sc_transcriptomics,descending colon,sigmoid colon,0.32887851706395157178,20,23
+UBERON:0002108,small intestine,Male,sc_transcriptomics,ileum,Duodenum,0.54699412274494023135,8,3
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Descending part of duodenum,Duodenum,0.32454525295581373396,19,3
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Descending part of duodenum,Duodenum,0.35203561645968381073,19,3
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Horizontal part of duodenum,Duodenum,0.37575177593954768156,18,3
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Horizontal part of duodenum,Duodenum,0.37915519905268619909,18,3
+UBERON:0002108,small intestine,Female,sc_transcriptomics,duodenal ampulla,Duodenum,0.55409299245985280325,2,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical segmental bronchus,Left anterior segmental bronchus,0.21161077536996875875,3,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left anterior segmental bronchus,0.66839889379117619375,11,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left posterior bronchopulmonary segment,Left anterior segmental bronchus,0.4151791598846894748125,2,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Left anterior segmental bronchus,0.045191531180045185078125,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Left anterior segmental bronchus,0.04519153118004518485625,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Left anterior segmental bronchus,0.490604823584401905625,2,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left anterior segmental bronchus,0.552715878959788598125,14,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left anterior segmental bronchus,0.05761815728427636256875,5,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral segmental bronchus,Left anterior segmental bronchus,0.57878015011802153125,3,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left anterior segmental bronchus,0.045191531180045185959375,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left anterior segmental bronchus,0.66519995152225570875,1,3
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal column,kidney pyramid,0.29460641437461273995375,12,81
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal column,kidney pyramid,0.29460641437461273995375,12,81
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.148105271637399200875,1,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Left posterior basal segmental bronchus,0.235490505684050218125,5,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.26315414474960536875,2,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior segmental bronchus,Left posterior basal segmental bronchus,0.384883846191848630625,3,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Superior lingular bronchus,Left posterior basal segmental bronchus,0.340918964577491830625,1,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left posterior basal segmental bronchus,0.364825697157438460375,1,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left posterior basal segmental bronchus,0.3328640556177945195,5,30
+FMA:24978,Left knee,Male,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Articular disk of knee joint,0.49895439805190662075,12,11
+FMA:24978,Left knee,Female,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Articular disk of knee joint,0.8595176366156744,12,11
+FMA:24977,Right knee,Female,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Articular disk of knee joint,0.8595176366156744,12,11
+FMA:24977,Right knee,Male,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Articular disk of knee joint,0.49895439805190662075,12,11
+FMA:24977,Right knee,Male,sc_transcriptomics,Lateral condyle of right femur,Articular disk of knee joint,0.500533947797314697,1,11
+FMA:24977,Right knee,Female,sc_transcriptomics,Medial condyle of right femur,Articular disk of knee joint,0.8355209682167065,2,11
+FMA:24978,Left knee,Male,sc_transcriptomics,Articular cartilage of distal epiphysis of left femur,Articular disk of knee joint,0.5012329920115005695,2,11
+FMA:24977,Right knee,Female,sc_transcriptomics,Right tibia,Articular disk of knee joint,0.9999501894042436,8,11
+FMA:24977,Right knee,Male,sc_transcriptomics,Right tibia,Articular disk of knee joint,0.499635912337761928,8,11
+FMA:24977,Right knee,Male,sc_transcriptomics,Articular cartilage of distal epiphysis of right femur,Articular disk of knee joint,0.493824922636332082,11,11
+FMA:24977,Right knee,Female,sc_transcriptomics,Articular cartilage of distal epiphysis of right femur,Articular disk of knee joint,0.9173240598320325,11,11
+UBERON:0004539,right kidney,Male,sc_transcriptomics,kidney capsule,outer cortex of kidney,0.362805089915221342793575,7,46
+UBERON:0004538,left kidney,Male,sc_transcriptomics,kidney capsule,outer cortex of kidney,0.362805089915221342793575,7,46
+UBERON:0004539,right kidney,Female,sc_transcriptomics,kidney capsule,outer cortex of kidney,0.42669268910355888165,7,46
+UBERON:0004538,left kidney,Female,sc_transcriptomics,kidney capsule,outer cortex of kidney,0.42669268910355888165,7,46
+UBERON:0004538,left kidney,Female,sc_transcriptomics,renal column,outer cortex of kidney,0.4017011053383396316625,12,46
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal column,outer cortex of kidney,0.3433770758907496214,12,46
+UBERON:0004539,right kidney,Female,sc_transcriptomics,renal column,outer cortex of kidney,0.4017011053383396316625,12,46
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal column,outer cortex of kidney,0.3433770758907496214,12,46
+UBERON:0000059,large intestine,Female,sc_transcriptomics,ascending colon,descending colon,0.31282553652299954956,47,20
+UBERON:0000059,large intestine,Female,sc_proteomics,ascending colon,descending colon,0.9400566196706709,47,20
+UBERON:0000059,large intestine,Male,sc_transcriptomics,ascending colon,descending colon,0.332447686026151783,47,20
+UBERON:0000059,large intestine,Male,sc_proteomics,ascending colon,descending colon,0.11703963727687834,47,20
+UBERON:0002108,small intestine,Female,sc_proteomics,Horizontal part of duodenum,Distal part of ileum,0.906944606626076,18,18
+UBERON:0002108,small intestine,Male,sc_proteomics,Horizontal part of duodenum,Distal part of ileum,0.9608500540315326,18,18
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Ascending part of duodenum,Distal part of ileum,0.34693098682410070053,19,18
+UBERON:0002108,small intestine,Male,sc_proteomics,Ascending part of duodenum,Distal part of ileum,0.9608500540315326,19,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Ascending part of duodenum,Distal part of ileum,0.35521212836714400769,19,18
+UBERON:0002108,small intestine,Female,sc_proteomics,Ascending part of duodenum,Distal part of ileum,0.9069446066260759,19,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,duodenal ampulla,Distal part of ileum,0.34042355555153905546,2,18
+UBERON:0002108,small intestine,Female,sc_transcriptomics,jejunum,duodenal ampulla,0.34288021918684983142,20,2
+UBERON:0002108,small intestine,Female,sc_transcriptomics,ileum,duodenal ampulla,0.53223760964276408687,8,2
+UBERON:0000948,heart,Female,sc_transcriptomics,heart right ventricle,interventricular septum,0.65573661444455206333,30,15
+UBERON:0000948,heart,Male,sc_transcriptomics,heart right ventricle,interventricular septum,0.66690012972834488889,30,15
+FMA:24978,Left knee,Male,sc_transcriptomics,Left tibia,Articular disk of knee joint,0.50218301636904069375,2,11
+FMA:24977,Right knee,Female,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Right tibia,0.8546429587430228,12,8
+FMA:24977,Right knee,Male,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Right tibia,0.4697073037851784335,12,8
+FMA:24977,Right knee,Male,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Lateral condyle of right femur,0.499231954210207167,12,1
+FMA:24977,Right knee,Male,sc_transcriptomics,Right tibia,Lateral condyle of right femur,0.9685253420742592,8,1
+FMA:24978,Left knee,Male,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Articular cartilage of distal epiphysis of left femur,0.50691394594594692025,12,2
+FMA:24978,Left knee,Male,sc_transcriptomics,Left tibia,Articular cartilage of distal epiphysis of left femur,0.50803065676963525425,2,2
+FMA:24977,Right knee,Female,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Medial condyle of right femur,0.9989764246830567,12,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral segmental bronchus,Left lateral basal segmental bronchus,0.214004167534322013125,3,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left lateral basal segmental bronchus,0.053253860781668220206875,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left lateral basal segmental bronchus,0.1099392007770681732125,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior segmental bronchus,Left lateral basal segmental bronchus,0.075899596868033481296875,3,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Superior lingular bronchus,Left lateral basal segmental bronchus,0.087823342143533077324,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right superior segmental bronchus,Left posterior basal segmental bronchus,0.30428268906092969625,2,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right apical segmental bronchus,Left posterior basal segmental bronchus,0.26647491783148246,1,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical segmental bronchus,Left posterior basal segmental bronchus,0.250466192219143395875,3,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior segmental bronchus,Left posterior basal segmental bronchus,0.24443646745818150275,1,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Left posterior basal segmental bronchus,0.383299914307079353125,11,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left posterior basal segmental bronchus,0.4311247831752447421875,11,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal segmental bronchus,Left posterior basal segmental bronchus,0.1481052716373991961875,1,30
+FMA:24977,Right knee,Male,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Articular cartilage of distal epiphysis of right femur,0.504743301735579775,12,11
+FMA:24977,Right knee,Female,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Articular cartilage of distal epiphysis of right femur,0.9919482812900973,12,11
+FMA:24977,Right knee,Male,sc_transcriptomics,Lateral condyle of right femur,Articular cartilage of distal epiphysis of right femur,0.9942324085555259,1,11
+FMA:24977,Right knee,Female,sc_transcriptomics,Medial condyle of right femur,Articular cartilage of distal epiphysis of right femur,0.9852050684739818,2,11
+FMA:24977,Right knee,Male,sc_transcriptomics,Right tibia,Articular cartilage of distal epiphysis of right femur,0.9378754178749699,8,11
+FMA:24977,Right knee,Female,sc_transcriptomics,Right tibia,Articular cartilage of distal epiphysis of right femur,0.9135136215914403,8,11
+UBERON:0004538,left kidney,Male,sc_transcriptomics,outer cortex of kidney,hilum of kidney,0.34337707589074967145,46,2
+UBERON:0004539,right kidney,Male,sc_transcriptomics,outer cortex of kidney,hilum of kidney,0.34337707589074967145,46,2
+UBERON:0004538,left kidney,Male,sc_transcriptomics,renal column,hilum of kidney,1.00000000000000005,12,2
+UBERON:0004539,right kidney,Male,sc_transcriptomics,renal column,hilum of kidney,1.00000000000000005,12,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left lateral basal segmental bronchus,0.3684199357359799026875,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right superior segmental bronchus,Left apical segmental bronchus,0.317385196067883386875,2,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left posterior bronchopulmonary segment,Left apical segmental bronchus,0.3555522764971543340625,2,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Left apical segmental bronchus,0.3841766319616769755,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Left apical segmental bronchus,0.3841766319616769485625,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Left apical segmental bronchus,0.208652481310015045625,2,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left apical segmental bronchus,0.207959700866870452625,14,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left apical segmental bronchus,0.3395916436140991065,5,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral segmental bronchus,Left apical segmental bronchus,0.307415689684701303125,3,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left apical segmental bronchus,0.3841766319616769450625,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left apical segmental bronchus,0.1888267941664791203125,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left apical segmental bronchus,0.231554730954267975375,5,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right superior segmental bronchus,Superior lingular bronchus,0.394620004704756069375,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical segmental bronchus,Superior lingular bronchus,0.2127151910673402075625,3,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Superior lingular bronchus,0.509029502265704406875,11,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left posterior bronchopulmonary segment,Superior lingular bronchus,0.3492020036826737225,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Superior lingular bronchus,0.058250729642853903905125,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Superior lingular bronchus,0.0582507296428539021303125,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Lateral bronchopulmonary segment,0.527785384682871603125,1,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.541321112007847335625,2,5
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Right anterior basal bronchopulmonary segment,0.125497055840292801,11,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Right anterior basal bronchopulmonary segment,0.44629931432645350625,11,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Right anterior basal bronchopulmonary segment,0.52159495994108622,1,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior basal bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.360951007664940188125,16,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Lateral segmental bronchus,0.37938382794617557625,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left posterior bronchopulmonary segment,Lateral segmental bronchus,0.3969388935445308640625,2,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior basal bronchopulmonary segment,Lateral segmental bronchus,0.383509275964314611125,16,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right superior bronchopulmonary segment,Lateral segmental bronchus,0.35145963051306362375,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Lateral segmental bronchus,0.219046969773164553875,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Lateral segmental bronchus,0.219046969773164546875,1,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Superior lingular bronchopulmonary segment,Lateral segmental bronchus,0.363290465034282980625,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Lateral segmental bronchus,0.364687565908089612125,2,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Lateral segmental bronchus,0.46596124653554970625,14,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Lateral segmental bronchus,0.64759857710500154125,14,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Lateral segmental bronchus,0.61090739211576503375,5,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Lateral segmental bronchus,0.2110958273538108311875,5,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Superior lingular bronchopulmonary segment,Right anterior segmental bronchus,0.445628733674156829375,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Right anterior segmental bronchus,0.569595259265294650625,14,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Right anterior segmental bronchus,0.57250551113821371375,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Right anterior segmental bronchus,0.5497394140253323984375,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Right anterior segmental bronchus,0.580432473871322849625,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Right anterior segmental bronchus,0.495598764129880385625,2,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right apical segmental bronchus,Lateral segmental bronchus,0.2666184410406525825,1,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior segmental bronchus,Lateral segmental bronchus,0.50357223151649593625,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Lateral segmental bronchus,0.66489978391588473125,11,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Lateral segmental bronchus,0.362324137069600185625,11,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Superior lingular bronchus,0.395738418337416346,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Superior lingular bronchus,0.45226002469135051,14,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Superior lingular bronchus,0.055050132041761581209375,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral segmental bronchus,Superior lingular bronchus,0.431072372511471944375,3,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Superior lingular bronchus,0.058250729642853907505125,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Superior lingular bronchus,0.497440767636598085625,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Superior lingular bronchus,0.45108636553674187625,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior segmental bronchus,Superior lingular bronchus,0.51189515685561812125,3,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right superior segmental bronchus,Left medial basal segmental bronchus,0.2328976806626850671875,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical segmental bronchus,Left medial basal segmental bronchus,0.3841766319616770215375,3,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Left posterior basal segmental bronchus,0.27968369197187591375,1,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left posterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.3111595779550678735625,2,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.3902145702868158766875,16,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right superior bronchopulmonary segment,Left posterior basal segmental bronchus,0.250038508531491415,1,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.14810527163739919846875,1,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.1481052716373991961875,1,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Superior lingular bronchopulmonary segment,Left posterior basal segmental bronchus,0.254110676165436746875,1,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Left posterior basal segmental bronchus,0.3097752037334016824375,2,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.6619183023945902625,14,5
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.0512656450077851379875,14,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.5945650321303403825,5,5
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Right anterior basal bronchopulmonary segment,0.04780497133926091298125,1,5
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.06303619495884882744375,5,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.67520365623299065625,5,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Right anterior basal bronchopulmonary segment,0.529945593453193340625,2,5
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal segmental bronchus,Left posterior basal segmental bronchus,0.167613838961531601775,1,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left posterior basal segmental bronchus,0.3368049708334121621875,14,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.11462678736522896264375,5,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left posterior basal segmental bronchus,0.256964917328654653125,5,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral segmental bronchus,Left posterior basal segmental bronchus,0.278213080205890253125,3,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral segmental bronchus,Left posterior basal segmental bronchus,0.44902491764763009,3,30
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Left posterior basal segmental bronchus,0.297606233589460025,5,30
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Ascending part of duodenum,Duodenum,0.37915519905268617021,19,3
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Ascending part of duodenum,Duodenum,0.48388741792517567174,19,3
+UBERON:0002108,small intestine,Female,sc_transcriptomics,Distal part of ileum,Duodenum,0.34042355555153902254,18,3
+UBERON:0002108,small intestine,Male,sc_transcriptomics,Distal part of ileum,Duodenum,0.27665417716255652344,18,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right superior segmental bronchus,Left anterior segmental bronchus,0.471222114650634070625,2,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left lateral basal segmental bronchus,0.421070517987114204125,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal segmental bronchus,Left lateral basal segmental bronchus,0.4210705179871141969375,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Left posterior basal segmental bronchus,0.237425749658879324375,14,30
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left anterior segmental bronchus,0.53229557032850511375,5,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right superior segmental bronchus,Left lateral basal segmental bronchus,0.2241685501066530646875,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical segmental bronchus,Left lateral basal segmental bronchus,0.388320059520278463625,3,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left lateral basal segmental bronchus,0.135113228804594302125,11,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left posterior bronchopulmonary segment,Left lateral basal segmental bronchus,0.2916945559546508803125,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Left lateral basal segmental bronchus,0.421070517987114200725,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Left lateral basal segmental bronchus,0.4210705179871141969375,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Left lateral basal segmental bronchus,0.09413587240299562021875,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left lateral basal segmental bronchus,0.07762385226880299588125,14,1
+FMA:24978,Left knee,Male,sc_transcriptomics,obsolete distal-most point of medial condyle of femur,Left tibia,0.5065618104356829205,12,2
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Right posterior basal bronchopulmonary segment,0.381263107561347384,11,16
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left medial basal segmental bronchus,0.1178684519933218734375,11,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left posterior bronchopulmonary segment,Left medial basal segmental bronchus,0.2777444131595203981875,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Left medial basal segmental bronchus,0.5248155123996690489,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Left medial basal segmental bronchus,0.5248155123996690279,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Left medial basal segmental bronchus,0.053984954716119627635,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left medial basal segmental bronchus,0.0452045549661746001,14,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left medial basal segmental bronchus,0.45934751885590413365625,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral segmental bronchus,Left medial basal segmental bronchus,0.219046969773164595125,3,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left medial basal segmental bronchus,0.524815512399669053275,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Right posterior bronchopulmonary segment,0.37800617557293045375,11,2
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Right posterior bronchopulmonary segment,0.45249103836549262625,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left medial basal segmental bronchus,0.0647055095305229963625,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior segmental bronchus,Left medial basal segmental bronchus,0.045191531180045182978125,3,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Superior lingular bronchus,Left medial basal segmental bronchus,0.0582507296428539028428125,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right apical segmental bronchus,Right anterior segmental bronchus,0.41384393030763929375,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Right anterior segmental bronchus,0.406091690694134420375,11,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Right anterior segmental bronchus,0.481399802821013414125,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior basal bronchopulmonary segment,Right anterior segmental bronchus,0.3154317850906549863125,16,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right superior bronchopulmonary segment,Right anterior segmental bronchus,0.423918768023929089375,1,1
+FMA:24977,Right knee,Female,sc_transcriptomics,Right tibia,Medial condyle of right femur,0.8302869143885008,8,2
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Right posterior basal bronchopulmonary segment,0.314125445004970148125,1,16
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Right posterior basal bronchopulmonary segment,0.3405490233518394491875,14,16
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Right posterior basal bronchopulmonary segment,0.3663154764038119346875,5,16
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Right posterior basal bronchopulmonary segment,0.340826591974490806625,5,16
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left medial basal segmental bronchus,0.032847917900968839305875,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left apical segmental bronchus,0.2638968011927961153125,11,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Lateral segmental bronchus,0.511348471212297144375,5,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Lateral segmental bronchus,0.21904696977316456325,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Lateral segmental bronchus,0.5810533682177778475,1,3
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.4541528342964378725,5,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Lateral segmental bronchus,0.67611790270056431875,5,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Lateral segmental bronchus,0.48662901289303998875,2,3
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Right apical segmental bronchus,0.434429236869359583125,11,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Right apical segmental bronchus,0.476927244778045976875,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Right superior bronchopulmonary segment,0.4383785722300285825,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Right superior bronchopulmonary segment,0.446081087214711169375,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Right superior bronchopulmonary segment,0.4300776282853852371875,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Right superior bronchopulmonary segment,0.423231049491375252875,2,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Right anterior bronchopulmonary segment,0.457351643239323251875,11,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Right anterior bronchopulmonary segment,0.52831945469871792375,1,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Right anterior bronchopulmonary segment,0.51474033398346742375,2,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior basal bronchopulmonary segment,Right apical segmental bronchus,0.29711677643593368825,16,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right superior bronchopulmonary segment,Right apical segmental bronchus,0.36710088579978659375,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Superior lingular bronchopulmonary segment,Right apical segmental bronchus,0.390421124307109718125,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Right apical segmental bronchus,0.39117976031279723875,14,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Right apical segmental bronchus,0.445783106834785993125,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Right apical segmental bronchus,0.459717837131491544375,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Right apical segmental bronchus,0.382461891450997976875,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Right apical segmental bronchus,0.371503948246773285,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Medial bronchopulmonary segment,0.5485446457377796175,11,14
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Medial bronchopulmonary segment,0.410042766592350291875,11,14
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Medial bronchopulmonary segment,0.487406347344122035,1,14
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Medial bronchopulmonary segment,0.57882680932116006125,5,14
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Medial bronchopulmonary segment,0.55104289127155312875,1,14
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Superior lingular bronchopulmonary segment,0.365174456688886704375,11,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Superior lingular bronchopulmonary segment,0.419547497384900768125,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior basal bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.300559054270517525,16,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right superior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.384045778806606565625,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.427358645894629787875,14,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Right posterior basal bronchopulmonary segment,0.31554527025184999375,2,16
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Lateral bronchopulmonary segment,0.529950113671568483125,11,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Lateral bronchopulmonary segment,0.410221106725762804375,11,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Lateral bronchopulmonary segment,0.4874455948199745575,1,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Lateral bronchopulmonary segment,0.693086484316563121875,14,5
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Lateral bronchopulmonary segment,0.4785001084331426775,14,5
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Lateral bronchopulmonary segment,0.59144073410735934125,5,5
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Right superior segmental bronchus,0.399828005827003172875,5,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left anterior basal bronchopulmonary segment,0.1178684519933218780625,11,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.0452045549661746005125,14,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.459347518855904129925,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.52481551239966904815,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left anterior basal bronchopulmonary segment,0.0328479179009688412805,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left anterior basal bronchopulmonary segment,0.0647055095305230045,5,1
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,seminal vesicle,central zone of prostate,0.380974996722223941,2,6
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,transition zone of prostate,central zone of prostate,0.38097499672222394025,2,6
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,seminal vesicle,transition zone of prostate,0.515352218298571693,2,2
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,apex of prostate,transition zone of prostate,0.5153522182985716945,2,2
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,seminal vesicle,Seminal colliculus,0.515352218298571743,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,tail of pancreas,uncinate process of pancreas,0.3585090729921135375,2,2
+UBERON:0000948,heart,Female,sc_transcriptomics,left cardiac atrium,heart right ventricle,0.29007306920014817889,14,30
+UBERON:0000948,heart,Male,sc_transcriptomics,left cardiac atrium,heart right ventricle,0.58383821862889247778,14,30
+UBERON:0000948,heart,Male,sc_transcriptomics,right cardiac atrium,heart right ventricle,0.58971647129974386,17,30
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,heart right ventricle,0.32122435219927585333,17,30
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,lymph vasculature,efferent lymphatic vessel,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,afferent lymphatic vessel,efferent lymphatic vessel,0.9555525789713266,1,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,medulla of lymph node,lymph node follicle,0.9999958194332716,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,medulla of lymph node,lymph node follicle,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,capsule of lymph node,lymph node follicle,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,capsule of lymph node,lymph node follicle,0.9999626317188399,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,lymph vasculature,lymph node follicle,0.9998349740414113,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,lymph vasculature,lymph node follicle,0.500000193455275,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,lymph node T cell domain,lymph node follicle,0.9997127981217365,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,lymph node T cell domain,lymph node follicle,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,efferent lymphatic vessel,lymph node follicle,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,efferent lymphatic vessel,lymph node follicle,0.9982753791072541,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,afferent lymphatic vessel,lymph node follicle,0.9619394422023421,1,6
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left medial basal bronchopulmonary segment,0.1178684519933218811875,11,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.04520455496617460105,14,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.45934751885590413469375,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left medial basal bronchopulmonary segment,0.032847917900968840993375,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left medial basal bronchopulmonary segment,0.06470550953052300168125,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left lateral basal bronchopulmonary segment,0.1178684519933218734375,11,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Left lateral basal bronchopulmonary segment,0.5248155123996690489,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left lateral basal bronchopulmonary segment,0.0452045549661746001,14,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left lateral basal bronchopulmonary segment,0.45934751885590413365625,5,1
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,medulla of lymph node,lymph node T cell domain,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,capsule of lymph node,lymph node T cell domain,0.9998795896904089,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,capsule of lymph node,lymph node T cell domain,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,lymph vasculature,lymph node T cell domain,0.9999811159002232,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,lymph vasculature,lymph node T cell domain,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,efferent lymphatic vessel,lymph node T cell domain,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,efferent lymphatic vessel,lymph node T cell domain,0.9983017353747876,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,afferent lymphatic vessel,lymph node T cell domain,0.9637951724716927,1,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,medulla of lymph node,efferent lymphatic vessel,0.9982978154128594,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,medulla of lymph node,efferent lymphatic vessel,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,capsule of lymph node,efferent lymphatic vessel,0.5000001934552749,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,capsule of lymph node,efferent lymphatic vessel,0.9984288611432338,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,lymph vasculature,efferent lymphatic vessel,0.9983804423245497,6,6
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Cartilage of segmental bronchus,0.44435588556094031,1,11
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Cartilage of segmental bronchus,0.66455845674969420125,1,11
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left posterior bronchopulmonary segment,0.432253952287773131375,11,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.277744413159520382625,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.2777444131595203931875,1,2
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,medulla of lymph node,afferent lymphatic vessel,0.9622239393452705,6,1
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,capsule of lymph node,afferent lymphatic vessel,0.9625898942429235,6,1
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,lymph vasculature,afferent lymphatic vessel,0.963068714858067,6,1
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,medulla of lymph node,capsule of lymph node,0.9999816120888364,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,medulla of lymph node,capsule of lymph node,0.5000001934552749,6,6
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,seminal vesicle,peripheral zone of prostate,0.2578187315380136835,2,6
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,apex of prostate,peripheral zone of prostate,0.257818731538013701,2,6
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,transition zone of prostate,peripheral zone of prostate,0.2578187315380136565,2,6
+UBERON:0002106,spleen,Male,sc_transcriptomics,hilum of spleen,Diaphragmatic surface of spleen,0.63557594954774459,2,6
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,seminal vesicle,apex of prostate,0.51535221829857167125,2,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,tail of pancreas,Neck of pancreas,0.81593899109252834242,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,tail of pancreas,Neck of pancreas,0.35850907299211353243125,2,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,uncinate process of pancreas,Neck of pancreas,0.815938991092528350725,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,uncinate process of pancreas,Neck of pancreas,0.3585090729921135458375,2,2
+UBERON:0000059,large intestine,Female,sc_transcriptomics,rectum,caecum,0.16511329092166206478,3,31
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Right superior segmental bronchus,0.398668726901143933,2,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Right superior segmental bronchus,0.40372253601368567375,14,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Right superior segmental bronchus,0.262503616010480068125,5,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral segmental bronchus,Right superior segmental bronchus,0.41677208717329698125,3,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Right superior segmental bronchus,0.2328976806626850558125,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Right superior segmental bronchus,0.43992538458870802,1,2
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Medial bronchopulmonary segment,0.541084069223009428125,2,14
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Cartilage of segmental bronchus,Right superior bronchopulmonary segment,0.34856682988384074,11,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,right lung hilus,Right superior bronchopulmonary segment,0.4208522768598201815625,1,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior basal bronchopulmonary segment,Right superior bronchopulmonary segment,0.2707605731645649239375,16,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Medial bronchopulmonary segment,Right superior bronchopulmonary segment,0.430330055464451367125,14,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left lateral basal bronchopulmonary segment,0.524815512399669053275,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left lateral basal bronchopulmonary segment,0.032847917900968839305875,1,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left lateral basal bronchopulmonary segment,0.0647055095305229963625,5,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Right superior segmental bronchus,0.478910597062262373125,11,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left posterior bronchopulmonary segment,Right superior segmental bronchus,0.443143932493346836875,2,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Right superior segmental bronchus,0.2328976806626850611875,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Right superior segmental bronchus,0.2328976806626850615625,1,2
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,medulla of lymph node,lymph node T cell domain,0.9997751908243834,6,6
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.45292671577378142125,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right anterior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.45773710606403756,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Lateral bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.4385976007588256625,5,1
+UBERON:0001004,respiratory system,Female,sc_transcriptomics,Right posterior bronchopulmonary segment,Superior lingular bronchopulmonary segment,0.40263882195494851625,2,1
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Cartilage of segmental bronchus,Left apical bronchopulmonary segment,0.4668891661793059071875,11,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left anterior basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.05398495471611962226,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left lateral basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.053984954716119628325,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left apical bronchopulmonary segment,0.429006352691845727875,14,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.054391673116192142975,5,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left apical bronchopulmonary segment,0.05398495471611962595,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left apical bronchopulmonary segment,0.4767768017826754554375,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left apical bronchopulmonary segment,Left posterior bronchopulmonary segment,0.414242281885760956,2,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Medial bronchopulmonary segment,Left posterior bronchopulmonary segment,0.3705910416942895893125,14,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Right anterior basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.2822747553755984279375,5,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Left medial basal bronchopulmonary segment,Left posterior bronchopulmonary segment,0.277744413159520369875,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,left lung hilus,Left posterior bronchopulmonary segment,0.3948527298854998259375,1,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left posterior bronchopulmonary segment,0.380294634536387530125,5,2
+UBERON:0000948,heart,Male,sc_transcriptomics,right cardiac atrium,left cardiac atrium,0.78431298351588875556,17,14
+UBERON:0000948,heart,Female,sc_transcriptomics,right cardiac atrium,left cardiac atrium,0.82856231737085523333,17,14
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,medulla of lymph node,lymph vasculature,0.9998817859485464,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,medulla of lymph node,lymph vasculature,0.500000193455275,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_transcriptomics,capsule of lymph node,lymph vasculature,0.500000193455275,6,6
+UBERON:0002509,mesenteric lymph node,Male,sc_proteomics,capsule of lymph node,lymph vasculature,0.9999516351728504,6,6
+UBERON:0002107,liver,Male,sc_transcriptomics,Gastric impression of liver,Diaphragmatic surface of liver,0.48082233995799159667,2,2
+UBERON:0001255,urinary bladder,Male,sc_transcriptomics,trigone of urinary bladder,fundus of urinary bladder,0.506085898986504982,4,9
+UBERON:0001264,pancreas,Female,sc_transcriptomics,body of pancreas,tail of pancreas,0.81593899109252826741,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,body of pancreas,tail of pancreas,0.35850907299211357125,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,head of pancreas,uncinate process of pancreas,0.3585090729921135707875,2,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,head of pancreas,uncinate process of pancreas,0.81593899109252835074,2,2
+UBERON:0001004,respiratory system,Male,sc_transcriptomics,Lateral bronchopulmonary segment,Left apical bronchopulmonary segment,0.424470967353427961875,5,2
+UBERON:0000059,large intestine,Male,sc_proteomics,caecum,ascending colon,0.9998265983931054,31,47
+UBERON:0000059,large intestine,Female,sc_proteomics,caecum,ascending colon,1,31,47
+UBERON:0000059,large intestine,Male,sc_transcriptomics,caecum,ascending colon,0.20852589130941923527,31,47
+UBERON:0000059,large intestine,Female,sc_transcriptomics,caecum,ascending colon,0.35478920253841460322,31,47
+UBERON:0000059,large intestine,Female,sc_transcriptomics,rectum,ascending colon,0.22797619618752611889,3,47
+UBERON:0002107,liver,Male,sc_transcriptomics,capsule of liver,Gastric impression of liver,0.48082233995799155667,2,2
+UBERON:0002107,liver,Male,sc_transcriptomics,capsule of liver,Diaphragmatic surface of liver,0.48082233995799159778,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,body of pancreas,Neck of pancreas,0.3585090729921135729625,2,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,body of pancreas,Neck of pancreas,0.8159389910925283174,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,head of pancreas,Neck of pancreas,0.358509072992113545875,2,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,head of pancreas,Neck of pancreas,0.81593899109252837573,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,head of pancreas,tail of pancreas,0.35850907299211355565,2,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,head of pancreas,tail of pancreas,0.81593899109252832575,2,2
+FMA:57991,Set of lactiferous glands in left breast,Female,sc_transcriptomics,main lactiferous duct,mammary lobe,0.451556825408602389,5,2
+FMA:57987,Set of lactiferous glands in right breast,Female,sc_transcriptomics,main lactiferous duct,mammary lobe,0.451556825408602389,5,2
+FMA:57991,Set of lactiferous glands in left breast,Female,sc_transcriptomics,main lactiferous duct,Interlobar adipose tissue of left mammary gland,0.451556825408602339,5,2
+FMA:57991,Set of lactiferous glands in left breast,Female,sc_transcriptomics,mammary lobe,Interlobar adipose tissue of left mammary gland,0.502835790578288994375,2,2
+FMA:57987,Set of lactiferous glands in right breast,Female,sc_transcriptomics,main lactiferous duct,Interlobar adipose tissue of right mammary gland,0.531964144217552835,5,3
+FMA:57987,Set of lactiferous glands in right breast,Female,sc_transcriptomics,mammary lobe,Interlobar adipose tissue of right mammary gland,0.444731669165600870375,2,3
+UBERON:0001264,pancreas,Male,sc_transcriptomics,head of pancreas,body of pancreas,0.3585090729921135604125,2,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,head of pancreas,body of pancreas,0.815938991092528317425,2,2
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,peripheral zone of prostate,central zone of prostate,0.485203970613481955,6,6
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,apex of prostate,central zone of prostate,0.380974996722223991,2,6
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,peripheral zone of prostate,Seminal colliculus,0.25781873153801369875,6,2
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,apex of prostate,Seminal colliculus,0.51535221829857172075,2,2
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,transition zone of prostate,Seminal colliculus,0.51535221829857166525,2,2
+UBERON:0000079,male reproductive system,Male,sc_transcriptomics,central zone of prostate,Seminal colliculus,0.380974996722224016,6,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,tail of pancreas,uncinate process of pancreas,0.81593899109252831742,2,2
+UBERON:0001264,pancreas,Female,sc_transcriptomics,body of pancreas,uncinate process of pancreas,0.81593899109252826741,2,2
+UBERON:0001264,pancreas,Male,sc_transcriptomics,body of pancreas,uncinate process of pancreas,0.358509072992113563575,2,2
