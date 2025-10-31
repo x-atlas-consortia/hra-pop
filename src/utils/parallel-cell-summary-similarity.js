@@ -4,14 +4,14 @@ import { Worker } from 'worker_threads';
 const NUM_CORES = cpus().length;
 const WORKER_FILE = new URL('./parallel-cell-summary-similarity.worker.js', import.meta.url);
 
-export async function* getAllCellSummarySimilarities(summaries, minSimilarity = 0, numWorkers = NUM_CORES) {
+export async function* getAllCellSummarySimilarities(summaries, minSimilarity = 0, topEdges = 0, numWorkers = NUM_CORES) {
   let workersDone = 0;
   const step = Math.floor(summaries.length / numWorkers);
   const results = [];
   for (let i = 0; i < numWorkers; i++) {
     const startIndex = i * step;
     const endIndex = i === numWorkers - 1 ? summaries.length - 1 : startIndex + step - 1;
-    const worker = new Worker(WORKER_FILE, { workerData: { summaries, minSimilarity, startIndex, endIndex } });
+    const worker = new Worker(WORKER_FILE, { workerData: { summaries, minSimilarity, topEdges, startIndex, endIndex } });
 
     worker.on('message', function (result) {
       results.push(result);

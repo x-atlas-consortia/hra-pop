@@ -5,8 +5,10 @@ import { readJsonLd } from './utils/json.js';
 const CELL_SUMMARIES = process.argv.slice(2, -1);
 const OUTPUT = process.argv.slice(-1)[0];
 const MIN_SIMILARITY = process.env.hasOwnProperty('MIN_SIMILARITY') ? parseFloat(process.env['MIN_SIMILARITY']) : 0.1;
+const TOP_N_EDGES = process.env.hasOwnProperty('TOP_N_EDGES') ? parseFloat(process.env['TOP_N_EDGES']) : 100;
 
-console.log('minimum similarity', MIN_SIMILARITY);
+console.log('minimum similarity:', MIN_SIMILARITY);
+console.log('top-n edges:', TOP_N_EDGES);
 
 const summaryLookup = {};
 for (const path of CELL_SUMMARIES) {
@@ -52,7 +54,7 @@ for (const modality of Object.keys(summaryLookup)) {
 
   console.log(modality, allSummaries.length);
 
-  for await (const result of getAllCellSummarySimilarities(allSummaries, MIN_SIMILARITY)) {
+  for await (const result of getAllCellSummarySimilarities(allSummaries, MIN_SIMILARITY, TOP_N_EDGES, 5)) {
     const [a, toolA, sexA] = result.cell_source_a.split('||||');
     const [b, toolB, sexB] = result.cell_source_b.split('||||');
     const sim = result.similarity;

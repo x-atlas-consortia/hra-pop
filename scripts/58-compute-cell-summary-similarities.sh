@@ -5,11 +5,11 @@ set -ev
 
 DIR=$RAW_DIR/$VERSION
 
-node ./src/compute-cell-summary-similarities.js $DIR/atlas-as-cell-summaries.jsonl \
+TOP_N_EDGES=500 MIN_SIMILARITY=0.2 node ./src/compute-cell-summary-similarities.js $DIR/atlas-as-cell-summaries.jsonl \
   $DIR/cell-summaries.jsonl $DIR/atlas-extraction-site-as-cell-summaries.jsonl \
   $DIR/atlas-cell-summary-similarities.ttl
 
-MIN_SIMILARITY=0 node ./src/compute-cell-summary-similarities.js $DIR/atlas-as-cell-summaries.jsonl \
+TOP_N_EDGES=0 MIN_SIMILARITY=0 node ./src/compute-cell-summary-similarities.js $DIR/atlas-as-cell-summaries.jsonl \
   $DIR/atlas-as-as-cell-summary-similarities.ttl
 
 if [ "$COMPUTE_LQ" == "true" ]; then
