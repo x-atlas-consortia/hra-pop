@@ -1,4 +1,5 @@
 Organ,H5AD,AS3D,AS,CT,Azimuth,CellTypist,popV,hasReferenceOrgan
+Bone marrow,236,0,1,47,171,168,151,
 Islet of Langerhans,85,0,1,12,147,147,147,
 Pancreas,21,12,29,34,12,9,14,x
 Primary motor cortex,165,0,1,139,147,147,147,
@@ -8,7 +9,6 @@ adipose tissue,36,0,1,1,147,147,147,
 blood,2861,0,1,29,171,159,155,
 blood vasculature,47,248,1089,71,0,0,14,x
 body proper,0,1014,4716,1301,0,0,0,x
-bone marrow,236,0,1,47,171,168,151,
 eye,575,96,43,37,147,147,164,x
 heart,600,34,1093,74,25,50,5,x
 hippocampal gyrus (formation),18,216,4,45,0,20,0,x
