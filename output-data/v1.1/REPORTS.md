@@ -35,6 +35,7 @@
 * atlas
   * [Application A1 (application-a1)](#application-a1)
   * [Application A2P1 (application-a2p1)](#application-a2p1)
+  * [Application A2P2 (application-a2p2)](#application-a2p2)
   * [Application A2P3 (application-a2p3)](#application-a2p3)
   * [Application A2P4 (application-a2p4)](#application-a2p4)
   * [Count of Cells and unique Cell Types by Modality (cell-and-cell-type-count-by-modality)](#cell-and-cell-type-count-by-modality)
@@ -2630,6 +2631,124 @@ WHERE {
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
+### <a id="application-a2p2"></a>Application A2P2 (application-a2p2)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Application A2P2
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+
+SELECT DISTINCT ?dataset ?reported_organ ?tool ?modality ?as (?shared_ds_cell_types / ?total_ds_cell_types as ?pct_hra_ct_overlap)
+WHERE {
+  GRAPH HRApop: {
+    ?dataset ccf:has_cell_summary [
+      ccf:sex ?sex ;
+      ccf:cell_annotation_method ?tool ;
+      ccf:modality ?modality ;
+    ] .
+
+    OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
+    hint:SubQuery hint:runOnce true .
+  }
+
+  {
+    SELECT ?dataset ?sex ?tool ?modality (COUNT(DISTINCT(?dataset_cell_label)) as ?total_ds_cell_types)
+    WHERE {
+      GRAPH HRApop: {
+        ?dataset ccf:has_cell_summary [
+          ccf:sex ?sex ;
+          ccf:cell_annotation_method ?tool ;
+          ccf:modality ?modality ;
+          ccf:has_cell_summary_row [
+              ccf:cell_label ?dataset_cell_label ;
+          ]
+        ] .
+      }
+    }
+    GROUP BY ?dataset ?sex ?tool ?modality
+  }
+
+  {
+    SELECT ?dataset ?as ?sex ?tool ?modality (COUNT(DISTINCT(?cell_id)) as ?shared_ds_cell_types)
+    WHERE {
+      {
+        SELECT DISTINCT ?dataset ?sex ?modality ?cell_id
+        WHERE {
+          GRAPH HRApop: {
+            ?dataset ccf:has_cell_summary [
+              ccf:sex ?sex ;
+              ccf:cell_annotation_method ?tool ;
+              ccf:modality ?modality ;
+              ccf:has_cell_summary_row [
+                  ccf:cell_id ?cell_id ;
+              ]
+            ] .
+          }
+
+          FILTER(EXISTS {
+            GRAPH HRA: {
+              ?cell_id ccf:ccf_asctb_type [] .
+            }
+          })
+        }
+      }
+
+      { 
+        SELECT DISTINCT ?as ?sex ?tool ?modality
+        WHERE {
+          GRAPH HRA: {
+            ?as ccf:ccf_asctb_type [] .
+          }
+          GRAPH HRApop: {
+            ?as ccf:has_cell_summary [
+              ccf:sex ?sex ;
+              ccf:cell_annotation_method ?tool ;
+              ccf:modality ?modality ;
+            ] .
+          }
+          hint:SubQuery hint:runOnce true .
+        }
+      }
+    }
+    GROUP BY ?dataset ?as ?sex ?tool ?modality
+  }
+}
+# ORDER BY ?sex ?dataset DESC(?pct_hra_ct_overlap)
+
+```
+
+([View Source](../../queries/atlas/application-a2p2.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas/application-a2p2.csv))
+
+| dataset | reported_organ | tool | modality | as | pct_hra_ct_overlap |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0001158 | 1.33333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.org/sig/ont/fma/fma14929 | 1.33333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.org/sig/ont/fma/fma14930 | 1.33333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.org/sig/ont/fma/fma14928 | 1.33333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0002080 | 1.33333333333333333333 |
+| ... | ... | ... | ... | ... | ... |
+
+
 ### <a id="application-a2p3"></a>Application A2P3 (application-a2p3)
 
 
@@ -2639,7 +2758,6 @@ WHERE {
 
 ```sparql
 #+ summary: Application A2P3
-#+ description:
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -2667,6 +2785,7 @@ WHERE {
          ccf:cell_source_a ?dataset ;
          ccf:cell_source_b ?corridor ;
          ccf:similarity ?similarity .
+      FILTER(STRSTARTS(STR(?corridor), 'http://purl.org/ccf/1.5/'))
     } UNION {
       [] ccf:modality ?modality ;
          ccf:cell_source_a_sex ?sex ;
@@ -2676,9 +2795,8 @@ WHERE {
          ccf:cell_source_a ?corridor ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .
+      FILTER(STRSTARTS(STR(?corridor), 'http://purl.org/ccf/1.5/'))
     }
-
-    FILTER (STRSTARTS(STR(?corridor), 'http://purl.org/ccf/1.5/'))
 
     FILTER EXISTS  {
       GRAPH hra-pop:test-data {
@@ -2692,19 +2810,27 @@ WHERE {
     GRAPH hra-pop:test-data {
       ?dataset ccf:organ_id ?reported_organ .
     }
+    hint:SubQuery hint:runOnce true .
   }
 }
-ORDER BY ?dataset DESC(?similarity)
+# ORDER BY ?dataset DESC(?similarity)
 
 ```
 
 ([View Source](../../queries/atlas/application-a2p3.rq))
 </details>
 
-#### Columns
+#### Results ([View CSV File](reports/atlas/application-a2p3.csv))
+
 | dataset | reported_organ | sex | tool | modality | corridor | corridor_tool | similarity |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | celltypist | sc_transcriptomics | http://purl.org/ccf/1.5/09681d25-f08d-40ff-81cb-a731610aa84d | celltypist | 0.7307449994911176 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | popv | sc_transcriptomics | http://purl.org/ccf/1.5/09681d25-f08d-40ff-81cb-a731610aa84d | popv | 0.9780455043393472 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | celltypist | sc_transcriptomics | http://purl.org/ccf/1.5/2ae3cef9-6621-46da-b056-da7bfbadc13b | celltypist | 0.463039762789449 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | popv | sc_transcriptomics | http://purl.org/ccf/1.5/2ae3cef9-6621-46da-b056-da7bfbadc13b | popv | 0.8889645564560061 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | pan-human-azimuth | sc_transcriptomics | http://purl.org/ccf/1.5/27c90961-5430-4217-ad97-4feaa91cede7 | celltypist | 0.52069781598775 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
+
 
 ### <a id="application-a2p4"></a>Application A2P4 (application-a2p4)
 
