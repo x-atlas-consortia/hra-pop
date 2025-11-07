@@ -15,7 +15,8 @@ CTANN_CROSSWALKS=https://purl.humanatlas.io/graph/ctann-crosswalks
 
 run_jsonld() {
   QUADS=${1%.jsonl}.nq
-  ./src/jsonld-to-nq.js ccf-context.jsonld $1 $QUADS
+  rm -f $QUADS
+  ./src/ndjsonld-to-nq.js ccf-context.jsonld $1 - > $QUADS
   blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
 }
 

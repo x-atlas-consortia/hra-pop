@@ -54,7 +54,7 @@ for (const modality of Object.keys(summaryLookup)) {
 
   console.log(modality, allSummaries.length);
 
-  for await (const result of getAllCellSummarySimilarities(allSummaries, MIN_SIMILARITY, TOP_N_EDGES, 5)) {
+  for await (const result of getAllCellSummarySimilarities(allSummaries, MIN_SIMILARITY, TOP_N_EDGES, 2)) {
     const [a, toolA, sexA] = result.cell_source_a.split('||||');
     const [b, toolB, sexB] = result.cell_source_b.split('||||');
     const sim = result.similarity;
