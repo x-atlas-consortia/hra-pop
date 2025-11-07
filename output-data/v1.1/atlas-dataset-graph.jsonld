@@ -887,6 +887,181 @@
    "description": "Entered 5/8/2025, Amanda Knoten, TMC-UCSD"
   },
   {
+   "@id": "https://entity.api.hubmapconsortium.org/entities/d386672d8d067ee117a086710cfbde5a",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/2283c507fdbb47ae8981f9e5d3fc7364",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.hubmapconsortium.org/entities/5f043da4d6347e2b6f93509c000804d1",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.hubmapconsortium.org/entities/654418415bed5ecb9596b17a0320a2c6",
+         "@type": "Dataset",
+         "link": "https://portal.hubmapconsortium.org/browse/dataset/654418415bed5ecb9596b17a0320a2c6",
+         "technology": "CODEX",
+         "publication": "https://doi.org/10.1101/2023.10.05.560733",
+         "label": "Registered 5/11/2022, Hunter Hakimian, TMC-Florida",
+         "description": "Dataset Type: CODEX",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-spatial-codex.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://portal.hubmapconsortium.org/browse/sample/5f043da4d6347e2b6f93509c000804d1",
+       "label": "Registered 3/2/2021, Marda Jorgensen, TMC-Florida",
+       "description": "10 x 10 x 10 millimeter, 10 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/sample/2283c507fdbb47ae8981f9e5d3fc7364",
+     "label": "Registered 12/13/2022, Marda Jorgensen, TMC-Florida",
+     "description": "10 x 10 x 10 millimeter, 10 millimeter, 1 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/6febbcea-502d-466e-bb26-6e3eb8240902",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0010396",
+       "http://purl.obolibrary.org/obo/UBERON_0002194",
+       "http://purl.obolibrary.org/obo/UBERON_0010748",
+       "http://purl.obolibrary.org/obo/UBERON_0010397",
+       "http://purl.obolibrary.org/obo/UBERON_0002007",
+       "http://purl.obolibrary.org/obo/UBERON_0010417",
+       "http://purl.obolibrary.org/obo/UBERON_0004536",
+       "http://purl.org/sig/ont/fma/fma15828",
+       "http://purl.org/sig/ont/fma/fma15837",
+       "http://purl.obolibrary.org/obo/UBERON_0001248",
+       "http://purl.org/sig/ont/fma/fma15839",
+       "http://purl.org/sig/ont/fma/fma15838",
+       "http://purl.obolibrary.org/obo/UBERON_0005457",
+       "http://purl.obolibrary.org/obo/UBERON_0005469"
+      ],
+      "creation_date": "2022-06-06",
+      "creator": "Hunter Hakimian",
+      "creator_first_name": "Hunter",
+      "creator_last_name": "Hakimian",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/6febbcea-502d-466e-bb26-6e3eb8240902_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2022-06-06",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHFSpleenV1.1",
+       "translation_units": "millimeter",
+       "x_rotation": -91,
+       "x_scaling": 1,
+       "x_translation": 37.116,
+       "y_rotation": -46,
+       "y_scaling": 1,
+       "y_translation": 43.624,
+       "z_rotation": -53,
+       "z_scaling": 1,
+       "z_translation": 29.761
+      },
+      "x_dimension": 10,
+      "y_dimension": 10,
+      "z_dimension": 10
+     }
+    },
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/64e13907edf7eba3099d130c27278fa2",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.hubmapconsortium.org/entities/d093d6563dad2457356074c3781d9bea",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.hubmapconsortium.org/entities/00d1a3623dac388773bc7780fcb42797",
+         "@type": "Dataset",
+         "link": "https://portal.hubmapconsortium.org/browse/dataset/00d1a3623dac388773bc7780fcb42797",
+         "technology": "CODEX",
+         "publication": "https://doi.org/10.1101/2023.10.05.560733",
+         "label": "Registered 5/11/2022, Hunter Hakimian, TMC-Florida",
+         "description": "Dataset Type: CODEX",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-spatial-codex.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://portal.hubmapconsortium.org/browse/sample/d093d6563dad2457356074c3781d9bea",
+       "label": "Registered 2/11/2021, Marda Jorgensen, TMC-Florida",
+       "description": "10 x 10 x 12 millimeter, 12 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/sample/64e13907edf7eba3099d130c27278fa2",
+     "label": "Registered 12/13/2022, Marda Jorgensen, TMC-Florida",
+     "description": "10 x 10 x 12 millimeter, 12 millimeter, 1 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/8959318d-4815-4b51-96f2-5a1096de49f3",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0010396",
+       "http://purl.obolibrary.org/obo/UBERON_0002194",
+       "http://purl.obolibrary.org/obo/UBERON_0010748",
+       "http://purl.obolibrary.org/obo/UBERON_0010397",
+       "http://purl.obolibrary.org/obo/UBERON_0002007",
+       "http://purl.obolibrary.org/obo/UBERON_0010417",
+       "http://purl.obolibrary.org/obo/UBERON_0002049",
+       "http://purl.obolibrary.org/obo/UBERON_0005457",
+       "http://purl.obolibrary.org/obo/UBERON_0005469",
+       "http://purl.org/sig/ont/fma/fma15828",
+       "http://purl.org/sig/ont/fma/fma15838",
+       "http://purl.org/sig/ont/fma/fma15837",
+       "http://purl.obolibrary.org/obo/UBERON_0001248",
+       "http://purl.org/sig/ont/fma/fma15839"
+      ],
+      "creation_date": "2021-10-02",
+      "creator": "Hunter Hakimian",
+      "creator_first_name": "Hunter",
+      "creator_last_name": "Hakimian",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/8959318d-4815-4b51-96f2-5a1096de49f3_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2021-10-02",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHFSpleen",
+       "translation_units": "millimeter",
+       "x_rotation": -91,
+       "x_scaling": 1,
+       "x_translation": 42.081,
+       "y_rotation": -46,
+       "y_scaling": 1,
+       "y_translation": 36.988,
+       "z_rotation": -53,
+       "z_scaling": 1,
+       "z_translation": 22.661
+      },
+      "x_dimension": 10,
+      "y_dimension": 10,
+      "z_dimension": 12
+     }
+    }
+   ],
+   "consortium_name": "HuBMAP",
+   "provider_name": "TMC-Florida",
+   "provider_uuid": "07a29e4c-ed43-11e8-b56a-0e8017bdda58",
+   "age": "21",
+   "sex": "Female",
+   "race": "Black or African American",
+   "link": "https://portal.hubmapconsortium.org/browse/donor/d386672d8d067ee117a086710cfbde5a",
+   "label": "Female, Age 21",
+   "description": "Entered 5/8/2025, Marda Jorgensen, TMC-Florida"
+  },
+  {
    "@id": "https://entity.api.hubmapconsortium.org/entities/4b257b9c1758a98af262c57bc0caa726",
    "@type": "Donor",
    "samples": [
@@ -4073,6 +4248,162 @@
    "link": "https://portal.hubmapconsortium.org/browse/donor/f84ff583687f3407636d8ce843b48ff0",
    "label": "Male, Age 37",
    "description": "Entered 5/8/2025, Yiing Lin, TMC-Stanford"
+  },
+  {
+   "@id": "https://entity.api.hubmapconsortium.org/entities/1785aae4f0fb8f13a56d79957d1cbedf",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/074c96e0c614d3f8132a60afdd536db4",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://entity.api.hubmapconsortium.org/entities/d73a864f5ad6bdffdf148f43423e2a01",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/dataset/d73a864f5ad6bdffdf148f43423e2a01",
+       "technology": "CODEX",
+       "publication": "https://doi.org/10.1101/2023.10.05.560733",
+       "label": "Registered 5/11/2022, Hunter Hakimian, TMC-Florida",
+       "description": "Dataset Type: CODEX",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-spatial-codex.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/sample/074c96e0c614d3f8132a60afdd536db4",
+     "label": "Registered 2/10/2021, Marda Jorgensen, TMC-Florida",
+     "description": "10 x 10 x 10 millimeter, 10 millimeter, 0 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/cd2f7613-97dc-4fd1-a10e-2343295d76a7",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.org/sig/ont/fma/fma15838",
+       "http://purl.org/sig/ont/fma/fma15828",
+       "http://purl.org/sig/ont/fma/fma15837",
+       "http://purl.obolibrary.org/obo/UBERON_0001248",
+       "http://purl.org/sig/ont/fma/fma15839"
+      ],
+      "creation_date": "2021-02-10",
+      "creator": "Marda Jorgensen",
+      "creator_first_name": "Marda",
+      "creator_last_name": "Jorgensen",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/cd2f7613-97dc-4fd1-a10e-2343295d76a7_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2021-02-10",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHMSpleen",
+       "translation_units": "millimeter",
+       "x_rotation": -45,
+       "x_scaling": 1,
+       "x_translation": 68.70491910448403,
+       "y_rotation": 31,
+       "y_scaling": 1,
+       "y_translation": 35.17290943830256,
+       "z_rotation": 57,
+       "z_scaling": 1,
+       "z_translation": 41.16749993400407
+      },
+      "x_dimension": 10,
+      "y_dimension": 10,
+      "z_dimension": 10
+     }
+    },
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/5e84677c3dc53f5fd10dbd4c0c707121",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.hubmapconsortium.org/entities/988d21f5795b193ba51a7e00b1574ddf",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.hubmapconsortium.org/entities/1393ff7729eff13cd2f4d5d58af96fdb",
+         "@type": "Dataset",
+         "link": "https://portal.hubmapconsortium.org/browse/dataset/1393ff7729eff13cd2f4d5d58af96fdb",
+         "technology": "CODEX",
+         "publication": "https://doi.org/10.1101/2023.10.05.560733",
+         "label": "Registered 5/11/2022, Hunter Hakimian, TMC-Florida",
+         "description": "Dataset Type: CODEX",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-spatial-codex.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://portal.hubmapconsortium.org/browse/sample/988d21f5795b193ba51a7e00b1574ddf",
+       "label": "Registered 2/10/2021, Marda Jorgensen, TMC-Florida",
+       "description": "10 x 10 x 12 millimeter, 12 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/sample/5e84677c3dc53f5fd10dbd4c0c707121",
+     "label": "Registered 12/13/2022, Marda Jorgensen, TMC-Florida",
+     "description": "10 x 10 x 12 millimeter, 12 millimeter, 1 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/b5efb4f3-6dee-4a3c-b55f-91e6c40c6003",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0010396",
+       "http://purl.obolibrary.org/obo/UBERON_0002194",
+       "http://purl.obolibrary.org/obo/UBERON_0010748",
+       "http://purl.obolibrary.org/obo/UBERON_0010397",
+       "http://purl.obolibrary.org/obo/UBERON_0002007",
+       "http://purl.obolibrary.org/obo/UBERON_0010417",
+       "http://purl.obolibrary.org/obo/UBERON_0002049",
+       "http://purl.obolibrary.org/obo/UBERON_0005457",
+       "http://purl.obolibrary.org/obo/UBERON_0005469",
+       "http://purl.org/sig/ont/fma/fma15828",
+       "http://purl.org/sig/ont/fma/fma15838",
+       "http://purl.org/sig/ont/fma/fma15837",
+       "http://purl.obolibrary.org/obo/UBERON_0001248",
+       "http://purl.org/sig/ont/fma/fma15839"
+      ],
+      "creation_date": "2021-10-02",
+      "creator": "Hunter Hakimian",
+      "creator_first_name": "Hunter",
+      "creator_last_name": "Hakimian",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/hubmap-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/b5efb4f3-6dee-4a3c-b55f-91e6c40c6003_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2021-10-02",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHMSpleen",
+       "translation_units": "millimeter",
+       "x_rotation": -91,
+       "x_scaling": 1,
+       "x_translation": 68.877,
+       "y_rotation": -46,
+       "y_scaling": 1,
+       "y_translation": 65.353,
+       "z_rotation": -53,
+       "z_scaling": 1,
+       "z_translation": 31.63
+      },
+      "x_dimension": 10,
+      "y_dimension": 10,
+      "z_dimension": 12
+     }
+    }
+   ],
+   "consortium_name": "HuBMAP",
+   "provider_name": "TMC-Florida",
+   "provider_uuid": "07a29e4c-ed43-11e8-b56a-0e8017bdda58",
+   "age": "20",
+   "sex": "Male",
+   "race": "White",
+   "link": "https://portal.hubmapconsortium.org/browse/donor/1785aae4f0fb8f13a56d79957d1cbedf",
+   "label": "Male, Age 20",
+   "description": "Entered 5/8/2025, Marda Jorgensen, TMC-Florida"
   },
   {
    "@id": "https://entity.api.hubmapconsortium.org/entities/4086dd53a9e443f4ab57207ce77402d2",
@@ -29363,72 +29694,6 @@
      }
     },
     {
-     "@id": "https://doi.org/10.1126/science.abl4896#TSP2_Kidney",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP2$kidney",
-       "@type": "Dataset",
-       "link": "https://cellxgene.cziscience.com/e/2423ce2c-3149-4cca-a2ff-cf682ea29b5f.cxg/",
-       "technology": "smartseq",
-       "publication": "https://doi.org/10.1126/science.abl4896",
-       "publication_title": "Tabula Sapiens",
-       "publication_lead_author": "undefined undefined",
-       "cell_count": "11224",
-       "gene_count": "61759",
-       "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002113",
-       "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: smartseq, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://doi.org/10.1126/science.abl4896",
-     "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-     "description": "10 x 10 x 2 millimeter, 2 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/2ba5b803-1162-4a7e-9371-e1c445deb97f",
-      "@type": "SpatialEntity",
-      "creator": "Heidi Schlehlein",
-      "creator_first_name": "Heidi",
-      "creator_last_name": "Schlehlein",
-      "creator_orcid": "",
-      "creation_date": "2025-02-26",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0002015",
-       "http://purl.obolibrary.org/obo/UBERON_0004200",
-       "http://purl.obolibrary.org/obo/UBERON_0001284",
-       "http://purl.obolibrary.org/obo/UBERON_0002189"
-      ],
-      "x_dimension": 10,
-      "y_dimension": 10,
-      "z_dimension": 2,
-      "dimension_units": "millimeter",
-      "placement": {
-       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-       "@id": "http://purl.org/ccf/1.5/2ba5b803-1162-4a7e-9371-e1c445deb97f_placement",
-       "@type": "SpatialPlacement",
-       "placement_date": "2025-02-26",
-       "x_scaling": 1,
-       "y_scaling": 1,
-       "z_scaling": 1,
-       "scaling_units": "ratio",
-       "x_rotation": 0,
-       "y_rotation": 0,
-       "z_rotation": 0,
-       "rotation_order": "XYZ",
-       "rotation_units": "degree",
-       "x_translation": 63.854,
-       "y_translation": 72.011,
-       "z_translation": 38.79,
-       "translation_units": "millimeter",
-       "target": "https://purl.humanatlas.io/ref-organ/kidney-female-left/v1.3#primary"
-      }
-     }
-    },
-    {
      "@id": "https://doi.org/10.1126/science.abl4896#TSP2_Small_Intestine%2FDuodenum",
      "@type": "Sample",
      "datasets": [
@@ -32390,6 +32655,498 @@
    "description": "23.8 year old, White, Male, Brain Injury"
   },
   {
+   "@id": "https://portal.hubmapconsortium.org/browse/donor/0ff5f50f37df84538fce22af13120fb1",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/4aef7a78f4290e812eae82a58b141edc",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://doi.org/10.6084/m9.figshare.29669726.v1#P3-13A",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/HBM525.RMVV.426",
+       "technology": "GeoMx",
+       "label": "Registered 9/19/2025, Antara Bhavsar, University of Pennsylvania",
+       "description": "Data/Assay Types: GeoMx, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/HBM525.RMVV.426",
+     "label": "P3-13A",
+     "description": "3.37118931152619 x 11.69205486711824 x 21.01967865850429 millimeter, 21.01967865850429 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/a888a2fe-a59e-4150-9553-c74e2c224c8f",
+      "placement": {
+       "@id": "http://purl.org/ccf/1.5/a888a2fe-a59e-4150-9553-c74e2c224c8f_placement",
+       "@type": "SpatialPlacement",
+       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A",
+       "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "translation_units": "millimeter",
+       "x_rotation": 60.70162689324492,
+       "x_scaling": 0.9999999999999999,
+       "x_translation": 67.38478238297775,
+       "y_rotation": 0.5143407164870054,
+       "y_scaling": 1,
+       "y_translation": 40.29450823376391,
+       "z_rotation": -99.33692775640156,
+       "z_scaling": 1,
+       "z_translation": 79.0747875286709,
+       "placement_date": "2025-10-20"
+      },
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001150"
+      ],
+      "creator_first_name": "Antara",
+      "creator_last_name": "Bhavsar",
+      "dimension_units": "millimeter",
+      "x_dimension": 3.37118931152619,
+      "y_dimension": 11.69205486711824,
+      "z_dimension": 21.01967865850429,
+      "creation_date": "2025-10-20",
+      "creator": "Antara Bhavsar",
+      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A"
+     }
+    },
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/8bc9ab0285419fe165605349602710ec",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://doi.org/10.6084/m9.figshare.29669618.v1#P3-3A",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/HBM432.GSFC.789",
+       "technology": "GeoMx",
+       "label": "Registered 9/19/2025, Antara Bhavsar, University of Pennsylvania",
+       "description": "Data/Assay Types: GeoMx, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/HBM432.GSFC.789",
+     "label": "P3-3A",
+     "description": "7.728642767307439 x 9.800318481048793 x 31.90903272797852 millimeter, 31.90903272797852 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/4fbdae56-1fbd-4eaf-8996-add564f1a932",
+      "placement": {
+       "@id": "http://purl.org/ccf/1.5/4fbdae56-1fbd-4eaf-8996-add564f1a932_placement",
+       "@type": "SpatialPlacement",
+       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
+       "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "translation_units": "millimeter",
+       "x_rotation": 77.13388250095034,
+       "x_scaling": 1,
+       "x_translation": 20.14520488986842,
+       "y_rotation": 5.584019296766575,
+       "y_scaling": 1,
+       "y_translation": 15.59462566898691,
+       "z_rotation": -11.24562594515098,
+       "z_scaling": 0.9999999999999999,
+       "z_translation": 55.08028106265564,
+       "placement_date": "2025-10-20"
+      },
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001069",
+       "http://purl.obolibrary.org/obo/UBERON_0010373"
+      ],
+      "creator_first_name": "Antara",
+      "creator_last_name": "Bhavsar",
+      "dimension_units": "millimeter",
+      "x_dimension": 7.728642767307439,
+      "y_dimension": 9.800318481048793,
+      "z_dimension": 31.90903272797852,
+      "creation_date": "2025-10-20",
+      "creator": "Antara Bhavsar",
+      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A"
+     }
+    },
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/ad3e61806f5ba9593787559560c050ea",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://doi.org/10.6084/m9.figshare.29669648.v1#P3-7A",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/HBM856.WNGQ.663",
+       "technology": "GeoMx",
+       "label": "Registered 9/19/2025, Antara Bhavsar, University of Pennsylvania",
+       "description": "Data/Assay Types: GeoMx, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/HBM856.WNGQ.663",
+     "label": "P3-7A",
+     "description": "4.164702846310965 x 9.289576712064651 x 25.69912802878578 millimeter, 25.69912802878578 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/027bff13-9a01-4f57-9d4f-396dd7a878b0",
+      "placement": {
+       "@id": "http://purl.org/ccf/1.5/027bff13-9a01-4f57-9d4f-396dd7a878b0_placement",
+       "@type": "SpatialPlacement",
+       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A",
+       "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "translation_units": "millimeter",
+       "x_rotation": -124.6504803833785,
+       "x_scaling": 1,
+       "x_translation": 32.81386347840463,
+       "y_rotation": 3.108920467673673,
+       "y_scaling": 1,
+       "y_translation": 31.67977358658114,
+       "z_rotation": 40.09087410542722,
+       "z_scaling": 1,
+       "z_translation": 65.49794062230491,
+       "placement_date": "2025-10-20"
+      },
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001069",
+       "http://purl.org/sig/ont/fma/fma14517"
+      ],
+      "creator_first_name": "Antara",
+      "creator_last_name": "Bhavsar",
+      "dimension_units": "millimeter",
+      "x_dimension": 4.164702846310965,
+      "y_dimension": 9.289576712064651,
+      "z_dimension": 25.69912802878578,
+      "creation_date": "2025-10-20",
+      "creator": "Antara Bhavsar",
+      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A"
+     }
+    },
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/3e0ebb9f67f8a412de5453f15f66401b",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://doi.org/10.6084/m9.figshare.29669675.v1#P3-9A",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/HBM733.GDBT.469",
+       "technology": "GeoMx",
+       "label": "Registered 9/19/2025, Antara Bhavsar, University of Pennsylvania",
+       "description": "Data/Assay Types: GeoMx, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/HBM733.GDBT.469",
+     "label": "P3-9A",
+     "description": "4.836786199339888 x 8.483549590587309 x 21.3520822892264 millimeter, 21.3520822892264 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/339b0086-c398-40d2-b596-0a7d04bbddee",
+      "placement": {
+       "@id": "http://purl.org/ccf/1.5/339b0086-c398-40d2-b596-0a7d04bbddee_placement",
+       "@type": "SpatialPlacement",
+       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A",
+       "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "translation_units": "millimeter",
+       "x_rotation": 60.59690209048165,
+       "x_scaling": 1,
+       "x_translation": 41.94974554946928,
+       "y_rotation": -4.228445138810895,
+       "y_scaling": 1,
+       "y_translation": 35.80705981553471,
+       "z_rotation": -57.33986930482903,
+       "z_scaling": 1,
+       "z_translation": 72.83865109373994,
+       "placement_date": "2025-10-20"
+      },
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001150",
+       "http://purl.org/sig/ont/fma/fma14517"
+      ],
+      "creator_first_name": "Antara",
+      "creator_last_name": "Bhavsar",
+      "dimension_units": "millimeter",
+      "x_dimension": 4.836786199339888,
+      "y_dimension": 8.483549590587309,
+      "z_dimension": 21.3520822892264,
+      "creation_date": "2025-10-20",
+      "creator": "Antara Bhavsar",
+      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A"
+     }
+    }
+   ],
+   "consortium_name": "HuBMAP",
+   "provider_name": "University of Pennsylvania",
+   "provider_uuid": "18460CE4-4BB4-11F0-A2B2-20E2A8B75C6B",
+   "age": "39",
+   "sex": "Female",
+   "bmi": "18.44",
+   "link": "https://portal.hubmapconsortium.org/browse/donor/0ff5f50f37df84538fce22af13120fb1",
+   "label": "Female, Age 39, BMI 18.44",
+   "description": "Entered 9/19/2025, Antara Bhavsar, University of Pennsylvania"
+  },
+  {
+   "@id": "https://portal.hubmapconsortium.org/browse/donor/4fb6fba90db308fcbaf51b67d02f25f3",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/fecce9c24249d05363bff6e63292bbb8",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://doi.org/10.6084/m9.figshare.29669861.v1#P4-12A",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/HBM377.STZJ.479",
+       "technology": "GeoMx",
+       "label": "Registered 9/19/2025, Antara Bhavsar, University of Pennsylvania",
+       "description": "Data/Assay Types: GeoMx, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/HBM377.STZJ.479",
+     "label": "P4-12A",
+     "description": "3.94784793258901 x 10.49228585336551 x 19.9210307922637 millimeter, 19.9210307922637 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/89bf236b-72d6-4009-b128-8922ec272575",
+      "placement": {
+       "@id": "http://purl.org/ccf/1.5/89bf236b-72d6-4009-b128-8922ec272575_placement",
+       "@type": "SpatialPlacement",
+       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A",
+       "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "translation_units": "millimeter",
+       "x_rotation": -116.0234800863533,
+       "x_scaling": 0.9999999999999999,
+       "x_translation": 60.12508055501169,
+       "y_rotation": -2.361260943094729,
+       "y_scaling": 1,
+       "y_translation": 39.74041080759559,
+       "z_rotation": 86.63080300867193,
+       "z_scaling": 1,
+       "z_translation": 79.34952066195676,
+       "placement_date": "2025-10-20"
+      },
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001150"
+      ],
+      "creator_first_name": "Antara",
+      "creator_last_name": "Bhavsar",
+      "dimension_units": "millimeter",
+      "x_dimension": 3.94784793258901,
+      "y_dimension": 10.49228585336551,
+      "z_dimension": 19.9210307922637,
+      "creation_date": "2025-10-20",
+      "creator": "Antara Bhavsar",
+      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A"
+     }
+    },
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/571759f0f5a8dae5838a7c1911e5cb87",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://doi.org/10.6084/m9.figshare.29669882.v2#P4-22",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/HBM726.FDMS.478",
+       "technology": "GeoMx",
+       "label": "Registered 9/19/2025, Antara Bhavsar, University of Pennsylvania",
+       "description": "Data/Assay Types: GeoMx, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/HBM726.FDMS.478",
+     "label": "P4-22",
+     "description": "10.92388709822679 x 18.15441113485625 x 42.55595258480508 millimeter, 42.55595258480508 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/3c14ce2f-2985-40a2-8518-636c415c85fb",
+      "placement": {
+       "@id": "http://purl.org/ccf/1.5/3c14ce2f-2985-40a2-8518-636c415c85fb_placement",
+       "@type": "SpatialPlacement",
+       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22",
+       "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "translation_units": "millimeter",
+       "x_rotation": -124.8937276367203,
+       "x_scaling": 1,
+       "x_translation": 132.6656708684145,
+       "y_rotation": 14.58148822205415,
+       "y_scaling": 0.9999999999999998,
+       "y_translation": 35.37082074796977,
+       "z_rotation": 104.090782084444,
+       "z_scaling": 0.9999999999999999,
+       "z_translation": 28.77059125905915,
+       "placement_date": "2025-10-20"
+      },
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001151"
+      ],
+      "creator_first_name": "Antara",
+      "creator_last_name": "Bhavsar",
+      "dimension_units": "millimeter",
+      "x_dimension": 10.92388709822679,
+      "y_dimension": 18.15441113485625,
+      "z_dimension": 42.55595258480508,
+      "creation_date": "2025-10-20",
+      "creator": "Antara Bhavsar",
+      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22"
+     }
+    },
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/c0de9cca87decbe94f944ea14f9aa064",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://doi.org/10.6084/m9.figshare.29669789.v3#P4-3A",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/HBM838.CNFW.342",
+       "technology": "GeoMx",
+       "label": "Registered 9/19/2025, Antara Bhavsar, University of Pennsylvania",
+       "description": "Data/Assay Types: GeoMx, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/HBM838.CNFW.342",
+     "label": "P4-3A",
+     "description": "7.728642767307439 x 9.800318481048793 x 31.90903272797852 millimeter, 31.90903272797852 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/256313ba-cc1d-4ed4-853d-7c598e347ca7",
+      "placement": {
+       "@id": "http://purl.org/ccf/1.5/256313ba-cc1d-4ed4-853d-7c598e347ca7_placement",
+       "@type": "SpatialPlacement",
+       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
+       "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "translation_units": "millimeter",
+       "x_rotation": 77.13388250095034,
+       "x_scaling": 1,
+       "x_translation": 20.14520488986842,
+       "y_rotation": 5.584019296766575,
+       "y_scaling": 1,
+       "y_translation": 15.59462566898691,
+       "z_rotation": -11.24562594515098,
+       "z_scaling": 0.9999999999999999,
+       "z_translation": 55.08028106265564,
+       "placement_date": "2025-10-20"
+      },
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001069",
+       "http://purl.obolibrary.org/obo/UBERON_0010373"
+      ],
+      "creator_first_name": "Antara",
+      "creator_last_name": "Bhavsar",
+      "dimension_units": "millimeter",
+      "x_dimension": 7.728642767307439,
+      "y_dimension": 9.800318481048793,
+      "z_dimension": 31.90903272797852,
+      "creation_date": "2025-10-20",
+      "creator": "Antara Bhavsar",
+      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A"
+     }
+    },
+    {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/246fbf3be933fe44babc35dbe0335fdd",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://doi.org/10.6084/m9.figshare.29669831.v1#P4-6A",
+       "@type": "Dataset",
+       "link": "https://portal.hubmapconsortium.org/browse/HBM924.DMBR.258",
+       "technology": "GeoMx",
+       "label": "Registered 9/19/2025, Antara Bhavsar, University of Pennsylvania",
+       "description": "Data/Assay Types: GeoMx, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/HBM924.DMBR.258",
+     "label": "P4-6",
+     "description": "15.99480499890874 x 25.84083420042646 x 38.59581891053309 millimeter, 38.59581891053309 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/6d79d374-01ea-46e3-99c6-a3e9a07504e2",
+      "placement": {
+       "@id": "http://purl.org/ccf/1.5/6d79d374-01ea-46e3-99c6-a3e9a07504e2_placement",
+       "@type": "SpatialPlacement",
+       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6",
+       "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "translation_units": "millimeter",
+       "x_rotation": -125.6209816755411,
+       "x_scaling": 1,
+       "x_translation": 34.80261432526019,
+       "y_rotation": -17.37669772280586,
+       "y_scaling": 1,
+       "y_translation": 31.46788987364044,
+       "z_rotation": 117.9851233392097,
+       "z_scaling": 1,
+       "z_translation": 55.68191151496275,
+       "placement_date": "2025-10-20"
+      },
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001069",
+       "http://purl.obolibrary.org/obo/UBERON_0010373",
+       "http://purl.org/sig/ont/fma/fma14517"
+      ],
+      "creator_first_name": "Antara",
+      "creator_last_name": "Bhavsar",
+      "dimension_units": "millimeter",
+      "x_dimension": 15.99480499890874,
+      "y_dimension": 25.84083420042646,
+      "z_dimension": 38.59581891053309,
+      "creation_date": "2025-10-20",
+      "creator": "Antara Bhavsar",
+      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6"
+     }
+    }
+   ],
+   "consortium_name": "HuBMAP",
+   "provider_name": "University of Pennsylvania",
+   "provider_uuid": "18460CE4-4BB4-11F0-A2B2-20E2A8B75C6B",
+   "age": "21",
+   "sex": "Female",
+   "bmi": "27.09",
+   "link": "https://portal.hubmapconsortium.org/browse/donor/4fb6fba90db308fcbaf51b67d02f25f3",
+   "label": "Female, Age 21, BMI 27.09",
+   "description": "Entered 9/19/2025, Antara Bhavsar, University of Pennsylvania"
+  },
+  {
    "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D122_Donor",
    "@type": "Donor",
    "samples": [
@@ -32997,1084 +33754,6 @@
    "link": "http://example.com/user/link",
    "label": "Male, Age 86, BMI 25.9",
    "description": "Entered 5/10/2024, Yao Lu, Yale University"
-  },
-  {
-   "@id": "https://portal.hubmapconsortium.org/browse/donor/0ff5f50f37df84538fce22af13120fb1",
-   "@type": "Donor",
-   "samples": [
-    {
-     "@id": "https://entity.api.hubmapconsortium.org/entities/4aef7a78f4290e812eae82a58b141edc",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://doi.org/10.6084/m9.figshare.29669726.v1#P3-13A",
-       "@type": "Dataset",
-       "link": "https://portal.hubmapconsortium.org/browse/HBM525.RMVV.426",
-       "technology": "GeoMx",
-       "label": "Registered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania",
-       "description": "Data/Assay Types: GeoMx, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/HBM525.RMVV.426",
-     "label": "P3-13A",
-     "description": "9.246450201818357,11.83976265166269 x 13.29911717765508,18.46026764697761 x 11.45605793850363,22.1714237057366 millimeter, 11.45605793850363,22.1714237057366 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/4949fbd7-7365-4ec2-8ecd-edd2a165c17c",
-      "placement": [
-       {
-        "@id": "http://purl.org/ccf/1.5/099be6b3-d2dc-4c01-b195-0d34c890ae68_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 71.0857224560485,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 41.86084485706746,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 58.08400241972085
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/887224aa-4fea-4a19-81f4-07e8c3412fc0_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 71.0857224560485,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 41.86084485706746,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 58.08400241972085
-       },
-       {
-        "@id": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": [
-         67.17750842383202,
-         81.40578180244098
-        ],
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": [
-         39.49270353339876,
-         48.56102557715455
-        ],
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": [
-         77.94419858345367,
-         64.91766109312624
-        ]
-       }
-      ],
-      "@type": "SpatialEntity",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0001264",
-       "http://purl.obolibrary.org/obo/UBERON_0001150"
-      ],
-      "creator_first_name": "Antara",
-      "creator_last_name": "Bhavsar",
-      "dimension_units": "millimeter",
-      "x_dimension": [
-       9.246450201818357,
-       11.83976265166269
-      ],
-      "y_dimension": [
-       13.29911717765508,
-       18.46026764697761
-      ],
-      "z_dimension": [
-       11.45605793850363,
-       22.1714237057366
-      ],
-      "creation_date": [
-       "2025-09-04",
-       "2025-10-03"
-      ],
-      "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A"
-     }
-    },
-    {
-     "@id": "https://entity.api.hubmapconsortium.org/entities/8bc9ab0285419fe165605349602710ec",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://doi.org/10.6084/m9.figshare.29669618.v1#P3-3A",
-       "@type": "Dataset",
-       "link": "https://portal.hubmapconsortium.org/browse/HBM432.GSFC.789",
-       "technology": "GeoMx",
-       "label": "Registered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania",
-       "description": "Data/Assay Types: GeoMx, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/HBM432.GSFC.789",
-     "label": "P3-3A",
-     "description": "10.18982450631555,9.388057548405 x 19.35260603749589,31.88359312745484 x 12.38077477496713,24.60150939159755 millimeter, 12.38077477496713,24.60150939159755 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/9745b8f8-d6dc-4978-b96a-acdcf9c3d3c2",
-      "placement": [
-       {
-        "@id": "http://purl.org/ccf/1.5/09301178-c600-4fb6-8531-71626ba83d49_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 147.5669081137546,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 32.45147037308774,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 20.53806826549649
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/0a2de78b-c4af-4b95-8956-73499a32ba02_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 147.5669081137546,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 32.45147037308774,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 20.53806826549649
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/4e8a7334-b3cb-47b9-bad3-cba1dcbd0d5e_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 147.5669081137546,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 32.45147037308774,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 20.53806826549649
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/ba758172-c64e-407e-b81c-0cfa141562d2_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 147.5669081137546,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 32.45147037308774,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 20.53806826549649
-       },
-       {
-        "@id": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": [
-         20.87498689335974,
-         21.91494048283529
-        ],
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": [
-         16.30471254694656,
-         32.12525678828018
-        ],
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": [
-         55.94868599672859,
-         58.30774762630234
-        ]
-       }
-      ],
-      "@type": "SpatialEntity",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0001264",
-       "http://purl.obolibrary.org/obo/UBERON_0001069",
-       "http://purl.obolibrary.org/obo/UBERON_0010373"
-      ],
-      "creator_first_name": "Antara",
-      "creator_last_name": "Bhavsar",
-      "dimension_units": "millimeter",
-      "x_dimension": [
-       10.18982450631555,
-       9.388057548405
-      ],
-      "y_dimension": [
-       19.35260603749589,
-       31.88359312745484
-      ],
-      "z_dimension": [
-       12.38077477496713,
-       24.60150939159755
-      ],
-      "creation_date": [
-       "2025-09-04",
-       "2025-10-03"
-      ],
-      "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A"
-     }
-    },
-    {
-     "@id": "https://entity.api.hubmapconsortium.org/entities/ad3e61806f5ba9593787559560c050ea",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://doi.org/10.6084/m9.figshare.29669648.v1#P3-7A",
-       "@type": "Dataset",
-       "link": "https://portal.hubmapconsortium.org/browse/HBM856.WNGQ.663",
-       "technology": "GeoMx",
-       "label": "Registered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania",
-       "description": "Data/Assay Types: GeoMx, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/HBM856.WNGQ.663",
-     "label": "P3-7A",
-     "description": "7.702565986161189,12.97793247550869 x 15.27249357441029,23.65837756185984 x 16.81514547579482,24.96351882089395 millimeter, 16.81514547579482,24.96351882089395 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/fe65dad1-e29d-425a-9e1d-c44a96e4a1f7",
-      "placement": [
-       {
-        "@id": "http://purl.org/ccf/1.5/05a6cc01-3ea4-46f1-b96d-f1bbfdead50b_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 113.2981459742665,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 29.09548146183547,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 36.54506866531786
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/3e7b3567-91a3-4025-ac03-cd6aef003bd1_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 113.2981459742665,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 29.09548146183547,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 36.54506866531786
-       },
-       {
-        "@id": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": [
-         43.21636035126576,
-         33.06441115255703
-        ],
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": [
-         30.23357979842003,
-         48.69774924218937
-        ],
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": [
-         67.3827777973061,
-         64.23624127976093
-        ]
-       }
-      ],
-      "@type": "SpatialEntity",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0001069",
-       "http://purl.obolibrary.org/obo/UBERON_0001150",
-       "http://purl.obolibrary.org/obo/UBERON_0001264",
-       "http://purl.org/sig/ont/fma/fma14517"
-      ],
-      "creator_first_name": "Antara",
-      "creator_last_name": "Bhavsar",
-      "dimension_units": "millimeter",
-      "x_dimension": [
-       7.702565986161189,
-       12.97793247550869
-      ],
-      "y_dimension": [
-       15.27249357441029,
-       23.65837756185984
-      ],
-      "z_dimension": [
-       16.81514547579482,
-       24.96351882089395
-      ],
-      "creation_date": [
-       "2025-09-04",
-       "2025-10-03"
-      ],
-      "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A"
-     }
-    },
-    {
-     "@id": "https://entity.api.hubmapconsortium.org/entities/3e0ebb9f67f8a412de5453f15f66401b",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://doi.org/10.6084/m9.figshare.29669675.v1#P3-9A",
-       "@type": "Dataset",
-       "link": "https://portal.hubmapconsortium.org/browse/HBM733.GDBT.469",
-       "technology": "GeoMx",
-       "label": "Registered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania",
-       "description": "Data/Assay Types: GeoMx, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/HBM733.GDBT.469",
-     "label": "P3-9A",
-     "description": "6.759729640297668,12.87394750975576 x 12.43327261889643,19.58160574017381 x 15.16122673457021,22.88345230894961 millimeter, 15.16122673457021,22.88345230894961 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/b6f678cb-d05c-44cc-b8fe-c4c4ba35629a",
-      "placement": [
-       {
-        "@id": "http://purl.org/ccf/1.5/35de6702-2a2e-4671-b4c5-b73ed8e29bd0_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 97.5571794823781,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 31.88360906178442,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 45.27148932963645
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/b6fbb6f9-a084-42dd-99fd-797109fa48bd_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 97.5571794823781,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 31.88360906178442,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 45.27148932963645
-       },
-       {
-        "@id": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": [
-         41.94085041205047,
-         55.66960156142096
-        ],
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": [
-         52.25479465510713,
-         34.34449147931162
-        ],
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": [
-         71.34211509097071,
-         69.77193716996554
-        ]
-       }
-      ],
-      "@type": "SpatialEntity",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0001069",
-       "http://purl.obolibrary.org/obo/UBERON_0001150",
-       "http://purl.org/sig/ont/fma/fma14517",
-       "http://purl.obolibrary.org/obo/UBERON_0001264"
-      ],
-      "creator_first_name": "Antara",
-      "creator_last_name": "Bhavsar",
-      "dimension_units": "millimeter",
-      "x_dimension": [
-       6.759729640297668,
-       12.87394750975576
-      ],
-      "y_dimension": [
-       12.43327261889643,
-       19.58160574017381
-      ],
-      "z_dimension": [
-       15.16122673457021,
-       22.88345230894961
-      ],
-      "creation_date": [
-       "2025-09-04",
-       "2025-10-03"
-      ],
-      "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A"
-     }
-    }
-   ],
-   "consortium_name": "HuBMAP",
-   "provider_name": "University of Pennsylvania",
-   "provider_uuid": "18460CE4-4BB4-11F0-A2B2-20E2A8B75C6B",
-   "age": "39",
-   "sex": "Female",
-   "bmi": "18.44",
-   "link": "https://portal.hubmapconsortium.org/browse/donor/0ff5f50f37df84538fce22af13120fb1",
-   "label": "Female, Age 39, BMI 18.44",
-   "description": "Entered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania"
-  },
-  {
-   "@id": "https://portal.hubmapconsortium.org/browse/donor/4fb6fba90db308fcbaf51b67d02f25f3",
-   "@type": "Donor",
-   "samples": [
-    {
-     "@id": "https://entity.api.hubmapconsortium.org/entities/fecce9c24249d05363bff6e63292bbb8",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://doi.org/10.6084/m9.figshare.29669861.v1#P4-12A",
-       "@type": "Dataset",
-       "link": "https://portal.hubmapconsortium.org/browse/HBM377.STZJ.479",
-       "technology": "GeoMx",
-       "label": "Registered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania",
-       "description": "Data/Assay Types: GeoMx, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/HBM377.STZJ.479",
-     "label": "P4-12A",
-     "description": "10.46310694894292,10.80163822735185 x 13.17233998426909,18.4146459265968 x 10.31718796260728,22.21390537266932 millimeter, 10.31718796260728,22.21390537266932 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/e9396666-fdf5-4fa7-bde4-ba856e443514",
-      "placement": [
-       {
-        "@id": "http://purl.org/ccf/1.5/39f94be0-0526-4081-ac39-2b544593ab32_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 77.37887237545061,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 39.26959798617624,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 55.84654927329425
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/e901679d-ee8a-44b3-8764-8969aefab01c_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 77.37887237545061,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 39.26959798617624,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 55.84654927329425
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/ebf5e135-bfae-44b3-966d-23c8b6a8941e_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 77.37887237545061,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 39.26959798617624,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 55.84654927329425
-       },
-       {
-        "@id": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": [
-         60.03677496750274,
-         74.96372188472883
-        ],
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": [
-         38.98162574904887,
-         50.58850528567294
-        ],
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": [
-         78.51363357140184,
-         67.75257095455149
-        ]
-       }
-      ],
-      "@type": "SpatialEntity",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0001150",
-       "http://purl.obolibrary.org/obo/UBERON_0001264"
-      ],
-      "creator_first_name": "Antara",
-      "creator_last_name": "Bhavsar",
-      "dimension_units": "millimeter",
-      "x_dimension": [
-       10.46310694894292,
-       10.80163822735185
-      ],
-      "y_dimension": [
-       13.17233998426909,
-       18.4146459265968
-      ],
-      "z_dimension": [
-       10.31718796260728,
-       22.21390537266932
-      ],
-      "creation_date": [
-       "2025-09-04",
-       "2025-10-03"
-      ],
-      "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A"
-     }
-    },
-    {
-     "@id": "https://entity.api.hubmapconsortium.org/entities/571759f0f5a8dae5838a7c1911e5cb87",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://doi.org/10.6084/m9.figshare.29669882.v2#P4-22",
-       "@type": "Dataset",
-       "link": "https://portal.hubmapconsortium.org/browse/HBM726.FDMS.478",
-       "technology": "GeoMx",
-       "label": "Registered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania",
-       "description": "Data/Assay Types: GeoMx, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/HBM726.FDMS.478",
-     "label": "P4-22",
-     "description": "19.3074084108197,22.4885880589718 x 28.68973397425473,31.37927640108873 x 29.33764916848057,32.06612677825231 millimeter, 29.33764916848057,32.06612677825231 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/844a8c96-ba4e-4a98-8b48-737fee72427d",
-      "placement": [
-       {
-        "@id": "http://purl.org/ccf/1.5/2694dacf-1f6e-4c3a-b132-4f1761a966e2_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 26.16314729735572,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 26.47613239800289,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 55.15046892528512
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/3816722d-e472-4b86-b645-7981cc093d01_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 26.16314729735572,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 26.47613239800289,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 55.15046892528512
-       },
-       {
-        "@id": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": [
-         133.634681540535,
-         142.3123790651936
-        ],
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": [
-         32.62253576602062,
-         36.05355651037973
-        ],
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": [
-         27.55049984154551,
-         26.67240731803245
-        ]
-       }
-      ],
-      "@type": "SpatialEntity",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0001264",
-       "http://purl.obolibrary.org/obo/UBERON_0001151"
-      ],
-      "creator_first_name": "Antara",
-      "creator_last_name": "Bhavsar",
-      "dimension_units": "millimeter",
-      "x_dimension": [
-       19.3074084108197,
-       22.4885880589718
-      ],
-      "y_dimension": [
-       28.68973397425473,
-       31.37927640108873
-      ],
-      "z_dimension": [
-       29.33764916848057,
-       32.06612677825231
-      ],
-      "creation_date": [
-       "2025-09-04",
-       "2025-10-03"
-      ],
-      "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22"
-     }
-    },
-    {
-     "@id": "https://entity.api.hubmapconsortium.org/entities/c0de9cca87decbe94f944ea14f9aa064",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://doi.org/10.6084/m9.figshare.29669789.v3#P4-3A",
-       "@type": "Dataset",
-       "link": "https://portal.hubmapconsortium.org/browse/HBM838.CNFW.342",
-       "technology": "GeoMx",
-       "label": "Registered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania",
-       "description": "Data/Assay Types: GeoMx, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/HBM838.CNFW.342",
-     "label": "P4-3A",
-     "description": "10.18982450631555,9.388057548405 x 19.35260603749589,31.88359312745484 x 12.38077477496713,24.60150939159755 millimeter, 12.38077477496713,24.60150939159755 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/636d0d77-9e6c-4e51-b242-0ecc298e66e5",
-      "placement": [
-       {
-        "@id": "http://purl.org/ccf/1.5/09301178-c600-4fb6-8531-71626ba83d49_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 147.5669081137546,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 32.45147037308774,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 20.53806826549649
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/0a2de78b-c4af-4b95-8956-73499a32ba02_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 147.5669081137546,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 32.45147037308774,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 20.53806826549649
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/4e8a7334-b3cb-47b9-bad3-cba1dcbd0d5e_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 147.5669081137546,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 32.45147037308774,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 20.53806826549649
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/ba758172-c64e-407e-b81c-0cfa141562d2_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 147.5669081137546,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 32.45147037308774,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 20.53806826549649
-       },
-       {
-        "@id": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": [
-         20.87498689335974,
-         21.91494048283529
-        ],
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": [
-         16.30471254694656,
-         32.12525678828018
-        ],
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": [
-         55.94868599672859,
-         58.30774762630234
-        ]
-       }
-      ],
-      "@type": "SpatialEntity",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0001264",
-       "http://purl.obolibrary.org/obo/UBERON_0001069",
-       "http://purl.obolibrary.org/obo/UBERON_0010373"
-      ],
-      "creator_first_name": "Antara",
-      "creator_last_name": "Bhavsar",
-      "dimension_units": "millimeter",
-      "x_dimension": [
-       10.18982450631555,
-       9.388057548405
-      ],
-      "y_dimension": [
-       19.35260603749589,
-       31.88359312745484
-      ],
-      "z_dimension": [
-       12.38077477496713,
-       24.60150939159755
-      ],
-      "creation_date": [
-       "2025-09-04",
-       "2025-10-03"
-      ],
-      "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A"
-     }
-    },
-    {
-     "@id": "https://entity.api.hubmapconsortium.org/entities/246fbf3be933fe44babc35dbe0335fdd",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://doi.org/10.6084/m9.figshare.29669831.v1#P4-6A",
-       "@type": "Dataset",
-       "link": "https://portal.hubmapconsortium.org/browse/HBM924.DMBR.258",
-       "technology": "GeoMx",
-       "label": "Registered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania",
-       "description": "Data/Assay Types: GeoMx, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/HBM924.DMBR.258",
-     "label": "P4-6",
-     "description": "17.63161521810444,22.35574802966286 x 28.74306250011038,36.09266634073738 x 31.73908027207753,38.25111545806153 millimeter, 31.73908027207753,38.25111545806153 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/c58024b0-b3f8-46e1-83aa-3d67982e4904",
-      "placement": [
-       {
-        "@id": "http://purl.org/ccf/1.5/0824191a-83f1-451b-8a4c-84200241d152_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 122.2283019911185,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 29.57318908594875,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 36.87378988486344
-       },
-       {
-        "@id": "http://purl.org/ccf/1.5/11fa473d-f7ab-46b7-9306-e7a0bf033e02_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": 122.2283019911185,
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": 29.57318908594875,
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": 36.87378988486344
-       },
-       {
-        "@id": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6_placement",
-        "@type": "SpatialPlacement",
-        "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6",
-        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
-        "rotation_order": "XYZ",
-        "rotation_units": "degree",
-        "scaling_units": "ratio",
-        "translation_units": "millimeter",
-        "x_rotation": 0,
-        "x_scaling": 1,
-        "x_translation": [
-         36.62024976472048,
-         39.32464636072069
-        ],
-        "y_rotation": 0,
-        "y_scaling": 1,
-        "y_translation": [
-         29.82637152949677,
-         40.4001023348963
-        ],
-        "z_rotation": 0,
-        "z_scaling": 1,
-        "z_translation": [
-         65.05562008338798,
-         53.65557945794223
-        ]
-       }
-      ],
-      "@type": "SpatialEntity",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0001069",
-       "http://purl.obolibrary.org/obo/UBERON_0001150",
-       "http://purl.obolibrary.org/obo/UBERON_0010373",
-       "http://purl.obolibrary.org/obo/UBERON_0001264",
-       "http://purl.org/sig/ont/fma/fma14517"
-      ],
-      "creator_first_name": "Antara",
-      "creator_last_name": "Bhavsar",
-      "dimension_units": "millimeter",
-      "x_dimension": [
-       17.63161521810444,
-       22.35574802966286
-      ],
-      "y_dimension": [
-       28.74306250011038,
-       36.09266634073738
-      ],
-      "z_dimension": [
-       31.73908027207753,
-       38.25111545806153
-      ],
-      "creation_date": [
-       "2025-09-04",
-       "2025-10-03"
-      ],
-      "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6"
-     }
-    }
-   ],
-   "consortium_name": "HuBMAP",
-   "provider_name": "University of Pennsylvania",
-   "provider_uuid": "18460CE4-4BB4-11F0-A2B2-20E2A8B75C6B",
-   "age": "21",
-   "sex": "Female",
-   "bmi": "27.09",
-   "link": "https://portal.hubmapconsortium.org/browse/donor/4fb6fba90db308fcbaf51b67d02f25f3",
-   "label": "Female, Age 21, BMI 27.09",
-   "description": "Entered NaN/NaN/NaN, Antara Bhavsar, University of Pennsylvania"
   },
   {
    "@id": "https://doi.org/10.1126/science.abl4290#GTEX-15EOM",

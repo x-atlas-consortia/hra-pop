@@ -1,6 +1,6 @@
 organ,side,sex,modality,status,dataset_count,cell_count
 blood,,female,sc_transcriptomics,Non-Atlas,1577,37099
-blood,,male,sc_transcriptomics,Non-Atlas,1225,29271
+blood,,male,sc_transcriptomics,Non-Atlas,1225,29270
 blood,,unknown,sc_transcriptomics,Non-Atlas,59,1414
 blood vasculature,,female,sc_transcriptomics,Non-Atlas,21,547
 blood vasculature,,male,sc_transcriptomics,Non-Atlas,26,669
@@ -19,11 +19,11 @@ heart,,female,sc_transcriptomics,Atlas,51,4988
 heart,,female,sc_transcriptomics,Non-Atlas,145,4422
 heart,,male,sc_transcriptomics,Atlas,60,13176
 heart,,male,sc_transcriptomics,Non-Atlas,344,9928
-kidney,,female,sc_transcriptomics,Atlas,69,2658
-kidney,,female,sc_transcriptomics,Non-Atlas,221,7475
+kidney,,female,sc_transcriptomics,Atlas,68,2613
+kidney,,female,sc_transcriptomics,Non-Atlas,220,7460
 kidney,,male,sc_transcriptomics,Atlas,65,2370
 kidney,,male,sc_transcriptomics,Non-Atlas,246,8723
-kidney,left,female,sc_transcriptomics,Atlas,34,9380
+kidney,left,female,sc_transcriptomics,Atlas,33,9065
 kidney,left,male,sc_transcriptomics,Atlas,40,10143
 kidney,right,female,sc_transcriptomics,Atlas,8,2100
 kidney,right,male,sc_transcriptomics,Atlas,11,2926
@@ -39,12 +39,12 @@ liver,,female,sc_transcriptomics,Non-Atlas,51,1826
 liver,,male,sc_transcriptomics,Atlas,1,220
 liver,,male,sc_transcriptomics,Non-Atlas,48,1566
 liver,,unknown,sc_transcriptomics,Non-Atlas,5,125
-lung,,female,sc_transcriptomics,Atlas,32,8367
-lung,,female,sc_transcriptomics,Non-Atlas,278,10613
+lung,,female,sc_transcriptomics,Atlas,32,8665
+lung,,female,sc_transcriptomics,Non-Atlas,278,12412
 lung,,male,sc_proteomics,Atlas,1,120
-lung,,male,sc_transcriptomics,Atlas,86,17474
-lung,,male,sc_transcriptomics,Non-Atlas,393,15332
-lung,,unknown,sc_transcriptomics,Non-Atlas,91,2415
+lung,,male,sc_transcriptomics,Atlas,86,18159
+lung,,male,sc_transcriptomics,Non-Atlas,393,18326
+lung,,unknown,sc_transcriptomics,Non-Atlas,91,3019
 lymph node,,female,sc_proteomics,Atlas,2,986
 lymph node,,female,sc_transcriptomics,Non-Atlas,148,4717
 lymph node,,male,sc_proteomics,Atlas,3,1479
@@ -72,8 +72,10 @@ small intestine,,male,sc_proteomics,Atlas,24,3588
 small intestine,,male,sc_transcriptomics,Atlas,28,12096
 small intestine,,male,sc_transcriptomics,Non-Atlas,140,5095
 small intestine,,unknown,sc_transcriptomics,Non-Atlas,68,1555
+spleen,,female,sc_proteomics,Atlas,1,48
 spleen,,female,sc_transcriptomics,Atlas,4,865
 spleen,,female,sc_transcriptomics,Non-Atlas,60,1873
+spleen,,male,sc_proteomics,Atlas,2,96
 spleen,,male,sc_transcriptomics,Atlas,7,920
 spleen,,male,sc_transcriptomics,Non-Atlas,57,1731
 thymus,,female,sc_transcriptomics,Atlas,2,500

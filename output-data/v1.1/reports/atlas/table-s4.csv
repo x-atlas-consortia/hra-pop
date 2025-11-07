@@ -454,6 +454,30 @@ VHFSmallIntestine,jejunum,t cell:cd4+,http://purl.obolibrary.org/obo/CL_0000624,
 VHFSmallIntestine,jejunum,t cell:cd8+ alpha-beta,http://purl.obolibrary.org/obo/CL_0000625,10865.5,21731
 VHFSmallIntestine,jejunum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,3294,6588
 VHFSmallIntestine,jejunum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,4264.5,8529
+VHFSpleen,diaphragmatic surface of spleen,b cell,http://purl.obolibrary.org/obo/CL_0000236,9438,9438
+VHFSpleen,diaphragmatic surface of spleen,b cell:follicular,http://purl.obolibrary.org/obo/CL_0000843,15429,15429
+VHFSpleen,diaphragmatic surface of spleen,cell:proliferating,http://purl.obolibrary.org/obo/CL_0000000,9656,9656
+VHFSpleen,diaphragmatic surface of spleen,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1914,1914
+VHFSpleen,diaphragmatic surface of spleen,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,25838,25838
+VHFSpleen,diaphragmatic surface of spleen,endothelial cell of vascular tree,http://purl.obolibrary.org/obo/CL_0002139,7448,7448
+VHFSpleen,diaphragmatic surface of spleen,macrophage,http://purl.obolibrary.org/obo/CL_0000235,16131,16131
+VHFSpleen,diaphragmatic surface of spleen,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,9697,9697
+VHFSpleen,diaphragmatic surface of spleen,neutrophil/monocyte,http://purl.obolibrary.org/obo/CL_0000766,28224,28224
+VHFSpleen,diaphragmatic surface of spleen,t cell:cd4+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000897,9690,9690
+VHFSpleen,diaphragmatic surface of spleen,t cell:cd8+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000909,10973,10973
+VHFSpleen,diaphragmatic surface of spleen,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,8458,8458
+VHFSpleen,hilum of spleen,b cell,http://purl.obolibrary.org/obo/CL_0000236,11966,11966
+VHFSpleen,hilum of spleen,b cell:follicular,http://purl.obolibrary.org/obo/CL_0000843,22030,22030
+VHFSpleen,hilum of spleen,cell:proliferating,http://purl.obolibrary.org/obo/CL_0000000,9175,9175
+VHFSpleen,hilum of spleen,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,3020,3020
+VHFSpleen,hilum of spleen,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,32468,32468
+VHFSpleen,hilum of spleen,endothelial cell of vascular tree,http://purl.obolibrary.org/obo/CL_0002139,7491,7491
+VHFSpleen,hilum of spleen,macrophage,http://purl.obolibrary.org/obo/CL_0000235,16717,16717
+VHFSpleen,hilum of spleen,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,12703,12703
+VHFSpleen,hilum of spleen,neutrophil/monocyte,http://purl.obolibrary.org/obo/CL_0000766,27779,27779
+VHFSpleen,hilum of spleen,t cell:cd4+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000897,12094,12094
+VHFSpleen,hilum of spleen,t cell:cd8+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000909,13265,13265
+VHFSpleen,hilum of spleen,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,9069,9069
 VHMLargeIntestine,ascending colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,16651.45161290322580645161,516195
 VHMLargeIntestine,ascending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,593.66666666666666666667,3562
 VHMLargeIntestine,ascending colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,28533.29032258064516129032,884532
@@ -944,3 +968,59 @@ VHMSmallIntestine,jejunum,t cell:cd4+,http://purl.obolibrary.org/obo/CL_0000624,
 VHMSmallIntestine,jejunum,t cell:cd8+ alpha-beta,http://purl.obolibrary.org/obo/CL_0000625,7954.5,47727
 VHMSmallIntestine,jejunum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,500.33333333333333333333,3002
 VHMSmallIntestine,jejunum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,874.16666666666666666667,5245
+VHMSpleen,diaphragmatic surface of spleen,b cell,http://purl.obolibrary.org/obo/CL_0000236,3322,3322
+VHMSpleen,diaphragmatic surface of spleen,b cell:follicular,http://purl.obolibrary.org/obo/CL_0000843,19550,19550
+VHMSpleen,diaphragmatic surface of spleen,cell:proliferating,http://purl.obolibrary.org/obo/CL_0000000,7824,7824
+VHMSpleen,diaphragmatic surface of spleen,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,738,738
+VHMSpleen,diaphragmatic surface of spleen,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,23396,23396
+VHMSpleen,diaphragmatic surface of spleen,endothelial cell of vascular tree,http://purl.obolibrary.org/obo/CL_0002139,6201,6201
+VHMSpleen,diaphragmatic surface of spleen,macrophage,http://purl.obolibrary.org/obo/CL_0000235,15916,15916
+VHMSpleen,diaphragmatic surface of spleen,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,8860,8860
+VHMSpleen,diaphragmatic surface of spleen,neutrophil/monocyte,http://purl.obolibrary.org/obo/CL_0000766,31731,31731
+VHMSpleen,diaphragmatic surface of spleen,t cell:cd4+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000897,8790,8790
+VHMSpleen,diaphragmatic surface of spleen,t cell:cd8+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000909,15977,15977
+VHMSpleen,diaphragmatic surface of spleen,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,12141,12141
+VHMSpleen,hilum of spleen,b cell,http://purl.obolibrary.org/obo/CL_0000236,3322,3322
+VHMSpleen,hilum of spleen,b cell:follicular,http://purl.obolibrary.org/obo/CL_0000843,19550,19550
+VHMSpleen,hilum of spleen,cell:proliferating,http://purl.obolibrary.org/obo/CL_0000000,7824,7824
+VHMSpleen,hilum of spleen,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,738,738
+VHMSpleen,hilum of spleen,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,23396,23396
+VHMSpleen,hilum of spleen,endothelial cell of vascular tree,http://purl.obolibrary.org/obo/CL_0002139,6201,6201
+VHMSpleen,hilum of spleen,macrophage,http://purl.obolibrary.org/obo/CL_0000235,15916,15916
+VHMSpleen,hilum of spleen,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,8860,8860
+VHMSpleen,hilum of spleen,neutrophil/monocyte,http://purl.obolibrary.org/obo/CL_0000766,31731,31731
+VHMSpleen,hilum of spleen,t cell:cd4+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000897,8790,8790
+VHMSpleen,hilum of spleen,t cell:cd8+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000909,15977,15977
+VHMSpleen,hilum of spleen,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,12141,12141
+VHMSpleen,renal surface of spleen,b cell,http://purl.obolibrary.org/obo/CL_0000236,5502,5502
+VHMSpleen,renal surface of spleen,b cell:follicular,http://purl.obolibrary.org/obo/CL_0000843,15291,15291
+VHMSpleen,renal surface of spleen,cell:proliferating,http://purl.obolibrary.org/obo/CL_0000000,8783,8783
+VHMSpleen,renal surface of spleen,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1288,1288
+VHMSpleen,renal surface of spleen,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,28559,28559
+VHMSpleen,renal surface of spleen,endothelial cell of vascular tree,http://purl.obolibrary.org/obo/CL_0002139,7109,7109
+VHMSpleen,renal surface of spleen,macrophage,http://purl.obolibrary.org/obo/CL_0000235,15364,15364
+VHMSpleen,renal surface of spleen,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,10424,10424
+VHMSpleen,renal surface of spleen,neutrophil/monocyte,http://purl.obolibrary.org/obo/CL_0000766,30036,30036
+VHMSpleen,renal surface of spleen,t cell:cd4+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000897,4860,4860
+VHMSpleen,renal surface of spleen,t cell:cd8+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000909,16624,16624
+VHMSpleen,renal surface of spleen,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,6471,6471
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,Neck of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,9538,28614
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,Neck of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,253462,760386
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,Neck of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,269399.66666666666666666667,808199
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,Neck of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,632299.33333333333333333333,1896898
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,body of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,13227.66666666666666666667,39683
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,body of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,242680.66666666666666666667,728042
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,body of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,281065,843195
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,body of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,689106,2067318
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,head of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,7140,28560
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,head of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,251569.25,1006277
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,head of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,246313.25,985253
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,head of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,596287.75,2385151
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,tail of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,19717,19717
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,tail of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,401562,401562
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,tail of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,310492,310492
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,tail of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,1011087,1011087
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,uncinate process of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,6121.66666666666666666667,18365
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,uncinate process of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,270309.66666666666666666667,810929
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,uncinate process of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,258836.33333333333333333333,776509
+https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,uncinate process of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,619904.66666666666666666667,1859714
