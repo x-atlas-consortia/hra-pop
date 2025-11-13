@@ -8,7 +8,7 @@ REGISTRATIONS="https://apps.humanatlas.io/api/ds-graph/hubmap?token=${HUBMAP_TOK
   https://hubmapconsortium.github.io/hra-registrations/staging/kpmp-kidney-jain-2023/rui_locations.jsonld"
 
 PUBLICATIONS="https://docs.google.com/spreadsheets/d/1MK9KMPAFRHN6aU_e1ghApcbABAdkLGRTiaSUkliLNnw/export?format=csv&gid=1240375199"
-APPROVED_SOURCES="HuBMAP SenNet GTEx"
+APPROVED_SOURCES="HuBMAP SenNet GTEx HTAN"
 
 CELL_SUMMARIES="input-data/${VERSION}/sc-transcriptomics-cell-summaries.jsonl.gz input-data/${VERSION}/sc-proteomics-cell-summaries.jsonld"
 CELL_SUMMARY_DATASETS="input-data/${VERSION}/sc-transcriptomics-dataset-metadata.csv input-data/${VERSION}/sc-proteomics-dataset-metadata.csv"
