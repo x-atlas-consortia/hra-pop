@@ -10,6 +10,8 @@ B cell,http://purl.obolibrary.org/obo/CL_0000236,L2,http://purl.obolibrary.org/o
 "B cell, CD19-positive",http://purl.obolibrary.org/obo/CL_0001201,L2,http://purl.obolibrary.org/obo/CL_0000236,B cell
 CCL3-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033041,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 CCL3-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033041,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+CD11b-positive dendritic cell,http://purl.obolibrary.org/obo/CL_0002465,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+CD11b-positive dendritic cell,http://purl.obolibrary.org/obo/CL_0002465,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 "CD14-low, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002396,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 "CD14-low, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002396,L2,http://purl.obolibrary.org/obo/CL_0000576,monocyte
 CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell

@@ -63,7 +63,6 @@ Female,http://purl.obolibrary.org/obo/UBERON_0002084,pan-human-azimuth,sc_transc
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,azimuth,sc_transcriptomics,0.9
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,celltypist,sc_transcriptomics,0.78048780487804878049
 Female,http://purl.obolibrary.org/obo/UBERON_0002094,pan-human-azimuth,sc_transcriptomics,0.79032258064516129032
-Female,http://purl.obolibrary.org/obo/UBERON_0002097,sc_proteomics,sc_proteomics,1
 Female,http://purl.obolibrary.org/obo/UBERON_0002115,sc_proteomics,sc_proteomics,0.72727272727272727273
 Female,http://purl.obolibrary.org/obo/UBERON_0002115,celltypist,sc_transcriptomics,0.59259259259259259259
 Female,http://purl.obolibrary.org/obo/UBERON_0002115,pan-human-azimuth,sc_transcriptomics,0.65517241379310344828
@@ -140,7 +139,7 @@ Male,http://purl.obolibrary.org/obo/UBERON_0001158,sc_proteomics,sc_proteomics,0
 Male,http://purl.obolibrary.org/obo/UBERON_0001158,celltypist,sc_transcriptomics,0.59036144578313253012
 Male,http://purl.obolibrary.org/obo/UBERON_0001158,pan-human-azimuth,sc_transcriptomics,0.73584905660377358491
 Male,http://purl.obolibrary.org/obo/UBERON_0001158,popv,sc_transcriptomics,0.72222222222222222222
-Male,http://purl.obolibrary.org/obo/UBERON_0001159,sc_proteomics,sc_proteomics,0.72727272727272727273
+Male,http://purl.obolibrary.org/obo/UBERON_0001159,sc_proteomics,sc_proteomics,0.75
 Male,http://purl.obolibrary.org/obo/UBERON_0001159,celltypist,sc_transcriptomics,0.58333333333333333333
 Male,http://purl.obolibrary.org/obo/UBERON_0001159,pan-human-azimuth,sc_transcriptomics,0.75925925925925925926
 Male,http://purl.obolibrary.org/obo/UBERON_0001159,popv,sc_transcriptomics,0.72222222222222222222
@@ -177,7 +176,7 @@ Male,http://purl.obolibrary.org/obo/UBERON_0002084,pan-human-azimuth,sc_transcri
 Male,http://purl.obolibrary.org/obo/UBERON_0002094,azimuth,sc_transcriptomics,0.9
 Male,http://purl.obolibrary.org/obo/UBERON_0002094,celltypist,sc_transcriptomics,0.76923076923076923077
 Male,http://purl.obolibrary.org/obo/UBERON_0002094,pan-human-azimuth,sc_transcriptomics,0.77419354838709677419
-Male,http://purl.obolibrary.org/obo/UBERON_0002097,sc_proteomics,sc_proteomics,1
+Male,http://purl.obolibrary.org/obo/UBERON_0002097,sc_proteomics,sc_proteomics,0.75
 Male,http://purl.obolibrary.org/obo/UBERON_0002097,celltypist,sc_transcriptomics,0.82608695652173913043
 Male,http://purl.obolibrary.org/obo/UBERON_0002097,pan-human-azimuth,sc_transcriptomics,0.72549019607843137255
 Male,http://purl.obolibrary.org/obo/UBERON_0002097,popv,sc_transcriptomics,0.95652173913043478261

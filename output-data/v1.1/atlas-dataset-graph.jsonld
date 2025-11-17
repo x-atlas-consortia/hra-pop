@@ -3371,6 +3371,76 @@
      }
     },
     {
+     "@id": "https://entity.api.hubmapconsortium.org/entities/539b8dd38698d191ec284f9f061e7441",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.hubmapconsortium.org/entities/0f1ddcb41a484adbda759c0c79097a02",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.hubmapconsortium.org/entities/8ac6e3bc3fb44efe981818290abd7693",
+         "@type": "Dataset",
+         "link": "https://portal.hubmapconsortium.org/browse/dataset/8ac6e3bc3fb44efe981818290abd7693",
+         "technology": "PhenoCycler",
+         "label": "Registered 3/3/2025, HuBMAP Process, University of Rochester Medical Center TMC",
+         "description": "Dataset Type: PhenoCycler",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://portal.hubmapconsortium.org/browse/sample/0f1ddcb41a484adbda759c0c79097a02",
+       "label": "Registered 1/25/2024, Anthony Corbett, University of Rochester Medical Center TMC",
+       "description": "10 x 10 x 0.4 millimeter, 0.4 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/sample/539b8dd38698d191ec284f9f061e7441",
+     "label": "Registered 5/29/2024, Anthony Corbett, University of Rochester Medical Center TMC",
+     "description": "10 x 10 x 5 millimeter, 0.4 millimeter, 14 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0002048",
+       "http://purl.obolibrary.org/obo/UBERON_0002168",
+       "http://purl.obolibrary.org/obo/UBERON_0008953",
+       "http://purl.org/sig/ont/fma/fma7508"
+      ],
+      "creation_date": "2024-03-12",
+      "creator": "Gloria S Pryhuber",
+      "creator_first_name": "Gloria",
+      "creator_last_name": "Pryhuber",
+      "creator_middle_name": "S",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2024-03-12",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHMLungV1.1",
+       "translation_units": "millimeter",
+       "x_rotation": 0,
+       "x_scaling": 1,
+       "x_translation": 177.198,
+       "y_rotation": 0,
+       "y_scaling": 1,
+       "y_translation": 48.282,
+       "z_rotation": 0,
+       "z_scaling": 1,
+       "z_translation": 9.575
+      },
+      "x_dimension": 10,
+      "y_dimension": 10,
+      "z_dimension": 5
+     }
+    },
+    {
      "@id": "https://entity.api.hubmapconsortium.org/entities/825e4d48c77f4b0444f1dcc3834e1a2d",
      "@type": "Sample",
      "datasets": [],
@@ -21925,6 +21995,92 @@
    "description": "Entered 5/1/2025, Andrew Watts, TMC - University of Pittsburgh"
   },
   {
+   "@id": "https://entity.api.sennetconsortium.org/entities/c97564fbb1cb61f9d409f62f5999daf4",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.sennetconsortium.org/entities/7024d33d0675505567e3fcd260bad26c",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.sennetconsortium.org/entities/78b9d70014eb93b3080895bfe6781832",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.sennetconsortium.org/entities/231a3d0cc7fb7506194109b68caa0b6a",
+         "@type": "Dataset",
+         "link": "https://data.sennetconsortium.org/dataset?uuid=231a3d0cc7fb7506194109b68caa0b6a",
+         "technology": "PhenoCycler",
+         "label": "Registered 3/25/2025, SenNet Process, TMC - Yale University - Fan",
+         "description": "Dataset Type: PhenoCycler",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://data.sennetconsortium.org/sample?uuid=78b9d70014eb93b3080895bfe6781832",
+       "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+       "description": "5 x 6.5 x 7 millimeter, 7 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://data.sennetconsortium.org/sample?uuid=7024d33d0675505567e3fcd260bad26c",
+     "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+     "description": "5 x 6.5 x 6.5 millimeter, 7 millimeter, 3 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/e30fdc54-9fd4-4b57-ad9f-1c121c9c9a1c",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0002194",
+       "http://purl.obolibrary.org/obo/UBERON_0010748",
+       "http://purl.obolibrary.org/obo/UBERON_0002007",
+       "http://purl.obolibrary.org/obo/UBERON_0010417"
+      ],
+      "creation_date": "2024-06-11",
+      "creator": "Yao Lu",
+      "creator_first_name": "Yao",
+      "creator_last_name": "Lu",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/e30fdc54-9fd4-4b57-ad9f-1c121c9c9a1c_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2024-06-11",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHFLymphNode",
+       "translation_units": "millimeter",
+       "x_rotation": 0,
+       "x_scaling": 1,
+       "x_translation": 9.073,
+       "y_rotation": 0,
+       "y_scaling": 1,
+       "y_translation": 5.726,
+       "z_rotation": 0,
+       "z_scaling": 1,
+       "z_translation": 6.483
+      },
+      "slice_count": 3,
+      "slice_thickness": 7,
+      "x_dimension": 5,
+      "y_dimension": 6.5,
+      "z_dimension": 6.5
+     }
+    }
+   ],
+   "consortium_name": "SenNet",
+   "provider_name": "TMC - Yale University - Fan",
+   "provider_uuid": "f9e76de5-ee71-11ec-b04f-67218ab1b594",
+   "age": "25",
+   "sex": "Female",
+   "race": "Unknown",
+   "link": "https://data.sennetconsortium.org/source?uuid=c97564fbb1cb61f9d409f62f5999daf4",
+   "label": "Female, Age 25",
+   "description": "Entered 5/1/2025, Yao Lu, TMC - Yale University - Fan"
+  },
+  {
    "@id": "https://entity.api.sennetconsortium.org/entities/0241f4a06e9c67ac595d46459bd3d5ec",
    "@type": "Donor",
    "samples": [
@@ -22770,6 +22926,178 @@
    "description": "Entered 4/21/2025, Matthew Wyczalkowski, TMC - Washington University"
   },
   {
+   "@id": "https://entity.api.sennetconsortium.org/entities/00686104ed9c4d53f1b8637cbe37ba66",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.sennetconsortium.org/entities/a3a696cf307169994bcdb61ec23fe828",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.sennetconsortium.org/entities/643dacc9818776b9f9071a618c3d731f",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.sennetconsortium.org/entities/cc703095438a75d64e4a3fe5fbcead9c",
+         "@type": "Dataset",
+         "link": "https://data.sennetconsortium.org/dataset?uuid=cc703095438a75d64e4a3fe5fbcead9c",
+         "technology": "PhenoCycler",
+         "label": "Registered 3/25/2025, SenNet Process, TMC - Yale University - Fan",
+         "description": "Dataset Type: PhenoCycler",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://data.sennetconsortium.org/sample?uuid=643dacc9818776b9f9071a618c3d731f",
+       "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+       "description": "10 x 15 x 7 millimeter, 7 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://data.sennetconsortium.org/sample?uuid=a3a696cf307169994bcdb61ec23fe828",
+     "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+     "description": "10 x 15 x 6.5 millimeter, 7 millimeter, 1 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/6ed1eb65-077b-4c7d-925a-14fb1d6b66ae",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0002194",
+       "http://purl.obolibrary.org/obo/UBERON_0010748",
+       "http://purl.obolibrary.org/obo/UBERON_0002007",
+       "http://purl.obolibrary.org/obo/UBERON_0010417"
+      ],
+      "creation_date": "2024-06-11",
+      "creator": "Yao Lu",
+      "creator_first_name": "Yao",
+      "creator_last_name": "Lu",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/6ed1eb65-077b-4c7d-925a-14fb1d6b66ae_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2024-06-11",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHMLymphNode",
+       "translation_units": "millimeter",
+       "x_rotation": -92,
+       "x_scaling": 1,
+       "x_translation": 8.986,
+       "y_rotation": 2,
+       "y_scaling": 1,
+       "y_translation": 5.899,
+       "z_rotation": 89,
+       "z_scaling": 1,
+       "z_translation": 6.483
+      },
+      "slice_count": 1,
+      "slice_thickness": 7,
+      "x_dimension": 10,
+      "y_dimension": 15,
+      "z_dimension": 6.5
+     }
+    }
+   ],
+   "consortium_name": "SenNet",
+   "provider_name": "TMC - Yale University - Fan",
+   "provider_uuid": "f9e76de5-ee71-11ec-b04f-67218ab1b594",
+   "age": "50",
+   "sex": "Male",
+   "race": "White",
+   "link": "https://data.sennetconsortium.org/source?uuid=00686104ed9c4d53f1b8637cbe37ba66",
+   "label": "Male, Age 50",
+   "description": "Entered 5/1/2025, Yao Lu, TMC - Yale University - Fan"
+  },
+  {
+   "@id": "https://entity.api.sennetconsortium.org/entities/8916abfbcd896f0d7927da325732836e",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.sennetconsortium.org/entities/a927f7e84d7ebb444e45f744dade5d9e",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.sennetconsortium.org/entities/8d5045ddb9241723da8e6f11632b876c",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.sennetconsortium.org/entities/bc2380a1970abded1129ed77507be349",
+         "@type": "Dataset",
+         "link": "https://data.sennetconsortium.org/dataset?uuid=bc2380a1970abded1129ed77507be349",
+         "technology": "PhenoCycler",
+         "label": "Registered 3/25/2025, SenNet Process, TMC - Yale University - Fan",
+         "description": "Dataset Type: PhenoCycler",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://data.sennetconsortium.org/sample?uuid=8d5045ddb9241723da8e6f11632b876c",
+       "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+       "description": "10 x 15 x 7 millimeter, 7 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://data.sennetconsortium.org/sample?uuid=a927f7e84d7ebb444e45f744dade5d9e",
+     "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+     "description": "10 x 15 x 6.5 millimeter, 7 millimeter, 2 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/513a5005-f9e5-4a00-a08a-15b5d47c5ea0",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0002194",
+       "http://purl.obolibrary.org/obo/UBERON_0010748",
+       "http://purl.obolibrary.org/obo/UBERON_0002007",
+       "http://purl.obolibrary.org/obo/UBERON_0010417"
+      ],
+      "creation_date": "2024-06-11",
+      "creator": "Yao Lu",
+      "creator_first_name": "Yao",
+      "creator_last_name": "Lu",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/513a5005-f9e5-4a00-a08a-15b5d47c5ea0_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2024-06-11",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHMLymphNode",
+       "translation_units": "millimeter",
+       "x_rotation": -82,
+       "x_scaling": 1,
+       "x_translation": 9.332,
+       "y_rotation": 0,
+       "y_scaling": 1,
+       "y_translation": 5.813,
+       "z_rotation": -91,
+       "z_scaling": 1,
+       "z_translation": 6.483
+      },
+      "slice_count": 2,
+      "slice_thickness": 7,
+      "x_dimension": 10,
+      "y_dimension": 15,
+      "z_dimension": 6.5
+     }
+    }
+   ],
+   "consortium_name": "SenNet",
+   "provider_name": "TMC - Yale University - Fan",
+   "provider_uuid": "f9e76de5-ee71-11ec-b04f-67218ab1b594",
+   "age": "65",
+   "sex": "Male",
+   "race": "White",
+   "link": "https://data.sennetconsortium.org/source?uuid=8916abfbcd896f0d7927da325732836e",
+   "label": "Male, Age 65",
+   "description": "Entered 5/1/2025, Yao Lu, TMC - Yale University - Fan"
+  },
+  {
    "@id": "https://entity.api.sennetconsortium.org/entities/ed2f33df249af7c14288e9e9d5210209",
    "@type": "Donor",
    "samples": [
@@ -22962,6 +23290,178 @@
    "link": "https://data.sennetconsortium.org/source?uuid=f5a7ed15c121381423e5ed25ce7a8080",
    "label": "Male",
    "description": "Entered 4/30/2025, Ivy Kosater, TMC - Columbia University"
+  },
+  {
+   "@id": "https://entity.api.sennetconsortium.org/entities/de5d41fb8ad799a5f0017b34722e1cdb",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.sennetconsortium.org/entities/c2af14a9891047237a2a2457fa4b9d07",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.sennetconsortium.org/entities/5b6a98d4807df596cf8385f517e4bbb6",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.sennetconsortium.org/entities/4f0d1913fda94d02e82d928951dbcdab",
+         "@type": "Dataset",
+         "link": "https://data.sennetconsortium.org/dataset?uuid=4f0d1913fda94d02e82d928951dbcdab",
+         "technology": "PhenoCycler",
+         "label": "Registered 3/25/2025, SenNet Process, TMC - Yale University - Fan",
+         "description": "Dataset Type: PhenoCycler",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://data.sennetconsortium.org/sample?uuid=5b6a98d4807df596cf8385f517e4bbb6",
+       "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+       "description": "15 x 7 x 7 millimeter, 7 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://data.sennetconsortium.org/sample?uuid=c2af14a9891047237a2a2457fa4b9d07",
+     "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+     "description": "15 x 7 x 6.5 millimeter, 7 millimeter, 2 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/d498378e-8682-45f3-9bfd-11b48023125c",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0002194",
+       "http://purl.obolibrary.org/obo/UBERON_0010748",
+       "http://purl.obolibrary.org/obo/UBERON_0002007",
+       "http://purl.obolibrary.org/obo/UBERON_0010417"
+      ],
+      "creation_date": "2024-06-11",
+      "creator": "Yao Lu",
+      "creator_first_name": "Yao",
+      "creator_last_name": "Lu",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/d498378e-8682-45f3-9bfd-11b48023125c_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2024-06-11",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHFLymphNode",
+       "translation_units": "millimeter",
+       "x_rotation": 0,
+       "x_scaling": 1,
+       "x_translation": 10.312,
+       "y_rotation": 0,
+       "y_scaling": 1,
+       "y_translation": 6.113,
+       "z_rotation": 0,
+       "z_scaling": 1,
+       "z_translation": 6.483
+      },
+      "slice_count": 2,
+      "slice_thickness": 7,
+      "x_dimension": 15,
+      "y_dimension": 7,
+      "z_dimension": 6.5
+     }
+    }
+   ],
+   "consortium_name": "SenNet",
+   "provider_name": "TMC - Yale University - Fan",
+   "provider_uuid": "f9e76de5-ee71-11ec-b04f-67218ab1b594",
+   "age": "55",
+   "sex": "Female",
+   "race": "White",
+   "link": "https://data.sennetconsortium.org/source?uuid=de5d41fb8ad799a5f0017b34722e1cdb",
+   "label": "Female, Age 55",
+   "description": "Entered 5/1/2025, Yao Lu, TMC - Yale University - Fan"
+  },
+  {
+   "@id": "https://entity.api.sennetconsortium.org/entities/10293d35e7a85ae1b1c3552a370b0e9c",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://entity.api.sennetconsortium.org/entities/cc99ff6b3fbad7c3408492bac0032533",
+     "@type": "Sample",
+     "datasets": [],
+     "sections": [
+      {
+       "@id": "https://entity.api.sennetconsortium.org/entities/f50be817eb69bafd6a988afeb429668d",
+       "@type": "Sample",
+       "datasets": [
+        {
+         "@id": "https://entity.api.sennetconsortium.org/entities/be4874c329c8dfd14b91c682e613daed",
+         "@type": "Dataset",
+         "link": "https://data.sennetconsortium.org/dataset?uuid=be4874c329c8dfd14b91c682e613daed",
+         "technology": "PhenoCycler",
+         "label": "Registered 3/25/2025, SenNet Process, TMC - Yale University - Fan",
+         "description": "Dataset Type: PhenoCycler",
+         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+        }
+       ],
+       "sample_type": "Tissue Section",
+       "link": "https://data.sennetconsortium.org/sample?uuid=f50be817eb69bafd6a988afeb429668d",
+       "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+       "description": "14 x 11 x 7 millimeter, 7 millimeter"
+      }
+     ],
+     "sample_type": "Tissue Block",
+     "link": "https://data.sennetconsortium.org/sample?uuid=cc99ff6b3fbad7c3408492bac0032533",
+     "label": "Registered 9/20/2024, Yao Lu, TMC - Yale University - Fan",
+     "description": "14 x 11 x 6.5 millimeter, 7 millimeter, 1 Sections",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/f5f662ff-2ba4-4442-b7ae-0f48fcadb79e",
+      "@type": "SpatialEntity",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0002194",
+       "http://purl.obolibrary.org/obo/UBERON_0010748",
+       "http://purl.obolibrary.org/obo/UBERON_0002007",
+       "http://purl.obolibrary.org/obo/UBERON_0010417"
+      ],
+      "creation_date": "2024-06-11",
+      "creator": "Yao Lu",
+      "creator_first_name": "Yao",
+      "creator_last_name": "Lu",
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/f5f662ff-2ba4-4442-b7ae-0f48fcadb79e_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2024-06-11",
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "scaling_units": "ratio",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHMLymphNode",
+       "translation_units": "millimeter",
+       "x_rotation": 0,
+       "x_scaling": 1,
+       "x_translation": 9.07,
+       "y_rotation": 0,
+       "y_scaling": 1,
+       "y_translation": 6.18,
+       "z_rotation": 0,
+       "z_scaling": 1,
+       "z_translation": 6.483
+      },
+      "slice_count": 1,
+      "slice_thickness": 7,
+      "x_dimension": 14,
+      "y_dimension": 11,
+      "z_dimension": 6.5
+     }
+    }
+   ],
+   "consortium_name": "SenNet",
+   "provider_name": "TMC - Yale University - Fan",
+   "provider_uuid": "f9e76de5-ee71-11ec-b04f-67218ab1b594",
+   "age": "86",
+   "sex": "Male",
+   "race": "White",
+   "link": "https://data.sennetconsortium.org/source?uuid=10293d35e7a85ae1b1c3552a370b0e9c",
+   "label": "Male, Age 86",
+   "description": "Entered 5/1/2025, Yao Lu, TMC - Yale University - Fan"
   },
   {
    "@id": "https://entity.api.sennetconsortium.org/entities/eb6c323b5b64f1f59faab777a751f761",
@@ -23363,7 +23863,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23371,7 +23871,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23425,7 +23925,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23433,7 +23933,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23488,7 +23988,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23496,7 +23996,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23550,7 +24050,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23558,7 +24058,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23630,7 +24130,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23638,7 +24138,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23695,7 +24195,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23703,7 +24203,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23764,7 +24264,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23772,7 +24272,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23831,7 +24331,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23839,7 +24339,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23901,7 +24401,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23909,7 +24409,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -23967,7 +24467,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D2$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -23975,7 +24475,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24052,7 +24552,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24060,7 +24560,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24117,7 +24617,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24125,7 +24625,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24186,7 +24686,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24194,7 +24694,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24253,7 +24753,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24261,7 +24761,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24323,7 +24823,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24331,7 +24831,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24389,7 +24889,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D3$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24397,7 +24897,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24474,7 +24974,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24482,7 +24982,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24537,7 +25037,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24545,7 +25045,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24602,7 +25102,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24610,7 +25110,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24664,7 +25164,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24672,7 +25172,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24728,7 +25228,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24736,7 +25236,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24790,7 +25290,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24798,7 +25298,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24872,7 +25372,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24880,7 +25380,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -24935,7 +25435,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -24943,7 +25443,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25000,7 +25500,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25008,7 +25508,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25062,7 +25562,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25070,7 +25570,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25126,7 +25626,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25134,7 +25634,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25188,7 +25688,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25196,7 +25696,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25270,7 +25770,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25278,7 +25778,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25335,7 +25835,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25343,7 +25843,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25404,7 +25904,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25412,7 +25912,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25471,7 +25971,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25479,7 +25979,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25541,7 +26041,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25549,7 +26049,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25607,7 +26107,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25615,7 +26115,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25692,7 +26192,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25700,7 +26200,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25757,7 +26257,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25765,7 +26265,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25826,7 +26326,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25834,7 +26334,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25893,7 +26393,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25901,7 +26401,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -25963,7 +26463,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -25971,7 +26471,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26029,7 +26529,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D7$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26037,7 +26537,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26114,7 +26614,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26122,7 +26622,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26177,7 +26677,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26185,7 +26685,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26242,7 +26742,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26250,7 +26750,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26304,7 +26804,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26312,7 +26812,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26368,7 +26868,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26376,7 +26876,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26430,7 +26930,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26438,7 +26938,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26512,7 +27012,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26520,7 +27020,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26577,7 +27077,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26585,7 +27085,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26646,7 +27146,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26654,7 +27154,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26713,7 +27213,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26721,7 +27221,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26783,7 +27283,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26791,7 +27291,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26849,7 +27349,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H2$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26857,7 +27357,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26934,7 +27434,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -26942,7 +27442,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -26999,7 +27499,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27007,7 +27507,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27068,7 +27568,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27076,7 +27576,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27202,7 +27702,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27210,7 +27710,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27268,7 +27768,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27276,7 +27776,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27353,7 +27853,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27361,7 +27861,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27418,7 +27918,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27426,7 +27926,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27487,7 +27987,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27495,7 +27995,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27554,7 +28054,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27562,7 +28062,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27624,7 +28124,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27632,7 +28132,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27690,7 +28190,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H4$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27698,7 +28198,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27775,7 +28275,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27783,7 +28283,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27838,7 +28338,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27846,7 +28346,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27903,7 +28403,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27911,7 +28411,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -27965,7 +28465,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -27973,7 +28473,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28029,7 +28529,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28037,7 +28537,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28091,7 +28591,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H5$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28099,7 +28599,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28173,7 +28673,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28181,7 +28681,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28236,7 +28736,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28244,7 +28744,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28301,7 +28801,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28309,7 +28809,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28363,7 +28863,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28371,7 +28871,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28427,7 +28927,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28435,7 +28935,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28489,7 +28989,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28497,7 +28997,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28571,7 +29071,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$apex%20of%20heart",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28579,7 +29079,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28634,7 +29134,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$left%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28642,7 +29142,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28699,7 +29199,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$heart%20left%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28707,7 +29207,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28761,7 +29261,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28769,7 +29269,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 5/7/2022, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28825,7 +29325,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28833,7 +29333,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28887,7 +29387,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H7$interventricular%20septum",
        "@type": "Dataset",
        "link": "https://doi.org/10.1038/s41586-020-2797-4",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1038/s41586-020-2797-4",
        "publication_title": "Cells of the adult human heart",
        "publication_lead_author": "Monika Litviňuková",
@@ -28895,7 +29395,7 @@
        "gene_count": "33145",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 10/15/2021, Michela Noseda, Broad Institute",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -28969,7 +29469,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP1$bladder%20organ",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/e5c63d94-593c-4338-a489-e1048599e751.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -28977,7 +29477,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0018707",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29031,7 +29531,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP1$endocrine%20pancreas",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/ff45e623-7f5f-46e3-b47d-56be0341f66b.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29039,7 +29539,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0001264",
        "label": "Registered 2/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29113,7 +29613,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP10$skin%20of%20abdomen",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0041b9c3-6a49-4bf7-8514-9bc7190067a7.cxg/",
-       "technology": "smartseq",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29121,14 +29621,14 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002097",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: smartseq, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       },
       {
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP10$skin%20of%20chest",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0041b9c3-6a49-4bf7-8514-9bc7190067a7.cxg/",
-       "technology": "smartseq",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29136,14 +29636,14 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002097",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: smartseq, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       },
       {
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP10$skin%20of%20body",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0041b9c3-6a49-4bf7-8514-9bc7190067a7.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29151,7 +29651,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002097",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29219,7 +29719,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP14$bladder%20organ",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/e5c63d94-593c-4338-a489-e1048599e751.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29227,7 +29727,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0018707",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29281,7 +29781,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP14$prostate%20gland",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/d77ec7d6-ef2e-49d6-9e79-05b7f8881484.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29289,7 +29789,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002367",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29352,7 +29852,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP14$skin%20of%20abdomen",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0041b9c3-6a49-4bf7-8514-9bc7190067a7.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29360,14 +29860,14 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002097",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       },
       {
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP14$skin%20of%20chest",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0041b9c3-6a49-4bf7-8514-9bc7190067a7.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29375,7 +29875,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002097",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29429,7 +29929,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP14$spleen",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/cee11228-9f0b-4e57-afe2-cfe15ee56312.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29437,7 +29937,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002106",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29492,7 +29992,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP14$thymus",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0ced5e76-6040-47ff-8a72-93847965afc0.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29500,7 +30000,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002370",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29571,7 +30071,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP2$ascending%20colon",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/7357cee7-9f7f-4ab0-8cec-90de8f047e38.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29579,7 +30079,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000059",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29635,7 +30135,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP2$sigmoid%20colon",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/7357cee7-9f7f-4ab0-8cec-90de8f047e38.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29643,7 +30143,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000059",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29701,7 +30201,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP2$duodenum",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29709,7 +30209,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002108",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29769,7 +30269,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP2$jejunum",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29777,7 +30277,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002108",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29834,7 +30334,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP2$spleen",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/cee11228-9f0b-4e57-afe2-cfe15ee56312.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29842,7 +30342,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002106",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29900,7 +30400,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP2$thymus",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0ced5e76-6040-47ff-8a72-93847965afc0.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29908,7 +30408,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002370",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -29979,7 +30479,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP21$spleen",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/cee11228-9f0b-4e57-afe2-cfe15ee56312.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -29987,7 +30487,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002106",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30059,7 +30559,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$ascending%20colon",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/7357cee7-9f7f-4ab0-8cec-90de8f047e38.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30067,7 +30567,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000059",
        "label": "Registered 7/28/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30126,7 +30626,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$sigmoid%20colon",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/7357cee7-9f7f-4ab0-8cec-90de8f047e38.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30134,7 +30634,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000059",
        "label": "Registered 7/28/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30192,7 +30692,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$duodenum",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30200,7 +30700,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002108",
        "label": "Registered 7/28/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30261,7 +30761,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$ileum",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30269,7 +30769,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002108",
        "label": "Registered 7/28/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30333,7 +30833,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$spleen",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/cee11228-9f0b-4e57-afe2-cfe15ee56312.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30341,7 +30841,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002106",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30396,7 +30896,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$thymus",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0ced5e76-6040-47ff-8a72-93847965afc0.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30404,7 +30904,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002370",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30474,7 +30974,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP26$ascending%20colon",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/7357cee7-9f7f-4ab0-8cec-90de8f047e38.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30482,7 +30982,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000059",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30538,7 +31038,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP26$sigmoid%20colon",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/7357cee7-9f7f-4ab0-8cec-90de8f047e38.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30546,7 +31046,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000059",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30604,7 +31104,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP26$duodenum",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30612,7 +31112,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002108",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30672,7 +31172,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP26$ileum",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30680,7 +31180,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002108",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30754,7 +31254,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$right%20cardiac%20atrium",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/e6a11140-2545-46bc-929e-da243eed2cae.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30762,7 +31262,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 1/26/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30817,7 +31317,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$heart%20right%20ventricle",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/e6a11140-2545-46bc-929e-da243eed2cae.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30825,7 +31325,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000948",
        "label": "Registered 1/26/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30881,7 +31381,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$ascending%20colon",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/7357cee7-9f7f-4ab0-8cec-90de8f047e38.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30889,7 +31389,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000059",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -30945,7 +31445,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$sigmoid%20colon",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/7357cee7-9f7f-4ab0-8cec-90de8f047e38.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -30953,7 +31453,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0000059",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31011,7 +31511,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$mammary%20gland",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/2ba40233-8576-4dec-a5f1-2adfa115e2dc.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31019,7 +31519,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0001911",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31077,7 +31577,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$left%20ovary",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/bb78adbb-1428-4468-bad0-63602bb974e9.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31085,7 +31585,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002119",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31140,7 +31640,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$right%20ovary",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/bb78adbb-1428-4468-bad0-63602bb974e9.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31148,7 +31648,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002118",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31203,7 +31703,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$ileum",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31211,7 +31711,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002108",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31271,7 +31771,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$spleen",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/cee11228-9f0b-4e57-afe2-cfe15ee56312.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31279,7 +31779,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002106",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31337,7 +31837,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$thymus",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/0ced5e76-6040-47ff-8a72-93847965afc0.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31345,7 +31845,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002370",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31415,7 +31915,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP28$left%20ovary",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/bb78adbb-1428-4468-bad0-63602bb974e9.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31423,7 +31923,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002119",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31478,7 +31978,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP28$right%20ovary",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/bb78adbb-1428-4468-bad0-63602bb974e9.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31486,7 +31986,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002118",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31555,7 +32055,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP30$left%20ovary",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/bb78adbb-1428-4468-bad0-63602bb974e9.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31563,7 +32063,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002119",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31618,7 +32118,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP30$right%20ovary",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/bb78adbb-1428-4468-bad0-63602bb974e9.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31626,7 +32126,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002118",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31695,7 +32195,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP4$mammary%20gland",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/2ba40233-8576-4dec-a5f1-2adfa115e2dc.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31703,7 +32203,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0001911",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31775,7 +32275,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP7$spleen",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/cee11228-9f0b-4e57-afe2-cfe15ee56312.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31783,7 +32283,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002106",
        "label": "Registered 7/27/2023, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31856,7 +32356,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP8$prostate%20gland",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/d77ec7d6-ef2e-49d6-9e79-05b7f8881484.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31864,7 +32364,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0002367",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -31941,7 +32441,7 @@
        "@id": "https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP9$exocrine%20pancreas",
        "@type": "Dataset",
        "link": "https://cellxgene.cziscience.com/e/ff45e623-7f5f-46e3-b47d-56be0341f66b.cxg/",
-       "technology": "10x",
+       "technology": "RNAseq",
        "publication": "https://doi.org/10.1126/science.abl4896",
        "publication_title": "Tabula Sapiens",
        "publication_lead_author": "undefined undefined",
@@ -31949,7 +32449,7 @@
        "gene_count": "61759",
        "organ_id": "http://purl.obolibrary.org/obo/UBERON_0001264",
        "label": "Registered 1/25/2025, Heidi Schlehlein, Tabula Sapiens",
-       "description": "Data/Assay Types: 10x, ",
+       "description": "Data/Assay Types: RNAseq, ",
        "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
@@ -32027,7 +32527,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01002",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32047,7 +32547,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01007",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32067,7 +32567,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01014",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32087,7 +32587,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01020",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32107,7 +32607,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01025",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32127,7 +32627,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01029",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32147,7 +32647,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01034",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32167,7 +32667,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01039",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32187,7 +32687,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01044",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32207,7 +32707,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01049",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32227,7 +32727,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01050",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32247,7 +32747,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01051",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32267,7 +32767,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01052",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32287,7 +32787,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01054",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32307,7 +32807,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01059",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32327,7 +32827,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01064",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32347,7 +32847,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01069",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32367,7 +32867,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01074",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32387,7 +32887,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01078",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32407,7 +32907,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01084",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32427,7 +32927,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01086",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32447,7 +32947,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01091",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32467,7 +32967,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01097",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32487,7 +32987,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01102",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32507,7 +33007,7 @@
          "@id": "https://doi.org/10.1016/j.cell.2022.12.028#CRC01106",
          "@type": "Dataset",
          "link": "https://doi.org/10.1016/j.cell.2022.12.028",
-         "technology": "t-CyCIF",
+         "technology": "MxIF",
          "publication": "https://doi.org/10.1016/j.cell.2022.12.028",
          "label": "Registered 7/3/2023, Peter Sorger, Harvard University",
          "description": "Multiplexed CyCIF and H&E imaging, combined with scRNA-seq, and GeoMx transcriptomics",
@@ -32572,87 +33072,408 @@
    "description": "Entered 7/3/2023, Peter Sorger, Harvard University"
   },
   {
-   "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/hubmap-lung-pryhuber-2023/rui_locations.jsonld#Donor1",
+   "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/htan-skin-sorger-2024#Donor1",
    "@type": "Donor",
    "samples": [
     {
-     "@id": "http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b",
+     "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/htan-skin-sorger-2024#Donor1_TissueBlock1",
      "@type": "Sample",
-     "datasets": [],
-     "sections": [
+     "datasets": [
       {
-       "@id": "http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b#TissueSection1",
-       "@type": "Sample",
-       "datasets": [
-        {
-         "@id": "https://entity.api.hubmapconsortium.org/entities/0f1ddcb41a484adbda759c0c79097a02#D265-LLL-7A7-12",
-         "@type": "Dataset",
-         "link": "https://portal.hubmapconsortium.org/browse/dataset/8ac6e3bc3fb44efe981818290abd7693",
-         "label": "Registered 2/11/2024, Gloria S Pryhuber, University of California San Diego",
-         "description": "Data/Assay Types: undefined, ",
-         "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-        }
-       ],
-       "sample_type": "Tissue Section",
-       "link": "https://portal.hubmapconsortium.org/browse/sample/0f1ddcb41a484adbda759c0c79097a02",
-       "label": "Registered 2/11/2024, Gloria S Pryhuber, University of California San Diego",
-       "description": "10 x 10 x 5 millimeter, 5 millimeter"
+       "@id": "https://doi.org/10.1101/2023.11.10.566670#phenotypes_melanoma_in_situ",
+       "@type": "Dataset",
+       "link": "https://www.cycif.org/data/mel-3d-mis-2/#s=0#w=0#g=0#m=-1#a=-100_-100#v=1_0.9902_0.5#o=-100_-100_1_1#p=Q#r=100",
+       "technology": "MxIF",
+       "label": "Registered 6/24/2024, Peter Sorger, Harvard University",
+       "description": "Data/Assay Types: MxIF, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://doi.org/10.1101/2023.11.10.566670#phenotypes_invasive_margin",
+       "@type": "Dataset",
+       "link": "https://www.cycif.org/data/mel-3d-mis-2/#s=0#w=0#g=0#m=-1#a=-100_-100#v=1_0.9902_0.5#o=-100_-100_1_1#p=Q#r=100",
+       "technology": "MxIF",
+       "label": "Registered 6/24/2024, Peter Sorger, Harvard University",
+       "description": "Data/Assay Types: MxIF, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
       }
      ],
+     "sections": [],
      "sample_type": "Tissue Block",
-     "link": "https://portal.hubmapconsortium.org/browse/sample/539b8dd38698d191ec284f9f061e7441",
-     "label": "Registered 2/11/2024, Gloria S Pryhuber, University of California San Diego",
-     "description": "Donor D265 left lung lower lobe",
+     "link": "https://www.biorxiv.org/content/10.1101/2023.11.10.566670v3",
+     "label": "Registered 6/24/2024, Peter Sorger, Harvard University",
+     "description": "59 x 57 x 8 millimeter, 8 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b",
+      "@id": "http://purl.org/ccf/1.5/80e52433-fc23-459c-be91-c02b4a466135",
       "@type": "SpatialEntity",
-      "creator": "Gloria S Pryhuber",
-      "creator_first_name": "Gloria",
-      "creator_last_name": "Pryhuber",
-      "creation_date": "2024-03-12",
+      "creator": "Peter Sorger",
+      "creator_first_name": "Peter",
+      "creator_last_name": "Sorger",
+      "creation_date": "2024-07-25",
       "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0002048",
-       "http://purl.obolibrary.org/obo/UBERON_0002168",
-       "http://purl.obolibrary.org/obo/UBERON_0008953",
-       "http://purl.org/sig/ont/fma/fma7508"
+       "http://purl.obolibrary.org/obo/UBERON_0002097"
       ],
-      "x_dimension": 10,
-      "y_dimension": 10,
-      "z_dimension": 5,
+      "x_dimension": 59,
+      "y_dimension": 57,
+      "z_dimension": 8,
       "dimension_units": "millimeter",
       "placement": {
        "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-       "@id": "http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b_placement",
+       "@id": "http://purl.org/ccf/1.5/80e52433-fc23-459c-be91-c02b4a466135_placement",
        "@type": "SpatialPlacement",
-       "placement_date": "2024-03-12",
+       "placement_date": "2024-07-25",
        "x_scaling": 1,
        "y_scaling": 1,
        "z_scaling": 1,
        "scaling_units": "ratio",
-       "x_rotation": 0,
-       "y_rotation": 0,
-       "z_rotation": 0,
+       "x_rotation": -64,
+       "y_rotation": -61,
+       "z_rotation": -64,
        "rotation_order": "XYZ",
        "rotation_units": "degree",
-       "x_translation": 177.198,
-       "y_translation": 48.282,
-       "z_translation": 9.575,
+       "x_translation": 146.862,
+       "y_translation": 1087.182,
+       "z_translation": 152.95,
        "translation_units": "millimeter",
-       "target": "http://purl.org/ccf/latest/ccf.owl#VHMLungV1.1"
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHMSkinV1.1"
       }
      }
     }
    ],
-   "consortium_name": "HuBMAP",
-   "provider_name": "University of California San Diego",
-   "provider_uuid": "03b3d854-ed44-11e8-8bce-0e368f3075e8",
-   "age": "23",
+   "consortium_name": "HTAN",
+   "provider_name": "Harvard University",
+   "provider_uuid": "996292CC-4AF5-11EF-BB9C-7E6DEE00831D",
+   "age": "61.8",
    "sex": "Male",
-   "bmi": "23.1",
-   "link": "https://portal.hubmapconsortium.org/browse/donor/29a385d01f8316404952d101bc4f16c5",
-   "label": "Male, Age 23, BMI 23.1",
-   "description": "23.8 year old, White, Male, Brain Injury"
+   "link": "https://www.biorxiv.org/content/10.1101/2023.11.10.566670v3",
+   "label": "Male, Age 61.8",
+   "description": "Entered 6/24/2024, Peter Sorger, Harvard University"
+  },
+  {
+   "@id": "https://hubmapconsortium.github.io/hra-registrations/htan-colon-snyder-2024#Donor1",
+   "@type": "Donor",
+   "samples": [
+    {
+     "@id": "https://hubmapconsortium.github.io/hra-registrations/htan-colon-snyder-2024#Donor1_TissueBlock1",
+     "@type": "Sample",
+     "datasets": [
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_3",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_4",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_5",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_6",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_7",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_8",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_9",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_10",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_11",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_12",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_13",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_14",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_15",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_16",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_17",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_18",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_19",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_20",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_21",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_22",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_23",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_24",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_25",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_26",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_27",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_28",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_29",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_30",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      },
+      {
+       "@id": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_31",
+       "@type": "Dataset",
+       "link": "https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han",
+       "technology": "RNAseq",
+       "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+       "description": "Data/Assay Types: RNAseq, ",
+       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
+      }
+     ],
+     "sections": [],
+     "sample_type": "Tissue Block",
+     "link": "https://portal.hubmapconsortium.org/browse/donor/d3ad6409d2ad37ef7dbcc90ccc199f68",
+     "label": "Registered 0/15/2024, Thomas V Karathanos, Stanford University",
+     "description": "1 x 4 x 5 millimeter, 5 millimeter",
+     "rui_location": {
+      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+      "@id": "http://purl.org/ccf/1.5/73f8bc08-60e7-4450-99d8-b303cd4687d8",
+      "@type": "SpatialEntity",
+      "creator": "Thomas V Karathanos",
+      "creator_first_name": "Thomas",
+      "creator_last_name": "Karathanos",
+      "creator_orcid": "https://orcid.org/0000-0003-1754-3872",
+      "creation_date": "2024-01-16",
+      "ccf_annotations": [
+       "http://purl.obolibrary.org/obo/UBERON_0001158",
+       "http://purl.obolibrary.org/obo/UBERON_0001159"
+      ],
+      "x_dimension": 1,
+      "y_dimension": 4,
+      "z_dimension": 5,
+      "dimension_units": "millimeter",
+      "placement": {
+       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
+       "@id": "http://purl.org/ccf/1.5/73f8bc08-60e7-4450-99d8-b303cd4687d8_placement",
+       "@type": "SpatialPlacement",
+       "placement_date": "2024-01-16",
+       "x_scaling": 1,
+       "y_scaling": 1,
+       "z_scaling": 1,
+       "scaling_units": "ratio",
+       "x_rotation": 2,
+       "y_rotation": 175,
+       "z_rotation": 87,
+       "rotation_order": "XYZ",
+       "rotation_units": "degree",
+       "x_translation": 149.626,
+       "y_translation": 113.65,
+       "z_translation": 112.422,
+       "translation_units": "millimeter",
+       "target": "http://purl.org/ccf/latest/ccf.owl#VHMColon"
+      }
+     }
+    }
+   ],
+   "consortium_name": "HTAN",
+   "provider_name": "Stanford University",
+   "provider_uuid": "6FB6914E-2DB8-11EF-B58D-20E2A8B75C6B",
+   "age": "78",
+   "sex": "Male",
+   "bmi": "35.1",
+   "link": "https://portal.hubmapconsortium.org/browse/donor/d3ad6409d2ad37ef7dbcc90ccc199f68",
+   "label": "Male, Age 78, BMI 35.1",
+   "description": "Entered 0/15/2024, Thomas V Karathanos, Stanford University"
   },
   {
    "@id": "https://portal.hubmapconsortium.org/browse/donor/0ff5f50f37df84538fce22af13120fb1",
@@ -32679,11 +33500,10 @@
      "description": "3.37118931152619 x 11.69205486711824 x 21.01967865850429 millimeter, 21.01967865850429 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/a888a2fe-a59e-4150-9553-c74e2c224c8f",
+      "@id": "http://purl.org/ccf/1.5/88964725-2701-47cd-8d7c-0b0166622b10",
       "placement": {
-       "@id": "http://purl.org/ccf/1.5/a888a2fe-a59e-4150-9553-c74e2c224c8f_placement",
+       "@id": "http://purl.org/ccf/1.5/88964725-2701-47cd-8d7c-0b0166622b10_placement",
        "@type": "SpatialPlacement",
-       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A",
        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
        "rotation_order": "XYZ",
        "rotation_units": "degree",
@@ -32712,7 +33532,7 @@
       "z_dimension": 21.01967865850429,
       "creation_date": "2025-10-20",
       "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A"
+      "sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#13A"
      }
     },
     {
@@ -32736,11 +33556,10 @@
      "description": "7.728642767307439 x 9.800318481048793 x 31.90903272797852 millimeter, 31.90903272797852 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/4fbdae56-1fbd-4eaf-8996-add564f1a932",
+      "@id": "http://purl.org/ccf/1.5/9face619-3602-4872-9729-5df9a79147d7",
       "placement": {
-       "@id": "http://purl.org/ccf/1.5/4fbdae56-1fbd-4eaf-8996-add564f1a932_placement",
+       "@id": "http://purl.org/ccf/1.5/9face619-3602-4872-9729-5df9a79147d7_placement",
        "@type": "SpatialPlacement",
-       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
        "rotation_order": "XYZ",
        "rotation_units": "degree",
@@ -32770,7 +33589,7 @@
       "z_dimension": 31.90903272797852,
       "creation_date": "2025-10-20",
       "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A"
+      "sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A"
      }
     },
     {
@@ -32794,11 +33613,10 @@
      "description": "4.164702846310965 x 9.289576712064651 x 25.69912802878578 millimeter, 25.69912802878578 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/027bff13-9a01-4f57-9d4f-396dd7a878b0",
+      "@id": "http://purl.org/ccf/1.5/42c17eb2-fba3-462f-805a-a3a46563c6b4",
       "placement": {
-       "@id": "http://purl.org/ccf/1.5/027bff13-9a01-4f57-9d4f-396dd7a878b0_placement",
+       "@id": "http://purl.org/ccf/1.5/42c17eb2-fba3-462f-805a-a3a46563c6b4_placement",
        "@type": "SpatialPlacement",
-       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A",
        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
        "rotation_order": "XYZ",
        "rotation_units": "degree",
@@ -32828,7 +33646,7 @@
       "z_dimension": 25.69912802878578,
       "creation_date": "2025-10-20",
       "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A"
+      "sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#7A"
      }
     },
     {
@@ -32852,11 +33670,10 @@
      "description": "4.836786199339888 x 8.483549590587309 x 21.3520822892264 millimeter, 21.3520822892264 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/339b0086-c398-40d2-b596-0a7d04bbddee",
+      "@id": "http://purl.org/ccf/1.5/75199c84-359b-4dc5-9ec9-a2397d2bd134",
       "placement": {
-       "@id": "http://purl.org/ccf/1.5/339b0086-c398-40d2-b596-0a7d04bbddee_placement",
+       "@id": "http://purl.org/ccf/1.5/75199c84-359b-4dc5-9ec9-a2397d2bd134_placement",
        "@type": "SpatialPlacement",
-       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A",
        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
        "rotation_order": "XYZ",
        "rotation_units": "degree",
@@ -32886,7 +33703,7 @@
       "z_dimension": 21.3520822892264,
       "creation_date": "2025-10-20",
       "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A"
+      "sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#9A"
      }
     }
    ],
@@ -32925,11 +33742,10 @@
      "description": "3.94784793258901 x 10.49228585336551 x 19.9210307922637 millimeter, 19.9210307922637 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/89bf236b-72d6-4009-b128-8922ec272575",
+      "@id": "http://purl.org/ccf/1.5/b68b8313-54cf-4124-b177-b25e9e2d4e04",
       "placement": {
-       "@id": "http://purl.org/ccf/1.5/89bf236b-72d6-4009-b128-8922ec272575_placement",
+       "@id": "http://purl.org/ccf/1.5/b68b8313-54cf-4124-b177-b25e9e2d4e04_placement",
        "@type": "SpatialPlacement",
-       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A",
        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
        "rotation_order": "XYZ",
        "rotation_units": "degree",
@@ -32958,7 +33774,7 @@
       "z_dimension": 19.9210307922637,
       "creation_date": "2025-10-20",
       "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A"
+      "sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#12A"
      }
     },
     {
@@ -32982,11 +33798,10 @@
      "description": "10.92388709822679 x 18.15441113485625 x 42.55595258480508 millimeter, 42.55595258480508 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/3c14ce2f-2985-40a2-8518-636c415c85fb",
+      "@id": "http://purl.org/ccf/1.5/46ae8d3b-ca1f-42a6-9620-51d147f62480",
       "placement": {
-       "@id": "http://purl.org/ccf/1.5/3c14ce2f-2985-40a2-8518-636c415c85fb_placement",
+       "@id": "http://purl.org/ccf/1.5/46ae8d3b-ca1f-42a6-9620-51d147f62480_placement",
        "@type": "SpatialPlacement",
-       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22",
        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
        "rotation_order": "XYZ",
        "rotation_units": "degree",
@@ -33015,7 +33830,7 @@
       "z_dimension": 42.55595258480508,
       "creation_date": "2025-10-20",
       "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22"
+      "sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#22"
      }
     },
     {
@@ -33039,11 +33854,10 @@
      "description": "7.728642767307439 x 9.800318481048793 x 31.90903272797852 millimeter, 31.90903272797852 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/256313ba-cc1d-4ed4-853d-7c598e347ca7",
+      "@id": "http://purl.org/ccf/1.5/d79a5195-70a2-42c1-9695-38ddaba35d6a",
       "placement": {
-       "@id": "http://purl.org/ccf/1.5/256313ba-cc1d-4ed4-853d-7c598e347ca7_placement",
+       "@id": "http://purl.org/ccf/1.5/d79a5195-70a2-42c1-9695-38ddaba35d6a_placement",
        "@type": "SpatialPlacement",
-       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A",
        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
        "rotation_order": "XYZ",
        "rotation_units": "degree",
@@ -33073,7 +33887,7 @@
       "z_dimension": 31.90903272797852,
       "creation_date": "2025-10-20",
       "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A"
+      "sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#3A"
      }
     },
     {
@@ -33097,11 +33911,10 @@
      "description": "15.99480499890874 x 25.84083420042646 x 38.59581891053309 millimeter, 38.59581891053309 millimeter",
      "rui_location": {
       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/6d79d374-01ea-46e3-99c6-a3e9a07504e2",
+      "@id": "http://purl.org/ccf/1.5/a8183024-2ea2-4912-8c07-3cdcc46445fc",
       "placement": {
-       "@id": "http://purl.org/ccf/1.5/6d79d374-01ea-46e3-99c6-a3e9a07504e2_placement",
+       "@id": "http://purl.org/ccf/1.5/a8183024-2ea2-4912-8c07-3cdcc46445fc_placement",
        "@type": "SpatialPlacement",
-       "source": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6",
        "target": "https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary",
        "rotation_order": "XYZ",
        "rotation_units": "degree",
@@ -33132,7 +33945,7 @@
       "z_dimension": 38.59581891053309,
       "creation_date": "2025-10-20",
       "creator": "Antara Bhavsar",
-      "http://www.w3.org/2002/07/owl#sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6"
+      "sameAs": "https://purl.humanatlas.io/millitome/pancreas-female-uf/v1.0#6"
      }
     }
    ],
@@ -33384,376 +34197,6 @@
    "link": "https://data-browser.lungmap.net/explore/projects/20037472-ea1d-4ddb-9cd3-56a11a6f0f76",
    "label": "Female, Age 33",
    "description": "Entered 3/24/2023, Allen Wang, NHLBI/LungMap"
-  },
-  {
-   "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor1",
-   "@type": "Donor",
-   "samples": [
-    {
-     "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor1_TissueBlock1",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://data.sennetconsortium.org/dataset?uuid=4f0d1913fda94d02e82d928951dbcdab",
-       "@type": "Dataset",
-       "link": "https://data.sennetconsortium.org/dataset?uuid=4f0d1913fda94d02e82d928951dbcdab",
-       "technology": "PhenoCycler",
-       "label": "LN22921",
-       "description": "Data/Assay Types: PhenoCycler, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "http://example.com/user/link",
-     "label": "Registered 5/10/2024, Yao Lu, Yale University",
-     "description": "15 x 7 x 6.5 millimeter, 6.5 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/d498378e-8682-45f3-9bfd-11b48023125c",
-      "@type": "SpatialEntity",
-      "creator": "Yao Lu",
-      "creator_first_name": "Yao",
-      "creator_last_name": "Lu",
-      "creation_date": "2024-06-11",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0002194",
-       "http://purl.obolibrary.org/obo/UBERON_0010748",
-       "http://purl.obolibrary.org/obo/UBERON_0002007",
-       "http://purl.obolibrary.org/obo/UBERON_0010417"
-      ],
-      "x_dimension": 15,
-      "y_dimension": 7,
-      "z_dimension": 6.5,
-      "dimension_units": "millimeter",
-      "placement": {
-       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-       "@id": "http://purl.org/ccf/1.5/d498378e-8682-45f3-9bfd-11b48023125c_placement",
-       "@type": "SpatialPlacement",
-       "placement_date": "2024-06-11",
-       "x_scaling": 1,
-       "y_scaling": 1,
-       "z_scaling": 1,
-       "scaling_units": "ratio",
-       "x_rotation": 0,
-       "y_rotation": 0,
-       "z_rotation": 0,
-       "rotation_order": "XYZ",
-       "rotation_units": "degree",
-       "x_translation": 10.312,
-       "y_translation": 6.113,
-       "z_translation": 6.483,
-       "translation_units": "millimeter",
-       "target": "http://purl.org/ccf/latest/ccf.owl#VHFLymphNode"
-      }
-     }
-    }
-   ],
-   "consortium_name": "SenNet",
-   "provider_name": "Yale University",
-   "provider_uuid": "6FB69112-2DB8-11EF-B58D-20E2A8B75C6B",
-   "age": "55",
-   "sex": "Female",
-   "bmi": "31.8",
-   "link": "http://example.com/user/link",
-   "label": "Female, Age 55, BMI 31.8",
-   "description": "Entered 5/10/2024, Yao Lu, Yale University"
-  },
-  {
-   "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor2",
-   "@type": "Donor",
-   "samples": [
-    {
-     "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor2_TissueBlock1",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://data.sennetconsortium.org/dataset?uuid=bc2380a1970abded1129ed77507be349",
-       "@type": "Dataset",
-       "link": "https://data.sennetconsortium.org/dataset?uuid=bc2380a1970abded1129ed77507be349",
-       "technology": "PhenoCycler",
-       "label": "LN24336",
-       "description": "Data/Assay Types: PhenoCycler, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "http://example.com/user/link",
-     "label": "Registered 5/10/2024, Yao Lu, Yale University",
-     "description": "10 x 15 x 6.5 millimeter, 6.5 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/513a5005-f9e5-4a00-a08a-15b5d47c5ea0",
-      "@type": "SpatialEntity",
-      "creator": "Yao Lu",
-      "creator_first_name": "Yao",
-      "creator_last_name": "Lu",
-      "creation_date": "2024-06-11",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0002194",
-       "http://purl.obolibrary.org/obo/UBERON_0010748",
-       "http://purl.obolibrary.org/obo/UBERON_0002007",
-       "http://purl.obolibrary.org/obo/UBERON_0010417"
-      ],
-      "x_dimension": 10,
-      "y_dimension": 15,
-      "z_dimension": 6.5,
-      "dimension_units": "millimeter",
-      "placement": {
-       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-       "@id": "http://purl.org/ccf/1.5/513a5005-f9e5-4a00-a08a-15b5d47c5ea0_placement",
-       "@type": "SpatialPlacement",
-       "placement_date": "2024-06-11",
-       "x_scaling": 1,
-       "y_scaling": 1,
-       "z_scaling": 1,
-       "scaling_units": "ratio",
-       "x_rotation": -82,
-       "y_rotation": 0,
-       "z_rotation": -91,
-       "rotation_order": "XYZ",
-       "rotation_units": "degree",
-       "x_translation": 9.332,
-       "y_translation": 5.813,
-       "z_translation": 6.483,
-       "translation_units": "millimeter",
-       "target": "http://purl.org/ccf/latest/ccf.owl#VHMLymphNode"
-      }
-     }
-    }
-   ],
-   "consortium_name": "SenNet",
-   "provider_name": "Yale University",
-   "provider_uuid": "6FB69112-2DB8-11EF-B58D-20E2A8B75C6B",
-   "age": "65",
-   "sex": "Male",
-   "bmi": "24.6",
-   "link": "http://example.com/user/link",
-   "label": "Male, Age 65, BMI 24.6",
-   "description": "Entered 5/10/2024, Yao Lu, Yale University"
-  },
-  {
-   "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor3",
-   "@type": "Donor",
-   "samples": [
-    {
-     "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor3_TissueBlock1",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://data.sennetconsortium.org/dataset?uuid=cc703095438a75d64e4a3fe5fbcead9c",
-       "@type": "Dataset",
-       "link": "https://data.sennetconsortium.org/dataset?uuid=cc703095438a75d64e4a3fe5fbcead9c",
-       "technology": "PhenoCycler",
-       "label": "LN27766",
-       "description": "Data/Assay Types: PhenoCycler, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "http://example.com/user/link",
-     "label": "Registered 5/10/2024, Yao Lu, Yale University",
-     "description": "10 x 15 x 6.5 millimeter, 6.5 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/6ed1eb65-077b-4c7d-925a-14fb1d6b66ae",
-      "@type": "SpatialEntity",
-      "creator": "Yao Lu",
-      "creator_first_name": "Yao",
-      "creator_last_name": "Lu",
-      "creation_date": "2024-06-11",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0002194",
-       "http://purl.obolibrary.org/obo/UBERON_0010748",
-       "http://purl.obolibrary.org/obo/UBERON_0002007",
-       "http://purl.obolibrary.org/obo/UBERON_0010417"
-      ],
-      "x_dimension": 10,
-      "y_dimension": 15,
-      "z_dimension": 6.5,
-      "dimension_units": "millimeter",
-      "placement": {
-       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-       "@id": "http://purl.org/ccf/1.5/6ed1eb65-077b-4c7d-925a-14fb1d6b66ae_placement",
-       "@type": "SpatialPlacement",
-       "placement_date": "2024-06-11",
-       "x_scaling": 1,
-       "y_scaling": 1,
-       "z_scaling": 1,
-       "scaling_units": "ratio",
-       "x_rotation": -92,
-       "y_rotation": 2,
-       "z_rotation": 89,
-       "rotation_order": "XYZ",
-       "rotation_units": "degree",
-       "x_translation": 8.986,
-       "y_translation": 5.899,
-       "z_translation": 6.483,
-       "translation_units": "millimeter",
-       "target": "http://purl.org/ccf/latest/ccf.owl#VHMLymphNode"
-      }
-     }
-    }
-   ],
-   "consortium_name": "SenNet",
-   "provider_name": "Yale University",
-   "provider_uuid": "6FB69112-2DB8-11EF-B58D-20E2A8B75C6B",
-   "age": "50",
-   "sex": "Male",
-   "bmi": "22.4",
-   "link": "http://example.com/user/link",
-   "label": "Male, Age 50, BMI 22.4",
-   "description": "Entered 5/10/2024, Yao Lu, Yale University"
-  },
-  {
-   "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor4",
-   "@type": "Donor",
-   "samples": [
-    {
-     "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor4_TissueBlock1",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://data.sennetconsortium.org/dataset?uuid=231a3d0cc7fb7506194109b68caa0b6a",
-       "@type": "Dataset",
-       "link": "https://data.sennetconsortium.org/dataset?uuid=231a3d0cc7fb7506194109b68caa0b6a",
-       "technology": "PhenoCycler",
-       "label": "LN00560",
-       "description": "Data/Assay Types: PhenoCycler, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "http://example.com/user/link",
-     "label": "Registered 5/10/2024, Yao Lu, Yale University",
-     "description": "5 x 6.5 x 6.5 millimeter, 6.5 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/e30fdc54-9fd4-4b57-ad9f-1c121c9c9a1c",
-      "@type": "SpatialEntity",
-      "creator": "Yao Lu",
-      "creator_first_name": "Yao",
-      "creator_last_name": "Lu",
-      "creation_date": "2024-06-11",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0002194",
-       "http://purl.obolibrary.org/obo/UBERON_0010748",
-       "http://purl.obolibrary.org/obo/UBERON_0002007",
-       "http://purl.obolibrary.org/obo/UBERON_0010417"
-      ],
-      "x_dimension": 5,
-      "y_dimension": 6.5,
-      "z_dimension": 6.5,
-      "dimension_units": "millimeter",
-      "placement": {
-       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-       "@id": "http://purl.org/ccf/1.5/e30fdc54-9fd4-4b57-ad9f-1c121c9c9a1c_placement",
-       "@type": "SpatialPlacement",
-       "placement_date": "2024-06-11",
-       "x_scaling": 1,
-       "y_scaling": 1,
-       "z_scaling": 1,
-       "scaling_units": "ratio",
-       "x_rotation": 0,
-       "y_rotation": 0,
-       "z_rotation": 0,
-       "rotation_order": "XYZ",
-       "rotation_units": "degree",
-       "x_translation": 9.073,
-       "y_translation": 5.726,
-       "z_translation": 6.483,
-       "translation_units": "millimeter",
-       "target": "http://purl.org/ccf/latest/ccf.owl#VHFLymphNode"
-      }
-     }
-    }
-   ],
-   "consortium_name": "SenNet",
-   "provider_name": "Yale University",
-   "provider_uuid": "6FB69112-2DB8-11EF-B58D-20E2A8B75C6B",
-   "age": "25",
-   "sex": "Female",
-   "bmi": "21",
-   "link": "http://example.com/user/link",
-   "label": "Female, Age 25, BMI 21",
-   "description": "Entered 5/10/2024, Yao Lu, Yale University"
-  },
-  {
-   "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor5",
-   "@type": "Donor",
-   "samples": [
-    {
-     "@id": "https://hubmapconsortium.github.io/hra-registrations/staging/sennet-lymph-node-fan-2023#Donor5_TissueBlock1",
-     "@type": "Sample",
-     "datasets": [
-      {
-       "@id": "https://data.sennetconsortium.org/dataset?uuid=be4874c329c8dfd14b91c682e613daed",
-       "@type": "Dataset",
-       "link": "https://data.sennetconsortium.org/dataset?uuid=be4874c329c8dfd14b91c682e613daed/",
-       "technology": "PhenoCycler",
-       "label": "LN00837",
-       "description": "Data/Assay Types: PhenoCycler, ",
-       "thumbnail": "https://cdn.humanatlas.io/ui/ccf-eui/assets/icons/ico-unknown.svg"
-      }
-     ],
-     "sections": [],
-     "sample_type": "Tissue Block",
-     "link": "http://example.com/user/link",
-     "label": "Registered 5/10/2024, Yao Lu, Yale University",
-     "description": "14 x 11 x 6.5 millimeter, 6.5 millimeter",
-     "rui_location": {
-      "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-      "@id": "http://purl.org/ccf/1.5/f5f662ff-2ba4-4442-b7ae-0f48fcadb79e",
-      "@type": "SpatialEntity",
-      "creator": "Yao Lu",
-      "creator_first_name": "Yao",
-      "creator_last_name": "Lu",
-      "creation_date": "2024-06-11",
-      "ccf_annotations": [
-       "http://purl.obolibrary.org/obo/UBERON_0002194",
-       "http://purl.obolibrary.org/obo/UBERON_0010748",
-       "http://purl.obolibrary.org/obo/UBERON_0002007",
-       "http://purl.obolibrary.org/obo/UBERON_0010417"
-      ],
-      "x_dimension": 14,
-      "y_dimension": 11,
-      "z_dimension": 6.5,
-      "dimension_units": "millimeter",
-      "placement": {
-       "@context": "https://hubmapconsortium.github.io/ccf-ontology/ccf-context.jsonld",
-       "@id": "http://purl.org/ccf/1.5/f5f662ff-2ba4-4442-b7ae-0f48fcadb79e_placement",
-       "@type": "SpatialPlacement",
-       "placement_date": "2024-06-11",
-       "x_scaling": 1,
-       "y_scaling": 1,
-       "z_scaling": 1,
-       "scaling_units": "ratio",
-       "x_rotation": 0,
-       "y_rotation": 0,
-       "z_rotation": 0,
-       "rotation_order": "XYZ",
-       "rotation_units": "degree",
-       "x_translation": 9.07,
-       "y_translation": 6.18,
-       "z_translation": 6.483,
-       "translation_units": "millimeter",
-       "target": "http://purl.org/ccf/latest/ccf.owl#VHMLymphNode"
-      }
-     }
-    }
-   ],
-   "consortium_name": "SenNet",
-   "provider_name": "Yale University",
-   "provider_uuid": "6FB69112-2DB8-11EF-B58D-20E2A8B75C6B",
-   "age": "86",
-   "sex": "Male",
-   "bmi": "25.9",
-   "link": "http://example.com/user/link",
-   "label": "Male, Age 86, BMI 25.9",
-   "description": "Entered 5/10/2024, Yao Lu, Yale University"
   },
   {
    "@id": "https://doi.org/10.1126/science.abl4290#GTEX-15EOM",

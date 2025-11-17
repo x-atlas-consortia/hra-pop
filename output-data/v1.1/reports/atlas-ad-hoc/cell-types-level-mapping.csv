@@ -37,7 +37,7 @@ erythrocyte,http://purl.obolibrary.org/obo/CL_0000232,http://purl.obolibrary.org
 platelet,http://purl.obolibrary.org/obo/CL_0000233,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
 macrophage,http://purl.obolibrary.org/obo/CL_0000235,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
 B cell,http://purl.obolibrary.org/obo/CL_0000236,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
-Merkel cell,http://purl.obolibrary.org/obo/CL_0000242,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+Merkel cell,http://purl.obolibrary.org/obo/CL_0000242,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 keratinocyte,http://purl.obolibrary.org/obo/CL_0000312,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 serous secreting cell,http://purl.obolibrary.org/obo/CL_0000313,http://purl.obolibrary.org/obo/CL_0000000,no mapped parent cell,http://purl.obolibrary.org/obo/CL_0000000,no mapped parent cell
 pulmonary alveolar epithelial cell,http://purl.obolibrary.org/obo/CL_0000322,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -170,6 +170,7 @@ CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,
 CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 pancreatic stellate cell,http://purl.obolibrary.org/obo/CL_0002410,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 epidermal Langerhans cell,http://purl.obolibrary.org/obo/CL_0002457,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+CD11b-positive dendritic cell,http://purl.obolibrary.org/obo/CL_0002465,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 double negative thymocyte,http://purl.obolibrary.org/obo/CL_0002489,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
 vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 Schwann cell,http://purl.obolibrary.org/obo/CL_0002573,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell

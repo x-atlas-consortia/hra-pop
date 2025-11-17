@@ -1,5 +1,5 @@
 import { createWriteStream } from 'fs';
-import { getAllCellSummarySimilarities } from './utils/parallel-cell-summary-similarity.js';
+import { getAllCellSummarySimilarities } from './utils/sequential-cell-summary-similarity.js';
 import { readJsonLd } from './utils/json.js';
 
 const CELL_SUMMARIES = process.argv.slice(2, -1);

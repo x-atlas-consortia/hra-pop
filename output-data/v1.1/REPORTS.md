@@ -277,7 +277,7 @@ ORDER BY ?dataset
 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D122$lung | http://purl.org/ccf/1.5/da60f474-614a-4e0a-adbe-521ba44c7bf0 | Lateral segmental bronchus | http://purl.org/sig/ont/fma/fma7402 | http://purl.obolibrary.org/obo/UBERON_0001004 | respiratory system | http://purl.org/ccf/latest/ccf.owl#VHMLung | http://purl.org/sig/ont/fma/fma7402 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D175$lung | http://purl.org/ccf/1.5/da60f474-614a-4e0a-adbe-521ba44c7bf0 | Cartilage of segmental bronchus | http://purl.org/sig/ont/fma/fma62662 | http://purl.obolibrary.org/obo/UBERON_0001004 | respiratory system | http://purl.org/ccf/latest/ccf.owl#VHMLung | http://purl.org/sig/ont/fma/fma62662 |
 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D175$lung | http://purl.org/ccf/1.5/da60f474-614a-4e0a-adbe-521ba44c7bf0 | Lateral segmental bronchus | http://purl.org/sig/ont/fma/fma7402 | http://purl.obolibrary.org/obo/UBERON_0001004 | respiratory system | http://purl.org/ccf/latest/ccf.owl#VHMLung | http://purl.org/sig/ont/fma/fma7402 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | http://purl.org/ccf/1.5/6acd66b8-2659-4626-bef9-a80f135489ad | Lateral segmental bronchus | http://purl.org/sig/ont/fma/fma7402 | http://purl.obolibrary.org/obo/UBERON_0001004 | respiratory system | http://purl.org/ccf/latest/ccf.owl#VHFLungV1.1 | http://purl.org/sig/ont/fma/fma7402 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | http://purl.org/ccf/1.5/6acd66b8-2659-4626-bef9-a80f135489ad | Cartilage of segmental bronchus | http://purl.org/sig/ont/fma/fma62662 | http://purl.obolibrary.org/obo/UBERON_0001004 | respiratory system | http://purl.org/ccf/latest/ccf.owl#VHFLungV1.1 | http://purl.org/sig/ont/fma/fma62662 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -359,11 +359,11 @@ ORDER BY ?refOrgan
 
 | sex | organId | organ_label | refOrgan | refOrganAs | dataset | tool | modality | as_label |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | celltypist | sc_transcriptomics | descending colon |
-| Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | popv | sc_transcriptomics | descending colon |
-| Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | pan-human-azimuth | sc_transcriptomics | descending colon |
 | Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/277152f17b5a2f308820ab4d85c5a426 | celltypist | sc_transcriptomics | descending colon |
 | Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/277152f17b5a2f308820ab4d85c5a426 | popv | sc_transcriptomics | descending colon |
+| Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/277152f17b5a2f308820ab4d85c5a426 | pan-human-azimuth | sc_transcriptomics | descending colon |
+| Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/3480cd404d4bacd7bb8d21be8de12c6c | sc_proteomics | sc_proteomics | descending colon |
+| Female | http://purl.obolibrary.org/obo/UBERON_0000059 | large intestine | http://purl.org/ccf/latest/ccf.owl#VHFColon | http://purl.obolibrary.org/obo/UBERON_0001158 | https://entity.api.hubmapconsortium.org/entities/a5729f859fc944c76f77fc74a1710e3b | celltypist | sc_transcriptomics | descending colon |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -504,7 +504,7 @@ WHERE {
 
 | atlas_sc_proteomics_dataset_count | atlas_sc_proteomics_cell_count |
 | :--- | :--- |
-| 117 | 35294259 |
+| 148 | 37988729 |
 
 
 ### <a id="atlas-sc-transcriptomics-cell-counts"></a>Cell Counts for Atlas Transcriptomics Datasets (atlas-sc-transcriptomics-cell-counts)
@@ -1047,7 +1047,7 @@ ORDER BY ?consortium ?sex
 | Male | GTEx | 8 | 70113 | sc_transcriptomics |
 | Female | HCA | 69 | 411127 | sc_transcriptomics |
 | Male | HCA | 59 | 362641 | sc_transcriptomics |
-| Female | HuBMAP | 30 | 10726884 | sc_proteomics |
+| Male | HTAN | 31 | 2694470 | sc_proteomics |
 | ... | ... | ... | ... | ... |
 
 
@@ -1085,10 +1085,10 @@ GROUP BY ?sex ?modality
 
 | sex | dataset_ct | modality |
 | :--- | :--- | :--- |
-| Male | 318 | sc_transcriptomics |
 | Female | 247 | sc_transcriptomics |
+| Male | 116 | sc_proteomics |
 | Female | 32 | sc_proteomics |
-| Male | 85 | sc_proteomics |
+| Male | 318 | sc_transcriptomics |
 
 
 ### <a id="counts-for-heart-as"></a>Kidney AS Cell Distributions (counts-for-heart-as)
@@ -1551,11 +1551,11 @@ ORDER BY ?order
 | label | count |
 | :--- | :--- |
 | HuBMAP datasets | 405 |
-| SenNet datasets | 93 |
-| tissue donors | 172 |
+| SenNet datasets | 98 |
+| tissue donors | 173 |
 | organs | 22 |
 | anatomical structures | 98 |
-| cells | 53824639 |
+| cells | 56519109 |
 
 
 ### <a id="datasets-ct-bm-data"></a>Atlas Datasets and their cell types and biomarkers (datasets-ct-bm-data)
@@ -1653,11 +1653,11 @@ WHERE {
 
 | source | dataset | organ | age | sex | bmi | tool | cell_type | cell_type_label | cell_type_count | cell_type_percentage | biomarker | mean_expression_value |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| SenNet | https://entity.api.sennetconsortium.org/entities/27b00816f9e74372325b59a59e85479f | lung | 73 | Male | 46.972 | celltypist | CL:4033042 | Alveolar Mph MT-positive | 18 | 0.001636363636363636 | FMNL2 | 3.26777982711792 |
-| SenNet | https://entity.api.sennetconsortium.org/entities/27b00816f9e74372325b59a59e85479f | lung | 73 | Male | 46.972 | celltypist | CL:4033042 | Alveolar Mph MT-positive | 18 | 0.001636363636363636 | SNX9 | 1.770202040672302 |
-| SenNet | https://entity.api.sennetconsortium.org/entities/27b00816f9e74372325b59a59e85479f | lung | 73 | Male | 46.972 | celltypist | CL:4033042 | Alveolar Mph MT-positive | 18 | 0.001636363636363636 | RBM47 | 3.291930437088013 |
-| SenNet | https://entity.api.sennetconsortium.org/entities/27b00816f9e74372325b59a59e85479f | lung | 73 | Male | 46.972 | celltypist | CL:4033042 | Alveolar Mph MT-positive | 18 | 0.001636363636363636 | CORO1C | 2.178615570068359 |
-| SenNet | https://entity.api.sennetconsortium.org/entities/27b00816f9e74372325b59a59e85479f | lung | 73 | Male | 46.972 | celltypist | CL:4033042 | Alveolar Mph MT-positive | 18 | 0.001636363636363636 | KYNU | 2.036460161209106 |
+| SenNet | https://entity.api.sennetconsortium.org/entities/e7a600225b568feba7418cd2c9c125fa | lung | 36 | Male | 43.253 | celltypist | CL:0000492 | CD4 T cells | 741 | 0.06785714285714285 | ENSG00000280441.3 | 5.58988094329834 |
+| SenNet | https://entity.api.sennetconsortium.org/entities/e7a600225b568feba7418cd2c9c125fa | lung | 36 | Male | 43.253 | celltypist | CL:0000492 | CD4 T cells | 741 | 0.06785714285714285 | ENSG00000278996.1 | 4.089105606079102 |
+| SenNet | https://entity.api.sennetconsortium.org/entities/e7a600225b568feba7418cd2c9c125fa | lung | 36 | Male | 43.253 | celltypist | CL:0000492 | CD4 T cells | 741 | 0.06785714285714285 | MT-CO1 | 0.7950031757354736 |
+| SenNet | https://entity.api.sennetconsortium.org/entities/e7a600225b568feba7418cd2c9c125fa | lung | 36 | Male | 43.253 | celltypist | CL:0000492 | CD4 T cells | 741 | 0.06785714285714285 | MT-CO2 | 0.913038969039917 |
+| SenNet | https://entity.api.sennetconsortium.org/entities/e7a600225b568feba7418cd2c9c125fa | lung | 36 | Male | 43.253 | celltypist | CL:0000492 | CD4 T cells | 741 | 0.06785714285714285 | MT-ATP6 | 0.7717231512069702 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -1770,11 +1770,11 @@ WHERE {
 
 | source | dataset | organ | as | as_iri | age | sex | bmi | tool | cell_type | cell_type_label | cell_type_count | cell_type_percentage | biomarker | mean_expression_value |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| HCA | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium | heart | right cardiac atrium | http://purl.obolibrary.org/obo/UBERON_0002078 | 50 | Male | 25 | azimuth | CL:0000136 | Adipocyte | 23 | 0.01024042742653606 | MALAT1 | 5.741912364959717 |
-| HCA | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium | heart | right cardiac atrium | http://purl.obolibrary.org/obo/UBERON_0002078 | 50 | Male | 25 | azimuth | CL:0000136 | Adipocyte | 23 | 0.01024042742653606 | EBF1 | 1.725564956665039 |
-| HCA | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium | heart | right cardiac atrium | http://purl.obolibrary.org/obo/UBERON_0002078 | 50 | Male | 25 | azimuth | CL:0000136 | Adipocyte | 23 | 0.01024042742653606 | GHR | 1.3239905834198 |
-| HCA | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium | heart | right cardiac atrium | http://purl.obolibrary.org/obo/UBERON_0002078 | 50 | Male | 25 | azimuth | CL:0000136 | Adipocyte | 23 | 0.01024042742653606 | ACACB | 2.040069103240967 |
-| HCA | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H3$right%20cardiac%20atrium | heart | right cardiac atrium | http://purl.obolibrary.org/obo/UBERON_0002078 | 50 | Male | 25 | azimuth | CL:0000136 | Adipocyte | 23 | 0.01024042742653606 | PLIN1 | 1.086062431335449 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | urinary bladder | fundus of urinary bladder | http://purl.obolibrary.org/obo/UBERON_0006082 | 22 | Male |  | pan-human-azimuth | CL:0000136 | Adipocyte | 39 | 0.01195952161913524 | LDB2 | 15.60950381939228 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | urinary bladder | trigone of urinary bladder | http://purl.obolibrary.org/obo/UBERON_0001257 | 22 | Male |  | pan-human-azimuth | CL:0000136 | Adipocyte | 39 | 0.01195952161913524 | LDB2 | 15.60950381939228 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | urinary bladder | fundus of urinary bladder | http://purl.obolibrary.org/obo/UBERON_0006082 | 22 | Male |  | pan-human-azimuth | CL:0000136 | Adipocyte | 39 | 0.01195952161913524 | ANO2 | 7.083620291489821 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | urinary bladder | trigone of urinary bladder | http://purl.obolibrary.org/obo/UBERON_0001257 | 22 | Male |  | pan-human-azimuth | CL:0000136 | Adipocyte | 39 | 0.01195952161913524 | ANO2 | 7.083620291489821 |
+| HuBMAP | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | urinary bladder | fundus of urinary bladder | http://purl.obolibrary.org/obo/UBERON_0006082 | 22 | Male |  | pan-human-azimuth | CL:0000136 | Adipocyte | 39 | 0.01195952161913524 | SHANK3 | 2.641025641025641 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -1905,8 +1905,8 @@ GROUP BY ?sex
 
 | sex | rui_location_count | rui_location_one_as_count | rui_locations_no_ct |
 | :--- | :--- | :--- | :--- |
-| Female | 212 | 137 | 0 |
-| Male | 242 | 154 | 0 |
+| Female | 212 | 134 | 0 |
+| Male | 244 | 156 | 0 |
 
 
 ### <a id="high-level-stats"></a>high-level-stats
@@ -1962,8 +1962,8 @@ ORDER BY DESC(?label)
 
 | label | count |
 | :--- | :--- |
-| nodes | 628935 |
-| edges | 3255106 |
+| nodes | 630247 |
+| edges | 3262817 |
 
 
 ### <a id="lung-ctann-cell-summaries"></a>Lung ctann cell summaries (lung-ctann-cell-summaries)
@@ -2073,10 +2073,10 @@ ORDER BY ?tool DESC(?count)
 
 | tool | cell_id | cell_label | count | avg_percentage_of_total |
 | :--- | :--- | :--- | :--- | :--- |
-| azimuth | http://purl.obolibrary.org/obo/CL_4028002 | alveolar capillary type 1 endothelial cell | 1334266 | 0.18014791128391094 |
-| azimuth | http://purl.obolibrary.org/obo/CL_0002062 | pulmonary alveolar type 1 cell | 1198194 | 0.23798759547520745 |
-| azimuth | http://purl.obolibrary.org/obo/CL_0002145 | multiciliated columnar cell of tracheobronchial tree | 461964 | 0.08214288716969402 |
-| azimuth | http://purl.obolibrary.org/obo/CL_0002063 | pulmonary alveolar type 2 cell | 444728 | 0.11160520893278597 |
+| azimuth | http://purl.obolibrary.org/obo/CL_4028002 | alveolar capillary type 1 endothelial cell | 1334266 | 0.1801479112839107 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002062 | pulmonary alveolar type 1 cell | 1198194 | 0.2379875954752074 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002145 | multiciliated columnar cell of tracheobronchial tree | 461964 | 0.08214288716969399 |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002063 | pulmonary alveolar type 2 cell | 444728 | 0.11160520893278603 |
 | azimuth | http://purl.obolibrary.org/obo/CL_4028004 | alveolar type 1 fibroblast cell | 343128 | 0.07781781481766681 |
 | ... | ... | ... | ... | ... |
 
@@ -2269,11 +2269,11 @@ WHERE {
 
 | organ | as_label | ct_label | gene_symbol | as | ct | gene |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Large Intestine | descending colon | lymphocyte of large intestine lamina propria | KIT | http://purl.obolibrary.org/obo/UBERON_0001158 | http://purl.obolibrary.org/obo/CL_0009018 | http://identifiers.org/hgnc/6342 |
-| Large Intestine | descending colon | lymphocyte of large intestine lamina propria | KLRB1 | http://purl.obolibrary.org/obo/UBERON_0001158 | http://purl.obolibrary.org/obo/CL_0009018 | http://identifiers.org/hgnc/6373 |
-| Large Intestine | descending colon | Schwann cell | CD274 | http://purl.obolibrary.org/obo/UBERON_0001158 | http://purl.obolibrary.org/obo/CL_0002573 | http://identifiers.org/hgnc/17635 |
-| Large Intestine | descending colon | interstitial cell of Cajal | CD34 | http://purl.obolibrary.org/obo/UBERON_0001158 | http://purl.obolibrary.org/obo/CL_0002088 | http://identifiers.org/hgnc/1662 |
-| Large Intestine | descending colon | interstitial cell of Cajal | KIT | http://purl.obolibrary.org/obo/UBERON_0001158 | http://purl.obolibrary.org/obo/CL_0002088 | http://identifiers.org/hgnc/6342 |
+| Large Intestine | ascending colon | Schwann cell | NCAM1 | http://purl.obolibrary.org/obo/UBERON_0001156 | http://purl.obolibrary.org/obo/CL_0002573 | http://identifiers.org/hgnc/7656 |
+| Large Intestine | ascending colon | plasma cell | SDC1 | http://purl.obolibrary.org/obo/UBERON_0001156 | http://purl.obolibrary.org/obo/CL_0000786 | http://identifiers.org/hgnc/10658 |
+| Large Intestine | ascending colon | mast cell | SLC16A1 | http://purl.obolibrary.org/obo/UBERON_0001156 | http://purl.obolibrary.org/obo/CL_0000097 | http://identifiers.org/hgnc/10922 |
+| Large Intestine | ascending colon | mature neutrophil | FCGR3A | http://purl.obolibrary.org/obo/UBERON_0001156 | http://purl.obolibrary.org/obo/CL_0000096 | http://identifiers.org/hgnc/3619 |
+| Large Intestine | ascending colon | mature neutrophil | FUT4 | http://purl.obolibrary.org/obo/UBERON_0001156 | http://purl.obolibrary.org/obo/CL_0000096 | http://identifiers.org/hgnc/4015 |
 | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -2337,7 +2337,7 @@ ORDER BY ?provider ?sex
 | Male | Broad Institute | 42 | 787681 |
 | Female | GTEx | 7 | 143389 |
 | Male | GTEx | 8 | 183482 |
-| Male | Harvard University | 25 | 12758141 |
+| Male | Harvard University | 27 | 12813396 |
 | ... | ... | ... | ... |
 
 
@@ -2391,7 +2391,7 @@ WHERE {
 
 | rui_registered_h5ad_datasets | rui_registered_h5ad_tissue_blocks |
 | :--- | :--- |
-| 682 | 426 |
+| 713 | 428 |
 
 
 ### <a id="unmapped-cell-ids"></a>Unmapped cell types (unmapped-cell-ids)
@@ -2623,11 +2623,11 @@ WHERE {
 
 | dataset | reported_organ | sex | tool | modality | as | as_tool | similarity |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/33d19f34-87f5-455b-8ca5-9023a2e5453d#N13$colonic%20epithelium | http://purl.obolibrary.org/obo/UBERON_0000059 | Female | celltypist | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0001052 | celltypist | 0.6188857623128832 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/33d19f34-87f5-455b-8ca5-9023a2e5453d#N13$colonic%20epithelium | http://purl.obolibrary.org/obo/UBERON_0000059 | Female | pan-human-azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0001052 | celltypist | 0.44188536545859125 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/33d19f34-87f5-455b-8ca5-9023a2e5453d#N13$colonic%20epithelium | http://purl.obolibrary.org/obo/UBERON_0000059 | Female | pan-human-azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0001052 | pan-human-azimuth | 0.7539502006266277 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/33d19f34-87f5-455b-8ca5-9023a2e5453d#N13$colonic%20epithelium | http://purl.obolibrary.org/obo/UBERON_0000059 | Female | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0001052 | popv | 0.7964411376350569 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/33d19f34-87f5-455b-8ca5-9023a2e5453d#N13$colonic%20epithelium | http://purl.obolibrary.org/obo/UBERON_0000059 | Female | celltypist | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0001159 | celltypist | 0.49988817748550707 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/0f7d022a-46c7-4e64-be4c-e34adbb78089#shi_donor1$corneo-scleral%20junction | http://purl.obolibrary.org/obo/UBERON_0000970 | Male | pan-human-azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0000998 | pan-human-azimuth | 0.5838892788716856 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/0f7d022a-46c7-4e64-be4c-e34adbb78089#shi_donor1$corneo-scleral%20junction | http://purl.obolibrary.org/obo/UBERON_0000970 | Male | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0000998 | pan-human-azimuth | 0.43752136465097513 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/0f7d022a-46c7-4e64-be4c-e34adbb78089#shi_donor1$corneo-scleral%20junction | http://purl.obolibrary.org/obo/UBERON_0000970 | Male | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0035441 | pan-human-azimuth | 0.43752136465097513 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/0f7d022a-46c7-4e64-be4c-e34adbb78089#shi_donor1$corneo-scleral%20junction | http://purl.obolibrary.org/obo/UBERON_0000970 | Male | popv | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_8410025 | pan-human-azimuth | 0.43752136465097513 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/0f7d022a-46c7-4e64-be4c-e34adbb78089#shi_donor1$corneo-scleral%20junction | http://purl.obolibrary.org/obo/UBERON_0000970 | Male | pan-human-azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0035441 | pan-human-azimuth | 0.5838892788716856 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -2741,11 +2741,11 @@ WHERE {
 
 | dataset | reported_organ | tool | modality | as | pct_hra_ct_overlap |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0001158 | 1.33333333333333333333 |
-| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.org/sig/ont/fma/fma14929 | 1.33333333333333333333 |
-| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.org/sig/ont/fma/fma14930 | 1.33333333333333333333 |
-| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.org/sig/ont/fma/fma14928 | 1.33333333333333333333 |
-| https://entity.api.hubmapconsortium.org/entities/9b03c4c79ef7bcd1e8992cd50ed3f482 | http://purl.obolibrary.org/obo/UBERON_0000059 | pan-human-azimuth | sc_transcriptomics | http://purl.obolibrary.org/obo/UBERON_0002080 | 1.33333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/00d1a3623dac388773bc7780fcb42797 |  | sc_proteomics | sc_proteomics | http://purl.obolibrary.org/obo/UBERON_0001158 | 0.58333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/00d1a3623dac388773bc7780fcb42797 |  | sc_proteomics | sc_proteomics | http://purl.obolibrary.org/obo/UBERON_0001157 | 0.58333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/00d1a3623dac388773bc7780fcb42797 |  | sc_proteomics | sc_proteomics | http://purl.obolibrary.org/obo/UBERON_0001159 | 0.58333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/00d1a3623dac388773bc7780fcb42797 |  | sc_proteomics | sc_proteomics | http://purl.obolibrary.org/obo/UBERON_0002115 | 0.58333333333333333333 |
+| https://entity.api.hubmapconsortium.org/entities/00d1a3623dac388773bc7780fcb42797 |  | sc_proteomics | sc_proteomics | http://purl.obolibrary.org/obo/UBERON_0002116 | 0.58333333333333333333 |
 | ... | ... | ... | ... | ... | ... |
 
 
@@ -2824,11 +2824,11 @@ WHERE {
 
 | dataset | reported_organ | sex | tool | modality | corridor | corridor_tool | similarity |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | celltypist | sc_transcriptomics | http://purl.org/ccf/1.5/09681d25-f08d-40ff-81cb-a731610aa84d | celltypist | 0.7307449994911176 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | popv | sc_transcriptomics | http://purl.org/ccf/1.5/09681d25-f08d-40ff-81cb-a731610aa84d | popv | 0.9780455043393472 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | celltypist | sc_transcriptomics | http://purl.org/ccf/1.5/2ae3cef9-6621-46da-b056-da7bfbadc13b | celltypist | 0.463039762789449 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | popv | sc_transcriptomics | http://purl.org/ccf/1.5/2ae3cef9-6621-46da-b056-da7bfbadc13b | popv | 0.8889645564560061 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/a48f5033-3438-4550-8574-cdff3263fdfd#HTA11_9408$ascending%20colon | http://purl.obolibrary.org/obo/UBERON_0000059 | Male | pan-human-azimuth | sc_transcriptomics | http://purl.org/ccf/1.5/27c90961-5430-4217-ad97-4feaa91cede7 | celltypist | 0.52069781598775 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/328d71f0-0ed7-4518-966f-be6bd0797324#H4$heart%20left%20ventricle | http://purl.obolibrary.org/obo/UBERON_0000948 | Male | azimuth | sc_transcriptomics | http://purl.org/ccf/1.5/39e72b20-77e5-45a5-bb0e-f374ea5894ad | celltypist | 0.7804959802528326 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/328d71f0-0ed7-4518-966f-be6bd0797324#H4$heart%20left%20ventricle | http://purl.obolibrary.org/obo/UBERON_0000948 | Male | celltypist | sc_transcriptomics | http://purl.org/ccf/1.5/5c798396-639b-4964-9a91-501b42d23d6f | celltypist | 0.7663140473703499 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/328d71f0-0ed7-4518-966f-be6bd0797324#H4$heart%20left%20ventricle | http://purl.obolibrary.org/obo/UBERON_0000948 | Male | celltypist | sc_transcriptomics | http://purl.org/ccf/1.5/760368bf-6b4c-4d92-aa2b-24e17fd947d3 | celltypist | 0.752024038599167 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/328d71f0-0ed7-4518-966f-be6bd0797324#H4$heart%20left%20ventricle | http://purl.obolibrary.org/obo/UBERON_0000948 | Male | celltypist | sc_transcriptomics | http://purl.org/ccf/1.5/a0ff0780-d666-42fe-8068-a3b41b1c6aa0 | celltypist | 0.752024038599167 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/328d71f0-0ed7-4518-966f-be6bd0797324#H4$heart%20left%20ventricle | http://purl.obolibrary.org/obo/UBERON_0000948 | Male | azimuth | sc_transcriptomics | http://purl.org/ccf/1.5/886e391d-0151-46d3-8a51-084bf6a06910 | celltypist | 0.7804959802528326 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -2915,11 +2915,11 @@ WHERE {
 
 | dataset | reported_organ | sex | tool | modality | atlas_dataset | atlas_dataset_tool | similarity |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp1$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Female | frmatch | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/d5fe1d775e2f5ea978a160f34e4cec96 | frmatch | 0.9242681781396531 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#NL2$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Male | popv | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/5d111a1db2f18d507d23e79b993e1e4a | popv | 0.686735510245856 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp3$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Female | pan-human-azimuth | sc_transcriptomics | https://entity.api.sennetconsortium.org/entities/cbe7d143064dd0c1bbf704d3f293cc60 | pan-human-azimuth | 0.6355691086783266 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#NL2$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Male | popv | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/e81c9c9753998b2ca69e8bceadf2409d | popv | 0.7003462270992316 |
-| https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#NL2$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Male | pan-human-azimuth | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/3febd011f193673c6f87a60718dd8f96 | popv | 0.6862440800031727 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/00109df5-7810-4542-8db5-2288c46e0424#A549$pulmonary%20alveolar%20epithelial%20cell | http://purl.obolibrary.org/obo/UBERON_0000322 | Male | pan-human-azimuth | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/91cfb45f5d398e950ed65786c87f4372 | pan-human-azimuth | 0.6637286297629521 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp1$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Female | frmatch | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/95099136c78367d5d55a215fc220d7a8 | frmatch | 0.8616893932615772 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp1$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Female | frmatch | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/0079f009c4e1c5a1920250937ea8ac94 | frmatch | 0.8983522807530278 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/03cdc7f4-bd08-49d0-a395-4487c0e5a168#Emp1$alveolus%20of%20lung | http://purl.obolibrary.org/obo/UBERON_0002048 | Female | frmatch | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/2e5d99a013d0478aa07e33090bd86946 | frmatch | 0.8576311552625819 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/00109df5-7810-4542-8db5-2288c46e0424#A549$pulmonary%20alveolar%20epithelial%20cell | http://purl.obolibrary.org/obo/UBERON_0000322 | Male | pan-human-azimuth | sc_transcriptomics | https://entity.api.hubmapconsortium.org/entities/377df3da484d29fdde20ec020a76ba1b | pan-human-azimuth | 0.6637286297629521 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -2969,7 +2969,7 @@ GROUP BY ?sex ?modality
 | Female | sc_transcriptomics | 343 | 6232613 |
 | Female | sc_proteomics | 51 | 15711894 |
 | Male | sc_transcriptomics | 355 | 12297767 |
-| Male | sc_proteomics | 60 | 19582365 |
+| Male | sc_proteomics | 74 | 22276835 |
 
 
 ### <a id="cell-and-cell-type-count"></a>Count of Cells and unique Cell Types (cell-and-cell-type-count)
@@ -3014,7 +3014,7 @@ GROUP BY ?sex
 | sex | unique_cell_type_count | cell_count |
 | :--- | :--- | :--- |
 | Female | 351 | 21944507 |
-| Male | 363 | 31880132 |
+| Male | 365 | 34574602 |
 
 
 ### <a id="donor-info"></a>Atlas-level Donor information (donor-info)
@@ -3184,11 +3184,11 @@ WHERE {
 
 | organId | organ | sex | modality | as1_label | as2_label | cosine_sim | as1_dataset_count | as2_dataset_count |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| UBERON:0002106 | spleen | Female | sc_proteomics | hilum of spleen | Diaphragmatic surface of spleen | 0.9910776057921681 | 4 | 8 |
-| UBERON:0002106 | spleen | Male | sc_proteomics | hilum of spleen | Diaphragmatic surface of spleen | 0.9999999986319724 | 4 | 8 |
-| UBERON:0002106 | spleen | Male | sc_transcriptomics | hilum of spleen | Diaphragmatic surface of spleen | 0.635575976120067775 | 4 | 8 |
-| UBERON:0002509 | mesenteric lymph node | Male | sc_transcriptomics | medulla of lymph node | lymph node T cell domain | 0.5000001929492003 | 6 | 6 |
-| UBERON:0002509 | mesenteric lymph node | Male | sc_proteomics | medulla of lymph node | lymph node T cell domain | 0.999775210254421 | 6 | 6 |
+| UBERON:0000059 | large intestine | Female | sc_transcriptomics | rectum | sigmoid colon | 0.28648625783644737922 | 3 | 52 |
+| UBERON:0000059 | large intestine | Female | sc_transcriptomics | transverse colon | sigmoid colon | 0.22633523145764160156 | 15 | 52 |
+| UBERON:0000059 | large intestine | Male | sc_transcriptomics | transverse colon | sigmoid colon | 0.30812644021281859439 | 15 | 52 |
+| UBERON:0000059 | large intestine | Male | sc_proteomics | transverse colon | sigmoid colon | 0.7876900023969224 | 15 | 52 |
+| UBERON:0000059 | large intestine | Female | sc_proteomics | transverse colon | sigmoid colon | 0.9768897994741146 | 15 | 52 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -3359,9 +3359,9 @@ ORDER BY ?modality ?organ ?sex
 | organId | organ | sex | modality | tool | total_organ_as_count | organ_as_count_with_collisions | rui_location_count | dataset_count | non_atlas_dataset_count |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | UBERON:0000059 | large intestine | Female | sc_proteomics | sc_proteomics | 11 | 7 | 6 | 6 | 64 |
-| UBERON:0000059 | large intestine | Male | sc_proteomics | sc_proteomics | 11 | 6 | 25 | 49 | 266 |
-| UBERON:0002509 | mesenteric lymph node | Female | sc_proteomics | sc_proteomics | 8 | 6 | 2 | 2 | 6 |
-| UBERON:0002509 | mesenteric lymph node | Male | sc_proteomics | sc_proteomics | 8 | 7 | 3 | 3 | 8 |
+| UBERON:0000059 | large intestine | Male | sc_proteomics | sc_proteomics | 11 | 6 | 26 | 78 | 237 |
+| UBERON:0002509 | mesenteric lymph node | Female | sc_proteomics | sc_proteomics | 8 | 6 | 2 | 2 | 4 |
+| UBERON:0002509 | mesenteric lymph node | Male | sc_proteomics | sc_proteomics | 8 | 7 | 3 | 3 | 5 |
 | UBERON:0001264 | pancreas | Female | sc_proteomics | sc_proteomics | 6 | 5 | 8 | 8 | 202 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
@@ -3465,7 +3465,7 @@ ORDER BY ?portal ?sex ?modality
 | GTEx | Male | sc_transcriptomics | 1 | 5 | 4 | 8 | 0 | 8 | 188 | 183482 |
 | HCA | Female | sc_transcriptomics | 2 | 16 | 10 | 69 | 0 | 69 | 216 | 1011325 |
 | HCA | Male | sc_transcriptomics | 2 | 12 | 9 | 56 | 0 | 59 | 223 | 995859 |
-| HuBMAP | Female | sc_proteomics | 0 | 9 | 5 | 30 | 10 | 30 | 34 | 10726884 |
+| HTAN | Male | sc_proteomics | 0 | 2 | 2 | 2 | 0 | 31 | 37 | 2694470 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -3685,11 +3685,11 @@ ORDER BY ?unique_dataset_id
 
 | portal | study_paper | doi | lead_author | is_azimuth_reference | donor_id | donor_sex | donor_age | donor_development_stage | donor_race | donor_bmi | organ_name | organ_name_glb_file | tissue_block_id | tissue_block_volume | collisions_bb | collisions_mesh | list_of_colliding_anatomical_structures_bb | list_of_colliding_anatomical_structures_mesh | list_of_colliding_anatomical_structures_bb_ids | list_of_colliding_anatomical_structures_mesh_ids | dataset_id | unique_dataset_id | link_to_raw_data | bulk_or_spatial | cell_type_annotation_tool | omap_id | number_of_cells_total | number_of_unique_cell_types | hubmap_dataset_publication_status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| HuBMAP |  |  |  |  |  | Male | 18 |  | White | 25.5 | spleen | 3d-vh-m-spleen.glb |  | 1200 | 14 | 1 | hilum of spleen; medulla of lymph node; capsule of lymph node; efferent lymphatic vessel; lymph node T cell domain; lymph node follicle; Diaphragmatic surface of spleen; left thymus lobe; right thymus lobe; vasculature; afferent lymphatic vessel; Gastric impression of spleen; Colic impression of spleen; Renal impression of spleen | diaphragmatic surface of spleen | UBERON:0001248; UBERON:0002007; UBERON:0002194; UBERON:0010397; UBERON:0010417; UBERON:0010748; FMA:15828; UBERON:0005457; UBERON:0005469; UBERON:0002049; UBERON:0010396; FMA:15837; FMA:15838; FMA:15839 | FMA:15828 |  |  | https://portal.hubmapconsortium.org/browse/dataset/d48b7990d638dbede870ae9c1976e475 |  | popv |  | 10826 | 25 |  |
-| HuBMAP |  |  |  |  |  | Male | 18 |  | White | 25.5 | spleen | 3d-vh-m-spleen.glb |  | 1200 | 14 | 1 | hilum of spleen; medulla of lymph node; capsule of lymph node; efferent lymphatic vessel; lymph node T cell domain; lymph node follicle; Diaphragmatic surface of spleen; left thymus lobe; right thymus lobe; vasculature; afferent lymphatic vessel; Gastric impression of spleen; Colic impression of spleen; Renal impression of spleen | diaphragmatic surface of spleen | UBERON:0001248; UBERON:0002007; UBERON:0002194; UBERON:0010397; UBERON:0010417; UBERON:0010748; FMA:15828; UBERON:0005457; UBERON:0005469; UBERON:0002049; UBERON:0010396; FMA:15837; FMA:15838; FMA:15839 | FMA:15828 |  |  | https://portal.hubmapconsortium.org/browse/dataset/d48b7990d638dbede870ae9c1976e475 |  | pan-human-azimuth |  | 10826 | 25 |  |
-| HuBMAP |  |  |  |  |  | Male | 18 |  | White | 25.5 | spleen | 3d-vh-m-spleen.glb |  | 1200 | 14 | 1 | hilum of spleen; medulla of lymph node; capsule of lymph node; efferent lymphatic vessel; lymph node T cell domain; lymph node follicle; Diaphragmatic surface of spleen; left thymus lobe; right thymus lobe; vasculature; afferent lymphatic vessel; Gastric impression of spleen; Colic impression of spleen; Renal impression of spleen | diaphragmatic surface of spleen | UBERON:0001248; UBERON:0002007; UBERON:0002194; UBERON:0010397; UBERON:0010417; UBERON:0010748; FMA:15828; UBERON:0005457; UBERON:0005469; UBERON:0002049; UBERON:0010396; FMA:15837; FMA:15838; FMA:15839 | FMA:15828 |  |  | https://portal.hubmapconsortium.org/browse/dataset/f412e76986c1012ea9589d545ed8f043 |  | popv |  | 23537 | 37 |  |
-| HuBMAP |  |  |  |  |  | Male | 18 |  | White | 25.5 | spleen | 3d-vh-m-spleen.glb |  | 1200 | 14 | 1 | hilum of spleen; medulla of lymph node; capsule of lymph node; efferent lymphatic vessel; lymph node T cell domain; lymph node follicle; Diaphragmatic surface of spleen; left thymus lobe; right thymus lobe; vasculature; afferent lymphatic vessel; Gastric impression of spleen; Colic impression of spleen; Renal impression of spleen | diaphragmatic surface of spleen | UBERON:0001248; UBERON:0002007; UBERON:0002194; UBERON:0010397; UBERON:0010417; UBERON:0010748; FMA:15828; UBERON:0005457; UBERON:0005469; UBERON:0002049; UBERON:0010396; FMA:15837; FMA:15838; FMA:15839 | FMA:15828 |  |  | https://portal.hubmapconsortium.org/browse/dataset/f412e76986c1012ea9589d545ed8f043 |  | pan-human-azimuth |  | 23537 | 37 |  |
-| HuBMAP |  |  |  |  |  | Male | 18 |  | White | 25.5 | spleen | 3d-vh-m-spleen.glb |  | 1200 | 14 | 2 | hilum of spleen; medulla of lymph node; capsule of lymph node; efferent lymphatic vessel; lymph node T cell domain; lymph node follicle; Diaphragmatic surface of spleen; left thymus lobe; right thymus lobe; vasculature; afferent lymphatic vessel; Gastric impression of spleen; Colic impression of spleen; Renal impression of spleen | hilum of spleen; diaphragmatic surface of spleen | UBERON:0001248; UBERON:0002007; UBERON:0002194; UBERON:0010397; UBERON:0010417; UBERON:0010748; FMA:15828; UBERON:0005457; UBERON:0005469; UBERON:0002049; UBERON:0010396; FMA:15837; FMA:15838; FMA:15839 | UBERON:0001248; FMA:15828 |  |  | https://portal.hubmapconsortium.org/browse/dataset/391061b538480d6d630bdfec283c0293 |  | popv |  | 6723 | 20 |  |
+| SenNet |  |  |  |  |  | Female | 75 |  | White | 30.43 | respiratory system | 3d-vh-f-lung.glb |  | 1000 | 5 | 15 | Right posterior basal bronchopulmonary segment; lung; right lung; lower lobe of right lung; Right lateral basal bronchopulmonary segment | Right Posterior Basal Bronchopulmonary Segment | FMA:7362; UBERON:0002048; UBERON:0002167; UBERON:0002171; FMA:7363 | FMA:7362 |  |  | https://data.sennetconsortium.org/dataset?uuid=5dac5e0cd0d08d0fd0ca99ddd0410173 |  | pan-human-azimuth |  | 43247 | 98 |  |
+| SenNet |  |  |  |  |  | Female | 81 |  | White | 27.1 | respiratory system | 3d-vh-f-lung.glb |  | 1000 | 5 | 15 | Right posterior basal bronchopulmonary segment; lung; right lung; lower lobe of right lung; Right lateral basal bronchopulmonary segment | Right Posterior Basal Bronchopulmonary Segment | FMA:7362; UBERON:0002048; UBERON:0002167; UBERON:0002171; FMA:7363 | FMA:7362 |  |  | https://data.sennetconsortium.org/dataset?uuid=316aa8ebc397f14ef3e465645f10fe05 |  | popv |  | 45229 | 97 |  |
+| SenNet |  |  |  |  |  | Female | 81 |  | White | 27.1 | respiratory system | 3d-vh-f-lung.glb |  | 1000 | 5 | 15 | Right posterior basal bronchopulmonary segment; lung; right lung; lower lobe of right lung; Right lateral basal bronchopulmonary segment | Right Posterior Basal Bronchopulmonary Segment | FMA:7362; UBERON:0002048; UBERON:0002167; UBERON:0002171; FMA:7363 | FMA:7362 |  |  | https://data.sennetconsortium.org/dataset?uuid=316aa8ebc397f14ef3e465645f10fe05 |  | frmatch |  | 45229 | 97 |  |
+| SenNet |  |  |  |  |  | Female | 81 |  | White | 27.1 | respiratory system | 3d-vh-f-lung.glb |  | 1000 | 5 | 15 | Right posterior basal bronchopulmonary segment; lung; right lung; lower lobe of right lung; Right lateral basal bronchopulmonary segment | Right Posterior Basal Bronchopulmonary Segment | FMA:7362; UBERON:0002048; UBERON:0002167; UBERON:0002171; FMA:7363 | FMA:7362 |  |  | https://data.sennetconsortium.org/dataset?uuid=316aa8ebc397f14ef3e465645f10fe05 |  | pan-human-azimuth |  | 45229 | 97 |  |
+| HuBMAP |  |  |  |  |  | Male | 78 |  | Black or African American | 35.1 | small intestine | 3d-vh-m-small-intestine.glb |  | 1800 | 1 | 1 | duodenum | descending part of duodenum | UBERON:0002114 | FMA:14928 |  |  | https://portal.hubmapconsortium.org/browse/dataset/07b9f36478e22bf820ac6a084e01bf94 |  | popv |  | 578 | 35 |  |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -3916,11 +3916,11 @@ ORDER BY ?organ ?as_label
 
 | organ | organ_id | as_label | as_volume | rui_location_one_as_count | rui_location_count | rui_locations_with_ct | rui_locations_no_ct | ct_not_in_hra | ct_in_hra | ct_from_hra_only | experimental_ct_count | ct_labels_from_experimental_data | predicted_cells_per_ct |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| VHFHeart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | 4401.498768462402 | 0 | 1 | 36 | 0 | 10 | 76 | 0 | 86 | EC2_cap; Capillary EC; Capillary Endothelial; EC3_cap; EC1_cap; SCN7A fibroblast; Fibroblast; FB4_activated; FB5; PCOLCE2 fibroblast; FB1; FB3; Mesothelial; CD8+T_cytox; Adip1; Adipocyte; abT (entry) cell; CD8+T_te; Adip2; EC7_endocardial; Endocardial; Endocardial cell; Venous Endothelial; NK_CD56hi; CD56 NK cell; CD16+Mo; B; T/NK_cycling; B_plasma; Plasma cell; EC6_ven; Venous EC; Mast; Mast cell; Microglia; Neuronal; Monocyte/cDC; Monocyte/DC; cDC1; Memory CD4 T cell; GZMB CD8 T cell; KLRB1 CD8 T cell; CD8+T_trans; EC4_immune; Endothelial���mesenchymal transition EC; Endothelial; Fetal HBG+ erythrocyte; LYVE1+TIMD4+MP; Macrophage; LYVE1 macrophage; LYVE1+IGF1+MP; DIAPH3+ macrophage; CD4+T_naive; Naive CD4 T cell; Neut; Neutrophil; SMC1_basic; Vascular smooth muscle cell; CD16 monocyte; cDC2; EC5_art; Arterial Endothelial; Arterial EC; CD4+T_reg; Treg cell; Cycling T/NK cell; KLRB1 cytotoxic CD4 T; CD14 monocyte; EC8_ln; Lymphatic Endothelial; Lymphatic EC; Memory B cell; Naive B cell; Pericyte; PC1_vent; Smooth Muscle; T; Myofibroblast; NK; pDC; Tfh cell; Glial cell of intestine; gdT; MAIT cell; CD4+T_Th1; DC; CXCL14 inhibitory neuron; CD4+T_Th2; Mammillary body neuron; Astrocyte; Alveolar macrophage; Horizontal cell; Memory T cell; Cone-OFF-bipolar cell; Naive T cell; Aerocyte; ILC; CD8+T_em; MAIT-like; SAN_P_cell; CD4+T_Tfh; Amacrine cell; SV2C inhibitory neuron; D1 medium spiny neuron; Ganglion cell; NC2_glial_NGF+; Atrial Cardiomyocyte; vCM2; NC1_glial; aCM5; CD4+T_act; NK_CD16hi; CD14+Mo; Ventricular cardiomyocyte; Atrial cardiomyocyte; CD16 NK cell; M1 macrophage; GZMK CD8 T cell; vCM1; Late hemoglobin+ erythroblast; vCM3_stressed; Ventricular Cardiomycoyte; aCM2; CD4+T_Th17; LYVE1+MP_cycling; Double negative T cell; HSC; MPP; Platelet | 244.28947368421052631579 |
-| VHFHeart | UBERON:0000948 | heart left ventricle | 229312.7801882646 | 102 | 7 | 138 | 0 | 13 | 82 | 23 | 95 | Capillary EC; EC1_cap; Capillary Endothelial; EC2_cap; EC3_cap; abT (entry) cell; Venous Endothelial; NK_CD56hi; CD56 NK cell; CD16+Mo; B; T/NK_cycling; CD8+T_te; PCOLCE2 fibroblast; Fibroblast; FB1; SCN7A fibroblast; FB2; FB3; Metallothionein+ fibroblast; FB4_activated; FB5; CFD+MGP+ fibroblast; POSTN fibroblast; EC6_ven; Venous EC; Naive T cell; Cone-OFF-bipolar cell; Aerocyte; ILC; Amacrine cell; CD8+T_em; MAIT-like; SAN_P_cell; SST inhibitory neuron; CD4+T_Tfh; Purkinje_cell; cDC1; Memory CD4 T cell; GZMB CD8 T cell; KLRB1 CD8 T cell; Fetal HBG+ erythrocyte; Macrophage; LYVE1+IGF1+MP; LYVE1+TIMD4+MP; LYVE1 macrophage; DIAPH3+ macrophage; CD4+T_naive; Naive CD4 T cell; Neut; Neutrophil; Vascular smooth muscle cell; SMC1_basic; Microglia; Neuronal; Monocyte/DC; Monocyte/cDC; B_plasma; Plasma cell; CD8+T_trans; Pericyte; PC3_str; PC1_vent; PC2_atria; PC4_CMC-like; Smooth Muscle; Mast; Mast cell; Cycling T/NK cell; Germinal center B cell; Memory T cell; Endothelial���mesenchymal transition EC; EC4_immune; Endothelial; EC10_CMC-like; NK; Tissue-resident NK cell; pDC; Tfh cell; Glial cell of intestine; Mesothelial; CRABP1+ mesothelial cell; Meso; GATA4+ mesothelial cell; CD8+T_cytox; Adipocyte; Adip1; Adip2; Adip3; EC7_endocardial; Endocardial; Endocardial cell; Alveolar macrophage; Horizontal cell; Lymphatic Endothelial; EC8_ln; Lymphatic EC; Memory B cell; Naive B cell; KLRB1 cytotoxic CD4 T; GZMK cytotoxic CD4 T cell; CD14 monocyte; Arterial Endothelial; EC5_art; Arterial EC; Ganglion cell; LYVE1+MP_cycling; CD4+T_Th17; AVN_P_cell; Hofbauer cell; SV2C inhibitory neuron; Double negative T cell; HSC; MPP; gdT; MAIT cell; CD4+T_Th1; DC; mregDC; T; Myofibroblast; CXCL14 inhibitory neuron; L5/6 excitatory neuron; CD4+T_Th2; Mammillary body neuron; Astrocyte; NK_CD16hi; CD16 NK cell; Atrial cardiomyocyte; Atrial Cardiomyocyte; aCM1; aCM4; aCM2; aCM5; aCM3; Ventricular Cardiomycoyte; vCM1; vCM4; vCM2; vCM3_stressed; NC1_glial; NC2_glial_NGF+; CD14+Mo; CD4+T_act; Ventricular cardiomyocyte; Late hemoglobin+ erythroblast; M1 macrophage; GZMK CD8 T cell; Eccentric medium spiny neuron; VIP inhibitory neuron; Platelet; CD16 monocyte; cDC2; Treg cell; CD4+T_reg; Rod-bipolar cell; AVN_bundle_cell; D1 medium spiny neuron | 293.50362366425885021790 |
-| VHFHeart | UBERON:0000948 | heart right ventricle | 73521.72645229718 | 49 | 2 | 85 | 0 | 11 | 78 | 22 | 89 | CD16+Mo; B; T/NK_cycling; Plasma cell; B_plasma; Capillary EC; Capillary Endothelial; EC2_cap; EC1_cap; EC3_cap; abT (entry) cell; CD8+T_te; T; Myofibroblast; Memory B cell; Naive B cell; Pericyte; PC1_vent; PC3_str; PC2_atria; Smooth Muscle; NK; Tissue-resident NK cell; Cycling T/NK cell; KLRB1 cytotoxic CD4 T; ILC; CD8+T_em; MAIT-like; SAN_P_cell; CD4+T_Tfh; Amacrine cell; SV2C inhibitory neuron; D1 medium spiny neuron; Naive T cell; Aerocyte; Double negative T cell; HSC; Skeletal muscle cell; MPP; Platelet; Ventricular cardiomyocyte; CD16 NK cell; NK_CD16hi; GZMK CD8 T cell; Atrial cardiomyocyte; aCM1; Atrial Cardiomyocyte; aCM5; aCM2; vCM1; Ventricular Cardiomycoyte; vCM4; vCM2; vCM3_stressed; NC1_glial; NC2_glial_NGF+; CD14+Mo; CD4+T_act; Venous EC; EC6_ven; Mast; Mast cell; cDC1; Monocyte/cDC; Monocyte/DC; Fetal HBG+ erythrocyte; LYVE1+IGF1+MP; LYVE1 macrophage; Macrophage; DIAPH3+ macrophage; LYVE1+TIMD4+MP; MoMP; Naive CD4 T cell; CD4+T_naive; Neutrophil; Neut; Vascular smooth muscle cell; SMC1_basic; CD16 monocyte; Glial cell of intestine; gdT; MAIT cell; CXCL14 inhibitory neuron; CD4+T_Th1; DC; Ganglion cell; CD4+T_Th17; LYVE1+MP_cycling; Mammillary body neuron; Astrocyte; Alveolar macrophage; Horizontal cell; Memory T cell; Microglia; Neuronal; Treg cell; CD4+T_reg; PCOLCE2 fibroblast; FB1; Fibroblast; FB3; SCN7A fibroblast; Metallothionein+ fibroblast; FB4_activated; FB5; Mesothelial; Meso; CRABP1+ mesothelial cell; AVN_P_cell; NK_CD56hi; CD56 NK cell; Venous Endothelial; Late hemoglobin+ erythroblast; M1 macrophage; Rod-bipolar cell; Memory CD4 T cell; CD8+T_trans; Endothelial���mesenchymal transition EC; EC10_CMC-like; EC4_immune; Endothelial; KLRB1 CD8 T cell; GZMB CD8 T cell; CD14 monocyte; Arterial Endothelial; Arterial EC; EC5_art; Lymphatic Endothelial; Lymphatic EC; EC8_ln; CD8+T_cytox; Adipocyte; Adip1; Adip2; Endocardial; Endocardial cell; EC7_endocardial; pDC; Tfh cell; cDC2; Cone-OFF-bipolar cell; CD4+T_Th2 | 232.89498831726666013739 |
-| VHFHeart | UBERON:0000948 | interventricular septum | 65894.53465930313 | 0 | 1 | 36 | 0 | 10 | 76 | 19 | 86 | abT (entry) cell; CD8+T_te; PCOLCE2 fibroblast; FB1; Fibroblast; FB3; SCN7A fibroblast; FB4_activated; FB5; Mesothelial; CD8+T_cytox; Adip1; Adipocyte; Adip2; EC8_ln; Lymphatic Endothelial; Lymphatic EC; EC4_immune; Endothelial���mesenchymal transition EC; Endothelial; Fetal HBG+ erythrocyte; LYVE1+TIMD4+MP; Macrophage; LYVE1 macrophage; LYVE1+IGF1+MP; DIAPH3+ macrophage; CD4+T_naive; Naive CD4 T cell; Neut; Neutrophil; SMC1_basic; Vascular smooth muscle cell; CD16 monocyte; cDC2; CD4+T_reg; Treg cell; Microglia; EC2_cap; Capillary EC; Capillary Endothelial; EC3_cap; EC1_cap; Cycling T/NK cell; KLRB1 cytotoxic CD4 T; Arterial Endothelial; EC5_art; Arterial EC; CD14 monocyte; Double negative T cell; HSC; MPP; Platelet; MAIT-like; SAN_P_cell; CD4+T_Tfh; Amacrine cell; SV2C inhibitory neuron; D1 medium spiny neuron; Ganglion cell; CD4+T_Th17; LYVE1+MP_cycling; vCM1; Ventricular Cardiomycoyte; vCM2; vCM3_stressed; Atrial cardiomyocyte; Atrial Cardiomyocyte; aCM5; aCM2; Ventricular cardiomyocyte; NK_CD16hi; CD16 NK cell; GZMK CD8 T cell; NC1_glial; NC2_glial_NGF+; CD4+T_act; Late hemoglobin+ erythroblast; CD14+Mo; M1 macrophage; B; CD16+Mo; B_plasma; Plasma cell; EC6_ven; Venous EC; T/NK_cycling; Mast; Mast cell; CD8+T_trans; GZMB CD8 T cell; KLRB1 CD8 T cell; CD4+T_Th2; Mammillary body neuron; Tfh cell; pDC; Glial cell of intestine; gdT; MAIT cell; CD4+T_Th1; Cone-OFF-bipolar cell; Naive T cell; Memory T cell; Aerocyte; ILC; CD8+T_em; Horizontal cell; Astrocyte; Alveolar macrophage; EC7_endocardial; Endocardial; Endocardial cell; Venous Endothelial; NK_CD56hi; CD56 NK cell; Neuronal; cDC1; Memory CD4 T cell; Monocyte/cDC; Monocyte/DC; Naive B cell; Pericyte; PC1_vent; Memory B cell; Smooth Muscle; T; Myofibroblast; NK; DC; CXCL14 inhibitory neuron | 242.00282240555796786800 |
-| VHFHeart | UBERON:0000948 | left cardiac atrium | 21499.01206134312 | 49 | 1 | 49 | 0 | 10 | 66 | 22 | 76 | NK_CD56hi; CD56 NK cell; CD16+Mo; Adipocyte; Adip1; Adip2; Endocardial; EC7_endocardial; Endocardial cell; Venous Endothelial; Venous EC; EC6_ven; Monocyte/cDC; Monocyte/DC; G2/M phase myeloid cell; cDC1; Memory CD4 T cell; CD4+T_Tfh; Purkinje_cell; Amacrine cell; D1 medium spiny neuron; Ganglion cell; LYVE1+MP_cycling; Atrial Cardiomyocyte; aCM3; Atrial cardiomyocyte; aCM1; aCM4; Ventricular Cardiomycoyte; vCM1; vCM4; vCM2; NC1_glial; CD4+T_act; NK_CD16hi; CD16 NK cell; CD14+Mo; Late hemoglobin+ erythroblast; Ventricular cardiomyocyte; GZMK CD8 T cell; M1 macrophage; Mesothelial; Meso; CRABP1+ mesothelial cell; CD8+T_cytox; B; B_plasma; Plasma cell; T/NK_cycling; Macrophage; LYVE1+TIMD4+MP; LYVE1 macrophage; LYVE1+IGF1+MP; CD4+T_naive; Naive CD4 T cell; Neut; Neutrophil; SMC1_basic; Vascular smooth muscle cell; SMC2_art; CD16 monocyte; Mast; Mast cell; Microglia; Neuronal; GZMB CD8 T cell; KLRB1 CD8 T cell; CD8+T_trans; Glial cell of intestine; pDC; mregDC; DC; CD4+T_Th1; CD8+T_te; Fibroblast; FB2; PCOLCE2 fibroblast; FB1; Metallothionein+ fibroblast; SCN7A fibroblast; FB3; abT (entry) cell; EC10_CMC-like; Endothelial���mesenchymal transition EC; Endothelial; EC4_immune; Fetal HBG+ erythrocyte; T; Smooth Muscle; Myofibroblast; NK; Tissue-resident NK cell; cDC2; Treg cell; CD4+T_reg; Cycling T/NK cell; KLRB1 cytotoxic CD4 T; CD14 monocyte; Arterial Endothelial; EC5_art; Arterial EC; Lymphatic Endothelial; EC8_ln; Lymphatic EC; MAIT-like; CD4+T_Th2; Mammillary body neuron; Astrocyte; Alveolar macrophage; ILC; CD8+T_em; Horizontal cell; Naive T cell; Memory T cell; PLCH1 L4/5 excitatory neuron; CXCL14 inhibitory neuron; Memory B cell; Naive B cell; Pericyte; PC1_vent; PC2_atria; Capillary Endothelial; EC1_cap; Capillary EC; EC2_cap; EC3_cap | 134.41628742514970059880 |
+| VHFHeart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | 4401.498768462402 | 0 | 1 | 36 | 0 | 10 | 76 | 0 | 86 | Neut; Neutrophil; Microglia; Capillary EC; Capillary Endothelial; EC3_cap; EC1_cap; EC2_cap; LYVE1 macrophage; Macrophage; LYVE1+IGF1+MP; DIAPH3+ macrophage; LYVE1+TIMD4+MP; Adipocyte; Adip1; Adip2; Astrocyte; Memory CD4 T cell; PCOLCE2 fibroblast; FB1; Fibroblast; SCN7A fibroblast; FB4_activated; FB5; FB3; Plasma cell; B_plasma; Vascular smooth muscle cell; SMC1_basic; Mast cell; Mast; Alveolar macrophage; CD14 monocyte; Naive T cell; cDC1; CD8+T_trans; Smooth Muscle; T; Myofibroblast; NK; CXCL14 inhibitory neuron; EC4_immune; Endothelial���mesenchymal transition EC; Endothelial; Mesothelial; pDC; Glial cell of intestine; Tfh cell; gdT; CD4+T_Th1; MAIT cell; Double negative T cell; Platelet; SAN_P_cell; B; GZMB CD8 T cell; KLRB1 CD8 T cell; Arterial EC; Arterial Endothelial; EC5_art; Lymphatic EC; Lymphatic Endothelial; EC8_ln; Fetal HBG+ erythrocyte; T/NK_cycling; PC1_vent; Pericyte; Venous EC; EC6_ven; CD16 monocyte; cDC2; Memory B cell; Naive B cell; Naive CD4 T cell; CD4+T_naive; CD4+T_reg; Treg cell; Neuronal; Cycling T/NK cell; abT (entry) cell; KLRB1 cytotoxic CD4 T; Monocyte/DC; Monocyte/cDC; Mammillary body neuron; Cone-OFF-bipolar cell; Horizontal cell; CD4+T_Th17; DC; LYVE1+MP_cycling; Amacrine cell; SV2C inhibitory neuron; D1 medium spiny neuron; Ganglion cell; Endocardial cell; EC7_endocardial; Endocardial; CD16+Mo; MPP; CD8+T_te; Aerocyte; NK_CD56hi; CD56 NK cell; CD8+T_cytox; HSC; Memory T cell; CD8+T_em; Venous Endothelial; CD4+T_Tfh; ILC; CD4+T_Th2; MAIT-like; Late hemoglobin+ erythroblast; Ventricular Cardiomycoyte; Ventricular cardiomyocyte; Atrial cardiomyocyte; vCM1; GZMK CD8 T cell; NC2_glial_NGF+; NK_CD16hi; CD16 NK cell; CD14+Mo; M1 macrophage; Atrial Cardiomyocyte; NC1_glial; CD4+T_act; vCM3_stressed; aCM2; aCM5; vCM2 | 244.28947368421052631579 |
+| VHFHeart | UBERON:0000948 | heart left ventricle | 229312.7801882646 | 102 | 7 | 138 | 0 | 13 | 82 | 23 | 95 | Plasma cell; B_plasma; Vascular smooth muscle cell; SMC1_basic; Mast cell; Mast; Alveolar macrophage; CD14 monocyte; CXCL14 inhibitory neuron; L5/6 excitatory neuron; Mesothelial; Meso; CRABP1+ mesothelial cell; GATA4+ mesothelial cell; pDC; Glial cell of intestine; Tfh cell; Platelet; Double negative T cell; SAN_P_cell; GZMB CD8 T cell; KLRB1 CD8 T cell; Memory B cell; T/NK_cycling; Naive B cell; CD16 monocyte; cDC2; abT (entry) cell; KLRB1 cytotoxic CD4 T; GZMK cytotoxic CD4 T cell; CD8+T_te; NK_CD56hi; CD56 NK cell; Aerocyte; D1 medium spiny neuron; Ganglion cell; CD8+T_cytox; Endocardial cell; EC7_endocardial; Endocardial; Smooth Muscle; T; Myofibroblast; NK; Tissue-resident NK cell; gdT; CD4+T_Th1; Naive CD4 T cell; CD4+T_naive; Venous EC; EC6_ven; Neut; Neutrophil; Microglia; Capillary EC; Capillary Endothelial; EC3_cap; EC1_cap; EC2_cap; DIAPH3+ macrophage; LYVE1 macrophage; LYVE1+TIMD4+MP; Macrophage; LYVE1+IGF1+MP; CD8+T_trans; Amacrine cell; Hofbauer cell; VIP inhibitory neuron; Rod-bipolar cell; AVN_bundle_cell; Neuronal; Germinal center B cell; Cycling T/NK cell; CD4+T_reg; Treg cell; Mammillary body neuron; Horizontal cell; Cone-OFF-bipolar cell; Monocyte/cDC; Monocyte/DC; B; MAIT cell; Purkinje_cell; Naive T cell; cDC1; CD4+T_Th17; DC; mregDC; SST inhibitory neuron; Venous Endothelial; ILC; CD4+T_Th2; CD4+T_Tfh; MAIT-like; Ventricular Cardiomycoyte; vCM1; vCM4; vCM3_stressed; vCM2; CD16 NK cell; NK_CD16hi; HSC; Memory T cell; CD16+Mo; AVN_P_cell; MPP; Arterial EC; Arterial Endothelial; EC5_art; Lymphatic EC; Lymphatic Endothelial; EC8_ln; Fetal HBG+ erythrocyte; Pericyte; PC1_vent; PC3_str; PC2_atria; PC4_CMC-like; LYVE1+MP_cycling; SV2C inhibitory neuron; Late hemoglobin+ erythroblast; CD14+Mo; Eccentric medium spiny neuron; CD8+T_em; EC4_immune; EC10_CMC-like; Endothelial; Endothelial���mesenchymal transition EC; GZMK CD8 T cell; M1 macrophage; Atrial cardiomyocyte; Atrial Cardiomyocyte; aCM2; aCM1; aCM4; aCM3; aCM5; NC2_glial_NGF+; NC1_glial; CD4+T_act; Ventricular cardiomyocyte; Adipocyte; Adip1; Adip2; Adip3; Memory CD4 T cell; Astrocyte; PCOLCE2 fibroblast; FB1; Fibroblast; SCN7A fibroblast; FB2; FB4_activated; FB5; Metallothionein+ fibroblast; CFD+MGP+ fibroblast; FB3; POSTN fibroblast | 293.50362366425885021790 |
+| VHFHeart | UBERON:0000948 | heart right ventricle | 73521.72645229718 | 49 | 2 | 85 | 0 | 11 | 78 | 22 | 89 | Alveolar macrophage; Skeletal muscle cell; CD14 monocyte; Naive T cell; cDC1; T/NK_cycling; Memory B cell; Naive B cell; Adip1; Adipocyte; Adip2; Astrocyte; Memory CD4 T cell; PCOLCE2 fibroblast; FB1; SCN7A fibroblast; Fibroblast; FB4_activated; FB5; FB3; Metallothionein+ fibroblast; Plasma cell; B_plasma; CXCL14 inhibitory neuron; Meso; Mesothelial; CRABP1+ mesothelial cell; pDC; Glial cell of intestine; Tfh cell; gdT; CD4+T_Th1; NK; Tissue-resident NK cell; Naive CD4 T cell; CD4+T_naive; Venous EC; EC6_ven; CD16 monocyte; Mammillary body neuron; Horizontal cell; Cone-OFF-bipolar cell; SV2C inhibitory neuron; D1 medium spiny neuron; Ganglion cell; CD8+T_cytox; MAIT cell; Double negative T cell; Platelet; SAN_P_cell; Neut; Neutrophil; Microglia; Capillary EC; EC2_cap; Capillary Endothelial; EC3_cap; EC1_cap; Neuronal; Cycling T/NK cell; abT (entry) cell; KLRB1 cytotoxic CD4 T; Monocyte/DC; Monocyte/cDC; cDC2; Treg cell; CD4+T_reg; B; GZMB CD8 T cell; KLRB1 CD8 T cell; LYVE1 macrophage; LYVE1+IGF1+MP; Macrophage; MoMP; DIAPH3+ macrophage; LYVE1+TIMD4+MP; Amacrine cell; LYVE1+MP_cycling; MPP; CD8+T_te; AVN_P_cell; Aerocyte; HSC; Memory T cell; Venous Endothelial; CD4+T_Th2; MAIT-like; vCM2; Ventricular Cardiomycoyte; vCM1; vCM3_stressed; vCM4; Rod-bipolar cell; CD8+T_em; CD4+T_Tfh; ILC; CD8+T_trans; EC4_immune; Endothelial���mesenchymal transition EC; Endothelial; EC10_CMC-like; Smooth Muscle; T; Myofibroblast; Arterial EC; Arterial Endothelial; EC5_art; EC8_ln; Lymphatic EC; Lymphatic Endothelial; Fetal HBG+ erythrocyte; NC1_glial; NC2_glial_NGF+; Ventricular cardiomyocyte; Atrial cardiomyocyte; Atrial Cardiomyocyte; aCM2; aCM1; aCM5; Late hemoglobin+ erythroblast; GZMK CD8 T cell; NK_CD16hi; CD16 NK cell; CD14+Mo; M1 macrophage; CD4+T_act; Pericyte; PC3_str; PC1_vent; PC2_atria; CD4+T_Th17; DC; EC7_endocardial; Endocardial cell; Endocardial; CD16+Mo; NK_CD56hi; CD56 NK cell; Mast cell; Mast; Vascular smooth muscle cell; SMC1_basic | 232.89498831726666013739 |
+| VHFHeart | UBERON:0000948 | interventricular septum | 65894.53465930313 | 0 | 1 | 36 | 0 | 10 | 76 | 19 | 86 | Alveolar macrophage; CD14 monocyte; Naive T cell; Vascular smooth muscle cell; SMC1_basic; cDC1; CD8+T_trans; EC4_immune; Endothelial���mesenchymal transition EC; Endothelial; Smooth Muscle; T; Myofibroblast; NK; MPP; CD8+T_te; Aerocyte; NK_CD56hi; CD56 NK cell; CD16 monocyte; cDC2; CD4+T_reg; Treg cell; DC; LYVE1+MP_cycling; Amacrine cell; SV2C inhibitory neuron; D1 medium spiny neuron; Ganglion cell; CD8+T_cytox; Neuronal; Cycling T/NK cell; abT (entry) cell; KLRB1 cytotoxic CD4 T; Monocyte/DC; Monocyte/cDC; Mammillary body neuron; Cone-OFF-bipolar cell; Horizontal cell; CD4+T_Th17; Plasma cell; B_plasma; Mast cell; Mast; Venous EC; EC6_ven; Pericyte; PC1_vent; EC8_ln; Lymphatic Endothelial; Lymphatic EC; Endocardial cell; EC7_endocardial; Endocardial; Capillary EC; Capillary Endothelial; EC3_cap; EC1_cap; EC2_cap; Neut; Neutrophil; Microglia; Macrophage; LYVE1+TIMD4+MP; LYVE1 macrophage; LYVE1+IGF1+MP; DIAPH3+ macrophage; Astrocyte; Memory CD4 T cell; CXCL14 inhibitory neuron; Glial cell of intestine; Tfh cell; gdT; CD4+T_Th1; Venous Endothelial; ILC; CD4+T_Th2; MAIT-like; Late hemoglobin+ erythroblast; Ventricular Cardiomycoyte; vCM1; vCM3_stressed; vCM2; Ventricular cardiomyocyte; Atrial cardiomyocyte; Atrial Cardiomyocyte; aCM2; aCM5; GZMK CD8 T cell; NK_CD16hi; CD16 NK cell; NC2_glial_NGF+; NC1_glial; CD14+Mo; M1 macrophage; CD4+T_act; Fetal HBG+ erythrocyte; T/NK_cycling; Memory B cell; Naive B cell; Naive CD4 T cell; CD4+T_naive; HSC; Memory T cell; CD8+T_em; PCOLCE2 fibroblast; FB1; Fibroblast; SCN7A fibroblast; FB4_activated; FB5; FB3; CD16+Mo; GZMB CD8 T cell; KLRB1 CD8 T cell; Mesothelial; pDC; MAIT cell; Double negative T cell; Platelet; SAN_P_cell; B; Adipocyte; Adip1; Adip2; CD4+T_Tfh; Arterial EC; Arterial Endothelial; EC5_art | 242.00282240555796786800 |
+| VHFHeart | UBERON:0000948 | left cardiac atrium | 21499.01206134312 | 49 | 1 | 49 | 0 | 10 | 66 | 22 | 76 | Neut; Neutrophil; Capillary EC; Capillary Endothelial; EC2_cap; EC1_cap; Microglia; EC3_cap; LYVE1 macrophage; LYVE1+IGF1+MP; Macrophage; LYVE1+TIMD4+MP; Adipocyte; Adip1; Adip2; Astrocyte; Memory CD4 T cell; PCOLCE2 fibroblast; Fibroblast; FB1; FB2; Metallothionein+ fibroblast; SCN7A fibroblast; FB3; Plasma cell; B_plasma; Vascular smooth muscle cell; SMC1_basic; SMC2_art; Mast cell; Mast; Alveolar macrophage; CD14 monocyte; pDC; Glial cell of intestine; CD4+T_Th1; Purkinje_cell; B; KLRB1 CD8 T cell; GZMB CD8 T cell; Arterial Endothelial; EC5_art; Arterial EC; Lymphatic EC; Lymphatic Endothelial; EC8_ln; Fetal HBG+ erythrocyte; T/NK_cycling; Memory B cell; Naive B cell; Naive CD4 T cell; CD4+T_naive; Pericyte; PC1_vent; PC2_atria; Venous EC; EC6_ven; Smooth Muscle; T; Myofibroblast; Tissue-resident NK cell; NK; CXCL14 inhibitory neuron; PLCH1 L4/5 excitatory neuron; CRABP1+ mesothelial cell; Meso; Mesothelial; DC; mregDC; CD56 NK cell; NK_CD56hi; Memory T cell; Venous Endothelial; CD4+T_Tfh; EC10_CMC-like; Endothelial���mesenchymal transition EC; Endothelial; EC4_immune; abT (entry) cell; KLRB1 cytotoxic CD4 T; Monocyte/DC; Monocyte/cDC; Horizontal cell; GZMK CD8 T cell; Ventricular cardiomyocyte; CD14+Mo; vCM4; vCM1; Ventricular Cardiomycoyte; vCM2; Atrial cardiomyocyte; Atrial Cardiomyocyte; aCM4; aCM1; aCM3; CD4+T_act; NC1_glial; Late hemoglobin+ erythroblast; M1 macrophage; CD16 NK cell; NK_CD16hi; Cycling T/NK cell; Mammillary body neuron; ILC; Naive T cell; cDC1; CD8+T_trans; CD8+T_em; LYVE1+MP_cycling; Amacrine cell; D1 medium spiny neuron; G2/M phase myeloid cell; Ganglion cell; CD8+T_cytox; Endocardial cell; Endocardial; EC7_endocardial; CD16+Mo; CD8+T_te; CD4+T_Th2; MAIT-like; CD16 monocyte; cDC2; Treg cell; CD4+T_reg; Neuronal | 134.41628742514970059880 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -4170,9 +4170,9 @@ ORDER BY DESC(?total_collision_percentage)
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | http://purl.org/ccf/1.5/6f7f3ddd-9889-4bad-8bfc-8340c7b6af8b | VHFLungV1.2 | respiratory system | Right Posterior Basal Bronchopulmonary Segment | http://purl.org/sig/ont/fma/fma7362 | 1000 | 21222.82563556622 | 1000 | 15 |
 | http://purl.org/ccf/1.5/74a3fc30-9e4b-44d5-b70e-43b56550aac0 | VHFLeftOvary | left ovary | Left ovary | http://purl.obolibrary.org/obo/UBERON_0002119 | 12.209999999999999 | 1000.789660247758 | 15 | 12.209999999999999 |
-| http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | VHFHeart | heart | heart right ventricle | http://purl.obolibrary.org/obo/UBERON_0002080 | 1017.225 | 73521.72645229718 | 7425 | 8.67 |
-| http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | VHFHeart | heart | heart left ventricle | http://purl.obolibrary.org/obo/UBERON_0002084 | 3549.1499999999996 | 229312.7801882646 | 7425 | 8.67 |
 | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | VHFHeart | heart | Posteromedial head of posterior papillary muscle of left ventricle | http://purl.org/sig/ont/fma/fma7267 | 631.125 | 4401.498768462402 | 7425 | 8.67 |
+| http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | VHFHeart | heart | interventricular septum | http://purl.obolibrary.org/obo/UBERON_0002094 | 5531.625 | 65894.53465930313 | 7425 | 8.67 |
+| http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | VHFHeart | heart | heart right ventricle | http://purl.obolibrary.org/obo/UBERON_0002080 | 1017.225 | 73521.72645229718 | 7425 | 8.67 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -4353,11 +4353,11 @@ WHERE {
 
 | sex | sample | rui_location | dataset | tool | modality | organ | organId | similarity |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | https://entity.api.sennetconsortium.org/entities/14b3dc15596ff83ea4c6a9ddecbba005 | http://purl.org/ccf/1.5/6f7f3ddd-9889-4bad-8bfc-8340c7b6af8b | https://entity.api.sennetconsortium.org/entities/0dc5a4895ebc44e97c701cd1d584c620 | azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9331998534162715 |
-| Female | https://entity.api.sennetconsortium.org/entities/14b3dc15596ff83ea4c6a9ddecbba005 | http://purl.org/ccf/1.5/6f7f3ddd-9889-4bad-8bfc-8340c7b6af8b | https://entity.api.sennetconsortium.org/entities/0dc5a4895ebc44e97c701cd1d584c620 | azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9331998534162715 |
-| Female | https://entity.api.sennetconsortium.org/entities/14b3dc15596ff83ea4c6a9ddecbba005 | http://purl.org/ccf/1.5/6f7f3ddd-9889-4bad-8bfc-8340c7b6af8b | https://entity.api.sennetconsortium.org/entities/0dc5a4895ebc44e97c701cd1d584c620 | azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9331998534162715 |
-| Female | https://entity.api.sennetconsortium.org/entities/14b3dc15596ff83ea4c6a9ddecbba005 | http://purl.org/ccf/1.5/6f7f3ddd-9889-4bad-8bfc-8340c7b6af8b | https://entity.api.sennetconsortium.org/entities/0dc5a4895ebc44e97c701cd1d584c620 | azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9331998534162715 |
-| Female | https://entity.api.sennetconsortium.org/entities/14b3dc15596ff83ea4c6a9ddecbba005 | http://purl.org/ccf/1.5/6f7f3ddd-9889-4bad-8bfc-8340c7b6af8b | https://entity.api.sennetconsortium.org/entities/0dc5a4895ebc44e97c701cd1d584c620 | azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9331998534162715 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | http://purl.org/ccf/1.5/6acd66b8-2659-4626-bef9-a80f135489ad | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9999990797180804 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | http://purl.org/ccf/1.5/6acd66b8-2659-4626-bef9-a80f135489ad | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | celltypist | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9999994243356826 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | http://purl.org/ccf/1.5/6acd66b8-2659-4626-bef9-a80f135489ad | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | frmatch | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.999999699377285 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | http://purl.org/ccf/1.5/6acd66b8-2659-4626-bef9-a80f135489ad | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | pan-human-azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9999998964267196 |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | http://purl.org/ccf/1.5/6acd66b8-2659-4626-bef9-a80f135489ad | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | popv | sc_transcriptomics | respiratory system | UBERON:0001004 | 0.9999999822156624 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -4464,11 +4464,11 @@ ORDER BY ?sample
 
 | sex | sample | dataset | tool | modality | organ | organId | as_label | as | as_tool | similarity | as_in_collisions |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Male | http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b#TissueSection1 | https://entity.api.hubmapconsortium.org/entities/0f1ddcb41a484adbda759c0c79097a02#D265-LLL-7A7-12 | sc_proteomics | sc_proteomics | respiratory system | UBERON:0001004 | ascending colon | http://purl.obolibrary.org/obo/UBERON_0001156 | sc_proteomics | 0.24700065998171372 | false |
-| Male | http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b#TissueSection1 | https://entity.api.hubmapconsortium.org/entities/0f1ddcb41a484adbda759c0c79097a02#D265-LLL-7A7-12 | sc_proteomics | sc_proteomics | respiratory system | UBERON:0001004 | transverse colon | http://purl.obolibrary.org/obo/UBERON_0001157 | sc_proteomics | 0.3323219693011046 | false |
-| Male | http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b#TissueSection1 | https://entity.api.hubmapconsortium.org/entities/0f1ddcb41a484adbda759c0c79097a02#D265-LLL-7A7-12 | sc_proteomics | sc_proteomics | respiratory system | UBERON:0001004 | descending duodenum | http://purl.org/sig/ont/fma/fma14928 | sc_proteomics | 0.2687696424299846 | false |
-| Male | http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b#TissueSection1 | https://entity.api.hubmapconsortium.org/entities/0f1ddcb41a484adbda759c0c79097a02#D265-LLL-7A7-12 | sc_proteomics | sc_proteomics | respiratory system | UBERON:0001004 | Hilum | http://purl.obolibrary.org/obo/UBERON_0001248 | sc_proteomics | 0.23239368430227736 | false |
-| Male | http://purl.org/ccf/1.5/fb73e18b-9ddc-4fdf-b9a6-4b7735e5017b#TissueSection1 | https://entity.api.hubmapconsortium.org/entities/0f1ddcb41a484adbda759c0c79097a02#D265-LLL-7A7-12 | sc_proteomics | sc_proteomics | respiratory system | UBERON:0001004 | descending colon | http://purl.obolibrary.org/obo/UBERON_0001158 | sc_proteomics | 0.31867686097561077 | false |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | azimuth | sc_transcriptomics | heart | UBERON:0000948 | left ventricle | http://purl.obolibrary.org/obo/UBERON_0002084 | celltypist | 0.7315454286444666 | true |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | celltypist | sc_transcriptomics | heart | UBERON:0000948 | left ventricle | http://purl.obolibrary.org/obo/UBERON_0002084 | celltypist | 0.7251176173065617 | true |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | pan-human-azimuth | sc_transcriptomics | heart | UBERON:0000948 | left ventricle | http://purl.obolibrary.org/obo/UBERON_0002084 | pan-human-azimuth | 0.9047638319616682 | true |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | azimuth | sc_transcriptomics | heart | UBERON:0000948 | septum | http://purl.obolibrary.org/obo/UBERON_0002094 | azimuth | 0.9113460018548072 | false |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D1$apex%20of%20heart | celltypist | sc_transcriptomics | heart | UBERON:0000948 | septum | http://purl.obolibrary.org/obo/UBERON_0002094 | azimuth | 0.902781133231229 | false |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -4702,11 +4702,11 @@ WHERE {
 
 | sex | sample | dataset | tool | modality | organ | organId | as | pct_hra_ct_overlap |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | https://entity.api.hubmapconsortium.org/entities/2214b8182a9bccbaf81b26e976778056 | https://entity.api.hubmapconsortium.org/entities/898138b7f45a67c574e9955fb400e9be | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | http://purl.obolibrary.org/obo/UBERON_0002078 | 0.25423728813559322034 |
-| Female | https://entity.api.hubmapconsortium.org/entities/2214b8182a9bccbaf81b26e976778056 | https://entity.api.hubmapconsortium.org/entities/898138b7f45a67c574e9955fb400e9be | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | http://purl.obolibrary.org/obo/UBERON_0002094 | 0.28813559322033898305 |
-| Female | https://entity.api.hubmapconsortium.org/entities/2214b8182a9bccbaf81b26e976778056 | https://entity.api.hubmapconsortium.org/entities/898138b7f45a67c574e9955fb400e9be | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | http://purl.obolibrary.org/obo/UBERON_0001284 | 0.98305084745762711864 |
-| Female | https://entity.api.hubmapconsortium.org/entities/2214b8182a9bccbaf81b26e976778056 | https://entity.api.hubmapconsortium.org/entities/898138b7f45a67c574e9955fb400e9be | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | http://purl.obolibrary.org/obo/UBERON_0001223 | 0.67796610169491525424 |
-| Female | https://entity.api.hubmapconsortium.org/entities/2214b8182a9bccbaf81b26e976778056 | https://entity.api.hubmapconsortium.org/entities/898138b7f45a67c574e9955fb400e9be | azimuth | sc_transcriptomics | left kidney | UBERON:0004538 | http://purl.obolibrary.org/obo/UBERON_0002080 | 0.27118644067796610169 |
+| Male | https://hubmapconsortium.github.io/hra-registrations/htan-colon-snyder-2024#Donor1_TissueBlock1 | https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_6 | sc_proteomics | sc_proteomics | large intestine | UBERON:0000059 | http://purl.obolibrary.org/obo/UBERON_0002007 | 0.21052631578947368421 |
+| Male | https://hubmapconsortium.github.io/hra-registrations/htan-colon-snyder-2024#Donor1_TissueBlock1 | https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_31 | sc_proteomics | sc_proteomics | large intestine | UBERON:0000059 | http://purl.org/sig/ont/fma/fma14928 | 0.24324324324324324324 |
+| Male | https://hubmapconsortium.github.io/hra-registrations/htan-colon-snyder-2024#Donor1_TissueBlock1 | https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_31 | sc_proteomics | sc_proteomics | large intestine | UBERON:0000059 | http://purl.obolibrary.org/obo/UBERON_0001157 | 0.24324324324324324324 |
+| Male | https://hubmapconsortium.github.io/hra-registrations/htan-colon-snyder-2024#Donor1_TissueBlock1 | https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_31 | sc_proteomics | sc_proteomics | large intestine | UBERON:0000059 | http://purl.obolibrary.org/obo/UBERON_0001158 | 0.24324324324324324324 |
+| Male | https://hubmapconsortium.github.io/hra-registrations/htan-colon-snyder-2024#Donor1_TissueBlock1 | https://data.humantumoratlas.org/publications/hta10_2025_tbd_rongduo-han#layer_31 | sc_proteomics | sc_proteomics | large intestine | UBERON:0000059 | http://purl.obolibrary.org/obo/UBERON_0001156 | 0.29729729729729729730 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -4837,11 +4837,11 @@ WHERE {
 
 | sex | sample | dataset | tool | modality | organ | organId | as | pct_hra_ct_overlap |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Male | https://doi.org/10.1126/science.abl4896#TSP25_Thymus | https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$thymus | popv | sc_transcriptomics | thymus | UBERON:0002370 | http://purl.obolibrary.org/obo/UBERON_0001158 | 0.43137254901960784314 |
-| Male | https://doi.org/10.1126/science.abl4896#TSP25_Thymus | https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$thymus | popv | sc_transcriptomics | thymus | UBERON:0002370 | http://purl.obolibrary.org/obo/UBERON_0006082 | 0.47058823529411764706 |
-| Male | https://doi.org/10.1126/science.abl4896#TSP25_Thymus | https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$thymus | popv | sc_transcriptomics | thymus | UBERON:0002370 | http://purl.obolibrary.org/obo/UBERON_0001257 | 0.37254901960784313725 |
-| Male | https://doi.org/10.1126/science.abl4896#TSP25_Thymus | https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$thymus | popv | sc_transcriptomics | thymus | UBERON:0002370 | http://purl.obolibrary.org/obo/UBERON_0004200 | 0.33333333333333333333 |
-| Male | https://doi.org/10.1126/science.abl4896#TSP25_Thymus | https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP25$thymus | popv | sc_transcriptomics | thymus | UBERON:0002370 | http://purl.obolibrary.org/obo/UBERON_0001284 | 0.11764705882352941176 |
+| Male | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum | pan-human-azimuth | sc_transcriptomics | heart | UBERON:0000948 | http://purl.obolibrary.org/obo/UBERON_0002115 | 0.24 |
+| Male | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum | pan-human-azimuth | sc_transcriptomics | heart | UBERON:0000948 | http://purl.obolibrary.org/obo/UBERON_0001158 | 0.28 |
+| Male | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum | pan-human-azimuth | sc_transcriptomics | heart | UBERON:0000948 | http://purl.obolibrary.org/obo/UBERON_0010397 | 0.07 |
+| Male | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum | pan-human-azimuth | sc_transcriptomics | heart | UBERON:0000948 | http://purl.obolibrary.org/obo/UBERON_0002194 | 0.07 |
+| Male | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum_Block | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D6$interventricular%20septum | pan-human-azimuth | sc_transcriptomics | heart | UBERON:0000948 | http://purl.obolibrary.org/obo/UBERON_0001157 | 0.25 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -4983,11 +4983,11 @@ ORDER BY ?sex ?sample DESC(?pct_hra_ct_overlap)
 
 | sex | sample | dataset | tool | modality | organ | organId | as | pct_hra_ct_overlap | as_in_collisions |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0010373 | 0.70542635658914728682 | false |
-| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | celltypist | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0010373 | 0.70542635658914728682 | false |
-| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | popv | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0010373 | 0.70542635658914728682 | false |
-| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | frmatch | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0010373 | 0.70542635658914728682 | false |
-| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | pan-human-azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0010373 | 0.70542635658914728682 | false |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0001069 | 0.70542635658914728682 | false |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | celltypist | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0001069 | 0.70542635658914728682 | false |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | popv | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0001069 | 0.70542635658914728682 | false |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | frmatch | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0001069 | 0.70542635658914728682 | false |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231_Donor_TissueBlock1 | https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | pan-human-azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | http://purl.obolibrary.org/obo/UBERON_0001069 | 0.70542635658914728682 | false |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -5129,11 +5129,11 @@ WHERE {
 
 | sex | sample | rui_location | dataset | tool | modality | organ | organId | corridor | corridor_tool | similarity | distance |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | https://entity.api.hubmapconsortium.org/entities/35e16f13caab262f446836f63cf4ad42 | http://purl.org/ccf/1.5/e240c0a4-5e53-4464-8320-ad775f2c4bf7 | https://entity.api.hubmapconsortium.org/entities/3de525fe3e5718f297e8d62e037a042d | celltypist | sc_transcriptomics | small intestine | UBERON:0002108 | http://purl.org/ccf/1.5/4af4b1bd-c71d-4ade-a9f6-47b2ccc9f5bb | celltypist | 0.9867233289724958 | 117.47396653088717 |
-| Female | https://entity.api.hubmapconsortium.org/entities/35e16f13caab262f446836f63cf4ad42 | http://purl.org/ccf/1.5/e240c0a4-5e53-4464-8320-ad775f2c4bf7 | https://entity.api.hubmapconsortium.org/entities/3de525fe3e5718f297e8d62e037a042d | celltypist | sc_transcriptomics | small intestine | UBERON:0002108 | http://purl.org/ccf/1.5/4ecffbfc-dc50-4140-95e8-4f97d5804f4f | celltypist | 0.9948177529537068 | 75.04311260868649 |
-| Female | https://entity.api.hubmapconsortium.org/entities/35e16f13caab262f446836f63cf4ad42 | http://purl.org/ccf/1.5/e240c0a4-5e53-4464-8320-ad775f2c4bf7 | https://entity.api.hubmapconsortium.org/entities/3de525fe3e5718f297e8d62e037a042d | celltypist | sc_transcriptomics | small intestine | UBERON:0002108 | http://purl.org/ccf/1.5/5fa952b1-a5a7-4089-bdc2-7208f71f45be | celltypist | 0.9330024100708812 | 135.0286427947789 |
-| Female | https://entity.api.hubmapconsortium.org/entities/35e16f13caab262f446836f63cf4ad42 | http://purl.org/ccf/1.5/e240c0a4-5e53-4464-8320-ad775f2c4bf7 | https://entity.api.hubmapconsortium.org/entities/3de525fe3e5718f297e8d62e037a042d | celltypist | sc_transcriptomics | small intestine | UBERON:0002108 | http://purl.org/ccf/1.5/65f3b03b-1eb1-487d-8c02-c4d107cc9400 | celltypist | 0.9330024100708812 | 135.0286427947789 |
-| Female | https://entity.api.hubmapconsortium.org/entities/35e16f13caab262f446836f63cf4ad42 | http://purl.org/ccf/1.5/e240c0a4-5e53-4464-8320-ad775f2c4bf7 | https://entity.api.hubmapconsortium.org/entities/3de525fe3e5718f297e8d62e037a042d | celltypist | sc_transcriptomics | small intestine | UBERON:0002108 | http://purl.org/ccf/1.5/74c8746d-be53-493d-9a2a-1edbe24f0d16 | celltypist | 0.9948177529537068 | 75.04311260868649 |
+| Female | https://entity.api.hubmapconsortium.org/entities/3d742332ef8ca26f34f7ee5b9da3381c | http://purl.org/ccf/1.5/f9e28182-3ed3-4a3f-bd45-66ebce1efafb | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | pan-human-azimuth | sc_transcriptomics | large intestine | UBERON:0000059 | http://purl.org/ccf/1.5/007eb4d9-1694-4380-99e1-4aba832d9227 | pan-human-azimuth | 0.7832304132305368 | 139.7982153520745 |
+| Female | https://entity.api.hubmapconsortium.org/entities/3d742332ef8ca26f34f7ee5b9da3381c | http://purl.org/ccf/1.5/f9e28182-3ed3-4a3f-bd45-66ebce1efafb | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | pan-human-azimuth | sc_transcriptomics | large intestine | UBERON:0000059 | http://purl.org/ccf/1.5/049f27a1-1e84-4f8a-a47e-48a0879b8652 | pan-human-azimuth | 0.9816485084187822 | 873.4093756652719 |
+| Female | https://entity.api.hubmapconsortium.org/entities/3d742332ef8ca26f34f7ee5b9da3381c | http://purl.org/ccf/1.5/f9e28182-3ed3-4a3f-bd45-66ebce1efafb | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | pan-human-azimuth | sc_transcriptomics | large intestine | UBERON:0000059 | http://purl.org/ccf/1.5/049f27a1-1e84-4f8a-a47e-48a0879b8652 | pan-human-azimuth | 0.9816485084187822 | 873.4093756652719 |
+| Female | https://entity.api.hubmapconsortium.org/entities/3d742332ef8ca26f34f7ee5b9da3381c | http://purl.org/ccf/1.5/f9e28182-3ed3-4a3f-bd45-66ebce1efafb | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | pan-human-azimuth | sc_transcriptomics | large intestine | UBERON:0000059 | http://purl.org/ccf/1.5/049f27a1-1e84-4f8a-a47e-48a0879b8652 | pan-human-azimuth | 0.9816485084187822 | 873.4093756652719 |
+| Female | https://entity.api.hubmapconsortium.org/entities/3d742332ef8ca26f34f7ee5b9da3381c | http://purl.org/ccf/1.5/f9e28182-3ed3-4a3f-bd45-66ebce1efafb | https://entity.api.hubmapconsortium.org/entities/7edbff53248f2a2c8e74f5f955681734 | pan-human-azimuth | sc_transcriptomics | large intestine | UBERON:0000059 | http://purl.org/ccf/1.5/049f27a1-1e84-4f8a-a47e-48a0879b8652 | pan-human-azimuth | 0.9816485084187822 | 873.4093756652719 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -5281,11 +5281,11 @@ WHERE {
 
 | source | target | weight | sex | tool | modality | organ | organId | datasetA | entityA | datasetB | entityB | similarity | distance |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | https://entity.api.hubmapconsortium.org/entities/a44f5dbe2472dac447b0f91a24da8b30 | 0.9999998985336623 | Male | pan-human-azimuth | sc_transcriptomics | urinary bladder | UBERON:0001255 | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | http://purl.org/ccf/1.5/0060612c-6d95-47d8-a8d0-0443fff344e9 | https://entity.api.hubmapconsortium.org/entities/a44f5dbe2472dac447b0f91a24da8b30 | http://purl.org/ccf/1.5/1fa8bd4e-49af-4121-a1b4-618af0b79d4c | 0.9999998985336623 | 2.2635762389472034 |
-| https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | https://entity.api.hubmapconsortium.org/entities/ffade7fd19cebd25cd9a9fab2111cb09 | 0.9999998985336623 | Male | pan-human-azimuth | sc_transcriptomics | urinary bladder | UBERON:0001255 | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | http://purl.org/ccf/1.5/0060612c-6d95-47d8-a8d0-0443fff344e9 | https://entity.api.hubmapconsortium.org/entities/ffade7fd19cebd25cd9a9fab2111cb09 | http://purl.org/ccf/1.5/1fa8bd4e-49af-4121-a1b4-618af0b79d4c | 0.9999998985336623 | 2.2635762389472034 |
-| https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | https://entity.api.hubmapconsortium.org/entities/a44f5dbe2472dac447b0f91a24da8b30 | 0.9999999656873642 | Male | popv | sc_transcriptomics | urinary bladder | UBERON:0001255 | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | http://purl.org/ccf/1.5/0060612c-6d95-47d8-a8d0-0443fff344e9 | https://entity.api.hubmapconsortium.org/entities/a44f5dbe2472dac447b0f91a24da8b30 | http://purl.org/ccf/1.5/1fa8bd4e-49af-4121-a1b4-618af0b79d4c | 0.9999999656873642 | 2.2635762389472034 |
-| https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | https://entity.api.hubmapconsortium.org/entities/ffade7fd19cebd25cd9a9fab2111cb09 | 0.9999999656873642 | Male | popv | sc_transcriptomics | urinary bladder | UBERON:0001255 | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | http://purl.org/ccf/1.5/0060612c-6d95-47d8-a8d0-0443fff344e9 | https://entity.api.hubmapconsortium.org/entities/ffade7fd19cebd25cd9a9fab2111cb09 | http://purl.org/ccf/1.5/1fa8bd4e-49af-4121-a1b4-618af0b79d4c | 0.9999999656873642 | 2.2635762389472034 |
-| https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP14$bladder%20organ | 0.999992196078884 | Male | pan-human-azimuth | sc_transcriptomics | urinary bladder | UBERON:0001255 | https://entity.api.hubmapconsortium.org/entities/6c57274e7a40413dc042ec32442a228b | http://purl.org/ccf/1.5/0060612c-6d95-47d8-a8d0-0443fff344e9 | https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP14$bladder%20organ | http://purl.org/ccf/1.5/4f6471ec-f891-40a4-a5a2-e4eeda8cb2bf | 0.999992196078884 | 42.411929082695885 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$interventricular%20septum | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$heart%20right%20ventricle | 0.9682371174845873 | Female | azimuth | sc_transcriptomics | heart | UBERON:0000948 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$interventricular%20septum | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$heart%20right%20ventricle | http://purl.org/ccf/1.5/1fe61622-ba53-47c9-967e-e764c21b8189 | 0.9682371174845873 | 50.052965111032634 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$interventricular%20septum | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$heart%20right%20ventricle | 0.9682371174845873 | Female | azimuth | sc_transcriptomics | heart | UBERON:0000948 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$interventricular%20septum | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$heart%20right%20ventricle | http://purl.org/ccf/1.5/1fe61622-ba53-47c9-967e-e764c21b8189 | 0.9682371174845873 | 50.052965111032634 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$interventricular%20septum | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$heart%20right%20ventricle | 0.9682371174845873 | Female | azimuth | sc_transcriptomics | heart | UBERON:0000948 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$interventricular%20septum | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$heart%20right%20ventricle | http://purl.org/ccf/1.5/1fe61622-ba53-47c9-967e-e764c21b8189 | 0.9682371174845873 | 50.052965111032634 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$interventricular%20septum | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$heart%20right%20ventricle | 0.9682371174845873 | Female | azimuth | sc_transcriptomics | heart | UBERON:0000948 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D5$interventricular%20septum | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$heart%20right%20ventricle | http://purl.org/ccf/1.5/1fe61622-ba53-47c9-967e-e764c21b8189 | 0.9682371174845873 | 50.052965111032634 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$interventricular%20septum | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$heart%20right%20ventricle | 0.9682371174845873 | Female | azimuth | sc_transcriptomics | heart | UBERON:0000948 | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D4$interventricular%20septum | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#H6$heart%20right%20ventricle | http://purl.org/ccf/1.5/1fe61622-ba53-47c9-967e-e764c21b8189 | 0.9682371174845873 | 50.052965111032634 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -5497,7 +5497,7 @@ ORDER BY ?modality ?tool ?sex
 | sex | tool | modality | asctb_only | both | exp_only |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Female | sc_proteomics | sc_proteomics | 1266 | 37 | 14 |
-| Male | sc_proteomics | sc_proteomics | 1258 | 45 | 15 |
+| Male | sc_proteomics | sc_proteomics | 1250 | 53 | 21 |
 | Female | azimuth | sc_transcriptomics | 1215 | 88 | 18 |
 | Male | azimuth | sc_transcriptomics | 1212 | 91 | 19 |
 | Female | celltypist | sc_transcriptomics | 1198 | 105 | 67 |
@@ -5711,11 +5711,11 @@ WHERE {
 
 | sex | tool | modality | organ | organId | as | as_id | cell_id | cell_label | cell_count | percentage | asct_relation_in_asctb_table | indirect_asct_relation_in_asctb_table |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Male | popv | sc_transcriptomics | respiratory system | UBERON:0001004 | Left lateral basal segmental bronchus | FMA:7507 | CL:0000235 | macrophage | 4.284 | 0.3284268629254831 | false | true |
-| Female | sc_proteomics | sc_proteomics | large intestine | UBERON:0000059 | caecum | UBERON:0001153 | CL:0000235 | macrophage | 90.25800000000001 | 0.04886719371783309 | true | true |
-| Female | celltypist | sc_transcriptomics | heart | UBERON:0000948 | Posteromedial head of posterior papillary muscle of left ventricle | FMA:7267 | CL:0000775 | neutrophil | 2.125 | 6.13421666053245E-4 | false | true |
 | Male | pan-human-azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | Superior lingular bronchus | FMA:7430 | CL:0002399 | CD1c-positive myeloid dendritic cell | 0.036 | 0.003224073078989789 | false | true |
-| Male | frmatch | sc_transcriptomics | respiratory system | UBERON:0001004 | left lung hilus | UBERON:0004887 | CL:0000875 | non-classical monocyte | 11.484 | 0.00412603150787697 | false | true |
+| Female | celltypist | sc_transcriptomics | pancreas | UBERON:0001264 | tail of pancreas | UBERON:0001151 | CL:0000171 | pancreatic A cell | 3.744 | 0.117936117936118 | false | true |
+| Male | popv | sc_transcriptomics | respiratory system | UBERON:0001004 | Left lateral basal segmental bronchus | FMA:7507 | CL:0000235 | macrophage | 4.284 | 0.3284268629254831 | false | true |
+| Male | pan-human-azimuth | sc_transcriptomics | respiratory system | UBERON:0001004 | Left medial basal bronchopulmonary segment | FMA:7377 | CL:0002394 | CD141-positive myeloid dendritic cell | 1.026 | 0.003039513677811551 | false | true |
+| Female | celltypist | sc_transcriptomics | large intestine | UBERON:0000059 | transverse colon | UBERON:0001157 | CL:0000192 | smooth muscle cell | 369.054 | 0.203728176949294 | true | true |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -5983,10 +5983,10 @@ ORDER BY ?sex ?organ ?dataset ?tool
 
 | sex | sample | rui_location | dataset | tool | modality | organ | organId | datasetVsRuiSim | datasetVsTopPredictedRuiSim | ruiVsTopPredictedRuiSim | datasetVsTopPredictedDatasetSim | ruiVsTopPredictedDatasetSim |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | https://entity.api.hubmapconsortium.org/entities/8a1c2977cbb0f5e3f898a3bfa2e95aeb | http://purl.org/ccf/1.5/016e1d91-9c07-46b7-8441-2975df328fb3 | https://entity.api.hubmapconsortium.org/entities/365d954aadc27b928c1e92a838b952f8 | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9820052922823399 | 0.9809214776227404 | 0.9999832400379405 | 0.9909275740462946 | 0.9935996764958218 |
+| Female | https://entity.api.hubmapconsortium.org/entities/8a1c2977cbb0f5e3f898a3bfa2e95aeb | http://purl.org/ccf/1.5/016e1d91-9c07-46b7-8441-2975df328fb3 | https://entity.api.hubmapconsortium.org/entities/365d954aadc27b928c1e92a838b952f8 | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9820053299860371 | 0.9809214447434427 | 0.9999830912848447 | 0.9909275740462946 | 0.993599713872277 |
 | Female | https://entity.api.hubmapconsortium.org/entities/5618b44c286af71b9fcda4c322fc1f52 | http://purl.org/ccf/1.5/463d2148-5b77-47cb-b2d1-94f05769b73d | https://entity.api.hubmapconsortium.org/entities/5fc97f5cb77f786b629692f9f9281075 | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9779194356679424 | 0.9762569703483417 | 0.9999689593297186 | 0.9901293049989558 | 0.9985325071302515 |
 | Female | https://entity.api.hubmapconsortium.org/entities/9ffdc5eedcb578854e9a3205f34ba88e | http://purl.org/ccf/1.5/7f475c89-1b7e-4238-819f-6a8b216d3322 | https://entity.api.hubmapconsortium.org/entities/7754aa5ebde628b5e92705e33e74a4ef | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9860034599000703 | 0.9848019095808287 | 0.9999689593297186 | 0.9878233020092457 | 0.9988388848244156 |
-| Female | https://entity.api.hubmapconsortium.org/entities/7837bb654b7c0dbf0fa0a60f7cef491d | http://purl.org/ccf/1.5/a8339ba3-15b1-456c-8eec-455e31f19686 | https://entity.api.hubmapconsortium.org/entities/ade8d4ca1fd95afbafdc78a2461bab9c | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.993025598346775 | 0.9935996764958218 | 0.9999832400379405 | 0.9909275740462946 | 0.9809214776227404 |
+| Female | https://entity.api.hubmapconsortium.org/entities/7837bb654b7c0dbf0fa0a60f7cef491d | http://purl.org/ccf/1.5/a8339ba3-15b1-456c-8eec-455e31f19686 | https://entity.api.hubmapconsortium.org/entities/ade8d4ca1fd95afbafdc78a2461bab9c | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9930256357344193 | 0.993599713872277 | 0.9999830912848447 | 0.9909275740462946 | 0.9809214447434427 |
 | Female | https://entity.api.hubmapconsortium.org/entities/5618b44c286af71b9fcda4c322fc1f52 | http://purl.org/ccf/1.5/463d2148-5b77-47cb-b2d1-94f05769b73d | https://entity.api.hubmapconsortium.org/entities/c0b5fe827b4aac2941d9d84f9a952051 | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9985325071302515 | 0.9988388848244156 | 0.9999689593297186 | 0.9878233020092457 | 0.9985325071302515 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
@@ -6227,10 +6227,10 @@ ORDER BY ?sex ?organ ?dataset ?tool
 
 | sex | sample | rui_location | dataset | tool | modality | organ | organId | datasetVsRuiSim |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | https://entity.api.hubmapconsortium.org/entities/8a1c2977cbb0f5e3f898a3bfa2e95aeb | http://purl.org/ccf/1.5/016e1d91-9c07-46b7-8441-2975df328fb3 | https://entity.api.hubmapconsortium.org/entities/365d954aadc27b928c1e92a838b952f8 | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9820052922823399 |
+| Female | https://entity.api.hubmapconsortium.org/entities/8a1c2977cbb0f5e3f898a3bfa2e95aeb | http://purl.org/ccf/1.5/016e1d91-9c07-46b7-8441-2975df328fb3 | https://entity.api.hubmapconsortium.org/entities/365d954aadc27b928c1e92a838b952f8 | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9820053299860371 |
 | Female | https://entity.api.hubmapconsortium.org/entities/5618b44c286af71b9fcda4c322fc1f52 | http://purl.org/ccf/1.5/463d2148-5b77-47cb-b2d1-94f05769b73d | https://entity.api.hubmapconsortium.org/entities/5fc97f5cb77f786b629692f9f9281075 | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9779194356679424 |
 | Female | https://entity.api.hubmapconsortium.org/entities/9ffdc5eedcb578854e9a3205f34ba88e | http://purl.org/ccf/1.5/7f475c89-1b7e-4238-819f-6a8b216d3322 | https://entity.api.hubmapconsortium.org/entities/7754aa5ebde628b5e92705e33e74a4ef | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9860034599000703 |
-| Female | https://entity.api.hubmapconsortium.org/entities/7837bb654b7c0dbf0fa0a60f7cef491d | http://purl.org/ccf/1.5/a8339ba3-15b1-456c-8eec-455e31f19686 | https://entity.api.hubmapconsortium.org/entities/ade8d4ca1fd95afbafdc78a2461bab9c | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.993025598346775 |
+| Female | https://entity.api.hubmapconsortium.org/entities/7837bb654b7c0dbf0fa0a60f7cef491d | http://purl.org/ccf/1.5/a8339ba3-15b1-456c-8eec-455e31f19686 | https://entity.api.hubmapconsortium.org/entities/ade8d4ca1fd95afbafdc78a2461bab9c | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9930256357344193 |
 | Female | https://entity.api.hubmapconsortium.org/entities/5618b44c286af71b9fcda4c322fc1f52 | http://purl.org/ccf/1.5/463d2148-5b77-47cb-b2d1-94f05769b73d | https://entity.api.hubmapconsortium.org/entities/c0b5fe827b4aac2941d9d84f9a952051 | pan-human-azimuth | sc_transcriptomics | Right knee | FMA:24977 | 0.9985325071302515 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
@@ -6307,11 +6307,11 @@ ORDER BY ?sex ?rui_location ?dataset ?tool DESC(?similarity)
 
 | sex | rui_location | dataset | tool | predicted_rui | similarity |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | http://purl.org/ccf/1.5/3545c186-aafd-4477-adc5-6ee21219cf87 | https://entity.api.hubmapconsortium.org/entities/c643ed5d97472b6e6f5d55f475e0d5a7 | azimuth | http://purl.org/ccf/1.5/2243b679-6c6c-4b66-9479-fef2640f2872 | 0.9862524223875069 |
-| Female | http://purl.org/ccf/1.5/463d2148-5b77-47cb-b2d1-94f05769b73d | https://entity.api.hubmapconsortium.org/entities/5fc97f5cb77f786b629692f9f9281075 | pan-human-azimuth | http://purl.org/ccf/1.5/46cd2681-b0f1-455b-a508-5bf7b806a3ed | 0.9862617063587196 |
-| Female | http://purl.org/ccf/1.5/4890aa9b-26a3-4db5-b25a-66e18cbc2158 | https://entity.api.hubmapconsortium.org/entities/c09c90ea0b366f91537e91c7ee196d22 | pan-human-azimuth | http://purl.org/ccf/1.5/2243b679-6c6c-4b66-9479-fef2640f2872 | 0.9883296521736485 |
-| Female | http://purl.org/ccf/1.5/f66f91f9-c6c5-414d-b784-2faec33e0505 | https://entity.api.hubmapconsortium.org/entities/a95f2c79bb637141f7e6874eddc8e274 | pan-human-azimuth | http://purl.org/ccf/1.5/4ae53bc8-b6da-4ba9-9030-a93ae44389b9 | 0.9836465447783388 |
-| Female | http://purl.org/ccf/1.5/f66f91f9-c6c5-414d-b784-2faec33e0505 | https://entity.api.hubmapconsortium.org/entities/c14b104f9e44511ddf82697bce0d1901 | azimuth | http://purl.org/ccf/1.5/c5e652ed-7e40-41de-bfc0-a73f05a0c66a | 0.8870911843612657 |
+| Female | http://purl.org/ccf/1.5/05c11830-1526-4472-bd12-ea24dbcfd3cc | https://api.cellxgene.cziscience.com/dp/v1/collections/b52eb423-5d0d-4645-b217-e1c6d38b2e72#D11$interventricular%20septum | azimuth | http://purl.org/ccf/1.5/adb13ed6-5236-419c-b9c1-c516f3c7471d | 0.8411651799463687 |
+| Female | http://purl.org/ccf/1.5/4ecffbfc-dc50-4140-95e8-4f97d5804f4f | https://entity.api.hubmapconsortium.org/entities/f6eb890063d13698feb11d39fa61e45a | celltypist | http://purl.org/ccf/1.5/e240c0a4-5e53-4464-8320-ad775f2c4bf7 | 0.9968175823983305 |
+| Female | http://purl.org/ccf/1.5/65f3b03b-1eb1-487d-8c02-c4d107cc9400 | https://entity.api.hubmapconsortium.org/entities/11678046b4e78f95762acc47d3074dc5 | popv | http://purl.org/ccf/1.5/4af4b1bd-c71d-4ade-a9f6-47b2ccc9f5bb | 0.9991333276028868 |
+| Female | http://purl.org/ccf/1.5/9131c76e-62cb-4433-a216-64e9fa0450c5 | https://entity.api.hubmapconsortium.org/entities/4c031c4aba3b656a07a5ab14a305cbba | celltypist | http://purl.org/ccf/1.5/ca4a4754-6937-4d08-9eb0-bf400492c22c | 0.9766908542600153 |
+| Female | http://purl.org/ccf/1.5/f66f91f9-c6c5-414d-b784-2faec33e0505 | https://entity.api.hubmapconsortium.org/entities/e010f7505632d7b6eeda25b349383149 | pan-human-azimuth | http://purl.org/ccf/1.5/6f74a57b-41ce-4581-a206-2e84b58c1c98 | 0.9965680525284373 |
 | ... | ... | ... | ... | ... | ... |
 
 
@@ -6389,9 +6389,9 @@ ORDER BY ?sex ?rui_location ?dataset ?tool DESC(?similarity)
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Female | http://purl.org/ccf/1.5/4ecffbfc-dc50-4140-95e8-4f97d5804f4f | https://entity.api.hubmapconsortium.org/entities/f6eb890063d13698feb11d39fa61e45a | popv | http://purl.org/ccf/1.5/d194f593-af76-4ee7-84a6-00f7531d47cf | 0.9994739667490666 |
 | Female | http://purl.org/ccf/1.5/6f7f3ddd-9889-4bad-8bfc-8340c7b6af8b | https://entity.api.sennetconsortium.org/entities/a4e6abb5262ef186e0cd198d67b1c12f | popv | http://purl.org/ccf/1.5/50709361-c670-4ccf-9322-e65b57b3ea8f | 0.7278331009021346 |
-| Female | http://purl.org/ccf/1.5/74c8746d-be53-493d-9a2a-1edbe24f0d16 | https://entity.api.hubmapconsortium.org/entities/8c1ad4c380ae5477d0b7875fa47e867e | pan-human-azimuth | http://purl.org/ccf/1.5/9d795171-ba1f-4ae2-9b98-9a285280ebf6 | 0.9352305819614086 |
 | Female | http://purl.org/ccf/1.5/9131c76e-62cb-4433-a216-64e9fa0450c5 | https://entity.api.hubmapconsortium.org/entities/4c031c4aba3b656a07a5ab14a305cbba | popv | http://purl.org/ccf/1.5/ca4a4754-6937-4d08-9eb0-bf400492c22c | 0.9715563152971441 |
 | Female | http://purl.org/ccf/1.5/df2e5e19-48af-46b1-aa9a-84bfcaa9415a | https://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$right%20cardiac%20atrium | azimuth | http://purl.org/ccf/1.5/502166ab-e841-4b65-9045-7c386166a9e8 | 0.584412703745657 |
+| Male | http://purl.org/ccf/1.5/38d89d1c-002c-4bd3-a178-9af62b112834 | https://entity.api.sennetconsortium.org/entities/1ffd4842e6a1643f538f42eb7fff5bbc | azimuth | http://purl.org/ccf/1.5/2cf1885a-9b6f-440c-9f60-443d5dd3c8ba | 0.7970951050379882 |
 | ... | ... | ... | ... | ... | ... |
 
 
@@ -6558,11 +6558,11 @@ ORDER BY ?as_label
 
 | as_label | ct_label | bm_label | as | ct | bm | bmType |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Accessory pancreatic duct (Duct of Santorini) | smooth muscle cell | ACTA2 | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | gene |
-| Accessory pancreatic duct (Duct of Santorini) | smooth muscle cell | ACTA2 | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
-| Accessory pancreatic duct (Duct of Santorini) | smooth muscle | ACTA2 | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | gene |
-| Accessory pancreatic duct (Duct of Santorini) | smooth muscle | ACTA2 | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
 | Accessory pancreatic duct (Duct of Santorini) | smooth muscle cell | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | gene |
+| Accessory pancreatic duct (Duct of Santorini) | smooth muscle cell | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
+| Accessory pancreatic duct (Duct of Santorini) | smooth muscle | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | gene |
+| Accessory pancreatic duct (Duct of Santorini) | smooth muscle | aSMA | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | protein |
+| Accessory pancreatic duct (Duct of Santorini) | smooth muscle cell | ACTA2 | http://purl.obolibrary.org/obo/UBERON_0005429 | http://purl.obolibrary.org/obo/CL_0000192 | http://identifiers.org/hgnc/130 | gene |
 | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -6801,14 +6801,14 @@ ORDER BY ?graph
 | graph | triples |
 | :--- | :--- |
 | https://purl.humanatlas.io/collection/hra-api | 2006982 |
-| https://purl.humanatlas.io/ds-graph/hra-pop-full | 559027 |
+| https://purl.humanatlas.io/ds-graph/hra-pop-full | 559388 |
 | https://purl.humanatlas.io/graph/ctann-crosswalks | 20185 |
-| https://purl.humanatlas.io/graph/hra-pop | 3255106 |
-| https://purl.humanatlas.io/graph/hra-pop#as-as-sims | 748215 |
-| https://purl.humanatlas.io/graph/hra-pop#distances | 6304800 |
-| https://purl.humanatlas.io/graph/hra-pop#similarities | 249665436 |
-| https://purl.humanatlas.io/graph/hra-pop#similarities-local | 249555897 |
-| https://purl.humanatlas.io/graph/hra-pop#test-data | 32180177 |
+| https://purl.humanatlas.io/graph/hra-pop | 3262817 |
+| https://purl.humanatlas.io/graph/hra-pop#as-as-sims | 747864 |
+| https://purl.humanatlas.io/graph/hra-pop#distances | 6376020 |
+| https://purl.humanatlas.io/graph/hra-pop#similarities | 249682086 |
+| https://purl.humanatlas.io/graph/hra-pop#similarities-local | 249557346 |
+| https://purl.humanatlas.io/graph/hra-pop#test-data | 32179742 |
 
 
 ### <a id="asctb-expr-trios-az"></a>AS, CT, BM, and mean Gene Expression from Azimuth in the HRA (asctb-expr-trios-az)
@@ -6871,11 +6871,11 @@ ORDER BY ?as_label
 
 | as_label | ct_label | bm_label | as | ct | bm | bmType | avg_mean_gene_expr |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Bone marrow | Memory B | CD74 | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000787 | HGNC:1697 | gene | 7.369750532610663 |
-| Bone marrow | Memory B | CD79A | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000787 | HGNC:1698 | gene | 2.6272631057773728 |
-| Bone marrow | Memory B | HLA-DRA | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000787 | HGNC:4947 | gene | 3.833624758181118 |
-| Bone marrow | Memory B | IGHM | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000787 | HGNC:5541 | gene | 3.6362251540025077 |
-| Bone marrow | Memory B | MS4A1 | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000787 | HGNC:7315 | gene | 3.2830093105634055 |
+| Bone marrow | Late Eryth | PRDX2 | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000764 | HGNC:9353 | gene | 3.0044639999011777 |
+| Bone marrow | Late Eryth | MYL4 | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000764 | HGNC:7585 | gene | 2.188574043187228 |
+| Bone marrow | Late Eryth | FBXO7 | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000764 | HGNC:13586 | gene | 1.4459555447101593 |
+| Bone marrow | Late Eryth | KLF1 | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000764 | HGNC:6345 | gene | 1.463984337945779 |
+| Bone marrow | Late Eryth | SMIM1 | http://purl.obolibrary.org/obo/UBERON_0002371 | http://purl.obolibrary.org/obo/CL_0000764 | HGNC:44204 | gene | 2.50178050994873 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ## universe-ad-hoc
@@ -6956,7 +6956,7 @@ ORDER BY ?consortium ?sex
 | Male | GTEx | 8 | 70113 | sc_transcriptomics |
 | Female | HCA | 69 | 411127 | sc_transcriptomics |
 | Male | HCA | 59 | 362641 | sc_transcriptomics |
-| Female | HuBMAP | 30 | 10726884 | sc_proteomics |
+| Male | HTAN | 31 | 2694470 | sc_proteomics |
 | ... | ... | ... | ... | ... |
 
 
@@ -7486,7 +7486,7 @@ WHERE {
 
 | sample_count | dataset_count |
 | :--- | :--- |
-| 29343 | 34364 |
+| 29349 | 34368 |
 
 
 ### <a id="count-datasets"></a>Universe Dataset Count (count-datasets)
@@ -7520,7 +7520,7 @@ WHERE {
 
 | dataset_count |
 | :--- |
-| 34364 |
+| 34368 |
 
 
 ### <a id="count-donors-portals"></a>Universe Donor and Portal Counts (count-donors-portals)
@@ -7557,8 +7557,8 @@ ORDER BY ?sex
 
 | sex | donor_count | portal_count |
 | :--- | :--- | :--- |
-| Female | 7318 | 17 |
-| Male | 7697 | 18 |
+| Female | 7319 | 17 |
+| Male | 7703 | 18 |
 | Unknown | 9523 | 2 |
 
 
@@ -7596,8 +7596,8 @@ ORDER BY ?sex
 
 | sex | sample_count | donor_count |
 | :--- | :--- | :--- |
-| Female | 9251 | 7310 |
-| Male | 9634 | 7689 |
+| Female | 9251 | 7311 |
+| Male | 9638 | 7695 |
 | Unknown | 10066 | 9889 |
 
 
@@ -7635,8 +7635,8 @@ ORDER BY ?sex
 
 | sex | donor_count |
 | :--- | :--- |
-| Female | 7318 |
-| Male | 7697 |
+| Female | 7319 |
+| Male | 7703 |
 | Unknown | 9889 |
 
 
@@ -7673,7 +7673,7 @@ WHERE {
 
 | extraction_site_count |
 | :--- |
-| 179 |
+| 189 |
 
 
 ### <a id="count-extraction-sites"></a>Universe Extraction Site Count (count-extraction-sites)
@@ -7707,7 +7707,7 @@ WHERE {
 
 | extraction_site_count |
 | :--- |
-| 1306 |
+| 1312 |
 
 
 ### <a id="count-sample-description"></a>Universe Samples with Description Counts (count-sample-description)
@@ -7743,7 +7743,7 @@ WHERE {
 
 | sample_count | description_count |
 | :--- | :--- |
-| 3715 | 663 |
+| 3732 | 664 |
 
 
 ### <a id="count-samples"></a>Universe Sample Count (count-samples)
@@ -7777,7 +7777,7 @@ WHERE {
 
 | sample_count |
 | :--- |
-| 30979 |
+| 30996 |
 
 
 ### <a id="count-spatial-placements"></a>Universe Spatial Placement Count (count-spatial-placements)
@@ -7811,7 +7811,7 @@ WHERE {
 
 | spatial_placement_count |
 | :--- |
-| 1306 |
+| 1312 |
 
 
 ### <a id="cxg-collections"></a>Universe CxG collections (cxg-collections)
@@ -7942,11 +7942,11 @@ ORDER BY ?order
 | label | count |
 | :--- | :--- |
 | HuBMAP datasets | 405 |
-| SenNet datasets | 93 |
-| tissue donors | 172 |
+| SenNet datasets | 98 |
+| tissue donors | 173 |
 | organs | 22 |
 | anatomical structures | 98 |
-| cells | 53824639 |
+| cells | 56519109 |
 
 
 ### <a id="dataset-cell-count-check"></a>dataset-cell-count-check
@@ -8054,11 +8054,11 @@ GROUP BY ?sex ?dataset ?technology ?description ?annotation_method
 
 | sex | dataset | technology | description | annotation_method | unique_cell_type_count |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Female | https://entity.api.hubmapconsortium.org/entities/efaecdc1565274900386733cf1661ca6 | CODEX | Dataset Type: CODEX | sc_proteomics | 21 |
-| Female | https://entity.api.hubmapconsortium.org/entities/e45724a72ab0e7d7b283451836dd983e | CODEX | Dataset Type: CODEX | sc_proteomics | 22 |
-| Male | https://entity.api.hubmapconsortium.org/entities/f85a3bfcde06f603102506c851dd76a0 | RNAseq | Dataset Type: RNAseq [Salmon] | celltypist | 77 |
-| Male | https://entity.api.hubmapconsortium.org/entities/dc535e26fd17b8286a57d6dcd734c648 | Slide-seq | Dataset Type: Slide-seq [Salmon] | azimuth | 36 |
-| Male | https://entity.api.hubmapconsortium.org/entities/dc535e26fd17b8286a57d6dcd734c648 | Slide-seq | Dataset Type: Slide-seq [Salmon] | pan-human-azimuth | 30 |
+| Male | https://entity.api.hubmapconsortium.org/entities/c0f9540056469f86daa7c7a363dfb0bd | CODEX | Dataset Type: CODEX | sc_proteomics | 22 |
+| Male | https://entity.api.hubmapconsortium.org/entities/9b18ca7a4c869239ddf80f0dbae7438d | CODEX | Dataset Type: CODEX | sc_proteomics | 22 |
+| Male | https://entity.api.hubmapconsortium.org/entities/746688ea37608c8dbbcc1805adc0413c | CODEX | Dataset Type: CODEX | sc_proteomics | 22 |
+| Male | https://entity.api.hubmapconsortium.org/entities/be815eafcdc11825037586353cf34b86 | CODEX | Dataset Type: CODEX | sc_proteomics | 22 |
+| Male | https://entity.api.hubmapconsortium.org/entities/aaedb5272190e61bf557d3b0a1bc591f | RNAseq | Dataset Type: RNAseq [Salmon] | azimuth | 21 |
 | ... | ... | ... | ... | ... | ... |
 
 
@@ -8222,11 +8222,11 @@ WHERE {
 
 | spatial_entity | slice_count |
 | :--- | :--- |
-| http://purl.org/ccf/1.5/09681d25-f08d-40ff-81cb-a731610aa84d | 1 |
-| http://purl.org/ccf/1.5/0b234d74-b8f9-449f-8416-ef10e33d2f7f | 1 |
-| http://purl.org/ccf/1.5/23e9d58a-c93f-414b-baf9-3692ea20fd1c | 1 |
-| http://purl.org/ccf/1.5/32214c14-bf21-4bf6-aea9-58ab721128ab | 1 |
-| http://purl.org/ccf/1.5/3425fa0c-c5cb-4493-b6ba-41520334b13e | 1 |
+| http://purl.org/ccf/1.5/a438b2b7-3e1c-4062-8223-a72656ce6a94 | 1 |
+| http://purl.org/ccf/1.5/a50b3e65-47bc-43cd-9ce4-7e43575853fb | 1 |
+| http://purl.org/ccf/1.5/a932f63c-c424-476c-8a8d-45eda55ad252 | 1 |
+| http://purl.org/ccf/1.5/ac92c0b0-75c7-4722-8f4e-6da9606408eb | 1 |
+| http://purl.org/ccf/1.5/ace2376b-8386-4830-b76a-7ed645686567 | 1 |
 | ... | ... |
 
 
@@ -8261,11 +8261,11 @@ WHERE {
 
 | extraction_site |
 | :--- |
+| http://purl.org/ccf/1.5/15a1b81b-8fe1-4bd3-b2ac-d4e6109e235c |
+| http://purl.org/ccf/1.5/15f18e96-7ae3-48a8-b80e-c0f645b08858 |
+| http://purl.org/ccf/1.5/168abaaf-f115-4606-a655-8821b294d8bb |
 | http://purl.org/ccf/1.5/169974a5-31ad-412a-b043-f7d3bb5851d9 |
 | http://purl.org/ccf/1.5/16c0c184-90a0-47b5-8d29-9f28366ec71b |
-| http://purl.org/ccf/1.5/170c16c9-b5c4-4466-a270-a6968ef51e7a |
-| http://purl.org/ccf/1.5/1715e3d6-1556-4c8e-b93b-0953e73c7abe |
-| http://purl.org/ccf/1.5/17257912-7925-4731-8764-5a9e763d8065 |
 | ... |
 
 
@@ -8312,11 +8312,11 @@ WHERE {
 
 | tool | cell_id | cell_label | cell_count | gene_id | gene_label | gene_expr | dataset |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| azimuth | http://purl.obolibrary.org/obo/CL_4033048 | Suprabasal | 752 | HGNC:534 | ANXA10 | 3.458211421966553 | https://api.cellxgene.cziscience.com/dp/v1/collections/6282a908-f162-44a2-99a3-8a942e4271b2#Salahudeen_Nat_2020_GSM2855481_Lung_2_4$alveolar%20sac |
+| azimuth | http://purl.obolibrary.org/obo/CL_0000158 | Club (nasal) | 90 | HGNC:534 | ANXA10 | 6.150511741638184 | https://api.cellxgene.cziscience.com/dp/v1/collections/6282a908-f162-44a2-99a3-8a942e4271b2#He_Cell_2022_NEUROD1_overexpression$lung |
+| azimuth | http://purl.obolibrary.org/obo/CL_0002480 | Goblet (nasal) | 61 | HGNC:534 | ANXA10 | 5.7073974609375 | https://api.cellxgene.cziscience.com/dp/v1/collections/6282a908-f162-44a2-99a3-8a942e4271b2#He_Cell_2022_NEUROD1_overexpression$lung |
 | azimuth | http://purl.obolibrary.org/obo/CL_0000158 | Club (nasal) | 51 | HGNC:534 | ANXA10 | 5.835658073425293 | https://api.cellxgene.cziscience.com/dp/v1/collections/6282a908-f162-44a2-99a3-8a942e4271b2#He_Cell_2022_NEUROG3_overexpression$lung |
 | azimuth | http://purl.obolibrary.org/obo/CL_0002062 | AT1 | 68 | HGNC:534 | ANXA10 | 2.747255325317383 | https://api.cellxgene.cziscience.com/dp/v1/collections/6282a908-f162-44a2-99a3-8a942e4271b2#Hein_Dev_2022_4_week_iBTO$lung |
-| azimuth | http://purl.obolibrary.org/obo/CL_4033048 | Suprabasal | 752 | HGNC:534 | ANXA10 | 3.458211421966553 | https://api.cellxgene.cziscience.com/dp/v1/collections/6282a908-f162-44a2-99a3-8a942e4271b2#Salahudeen_Nat_2020_GSM2855481_Lung_2_4$alveolar%20sac |
-| azimuth | http://purl.obolibrary.org/obo/CL_4033048 | Suprabasal | 734 | HGNC:534 | ANXA10 | 3.517550945281982 | https://api.cellxgene.cziscience.com/dp/v1/collections/6282a908-f162-44a2-99a3-8a942e4271b2#Salahudeen_Nat_2020_GSM2855480_Lung_2_3$alveolar%20sac |
-| azimuth | http://purl.obolibrary.org/obo/CL_4033048 | Suprabasal | 675 | HGNC:534 | ANXA10 | 3.447445392608643 | https://api.cellxgene.cziscience.com/dp/v1/collections/6282a908-f162-44a2-99a3-8a942e4271b2#Salahudeen_Nat_2020_GSM2855478_Lung_2_1$alveolar%20sac |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -8658,8 +8658,8 @@ ORDER BY DESC(?label)
 
 | label | count |
 | :--- | :--- |
-| nodes | 628935 |
-| edges | 3255106 |
+| nodes | 630247 |
+| edges | 3262817 |
 
 
 ### <a id="htan-datasets"></a>HTAN dataset info (htan-datasets)
@@ -8814,10 +8814,10 @@ ORDER BY ?doi DESC(?cell_count)
 | sex | dataset | organ | cell_count | in_atlas | has_cell_summary | has_extraction_site | has_publication | in_high_quality_portal | portal | provider | study_paper | doi | lead_author |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Male | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1293$axilla |  | 73 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
-| Male | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1134$lung |  | 52 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
-| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1137$lung |  | 52 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
-| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU255$brain |  | 48 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
-| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1080$adrenal%20gland |  | 48 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU426$lung |  | 54 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| Male | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1145$lung |  | 52 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1066$lung |  | 51 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
+| Female | https://api.cellxgene.cziscience.com/dp/v1/collections/62e8f058-9c37-48bc-9200-e767f318a8ec#RU1144$lung |  | 51 | false | true | false | true | false | CxG | CxG | HTAN MSK - Single cell profiling reveals novel tumor and myeloid subpopulations in small cell lung cancer | https://doi.org/10.1016/j.ccell.2021.09.008 | Joseph M. Chan |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -9157,7 +9157,7 @@ WHERE {
 
 | rui_registered_datasets | rui_registered_tissue_blocks |
 | :--- | :--- |
-| 7409 | 1786 |
+| 7413 | 1783 |
 
 
 ### <a id="sample-info"></a>Sample information (sample-info)
@@ -9458,11 +9458,11 @@ ORDER BY ?unique_dataset_id
 
 | portal | study_paper | doi | lead_author | is_azimuth_reference | donor_id | donor_sex | donor_age | donor_development_stage | donor_race | donor_bmi | organ_name | organ_name_glb_file | tissue_block_id | tissue_block_volume | collisions_bb | collisions_mesh | list_of_colliding_anatomical_structures_bb | list_of_colliding_anatomical_structures_mesh | list_of_colliding_anatomical_structures_bb_ids | list_of_colliding_anatomical_structures_mesh_ids | dataset_id | unique_dataset_id | link_to_h5ad_file | sc_transcriptomics_or_sc_proteomics | cell_type_annotation_tool | omap_id | number_of_cells_total | number_of_unique_cell_types | hubmap_dataset_publication_status | is_rui_registered | is_atlas_dataset |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| HCA |  |  |  |  | TSP27 | Female | 56 |  |  |  | small intestine | 3d-vh-f-small-intestine.glb | TSP27_duodenum | 274320.0 | 7 | 6 | Horizontal part of duodenum; jejunum; Descending part of duodenum; duodenal ampulla; duodenum; Superior part of duodenum; Sphincter of hepatopancreatic ampulla | superior part of duodenum; duodenal ampulla | FMA:14929; UBERON:0002115; FMA:14928; UBERON:0013644; UBERON:0002114; FMA:14926; FMA:15077 | FMA:7206; UBERON:0013644 | hhttps://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$duodenum | hhttps://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$duodenum | https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/ |  |  |  |  |  |  | true | false |
+| HCA |  |  |  |  | TSP27 | Female | 56 |  |  |  | small intestine | 3d-vh-f-small-intestine.glb | TSP27_duodenum | 274320.0 | 7 | 6 | jejunum; Descending part of duodenum; Horizontal part of duodenum; duodenum; duodenal ampulla; Superior part of duodenum; Sphincter of hepatopancreatic ampulla | duodenal ampulla; superior part of duodenum | UBERON:0002115; FMA:14928; FMA:14929; UBERON:0002114; UBERON:0013644; FMA:14926; FMA:15077 | UBERON:0013644; FMA:7206 | hhttps://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$duodenum | hhttps://api.cellxgene.cziscience.com/dp/v1/collections/e5f58829-1a66-40b5-a624-9046778e74f5#TSP27$duodenum | https://cellxgene.cziscience.com/e/a357414d-2042-4eb5-95f0-c58604a18bdd.cxg/ |  |  |  |  |  |  | true | false |
 | KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor1 | Male |  |  |  |  | right kidney | 3d-vh-m-kidney-r.glb | Donor1_TissueBlock1 | 1.9794047017195975 | 1 |  | kidney |  | UBERON:0002113 |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027 |  |  |  |  |  |  | true | false |
 | KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor2 | Male |  |  |  |  | right kidney | 3d-vh-m-kidney-r.glb | Donor2_TissueBlock1 | 0.5009041281806214 | 1 |  | kidney |  | UBERON:0002113 |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor2_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor2_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027 |  |  |  |  |  |  | true | false |
 | KPMP |  | http://dx.doi.org/10.1681/ASN.2016091027 |  |  | Donor3 | Male |  |  |  |  | right kidney | 3d-vh-m-kidney-r.glb | Donor3_TissueBlock1 | 0.49626275595351454 | 1 |  | kidney |  | UBERON:0002113 |  | http://dx.doi.org/10.1681/ASN.2016091027#Donor3_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1681/ASN.2016091027#Donor3_TissueBlock1_TissueBlock1_Dataset1 | http://dx.doi.org/10.1016/j.trsl.2017.07.006 |  |  |  |  |  |  | true | false |
-| HRA |  |  |  |  | Donor1 | Female | 38 |  |  |  | mesenteric lymph node | 3d-nih-f-lymph-node.glb | Donor1_TissueBlock1 | 2508 | 7 | 6 | medulla of lymph node; capsule of lymph node; lymph vasculature; efferent lymphatic vessel; lymph node T cell domain; lymph node follicle; afferent lymphatic vessel | lymph node T cell domain; efferent lymphatic vessel; Lymph vasculature; medulla of lymph node; capsule of lymph node; lymph node follicle | UBERON:0002007; UBERON:0002194; UBERON:0004536; UBERON:0010397; UBERON:0010417; UBERON:0010748; UBERON:0010396 | UBERON:0010417; UBERON:0010397; UBERON:0004536; UBERON:0002007; UBERON:0002194; UBERON:0010748 | http://purl.org/ccf/1.5/omap-1#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://purl.org/ccf/1.5/omap-1#Donor1_TissueBlock1_TissueBlock1_Dataset1 | https://hubmapconsortium.github.io/ccf-releases/v1.4/docs/omap/omap-1-human-lymph-node-ibex.html |  |  |  |  |  |  | true | false |
+| HRA |  |  |  |  | Donor1 | Female | 38 |  |  |  | mesenteric lymph node | 3d-nih-f-lymph-node.glb | Donor1_TissueBlock1 | 2508 | 7 | 6 | medulla of lymph node; capsule of lymph node; lymph vasculature; efferent lymphatic vessel; lymph node T cell domain; lymph node follicle; afferent lymphatic vessel | efferent lymphatic vessel; capsule of lymph node; lymph node T cell domain; Lymph vasculature; lymph node follicle; medulla of lymph node | UBERON:0002007; UBERON:0002194; UBERON:0004536; UBERON:0010397; UBERON:0010417; UBERON:0010748; UBERON:0010396 | UBERON:0010397; UBERON:0002194; UBERON:0010417; UBERON:0004536; UBERON:0010748; UBERON:0002007 | http://purl.org/ccf/1.5/omap-1#Donor1_TissueBlock1_TissueBlock1_Dataset1 | http://purl.org/ccf/1.5/omap-1#Donor1_TissueBlock1_TissueBlock1_Dataset1 | https://hubmapconsortium.github.io/ccf-releases/v1.4/docs/omap/omap-1-human-lymph-node-ibex.html |  |  |  |  |  |  | true | false |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
@@ -9921,11 +9921,11 @@ WHERE {
 
 | spatial_placement |
 | :--- |
-| http://purl.org/ccf/1.5/31210e77-aa3a-4d7c-b0e3-24bfa925824b_placement |
-| http://purl.org/ccf/1.5/3158500f-9623-4a32-bf4d-0d54c602729c_placement |
-| http://purl.org/ccf/1.5/3169a06f-0476-444d-8f24-b9794908aa09_placement |
-| http://purl.org/ccf/1.5/3177cc39-b658-4f7c-84ba-f057e023ad12_placement |
-| http://purl.org/ccf/1.5/3228161e-cd48-49a7-8a76-2247b6ac97a2_placement |
+| http://purl.org/ccf/1.5/bd3dabbb-e01d-4037-96bc-43f2bd54f147_placement |
+| http://purl.org/ccf/1.5/bdd4f5b0-8a28-4b65-9864-560ec0ed1c15_placement |
+| http://purl.org/ccf/1.5/bddd9066-3f8c-4330-8e33-23be89ee8a0b_placement |
+| http://purl.org/ccf/1.5/bf90f073-8385-48d9-bcde-fae7fffa0647_placement |
+| http://purl.org/ccf/1.5/c053f62c-af03-42de-904a-fde28761f348_placement |
 | ... |
 
 
@@ -10072,7 +10072,7 @@ WHERE {
 
 | universe_sc_proteomics_dataset_count | universe_sc_proteomics_cell_count |
 | :--- | :--- |
-| 328 | 35991932 |
+| 359 | 38686402 |
 
 
 ### <a id="universe-sc-transcriptomics-cell-counts"></a>Cell Counts for Universe Transcriptomics Datasets (universe-sc-transcriptomics-cell-counts)
