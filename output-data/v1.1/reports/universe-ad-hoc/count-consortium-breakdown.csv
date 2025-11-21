@@ -2,24 +2,22 @@ consortium,sex,dataset_count,atlas_dataset_count,test_dataset_count,excluded_dat
 <Consortium Name>,Female,106,0,106,0,0,106,N/A,0
 Allen Institute for Brain Science,Female,5,0,5,0,0,5,N/A,0
 Allen Institute for Brain Science,Male,5,0,5,0,0,5,N/A,0
-CxG,Female,4849,0,4777,72,4849,4849,N/A,0
-CxG,Male,4981,0,4911,70,4981,4981,N/A,0
-CxG,Unknown,709,0,702,7,709,709,N/A,0
-DISCO,Female,3226,0,366,2860,3226,3226,N/A,0
-DISCO,Male,3771,0,299,3472,3771,3771,N/A,0
-DISCO,Unknown,8994,0,1372,7622,8994,8994,N/A,0
-GTEx,Female,37,7,30,0,5,30,sc_transcriptomics,143389
-GTEx,Male,37,8,29,0,4,29,sc_transcriptomics,183482
+CxG,Female,4849,0,4777,72,4849,72,sc_transcriptomics,47730068
+CxG,Male,4981,0,4911,70,4981,70,sc_transcriptomics,56397519
+CxG,Unknown,709,0,702,7,709,7,sc_transcriptomics,7348932
+DISCO,Female,3226,0,366,2860,3226,2860,sc_transcriptomics,1646620
+DISCO,Male,3771,0,299,3472,3771,3472,sc_transcriptomics,1806641
+DISCO,Unknown,8994,0,1372,7622,8994,7622,sc_transcriptomics,6249928
+GTEx,Female,37,7,30,0,5,25,sc_transcriptomics,179439
+GTEx,Male,37,8,29,0,4,25,sc_transcriptomics,219532
 GUDMAP,Male,12,0,12,0,0,12,N/A,0
-HCA,Female,429,69,277,83,316,360,sc_transcriptomics,1011325
-HCA,Male,337,59,221,57,229,278,sc_transcriptomics,995859
+HCA,Female,429,69,277,83,316,127,sc_transcriptomics,2340879
+HCA,Male,337,59,221,57,229,106,sc_transcriptomics,2051660
 "HIRN, ESPACE",Male,1,0,1,0,0,1,N/A,0
 HRA,Female,1,0,1,0,0,1,N/A,0
 HTAN,Male,31,31,0,0,0,0,sc_proteomics,2694470
-HuBMAP,Female,2033,162,1866,5,74,1871,sc_transcriptomics,4253828
-HuBMAP,Female,2033,162,1866,5,74,1871,sc_proteomics,10726884
-HuBMAP,Male,2607,357,2242,8,1,2250,sc_proteomics,15648530
-HuBMAP,Male,2607,357,2242,8,1,2250,sc_transcriptomics,11637310
+HuBMAP,Female,2033,162,1866,5,74,1797,sc_transcriptomics,4426398
+HuBMAP,Male,2607,357,2242,8,1,2249,sc_transcriptomics,11668482
 KPMP,Female,243,0,229,14,0,243,N/A,0
 KPMP,Male,211,0,198,13,0,211,N/A,0
 LungMap,Female,4,0,0,4,4,4,N/A,0
@@ -29,10 +27,8 @@ NHLBI/LungMap,Male,8,2,1,5,0,6,sc_transcriptomics,24083
 SEA-AD,Female,1,0,0,1,1,1,N/A,0
 SPARC,Female,38,0,38,0,0,38,N/A,0
 SPARC,Male,12,0,12,0,0,12,N/A,0
-SenNet,Female,717,48,658,11,12,669,sc_transcriptomics,865889
-SenNet,Female,717,48,658,11,12,669,sc_proteomics,4985010
-SenNet,Male,1066,50,999,17,1,1016,sc_transcriptomics,1550869
-SenNet,Male,1066,50,999,17,1,1016,sc_proteomics,3933835
+SenNet,Female,717,48,658,11,12,657,sc_transcriptomics,972957
+SenNet,Male,1066,50,999,17,1,1015,sc_transcriptomics,1563936
 UEdinburgh,Female,36,0,36,0,0,36,N/A,0
 UEdinburgh,Male,28,0,28,0,0,28,N/A,0
 UIowa,Female,20,0,20,0,0,20,N/A,0

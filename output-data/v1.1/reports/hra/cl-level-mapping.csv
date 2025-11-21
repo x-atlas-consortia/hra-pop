@@ -191,7 +191,7 @@ trichogen cell,http://purl.obolibrary.org/obo/CL_0000374,true,http://purl.obolib
 humidity receptor cell,http://purl.obolibrary.org/obo/CL_0000376,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 tracheoblast,http://purl.obolibrary.org/obo/CL_0000377,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 sensory processing neuron,http://purl.obolibrary.org/obo/CL_0000379,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
-nephrogenic mesenchyme stem cell,http://purl.obolibrary.org/obo/CL_0000383,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+nephrogenic mesenchyme stem cell,http://purl.obolibrary.org/obo/CL_0000383,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
 prohemocyte (sensu Nematoda and Protostomia),http://purl.obolibrary.org/obo/CL_0000385,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
 hemocyte (sensu Arthropoda),http://purl.obolibrary.org/obo/CL_0000387,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
 tendon cell,http://purl.obolibrary.org/obo/CL_0000388,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
@@ -280,7 +280,7 @@ band form neutrophil,http://purl.obolibrary.org/obo/CL_0000560,true,http://purl.
 amacrine cell,http://purl.obolibrary.org/obo/CL_0000561,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 nucleate erythrocyte,http://purl.obolibrary.org/obo/CL_0000562,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
 neutrophilic promyelocyte,http://purl.obolibrary.org/obo/CL_0000564,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
-angioblastic mesenchymal cell,http://purl.obolibrary.org/obo/CL_0000566,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+angioblastic mesenchymal cell,http://purl.obolibrary.org/obo/CL_0000566,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
 polymodal nocireceptor,http://purl.obolibrary.org/obo/CL_0000567,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 amine precursor uptake and decarboxylation cell,http://purl.obolibrary.org/obo/CL_0000568,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 cardiac mesenchymal cell,http://purl.obolibrary.org/obo/CL_0000569,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
@@ -320,7 +320,7 @@ olfactory granule cell,http://purl.obolibrary.org/obo/CL_0000626,true,http://pur
 hepatic stellate cell,http://purl.obolibrary.org/obo/CL_0000632,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 Hensen cell,http://purl.obolibrary.org/obo/CL_0000633,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
 Claudius cell,http://purl.obolibrary.org/obo/CL_0000634,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
-Deiter's cell,http://purl.obolibrary.org/obo/CL_0000635,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
+Deiter's cell,http://purl.obolibrary.org/obo/CL_0000635,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 Mueller cell,http://purl.obolibrary.org/obo/CL_0000636,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
 chromophil cell of anterior pituitary gland,http://purl.obolibrary.org/obo/CL_0000637,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 acidophil cell of pars distalis of adenohypophysis,http://purl.obolibrary.org/obo/CL_0000638,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
@@ -500,7 +500,7 @@ ciliated olfactory receptor neuron,http://purl.obolibrary.org/obo/CL_0000847,tru
 microvillous olfactory receptor neuron,http://purl.obolibrary.org/obo/CL_0000848,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 crypt olfactory receptor neuron,http://purl.obolibrary.org/obo/CL_0000849,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 serotonergic neuron,http://purl.obolibrary.org/obo/CL_0000850,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
-olfactory epithelial supporting cell,http://purl.obolibrary.org/obo/CL_0000853,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,,
+olfactory epithelial supporting cell,http://purl.obolibrary.org/obo/CL_0000853,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 sensory hair cell,http://purl.obolibrary.org/obo/CL_0000855,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 neuromast hair cell,http://purl.obolibrary.org/obo/CL_0000856,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 classical monocyte,http://purl.obolibrary.org/obo/CL_0000860,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
@@ -877,7 +877,7 @@ late promyelocyte,http://purl.obolibrary.org/obo/CL_0002151,true,http://purl.obo
 columnar cell of endocervix,http://purl.obolibrary.org/obo/CL_0002152,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 early promyelocyte,http://purl.obolibrary.org/obo/CL_0002154,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
 echinocyte,http://purl.obolibrary.org/obo/CL_0002155,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
-endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
+endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 external epithelial cell of tympanic membrane,http://purl.obolibrary.org/obo/CL_0002158,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 general ecto-epithelial cell,http://purl.obolibrary.org/obo/CL_0002159,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 basal external epithelial cell of tympanic membrane,http://purl.obolibrary.org/obo/CL_0002160,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
@@ -885,11 +885,11 @@ superficial external epithelial cell of tympanic membrane,http://purl.obolibrary
 internal epithelial cell of tympanic membrane,http://purl.obolibrary.org/obo/CL_0002162,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 internal pillar cell of cochlea,http://purl.obolibrary.org/obo/CL_0002163,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
 external pillar cell of cochlea,http://purl.obolibrary.org/obo/CL_0002164,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
-phalangeal cell,http://purl.obolibrary.org/obo/CL_0002165,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+phalangeal cell,http://purl.obolibrary.org/obo/CL_0002165,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
 epithelial cell of Malassez,http://purl.obolibrary.org/obo/CL_0002166,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 olfactory epithelial cell,http://purl.obolibrary.org/obo/CL_0002167,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 border cell of cochlea,http://purl.obolibrary.org/obo/CL_0002168,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
-basal cell of olfactory epithelium,http://purl.obolibrary.org/obo/CL_0002169,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+basal cell of olfactory epithelium,http://purl.obolibrary.org/obo/CL_0002169,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,,
 keratinized cell of the oral mucosa,http://purl.obolibrary.org/obo/CL_0002170,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 globose cell of olfactory epithelium,http://purl.obolibrary.org/obo/CL_0002171,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 interdental cell of cochlea,http://purl.obolibrary.org/obo/CL_0002172,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
@@ -1030,7 +1030,7 @@ connective tissue cell,http://purl.obolibrary.org/obo/CL_0002320,true,http://pur
 embryonic stem cell,http://purl.obolibrary.org/obo/CL_0002322,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
 amniocyte,http://purl.obolibrary.org/obo/CL_0002323,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
 basal-myoepithelial cell of mammary gland,http://purl.obolibrary.org/obo/CL_0002324,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
-lactocyte,http://purl.obolibrary.org/obo/CL_0002325,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+lactocyte,http://purl.obolibrary.org/obo/CL_0002325,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
 luminal epithelial cell of mammary gland,http://purl.obolibrary.org/obo/CL_0002326,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 mammary gland epithelial cell,http://purl.obolibrary.org/obo/CL_0002327,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 bronchial epithelial cell,http://purl.obolibrary.org/obo/CL_0002328,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
@@ -1246,7 +1246,7 @@ iris pigment epithelial cell,http://purl.obolibrary.org/obo/CL_0002565,true,http
 dark melanocyte,http://purl.obolibrary.org/obo/CL_0002566,true,http://purl.obolibrary.org/obo/CL_0000148,melanocyte,,
 light melanocyte,http://purl.obolibrary.org/obo/CL_0002567,true,http://purl.obolibrary.org/obo/CL_0000148,melanocyte,,
 mesenchymal stem cell of Wharton's jelly,http://purl.obolibrary.org/obo/CL_0002568,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
-mesenchymal stem cell of umbilical cord,http://purl.obolibrary.org/obo/CL_0002569,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+mesenchymal stem cell of umbilical cord,http://purl.obolibrary.org/obo/CL_0002569,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
 mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
 hepatic mesenchymal stem cell,http://purl.obolibrary.org/obo/CL_0002571,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
 vertebral mesenchymal stem cell,http://purl.obolibrary.org/obo/CL_0002572,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
@@ -1294,11 +1294,11 @@ adipocyte of omentum tissue,http://purl.obolibrary.org/obo/CL_0002615,true,http:
 perirenal adipocyte,http://purl.obolibrary.org/obo/CL_0002616,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000136,adipocyte
 adipocyte of breast,http://purl.obolibrary.org/obo/CL_0002617,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000136,adipocyte
 endothelial cell of umbilical vein,http://purl.obolibrary.org/obo/CL_0002618,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
-adult endothelial progenitor cell,http://purl.obolibrary.org/obo/CL_0002619,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+adult endothelial progenitor cell,http://purl.obolibrary.org/obo/CL_0002619,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
 skin fibroblast,http://purl.obolibrary.org/obo/CL_0002620,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 gingival epithelial cell,http://purl.obolibrary.org/obo/CL_0002621,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 prostate stromal cell,http://purl.obolibrary.org/obo/CL_0002622,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
-acinar cell of salivary gland,http://purl.obolibrary.org/obo/CL_0002623,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+acinar cell of salivary gland,http://purl.obolibrary.org/obo/CL_0002623,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
 paneth cell of the appendix,http://purl.obolibrary.org/obo/CL_0002624,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 seminiferous tubule epithelial cell,http://purl.obolibrary.org/obo/CL_0002625,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 immature astrocyte,http://purl.obolibrary.org/obo/CL_0002626,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
@@ -1462,7 +1462,7 @@ renal alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_0005011,true,htt
 multiciliated epithelial cell,http://purl.obolibrary.org/obo/CL_0005012,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 single ciliated epithelial cell,http://purl.obolibrary.org/obo/CL_0005013,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 auditory epithelial supporting cell,http://purl.obolibrary.org/obo/CL_0005014,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
-inner phalangeal cell,http://purl.obolibrary.org/obo/CL_0005015,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+inner phalangeal cell,http://purl.obolibrary.org/obo/CL_0005015,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
 pancreatic epsilon cell,http://purl.obolibrary.org/obo/CL_0005019,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 lymphangioblast,http://purl.obolibrary.org/obo/CL_0005020,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
 mesenchymal lymphangioblast,http://purl.obolibrary.org/obo/CL_0005021,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
@@ -1594,12 +1594,12 @@ specified double negative thymocyte (Homo sapiens),http://purl.obolibrary.org/ob
 committed double negative thymocyte (Homo sapiens),http://purl.obolibrary.org/obo/CL_0009082,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
 rearranging double negative thymocyte (Homo sapiens),http://purl.obolibrary.org/obo/CL_0009083,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
 glandular epithelial cell of endometrium,http://purl.obolibrary.org/obo/CL_0009084,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
-colony forming unit ��� Hill cell,http://purl.obolibrary.org/obo/CL_0009085,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+colony forming unit ��� Hill cell,http://purl.obolibrary.org/obo/CL_0009085,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
 endothelial cell of respiratory system lymphatic vessel,http://purl.obolibrary.org/obo/CL_0009086,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
 fused extravillous trophoblast,http://purl.obolibrary.org/obo/CL_0009087,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
-circulating angiogenic cell,http://purl.obolibrary.org/obo/CL_0009088,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+circulating angiogenic cell,http://purl.obolibrary.org/obo/CL_0009088,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
 lung pericyte,http://purl.obolibrary.org/obo/CL_0009089,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
-endothelial colony forming cell,http://purl.obolibrary.org/obo/CL_0009090,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+endothelial colony forming cell,http://purl.obolibrary.org/obo/CL_0009090,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
 Leydig stem cell,http://purl.obolibrary.org/obo/CL_0009091,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
 endothelial cell of placenta,http://purl.obolibrary.org/obo/CL_0009092,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
 smooth muscle cell of placenta,http://purl.obolibrary.org/obo/CL_0009093,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
@@ -1743,7 +1743,7 @@ myocyte of atrial septal branch of anterior internodal tract,http://purl.obolibr
 myocyte of middle internodal tract,http://purl.obolibrary.org/obo/CL_1000290,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
 myocyte of posterior internodal tract,http://purl.obolibrary.org/obo/CL_1000291,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
 epithelial cell of urethra,http://purl.obolibrary.org/obo/CL_1000296,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
-mesothelial cell of dura mater,http://purl.obolibrary.org/obo/CL_1000298,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,,
+mesothelial cell of dura mater,http://purl.obolibrary.org/obo/CL_1000298,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 fibroblast of connective tissue of prostate,http://purl.obolibrary.org/obo/CL_1000299,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 fibroblast of outer membrane of prostatic capsule,http://purl.obolibrary.org/obo/CL_1000300,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 fibroblast of subepithelial connective tissue of prostatic gland,http://purl.obolibrary.org/obo/CL_1000301,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
@@ -2000,7 +2000,7 @@ hippocampal glial cell,http://purl.obolibrary.org/obo/CL_1001580,true,http://pur
 lateral ventricle glial cell,http://purl.obolibrary.org/obo/CL_1001581,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
 lateral ventricle neuron,http://purl.obolibrary.org/obo/CL_1001582,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 appendix glandular cell,http://purl.obolibrary.org/obo/CL_1001585,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
-mammary gland glandular cell,http://purl.obolibrary.org/obo/CL_1001586,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+mammary gland glandular cell,http://purl.obolibrary.org/obo/CL_1001586,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
 uterine cervix secretory cell,http://purl.obolibrary.org/obo/CL_1001587,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 colon glandular cell,http://purl.obolibrary.org/obo/CL_1001588,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 duodenum secretory cell,http://purl.obolibrary.org/obo/CL_1001589,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
@@ -2014,7 +2014,7 @@ seminal vesicle glandular cell,http://purl.obolibrary.org/obo/CL_1001597,true,ht
 small intestine secretory cell,http://purl.obolibrary.org/obo/CL_1001598,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 pancreas exocrine glandular cell,http://purl.obolibrary.org/obo/CL_1001599,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
 adrenal gland glandular cell,http://purl.obolibrary.org/obo/CL_1001601,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
-cerebral cortex endothelial cell,http://purl.obolibrary.org/obo/CL_1001602,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+cerebral cortex endothelial cell,http://purl.obolibrary.org/obo/CL_1001602,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,,
 lung macrophage,http://purl.obolibrary.org/obo/CL_1001603,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
 foreskin keratinocyte,http://purl.obolibrary.org/obo/CL_1001606,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 articular chondrocyte,http://purl.obolibrary.org/obo/CL_1001607,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
@@ -2332,7 +2332,7 @@ secondary crest myofibroblast,http://purl.obolibrary.org/obo/CL_4033016,true,htt
 bronchiolar smooth muscle cell,http://purl.obolibrary.org/obo/CL_4033017,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
 lung megakaryocyte,http://purl.obolibrary.org/obo/CL_4033018,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
 ON-blue cone bipolar cell,http://purl.obolibrary.org/obo/CL_4033019,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
-mucus secreting cell of trachea gland,http://purl.obolibrary.org/obo/CL_4033020,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+mucus secreting cell of trachea gland,http://purl.obolibrary.org/obo/CL_4033020,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
 myoepithelial cell of trachea gland,http://purl.obolibrary.org/obo/CL_4033021,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 mucus secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033022,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
 airway submucosal gland collecting duct epithelial cell,http://purl.obolibrary.org/obo/CL_4033023,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
@@ -2406,8 +2406,8 @@ glial restricted tripotential precursor cell,http://purl.obolibrary.org/obo/CL_4
 chorionic girdle cell,http://purl.obolibrary.org/obo/CL_4040001,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
 enteroglial cell,http://purl.obolibrary.org/obo/CL_4040002,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
 fetal pre-type II pulmonary alveolar epithelial cell,http://purl.obolibrary.org/obo/CL_4040003,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
-mesenchymal stem cell of orbital adipose tissue,http://purl.obolibrary.org/obo/CL_4040004,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
-mesenchymal stem cell of apical papilla,http://purl.obolibrary.org/obo/CL_4040005,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+mesenchymal stem cell of orbital adipose tissue,http://purl.obolibrary.org/obo/CL_4040004,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+mesenchymal stem cell of apical papilla,http://purl.obolibrary.org/obo/CL_4040005,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
 TAC3-positive striatal interneuron,http://purl.obolibrary.org/obo/CL_4042001,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 TAC3-positive medium spiny neuron,http://purl.obolibrary.org/obo/CL_4042002,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
 border associated macrophage,http://purl.obolibrary.org/obo/CL_4042003,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
@@ -2515,7 +2515,7 @@ biliary tuft cell,http://purl.obolibrary.org/obo/CL_4052033,true,http://purl.obo
 tuft cell of thymus,http://purl.obolibrary.org/obo/CL_4052034,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 tuft cell of pancreatic duct,http://purl.obolibrary.org/obo/CL_4052035,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 tuft cell of nasal cavity,http://purl.obolibrary.org/obo/CL_4052036,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
-tuft cell of olfactory epithelium,http://purl.obolibrary.org/obo/CL_4052037,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+tuft cell of olfactory epithelium,http://purl.obolibrary.org/obo/CL_4052037,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,,
 tuft cell of nasal cavity respiratory epithelium,http://purl.obolibrary.org/obo/CL_4052038,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 tuft cell of submandibular gland,http://purl.obolibrary.org/obo/CL_4052039,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
 tuft cell of stomach,http://purl.obolibrary.org/obo/CL_4052040,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
