@@ -29,7 +29,7 @@ WHERE {
           }
 
           ?rui_location owl:sameAs ?millitome_location .
-          FILTER (STRSTARTS(STR(?rui_location), 'https://purl.humanatlas.io/millitome/'))
+          FILTER (STRSTARTS(STR(?millitome_location), 'https://purl.humanatlas.io/millitome/'))
 
           ?dataset a ccf:Dataset ;
           ccf:has_cell_summary [
