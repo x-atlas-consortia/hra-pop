@@ -1,0 +1,69 @@
+#+ summary: CL level mapping
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+
+SELECT ?modality ?tool ?cell_label ?cell_id ?is_mapped
+  (SAMPLE(?l1_cell_id) as ?level_1_cell_id) (SAMPLE(?l1_cell_label) as ?level_1_cell_label)
+  (SAMPLE(?l2_cell_id) as ?level_2_cell_id) (SAMPLE(?l2_cell_label) as ?level_2_cell_label)
+FROM <https://purl.humanatlas.io/vocab/cl>
+FROM NAMED HRA:
+WHERE {
+  GRAPH HRA: {
+    ?mapping a ccf:CtAnnMapping ; owl:annotatedTarget ?cl_id .
+    BIND(STRBEFORE(REPLACE(STR(?mapping), 'https://purl.humanatlas.io/ctann/', ''), '/') as ?tool)
+    BIND(IF(?tool = 'vccf', 'sc_proteomics', 'sc_transcriptomics') as ?modality)
+    BIND(IRI(REPLACE(STR(?cl_id), 'CL:', STR(CL:))) as ?cell_id)
+  }
+  ?cell_id rdfs:label ?cell_label .
+  FILTER(STRSTARTS(STR(?cell_id), STR(CL:)))
+
+  # Source: https://docs.google.com/spreadsheets/d/1JZE9BprxatUUopN25P1G16flGXvbuRipuddRFREkN4A/edit?gid=0#gid=0
+  # Match to level 1 cell types
+  OPTIONAL {
+    VALUES (?l1_cell_id) {
+      (CL:0002320) # connective tissue cell
+      (CL:0000988) # hematopoietic cell
+      (CL:0001035) # bone cell
+      (CL:0000152) # exocrine cell
+      (CL:0002319) # neural cell
+      (CL:0000034) # stem cell
+      (CL:0000187) # muscle cell
+      (CL:0000349) # extraembryonic cell
+      (CL:0000039) # germ line cell
+      (CL:0000148) # melanocyte
+      (CL:0000115) # endothelial cell
+      (CL:0000066) # epithelial cell
+    }
+    ?cell_id (rdfs:subClassOf|rdf:type)* ?l1_cell_id .
+    ?l1_cell_id rdfs:label ?l1_cell_label .
+  }
+
+  # Match to level 2 cell types
+  OPTIONAL {
+    VALUES (?l1_cell_id ?l2_cell_id) {
+      (CL:0002320 CL:0000136) # connective tissue cell -> adipocyte
+      (CL:0000988 CL:0000576) # hematopoietic cell -> monocyte
+      (CL:0000988 CL:0000081) # hematopoietic cell -> blood cell
+      (CL:0002319 CL:0000125) # neural cell -> glial cell
+      (CL:0000988 CL:0000235) # hematopoietic cell -> macrophage
+      (CL:0000988 CL:0000451) # hematopoietic cell -> dendritic cell
+      (CL:0000988 CL:0000236) # hematopoietic cell -> B cell
+      (CL:0002320 CL:0000499) # connective tissue cell -> stromal cell
+      (CL:0000988 CL:0000084) # hematopoietic cell -> T cell
+      (CL:0002319 CL:0000540) # neural cell -> neuron
+    }
+    ?cell_id (rdfs:subClassOf|rdf:type)* ?l2_cell_id .
+    ?l1_cell_id rdfs:label ?l1_cell_label .
+    ?l2_cell_id rdfs:label ?l2_cell_label .
+  }
+
+  BIND(IF(BOUND(?l1_cell_id), 'true', 'false') as ?is_mapped)
+}
+GROUP BY ?modality ?tool ?cell_id ?cell_label ?is_mapped
+ORDER BY DESC(?is_mapped) ?cell_id

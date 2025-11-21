@@ -1,4 +1,6 @@
 spatial_entity,slice_count
+http://purl.org/ccf/1.5/9eb92589-c274-47e3-a00d-daab627e865e,1
+http://purl.org/ccf/1.5/9ed68ed1-b352-487f-b4be-3d23398cdaf6,1
 http://purl.org/ccf/1.5/a438b2b7-3e1c-4062-8223-a72656ce6a94,1
 http://purl.org/ccf/1.5/a50b3e65-47bc-43cd-9ce4-7e43575853fb,1
 http://purl.org/ccf/1.5/a932f63c-c424-476c-8a8d-45eda55ad252,1
@@ -14,6 +16,7 @@ http://purl.org/ccf/1.5/bc680918-fd73-44ba-9ea4-17786f0446f7,1
 http://purl.org/ccf/1.5/be8c8224-646f-4e98-a876-73e1209de49d,1
 http://purl.org/ccf/1.5/c361f725-c7cf-4e71-9c7f-4236cf3e99b5,1
 http://purl.org/ccf/1.5/c657ec7b-8c67-4c73-8ad8-b6f13bb368f5,1
+http://purl.org/ccf/1.5/c7ed4142-ddad-4cf5-b83b-dd431927bad5,1
 http://purl.org/ccf/1.5/c94564a4-2e5a-4550-814e-25429c02ba3b,1
 http://purl.org/ccf/1.5/ca477bf8-d649-49ab-8cb2-11b403e81052,1
 http://purl.org/ccf/1.5/ca78cd5e-0c21-49c1-88b6-5ad7a56db50b,1
@@ -36,13 +39,10 @@ http://purl.org/ccf/1.5/ee91b4a1-de53-44b9-b0e6-dd23605e2652,1
 http://purl.org/ccf/1.5/f394db70-d134-4f13-8e22-ee78b202d2df,1
 http://purl.org/ccf/1.5/f4d4fca6-b509-4757-a900-b39c412e45dc,1
 http://purl.org/ccf/1.5/f7d90fa7-9664-4a23-a891-324a736a50a0,1
+http://purl.org/ccf/1.5/fc556dba-cfb0-490d-913b-d76717762142,1
 http://purl.org/ccf/1.5/fca3f0de-4c85-48aa-82b6-ef0c9285a2c8,1
 http://purl.org/ccf/1.5/fe276ee5-752a-456e-bb25-4e5da071c6ed,1
 http://purl.org/ccf/1.5/fe48df6d-25c3-4efd-8f9e-8e0b659cd618,1
-http://purl.org/ccf/1.5/1f959974-4f3c-4023-a1af-6e5172d89f2c,1
-http://purl.org/ccf/1.5/2f0bc1c1-551b-46d8-bd70-c77ac180ab7c,1
-http://purl.org/ccf/1.5/c7ed4142-ddad-4cf5-b83b-dd431927bad5,1
-http://purl.org/ccf/1.5/fc556dba-cfb0-490d-913b-d76717762142,1
 http://purl.org/ccf/1.5/513a5005-f9e5-4a00-a08a-15b5d47c5ea0,2
 http://purl.org/ccf/1.5/d498378e-8682-45f3-9bfd-11b48023125c,2
 http://purl.org/ccf/1.5/e30fdc54-9fd4-4b57-ad9f-1c121c9c9a1c,3
@@ -50,6 +50,7 @@ http://purl.org/ccf/1.5/02176b5c-bd9b-47d1-bfe9-739206945907,3
 http://purl.org/ccf/1.5/0e0580ee-5149-486e-bce0-8876879e28dd,3
 http://purl.org/ccf/1.5/169974a5-31ad-412a-b043-f7d3bb5851d9,3
 http://purl.org/ccf/1.5/195ee5e5-cbc5-4d67-9535-2977ae665a1d,3
+http://purl.org/ccf/1.5/3c82fd57-9119-4fc8-8f91-71c3a78b993c,3
 http://purl.org/ccf/1.5/9864ef56-6a29-441a-af1a-09323042c15d,3
 http://purl.org/ccf/1.5/a3d0dc1b-4cf7-4c0f-bf7e-6e00e285026c,4
 http://purl.org/ccf/1.5/b94eb57a-a190-405b-8500-905a37c57415,4
@@ -58,12 +59,17 @@ http://purl.org/ccf/1.5/bdd4f5b0-8a28-4b65-9864-560ec0ed1c15,4
 http://purl.org/ccf/1.5/e72cabc9-73c7-47c0-80f9-0a07a7f6e32e,4
 http://purl.org/ccf/1.5/fa75f41f-3436-45ea-8b4e-50ced128a76f,4
 http://purl.org/ccf/1.5/084d76a4-86d1-42a0-8c0a-de21d7b31894,4
+http://purl.org/ccf/1.5/27a2078f-465a-4d1f-bc3d-fc7a7baf4e16,4
 http://purl.org/ccf/1.5/3264a890-bf42-4088-8013-00c7e9f0411a,4
 http://purl.org/ccf/1.5/3ca893b8-6dab-45c3-869d-0177a37265a0,4
+http://purl.org/ccf/1.5/4393b786-66c3-46e7-bd4b-57101aeac0c7,4
 http://purl.org/ccf/1.5/a987ea64-942d-4077-8846-65becbfc423f,4
 http://purl.org/ccf/1.5/b3688e14-83f8-45b1-a55a-205cfd80333e,4
+http://purl.org/ccf/1.5/bfbe2590-fff7-4eef-8b58-4fcb3cf46120,4
 http://purl.org/ccf/1.5/d0aa0f93-9030-47f7-aaed-828cb2c3aa78,4
+http://purl.org/ccf/1.5/d7e1ac0b-31e0-43d4-8ee2-2f24899a828b,4
 http://purl.org/ccf/1.5/e4a5c9bd-d9b2-4f63-92b1-820bfc1c01d2,4
+http://purl.org/ccf/1.5/e637a315-053d-4c62-9b06-73bbd40bb722,4
 http://purl.org/ccf/1.5/74a3fc30-9e4b-44d5-b70e-43b56550aac0,5
 http://purl.org/ccf/1.5/7c6ea5af-8814-4ef9-b281-80e10509fa0e,5
 http://purl.org/ccf/1.5/e99c6e43-4d9f-4f50-861b-eaf069b86c07,5
@@ -132,12 +138,14 @@ http://purl.org/ccf/1.5/19d06baf-65cc-4530-a0eb-5fcd9b98bcce,1
 http://purl.org/ccf/1.5/1c2fb1d3-5026-4aa1-9204-b49c96b4bf63,1
 http://purl.org/ccf/1.5/1cbd9283-2d58-4a2d-88fe-effb18c3f14f,1
 http://purl.org/ccf/1.5/1da34ba2-6e68-41e5-a8ea-b328c38e395a,1
+http://purl.org/ccf/1.5/1f959974-4f3c-4023-a1af-6e5172d89f2c,1
 http://purl.org/ccf/1.5/213dd177-4b3d-4537-b228-0e479e44b9fb,1
 http://purl.org/ccf/1.5/246cf4d2-6f9d-4f7f-9499-6f34e3e643e2,1
 http://purl.org/ccf/1.5/269f53a9-bf8a-453b-ac4e-d233906a9d25,1
 http://purl.org/ccf/1.5/2a981b9a-3e66-4c3c-b71c-acd374d6aaea,1
 http://purl.org/ccf/1.5/2eb99525-e795-4a92-9e4e-d9eabfe9f43d,1
 http://purl.org/ccf/1.5/2ee4d08f-081e-4dcb-8117-34ec1185a910,1
+http://purl.org/ccf/1.5/2f0bc1c1-551b-46d8-bd70-c77ac180ab7c,1
 http://purl.org/ccf/1.5/335df3c2-03f9-44ce-8c8b-722c313b4fcb,1
 http://purl.org/ccf/1.5/337410fd-2744-403e-a9cc-ffa8e94c7b61,1
 http://purl.org/ccf/1.5/34a6a985-15bc-4e03-b8b6-8071a9b5ccc7,1
@@ -186,5 +194,3 @@ http://purl.org/ccf/1.5/9118e096-c87c-4a04-8610-3f87c67d8844,1
 http://purl.org/ccf/1.5/912a649b-1820-48c1-a6a7-2e36e9f6f3da,1
 http://purl.org/ccf/1.5/93da1599-2fc8-4aa9-99de-954ec1989adf,1
 http://purl.org/ccf/1.5/9b993347-ed5b-488d-a2c4-1aafd1dde81f,1
-http://purl.org/ccf/1.5/9eb92589-c274-47e3-a00d-daab627e865e,1
-http://purl.org/ccf/1.5/9ed68ed1-b352-487f-b4be-3d23398cdaf6,1
