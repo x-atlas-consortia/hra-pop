@@ -17,7 +17,7 @@ WHERE {
   GRAPH HRA: {
     ?mapping a ccf:CtAnnMapping ; owl:annotatedTarget ?cl_id .
     BIND(STRBEFORE(REPLACE(STR(?mapping), 'https://purl.humanatlas.io/ctann/', ''), '/') as ?tool)
-    BIND(IF(?tool = 'vccf', 'sc_proteomics', 'sc_transcriptomics') as ?modality)
+    BIND(IF(STR(?tool) IN ('vccf', 'deepcelltypes-hubmap', 'deepcelltypes', 'ribca', 'stellar'), 'sc_proteomics', 'sc_transcriptomics') as ?modality)
     BIND(IRI(REPLACE(STR(?cl_id), 'CL:', STR(CL:))) as ?cell_id)
   }
   ?cell_id rdfs:label ?cell_label .
