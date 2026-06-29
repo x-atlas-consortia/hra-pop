@@ -3,15 +3,13 @@ angiogenic pericyte,http://purl.obolibrary.org/obo/CL_4047012,L1,http://purl.obo
 fetal vein endothelial cell,http://purl.obolibrary.org/obo/CL_4047011,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 intestinal tuft cell,http://purl.obolibrary.org/obo/CL_0019032,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 intestine goblet cell,http://purl.obolibrary.org/obo/CL_0019031,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+nasal serous secreting cell,http://purl.obolibrary.org/obo/CL_4042016,L2,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell
 post-arteriole capillary cell,http://purl.obolibrary.org/obo/CL_4047029,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 pre-venule capillary cell,http://purl.obolibrary.org/obo/CL_4047030,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 tracheobronchial goblet cell,http://purl.obolibrary.org/obo/CL_0019003,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-tracheobronchial smooth muscle cell,http://purl.obolibrary.org/obo/CL_0019019,L1,http://purl.obolibrary.org/obo/CL_0000187,muscle cell
 transit amplifying cell of gut,http://purl.obolibrary.org/obo/CL_4047017,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 B cell,http://purl.obolibrary.org/obo/CL_0000236,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 B cell,http://purl.obolibrary.org/obo/CL_0000236,L2,http://purl.obolibrary.org/obo/CL_0000236,B cell
-"B cell, CD19-positive",http://purl.obolibrary.org/obo/CL_0001201,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-"B cell, CD19-positive",http://purl.obolibrary.org/obo/CL_0001201,L2,http://purl.obolibrary.org/obo/CL_0000236,B cell
 BEST4+ enterocyte,http://purl.obolibrary.org/obo/CL_4030026,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 CCL3-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033041,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 CCL3-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033041,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
@@ -21,8 +19,6 @@ CD11b-positive dendritic cell,http://purl.obolibrary.org/obo/CL_0002465,L2,http:
 "CD14-low, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002396,L2,http://purl.obolibrary.org/obo/CL_0000576,monocyte
 CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,L2,http://purl.obolibrary.org/obo/CL_0000576,monocyte
-"CD14-positive, CD16-negative classical monocyte",http://purl.obolibrary.org/obo/CL_0002057,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-"CD14-positive, CD16-negative classical monocyte",http://purl.obolibrary.org/obo/CL_0002057,L2,http://purl.obolibrary.org/obo/CL_0000576,monocyte
 CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 "CD16-negative, CD56-bright natural killer cell, human",http://purl.obolibrary.org/obo/CL_0000938,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
@@ -47,26 +43,47 @@ CD7-positive lymphoid progenitor cell,http://purl.obolibrary.org/obo/CL_0001028,
 "CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 "CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 "CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
+"CD8-positive, alpha-beta regulatory T cell",http://purl.obolibrary.org/obo/CL_0000795,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+"CD8-positive, alpha-beta regulatory T cell",http://purl.obolibrary.org/obo/CL_0000795,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
+CD8aa(I) thymocyte,http://purl.obolibrary.org/obo/CL_0009068,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+CD8aa(I) thymocyte,http://purl.obolibrary.org/obo/CL_0009068,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 DN1 thymic pro-T cell,http://purl.obolibrary.org/obo/CL_0000894,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 DN3 thymocyte,http://purl.obolibrary.org/obo/CL_0000807,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 DN3 thymocyte,http://purl.obolibrary.org/obo/CL_0000807,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 DN4 thymocyte,http://purl.obolibrary.org/obo/CL_0000808,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 DN4 thymocyte,http://purl.obolibrary.org/obo/CL_0000808,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
+GIP cell,http://purl.obolibrary.org/obo/CL_0002278,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 Hofbauer cell,http://purl.obolibrary.org/obo/CL_3000001,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 Hofbauer cell,http://purl.obolibrary.org/obo/CL_3000001,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
 IgA plasma cell,http://purl.obolibrary.org/obo/CL_0000987,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 IgG plasma cell,http://purl.obolibrary.org/obo/CL_0000985,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 IgM plasma cell,http://purl.obolibrary.org/obo/CL_0000986,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+L2/3 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023047,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+L2/3 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023047,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+L4 intratelencephalic projecting glutamatergic neuron,http://purl.obolibrary.org/obo/CL_4030063,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+L4 intratelencephalic projecting glutamatergic neuron,http://purl.obolibrary.org/obo/CL_4030063,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+L4/5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023048,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+L4/5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023048,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+L5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023049,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+L5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023049,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+L5/6 near-projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023043,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+L5/6 near-projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023043,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023050,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023050,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 Langerhans cell,http://purl.obolibrary.org/obo/CL_0000453,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 Langerhans cell,http://purl.obolibrary.org/obo/CL_0000453,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 M cell of gut,http://purl.obolibrary.org/obo/CL_0000682,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+M1 macrophage,http://purl.obolibrary.org/obo/CL_0000863,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+M1 macrophage,http://purl.obolibrary.org/obo/CL_0000863,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+M2 macrophage,http://purl.obolibrary.org/obo/CL_0000890,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+M2 macrophage,http://purl.obolibrary.org/obo/CL_0000890,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
 Merkel cell,http://purl.obolibrary.org/obo/CL_0000242,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 Merkel cell,http://purl.obolibrary.org/obo/CL_0000242,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
-Mueller cell,http://purl.obolibrary.org/obo/CL_0000636,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
-Mueller cell,http://purl.obolibrary.org/obo/CL_0000636,L2,http://purl.obolibrary.org/obo/CL_0000125,glial cell
 OFF-bipolar cell,http://purl.obolibrary.org/obo/CL_0000750,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 OFF-bipolar cell,http://purl.obolibrary.org/obo/CL_0000750,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
-Purkinje myocyte,http://purl.obolibrary.org/obo/CL_0002068,L1,http://purl.obolibrary.org/obo/CL_0000187,muscle cell
+Purkinje cell,http://purl.obolibrary.org/obo/CL_0000121,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+Purkinje cell,http://purl.obolibrary.org/obo/CL_0000121,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+Purkinje myocyte of atrioventricular bundle,http://purl.obolibrary.org/obo/CL_1000484,L1,http://purl.obolibrary.org/obo/CL_0000187,muscle cell
 Schwann cell,http://purl.obolibrary.org/obo/CL_0002573,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 Schwann cell,http://purl.obolibrary.org/obo/CL_0002573,L2,http://purl.obolibrary.org/obo/CL_0000125,glial cell
 Sertoli cell,http://purl.obolibrary.org/obo/CL_0000216,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -84,6 +101,8 @@ T-helper 2 cell,http://purl.obolibrary.org/obo/CL_0000546,L1,http://purl.obolibr
 T-helper 2 cell,http://purl.obolibrary.org/obo/CL_0000546,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 VIP GABAergic cortical interneuron,http://purl.obolibrary.org/obo/CL_4023016,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 VIP GABAergic cortical interneuron,http://purl.obolibrary.org/obo/CL_4023016,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+VIP GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023016,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+VIP GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023016,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 "activated CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000896,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 "activated CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000896,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 "activated CD4-positive, alpha-beta T cell, human",http://purl.obolibrary.org/obo/CL_0001043,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
@@ -96,10 +115,7 @@ adrenal gland glandular cell,http://purl.obolibrary.org/obo/CL_1001601,L1,http:/
 adventitial fibroblast,http://purl.obolibrary.org/obo/CL_4052030,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 adventitial fibroblast,http://purl.obolibrary.org/obo/CL_4052030,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 airway submucosal gland collecting duct epithelial cell,http://purl.obolibrary.org/obo/CL_4033023,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-alpha-beta T cell,http://purl.obolibrary.org/obo/CL_0000789,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-alpha-beta T cell,http://purl.obolibrary.org/obo/CL_0000789,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
-alternatively activated macrophage,http://purl.obolibrary.org/obo/CL_0000890,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-alternatively activated macrophage,http://purl.obolibrary.org/obo/CL_0000890,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+airway submucosal gland duct basal cell,http://purl.obolibrary.org/obo/CL_4033024,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
 alveolar adventitial fibroblast,http://purl.obolibrary.org/obo/CL_4028006,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 alveolar adventitial fibroblast,http://purl.obolibrary.org/obo/CL_4028006,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 alveolar capillary type 1 endothelial cell,http://purl.obolibrary.org/obo/CL_4028002,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
@@ -115,12 +131,11 @@ amygdala excitatory neuron,http://purl.obolibrary.org/obo/CL_4023039,L2,http://p
 astrocyte,http://purl.obolibrary.org/obo/CL_0000127,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 astrocyte,http://purl.obolibrary.org/obo/CL_0000127,L2,http://purl.obolibrary.org/obo/CL_0000125,glial cell
 basal cell,http://purl.obolibrary.org/obo/CL_0000646,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
-basal cell of epidermis,http://purl.obolibrary.org/obo/CL_0002187,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-basal cell of epidermis,http://purl.obolibrary.org/obo/CL_0002187,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
 basal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002341,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 basal-myoepithelial cell of mammary gland,http://purl.obolibrary.org/obo/CL_0002324,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 basophil,http://purl.obolibrary.org/obo/CL_0000767,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 basophil,http://purl.obolibrary.org/obo/CL_0000767,L2,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+basophilic erythroblast,http://purl.obolibrary.org/obo/CL_0000549,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 bladder urothelial cell,http://purl.obolibrary.org/obo/CL_1001428,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 blood vessel endothelial cell,http://purl.obolibrary.org/obo/CL_0000071,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 bronchial epithelial cell,http://purl.obolibrary.org/obo/CL_0002328,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -130,21 +145,22 @@ bronchus fibroblast of lung,http://purl.obolibrary.org/obo/CL_2000093,L1,http://
 bronchus fibroblast of lung,http://purl.obolibrary.org/obo/CL_2000093,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 brush cell of tracheobronchial tree,http://purl.obolibrary.org/obo/CL_0002075,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
-cardiac glial cell,http://purl.obolibrary.org/obo/CL_0010020,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
-cardiac glial cell,http://purl.obolibrary.org/obo/CL_0010020,L2,http://purl.obolibrary.org/obo/CL_0000125,glial cell
 cardiac pacemaker cell of sinoatrial node,http://purl.obolibrary.org/obo/CL_1000477,L1,http://purl.obolibrary.org/obo/CL_0000187,muscle cell
 caudal ganglionic eminence derived cortical interneuron,http://purl.obolibrary.org/obo/CL_4023064,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 caudal ganglionic eminence derived cortical interneuron,http://purl.obolibrary.org/obo/CL_4023064,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+caudal ganglionic eminence derived interneuron,http://purl.obolibrary.org/obo/CL_4023064,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+caudal ganglionic eminence derived interneuron,http://purl.obolibrary.org/obo/CL_4023064,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+centrocyte,http://purl.obolibrary.org/obo/CL_0009111,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+centrocyte,http://purl.obolibrary.org/obo/CL_0009111,L2,http://purl.obolibrary.org/obo/CL_0000236,B cell
 cholangiocyte,http://purl.obolibrary.org/obo/CL_1000488,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-chromaffin cell of adrenal gland,http://purl.obolibrary.org/obo/CL_1000426,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-chromaffin cell of adrenal gland,http://purl.obolibrary.org/obo/CL_1000426,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
-chromaffin cell of adrenal gland,http://purl.obolibrary.org/obo/CL_1000426,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+ciliated epithelial cell,http://purl.obolibrary.org/obo/CL_0000067,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 classical monocyte,http://purl.obolibrary.org/obo/CL_0000860,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 classical monocyte,http://purl.obolibrary.org/obo/CL_0000860,L2,http://purl.obolibrary.org/obo/CL_0000576,monocyte
 club cell,http://purl.obolibrary.org/obo/CL_0000158,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 colon epithelial cell,http://purl.obolibrary.org/obo/CL_0011108,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 colonocyte,http://purl.obolibrary.org/obo/CL_1000347,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 common lymphoid progenitor,http://purl.obolibrary.org/obo/CL_0000051,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+common myeloid progenitor,http://purl.obolibrary.org/obo/CL_0000049,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 conjunctival epithelial cell,http://purl.obolibrary.org/obo/CL_1000432,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0000990,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0000990,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
@@ -177,6 +193,8 @@ dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,L1,http://purl.obolibra
 dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 "dendritic cell, human",http://purl.obolibrary.org/obo/CL_0001056,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 "dendritic cell, human",http://purl.obolibrary.org/obo/CL_0001056,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+dentate gyrus neuron,http://purl.obolibrary.org/obo/CL_4023062,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+dentate gyrus neuron,http://purl.obolibrary.org/obo/CL_4023062,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 deuterosomal cell,http://purl.obolibrary.org/obo/CL_4033044,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 direct pathway medium spiny neuron,http://purl.obolibrary.org/obo/CL_4023026,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 direct pathway medium spiny neuron,http://purl.obolibrary.org/obo/CL_4023026,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
@@ -197,6 +215,8 @@ eccentric medium spiny neuron,http://purl.obolibrary.org/obo/CL_4030057,L2,http:
 elicited macrophage,http://purl.obolibrary.org/obo/CL_0000861,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 elicited macrophage,http://purl.obolibrary.org/obo/CL_0000861,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
 endocardial cell,http://purl.obolibrary.org/obo/CL_0002350,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
+endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,L1,http://purl.obolibrary.org/obo/CL_0001035,bone cell
+endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 endothelial cell of arteriole,http://purl.obolibrary.org/obo/CL_1000412,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
@@ -205,7 +225,6 @@ endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,L
 endothelial cell of respiratory system lymphatic vessel,http://purl.obolibrary.org/obo/CL_0009086,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 endothelial cell of vascular tree,http://purl.obolibrary.org/obo/CL_0002139,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
-endothelial cell of venule,http://purl.obolibrary.org/obo/CL_1000414,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 endothelial tip cell,http://purl.obolibrary.org/obo/CL_0000704,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 enterocyte,http://purl.obolibrary.org/obo/CL_0000584,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 enterocyte of epithelium of large intestine,http://purl.obolibrary.org/obo/CL_0002071,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -229,20 +248,26 @@ epithelial cell of proximal tubule segment 2,http://purl.obolibrary.org/obo/CL_4
 epithelial cell of proximal tubule segment 3,http://purl.obolibrary.org/obo/CL_4030011,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 epithelial cell of small intestine,http://purl.obolibrary.org/obo/CL_0002254,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 epithelial cell of thymus,http://purl.obolibrary.org/obo/CL_0002293,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+epithelial cell of uterus,http://purl.obolibrary.org/obo/CL_0002149,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 erythroblast,http://purl.obolibrary.org/obo/CL_0000765,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 erythrocyte,http://purl.obolibrary.org/obo/CL_0000232,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 erythrocyte,http://purl.obolibrary.org/obo/CL_0000232,L2,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+erythroid lineage cell,http://purl.obolibrary.org/obo/CL_0000764,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 erythroid progenitor cell,http://purl.obolibrary.org/obo/CL_0000038,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 fetal artery endothelial cell,http://purl.obolibrary.org/obo/CL_4047006,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
+fetal derived definitive erythrocyte,http://purl.obolibrary.org/obo/CL_0002357,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+fetal derived definitive erythrocyte,http://purl.obolibrary.org/obo/CL_0002357,L2,http://purl.obolibrary.org/obo/CL_0000081,blood cell
 fibroblast,http://purl.obolibrary.org/obo/CL_0000057,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 fibroblast,http://purl.obolibrary.org/obo/CL_0000057,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 fibroblast of breast,http://purl.obolibrary.org/obo/CL_4006000,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 fibroblast of breast,http://purl.obolibrary.org/obo/CL_4006000,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+fibroblast of lung,http://purl.obolibrary.org/obo/CL_0002553,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
+fibroblast of lung,http://purl.obolibrary.org/obo/CL_0002553,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 follicular B cell,http://purl.obolibrary.org/obo/CL_0000843,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 follicular B cell,http://purl.obolibrary.org/obo/CL_0000843,L2,http://purl.obolibrary.org/obo/CL_0000236,B cell
 follicular dendritic cell,http://purl.obolibrary.org/obo/CL_0000442,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 follicular dendritic cell,http://purl.obolibrary.org/obo/CL_0000442,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
-fraction A pre-pro B cell,http://purl.obolibrary.org/obo/CL_0002045,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+foveolar cell of stomach,http://purl.obolibrary.org/obo/CL_0002179,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 gamma-delta T cell,http://purl.obolibrary.org/obo/CL_0000798,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 gamma-delta T cell,http://purl.obolibrary.org/obo/CL_0000798,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 germ cell,http://purl.obolibrary.org/obo/CL_0000586,L1,http://purl.obolibrary.org/obo/CL_0000039,germ line cell
@@ -255,9 +280,9 @@ goblet cell,http://purl.obolibrary.org/obo/CL_0000160,L1,http://purl.obolibrary.
 granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,L1,http://purl.obolibrary.org/obo/CL_0001035,bone cell
 granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 granulocytopoietic cell,http://purl.obolibrary.org/obo/CL_0002191,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+granulosa cell,http://purl.obolibrary.org/obo/CL_0000501,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 granzyme K-associated CD8 T cell,http://purl.obolibrary.org/obo/CL_4052021,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 granzyme K-associated CD8 T cell,http://purl.obolibrary.org/obo/CL_4052021,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
-group 2 innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001069,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 "group 2 innate lymphoid cell, human",http://purl.obolibrary.org/obo/CL_0001081,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 group 3 innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001071,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 "group 3 innate lymphoid cell, human",http://purl.obolibrary.org/obo/CL_0001078,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
@@ -268,11 +293,16 @@ hematopoietic multipotent progenitor cell,http://purl.obolibrary.org/obo/CL_0000
 hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
 hepatocyte,http://purl.obolibrary.org/obo/CL_0000182,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+hillock cell,http://purl.obolibrary.org/obo/CL_4030024,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+hippocampal CA1-3 neuron,http://purl.obolibrary.org/obo/CL_4023060,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+hippocampal CA1-3 neuron,http://purl.obolibrary.org/obo/CL_4023060,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+hippocampal CA4 neuron,http://purl.obolibrary.org/obo/CL_4023061,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+hippocampal CA4 neuron,http://purl.obolibrary.org/obo/CL_4023061,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 immature B cell,http://purl.obolibrary.org/obo/CL_0000816,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 immature B cell,http://purl.obolibrary.org/obo/CL_0000816,L2,http://purl.obolibrary.org/obo/CL_0000236,B cell
+immature alpha-beta T cell,http://purl.obolibrary.org/obo/CL_0000790,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+immature alpha-beta T cell,http://purl.obolibrary.org/obo/CL_0000790,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 immature pericyte,http://purl.obolibrary.org/obo/CL_4047007,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
-inflammatory macrophage,http://purl.obolibrary.org/obo/CL_0000863,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-inflammatory macrophage,http://purl.obolibrary.org/obo/CL_0000863,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
 innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 intermediate monocyte,http://purl.obolibrary.org/obo/CL_0002393,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 intermediate monocyte,http://purl.obolibrary.org/obo/CL_0002393,L2,http://purl.obolibrary.org/obo/CL_0000576,monocyte
@@ -285,13 +315,13 @@ intestinal enteroendocrine cell,http://purl.obolibrary.org/obo/CL_1001516,L1,htt
 intrahepatic cholangiocyte,http://purl.obolibrary.org/obo/CL_0002538,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 ionocyte,http://purl.obolibrary.org/obo/CL_0005006,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 keratinocyte,http://purl.obolibrary.org/obo/CL_0000312,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+kidney collecting duct alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_4030015,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 kidney connecting tubule alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_4030020,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 kidney connecting tubule epithelial cell,http://purl.obolibrary.org/obo/CL_1000768,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 kidney connecting tubule principal cell,http://purl.obolibrary.org/obo/CL_4030018,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-kidney cortex collecting duct intercalated cell,http://purl.obolibrary.org/obo/CL_1000715,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 kidney cortex collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000714,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 kidney granular cell,http://purl.obolibrary.org/obo/CL_0000648,L1,http://purl.obolibrary.org/obo/CL_0000187,muscle cell
-kidney inner medulla collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000718,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+kidney inner medulla collecting duct epithelial cell,http://purl.obolibrary.org/obo/CL_1000547,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 kidney interstitial fibroblast,http://purl.obolibrary.org/obo/CL_1000692,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 kidney interstitial fibroblast,http://purl.obolibrary.org/obo/CL_1000692,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 kidney loop of Henle cortical thick ascending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001109,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -309,6 +339,7 @@ large intestine goblet cell,http://purl.obolibrary.org/obo/CL_1000320,L1,http://
 leukocyte,http://purl.obolibrary.org/obo/CL_0000738,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 liver dendritic cell,http://purl.obolibrary.org/obo/CL_2000055,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 liver dendritic cell,http://purl.obolibrary.org/obo/CL_2000055,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+liver-resident natural killer cell,http://purl.obolibrary.org/obo/CL_4047101,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 luminal adaptive secretory precursor cell of mammary gland,http://purl.obolibrary.org/obo/CL_4033057,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 luminal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002340,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 luminal epithelial cell of mammary gland,http://purl.obolibrary.org/obo/CL_0002326,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -324,6 +355,7 @@ lung migratory dendritic cell,http://purl.obolibrary.org/obo/CL_4033045,L2,http:
 lung multiciliated epithelial cell,http://purl.obolibrary.org/obo/CL_1000271,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 lung pericyte,http://purl.obolibrary.org/obo/CL_0009089,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 lymphocyte,http://purl.obolibrary.org/obo/CL_0000542,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+lymphoid lineage restricted progenitor cell,http://purl.obolibrary.org/obo/CL_0000838,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 macrophage,http://purl.obolibrary.org/obo/CL_0000235,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 macrophage,http://purl.obolibrary.org/obo/CL_0000235,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
 macula densa epithelial cell,http://purl.obolibrary.org/obo/CL_1000850,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -334,8 +366,6 @@ mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,L1,http://purl.obolib
 mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 mature alpha-beta T cell,http://purl.obolibrary.org/obo/CL_0000791,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 mature alpha-beta T cell,http://purl.obolibrary.org/obo/CL_0000791,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
-mature conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0000841,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-mature conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0000841,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 medullary thymic epithelial cell,http://purl.obolibrary.org/obo/CL_0002365,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 megakaryocyte,http://purl.obolibrary.org/obo/CL_0000556,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 megakaryocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000553,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
@@ -347,12 +377,17 @@ memory B cell,http://purl.obolibrary.org/obo/CL_0000787,L2,http://purl.obolibrar
 memory T cell,http://purl.obolibrary.org/obo/CL_0000813,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 memory T cell,http://purl.obolibrary.org/obo/CL_0000813,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 mesangial cell,http://purl.obolibrary.org/obo/CL_0000650,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
+mesenchymal stem cell,http://purl.obolibrary.org/obo/CL_0000134,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
+mesenchymal stem cell,http://purl.obolibrary.org/obo/CL_0000134,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
+mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
+mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
 mesothelial cell,http://purl.obolibrary.org/obo/CL_0000077,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 mesothelial cell of pleura,http://purl.obolibrary.org/obo/CL_1000491,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-mesothelial fibroblast,http://purl.obolibrary.org/obo/CL_4023054,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
-mesothelial fibroblast,http://purl.obolibrary.org/obo/CL_4023054,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+mesothelial cell of visceral pleura,http://purl.obolibrary.org/obo/CL_1000493,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 metallothionein-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033042,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 metallothionein-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033042,L2,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+microfold cell of epithelium of small intestine,http://purl.obolibrary.org/obo/CL_1000353,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+microfold cell of epithelium proper of large intestine,http://purl.obolibrary.org/obo/CL_1000360,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 microglial cell,http://purl.obolibrary.org/obo/CL_0000129,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 microglial cell,http://purl.obolibrary.org/obo/CL_0000129,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 microglial cell,http://purl.obolibrary.org/obo/CL_0000129,L2,http://purl.obolibrary.org/obo/CL_0000125,glial cell
@@ -360,25 +395,27 @@ microglial cell,http://purl.obolibrary.org/obo/CL_0000129,L2,http://purl.obolibr
 microvascular endothelial cell,http://purl.obolibrary.org/obo/CL_2000008,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 midbrain-derived inhibitory neuron,http://purl.obolibrary.org/obo/CL_4023079,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 midbrain-derived inhibitory neuron,http://purl.obolibrary.org/obo/CL_4023079,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
-migratory dendtritic cell,http://purl.obolibrary.org/obo/CL_4047054,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-migratory dendtritic cell,http://purl.obolibrary.org/obo/CL_4047054,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+migratory dendritic cell,http://purl.obolibrary.org/obo/CL_4047054,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+migratory dendritic cell,http://purl.obolibrary.org/obo/CL_4047054,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 migratory enteric neural crest cell,http://purl.obolibrary.org/obo/CL_0002607,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
 monocyte,http://purl.obolibrary.org/obo/CL_0000576,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 monocyte,http://purl.obolibrary.org/obo/CL_0000576,L2,http://purl.obolibrary.org/obo/CL_0000576,monocyte
 monocyte-derived dendritic cell,http://purl.obolibrary.org/obo/CL_0011031,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 monocyte-derived dendritic cell,http://purl.obolibrary.org/obo/CL_0011031,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
-mucosal invariant T cell,http://purl.obolibrary.org/obo/CL_0000940,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-mucosal invariant T cell,http://purl.obolibrary.org/obo/CL_0000940,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
-mucous cell of stomach,http://purl.obolibrary.org/obo/CL_0002180,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+mucosal-associated invariant T cell,http://purl.obolibrary.org/obo/CL_0000940,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+mucosal-associated invariant T cell,http://purl.obolibrary.org/obo/CL_0000940,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 mucus secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033022,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 mucus secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033022,L2,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell
 multiciliated columnar cell of tracheobronchial tree,http://purl.obolibrary.org/obo/CL_0002145,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 multiciliated epithelial cell,http://purl.obolibrary.org/obo/CL_0005012,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 muscle cell,http://purl.obolibrary.org/obo/CL_0000187,L1,http://purl.obolibrary.org/obo/CL_0000187,muscle cell
 myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0000782,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
+myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0000782,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
 myeloid leukocyte,http://purl.obolibrary.org/obo/CL_0000766,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 myeloid lineage restricted progenitor cell,http://purl.obolibrary.org/obo/CL_0000839,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
+myometrial cell,http://purl.obolibrary.org/obo/CL_0002366,L1,http://purl.obolibrary.org/obo/CL_0000187,muscle cell
 naive B cell,http://purl.obolibrary.org/obo/CL_0000788,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 naive B cell,http://purl.obolibrary.org/obo/CL_0000788,L2,http://purl.obolibrary.org/obo/CL_0000236,B cell
 naive T cell,http://purl.obolibrary.org/obo/CL_0000898,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
@@ -399,7 +436,6 @@ neuron,http://purl.obolibrary.org/obo/CL_0000540,L2,http://purl.obolibrary.org/o
 neutrophil,http://purl.obolibrary.org/obo/CL_0000775,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 neutrophil,http://purl.obolibrary.org/obo/CL_0000775,L2,http://purl.obolibrary.org/obo/CL_0000081,blood cell
 neutrophil progenitor cell,http://purl.obolibrary.org/obo/CL_0000834,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
-nodal myocyte,http://purl.obolibrary.org/obo/CL_0002072,L1,http://purl.obolibrary.org/obo/CL_0000187,muscle cell
 non-classical monocyte,http://purl.obolibrary.org/obo/CL_0000875,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 non-classical monocyte,http://purl.obolibrary.org/obo/CL_0000875,L2,http://purl.obolibrary.org/obo/CL_0000576,monocyte
 oligodendrocyte,http://purl.obolibrary.org/obo/CL_0000128,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
@@ -413,7 +449,6 @@ pancreatic PP cell,http://purl.obolibrary.org/obo/CL_0002275,L1,http://purl.obol
 pancreatic acinar cell,http://purl.obolibrary.org/obo/CL_0002064,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 pancreatic acinar cell,http://purl.obolibrary.org/obo/CL_0002064,L2,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell
 pancreatic ductal cell,http://purl.obolibrary.org/obo/CL_0002079,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-pancreatic epsilon cell,http://purl.obolibrary.org/obo/CL_0005019,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 pancreatic stellate cell,http://purl.obolibrary.org/obo/CL_0002410,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 pancreatic stellate cell,http://purl.obolibrary.org/obo/CL_0002410,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 paneth cell,http://purl.obolibrary.org/obo/CL_0000510,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -424,6 +459,7 @@ peptic cell,http://purl.obolibrary.org/obo/CL_0000155,L1,http://purl.obolibrary.
 peptic cell,http://purl.obolibrary.org/obo/CL_0000155,L2,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell
 pericyte,http://purl.obolibrary.org/obo/CL_0000669,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 peritubular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001033,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
+peritubular myoid cell,http://purl.obolibrary.org/obo/CL_0002481,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 plasma cell,http://purl.obolibrary.org/obo/CL_0000786,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000784,L1,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell
 plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000784,L2,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
@@ -439,6 +475,7 @@ pulmonary alveolar epithelial cell,http://purl.obolibrary.org/obo/CL_0000322,L1,
 pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 pulmonary artery endothelial cell,http://purl.obolibrary.org/obo/CL_1001568,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
+pulmonary capillary endothelial cell,http://purl.obolibrary.org/obo/CL_4028001,L1,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell
 pulmonary interstitial fibroblast,http://purl.obolibrary.org/obo/CL_0002241,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 pulmonary interstitial fibroblast,http://purl.obolibrary.org/obo/CL_0002241,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 pulmonary ionocyte,http://purl.obolibrary.org/obo/CL_0017000,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
@@ -453,13 +490,12 @@ regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,L1,http://purl.oboli
 regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,L2,http://purl.obolibrary.org/obo/CL_0000084,T cell
 renal alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_0005011,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 renal beta-intercalated cell,http://purl.obolibrary.org/obo/CL_0002201,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-renal interstitial pericyte,http://purl.obolibrary.org/obo/CL_1001318,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 renal medullary fibroblast,http://purl.obolibrary.org/obo/CL_4030022,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 renal medullary fibroblast,http://purl.obolibrary.org/obo/CL_4030022,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
 respiratory basal cell,http://purl.obolibrary.org/obo/CL_0002633,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
-respiratory tract epithelial cell,http://purl.obolibrary.org/obo/CL_0002368,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 respiratory tract goblet cell,http://purl.obolibrary.org/obo/CL_0002370,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 respiratory tract hillock cell,http://purl.obolibrary.org/obo/CL_4030023,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+respiratory tract multiciliated cell,http://purl.obolibrary.org/obo/CL_4030034,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 respiratory tract suprabasal cell,http://purl.obolibrary.org/obo/CL_4033048,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 retina horizontal cell,http://purl.obolibrary.org/obo/CL_0000745,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 retina horizontal cell,http://purl.obolibrary.org/obo/CL_0000745,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
@@ -467,8 +503,6 @@ retinal cone cell,http://purl.obolibrary.org/obo/CL_0000573,L1,http://purl.oboli
 retinal cone cell,http://purl.obolibrary.org/obo/CL_0000573,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 retinal ganglion cell,http://purl.obolibrary.org/obo/CL_0000740,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 retinal ganglion cell,http://purl.obolibrary.org/obo/CL_0000740,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
-retinal pigment epithelial cell,http://purl.obolibrary.org/obo/CL_0002586,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-retinal pigment epithelial cell,http://purl.obolibrary.org/obo/CL_0002586,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 retinal rod cell,http://purl.obolibrary.org/obo/CL_0000604,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 retinal rod cell,http://purl.obolibrary.org/obo/CL_0000604,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 rod bipolar cell,http://purl.obolibrary.org/obo/CL_0000751,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
@@ -480,6 +514,8 @@ spermatocyte,http://purl.obolibrary.org/obo/CL_0000017,L1,http://purl.obolibrary
 squamous epithelial cell,http://purl.obolibrary.org/obo/CL_0000076,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 sst GABAergic cortical interneuron,http://purl.obolibrary.org/obo/CL_4023017,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 sst GABAergic cortical interneuron,http://purl.obolibrary.org/obo/CL_4023017,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sst GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023017,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+sst GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023017,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 stem cell,http://purl.obolibrary.org/obo/CL_0000034,L1,http://purl.obolibrary.org/obo/CL_0000034,stem cell
 stromal cell,http://purl.obolibrary.org/obo/CL_0000499,L1,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell
 stromal cell,http://purl.obolibrary.org/obo/CL_0000499,L2,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
@@ -492,15 +528,15 @@ transit amplifying cell of small intestine,http://purl.obolibrary.org/obo/CL_000
 tuft cell,http://purl.obolibrary.org/obo/CL_0002204,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 tuft cell of small intestine,http://purl.obolibrary.org/obo/CL_0009080,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-type D cell of colon,http://purl.obolibrary.org/obo/CL_0002265,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
-type D cell of colon,http://purl.obolibrary.org/obo/CL_0002265,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
-type D cell of colon,http://purl.obolibrary.org/obo/CL_0002265,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 type D cell of small intestine,http://purl.obolibrary.org/obo/CL_0002266,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 type D cell of small intestine,http://purl.obolibrary.org/obo/CL_0002266,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 type D cell of small intestine,http://purl.obolibrary.org/obo/CL_0002266,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 type D cell of stomach,http://purl.obolibrary.org/obo/CL_0002267,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 type D cell of stomach,http://purl.obolibrary.org/obo/CL_0002267,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 type D cell of stomach,http://purl.obolibrary.org/obo/CL_0002267,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
+type D enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000502,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
+type D enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000502,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
+type D enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000502,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron
 type EC enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000577,L1,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell
 type EC enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000577,L1,http://purl.obolibrary.org/obo/CL_0002319,neural cell
 type EC enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000577,L2,http://purl.obolibrary.org/obo/CL_0000540,neuron

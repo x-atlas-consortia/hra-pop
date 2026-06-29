@@ -1,6 +1,6 @@
 organ,as_label,cell_label,cell_id,mean_cell_count,cell_count
 VHFLargeIntestine,ascending colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,208,416
-VHFLargeIntestine,ascending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,299.5,599
+VHFLargeIntestine,ascending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,299.5,599
 VHFLargeIntestine,ascending colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,1259,2518
 VHFLargeIntestine,ascending colon,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,498.5,997
 VHFLargeIntestine,ascending colon,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2651,5302
@@ -25,7 +25,7 @@ VHFLargeIntestine,ascending colon,t cell:cd8+ alpha-beta,http://purl.obolibrary.
 VHFLargeIntestine,ascending colon,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,897.5,1795
 VHFLargeIntestine,ascending colon,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,904.5,1809
 VHFLargeIntestine,caecum,b cell,http://purl.obolibrary.org/obo/CL_0000236,208,416
-VHFLargeIntestine,caecum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,299.5,599
+VHFLargeIntestine,caecum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,299.5,599
 VHFLargeIntestine,caecum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,1259,2518
 VHFLargeIntestine,caecum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,498.5,997
 VHFLargeIntestine,caecum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2651,5302
@@ -50,7 +50,7 @@ VHFLargeIntestine,caecum,t cell:cd8+ alpha-beta,http://purl.obolibrary.org/obo/C
 VHFLargeIntestine,caecum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,897.5,1795
 VHFLargeIntestine,caecum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,904.5,1809
 VHFLargeIntestine,descending colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,2463,4926
-VHFLargeIntestine,descending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,811.5,1623
+VHFLargeIntestine,descending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,811.5,1623
 VHFLargeIntestine,descending colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2424.5,4849
 VHFLargeIntestine,descending colon,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,763.5,1527
 VHFLargeIntestine,descending colon,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,5921.5,11843
@@ -74,7 +74,7 @@ VHFLargeIntestine,descending colon,t cell:cd8+ alpha-beta,http://purl.obolibrary
 VHFLargeIntestine,descending colon,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,1612.5,3225
 VHFLargeIntestine,descending colon,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,2928.5,5857
 VHFLargeIntestine,sigmoid colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,3.5,7
-VHFLargeIntestine,sigmoid colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,267,534
+VHFLargeIntestine,sigmoid colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,267,534
 VHFLargeIntestine,sigmoid colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,1439.5,2879
 VHFLargeIntestine,sigmoid colon,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,879,1758
 VHFLargeIntestine,sigmoid colon,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1316.5,2633
@@ -98,7 +98,7 @@ VHFLargeIntestine,sigmoid colon,t cell:cd8+ alpha-beta,http://purl.obolibrary.or
 VHFLargeIntestine,sigmoid colon,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,161.5,323
 VHFLargeIntestine,sigmoid colon,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,507,1014
 VHFLargeIntestine,transverse colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,97.5,195
-VHFLargeIntestine,transverse colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,402.5,805
+VHFLargeIntestine,transverse colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,402.5,805
 VHFLargeIntestine,transverse colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2169.5,4339
 VHFLargeIntestine,transverse colon,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1070,2140
 VHFLargeIntestine,transverse colon,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2975,5950
@@ -297,7 +297,7 @@ VHFLymphNode,medulla of lymph node,"t cell:mature natural killer ",http://purl.o
 VHFLymphNode,medulla of lymph node,t cell:regulatory,http://purl.obolibrary.org/obo/CL_0000815,88103.5,176207
 VHFLymphNode,medulla of lymph node,t cell:tim3+,http://purl.obolibrary.org/obo/CL_0000084,8799,17598
 VHFSmallIntestine,ascending part of duodenum,b cell,http://purl.obolibrary.org/obo/CL_0000236,3781,7562
-VHFSmallIntestine,ascending part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,700.5,1401
+VHFSmallIntestine,ascending part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,700.5,1401
 VHFSmallIntestine,ascending part of duodenum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2908,5816
 VHFSmallIntestine,ascending part of duodenum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1273,2546
 VHFSmallIntestine,ascending part of duodenum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2809.5,5619
@@ -322,7 +322,7 @@ VHFSmallIntestine,ascending part of duodenum,t cell:cd8+ alpha-beta,http://purl.
 VHFSmallIntestine,ascending part of duodenum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,1151,2302
 VHFSmallIntestine,ascending part of duodenum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,1463,2926
 VHFSmallIntestine,descending part of duodenum,b cell,http://purl.obolibrary.org/obo/CL_0000236,108.5,217
-VHFSmallIntestine,descending part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,590.5,1181
+VHFSmallIntestine,descending part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,590.5,1181
 VHFSmallIntestine,descending part of duodenum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,3739,7478
 VHFSmallIntestine,descending part of duodenum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1399,2798
 VHFSmallIntestine,descending part of duodenum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,10343.5,20687
@@ -347,7 +347,7 @@ VHFSmallIntestine,descending part of duodenum,t cell:cd8+ alpha-beta,http://purl
 VHFSmallIntestine,descending part of duodenum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,1441,2882
 VHFSmallIntestine,descending part of duodenum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,5094,10188
 VHFSmallIntestine,distal part of ileum,b cell,http://purl.obolibrary.org/obo/CL_0000236,81.5,163
-VHFSmallIntestine,distal part of ileum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,222.5,445
+VHFSmallIntestine,distal part of ileum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,222.5,445
 VHFSmallIntestine,distal part of ileum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2009,4018
 VHFSmallIntestine,distal part of ileum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1285,2570
 VHFSmallIntestine,distal part of ileum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,3114.5,6229
@@ -372,7 +372,7 @@ VHFSmallIntestine,distal part of ileum,t cell:cd8+ alpha-beta,http://purl.obolib
 VHFSmallIntestine,distal part of ileum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,1471.5,2943
 VHFSmallIntestine,distal part of ileum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,1024.5,2049
 VHFSmallIntestine,horizontal part of duodenum,b cell,http://purl.obolibrary.org/obo/CL_0000236,3781,7562
-VHFSmallIntestine,horizontal part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,700.5,1401
+VHFSmallIntestine,horizontal part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,700.5,1401
 VHFSmallIntestine,horizontal part of duodenum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2908,5816
 VHFSmallIntestine,horizontal part of duodenum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1273,2546
 VHFSmallIntestine,horizontal part of duodenum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,2809.5,5619
@@ -397,7 +397,7 @@ VHFSmallIntestine,horizontal part of duodenum,t cell:cd8+ alpha-beta,http://purl
 VHFSmallIntestine,horizontal part of duodenum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,1151,2302
 VHFSmallIntestine,horizontal part of duodenum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,1463,2926
 VHFSmallIntestine,ileum,b cell,http://purl.obolibrary.org/obo/CL_0000236,81.5,163
-VHFSmallIntestine,ileum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,222.5,445
+VHFSmallIntestine,ileum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,222.5,445
 VHFSmallIntestine,ileum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2009,4018
 VHFSmallIntestine,ileum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1285,2570
 VHFSmallIntestine,ileum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,3114.5,6229
@@ -422,7 +422,7 @@ VHFSmallIntestine,ileum,t cell:cd8+ alpha-beta,http://purl.obolibrary.org/obo/CL
 VHFSmallIntestine,ileum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,1471.5,2943
 VHFSmallIntestine,ileum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,1024.5,2049
 VHFSmallIntestine,jejunum,b cell,http://purl.obolibrary.org/obo/CL_0000236,100,200
-VHFSmallIntestine,jejunum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,591,1182
+VHFSmallIntestine,jejunum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,591,1182
 VHFSmallIntestine,jejunum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,4102,8204
 VHFSmallIntestine,jejunum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,2589.5,5179
 VHFSmallIntestine,jejunum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,14060.5,28121
@@ -471,7 +471,7 @@ VHFSpleen,hilum of spleen,t cell:cd4+ alpha-beta memory,http://purl.obolibrary.o
 VHFSpleen,hilum of spleen,t cell:cd8+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000909,13265,13265
 VHFSpleen,hilum of spleen,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,9069,9069
 VHMLargeIntestine,ascending colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,16651.45161290322580645161,516195
-VHMLargeIntestine,ascending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,593.66666666666666666667,3562
+VHMLargeIntestine,ascending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,593.66666666666666666667,3562
 VHMLargeIntestine,ascending colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,28533.29032258064516129032,884532
 VHMLargeIntestine,ascending colon,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,932.33333333333333333333,5594
 VHMLargeIntestine,ascending colon,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,5087.33333333333333333333,30524
@@ -535,7 +535,7 @@ VHMLargeIntestine,caecum,t cell:cd8+ pdl1+,http://purl.obolibrary.org/obo/CL_000
 VHMLargeIntestine,caecum,t cell:regulatory,http://purl.obolibrary.org/obo/CL_0000815,17117,427925
 VHMLargeIntestine,caecum,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,25773,644325
 VHMLargeIntestine,descending colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,749.42857142857142857143,5246
-VHMLargeIntestine,descending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,645.28571428571428571429,4517
+VHMLargeIntestine,descending colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,645.28571428571428571429,4517
 VHMLargeIntestine,descending colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2681.57142857142857142857,18771
 VHMLargeIntestine,descending colon,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1036.14285714285714285714,7253
 VHMLargeIntestine,descending colon,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,5810.28571428571428571429,40672
@@ -563,7 +563,7 @@ VHMLargeIntestine,sigmoid colon,adipocyte,http://purl.obolibrary.org/obo/CL_0000
 VHMLargeIntestine,sigmoid colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,54.83333333333333333333,329
 VHMLargeIntestine,sigmoid colon,b cell:memory,http://purl.obolibrary.org/obo/CL_0000787,209.34482758620689655172,6071
 VHMLargeIntestine,sigmoid colon,b cell:naive,http://purl.obolibrary.org/obo/CL_0000788,644.20689655172413793103,18682
-VHMLargeIntestine,sigmoid colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,102.09090909090909090909,3369
+VHMLargeIntestine,sigmoid colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,102.09090909090909090909,3369
 VHMLargeIntestine,sigmoid colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,3171.82857142857142857143,111014
 VHMLargeIntestine,sigmoid colon,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,184.34285714285714285714,6452
 VHMLargeIntestine,sigmoid colon,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1422.62857142857142857143,49792
@@ -613,7 +613,7 @@ VHMLargeIntestine,sigmoid colon,transit amplifying cell:proliferating,http://pur
 VHMLargeIntestine,sigmoid colon,tuft cell:intestinal,http://purl.obolibrary.org/obo/CL_0019032,528.10344827586206896552,15315
 VHMLargeIntestine,sigmoid colon,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,2985.37931034482758620690,86576
 VHMLargeIntestine,transverse colon,b cell,http://purl.obolibrary.org/obo/CL_0000236,258.5,1034
-VHMLargeIntestine,transverse colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,362,1810
+VHMLargeIntestine,transverse colon,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,362,1810
 VHMLargeIntestine,transverse colon,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,1954,9770
 VHMLargeIntestine,transverse colon,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,725.6,3628
 VHMLargeIntestine,transverse colon,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,3758.2,18791
@@ -856,7 +856,7 @@ VHMLymphNode,medulla of lymph node,"t cell:mature natural killer ",http://purl.o
 VHMLymphNode,medulla of lymph node,t cell:regulatory,http://purl.obolibrary.org/obo/CL_0000815,67057,201171
 VHMLymphNode,medulla of lymph node,t cell:tim3+,http://purl.obolibrary.org/obo/CL_0000084,1125.33333333333333333333,3376
 VHMSkin,skin,b cell,http://purl.obolibrary.org/obo/CL_0000236,128.5,257
-VHMSkin,skin,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,2992.5,5985
+VHMSkin,skin,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,2992.5,5985
 VHMSkin,skin,dendritic cell:cd11b+,http://purl.obolibrary.org/obo/CL_0002465,751,751
 VHMSkin,skin,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2115.11111111111111111111,19036
 VHMSkin,skin,keratinocyte,http://purl.obolibrary.org/obo/CL_0000312,474,948
@@ -875,7 +875,7 @@ VHMSkin,skin,t cell:regulatory,http://purl.obolibrary.org/obo/CL_0000815,208,187
 VHMSkin,skin,tumor cell,http://purl.obolibrary.org/obo/CL_0001063,11954,23908
 VHMSkin,skin,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,3884,7768
 VHMSmallIntestine,ascending part of duodenum,b cell,http://purl.obolibrary.org/obo/CL_0000236,54.83333333333333333333,329
-VHMSmallIntestine,ascending part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,339.16666666666666666667,2035
+VHMSmallIntestine,ascending part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,339.16666666666666666667,2035
 VHMSmallIntestine,ascending part of duodenum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,3190.83333333333333333333,19145
 VHMSmallIntestine,ascending part of duodenum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,856.5,5139
 VHMSmallIntestine,ascending part of duodenum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,10487.33333333333333333333,62924
@@ -900,7 +900,7 @@ VHMSmallIntestine,ascending part of duodenum,t cell:cd8+ alpha-beta,http://purl.
 VHMSmallIntestine,ascending part of duodenum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,735.66666666666666666667,4414
 VHMSmallIntestine,ascending part of duodenum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,559.66666666666666666667,3358
 VHMSmallIntestine,descending part of duodenum,b cell,http://purl.obolibrary.org/obo/CL_0000236,43.83333333333333333333,263
-VHMSmallIntestine,descending part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,367.5,2205
+VHMSmallIntestine,descending part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,367.5,2205
 VHMSmallIntestine,descending part of duodenum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,3713.5,22281
 VHMSmallIntestine,descending part of duodenum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,958.16666666666666666667,5749
 VHMSmallIntestine,descending part of duodenum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,13295.5,79773
@@ -925,7 +925,7 @@ VHMSmallIntestine,descending part of duodenum,t cell:cd8+ alpha-beta,http://purl
 VHMSmallIntestine,descending part of duodenum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,983.66666666666666666667,5902
 VHMSmallIntestine,descending part of duodenum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,982.5,5895
 VHMSmallIntestine,distal part of ileum,b cell,http://purl.obolibrary.org/obo/CL_0000236,1987.83333333333333333333,11927
-VHMSmallIntestine,distal part of ileum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,779,4674
+VHMSmallIntestine,distal part of ileum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,779,4674
 VHMSmallIntestine,distal part of ileum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,3968.33333333333333333333,23810
 VHMSmallIntestine,distal part of ileum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1203.5,7221
 VHMSmallIntestine,distal part of ileum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,9562.83333333333333333333,57377
@@ -950,7 +950,7 @@ VHMSmallIntestine,distal part of ileum,t cell:cd8+ alpha-beta,http://purl.obolib
 VHMSmallIntestine,distal part of ileum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,840,5040
 VHMSmallIntestine,distal part of ileum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,840,5040
 VHMSmallIntestine,horizontal part of duodenum,b cell,http://purl.obolibrary.org/obo/CL_0000236,54.83333333333333333333,329
-VHMSmallIntestine,horizontal part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,339.16666666666666666667,2035
+VHMSmallIntestine,horizontal part of duodenum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,339.16666666666666666667,2035
 VHMSmallIntestine,horizontal part of duodenum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,3190.83333333333333333333,19145
 VHMSmallIntestine,horizontal part of duodenum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,856.5,5139
 VHMSmallIntestine,horizontal part of duodenum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,10487.33333333333333333333,62924
@@ -975,7 +975,7 @@ VHMSmallIntestine,horizontal part of duodenum,t cell:cd8+ alpha-beta,http://purl
 VHMSmallIntestine,horizontal part of duodenum,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,735.66666666666666666667,4414
 VHMSmallIntestine,horizontal part of duodenum,transit amplifying cell:proliferating,http://purl.obolibrary.org/obo/CL_0009010,559.66666666666666666667,3358
 VHMSmallIntestine,jejunum,b cell,http://purl.obolibrary.org/obo/CL_0000236,66.83333333333333333333,401
-VHMSmallIntestine,jejunum,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,390,2340
+VHMSmallIntestine,jejunum,dendritic cell,http://purl.obolibrary.org/obo/CL_0001056,390,2340
 VHMSmallIntestine,jejunum,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,3685.5,22113
 VHMSmallIntestine,jejunum,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,937.5,5625
 VHMSmallIntestine,jejunum,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,13650.5,81903
@@ -1035,6 +1035,134 @@ VHMSpleen,renal surface of spleen,neutrophil/monocyte,http://purl.obolibrary.org
 VHMSpleen,renal surface of spleen,t cell:cd4+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000897,4860,4860
 VHMSpleen,renal surface of spleen,t cell:cd8+ alpha-beta memory,http://purl.obolibrary.org/obo/CL_0000909,16624,16624
 VHMSpleen,renal surface of spleen,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,6471,6471
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,1595.5,25528
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,b cell,http://purl.obolibrary.org/obo/CL_0000236,5614,89824
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,b cell:immature,http://purl.obolibrary.org/obo/CL_0000816,395,6320
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,cell:cd34+ cd61+,http://purl.obolibrary.org/obo/CL_0000738,49,784
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,dendritic cell:plasmacytoid,http://purl.obolibrary.org/obo/CL_0000784,612.75,9804
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,325.5,5208
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,497.75,7964
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,1516.75,24268
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,erythroblast,http://purl.obolibrary.org/obo/CL_0000765,876.25,14020
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,erythroblast:basophilic,http://purl.obolibrary.org/obo/CL_0000549,85,1360
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,erythroid lineage cell,http://purl.obolibrary.org/obo/CL_0000764,19410,310560
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,50.5,808
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,granulocyte monocyte progenitor cell/myeloblast,http://purl.obolibrary.org/obo/CL_0000839,186.75,2988
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,hematopoietic stem and progenitor cell:spink2+,http://purl.obolibrary.org/obo/CL_0000837,187,2992
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,568.25,9092
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,lymphoid progenitor cell:common,http://purl.obolibrary.org/obo/CL_0000051,16.75,268
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,macrophage,http://purl.obolibrary.org/obo/CL_0000235,2120.25,33924
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,megakaryocyte:gata1+,http://purl.obolibrary.org/obo/CL_0000556,122.5,1960
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,megakaryocyte:gata1-,http://purl.obolibrary.org/obo/CL_0000556,281.25,4500
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,521.5,8344
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,mesenchymal stem/stromal cell:thy1+,http://purl.obolibrary.org/obo/CL_0000134,482,7712
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,monocyte,http://purl.obolibrary.org/obo/CL_0000576,3441.25,55060
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,monocyte:non-classical,http://purl.obolibrary.org/obo/CL_0000875,450.25,7204
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,muscle cell:smooth,http://purl.obolibrary.org/obo/CL_0000192,224,3584
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,myeloid cell:intermediate,http://purl.obolibrary.org/obo/CL_0000763,8184,130944
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,myeloid cell:mature,http://purl.obolibrary.org/obo/CL_0000763,21769,348304
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,myeloid progenitor cell:common,http://purl.obolibrary.org/obo/CL_0000049,6048,96768
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,2548.5,40776
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,schwann cell,http://purl.obolibrary.org/obo/CL_0002573,13.33333333333333333333,160
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,t cell:cd4+ alpha-beta,http://purl.obolibrary.org/obo/CL_0000624,3640.75,58252
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,"t cell:cd8+ alpha-beta regulatory ",http://purl.obolibrary.org/obo/CL_0000795,3095.5,49528
+https://purl.humanatlas.io/ref-organ/knee-female-left/v1.3#primary,Left femur,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,8627.25,138036
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,1343,21488
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,b cell,http://purl.obolibrary.org/obo/CL_0000236,5717.25,91476
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,b cell:immature,http://purl.obolibrary.org/obo/CL_0000816,291,4656
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,cell:cd34+ cd61+,http://purl.obolibrary.org/obo/CL_0000738,30.5,488
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,dendritic cell:plasmacytoid,http://purl.obolibrary.org/obo/CL_0000784,414.25,6628
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,322.25,5156
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,355.25,5684
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,1252.75,20044
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,erythroblast,http://purl.obolibrary.org/obo/CL_0000765,323,5168
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,erythroblast:basophilic,http://purl.obolibrary.org/obo/CL_0000549,23.5,376
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,erythroid lineage cell,http://purl.obolibrary.org/obo/CL_0000764,14258.25,228132
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,49,784
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,granulocyte monocyte progenitor cell/myeloblast,http://purl.obolibrary.org/obo/CL_0000839,131.75,2108
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,hematopoietic stem and progenitor cell:spink2+,http://purl.obolibrary.org/obo/CL_0000837,188.5,3016
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,367.75,5884
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,lymphoid progenitor cell:common,http://purl.obolibrary.org/obo/CL_0000051,16.25,260
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,macrophage,http://purl.obolibrary.org/obo/CL_0000235,1766.75,28268
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,megakaryocyte:gata1+,http://purl.obolibrary.org/obo/CL_0000556,58.25,932
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,megakaryocyte:gata1-,http://purl.obolibrary.org/obo/CL_0000556,319.75,5116
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,334.75,5356
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,mesenchymal stem/stromal cell:thy1+,http://purl.obolibrary.org/obo/CL_0000134,292,4672
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,monocyte,http://purl.obolibrary.org/obo/CL_0000576,2582.75,41324
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,monocyte:non-classical,http://purl.obolibrary.org/obo/CL_0000875,340,5440
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,muscle cell:smooth,http://purl.obolibrary.org/obo/CL_0000192,174,2784
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,myeloid cell:intermediate,http://purl.obolibrary.org/obo/CL_0000763,7199,115184
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,myeloid cell:mature,http://purl.obolibrary.org/obo/CL_0000763,17224.5,275592
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,myeloid progenitor cell:common,http://purl.obolibrary.org/obo/CL_0000049,5241.75,83868
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,1959.25,31348
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,schwann cell,http://purl.obolibrary.org/obo/CL_0002573,1,4
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,t cell:cd4+ alpha-beta,http://purl.obolibrary.org/obo/CL_0000624,2406.75,38508
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,"t cell:cd8+ alpha-beta regulatory ",http://purl.obolibrary.org/obo/CL_0000795,1900.5,30408
+https://purl.humanatlas.io/ref-organ/knee-female-right/v1.3#primary,Right femur,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,7056.5,112904
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,1984.5,7938
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,b cell,http://purl.obolibrary.org/obo/CL_0000236,5768.5,23074
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,b cell:immature,http://purl.obolibrary.org/obo/CL_0000816,1800,7200
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,cell:cd34+ cd61+,http://purl.obolibrary.org/obo/CL_0000738,14,56
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,dendritic cell:plasmacytoid,http://purl.obolibrary.org/obo/CL_0000784,399.5,1598
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,301,1204
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,641,2564
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,1812.5,7250
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,erythroblast,http://purl.obolibrary.org/obo/CL_0000765,2344,9376
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,erythroblast:basophilic,http://purl.obolibrary.org/obo/CL_0000549,48.5,194
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,erythroid lineage cell,http://purl.obolibrary.org/obo/CL_0000764,17193.5,68774
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,20,80
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,granulocyte monocyte progenitor cell/myeloblast,http://purl.obolibrary.org/obo/CL_0000839,73,292
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,hematopoietic stem and progenitor cell:spink2+,http://purl.obolibrary.org/obo/CL_0000837,101.5,406
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,240,960
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,lymphoid progenitor cell:common,http://purl.obolibrary.org/obo/CL_0000051,7,28
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,macrophage,http://purl.obolibrary.org/obo/CL_0000235,1747,6988
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,megakaryocyte:gata1+,http://purl.obolibrary.org/obo/CL_0000556,81.5,326
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,megakaryocyte:gata1-,http://purl.obolibrary.org/obo/CL_0000556,187,748
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,607.5,2430
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,mesenchymal stem/stromal cell:thy1+,http://purl.obolibrary.org/obo/CL_0000134,328.5,1314
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,monocyte,http://purl.obolibrary.org/obo/CL_0000576,3080,12320
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,monocyte:non-classical,http://purl.obolibrary.org/obo/CL_0000875,412,1648
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,muscle cell:smooth,http://purl.obolibrary.org/obo/CL_0000192,257,1028
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,myeloid cell:intermediate,http://purl.obolibrary.org/obo/CL_0000763,5781,23124
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,myeloid cell:mature,http://purl.obolibrary.org/obo/CL_0000763,13823,55292
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,myeloid progenitor cell:common,http://purl.obolibrary.org/obo/CL_0000049,4440.5,17762
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,3234,12936
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,schwann cell,http://purl.obolibrary.org/obo/CL_0002573,3,12
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,t cell:cd4+ alpha-beta,http://purl.obolibrary.org/obo/CL_0000624,2593,10372
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,"t cell:cd8+ alpha-beta regulatory ",http://purl.obolibrary.org/obo/CL_0000795,2770,11080
+https://purl.humanatlas.io/ref-organ/knee-male-left/v1.2#primary,Left femur,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,7204.5,28818
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,1057.5,4230
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,b cell,http://purl.obolibrary.org/obo/CL_0000236,588.5,2354
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,b cell:immature,http://purl.obolibrary.org/obo/CL_0000816,76.5,306
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,cell:cd34+ cd61+,http://purl.obolibrary.org/obo/CL_0000738,5.5,22
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,dendritic cell:plasmacytoid,http://purl.obolibrary.org/obo/CL_0000784,145,580
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,210,840
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,490.5,1962
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,968.5,3874
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,erythroblast,http://purl.obolibrary.org/obo/CL_0000765,154.5,618
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,erythroblast:basophilic,http://purl.obolibrary.org/obo/CL_0000549,4,16
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,erythroid lineage cell,http://purl.obolibrary.org/obo/CL_0000764,6043,24172
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,14.5,58
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,granulocyte monocyte progenitor cell/myeloblast,http://purl.obolibrary.org/obo/CL_0000839,35.5,142
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,hematopoietic stem and progenitor cell:spink2+,http://purl.obolibrary.org/obo/CL_0000837,72,288
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,107,428
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,lymphoid progenitor cell:common,http://purl.obolibrary.org/obo/CL_0000051,1,2
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,macrophage,http://purl.obolibrary.org/obo/CL_0000235,840,3360
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,megakaryocyte:gata1+,http://purl.obolibrary.org/obo/CL_0000556,35,140
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,megakaryocyte:gata1-,http://purl.obolibrary.org/obo/CL_0000556,158.5,634
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,235,940
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,mesenchymal stem/stromal cell:thy1+,http://purl.obolibrary.org/obo/CL_0000134,177.5,710
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,monocyte,http://purl.obolibrary.org/obo/CL_0000576,773,3092
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,monocyte:non-classical,http://purl.obolibrary.org/obo/CL_0000875,201,804
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,muscle cell:smooth,http://purl.obolibrary.org/obo/CL_0000192,107,428
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,myeloid cell:intermediate,http://purl.obolibrary.org/obo/CL_0000763,2542.5,10170
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,myeloid cell:mature,http://purl.obolibrary.org/obo/CL_0000763,5675.5,22702
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,myeloid progenitor cell:common,http://purl.obolibrary.org/obo/CL_0000049,1832.5,7330
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,967,3868
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,schwann cell,http://purl.obolibrary.org/obo/CL_0002573,3,6
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,t cell:cd4+ alpha-beta,http://purl.obolibrary.org/obo/CL_0000624,1324.5,5298
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,"t cell:cd8+ alpha-beta regulatory ",http://purl.obolibrary.org/obo/CL_0000795,1008.5,4034
+https://purl.humanatlas.io/ref-organ/knee-male-right/v1.2#primary,Right femur,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,3125,12500
 https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,Neck of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,9538,28614
 https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,Neck of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,253462,760386
 https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,Neck of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,269399.66666666666666666667,808199
@@ -1055,3 +1183,19 @@ https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,uncinate proce
 https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,uncinate process of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,270309.66666666666666666667,810929
 https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,uncinate process of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,258836.33333333333333333333,776509
 https://purl.humanatlas.io/ref-organ/pancreas-female/v1.3#primary,uncinate process of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,619904.66666666666666666667,1859714
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,Neck of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,7674,7674
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,Neck of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,219275,219275
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,Neck of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,330964,330964
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,Neck of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,592626,592626
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,body of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,6423.5,12847
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,body of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,243264,486528
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,body of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,302944,605888
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,body of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,622128.5,1244257
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,head of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,7674,7674
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,head of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,219275,219275
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,head of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,330964,330964
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,head of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,592626,592626
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,tail of pancreas,beta cell:pancreatic,http://purl.obolibrary.org/obo/CL_0000169,9477.33333333333333333333,28432
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,tail of pancreas,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,308467,925401
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,tail of pancreas,"epithelial cell:ductal ",http://purl.obolibrary.org/obo/CL_0000068,289979,869937
+https://purl.humanatlas.io/ref-organ/pancreas-male/v1.3#primary,tail of pancreas,unknown cell,http://purl.obolibrary.org/obo/CL_0000000,697076.33333333333333333333,2091229
