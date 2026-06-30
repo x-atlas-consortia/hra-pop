@@ -1,4 +1,4 @@
-import { distance } from 'mathjs';
+import { euclidean } from 'simsimd';
 
 const GLOBAL_ENTITY_ID = 'https://purl.humanatlas.io/graph/hra-ccf-body#VHBothSexes';
 const GLOBAL_POINT_CACHE = {};
@@ -20,7 +20,7 @@ async function getGlobalPoint(entity) {
     })
       .catch((e) => console.log(e))
       .then((r) => r.json())
-      .then((p) => [p.x_translation, p.y_translation, p.z_translation]);
+      .then((p) => new Float32Array([p.x_translation, p.y_translation, p.z_translation]));
     GLOBAL_POINT_CACHE[entity['@id']] = point;
   }
   return point;
@@ -32,7 +32,7 @@ function getPlacement(entity) {
 
 function getLocalPoint(entity) {
   const p = getPlacement(entity);
-  return [p.x_translation, p.y_translation, p.z_translation];
+  return new Float32Array([p.x_translation, p.y_translation, p.z_translation]);
 }
 
 export async function getSpatialEntityDistance(entityA, entityB) {
@@ -50,7 +50,7 @@ export async function getSpatialEntityDistance(entityA, entityB) {
       pointA = await getGlobalPoint(entityA);
       pointB = await getGlobalPoint(entityB);
     }
-    return distance(pointA, pointB);
+    return euclidean(pointA, pointB);
   } catch (err) {
     console.log(JSON.stringify({ message: err.message, entityA, entityB, pointA, pointB }, null, 2));
     return Number.MAX_SAFE_INTEGER;

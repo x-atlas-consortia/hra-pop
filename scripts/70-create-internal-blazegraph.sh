@@ -7,15 +7,27 @@ DIR=$RAW_DIR/$VERSION
 JNL=$DIR/blazegraph.jnl
 rm -f $JNL
 
-HRA=https://purl.humanatlas.io/collection/hra-api
+HRA=https://purl.humanatlas.io/collection/hra
+HRA_URL=https://cdn.humanatlas.io/hra-kg--staging/collection/hra/latest/graph.xml
+HRA_API=https://purl.humanatlas.io/collection/hra-api
 HRA_POP=https://purl.humanatlas.io/graph/hra-pop
 HRA_POP_LQ=https://purl.humanatlas.io/graph/hra-pop-lq
 HRA_POP_FULL=https://purl.humanatlas.io/ds-graph/hra-pop-full
 CTANN_CROSSWALKS=https://purl.humanatlas.io/graph/ctann-crosswalks
+CL=https://purl.humanatlas.io/vocab/cl
 
 run_jsonld() {
   QUADS=${1%.jsonl}.nq
-  ./src/jsonld-to-nq.js ccf-context.jsonld $1 $QUADS
+  rm -f $QUADS
+  ./src/ndjsonld-to-nq.js ccf-context.jsonld $1 $QUADS
+  blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
+}
+
+# When running against especially large jsonl files
+run_jsonld_lg() {
+  QUADS=${1%.jsonl}.nq
+  rm -f $QUADS
+  ./src/ndjsonld-to-nq2.js ccf-context.jsonld $1 $QUADS
   blazegraph-runner load --journal=$JNL "--graph=${2}" $QUADS
 }
 
@@ -24,7 +36,7 @@ run_jsonld $DIR/atlas-enriched-dataset-graph.jsonl $HRA_POP
 run_jsonld $DIR/atlas-as-cell-summaries.jsonl $HRA_POP
 
 # Test Data
-run_jsonld $DIR/test-atlas-enriched-dataset-graph.jsonl "${HRA_POP}#test-data"
+run_jsonld_lg $DIR/test-atlas-enriched-dataset-graph.jsonl "${HRA_POP}#test-data"
 
 # Full Dataset
 run_jsonld $DIR/full-dataset-graph.jsonl "${HRA_POP_FULL}"
@@ -49,8 +61,16 @@ if [ "$COMPUTE_LQ" == "true" ]; then
   blazegraph-runner load --journal=$JNL "--graph=${HRA_POP_LQ}#as-as-sims" $DIR/atlas-lq-as-as-cell-summary-similarities.ttl
 fi
 
+# Import CL
+curl --retry 3 --retry-connrefused -s $CL -H "Accept: application/rdf+xml" > $DIR/cl.owl
+blazegraph-runner load --journal=$JNL "--graph=${CL}" $DIR/cl.owl
+
 # Import HRA
-curl --retry 3 --retry-connrefused -s $HRA -H "Accept: application/rdf+xml" > $DIR/hra.owl
+curl --retry 3 --retry-connrefused -s $HRA_API -H "Accept: application/rdf+xml" > $DIR/hra-api.owl
+blazegraph-runner load --journal=$JNL "--graph=${HRA_API}" $DIR/hra-api.owl
+
+# Import HRA API
+curl --retry 3 --retry-connrefused -s $HRA_URL -H "Accept: application/rdf+xml" > $DIR/hra.owl
 blazegraph-runner load --journal=$JNL "--graph=${HRA}" $DIR/hra.owl
 
 # Import ctann-crosswalks

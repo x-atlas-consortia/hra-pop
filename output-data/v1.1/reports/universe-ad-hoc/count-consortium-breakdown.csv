@@ -1,0 +1,45 @@
+consortium,sex,dataset_count,atlas_dataset_count,test_dataset_count,excluded_dataset_count,no_rui_dataset_count,no_summary_dataset_count,modality,cell_count
+Allen Institute for Brain Science,Female,5,0,5,0,0,5,N/A,0
+Allen Institute for Brain Science,Male,5,0,5,0,0,5,N/A,0
+Azimuth,Female,18,0,18,0,0,18,N/A,0
+Azimuth,Male,19,0,19,0,0,19,N/A,0
+CxG,Female,5442,0,3775,1667,5442,1667,sc_transcriptomics,63797081
+CxG,Male,5820,0,4218,1602,5820,1602,sc_transcriptomics,69481744
+CxG,Unknown,755,0,459,296,755,296,sc_transcriptomics,6630103
+DISCO,Female,4323,0,1640,2683,4323,2683,sc_transcriptomics,10641447
+DISCO,Male,4885,0,2099,2786,4885,2786,sc_transcriptomics,13705046
+DISCO,Unknown,12103,0,4840,7263,12103,7263,sc_transcriptomics,36110581
+GTEx,Female,37,6,31,0,5,26,sc_transcriptomics,178516
+GTEx,Male,37,8,29,0,4,25,sc_transcriptomics,219532
+GUDMAP,Male,12,0,12,0,0,12,N/A,0
+HCA,Female,435,66,153,216,316,263,sc_transcriptomics,2246201
+HCA,Male,326,55,129,142,229,177,sc_transcriptomics,1981545
+"HIRN, ESPACE",Male,1,0,1,0,0,1,N/A,0
+HOA,Male,1,0,1,0,0,1,N/A,0
+HRA,Female,1,0,1,0,0,1,N/A,0
+HTAN,Male,31,31,0,0,0,0,sc_proteomics,2694470
+HuBMAP,Female,6038,177,5843,18,13,5861,sc_proteomics,11396859
+HuBMAP,Female,6038,177,5843,18,13,5861,sc_transcriptomics,4286010
+HuBMAP,Male,3088,333,2753,2,1,2754,sc_transcriptomics,11472080
+Human Cell Atlas,Female,106,0,106,0,0,106,N/A,0
+Human Cell Atlas,Male,18,0,18,0,0,18,N/A,0
+KPMP,Female,495,0,482,13,0,495,N/A,0
+KPMP,Male,278,0,267,11,0,278,N/A,0
+LungMap,Female,4,0,0,4,4,4,N/A,0
+LungMap,Male,5,0,0,5,5,5,N/A,0
+NHLBI/LungMap,Female,2,1,0,1,0,1,sc_transcriptomics,22923
+NHLBI/LungMap,Male,8,2,1,5,0,6,sc_transcriptomics,27034
+SEA-AD,Female,1,0,0,1,1,1,N/A,0
+SPARC,Female,38,0,38,0,0,38,N/A,0
+SPARC,Male,12,0,12,0,0,12,N/A,0
+SenNet,Female,1245,62,1144,39,37,1171,sc_transcriptomics,1545185
+SenNet,Male,1773,66,1677,30,2,1705,sc_transcriptomics,2786445
+UEdinburgh,Female,36,0,36,0,0,36,N/A,0
+UEdinburgh,Male,28,0,28,0,0,28,N/A,0
+UIowa,Female,20,0,20,0,0,20,N/A,0
+UIowa,Male,23,0,23,0,0,23,N/A,0
+University of British Columbia,Female,11,0,11,0,0,11,N/A,0
+University of British Columbia,Male,16,0,16,0,0,16,N/A,0
+University of California San Francisco,Female,30,0,30,0,0,30,N/A,0
+University of California San Francisco,Male,30,0,30,0,0,30,N/A,0
+University of Toronto,Male,12,0,12,0,0,12,N/A,0

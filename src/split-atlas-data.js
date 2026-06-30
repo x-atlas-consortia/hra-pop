@@ -32,8 +32,16 @@ async function enrichAllData(data) {
     organIds[row.organ_id] = row.organ_id.replace('http://purl.obolibrary.org/obo/UBERON_', 'UBERON:');
     if (!row.organ_id && row.rui_location.startsWith('{')) {
       const rui = JSON.parse(row.rui_location);
+      if (Array.isArray(rui.placement)) {
+        rui.placement = rui.placement[0];
+        row.rui_location = JSON.stringify(rui);
+      }
       row.organ_id = rui.placement.target;
-      ruiOrganIds[row.organ_id] = row.organ_id.replace('http://purl.org/ccf/latest/ccf.owl#', '');
+      if (row.organ_id) {
+        ruiOrganIds[row.organ_id] = row.organ_id.replace('http://purl.org/ccf/latest/ccf.owl#', '');
+      } else {
+        console.log('Bad RUI location: ', row.dataset_id, row.rui_location)
+      }
     }
   }
 

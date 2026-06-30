@@ -1,5 +1,4 @@
 #+ summary: Application A2P2
-#+ description:
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -17,7 +16,7 @@ PREFIX rui: <http://purl.org/ccf/1.5/>
 
 SELECT DISTINCT ?dataset ?reported_organ ?tool ?modality ?as (?shared_ds_cell_types / ?total_ds_cell_types as ?pct_hra_ct_overlap)
 WHERE {
-  GRAPH hra-pop:test-data {
+  GRAPH HRApop: {
     ?dataset ccf:has_cell_summary [
       ccf:sex ?sex ;
       ccf:cell_annotation_method ?tool ;
@@ -25,12 +24,13 @@ WHERE {
     ] .
 
     OPTIONAL { ?dataset ccf:organ_id ?reported_organ . }
+    hint:SubQuery hint:runOnce true .
   }
 
   {
     SELECT ?dataset ?sex ?tool ?modality (COUNT(DISTINCT(?dataset_cell_label)) as ?total_ds_cell_types)
     WHERE {
-      GRAPH hra-pop:test-data {
+      GRAPH HRApop: {
         ?dataset ccf:has_cell_summary [
           ccf:sex ?sex ;
           ccf:cell_annotation_method ?tool ;
@@ -45,50 +45,48 @@ WHERE {
   }
 
   {
-    SELECT ?dataset ?as ?sex ?tool ?modality (COUNT(DISTINCT(?cell_label)) as ?shared_ds_cell_types)
+    SELECT ?dataset ?as ?sex ?tool ?modality (COUNT(DISTINCT(?cell_id)) as ?shared_ds_cell_types)
     WHERE {
-      GRAPH hra-pop:test-data {
-        ?dataset ccf:has_cell_summary [
-          ccf:sex ?sex ;
-          ccf:cell_annotation_method ?tool ;
-          ccf:modality ?modality ;
-          ccf:has_cell_summary_row [
-              ccf:cell_id ?cell_id ;
-              ccf:cell_label ?cell_label ;
-          ]
-        ] .
+      {
+        SELECT DISTINCT ?dataset ?sex ?modality ?cell_id
+        WHERE {
+          GRAPH HRApop: {
+            ?dataset ccf:has_cell_summary [
+              ccf:sex ?sex ;
+              ccf:cell_annotation_method ?tool ;
+              ccf:modality ?modality ;
+              ccf:has_cell_summary_row [
+                  ccf:cell_id ?cell_id ;
+              ]
+            ] .
+          }
 
-        GRAPH HRApop: {
-          ?as ccf:has_cell_summary [
-            ccf:sex ?sex ;
-            ccf:cell_annotation_method ?tool ;
-            ccf:modality ?modality ;
-          ] .
+          FILTER(EXISTS {
+            GRAPH HRA: {
+              ?cell_id ccf:ccf_asctb_type [] .
+            }
+          })
         }
-
-        FILTER(
-          STRSTARTS(STR(?as), 'http://purl.obolibrary.org/obo/') ||
-          STRSTARTS(STR(?as), 'http://purl.org/sig/ont/fma/fma')
-        )
       }
 
-      GRAPH HRA: {
-        ?as ccf:ccf_asctb_type ?type .
-        FILTER (?type = 'AS')
+      { 
+        SELECT DISTINCT ?as ?sex ?tool ?modality
+        WHERE {
+          GRAPH HRA: {
+            ?as ccf:ccf_asctb_type [] .
+          }
+          GRAPH HRApop: {
+            ?as ccf:has_cell_summary [
+              ccf:sex ?sex ;
+              ccf:cell_annotation_method ?tool ;
+              ccf:modality ?modality ;
+            ] .
+          }
+          hint:SubQuery hint:runOnce true .
+        }
       }
-
-      FILTER(EXISTS {
-        GRAPH HRA: {
-          ?cell_id ccf:ccf_asctb_type [] .
-        }
-      } || EXISTS {
-        GRAPH HRA: {
-          [] ccf:ccf_asctb_type [] ;
-            rdfs:label ?cell_label .
-        }
-      })
     }
     GROUP BY ?dataset ?as ?sex ?tool ?modality
   }
 }
-ORDER BY ?sex ?dataset DESC(?pct_hra_ct_overlap)
+# ORDER BY ?sex ?dataset DESC(?pct_hra_ct_overlap)

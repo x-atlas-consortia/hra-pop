@@ -1,5 +1,4 @@
 #+ summary: Application A2P3
-#+ description:
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -27,6 +26,7 @@ WHERE {
          ccf:cell_source_a ?dataset ;
          ccf:cell_source_b ?corridor ;
          ccf:similarity ?similarity .
+      FILTER(STRSTARTS(STR(?corridor), 'http://purl.org/ccf/1.5/'))
     } UNION {
       [] ccf:modality ?modality ;
          ccf:cell_source_a_sex ?sex ;
@@ -36,9 +36,8 @@ WHERE {
          ccf:cell_source_a ?corridor ;
          ccf:cell_source_b ?dataset ;
          ccf:similarity ?similarity .
+      FILTER(STRSTARTS(STR(?corridor), 'http://purl.org/ccf/1.5/'))
     }
-
-    FILTER (STRSTARTS(STR(?corridor), 'http://purl.org/ccf/1.5/'))
 
     FILTER EXISTS  {
       GRAPH hra-pop:test-data {
@@ -52,6 +51,7 @@ WHERE {
     GRAPH hra-pop:test-data {
       ?dataset ccf:organ_id ?reported_organ .
     }
+    hint:SubQuery hint:runOnce true .
   }
 }
-ORDER BY ?dataset DESC(?similarity)
+# ORDER BY ?dataset DESC(?similarity)

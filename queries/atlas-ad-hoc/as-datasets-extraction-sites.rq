@@ -23,6 +23,7 @@ SELECT DISTINCT
 	?rui_location
   ?as_label
 	?as_id
+  ?as_overlap_percentage
   ?organId
   ?organ_label
   ?refOrgan
@@ -51,6 +52,7 @@ WHERE {
           ccf:as_id ?refOrganAs ;
           ccf:as_label ?as_label ;
 					ccf:as_id ?as_id;
+          ccf:percentage_of_total ?as_overlap_percentage ;
           ccf:has_reference_organ ?refOrgan
       ]
   ] .

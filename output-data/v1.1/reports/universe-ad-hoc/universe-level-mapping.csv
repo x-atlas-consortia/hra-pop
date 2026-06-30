@@ -1,0 +1,865 @@
+modality,tool,cell_label,cell_id,cell_count,is_mapped,level_1_cell_id,level_1_cell_label,level_2_cell_id,level_2_cell_label
+sc_proteomics,sc_proteomics,macrophage,http://purl.obolibrary.org/obo/CL_0000235,1649,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_proteomics,sc_proteomics,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,902,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_proteomics,sc_proteomics,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,720,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,713,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,extravillous trophoblast,http://purl.obolibrary.org/obo/CL_0008036,586,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
+sc_proteomics,sc_proteomics,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623,584,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,"dendritic cell, human",http://purl.obolibrary.org/obo/CL_0001056,572,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_proteomics,sc_proteomics,B cell,http://purl.obolibrary.org/obo/CL_0000236,568,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_proteomics,sc_proteomics,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,536,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,460,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,457,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_proteomics,sc_proteomics,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,413,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_proteomics,sc_proteomics,goblet cell,http://purl.obolibrary.org/obo/CL_0000160,381,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,neuron,http://purl.obolibrary.org/obo/CL_0000540,354,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_proteomics,sc_proteomics,neutrophil,http://purl.obolibrary.org/obo/CL_0000775,347,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_proteomics,sc_proteomics,myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,346,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_proteomics,sc_proteomics,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,326,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_proteomics,sc_proteomics,neuroendocrine cell,http://purl.obolibrary.org/obo/CL_0000165,322,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_proteomics,sc_proteomics,M1 macrophage,http://purl.obolibrary.org/obo/CL_0000863,322,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_proteomics,sc_proteomics,interstitial cell of Cajal,http://purl.obolibrary.org/obo/CL_0002088,322,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,CD7-positive lymphoid progenitor cell,http://purl.obolibrary.org/obo/CL_0001028,320,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,CD57-positive enterocyte,http://purl.obolibrary.org/obo/CL_4033092,300,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,277,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_proteomics,sc_proteomics,paneth cell,http://purl.obolibrary.org/obo/CL_0000510,270,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,249,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,243,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,mast cell,http://purl.obolibrary.org/obo/CL_0000097,238,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,glandular secretory epithelial cell,http://purl.obolibrary.org/obo/CL_0000150,188,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,175,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,duct epithelial cell,http://purl.obolibrary.org/obo/CL_0000068,175,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,muscle cell,http://purl.obolibrary.org/obo/CL_0000187,157,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_proteomics,sc_proteomics,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,145,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,crypt-top fibroblast,http://purl.obolibrary.org/obo/CL_4052009,126,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_proteomics,sc_proteomics,leukocyte,http://purl.obolibrary.org/obo/CL_0000738,114,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,monocyte,http://purl.obolibrary.org/obo/CL_0000576,108,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_proteomics,sc_proteomics,plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000784,108,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_proteomics,sc_proteomics,T cell,http://purl.obolibrary.org/obo/CL_0000084,102,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,memory B cell,http://purl.obolibrary.org/obo/CL_0000787,98,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_proteomics,sc_proteomics,naive B cell,http://purl.obolibrary.org/obo/CL_0000788,98,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_proteomics,sc_proteomics,megakaryocyte,http://purl.obolibrary.org/obo/CL_0000556,94,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,88,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000136,adipocyte
+sc_proteomics,sc_proteomics,endothelial cell of sinusoid,http://purl.obolibrary.org/obo/CL_0002262,85,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_proteomics,sc_proteomics,innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,82,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,keratinocyte,http://purl.obolibrary.org/obo/CL_0000312,81,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,lymphocyte,http://purl.obolibrary.org/obo/CL_0000542,68,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,66,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,germinal center B cell,http://purl.obolibrary.org/obo/CL_0000844,64,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_proteomics,sc_proteomics,migratory dendritic cell,http://purl.obolibrary.org/obo/CL_4047054,59,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_proteomics,sc_proteomics,cycling B cell,http://purl.obolibrary.org/obo/CL_4033068,59,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_proteomics,sc_proteomics,CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,59,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_proteomics,sc_proteomics,"naive thymus-derived CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000895,59,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,"effector CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0001044,59,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,T follicular helper cell,http://purl.obolibrary.org/obo/CL_0002038,59,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,follicular dendritic cell,http://purl.obolibrary.org/obo/CL_0000442,59,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_proteomics,sc_proteomics,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,59,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_proteomics,sc_proteomics,non-classical monocyte,http://purl.obolibrary.org/obo/CL_0000875,49,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_proteomics,sc_proteomics,immature B cell,http://purl.obolibrary.org/obo/CL_0000816,49,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_proteomics,sc_proteomics,"CD8-positive, alpha-beta regulatory T cell",http://purl.obolibrary.org/obo/CL_0000795,49,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,49,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_proteomics,sc_proteomics,common myeloid progenitor,http://purl.obolibrary.org/obo/CL_0000049,49,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,mesenchymal stem cell,http://purl.obolibrary.org/obo/CL_0000134,49,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_proteomics,sc_proteomics,mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,49,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_proteomics,sc_proteomics,hematopoietic multipotent progenitor cell,http://purl.obolibrary.org/obo/CL_0000837,49,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,49,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_proteomics,sc_proteomics,endosteal cell,http://purl.obolibrary.org/obo/CL_0002157,49,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,erythroid lineage cell,http://purl.obolibrary.org/obo/CL_0000764,49,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,erythroblast,http://purl.obolibrary.org/obo/CL_0000765,49,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,myeloid lineage restricted progenitor cell,http://purl.obolibrary.org/obo/CL_0000839,49,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,48,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,basophilic erythroblast,http://purl.obolibrary.org/obo/CL_0000549,47,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,common lymphoid progenitor,http://purl.obolibrary.org/obo/CL_0000051,44,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,"double-positive, alpha-beta thymocyte",http://purl.obolibrary.org/obo/CL_0000809,43,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,double negative thymocyte,http://purl.obolibrary.org/obo/CL_0002489,43,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,memory T cell,http://purl.obolibrary.org/obo/CL_0000813,41,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,CD11b-positive dendritic cell,http://purl.obolibrary.org/obo/CL_0002465,40,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_proteomics,sc_proteomics,Langerhans cell,http://purl.obolibrary.org/obo/CL_0000453,40,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_proteomics,sc_proteomics,naive T cell,http://purl.obolibrary.org/obo/CL_0000898,39,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,glial cell,http://purl.obolibrary.org/obo/CL_0000125,39,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_proteomics,sc_proteomics,"effector memory CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000913,39,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,pericyte,http://purl.obolibrary.org/obo/CL_0000669,39,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_proteomics,sc_proteomics,stem cell,http://purl.obolibrary.org/obo/CL_0000034,39,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_proteomics,sc_proteomics,enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000164,39,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,intestinal tuft cell,http://purl.obolibrary.org/obo/CL_0019032,39,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,BEST4+ enterocyte,http://purl.obolibrary.org/obo/CL_4030026,39,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,Schwann cell,http://purl.obolibrary.org/obo/CL_0002573,37,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_proteomics,sc_proteomics,"CD4-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000897,36,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,"CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,36,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,follicular B cell,http://purl.obolibrary.org/obo/CL_0000843,36,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_proteomics,sc_proteomics,endothelial cell of vascular tree,http://purl.obolibrary.org/obo/CL_0002139,36,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_proteomics,sc_proteomics,myeloid leukocyte,http://purl.obolibrary.org/obo/CL_0000766,36,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_proteomics,sc_proteomics,lung interstitial macrophage,http://purl.obolibrary.org/obo/CL_4033043,25,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_proteomics,sc_proteomics,pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,25,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,25,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,squamous epithelial cell,http://purl.obolibrary.org/obo/CL_0000076,2,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,Hofbauer cell,http://purl.obolibrary.org/obo/CL_3000001,1,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_proteomics,sc_proteomics,glandular cell of esophagus,http://purl.obolibrary.org/obo/CL_0002657,1,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_proteomics,sc_proteomics,secretory epithelial cell,http://purl.obolibrary.org/obo/CL_1100001,1,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623,3564,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,2873,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,B cell,http://purl.obolibrary.org/obo/CL_0000236,2678,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,azimuth,mast cell,http://purl.obolibrary.org/obo/CL_0000097,2233,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,T cell,http://purl.obolibrary.org/obo/CL_0000084,2060,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,monocyte-derived dendritic cell,http://purl.obolibrary.org/obo/CL_0011031,2017,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,"CD4-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000897,1996,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,1994,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,azimuth,"effector CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0001050,1990,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,non-classical monocyte,http://purl.obolibrary.org/obo/CL_0000875,1965,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,azimuth,"CD14-low, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002396,1955,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,azimuth,transitional stage B cell,http://purl.obolibrary.org/obo/CL_0000818,1952,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,azimuth,naive B cell,http://purl.obolibrary.org/obo/CL_0000788,1946,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,azimuth,memory B cell,http://purl.obolibrary.org/obo/CL_0000787,1914,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,azimuth,mucosal-associated invariant T cell,http://purl.obolibrary.org/obo/CL_0000940,1912,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,"naive thymus-derived CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000900,1878,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,"CD16-negative, CD56-bright natural killer cell, human",http://purl.obolibrary.org/obo/CL_0000938,1877,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,"CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,1861,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,"effector CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0001044,1851,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000784,1798,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,1786,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,"naive thymus-derived CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000895,1773,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,1751,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,azimuth,plasmablast,http://purl.obolibrary.org/obo/CL_0000980,1637,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,azimuth,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,1635,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,cycling natural killer cell,http://purl.obolibrary.org/obo/CL_4033071,1606,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,gamma-delta T cell,http://purl.obolibrary.org/obo/CL_0000798,1577,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,platelet,http://purl.obolibrary.org/obo/CL_0000233,1571,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,azimuth,innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,1522,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,"CD4-negative, CD8-negative, alpha-beta intraepithelial T cell",http://purl.obolibrary.org/obo/CL_0000935,1503,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,1503,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,"CD4-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000934,1239,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,1214,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,azimuth,kidney connecting tubule epithelial cell,http://purl.obolibrary.org/obo/CL_1000768,1206,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,peritubular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001033,1205,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,"plasmacytoid dendritic cell, human",http://purl.obolibrary.org/obo/CL_0001058,1202,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,M2 macrophage,http://purl.obolibrary.org/obo/CL_0000890,1188,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,hematopoietic precursor cell,http://purl.obolibrary.org/obo/CL_0008001,1176,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,kidney loop of Henle long descending thin limb outer medulla epithelial cell,http://purl.obolibrary.org/obo/CL_4030013,1170,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,kidney cortex collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000714,1154,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,epithelial cell of early distal convoluted tubule,http://purl.obolibrary.org/obo/CL_4030016,1148,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,kidney loop of Henle cortical thick ascending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001109,1132,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,kidney collecting duct alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_4030015,1115,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,kidney interstitial fibroblast,http://purl.obolibrary.org/obo/CL_1000692,1113,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,macula densa epithelial cell,http://purl.obolibrary.org/obo/CL_1000850,1111,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,kidney connecting tubule principal cell,http://purl.obolibrary.org/obo/CL_4030018,1109,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,parietal epithelial cell,http://purl.obolibrary.org/obo/CL_1000452,1100,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,epithelial cell of proximal tubule segment 3,http://purl.obolibrary.org/obo/CL_4030011,1091,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,epithelial cell of proximal tubule segment 1,http://purl.obolibrary.org/obo/CL_4030009,1085,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,kidney loop of Henle short descending thin limb epithelial cell,http://purl.obolibrary.org/obo/CL_4030012,1077,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,podocyte,http://purl.obolibrary.org/obo/CL_0000653,1071,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,endothelial cell of arteriole,http://purl.obolibrary.org/obo/CL_1000412,1071,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,renal beta-intercalated cell,http://purl.obolibrary.org/obo/CL_0002201,1066,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,glomerular capillary endothelial cell,http://purl.obolibrary.org/obo/CL_1001005,1061,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,"cycling CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_4033075,1022,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,vasa recta descending limb cell,http://purl.obolibrary.org/obo/CL_1001285,1014,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,lung macrophage,http://purl.obolibrary.org/obo/CL_1001603,993,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,renal medullary fibroblast,http://purl.obolibrary.org/obo/CL_4030022,986,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,vasa recta ascending limb cell,http://purl.obolibrary.org/obo/CL_1001131,980,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,968,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,kidney inner medulla collecting duct epithelial cell,http://purl.obolibrary.org/obo/CL_1000547,968,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,964,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,963,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,kidney loop of Henle medullary thick ascending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001108,960,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,957,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,mesangial cell,http://purl.obolibrary.org/obo/CL_0000650,951,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,azimuth,classical monocyte,http://purl.obolibrary.org/obo/CL_0000860,947,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,azimuth,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,945,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,macrophage,http://purl.obolibrary.org/obo/CL_0000235,943,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,multiciliated columnar cell of tracheobronchial tree,http://purl.obolibrary.org/obo/CL_0002145,934,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,alveolar capillary type 1 endothelial cell,http://purl.obolibrary.org/obo/CL_4028002,933,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,925,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,kidney outer medulla collecting duct principal cell,http://purl.obolibrary.org/obo/CL_1000716,898,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,pericyte,http://purl.obolibrary.org/obo/CL_0000669,896,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,azimuth,vein endothelial cell of respiratory system,http://purl.obolibrary.org/obo/CL_4033008,896,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,alveolar macrophage,http://purl.obolibrary.org/obo/CL_0000583,894,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,adventitial fibroblast,http://purl.obolibrary.org/obo/CL_4052030,893,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,alveolar type 1 fibroblast cell,http://purl.obolibrary.org/obo/CL_4028004,891,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,886,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,881,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,endothelial cell of respiratory system lymphatic vessel,http://purl.obolibrary.org/obo/CL_0009086,881,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,872,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,pulmonary artery endothelial cell,http://purl.obolibrary.org/obo/CL_1001568,865,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,857,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,epithelial cell of proximal tubule segment 2,http://purl.obolibrary.org/obo/CL_4030010,844,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,843,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,pulmonary alveolar epithelial cell,http://purl.obolibrary.org/obo/CL_0000322,841,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,neuron,http://purl.obolibrary.org/obo/CL_0000540,829,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,kidney loop of Henle long descending thin limb inner medulla epithelial cell,http://purl.obolibrary.org/obo/CL_4030014,821,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,Schwann cell,http://purl.obolibrary.org/obo/CL_0002573,803,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,azimuth,lung pericyte,http://purl.obolibrary.org/obo/CL_0009089,802,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,azimuth,regular ventricular cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002131,794,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,azimuth,kidney outer medulla collecting duct intercalated cell,http://purl.obolibrary.org/obo/CL_1000717,793,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,respiratory basal cell,http://purl.obolibrary.org/obo/CL_0002633,791,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,azimuth,kidney loop of Henle thin ascending limb epithelial cell,http://purl.obolibrary.org/obo/CL_1001107,791,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,epithelial cell of late distal convoluted tubule,http://purl.obolibrary.org/obo/CL_4030017,781,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,lung interstitial macrophage,http://purl.obolibrary.org/obo/CL_4033043,777,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0000990,770,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,endocardial cell,http://purl.obolibrary.org/obo/CL_0002350,751,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,alveolar capillary type 2 endothelial cell,http://purl.obolibrary.org/obo/CL_4028003,751,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,club cell,http://purl.obolibrary.org/obo/CL_0000158,736,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,719,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,azimuth,pulmonary ionocyte,http://purl.obolibrary.org/obo/CL_0017000,698,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,"cycling CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_4033074,686,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,673,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,azimuth,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,655,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000136,adipocyte
+sc_transcriptomics,azimuth,mesothelial cell,http://purl.obolibrary.org/obo/CL_0000077,613,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,cycling T cell,http://purl.obolibrary.org/obo/CL_4033069,612,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,azimuth,kidney connecting tubule alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_4030020,571,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,erythroid lineage cell,http://purl.obolibrary.org/obo/CL_0000764,562,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,kidney granular cell,http://purl.obolibrary.org/obo/CL_0000648,553,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,azimuth,cycling pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_4033080,548,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,fibroblast of lung,http://purl.obolibrary.org/obo/CL_0002553,539,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,respiratory tract suprabasal cell,http://purl.obolibrary.org/obo/CL_4033048,508,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,nasal mucosa goblet cell,http://purl.obolibrary.org/obo/CL_0002480,469,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,neutrophil,http://purl.obolibrary.org/obo/CL_0000775,421,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,azimuth,"Axl+ dendritic cell, human",http://purl.obolibrary.org/obo/CL_0017009,376,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,cycling alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033077,371,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,airway submucosal gland duct basal cell,http://purl.obolibrary.org/obo/CL_4033024,300,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,azimuth,deuterosomal cell,http://purl.obolibrary.org/obo/CL_4033044,247,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,cycling mononuclear phagocyte,http://purl.obolibrary.org/obo/CL_4033078,246,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,bronchial goblet cell,http://purl.obolibrary.org/obo/CL_1000312,237,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,serous secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033005,222,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,azimuth,brush cell of tracheobronchial tree,http://purl.obolibrary.org/obo/CL_0002075,195,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,mesothelial cell of visceral pleura,http://purl.obolibrary.org/obo/CL_1000493,193,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,multiciliated epithelial cell,http://purl.obolibrary.org/obo/CL_0005012,189,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,CCL3-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033041,182,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,astrocyte,http://purl.obolibrary.org/obo/CL_0000127,152,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,azimuth,oligodendrocyte,http://purl.obolibrary.org/obo/CL_0000128,152,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,azimuth,VIP GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023016,152,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,L5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023049,152,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,pvalb GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023018,152,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,lamp5 GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023011,152,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,oligodendrocyte precursor cell,http://purl.obolibrary.org/obo/CL_0002453,152,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,,
+sc_transcriptomics,azimuth,central nervous system macrophage,http://purl.obolibrary.org/obo/CL_0000878,151,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,L2/3 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023047,151,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,sst GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023017,150,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,L6b glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023046,145,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,vascular leptomeningeal cell,http://purl.obolibrary.org/obo/CL_4023051,144,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,L6 corticothalamic-projecting glutamatergic cortical neuron,http://purl.obolibrary.org/obo/CL_4023042,143,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023050,142,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,L6 intratelencephalic projecting Car3 glutamatergic neuron,http://purl.obolibrary.org/obo/CL_4030068,142,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,sncg GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023015,138,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,L5/6 near-projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023043,135,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,lung migratory dendritic cell,http://purl.obolibrary.org/obo/CL_4033045,121,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,pulmonary neuroendocrine cell,http://purl.obolibrary.org/obo/CL_1000223,97,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,pancreatic stellate cell,http://purl.obolibrary.org/obo/CL_0002410,95,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,leukocyte,http://purl.obolibrary.org/obo/CL_0000738,95,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,95,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,pancreatic ductal cell,http://purl.obolibrary.org/obo/CL_0002079,95,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,pancreatic acinar cell,http://purl.obolibrary.org/obo/CL_0002064,94,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,azimuth,pancreatic D cell,http://purl.obolibrary.org/obo/CL_0000173,92,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,89,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,nasal serous secreting cell,http://purl.obolibrary.org/obo/CL_4042016,73,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,azimuth,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,73,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,azimuth,early lymphoid progenitor,http://purl.obolibrary.org/obo/CL_0000936,70,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,megakaryocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000553,70,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,common lymphoid progenitor,http://purl.obolibrary.org/obo/CL_0000051,66,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,sst chodl GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023121,65,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,azimuth,precursor B cell,http://purl.obolibrary.org/obo/CL_0000817,64,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,azimuth,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,60,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,subpleural fibroblast,http://purl.obolibrary.org/obo/CL_4052029,55,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,azimuth,mucus secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033022,55,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,azimuth,pro-B cell,http://purl.obolibrary.org/obo/CL_0000826,52,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,megakaryocyte-erythroid progenitor cell,http://purl.obolibrary.org/obo/CL_0000050,52,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,azimuth,cycling endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_4033079,32,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,azimuth,mesenchymal stem cell of adipose tissue,http://purl.obolibrary.org/obo/CL_0002570,20,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,azimuth,monocyte,http://purl.obolibrary.org/obo/CL_0000576,18,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,azimuth,mesenchymal stem cell of abdominal adipose tissue,http://purl.obolibrary.org/obo/CL_2000080,16,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,azimuth,subcutaneous adipocyte,http://purl.obolibrary.org/obo/CL_0002521,15,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000136,adipocyte
+sc_transcriptomics,azimuth,pancreatic A cell,http://purl.obolibrary.org/obo/CL_0000171,7,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0000782,6,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,azimuth,glandular epithelial cell of endometrium,http://purl.obolibrary.org/obo/CL_0009084,6,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,pancreatic PP cell,http://purl.obolibrary.org/obo/CL_0002275,5,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,metallothionein-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033042,3,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,azimuth,pancreatic epsilon cell,http://purl.obolibrary.org/obo/CL_0005019,3,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,azimuth,pancreatic endocrine cell,http://purl.obolibrary.org/obo/CL_0008024,1,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,2538,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,2476,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,2402,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,mast cell,http://purl.obolibrary.org/obo/CL_0000097,2290,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,2065,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,macrophage,http://purl.obolibrary.org/obo/CL_0000235,2063,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623,1878,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,1843,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,1837,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,B cell,http://purl.obolibrary.org/obo/CL_0000236,1820,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,celltypist,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,1769,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,1732,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,pericyte,http://purl.obolibrary.org/obo/CL_0000669,1697,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,celltypist,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,1639,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000784,1600,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,1447,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,celltypist,glial cell,http://purl.obolibrary.org/obo/CL_0000125,1334,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,1333,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,1324,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,celltypist,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,1185,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,celltypist,mesothelial cell,http://purl.obolibrary.org/obo/CL_0000077,1117,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,1107,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,gamma-delta T cell,http://purl.obolibrary.org/obo/CL_0000798,1106,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,T follicular helper cell,http://purl.obolibrary.org/obo/CL_0002038,1092,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,lung macrophage,http://purl.obolibrary.org/obo/CL_1001603,1049,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,T-helper 1 cell,http://purl.obolibrary.org/obo/CL_0000545,1040,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,non-classical monocyte,http://purl.obolibrary.org/obo/CL_0000875,1024,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,celltypist,T-helper 17 cell,http://purl.obolibrary.org/obo/CL_0000899,1018,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,lung interstitial macrophage,http://purl.obolibrary.org/obo/CL_4033043,1012,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,alveolar macrophage,http://purl.obolibrary.org/obo/CL_0000583,1003,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,multiciliated epithelial cell,http://purl.obolibrary.org/obo/CL_0005012,988,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,982,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,classical monocyte,http://purl.obolibrary.org/obo/CL_0000860,978,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,celltypist,pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,975,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,respiratory basal cell,http://purl.obolibrary.org/obo/CL_0002633,965,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,celltypist,vein endothelial cell of respiratory system,http://purl.obolibrary.org/obo/CL_4033008,964,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,alveolar adventitial fibroblast,http://purl.obolibrary.org/obo/CL_4028006,959,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,celltypist,alveolar type 1 fibroblast cell,http://purl.obolibrary.org/obo/CL_4028004,945,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,celltypist,club cell,http://purl.obolibrary.org/obo/CL_0000158,939,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,serous secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033005,939,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,celltypist,T cell,http://purl.obolibrary.org/obo/CL_0000084,933,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,transit amplifying cell of gut,http://purl.obolibrary.org/obo/CL_4047017,915,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,cycling alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033077,913,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,pulmonary interstitial fibroblast,http://purl.obolibrary.org/obo/CL_0002241,908,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,celltypist,goblet cell,http://purl.obolibrary.org/obo/CL_0000160,898,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,respiratory tract suprabasal cell,http://purl.obolibrary.org/obo/CL_4033048,895,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,stem cell,http://purl.obolibrary.org/obo/CL_0000034,891,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,celltypist,cycling pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_4033080,891,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,885,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,celltypist,CCL3-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033041,874,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,pulmonary alveolar epithelial cell,http://purl.obolibrary.org/obo/CL_0000322,868,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,863,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,"CD14-low, CD16-positive monocyte",http://purl.obolibrary.org/obo/CL_0002396,859,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,celltypist,alveolar capillary type 2 endothelial cell,http://purl.obolibrary.org/obo/CL_4028003,859,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,854,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,celltypist,cycling T cell,http://purl.obolibrary.org/obo/CL_4033069,848,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,lung migratory dendritic cell,http://purl.obolibrary.org/obo/CL_4033045,846,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,nasal mucosa goblet cell,http://purl.obolibrary.org/obo/CL_0002480,843,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,lung pericyte,http://purl.obolibrary.org/obo/CL_0009089,837,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,celltypist,BEST4+ enterocyte,http://purl.obolibrary.org/obo/CL_4030026,834,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,829,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,"naive thymus-derived CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000895,828,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,"CD16-positive, CD56-dim natural killer cell, human",http://purl.obolibrary.org/obo/CL_0000939,826,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,regular ventricular cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002131,826,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,celltypist,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,821,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,cycling macrophage,http://purl.obolibrary.org/obo/CL_4033076,817,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,809,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,celltypist,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,799,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000136,adipocyte
+sc_transcriptomics,celltypist,monocyte,http://purl.obolibrary.org/obo/CL_0000576,796,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,celltypist,"activated CD4-positive, alpha-beta T cell, human",http://purl.obolibrary.org/obo/CL_0001043,794,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,794,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,celltypist,endocardial cell,http://purl.obolibrary.org/obo/CL_0002350,790,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,"CD16-negative, CD56-bright natural killer cell, human",http://purl.obolibrary.org/obo/CL_0000938,770,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,"activated CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000906,766,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,"CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,764,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,"effector memory CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000913,764,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,hillock cell,http://purl.obolibrary.org/obo/CL_4030024,760,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,naive B cell,http://purl.obolibrary.org/obo/CL_0000788,752,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,celltypist,memory B cell,http://purl.obolibrary.org/obo/CL_0000787,750,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,celltypist,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,748,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,IgA plasma cell,http://purl.obolibrary.org/obo/CL_0000987,745,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,"activated CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000896,742,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,deuterosomal cell,http://purl.obolibrary.org/obo/CL_4033044,740,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,tuft cell,http://purl.obolibrary.org/obo/CL_0002204,737,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,colonocyte,http://purl.obolibrary.org/obo/CL_1000347,731,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,cycling B cell,http://purl.obolibrary.org/obo/CL_4033068,730,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,celltypist,metallothionein-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033042,719,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,cycling plasma cell,http://purl.obolibrary.org/obo/CL_4047003,715,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,paneth cell,http://purl.obolibrary.org/obo/CL_0000510,705,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,mesothelial cell of pleura,http://purl.obolibrary.org/obo/CL_1000491,705,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,pulmonary neuroendocrine cell,http://purl.obolibrary.org/obo/CL_1000223,698,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,group 3 innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001071,694,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,bronchial goblet cell,http://purl.obolibrary.org/obo/CL_1000312,693,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,post-arteriole capillary cell,http://purl.obolibrary.org/obo/CL_4047029,687,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,mature alpha-beta T cell,http://purl.obolibrary.org/obo/CL_0000791,686,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,"effector CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0001050,684,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,"group 3 innate lymphoid cell, human",http://purl.obolibrary.org/obo/CL_0001078,679,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,tracheobronchial goblet cell,http://purl.obolibrary.org/obo/CL_0019003,663,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,airway submucosal gland collecting duct epithelial cell,http://purl.obolibrary.org/obo/CL_4033023,662,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,M1 macrophage,http://purl.obolibrary.org/obo/CL_0000863,652,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,celltypist,germinal center B cell,http://purl.obolibrary.org/obo/CL_0000844,641,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,celltypist,neutrophil,http://purl.obolibrary.org/obo/CL_0000775,639,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,celltypist,type EC enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000577,638,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,625,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,type L enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0002279,613,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,enteroglial cell,http://purl.obolibrary.org/obo/CL_4040002,609,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,nasal serous secreting cell,http://purl.obolibrary.org/obo/CL_4042016,599,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,celltypist,IgG plasma cell,http://purl.obolibrary.org/obo/CL_0000985,597,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,subpleural fibroblast,http://purl.obolibrary.org/obo/CL_4052029,593,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,celltypist,brush cell of tracheobronchial tree,http://purl.obolibrary.org/obo/CL_0002075,589,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,pulmonary ionocyte,http://purl.obolibrary.org/obo/CL_0017000,588,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,570,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,celltypist,migratory enteric neural crest cell,http://purl.obolibrary.org/obo/CL_0002607,563,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,celltypist,mucosal-associated invariant T cell,http://purl.obolibrary.org/obo/CL_0000940,549,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,cycling endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_4033079,548,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,fetal artery endothelial cell,http://purl.obolibrary.org/obo/CL_4047006,533,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,cycling type EC enteroendocrine cell,http://purl.obolibrary.org/obo/CL_4047004,521,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,pre-venule capillary cell,http://purl.obolibrary.org/obo/CL_4047030,517,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,immature pericyte,http://purl.obolibrary.org/obo/CL_4047007,511,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,celltypist,type I enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0002277,500,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,common lymphoid progenitor,http://purl.obolibrary.org/obo/CL_0000051,487,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,T cell zone reticular cell,http://purl.obolibrary.org/obo/CL_0009105,486,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,celltypist,fetal vein endothelial cell,http://purl.obolibrary.org/obo/CL_4047011,478,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,angiogenic pericyte,http://purl.obolibrary.org/obo/CL_4047012,466,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,celltypist,immature B cell,http://purl.obolibrary.org/obo/CL_0000816,464,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,celltypist,type N enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0002280,461,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,cycling glial cell,http://purl.obolibrary.org/obo/CL_4047002,457,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,T-helper 2 cell,http://purl.obolibrary.org/obo/CL_0000546,455,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,cycling stromal cell,http://purl.obolibrary.org/obo/CL_4047001,450,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,celltypist,precursor B cell,http://purl.obolibrary.org/obo/CL_0000817,450,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,celltypist,centrocyte,http://purl.obolibrary.org/obo/CL_0009111,445,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,celltypist,"CD4-positive, CD25-positive, alpha-beta regulatory T cell",http://purl.obolibrary.org/obo/CL_0000792,439,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000164,430,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,"group 2 innate lymphoid cell, human",http://purl.obolibrary.org/obo/CL_0001081,418,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,enterocyte of epithelium of small intestine,http://purl.obolibrary.org/obo/CL_1000334,406,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,pro-B cell,http://purl.obolibrary.org/obo/CL_0000826,390,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,erythrocyte,http://purl.obolibrary.org/obo/CL_0000232,389,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,celltypist,Schwann cell,http://purl.obolibrary.org/obo/CL_0002573,389,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,GIP cell,http://purl.obolibrary.org/obo/CL_0002278,383,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,interstitial cell of Cajal,http://purl.obolibrary.org/obo/CL_0002088,382,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,cardiac pacemaker cell of sinoatrial node,http://purl.obolibrary.org/obo/CL_1000477,359,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,celltypist,germ cell,http://purl.obolibrary.org/obo/CL_0000586,354,true,http://purl.obolibrary.org/obo/CL_0000039,germ line cell,,
+sc_transcriptomics,celltypist,myeloid leukocyte,http://purl.obolibrary.org/obo/CL_0000766,352,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,microfold cell of epithelium of small intestine,http://purl.obolibrary.org/obo/CL_1000353,347,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,microfold cell of epithelium proper of large intestine,http://purl.obolibrary.org/obo/CL_1000360,338,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,megakaryocyte,http://purl.obolibrary.org/obo/CL_0000556,337,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,follicular dendritic cell,http://purl.obolibrary.org/obo/CL_0000442,333,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,Purkinje cell,http://purl.obolibrary.org/obo/CL_0000121,330,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,enterocyte of epithelium of large intestine,http://purl.obolibrary.org/obo/CL_0002071,309,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,type D cell of small intestine,http://purl.obolibrary.org/obo/CL_0002266,304,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,Purkinje myocyte of atrioventricular bundle,http://purl.obolibrary.org/obo/CL_1000484,276,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,celltypist,IgM plasma cell,http://purl.obolibrary.org/obo/CL_0000986,232,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,cholangiocyte,http://purl.obolibrary.org/obo/CL_1000488,207,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,206,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,liver-resident natural killer cell,http://purl.obolibrary.org/obo/CL_4047101,206,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,celltypist,hepatocyte,http://purl.obolibrary.org/obo/CL_0000182,205,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,basophil,http://purl.obolibrary.org/obo/CL_0000767,200,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,celltypist,type D enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000502,179,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0000782,169,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,pancreatic D cell,http://purl.obolibrary.org/obo/CL_0000173,164,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,164,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,pancreatic PP cell,http://purl.obolibrary.org/obo/CL_0002275,164,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,pancreatic A cell,http://purl.obolibrary.org/obo/CL_0000171,164,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,helper T cell,http://purl.obolibrary.org/obo/CL_0000912,95,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,melanocyte of skin,http://purl.obolibrary.org/obo/CL_1000458,95,true,http://purl.obolibrary.org/obo/CL_0000148,melanocyte,,
+sc_transcriptomics,celltypist,blood vessel endothelial cell,http://purl.obolibrary.org/obo/CL_0000071,94,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,celltypist,keratinocyte,http://purl.obolibrary.org/obo/CL_0000312,94,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,celltypist,cytotoxic T cell,http://purl.obolibrary.org/obo/CL_0000910,93,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,celltypist,epidermal Langerhans cell,http://purl.obolibrary.org/obo/CL_0002457,93,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,"dendritic cell, human",http://purl.obolibrary.org/obo/CL_0001056,91,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,monocyte-derived dendritic cell,http://purl.obolibrary.org/obo/CL_0011031,87,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,celltypist,microglial cell,http://purl.obolibrary.org/obo/CL_0000129,31,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,GABAergic neuron,http://purl.obolibrary.org/obo/CL_0000617,31,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,oligodendrocyte,http://purl.obolibrary.org/obo/CL_0000128,31,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,hippocampal astrocyte,http://purl.obolibrary.org/obo/CL_0002604,31,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,hippocampal neuron,http://purl.obolibrary.org/obo/CL_0002608,31,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,Cajal-Retzius cell,http://purl.obolibrary.org/obo/CL_0000695,31,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,oligodendrocyte precursor cell,http://purl.obolibrary.org/obo/CL_0002453,31,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,,
+sc_transcriptomics,celltypist,astrocyte,http://purl.obolibrary.org/obo/CL_0000127,30,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,hippocampal interneuron,http://purl.obolibrary.org/obo/CL_1001569,25,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,ependymal cell,http://purl.obolibrary.org/obo/CL_0000065,23,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,celltypist,hippocampal granule cell,http://purl.obolibrary.org/obo/CL_0001033,23,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,granule cell,http://purl.obolibrary.org/obo/CL_0000120,19,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,celltypist,choroid plexus epithelial cell,http://purl.obolibrary.org/obo/CL_0000706,18,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,frmatch,pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,937,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,931,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,fibroblast of lung,http://purl.obolibrary.org/obo/CL_0002553,930,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,frmatch,alveolar macrophage,http://purl.obolibrary.org/obo/CL_0000583,922,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,frmatch,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,920,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,frmatch,metallothionein-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033042,917,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,frmatch,club cell,http://purl.obolibrary.org/obo/CL_0000158,915,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,CCL3-positive alveolar macrophage,http://purl.obolibrary.org/obo/CL_4033041,911,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,frmatch,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,905,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,frmatch,B cell,http://purl.obolibrary.org/obo/CL_0000236,901,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,frmatch,classical monocyte,http://purl.obolibrary.org/obo/CL_0000860,900,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,frmatch,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,898,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,frmatch,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,895,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,frmatch,respiratory basal cell,http://purl.obolibrary.org/obo/CL_0002633,895,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,frmatch,lung macrophage,http://purl.obolibrary.org/obo/CL_1001603,892,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,frmatch,deuterosomal cell,http://purl.obolibrary.org/obo/CL_4033044,891,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,890,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,frmatch,nasal mucosa goblet cell,http://purl.obolibrary.org/obo/CL_0002480,890,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,vein endothelial cell of respiratory system,http://purl.obolibrary.org/obo/CL_4033008,886,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,frmatch,bronchial goblet cell,http://purl.obolibrary.org/obo/CL_1000312,884,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,elicited macrophage,http://purl.obolibrary.org/obo/CL_0000861,883,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,frmatch,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,882,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,frmatch,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,880,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,frmatch,pulmonary capillary endothelial cell,http://purl.obolibrary.org/obo/CL_4028001,880,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,frmatch,non-classical monocyte,http://purl.obolibrary.org/obo/CL_0000875,879,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,frmatch,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,879,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,frmatch,conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0000990,878,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,frmatch,duct epithelial cell,http://purl.obolibrary.org/obo/CL_0000068,875,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,lung migratory dendritic cell,http://purl.obolibrary.org/obo/CL_4033045,874,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,frmatch,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,872,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,frmatch,multiciliated columnar cell of tracheobronchial tree,http://purl.obolibrary.org/obo/CL_0002145,872,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,872,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,frmatch,respiratory tract hillock cell,http://purl.obolibrary.org/obo/CL_4030023,871,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,epithelial cell of lower respiratory tract,http://purl.obolibrary.org/obo/CL_0002632,869,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,brush cell of tracheobronchial tree,http://purl.obolibrary.org/obo/CL_0002075,869,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,respiratory tract multiciliated cell,http://purl.obolibrary.org/obo/CL_4030034,868,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,867,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,frmatch,mesothelial cell,http://purl.obolibrary.org/obo/CL_0000077,867,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,T cell,http://purl.obolibrary.org/obo/CL_0000084,865,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,frmatch,tracheobronchial goblet cell,http://purl.obolibrary.org/obo/CL_0019003,865,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,respiratory tract suprabasal cell,http://purl.obolibrary.org/obo/CL_4033048,865,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,ionocyte,http://purl.obolibrary.org/obo/CL_0005006,863,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,frmatch,plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000784,862,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,frmatch,lung pericyte,http://purl.obolibrary.org/obo/CL_0009089,861,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,frmatch,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,855,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,frmatch,mast cell,http://purl.obolibrary.org/obo/CL_0000097,855,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,frmatch,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623,851,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,frmatch,bronchus fibroblast of lung,http://purl.obolibrary.org/obo/CL_2000093,841,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,frmatch,pulmonary neuroendocrine cell,http://purl.obolibrary.org/obo/CL_1000223,838,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,frmatch,mucus secreting cell of bronchus submucosal gland,http://purl.obolibrary.org/obo/CL_4033022,825,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,pan-human-azimuth,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,15236,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,"naive thymus-derived CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000895,14939,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,14873,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,pan-human-azimuth,"CD16-positive, CD56-dim natural killer cell, human",http://purl.obolibrary.org/obo/CL_0000939,14432,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,macrophage,http://purl.obolibrary.org/obo/CL_0000235,14421,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,pan-human-azimuth,"CD4-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000897,14147,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,"CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,13818,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,granzyme K-associated CD8 T cell,http://purl.obolibrary.org/obo/CL_4052021,13800,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,13741,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,pan-human-azimuth,"CD4-positive, CD25-positive, alpha-beta regulatory T cell",http://purl.obolibrary.org/obo/CL_0000792,13293,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,13225,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,pan-human-azimuth,CD14-positive monocyte,http://purl.obolibrary.org/obo/CL_0001054,13202,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,pan-human-azimuth,pericyte,http://purl.obolibrary.org/obo/CL_0000669,13070,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,pan-human-azimuth,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,13014,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,pan-human-azimuth,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,12315,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,monocyte,http://purl.obolibrary.org/obo/CL_0000576,12112,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,pan-human-azimuth,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,11975,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,pan-human-azimuth,M1 macrophage,http://purl.obolibrary.org/obo/CL_0000863,11687,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,pan-human-azimuth,memory B cell,http://purl.obolibrary.org/obo/CL_0000787,11302,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,pan-human-azimuth,microglial cell,http://purl.obolibrary.org/obo/CL_0000129,11181,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,pan-human-azimuth,"CD16-negative, CD56-bright natural killer cell, human",http://purl.obolibrary.org/obo/CL_0000938,11172,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,11086,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,pan-human-azimuth,naive B cell,http://purl.obolibrary.org/obo/CL_0000788,11050,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,pan-human-azimuth,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,10457,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,pan-human-azimuth,immature alpha-beta T cell,http://purl.obolibrary.org/obo/CL_0000790,10266,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,9653,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,pan-human-azimuth,alveolar macrophage,http://purl.obolibrary.org/obo/CL_0000583,8736,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,pan-human-azimuth,mast cell,http://purl.obolibrary.org/obo/CL_0000097,8695,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,fetal derived definitive erythrocyte,http://purl.obolibrary.org/obo/CL_0002357,8546,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,pan-human-azimuth,erythroblast,http://purl.obolibrary.org/obo/CL_0000765,8543,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,"CD4-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000934,8276,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,naive T cell,http://purl.obolibrary.org/obo/CL_0000898,8246,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,8211,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,pan-human-azimuth,innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,7715,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,memory T cell,http://purl.obolibrary.org/obo/CL_0000813,7413,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000784,7311,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,pan-human-azimuth,T follicular helper cell,http://purl.obolibrary.org/obo/CL_0002038,7199,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,mucosal-associated invariant T cell,http://purl.obolibrary.org/obo/CL_0000940,7034,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,neutrophil,http://purl.obolibrary.org/obo/CL_0000775,6997,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,pan-human-azimuth,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,6833,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,astrocyte,http://purl.obolibrary.org/obo/CL_0000127,6758,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,pan-human-azimuth,neuron,http://purl.obolibrary.org/obo/CL_0000540,6623,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,Hofbauer cell,http://purl.obolibrary.org/obo/CL_3000001,6504,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,pan-human-azimuth,"naive thymus-derived CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000900,6315,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,amacrine cell,http://purl.obolibrary.org/obo/CL_0000561,5678,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,retinal ganglion cell,http://purl.obolibrary.org/obo/CL_0000740,5607,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,mesothelial cell,http://purl.obolibrary.org/obo/CL_0000077,5486,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,5358,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,pan-human-azimuth,pro-B cell,http://purl.obolibrary.org/obo/CL_0000826,5214,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,glial cell,http://purl.obolibrary.org/obo/CL_0000125,4888,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,pan-human-azimuth,cycling macrophage,http://purl.obolibrary.org/obo/CL_4033076,4778,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,pan-human-azimuth,melanocyte,http://purl.obolibrary.org/obo/CL_0000148,4696,true,http://purl.obolibrary.org/obo/CL_0000148,melanocyte,,
+sc_transcriptomics,pan-human-azimuth,retina horizontal cell,http://purl.obolibrary.org/obo/CL_0000745,4664,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,4310,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,pan-human-azimuth,basal cell,http://purl.obolibrary.org/obo/CL_0000646,4281,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,pan-human-azimuth,gamma-delta T cell,http://purl.obolibrary.org/obo/CL_0000798,4257,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,intestine goblet cell,http://purl.obolibrary.org/obo/CL_0019031,4116,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,caudal ganglionic eminence derived interneuron,http://purl.obolibrary.org/obo/CL_4023064,4107,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,cycling myeloid cell,http://purl.obolibrary.org/obo/CL_4033081,4030,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,sst GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023017,3981,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,oligodendrocyte,http://purl.obolibrary.org/obo/CL_0000128,3890,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,pan-human-azimuth,platelet,http://purl.obolibrary.org/obo/CL_0000233,3720,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,pan-human-azimuth,mammillary body neuron,http://purl.obolibrary.org/obo/CL_4023074,3618,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,L5/6 near-projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023043,3598,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,L4/5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023048,3586,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,respiratory basal cell,http://purl.obolibrary.org/obo/CL_0002633,3502,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,pan-human-azimuth,L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023050,3365,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,monocyte-derived dendritic cell,http://purl.obolibrary.org/obo/CL_0011031,3234,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,pan-human-azimuth,VIP GABAergic interneuron,http://purl.obolibrary.org/obo/CL_4023016,3225,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,3060,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000136,adipocyte
+sc_transcriptomics,pan-human-azimuth,L5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023049,3022,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,germinal center B cell,http://purl.obolibrary.org/obo/CL_0000844,2895,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,pan-human-azimuth,L2/3 intratelencephalic projecting glutamatergic neuron of the primary motor cortex,http://purl.obolibrary.org/obo/CL_4023047,2858,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,club cell,http://purl.obolibrary.org/obo/CL_0000158,2802,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,pyramidal neuron,http://purl.obolibrary.org/obo/CL_0000598,2767,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,T cell,http://purl.obolibrary.org/obo/CL_0000084,2718,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,cholangiocyte,http://purl.obolibrary.org/obo/CL_1000488,2473,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,midbrain-derived inhibitory neuron,http://purl.obolibrary.org/obo/CL_4023079,2451,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,2399,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,direct pathway medium spiny neuron,http://purl.obolibrary.org/obo/CL_4023026,2370,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,L4 intratelencephalic projecting glutamatergic neuron,http://purl.obolibrary.org/obo/CL_4030063,2325,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,podocyte,http://purl.obolibrary.org/obo/CL_0000653,2324,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,hematopoietic multipotent progenitor cell,http://purl.obolibrary.org/obo/CL_0000837,2313,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,thalamic excitatory neuron,http://purl.obolibrary.org/obo/CL_4023068,2308,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,transit amplifying cell of gut,http://purl.obolibrary.org/obo/CL_4047017,2290,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,endocardial cell,http://purl.obolibrary.org/obo/CL_0002350,2243,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,pan-human-azimuth,OFF-bipolar cell,http://purl.obolibrary.org/obo/CL_0000750,2197,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,lung multiciliated epithelial cell,http://purl.obolibrary.org/obo/CL_1000271,2195,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,precursor B cell,http://purl.obolibrary.org/obo/CL_0000817,2126,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,pan-human-azimuth,amygdala excitatory neuron,http://purl.obolibrary.org/obo/CL_4023039,2115,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,cycling B cell,http://purl.obolibrary.org/obo/CL_4033068,2095,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,pan-human-azimuth,double negative thymocyte,http://purl.obolibrary.org/obo/CL_0002489,2086,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,epithelial cell of distal tubule,http://purl.obolibrary.org/obo/CL_0002305,2084,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,renal beta-intercalated cell,http://purl.obolibrary.org/obo/CL_0002201,2060,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,2051,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,pan-human-azimuth,hippocampal CA1-3 neuron,http://purl.obolibrary.org/obo/CL_4023060,1983,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,luminal hormone-sensing cell of mammary gland,http://purl.obolibrary.org/obo/CL_4033058,1983,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,foveolar cell of stomach,http://purl.obolibrary.org/obo/CL_0002179,1975,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000164,1910,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,epithelial cell of proximal tubule,http://purl.obolibrary.org/obo/CL_0002306,1846,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,granulocyte monocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000557,1830,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,colonocyte,http://purl.obolibrary.org/obo/CL_1000347,1818,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,kidney loop of Henle epithelial cell,http://purl.obolibrary.org/obo/CL_1000909,1786,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,enterocyte,http://purl.obolibrary.org/obo/CL_0000584,1781,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,intestinal tuft cell,http://purl.obolibrary.org/obo/CL_0019032,1772,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,eccentric medium spiny neuron,http://purl.obolibrary.org/obo/CL_4030057,1757,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,luminal adaptive secretory precursor cell of mammary gland,http://purl.obolibrary.org/obo/CL_4033057,1754,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,CD8aa(I) thymocyte,http://purl.obolibrary.org/obo/CL_0009068,1737,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,paneth cell,http://purl.obolibrary.org/obo/CL_0000510,1710,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,keratinocyte,http://purl.obolibrary.org/obo/CL_0000312,1709,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,ventricular cardiac muscle cell,http://purl.obolibrary.org/obo/CL_2000046,1630,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,pan-human-azimuth,conjunctival epithelial cell,http://purl.obolibrary.org/obo/CL_1000432,1618,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,common lymphoid progenitor,http://purl.obolibrary.org/obo/CL_0000051,1617,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,renal alpha-intercalated cell,http://purl.obolibrary.org/obo/CL_0005011,1549,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,natural killer cell,http://purl.obolibrary.org/obo/CL_0000623,1501,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,basal-myoepithelial cell of mammary gland,http://purl.obolibrary.org/obo/CL_0002324,1479,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,endothelial tip cell,http://purl.obolibrary.org/obo/CL_0000704,1466,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,pan-human-azimuth,granulocytopoietic cell,http://purl.obolibrary.org/obo/CL_0002191,1416,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,pancreatic ductal cell,http://purl.obolibrary.org/obo/CL_0002079,1398,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,alveolar capillary type 2 endothelial cell,http://purl.obolibrary.org/obo/CL_4028003,1393,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,pan-human-azimuth,epithelial cell of pancreas,http://purl.obolibrary.org/obo/CL_0000083,1384,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,regular atrial cardiac myocyte,http://purl.obolibrary.org/obo/CL_0002129,1350,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,pan-human-azimuth,pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,1306,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,indirect pathway medium spiny neuron,http://purl.obolibrary.org/obo/CL_4023029,1211,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,Merkel cell,http://purl.obolibrary.org/obo/CL_0000242,1166,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,pulmonary ionocyte,http://purl.obolibrary.org/obo/CL_0017000,1133,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,megakaryocyte-erythroid progenitor cell,http://purl.obolibrary.org/obo/CL_0000050,1113,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,neutrophil progenitor cell,http://purl.obolibrary.org/obo/CL_0000834,1041,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,squamous epithelial cell,http://purl.obolibrary.org/obo/CL_0000076,1011,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,granulosa cell,http://purl.obolibrary.org/obo/CL_0000501,1005,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,cerebellar neuron,http://purl.obolibrary.org/obo/CL_1001611,990,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,rod bipolar cell,http://purl.obolibrary.org/obo/CL_0000751,989,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,hepatocyte,http://purl.obolibrary.org/obo/CL_0000182,975,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,pulmonary neuroendocrine cell,http://purl.obolibrary.org/obo/CL_1000223,939,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,hippocampal CA4 neuron,http://purl.obolibrary.org/obo/CL_4023061,929,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,retinal cone cell,http://purl.obolibrary.org/obo/CL_0000573,880,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,leukocyte,http://purl.obolibrary.org/obo/CL_0000738,865,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,cycling T cell,http://purl.obolibrary.org/obo/CL_4033069,849,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,adrenal gland glandular cell,http://purl.obolibrary.org/obo/CL_1001601,832,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,medullary thymic epithelial cell,http://purl.obolibrary.org/obo/CL_0002365,811,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,megakaryocyte progenitor cell,http://purl.obolibrary.org/obo/CL_0000553,790,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,Mueller cell,http://purl.obolibrary.org/obo/CL_0000636,732,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,pan-human-azimuth,early lymphoid progenitor,http://purl.obolibrary.org/obo/CL_0000936,732,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,retinal bipolar neuron,http://purl.obolibrary.org/obo/CL_0000748,723,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,lactocyte,http://purl.obolibrary.org/obo/CL_0002325,691,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,pan-human-azimuth,dentate gyrus neuron,http://purl.obolibrary.org/obo/CL_4023062,661,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,pre-conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0002010,656,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,M cell of gut,http://purl.obolibrary.org/obo/CL_0000682,601,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,"double-positive, alpha-beta thymocyte",http://purl.obolibrary.org/obo/CL_0000809,551,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,pan-human-azimuth,type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,535,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,pancreatic acinar cell,http://purl.obolibrary.org/obo/CL_0002064,534,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,pan-human-azimuth,"Axl+ dendritic cell, human",http://purl.obolibrary.org/obo/CL_0017009,505,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,pan-human-azimuth,osteoclast,http://purl.obolibrary.org/obo/CL_0000092,503,true,http://purl.obolibrary.org/obo/CL_0001035,bone cell,,
+sc_transcriptomics,pan-human-azimuth,type D cell of stomach,http://purl.obolibrary.org/obo/CL_0002267,499,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,ON-bipolar cell,http://purl.obolibrary.org/obo/CL_0000749,474,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,epithelial cell of thymus,http://purl.obolibrary.org/obo/CL_0002293,470,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,retinal rod cell,http://purl.obolibrary.org/obo/CL_0000604,413,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,Sertoli cell,http://purl.obolibrary.org/obo/CL_0000216,378,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,pancreatic A cell,http://purl.obolibrary.org/obo/CL_0000171,334,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,pancreatic PP cell,http://purl.obolibrary.org/obo/CL_0002275,272,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,chromaffin cell of adrenal gland,http://purl.obolibrary.org/obo/CL_1000426,263,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,retinal pigment epithelial cell,http://purl.obolibrary.org/obo/CL_0002586,257,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,lymphoid lineage restricted progenitor cell,http://purl.obolibrary.org/obo/CL_0000838,245,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,pan-human-azimuth,oocyte,http://purl.obolibrary.org/obo/CL_0000023,240,true,http://purl.obolibrary.org/obo/CL_0000039,germ line cell,,
+sc_transcriptomics,pan-human-azimuth,corneal epithelial cell,http://purl.obolibrary.org/obo/CL_0000575,201,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,peptic cell,http://purl.obolibrary.org/obo/CL_0000155,187,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,pan-human-azimuth,mononuclear cytotrophoblast cell,http://purl.obolibrary.org/obo/CL_0000523,184,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
+sc_transcriptomics,pan-human-azimuth,peritubular myoid cell,http://purl.obolibrary.org/obo/CL_0002481,174,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,extravillous trophoblast,http://purl.obolibrary.org/obo/CL_0008036,158,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
+sc_transcriptomics,pan-human-azimuth,type EC enteroendocrine cell,http://purl.obolibrary.org/obo/CL_0000577,150,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,pan-human-azimuth,pancreatic epsilon cell,http://purl.obolibrary.org/obo/CL_0005019,139,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,syncytiotrophoblast cell,http://purl.obolibrary.org/obo/CL_0000525,128,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
+sc_transcriptomics,pan-human-azimuth,mesenchymal stem cell,http://purl.obolibrary.org/obo/CL_0000134,118,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,pan-human-azimuth,spermatocyte,http://purl.obolibrary.org/obo/CL_0000017,109,true,http://purl.obolibrary.org/obo/CL_0000039,germ line cell,,
+sc_transcriptomics,pan-human-azimuth,cortical thymic epithelial cell,http://purl.obolibrary.org/obo/CL_0002364,89,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,pan-human-azimuth,primordial germ cell,http://purl.obolibrary.org/obo/CL_0000670,67,true,http://purl.obolibrary.org/obo/CL_0000039,germ line cell,,
+sc_transcriptomics,pan-human-azimuth,trophoblast cell,http://purl.obolibrary.org/obo/CL_0000351,42,true,http://purl.obolibrary.org/obo/CL_0000349,extraembryonic cell,,
+sc_transcriptomics,popv,plasma cell,http://purl.obolibrary.org/obo/CL_0000786,4658,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,"CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000625,4068,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,mature NK T cell,http://purl.obolibrary.org/obo/CL_0000814,3898,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,classical monocyte,http://purl.obolibrary.org/obo/CL_0000860,3234,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,popv,neutrophil,http://purl.obolibrary.org/obo/CL_0000775,2773,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,popv,B cell,http://purl.obolibrary.org/obo/CL_0000236,2462,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,popv,"CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000624,2371,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,type I NK T cell,http://purl.obolibrary.org/obo/CL_0000921,2219,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,"CD4-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000897,2113,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,memory B cell,http://purl.obolibrary.org/obo/CL_0000787,2100,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,popv,"naive thymus-derived CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000895,2096,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,naive B cell,http://purl.obolibrary.org/obo/CL_0000788,2072,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,popv,"CD8-positive, alpha-beta cytokine secreting effector T cell",http://purl.obolibrary.org/obo/CL_0000908,1913,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,T cell,http://purl.obolibrary.org/obo/CL_0000084,1828,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,fibroblast,http://purl.obolibrary.org/obo/CL_0000057,1764,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,popv,basophil,http://purl.obolibrary.org/obo/CL_0000767,1628,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,popv,platelet,http://purl.obolibrary.org/obo/CL_0000233,1532,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,popv,hematopoietic stem cell,http://purl.obolibrary.org/obo/CL_0000037,1346,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,popv,dendritic cell,http://purl.obolibrary.org/obo/CL_0000451,1229,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,popv,macrophage,http://purl.obolibrary.org/obo/CL_0000235,1226,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,popv,monocyte,http://purl.obolibrary.org/obo/CL_0000576,1225,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,popv,vein endothelial cell,http://purl.obolibrary.org/obo/CL_0002543,1087,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,non-classical monocyte,http://purl.obolibrary.org/obo/CL_0000875,1084,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,popv,intermediate monocyte,http://purl.obolibrary.org/obo/CL_0002393,1066,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000576,monocyte
+sc_transcriptomics,popv,endothelial cell,http://purl.obolibrary.org/obo/CL_0000115,1056,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,endothelial cell of artery,http://purl.obolibrary.org/obo/CL_1000413,1051,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,"effector CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0001050,1027,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,"effector CD4-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0001044,1020,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,mast cell,http://purl.obolibrary.org/obo/CL_0000097,1018,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,vascular associated smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000359,1013,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,popv,plasmacytoid dendritic cell,http://purl.obolibrary.org/obo/CL_0000784,1011,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,popv,lung macrophage,http://purl.obolibrary.org/obo/CL_1001603,1007,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,popv,club cell,http://purl.obolibrary.org/obo/CL_0000158,988,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,pulmonary alveolar type 1 cell,http://purl.obolibrary.org/obo/CL_0002062,966,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,pulmonary alveolar type 2 cell,http://purl.obolibrary.org/obo/CL_0002063,957,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,respiratory basal cell,http://purl.obolibrary.org/obo/CL_0002633,957,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,popv,fibroblast of lung,http://purl.obolibrary.org/obo/CL_0002553,950,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,popv,lung multiciliated epithelial cell,http://purl.obolibrary.org/obo/CL_1000271,944,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,respiratory tract goblet cell,http://purl.obolibrary.org/obo/CL_0002370,930,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,pulmonary capillary endothelial cell,http://purl.obolibrary.org/obo/CL_4028001,917,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,endothelial cell of respiratory system lymphatic vessel,http://purl.obolibrary.org/obo/CL_0009086,891,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,erythrocyte,http://purl.obolibrary.org/obo/CL_0000232,858,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,popv,stromal cell,http://purl.obolibrary.org/obo/CL_0000499,840,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,popv,bronchial smooth muscle cell,http://purl.obolibrary.org/obo/CL_0002598,837,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,popv,gut endothelial cell,http://purl.obolibrary.org/obo/CL_0000131,798,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,alveolar adventitial fibroblast,http://purl.obolibrary.org/obo/CL_4028006,789,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,popv,lung pericyte,http://purl.obolibrary.org/obo/CL_0009089,779,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,popv,lung microvascular endothelial cell,http://purl.obolibrary.org/obo/CL_2000016,776,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,CD141-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002394,693,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,popv,blood vessel endothelial cell,http://purl.obolibrary.org/obo/CL_0000071,658,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,smooth muscle cell,http://purl.obolibrary.org/obo/CL_0000192,577,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,popv,enterocyte of epithelium of small intestine,http://purl.obolibrary.org/obo/CL_1000334,497,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,small intestine goblet cell,http://purl.obolibrary.org/obo/CL_1000495,493,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,transit amplifying cell of small intestine,http://purl.obolibrary.org/obo/CL_0009012,473,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,paneth cell of epithelium of small intestine,http://purl.obolibrary.org/obo/CL_1000343,465,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,Mueller cell,http://purl.obolibrary.org/obo/CL_0000636,452,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,popv,enteroendocrine cell of small intestine,http://purl.obolibrary.org/obo/CL_0009006,444,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,enterocyte of epithelium of large intestine,http://purl.obolibrary.org/obo/CL_0002071,434,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,paneth cell of colon,http://purl.obolibrary.org/obo/CL_0009009,427,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,tuft cell of small intestine,http://purl.obolibrary.org/obo/CL_0009080,423,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,transit amplifying cell of colon,http://purl.obolibrary.org/obo/CL_0009011,415,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,large intestine goblet cell,http://purl.obolibrary.org/obo/CL_1000320,414,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,intestinal crypt stem cell of small intestine,http://purl.obolibrary.org/obo/CL_0009017,414,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,popv,pulmonary ionocyte,http://purl.obolibrary.org/obo/CL_0017000,411,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,innate lymphoid cell,http://purl.obolibrary.org/obo/CL_0001065,394,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,pulmonary alveolar epithelial cell,http://purl.obolibrary.org/obo/CL_0000322,393,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,endothelial cell of lymphatic vessel,http://purl.obolibrary.org/obo/CL_0002138,391,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,regulatory T cell,http://purl.obolibrary.org/obo/CL_0000815,388,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,intestinal tuft cell,http://purl.obolibrary.org/obo/CL_0019032,374,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,intestinal enteroendocrine cell,http://purl.obolibrary.org/obo/CL_1001516,369,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,epithelial cell,http://purl.obolibrary.org/obo/CL_0000066,359,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,mesothelial cell,http://purl.obolibrary.org/obo/CL_0000077,324,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,retinal bipolar neuron,http://purl.obolibrary.org/obo/CL_0000748,323,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,popv,pericyte,http://purl.obolibrary.org/obo/CL_0000669,316,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,popv,melanocyte,http://purl.obolibrary.org/obo/CL_0000148,313,true,http://purl.obolibrary.org/obo/CL_0000148,melanocyte,,
+sc_transcriptomics,popv,radial glial cell,http://purl.obolibrary.org/obo/CL_0000681,301,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,popv,retinal blood vessel endothelial cell,http://purl.obolibrary.org/obo/CL_0002585,297,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,microglial cell,http://purl.obolibrary.org/obo/CL_0000129,296,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000125,glial cell
+sc_transcriptomics,popv,eye photoreceptor cell,http://purl.obolibrary.org/obo/CL_0000287,289,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,popv,keratocyte,http://purl.obolibrary.org/obo/CL_0002363,287,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,popv,conjunctival epithelial cell,http://purl.obolibrary.org/obo/CL_1000432,279,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,CD1c-positive myeloid dendritic cell,http://purl.obolibrary.org/obo/CL_0002399,239,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,popv,stem cell,http://purl.obolibrary.org/obo/CL_0000034,233,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,popv,epithelial cell of uterus,http://purl.obolibrary.org/obo/CL_0002149,220,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,endothelial cell of hepatic sinusoid,http://purl.obolibrary.org/obo/CL_1000398,206,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,myometrial cell,http://purl.obolibrary.org/obo/CL_0002366,204,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,popv,hepatocyte,http://purl.obolibrary.org/obo/CL_0000182,204,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,intrahepatic cholangiocyte,http://purl.obolibrary.org/obo/CL_0002538,203,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,"CD8-positive, alpha-beta memory T cell",http://purl.obolibrary.org/obo/CL_0000909,199,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,intestinal crypt stem cell of large intestine,http://purl.obolibrary.org/obo/CL_0009016,197,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,popv,liver dendritic cell,http://purl.obolibrary.org/obo/CL_2000055,196,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,popv,"CD8-positive, alpha-beta cytotoxic T cell",http://purl.obolibrary.org/obo/CL_0000794,187,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,"naive thymus-derived CD8-positive, alpha-beta T cell",http://purl.obolibrary.org/obo/CL_0000900,183,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,CD4-positive helper T cell,http://purl.obolibrary.org/obo/CL_0000492,167,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,ciliated epithelial cell,http://purl.obolibrary.org/obo/CL_0000067,146,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,capillary endothelial cell,http://purl.obolibrary.org/obo/CL_0002144,146,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,pigmented ciliary epithelial cell,http://purl.obolibrary.org/obo/CL_0002303,130,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,erythroid progenitor cell,http://purl.obolibrary.org/obo/CL_0000038,120,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,corneal epithelial cell,http://purl.obolibrary.org/obo/CL_0000575,117,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,leukocyte,http://purl.obolibrary.org/obo/CL_0000738,116,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,epithelial cell of large intestine,http://purl.obolibrary.org/obo/CL_0002253,113,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,DN3 thymocyte,http://purl.obolibrary.org/obo/CL_0000807,96,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,DN1 thymic pro-T cell,http://purl.obolibrary.org/obo/CL_0000894,96,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,pancreatic stellate cell,http://purl.obolibrary.org/obo/CL_0002410,95,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,popv,naive regulatory T cell,http://purl.obolibrary.org/obo/CL_0002677,95,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,myeloid cell,http://purl.obolibrary.org/obo/CL_0000763,95,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,pancreatic acinar cell,http://purl.obolibrary.org/obo/CL_0002064,95,true,http://purl.obolibrary.org/obo/CL_0000152,exocrine cell,,
+sc_transcriptomics,popv,DN4 thymocyte,http://purl.obolibrary.org/obo/CL_0000808,94,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,type B pancreatic cell,http://purl.obolibrary.org/obo/CL_0000169,94,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,muscle cell,http://purl.obolibrary.org/obo/CL_0000187,94,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,popv,pancreatic ductal cell,http://purl.obolibrary.org/obo/CL_0002079,94,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,granulocyte,http://purl.obolibrary.org/obo/CL_0000094,93,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000081,blood cell
+sc_transcriptomics,popv,pancreatic PP cell,http://purl.obolibrary.org/obo/CL_0002275,93,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,erythroid lineage cell,http://purl.obolibrary.org/obo/CL_0000764,83,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,Langerhans cell,http://purl.obolibrary.org/obo/CL_0000453,81,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,popv,T follicular helper cell,http://purl.obolibrary.org/obo/CL_0002038,79,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_transcriptomics,popv,retinal pigment epithelial cell,http://purl.obolibrary.org/obo/CL_0002586,77,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,bone marrow macrophage,http://purl.obolibrary.org/obo/CL_0002476,75,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000235,macrophage
+sc_transcriptomics,popv,common myeloid progenitor,http://purl.obolibrary.org/obo/CL_0000049,75,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,,
+sc_transcriptomics,popv,mature conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0000841,72,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,popv,microvascular endothelial cell,http://purl.obolibrary.org/obo/CL_2000008,71,true,http://purl.obolibrary.org/obo/CL_0000115,endothelial cell,,
+sc_transcriptomics,popv,medullary thymic epithelial cell,http://purl.obolibrary.org/obo/CL_0002365,71,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,myofibroblast cell,http://purl.obolibrary.org/obo/CL_0000186,65,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,popv,basal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002341,58,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,luminal cell of prostate epithelium,http://purl.obolibrary.org/obo/CL_0002340,58,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,basal cell,http://purl.obolibrary.org/obo/CL_0000646,57,true,http://purl.obolibrary.org/obo/CL_0000034,stem cell,,
+sc_transcriptomics,popv,bladder urothelial cell,http://purl.obolibrary.org/obo/CL_1001428,49,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,bronchial epithelial cell,http://purl.obolibrary.org/obo/CL_0002328,47,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,conventional dendritic cell,http://purl.obolibrary.org/obo/CL_0000990,42,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000451,dendritic cell
+sc_transcriptomics,popv,colon epithelial cell,http://purl.obolibrary.org/obo/CL_0011108,42,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,adipocyte,http://purl.obolibrary.org/obo/CL_0000136,34,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000136,adipocyte
+sc_transcriptomics,popv,epithelial cell of lacrimal sac,http://purl.obolibrary.org/obo/CL_1000436,28,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,"B cell, CD19-positive",http://purl.obolibrary.org/obo/CL_0001201,26,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000236,B cell
+sc_transcriptomics,popv,sensory neuron,http://purl.obolibrary.org/obo/CL_0000101,25,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,popv,epithelial cell of small intestine,http://purl.obolibrary.org/obo/CL_0002254,22,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,tracheal goblet cell,http://purl.obolibrary.org/obo/CL_1000329,20,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,luminal epithelial cell of mammary gland,http://purl.obolibrary.org/obo/CL_0002326,19,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,fibroblast of breast,http://purl.obolibrary.org/obo/CL_4006000,18,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,http://purl.obolibrary.org/obo/CL_0000499,stromal cell
+sc_transcriptomics,popv,mesenchymal stem cell,http://purl.obolibrary.org/obo/CL_0000134,18,true,http://purl.obolibrary.org/obo/CL_0002320,connective tissue cell,,
+sc_transcriptomics,popv,ionocyte,http://purl.obolibrary.org/obo/CL_0005006,17,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,keratinocyte,http://purl.obolibrary.org/obo/CL_0000312,14,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,tongue muscle cell,http://purl.obolibrary.org/obo/CL_0002673,14,true,http://purl.obolibrary.org/obo/CL_0000187,muscle cell,,
+sc_transcriptomics,popv,bipolar neuron,http://purl.obolibrary.org/obo/CL_0000103,12,true,http://purl.obolibrary.org/obo/CL_0002319,neural cell,http://purl.obolibrary.org/obo/CL_0000540,neuron
+sc_transcriptomics,popv,pancreatic A cell,http://purl.obolibrary.org/obo/CL_0000171,5,true,http://purl.obolibrary.org/obo/CL_0000066,epithelial cell,,
+sc_transcriptomics,popv,"CD4-positive, CD25-positive, alpha-beta regulatory T cell",http://purl.obolibrary.org/obo/CL_0000792,3,true,http://purl.obolibrary.org/obo/CL_0000988,hematopoietic cell,http://purl.obolibrary.org/obo/CL_0000084,T cell
+sc_proteomics,sc_proteomics,cell,http://purl.obolibrary.org/obo/CL_0000000,618,false,,,,
+sc_proteomics,sc_proteomics,transit amplifying cell,http://purl.obolibrary.org/obo/CL_0009010,445,false,,,,
+sc_proteomics,sc_proteomics,neoplastic cell,http://purl.obolibrary.org/obo/CL_0001063,83,false,,,,
+sc_transcriptomics,azimuth,papillary tips cell,http://purl.obolibrary.org/obo/CL_1000597,733,false,,,,
+sc_transcriptomics,azimuth,progenitor cell,http://purl.obolibrary.org/obo/CL_0011026,71,false,,,,
+sc_transcriptomics,celltypist,tracheobronchial serous cell,http://purl.obolibrary.org/obo/CL_0019001,969,false,,,,
+sc_transcriptomics,celltypist,progenitor cell,http://purl.obolibrary.org/obo/CL_0011026,820,false,,,,
+sc_transcriptomics,celltypist,mesodermal cell,http://purl.obolibrary.org/obo/CL_0000222,708,false,,,,
+sc_transcriptomics,celltypist,mucus secreting cell,http://purl.obolibrary.org/obo/CL_0000319,556,false,,,,
+sc_transcriptomics,celltypist,neuroblast (sensu Vertebrata),http://purl.obolibrary.org/obo/CL_0000031,555,false,,,,
+sc_transcriptomics,celltypist,neural progenitor cell,http://purl.obolibrary.org/obo/CL_0011020,550,false,,,,
+sc_transcriptomics,celltypist,cell,http://purl.obolibrary.org/obo/CL_0000000,407,false,,,,
+sc_transcriptomics,celltypist,cycling neuroblast (sensu Vertebrata),http://purl.obolibrary.org/obo/CL_4047005,397,false,,,,
+sc_transcriptomics,celltypist,atrioventricular bundle cell,http://purl.obolibrary.org/obo/CL_0010005,226,false,,,,
+sc_transcriptomics,celltypist,corneocyte,http://purl.obolibrary.org/obo/CL_0002153,95,false,,,,
+sc_transcriptomics,frmatch,obsolete epithelial cell of alveolus of lung,http://purl.obolibrary.org/obo/CL_0010003,925,false,,,,
+sc_transcriptomics,frmatch,tracheobronchial serous cell,http://purl.obolibrary.org/obo/CL_0019001,843,false,,,,
+sc_transcriptomics,frmatch,serous secreting cell,http://purl.obolibrary.org/obo/CL_0000313,833,false,,,,
+sc_transcriptomics,pan-human-azimuth,mesenchymal cell,http://purl.obolibrary.org/obo/CL_0008019,3231,false,,,,
+sc_transcriptomics,pan-human-azimuth,Leydig cell,http://purl.obolibrary.org/obo/CL_0000178,1712,false,,,,
+sc_transcriptomics,pan-human-azimuth,cell of skeletal muscle,http://purl.obolibrary.org/obo/CL_0000188,1319,false,,,,
+sc_transcriptomics,pan-human-azimuth,perivascular cell,http://purl.obolibrary.org/obo/CL_4033054,868,false,,,,
+sc_transcriptomics,pan-human-azimuth,progenitor cell,http://purl.obolibrary.org/obo/CL_0011026,752,false,,,,
+sc_transcriptomics,pan-human-azimuth,endocrine cell,http://purl.obolibrary.org/obo/CL_0000163,507,false,,,,
+sc_transcriptomics,pan-human-azimuth,mesodermal cell,http://purl.obolibrary.org/obo/CL_0000222,452,false,,,,
+sc_transcriptomics,pan-human-azimuth,supporting cell,http://purl.obolibrary.org/obo/CL_0000630,204,false,,,,
+sc_transcriptomics,pan-human-azimuth,cell,http://purl.obolibrary.org/obo/CL_0000000,183,false,,,,
+sc_transcriptomics,pan-human-azimuth,epidermal ciliary cell,http://purl.obolibrary.org/obo/CL_0007018,26,false,,,,
+sc_transcriptomics,popv,surface ectodermal cell,http://purl.obolibrary.org/obo/CL_0000114,224,false,,,,
+sc_transcriptomics,popv,serous cell of epithelium of bronchus,http://purl.obolibrary.org/obo/CL_1000331,162,false,,,,
+sc_transcriptomics,popv,ciliated cell,http://purl.obolibrary.org/obo/CL_0000064,24,false,,,,
+sc_transcriptomics,popv,mucus secreting cell,http://purl.obolibrary.org/obo/CL_0000319,24,false,,,,
+sc_transcriptomics,popv,secretory cell,http://purl.obolibrary.org/obo/CL_0000151,24,false,,,,
+sc_transcriptomics,popv,serous cell of epithelium of trachea,http://purl.obolibrary.org/obo/CL_1000330,22,false,,,,
