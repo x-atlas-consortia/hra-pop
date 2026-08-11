@@ -1,0 +1,75 @@
+#+ summary: Cell Counts for Atlas Millitome Datasets
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX DSGraphs: <https://purl.humanatlas.io/collection/ds-graphs>
+
+SELECT 
+  ?organ
+  ?authors
+  ?sex
+  (COUNT(DISTINCT ?dataset) as ?datasets)
+  (SUM(COALESCE(?dataset_cell_count, 0)) as ?cells)
+FROM HRApop:
+FROM DSGraphs:
+# FROM HRApopTestData:
+WHERE {
+  {
+    ?sample ccf:comes_from ?donor .
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  ?donor ccf:tissue_provider_name ?authors ;
+    ccf:sex ?sex .
+
+
+  ?rui_location owl:sameAs ?millitome_location .
+  FILTER (STRSTARTS(STR(?millitome_location), 'https://purl.humanatlas.io/millitome/'))
+  BIND(STRBEFORE(REPLACE(STR(?millitome_location), 'https://purl.humanatlas.io/millitome/', ''), '/') as ?organ)
+
+
+  OPTIONAL {
+    SELECT ?dataset (MAX(?total_cell_count) as ?dataset_cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?tool (SUM(?cell_count) as ?total_cell_count)
+        WHERE {
+          {
+            ?sample ccf:comes_from ?donor .
+            ?sample ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          } UNION {
+            ?block ccf:comes_from ?donor .
+            ?block ccf:subdivided_into_sections ?sample .
+            ?block ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          }
+
+          ?rui_location owl:sameAs ?millitome_location .
+          FILTER (STRSTARTS(STR(?millitome_location), 'https://purl.humanatlas.io/millitome/'))
+
+          ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [
+            ccf:cell_annotation_method ?tool ;
+            ccf:has_cell_summary_row [
+              ccf:cell_id ?cell_id ;
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+        }
+        GROUP BY ?dataset ?tool
+      }
+    }
+    GROUP BY ?dataset
+  }
+}
+GROUP BY ?organ ?authors ?sex
+ORDER BY ?organ ?authors ?sex
