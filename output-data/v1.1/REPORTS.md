@@ -7,6 +7,7 @@
   * [Atlas dataset, extraction site, and AS (as-datasets-extraction-sites)](#as-datasets-extraction-sites)
   * [Atlas dataset tool, modality, and AS info (as-datasets-modality)](#as-datasets-modality)
   * [HRApop Atlas CL level mapping (atlas-level-mapping)](#atlas-level-mapping)
+  * [Cell Counts for Atlas Millitome Datasets (atlas-millitome-breakdown)](#atlas-millitome-breakdown)
   * [Cell Counts for Atlas Millitome Datasets (atlas-millitome-cell-counts)](#atlas-millitome-cell-counts)
   * [All biomarkers seen in Atlas Datasets (atlas-organ-cell-biomarker-scores)](#atlas-organ-cell-biomarker-scores)
   * [Cell Counts for Atlas Proteomics Datasets (atlas-sc-proteomics-cell-counts)](#atlas-sc-proteomics-cell-counts)
@@ -24,6 +25,7 @@
   * [Cell Summaries with Biomarker information by Dataset (ct-bm-per-dataset)](#ct-bm-per-dataset)
   * [Atlas-level CxG collections (cxg-collections)](#cxg-collections)
   * [data-provenance](#data-provenance)
+  * [datasets-as-ct-gene](#datasets-as-ct-gene)
   * [Atlas Datasets and their cell types and biomarkers (datasets-by-organ)](#datasets-by-organ)
   * [Atlas Datasets and their cell types and biomarkers (datasets-ct-bm-data)](#datasets-ct-bm-data)
   * [Atlas Datasets with a given Cell Type (datasets-with-adipocytes)](#datasets-with-adipocytes)
@@ -75,6 +77,8 @@
   * [Count of Anatomical Structures by Organ (as-cnt-per-organ)](#as-cnt-per-organ)
   * [Count of Anatomical Structures (as-cnt)](#as-cnt)
   * [Count of Anatomical Structures per `sceneNode`s (as3d-with-id-count)](#as3d-with-id-count)
+  * [asctb-records-edges](#asctb-records-edges)
+  * [asctb-records-nodes](#asctb-records-nodes)
   * [AS, CT, and BM in the HRA (asctb-records)](#asctb-records)
   * [CL level mapping (cl-level-mapping)](#cl-level-mapping)
   * [Cell types per annotation tool (count-ct-per-tool)](#count-ct-per-tool)
@@ -111,6 +115,7 @@
   * [high-level-stats](#high-level-stats)
   * [HTAN dataset info (htan-datasets)](#htan-datasets)
   * [Kidney and Lung dataset info (kidney-and-lung-datasets)](#kidney-and-lung-datasets)
+  * [Application A2P1 (pan-human-az-ds-counts)](#pan-human-az-ds-counts)
   * [Popv cells information (popv-cells)](#popv-cells)
   * [RUI Registered H5AD Dataset and TB Count (rui-registered-datasets)](#rui-registered-datasets)
   * [Sample information (sample-info)](#sample-info)
@@ -482,6 +487,99 @@ ORDER BY DESC(?is_mapped) ?modality ?tool DESC(?cell_count)
 | sc_proteomics | sc_proteomics | B cell | http://purl.obolibrary.org/obo/CL_0000236 | 248 | true | http://purl.obolibrary.org/obo/CL_0000988 | hematopoietic cell | http://purl.obolibrary.org/obo/CL_0000236 | B cell |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
+
+### <a id="atlas-millitome-breakdown"></a>Cell Counts for Atlas Millitome Datasets (atlas-millitome-breakdown)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Cell Counts for Atlas Millitome Datasets
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+PREFIX DSGraphs: <https://purl.humanatlas.io/collection/ds-graphs>
+
+SELECT 
+  ?organ
+  ?authors
+  ?sex
+  (COUNT(DISTINCT ?dataset) as ?datasets)
+  (SUM(COALESCE(?dataset_cell_count, 0)) as ?cells)
+FROM HRApop:
+FROM DSGraphs:
+# FROM HRApopTestData:
+WHERE {
+  {
+    ?sample ccf:comes_from ?donor .
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  } UNION {
+    ?block ccf:comes_from ?donor .
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset .
+  }
+
+  ?donor ccf:tissue_provider_name ?authors ;
+    ccf:sex ?sex .
+
+
+  ?rui_location owl:sameAs ?millitome_location .
+  FILTER (STRSTARTS(STR(?millitome_location), 'https://purl.humanatlas.io/millitome/'))
+  BIND(STRBEFORE(REPLACE(STR(?millitome_location), 'https://purl.humanatlas.io/millitome/', ''), '/') as ?organ)
+
+
+  OPTIONAL {
+    SELECT ?dataset (MAX(?total_cell_count) as ?dataset_cell_count)
+    WHERE {
+      {
+        SELECT ?dataset ?tool (SUM(?cell_count) as ?total_cell_count)
+        WHERE {
+          {
+            ?sample ccf:comes_from ?donor .
+            ?sample ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          } UNION {
+            ?block ccf:comes_from ?donor .
+            ?block ccf:subdivided_into_sections ?sample .
+            ?block ccf:has_registration_location ?rui_location .
+            ?sample ccf:generates_dataset ?dataset .
+          }
+
+          ?rui_location owl:sameAs ?millitome_location .
+          FILTER (STRSTARTS(STR(?millitome_location), 'https://purl.humanatlas.io/millitome/'))
+
+          ?dataset a ccf:Dataset ;
+          ccf:has_cell_summary [
+            ccf:cell_annotation_method ?tool ;
+            ccf:has_cell_summary_row [
+              ccf:cell_id ?cell_id ;
+              ccf:cell_count ?cell_count ;
+            ] ;
+          ] .
+        }
+        GROUP BY ?dataset ?tool
+      }
+    }
+    GROUP BY ?dataset
+  }
+}
+GROUP BY ?organ ?authors ?sex
+ORDER BY ?organ ?authors ?sex
+```
+
+([View Source](../../queries/atlas-ad-hoc/atlas-millitome-breakdown.rq))
+</details>
+
+#### Columns
+| organ | authors | sex | datasets | cells |
+| :--- | :--- | :--- | :--- | :--- |
+| ... | ... | ... | ... | ... |
 
 ### <a id="atlas-millitome-cell-counts"></a>Cell Counts for Atlas Millitome Datasets (atlas-millitome-cell-counts)
 
@@ -1735,6 +1833,101 @@ ORDER BY ?order
 | organs | 23 |
 | anatomical structures | 103 |
 | cells | 66308495 |
+
+
+### <a id="datasets-as-ct-gene"></a>datasets-as-ct-gene
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT
+  ?dataset_id
+  ?tool
+  ?as_id
+  ?as_label
+  ?cl_id
+  ?cl_label
+  ?gene_id
+  ?gene_label
+  ?ensembl_id
+  ?mean_expr
+FROM HRApop:
+FROM HRA:
+WHERE {
+  {
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset_id .
+  } UNION {
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset_id .
+  }
+
+  ?dataset_id ccf:has_cell_summary [
+    ccf:cell_annotation_method ?tool ;
+    ccf:modality ?modality ;
+
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_iri ;
+      ccf:cell_label ?cell_label ;
+      ccf:gene_expr [
+        ccf:gene_label ?gene_id ;
+        ccf:gene_label ?gene_label ;
+        ccf:ensembl_id ?ensembl_id ;
+        ccf:mean_gene_expr_value ?mean_expr ;
+      ]
+    ]
+  ] .
+
+  ?rui_location ccf:has_collision_summary [
+      ccf:has_collision_item [
+          ccf:as_id ?refOrganAs ;
+          ccf:as_label ?as_label ;
+      ]
+  ] .
+
+  BIND(REPLACE(STR(?cell_iri), STR(CL:), 'CL:') as ?cl_id)
+  ?cell_iri rdfs:label ?cl_label .
+
+  BIND(REPLACE(REPLACE(STR(?refOrganAs), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?as_id)
+}
+
+```
+
+([View Source](../../queries/atlas-ad-hoc/datasets-as-ct-gene.rq))
+</details>
+
+#### Results ([View CSV File](reports/atlas-ad-hoc/datasets-as-ct-gene.csv))
+
+| dataset_id | tool | as_id | as_label | cl_id | cl_label | gene_id | gene_label | ensembl_id | mean_expr |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | celltypist | FMA:62662 | Cartilage of segmental bronchus | CL:0000097 | mast cell | MAML3 | MAML3 | ENSG00000196782 | 3.026633501052856 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | celltypist | FMA:7402 | Lateral segmental bronchus | CL:0000097 | mast cell | MAML3 | MAML3 | ENSG00000196782 | 3.026633501052856 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | celltypist | FMA:62662 | Cartilage of segmental bronchus | CL:0000097 | mast cell | GMDS-DT | GMDS-DT | ENSG00000250903 | 2.375473976135254 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | celltypist | FMA:7402 | Lateral segmental bronchus | CL:0000097 | mast cell | GMDS-DT | GMDS-DT | ENSG00000250903 | 2.375473976135254 |
+| https://api.cellxgene.cziscience.com/dp/v1/collections/625f6bf4-2f33-4942-962e-35243d284837#D231$lung | celltypist | FMA:62662 | Cartilage of segmental bronchus | CL:0000097 | mast cell | MCTP1 | MCTP1 | ENSG00000175471 | 2.610007047653198 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="datasets-by-organ"></a>Atlas Datasets and their cell types and biomarkers (datasets-by-organ)
@@ -6837,6 +7030,111 @@ WHERE {
 | 1392 |
 
 
+### <a id="asctb-records-edges"></a>asctb-records-edges
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT ?source ?relation ?target
+FROM HRA:
+WHERE {
+  {
+    SELECT ?source ("has part" as ?relation) ?target
+    WHERE {
+      ?source ccf:ccf_part_of ?target .
+    }
+  }
+  UNION
+  {
+    SELECT ?source ("has cell type" as ?relation) ?target
+    WHERE {
+      ?target ccf:ccf_located_in ?source .
+    }
+  }
+  UNION
+  {
+    SELECT ?source ("has biomarker" as ?relation) ?target
+    WHERE {
+      ?source rdfs:subClassOf [
+          owl:onProperty has_characterizing_biomarker_set: ;
+          owl:someValuesFrom [ owl:intersectionOf ?bmSetId ]] .
+        ?bmSetId rdf:rest*/rdf:first [
+          owl:onProperty ccf:has_marker_component ;
+          owl:someValuesFrom ?target
+        ] .
+    }
+  }
+
+  {
+    SELECT ?source (SAMPLE(?source_labels) as ?source_label)
+      WHERE {
+        ?source ccf:ccf_pref_label ?source_pref_label .
+      OPTIONAL {
+        ?source rdfs:label ?source_rdfs_label .
+      }
+    }
+    
+  }
+  
+}
+
+```
+
+([View Source](../../queries/hra/asctb-records-edges.rq))
+</details>
+
+#### Columns
+| source | relation | target |
+| :--- | :--- | :--- |
+| ... | ... | ... |
+
+### <a id="asctb-records-nodes"></a>asctb-records-nodes
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX has_characterizing_biomarker_set: <http://purl.obolibrary.org/obo/RO_0015004>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT ?id (SAMPLE(?labels) as ?label)
+FROM HRA:
+WHERE {
+  ?id ccf:ccf_pref_label ?pref_label .
+  OPTIONAL {
+    ?id rdfs:label ?rdfs_label .
+  }
+  BIND(COALESCE(?rdfs_label, ?pref_label) as ?labels)
+  FILTER (!STRSTARTS(STR(?id), 'https://purl.humanatlas.io/asct-b/'))
+}
+GROUP BY ?id ?labels
+ORDER BY ?id
+```
+
+([View Source](../../queries/hra/asctb-records-nodes.rq))
+</details>
+
+#### Columns
+| id | label |
+| :--- | :--- |
+| ... | ... |
+
 ### <a id="asctb-records"></a>AS, CT, and BM in the HRA (asctb-records)
 
 
@@ -9495,6 +9793,68 @@ ORDER BY ?organ ?portal ?dataset
 | Male | http://purl.org/ccf/ctpop_datasets:HBM297.XVDG.492 | Kidney |  | false | false | true | false | true | HuBMAP |  |  |  |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
+
+### <a id="pan-human-az-ds-counts"></a>Application A2P1 (pan-human-az-ds-counts)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Application A2P1
+#+ description:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX hra-pop: <https://purl.humanatlas.io/graph/hra-pop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?reported_organ (SAMPLE(?organ) as ?label) (COUNT(DISTINCT ?dataset) as ?datasets)
+# SELECT (COUNT(DISTINCT ?dataset) as ?datasets)
+WHERE {
+
+  GRAPH hra-pop:test-data {
+  # GRAPH HRApop: {
+    # ?dataset ccf:has_cell_summary [] ;
+    ?dataset ccf:organ_id ?reported_organ .
+
+    ?dataset ccf:has_cell_summary [
+      ccf:cell_annotation_method "pan-human-azimuth"^^xsd:string ;
+    ] .
+
+    FILTER NOT EXISTS {
+      ?dataset ccf:has_cell_summary [
+        ccf:cell_annotation_method ?tool ;
+      ] .
+      FILTER(?tool != 'pan-human-azimuth')
+    }
+  }
+
+  OPTIONAL {
+    ?reported_organ rdfs:label ?organ .
+  }
+}
+GROUP BY ?reported_organ
+ORDER BY ?label
+```
+
+([View Source](../../queries/universe-ad-hoc/pan-human-az-ds-counts.rq))
+</details>
+
+#### Columns
+| reported_organ | label | datasets |
+| :--- | :--- | :--- |
+| ... | ... | ... |
 
 ### <a id="popv-cells"></a>Popv cells information (popv-cells)
 

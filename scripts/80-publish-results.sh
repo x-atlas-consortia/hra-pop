@@ -27,7 +27,8 @@ cp -r $DIR/corridors $OUT
 node src/gen-report-markdown.js $OUT/REPORTS.md queries $OUT/reports
 
 for file in `find $OUT -name "*.*" -size +95M`; do
-  zip -j ${file}.zip $file
+  # zip -j ${file}.zip $file
+  gzip -c $file > ${file}.gz
   rm $file
 done
 

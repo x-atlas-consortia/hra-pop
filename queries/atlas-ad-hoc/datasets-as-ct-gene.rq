@@ -1,0 +1,69 @@
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ASCTB-TEMP: <https://purl.org/ccf/ASCTB-TEMP_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX ccf3d: <http://purl.org/ccf/latest/ccf.owl#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ctpop-graph: <https://purl.humanatlas.io/graph/ctpop>
+PREFIX ctpop: <https://purl.humanatlas.io/graph/ctpop#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX hubmap: <https://entity.api.hubmapconsortium.org/entities/>
+PREFIX rui: <http://purl.org/ccf/1.5/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT
+  ?dataset_id
+  ?tool
+  ?as_id
+  ?as_label
+  ?cl_id
+  ?cl_label
+  ?gene_id
+  ?gene_label
+  ?ensembl_id
+  ?mean_expr
+FROM HRApop:
+FROM HRA:
+WHERE {
+  {
+    ?sample ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset_id .
+  } UNION {
+    ?block ccf:subdivided_into_sections ?sample .
+    ?block ccf:has_registration_location ?rui_location .
+    ?sample ccf:generates_dataset ?dataset_id .
+  }
+
+  ?dataset_id ccf:has_cell_summary [
+    ccf:cell_annotation_method ?tool ;
+    ccf:modality ?modality ;
+
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?cell_iri ;
+      ccf:cell_label ?cell_label ;
+      ccf:gene_expr [
+        ccf:gene_label ?gene_id ;
+        ccf:gene_label ?gene_label ;
+        ccf:ensembl_id ?ensembl_id ;
+        ccf:mean_gene_expr_value ?mean_expr ;
+      ]
+    ]
+  ] .
+
+  ?rui_location ccf:has_collision_summary [
+      ccf:has_collision_item [
+          ccf:as_id ?refOrganAs ;
+          ccf:as_label ?as_label ;
+      ]
+  ] .
+
+  BIND(REPLACE(STR(?cell_iri), STR(CL:), 'CL:') as ?cl_id)
+  ?cell_iri rdfs:label ?cl_label .
+
+  BIND(REPLACE(REPLACE(STR(?refOrganAs), STR(UBERON:), 'UBERON:'), STR(FMA:), 'FMA:') as ?as_id)
+}
